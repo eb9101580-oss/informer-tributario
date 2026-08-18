@@ -1,0 +1,85 @@
+# Informer — Inteligência Tributária
+
+Painel full stack que monitora fontes oficiais brasileiras, coleta documentos, analisa o conteúdo localmente e cria alertas tributários priorizados com proveniência verificável.
+
+## Arquitetura
+
+```text
+front (React/Vite)
+  └─ painel, varredura, fila, fontes, alertas e feedback
+       ↓ REST
+back (Node/Express)
+  ├─ agendador, conectores, filtro tributário, fila e deduplicação
+  ├─ Scrapling (adaptador Python) → HTML e PDF oficial
+  └─ Ollama (API local) → análise estruturada com modelo local
+```
+
+O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` são adaptadores isolados porque Scrapling é uma biblioteca Python. O `awesome-llm-apps` foi usado como referência arquitetural; nenhum repositório externo foi incorporado ao código.
+
+## Fontes monitoradas
+
+- Receita Federal e Diário Oficial da União;
+- Câmara dos Deputados e Senado Federal;
+- STF e STJ;
+- CARF;
+- TRF1, TRF2, TRF3, TRF4, TRF5 e TRF6.
+
+Câmara e Senado usam os serviços oficiais de dados abertos. O STJ usa seu catálogo oficial de dados abertos e gera links para o inteiro teor dos acórdãos. Os demais conectores consultam os portais oficiais de jurisprudência, precedentes ou publicações. Cada falha é registrada por fonte e nunca é tratada como “nenhuma novidade”.
+
+## Requisitos e instalação
+
+- Node.js 20 ou superior;
+- Python 3.10 ou superior;
+- Ollama em execução para as análises.
+
+No PowerShell, use `npm.cmd` se a política de execução bloquear `npm.ps1`:
+
+```powershell
+npm.cmd run setup
+ollama pull qwen3:4b
+npm.cmd run dev
+```
+
+- Painel: http://localhost:5173
+- API: http://localhost:3333
+- Saúde: http://localhost:3333/api/health
+
+## Varredura automática
+
+O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consulta a cada seis horas. Abra **Varredura automática** para acompanhar a fonte atual, fila, documentos, falhas e histórico de ciclos.
+
+O fluxo é:
+
+1. consultar cada fonte oficial;
+2. filtrar títulos e ementas por vocabulário tributário;
+3. deduplicar pela URL oficial;
+4. enfileirar o documento com órgão, método e horário;
+5. extrair HTML ou PDF com Scrapling;
+6. analisar no Ollama, no máximo dois documentos por ciclo;
+7. publicar somente itens relevantes com nota mínima 6.
+
+Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `back/.env`:
+
+```dotenv
+MONITOR_ENABLED=true
+MONITOR_INTERVAL_MINUTES=360
+MONITOR_MAX_ANALYSES_PER_RUN=2
+MONITOR_LOOKBACK_DAYS=7
+```
+
+Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
+
+Os registros iniciais continuam sendo cenários demonstrativos e aparecem identificados como tal. Alertas criados pela varredura usam `isDemo: false` e sempre guardam o endereço oficial e a trilha de proveniência.
+
+## Verificação
+
+```powershell
+npm.cmd --prefix back test
+npm.cmd --prefix front run build
+```
+
+## Referências
+
+- [Scrapling](https://github.com/D4Vinci/Scrapling) — BSD-3-Clause
+- [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — Apache-2.0
+- [Ollama](https://github.com/ollama/ollama) — MIT

@@ -1,0 +1,17 @@
+import 'dotenv/config';
+
+export const config = {
+  serverless: process.env.VERCEL === '1',
+  port: Number(process.env.PORT) || 3333,
+  frontendUrl: process.env.FRONTEND_URL || 'http://localhost:5173',
+  pythonCommand: process.env.PYTHON_COMMAND || 'python',
+  ollamaUrl: process.env.OLLAMA_URL || 'http://localhost:11434',
+  ollamaModel: process.env.OLLAMA_MODEL || 'qwen3:4b',
+  ollamaTimeoutMs: Math.max(60000, Number(process.env.OLLAMA_TIMEOUT_MS) || 300000),
+  ollamaMaxInputCharacters: Math.max(4000, Number(process.env.OLLAMA_MAX_INPUT_CHARS) || 8000),
+  monitorEnabled: process.env.VERCEL !== '1' && process.env.MONITOR_ENABLED !== 'false',
+  monitorIntervalMinutes: Math.max(15, Number(process.env.MONITOR_INTERVAL_MINUTES) || 360),
+  monitorMaxAnalyses: Math.max(0, Number(process.env.MONITOR_MAX_ANALYSES_PER_RUN) || 2),
+  monitorLookbackDays: Math.max(1, Number(process.env.MONITOR_LOOKBACK_DAYS) || 7),
+  monitorInitialDelayMs: Math.max(5000, Number(process.env.MONITOR_INITIAL_DELAY_MS) || 15000),
+};

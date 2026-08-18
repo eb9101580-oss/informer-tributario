@@ -1,0 +1,15 @@
+{
+  "name": "informer-tributario",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npm run install:all && python -m pip install -r back/scraper/requirements.txt",
+    "install:all": "npm --prefix back install && npm --prefix front install",
+    "dev": "concurrently -n API,WEB -c cyan,magenta \"npm --prefix back run dev\" \"npm --prefix front run dev\"",
+    "start": "npm --prefix back start",
+    "build": "npm --prefix front run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

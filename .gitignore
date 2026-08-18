@@ -1,0 +1,8 @@
+node_modules/
+front/dist/
+back/data/*.tmp
+.env
+*.log
+.vercel/
+__pycache__/
+*.py[cod]
