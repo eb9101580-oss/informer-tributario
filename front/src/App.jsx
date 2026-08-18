@@ -43,6 +43,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [updatedAt, setUpdatedAt] = useState(new Date());
+  const [feedback, setFeedback] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('informer-feedback-v1') || '[]'); } catch { return []; }
+  });
 
   const loadData = async () => {
     setLoading(true);
@@ -71,11 +74,30 @@ export default function App() {
   }, [alerts, search, relevance]);
 
   const opportunities = alerts.filter((alert) => alert.opportunity);
+  const rankedAlerts = useMemo(() => {
+    const profileScore = (alert) => feedback.reduce((total, vote) => {
+      if (vote.alertId === alert.id) return total + vote.value * 2;
+      const sameAgency = vote.agency && vote.agency === alert.agency ? 0.35 : 0;
+      const sameTheme = vote.theme && vote.theme === alert.theme ? 0.4 : 0;
+      const sharedTaxes = (alert.taxes || []).filter((tax) => (vote.taxes || []).includes(tax)).length * 0.25;
+      return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
+    }, 0);
+    return [...filteredAlerts].sort((left, right) => (right.score + profileScore(right)) - (left.score + profileScore(left)) || new Date(right.publishedAt) - new Date(left.publishedAt));
+  }, [filteredAlerts, feedback]);
   const [title, subtitle] = pageTitles[activePage];
 
   const sendFeedback = async (alertId, rating) => {
-    try { await api.sendFeedback({ alertId, rating }); } catch (requestError) { setError(requestError.message); }
+    const alert = alerts.find((item) => item.id === alertId);
+    if (!alert) return;
+    const value = ['muito relevante', 'relevante'].includes(rating) ? 1 : -1;
+    const vote = { alertId, value, agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] };
+    const next = [...feedback.filter((item) => item.alertId !== alertId), vote];
+    setFeedback(next);
+    localStorage.setItem('informer-feedback-v1', JSON.stringify(next));
+    try { await api.sendFeedback({ alertId, rating }); } catch { /* Na Vercel, o aprendizado permanece salvo neste navegador. */ }
   };
+
+  const voteFor = (alertId) => feedback.find((item) => item.alertId === alertId)?.value || 0;
 
   const mainContent = () => {
     if (loading) return <LoadingState />;
@@ -111,7 +133,7 @@ export default function App() {
           <div className="segmented"><button className={relevance === 'all' ? 'active' : ''} onClick={() => setRelevance('all')}>Todos</button><button className={relevance === 'urgent' ? 'active' : ''} onClick={() => setRelevance('urgent')}>Alta prioridade</button><button className={relevance === 'relevant' ? 'active' : ''} onClick={() => setRelevance('relevant')}>Relevantes</button></div>
         </div>
         <div className="section-heading"><div><span className="live-dot" /> Monitoramento ativo</div><small>{filteredAlerts.length} resultados</small></div>
-        <div className="alerts-list">{filteredAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} />)}</div>
+        <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
         {!filteredAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhum alerta encontrado</h3><p>Tente remover um filtro ou buscar outro termo.</p></div>}
       </section>
     );
@@ -125,20 +147,11 @@ export default function App() {
           <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais prioritárias" tone="teal" />
         </section>
 
-        <div className="content-grid">
-          <section className="panel panel--alerts">
-            <div className="panel__heading"><div><h2>Prioridades de hoje</h2><p>Ordenadas por impacto e potencial de atuação</p></div><button className="text-button" onClick={() => setActivePage('radar')}>Ver radar completo</button></div>
-            <div className="alerts-list">{filteredAlerts.slice(0, 3).map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} />)}</div>
-          </section>
-
-          <aside className="right-column">
-            <section className="panel">
-              <div className="panel__heading"><div><h2>Oportunidades</h2><p>Possíveis frentes de atuação</p></div><Bookmark size={20} /></div>
-              <div className="opportunities-list">{opportunities.slice(0, 3).map((alert) => <OpportunityCard key={alert.id} alert={alert} onOpen={setSelectedAlert} />)}</div>
-              <button className="full-button" onClick={() => setActivePage('opportunities')}>Ver todas as oportunidades</button>
-            </section>
-          </aside>
-        </div>
+        <section className="panel overview-feed">
+          <div className="panel__heading"><div><h2>Feed oficial personalizado</h2><p>Maior nota primeiro, ajustado pelos seus votos de relevância</p></div><span className="live-dot" /></div>
+          <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
+          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhum alerta oficial publicado</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
+        </section>
       </>
     );
   };
