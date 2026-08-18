@@ -1,0 +1,63 @@
+name: Descoberta tributaria rapida
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3,13,23,33,43,53 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-monitor-main
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      MONITOR_ANALYZE: 'false'
+      PYTHON_COMMAND: python3
+      MONITOR_ENABLED: 'false'
+      MONITOR_LOOKBACK_DAYS: '7'
+      MONITOR_MAX_ANALYSES_PER_RUN: '0'
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: back/package-lock.json
+
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: back/scraper/requirements.txt
+
+      - name: Instalar dependencias
+        run: |
+          npm ci --prefix back
+          python -m pip install -r back/scraper/requirements.txt
+
+      - name: Consultar fontes oficiais
+        run: node back/scripts/run-monitor.js
+
+      - name: Publicar fila atualizada
+        run: |
+          if git diff --quiet -- back/data/database.json; then
+            echo "Nenhuma alteracao nos dados."
+            exit 0
+          fi
+          git config user.name "informer-tributario[bot]"
+          git config user.email "informer-tributario[bot]@users.noreply.github.com"
+          git add back/data/database.json
+          git commit -m "Atualiza descoberta tributaria oficial"
+          git push origin main
