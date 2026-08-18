@@ -63,7 +63,7 @@ export default function App() {
 
   const filteredAlerts = useMemo(() => {
     const term = search.toLocaleLowerCase('pt-BR').trim();
-    return alerts.filter((alert) => {
+    return alerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl).filter((alert) => {
       const searchable = [alert.title, alert.summary, alert.theme, alert.agency, ...alert.taxes].join(' ').toLocaleLowerCase('pt-BR');
       const relevanceMatch = relevance === 'all' || (relevance === 'urgent' ? alert.score >= 8 : alert.score >= 6 && alert.score < 8);
       return (!term || searchable.includes(term)) && relevanceMatch;
@@ -137,10 +137,6 @@ export default function App() {
               <div className="opportunities-list">{opportunities.slice(0, 3).map((alert) => <OpportunityCard key={alert.id} alert={alert} onOpen={setSelectedAlert} />)}</div>
               <button className="full-button" onClick={() => setActivePage('opportunities')}>Ver todas as oportunidades</button>
             </section>
-            <section className="panel watchlist">
-              <div className="panel__heading"><div><h2>O que acompanhar</h2><p>Movimentações ainda em curso</p></div></div>
-              {dashboard.watchlist.map((item) => <div className="watch-item" key={item.id}><span /><div><strong>{item.title}</strong><small>{item.agency}</small></div><em>{item.status}</em></div>)}
-            </section>
           </aside>
         </div>
       </>
@@ -155,7 +151,7 @@ export default function App() {
         <header className="topbar">
           <button className="icon-button menu-button" onClick={() => setSidebarOpen(true)}><Menu /></button>
           <div className="topbar__date"><CalendarDays size={17} /><span>{new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }).format(new Date())}</span></div>
-          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Ambiente demonstrativo</span><button className="icon-button notification"><BellRing size={20} /><i /></button></div>
+          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Fontes oficiais</span><button className="icon-button notification"><BellRing size={20} /><i /></button></div>
         </header>
         <div className="page">
           <div className="page-header">

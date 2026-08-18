@@ -16,7 +16,6 @@ export function AlertCard({ alert, onOpen }) {
         <div className="alert-card__meta">
           <span className={`priority priority--${tone}`}>{alert.relevance}</span>
           <span className="status">{alert.status}</span>
-          {alert.isDemo && <span className="demo-tag">Demonstração</span>}
         </div>
         <h3>{alert.title}</h3>
         <p>{alert.summary}</p>

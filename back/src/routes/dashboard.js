@@ -7,7 +7,10 @@ export const dashboardRouter = Router();
 dashboardRouter.get('/', async (_request, response, next) => {
   try {
     const database = await readDatabase();
-    const relevant = database.alerts.filter((alert) => alert.score >= 6);
+    const relevant = database.alerts.filter((alert) => alert.isDemo === false
+      && alert.score >= 6
+      && /^https:\/\//i.test(alert.officialUrl || '')
+      && Boolean(alert.provenance?.sourceId));
     const urgent = relevant.filter((alert) => alert.score >= 9);
     const opportunities = relevant.filter((alert) => ['Oportunidade', 'Ambos'].includes(alert.impactType));
 
@@ -19,7 +22,6 @@ dashboardRouter.get('/', async (_request, response, next) => {
         monitoredSources: officialSources.length,
       },
       opportunities: opportunities.slice(0, 4),
-      watchlist: database.watchlist,
       lastUpdatedAt: database.meta.lastUpdatedAt,
     });
   } catch (error) {

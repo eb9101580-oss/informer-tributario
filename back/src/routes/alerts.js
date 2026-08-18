@@ -5,6 +5,10 @@ import { calculateScore, relevanceLabel } from '../services/scoring.js';
 
 export const alertsRouter = Router();
 
+function isOfficialRelevantAlert(alert) {
+  return alert.isDemo === false && alert.score >= 6 && /^https:\/\//i.test(alert.officialUrl || '') && Boolean(alert.provenance?.sourceId);
+}
+
 function normalizeAlert(payload, current = {}) {
   const score = payload.criteria ? calculateScore(payload.criteria) : (payload.score ?? current.score ?? 0);
   return {
@@ -22,6 +26,7 @@ alertsRouter.get('/', async (request, response, next) => {
     const database = await readDatabase();
     const term = search.toLocaleLowerCase('pt-BR').trim();
     const alerts = database.alerts
+      .filter(isOfficialRelevantAlert)
       .filter((alert) => !term || [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])]
         .join(' ').toLocaleLowerCase('pt-BR').includes(term))
       .filter((alert) => relevance === 'all' || alert.relevance === relevance)

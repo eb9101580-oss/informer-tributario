@@ -25,7 +25,6 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
         <div className="drawer__score"><strong>{String(alert.score).replace('.', ',')}</strong><span>/10 · {alert.relevance}</span></div>
         <div className="drawer__tags"><span>{alert.status}</span>{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
         <h2>{alert.title}</h2>
-        {alert.isDemo && <div className="demo-notice">Conteúdo demonstrativo. Não representa uma notícia ou orientação jurídica real.</div>}
 
         <section><h3>O que aconteceu</h3><p>{alert.summary}</p></section>
         <section><h3>O que mudou</h3><p>{alert.whatChanged}</p></section>
