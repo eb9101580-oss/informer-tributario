@@ -1,9 +1,63 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-18T19:42:39.394Z",
+    "lastUpdatedAt": "2026-08-18T20:12:52.134Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "GetInteiroTeorDoAcordao?num_registro=202600216147&dt_publicacao=12%2F06%2F2026",
+      "theme": "Direito Tributário",
+      "agency": "Superior Tribunal de Justiça",
+      "taxes": [
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Análise",
+      "kind": "Acórdão",
+      "impactType": "Risco",
+      "publishedAt": "2026-06-12T00:00:00Z",
+      "summary": "O Acórdão nega provimento ao Agravo Interno da FAZENDA NACIONAL, reafirmando a interpretação da expressão 'serviços hospitalares' como atividade direta da prestação de serviços no ambiente hospitalar, mesmo em consultórios médicos. A decisão rejeita a exigência de que a contribuinte desenvolva atividades em estabelecim",
+      "whatChanged": "Atribuição de direito à tributação com alíquotas reduzidas para serviços hospitalares em ambientes de terceiro, mesmo em consultórios médicos.",
+      "practicalImpact": "A decisão pode influenciar a tributação de empresas que prestam serviços hospitalares em consultórios, reforçando a vedação de alíquotas reduzidas em atividades não diretas.",
+      "officeAction": "Negado ao Agravo Interno",
+      "affectedProfiles": [
+        "Microempresas",
+        "Empresas de saúde"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Agravo Interno",
+        "period": "2026/0021614-7",
+        "action": "Negado",
+        "confidence": "baixo"
+      },
+      "id": "ab6661d2-f5f3-41cc-ae1e-9e821a8c829f",
+      "score": 7.4,
+      "relevance": "Relevante",
+      "officialUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202600216147&dt_publicacao=12%2F06%2F2026",
+      "isDemo": false,
+      "createdAt": "2026-08-18T20:12:52.133Z",
+      "updatedAt": "2026-08-18T20:12:52.133Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:1.7b",
+        "sourceCharacters": 21230,
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "discoveredBy": "stj-open-data",
+        "documentKind": "Inteiro teor de acórdão",
+        "discoveredAt": "2026-08-18T18:33:16.784Z"
+      }
+    },
     {
       "relevant": true,
       "title": "RECURSO ESPECIAL N. 2230583 - RS (2025/0031539-2) - STJ",
@@ -454,7 +508,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T20:00:06.124Z",
+        "discoveredAt": "2026-08-18T20:08:56.931Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -469,7 +523,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T20:00:06.124Z",
+        "discoveredAt": "2026-08-18T20:08:56.931Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -484,7 +538,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T20:00:06.124Z",
+        "discoveredAt": "2026-08-18T20:08:56.931Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -499,7 +553,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T20:00:06.124Z",
+        "discoveredAt": "2026-08-18T20:08:56.931Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -514,7 +568,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T20:00:06.124Z",
+        "discoveredAt": "2026-08-18T20:08:56.931Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -1100,10 +1154,12 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "2cf39968517f91971d7c1b22",
-        "status": "error",
-        "attempts": 2,
+        "status": "analyzed",
+        "attempts": 3,
         "error": "A análise do Ollama excedeu 3 minutos.",
-        "analyzedAt": "2026-08-18T19:57:40.546Z"
+        "analyzedAt": "2026-08-18T20:12:52.134Z",
+        "score": 7.4,
+        "alertId": "ab6661d2-f5f3-41cc-ae1e-9e821a8c829f"
       },
       {
         "title": "AgInt no AREsp 2906267 — PROCESSUAL CIVIL E TRIBUTÁRIO. EXECUÇÃO FISCAL. REDUÇÃO DE GARANTIA. PROGRAMA DE PARCELAMENTO INCENTIVADO. NEGATIVA DE PRESTAÇÃO JURISDICIONAL. INEXISTÊNCIA. INTERPRETAÇÃO DE DIREITO LOCAL. REEXAME FÁTICO-PROBATÓRIO. IMPOSSIBILIDADE. 1. A ausência de impugnaçã",
@@ -1519,6 +1575,98 @@
       }
     ],
     "runs": [
+      {
+        "id": "cdaba66a-6f02-4fa4-ad01-1df866abe3d2",
+        "trigger": "github-actions",
+        "startedAt": "2026-08-18T20:08:52.301Z",
+        "finishedAt": "2026-08-18T20:12:52.135Z",
+        "discovered": 5,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 17
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "26ac97e0-8837-4a41-a4d9-20a7389b006c",
         "trigger": "github-actions",
@@ -2166,7 +2314,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-18T20:05:15.035Z",
-    "nextRunAt": "2026-08-19T02:05:15.035Z"
+    "lastRunAt": "2026-08-18T20:12:52.135Z",
+    "nextRunAt": "2026-08-19T02:12:52.135Z"
   }
 }
