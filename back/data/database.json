@@ -1,9 +1,63 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-18T19:16:32.036Z",
+    "lastUpdatedAt": "2026-08-18T19:42:39.394Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "RECURSO ESPECIAL N. 2230583 - RS (2025/0031539-2) - STJ",
+      "theme": "PIS e COFINS - Conceito de insumo para crédito tributário",
+      "agency": "Superior Tribunal de Justiça (STJ)",
+      "taxes": [
+        "PIS",
+        "COFINS"
+      ],
+      "status": "Em andamento",
+      "kind": "Recurso Especial",
+      "impactType": "Informativo",
+      "publishedAt": "2026-06-12T00:00:00Z",
+      "summary": "O STJ negou provimento ao recurso especial da Global Distribuição de Bens de Consumo Ltda. sobre o conceito de insumo para crédito de PIS e COFINS, reafirmando que não há negativa de prestações jurisdicionais e que o reexame de provas não é viável em recurso especial (Súmula 7).",
+      "whatChanged": "O STJ confirmou a interpretação do conceito de insumo conforme as Leis 10.637/2002 e 10.833/2003 para fins de crédito de PIS e COFINS, sem distinção entre despesas impostas legalmente e outras.",
+      "practicalImpact": "Empresas devem revisar seus critérios de insumos para crédito tributário, evitando confundir julgamento desfavorável com negativa de prestações jurisdicionais.",
+      "officeAction": "Revisão de critérios de insumos para crédito de PIS e COFINS",
+      "affectedProfiles": [
+        "Empresas de distribuição de bens de consumo",
+        "Empresas que utilizam insumos para crédito tributário"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Revisão de critérios de insumos para crédito tributário",
+        "period": "2026",
+        "action": "Revisão de critérios de insumos para crédito de PIS e COFINS",
+        "confidence": "alto"
+      },
+      "id": "38b3f7c3-a134-4cdb-83d2-9d7f81347e18",
+      "score": 8,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202500315392&dt_publicacao=12%2F06%2F2026",
+      "isDemo": false,
+      "createdAt": "2026-08-18T19:42:39.373Z",
+      "updatedAt": "2026-08-18T19:42:39.373Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "sourceCharacters": 28383,
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "discoveredBy": "stj-open-data",
+        "documentKind": "Inteiro teor de acórdão",
+        "discoveredAt": "2026-08-18T18:33:16.784Z"
+      }
+    },
     {
       "relevant": true,
       "title": "RECURSO ESPECIAL N. 2191364 - RS (2025/0006377-3) - Embargos de Declaração em face de decisão que julgou Recurso Especial como representativo de controvérsia (Tema 1.373)",
@@ -400,7 +454,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:12:33.713Z",
+        "discoveredAt": "2026-08-18T19:39:08.010Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -415,7 +469,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:12:33.713Z",
+        "discoveredAt": "2026-08-18T19:39:08.010Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -430,7 +484,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:12:33.713Z",
+        "discoveredAt": "2026-08-18T19:39:08.010Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -445,7 +499,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:12:33.713Z",
+        "discoveredAt": "2026-08-18T19:39:08.010Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -460,7 +514,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:12:33.713Z",
+        "discoveredAt": "2026-08-18T19:39:08.010Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -932,8 +986,12 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "c99d7e09ee7a57a8f2516164",
-        "status": "analyzing",
-        "attempts": 1
+        "status": "analyzed",
+        "attempts": 2,
+        "error": "Análise retomada após reinício do servidor.",
+        "analyzedAt": "2026-08-18T19:42:39.394Z",
+        "score": 8,
+        "alertId": "38b3f7c3-a134-4cdb-83d2-9d7f81347e18"
       },
       {
         "title": "AgInt no AREsp 2273955 — PROCESSUAL CIVIL. TRIBUTÁRIO. AGRAVO INTERNO. AGRAVO EM RECURSO ESPECIAL. DECISÃO DE ADMISSIBILIDADE. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS. MANUTENÇÃO DA DECISÃO QUE NÃO CONHECEU DO RECURSO. PROVIMENTO NEGADO. 1. Para que o Superior Tribunal de Ju",
@@ -977,8 +1035,11 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "56b78e443fdaa3262414edb5",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-18T19:46:39.067Z",
+        "score": 8.2,
+        "alertId": null
       },
       {
         "title": "AgInt no AREsp 2796302 — PROCESSUAL CIVIL. TRIBUTÁRIO. RESPONSABILIDADE TRIBUTÁRIA. PENALIDADE. INSTITUIÇÃO MEDIANTE PORTARIA. IMPOSSIBILIDADE. PRINCÍPIO DA LEGALIDADE. REEXAME DE FATOS. INEXISTÊNCIA. ANÁLISE DE DIREITO LOCAL. INEXISTÊNCIA. PREQUESTIONAMENTO. REALIZAÇÃO. 1. A contrové",
@@ -1455,6 +1516,98 @@
     ],
     "runs": [
       {
+        "id": "d097f77f-67a6-40a0-b9d6-3e145d24023b",
+        "trigger": "startup",
+        "startedAt": "2026-08-18T19:39:04.551Z",
+        "finishedAt": "2026-08-18T19:46:39.076Z",
+        "discovered": 5,
+        "analyzed": 2,
+        "published": 1,
+        "discarded": 1,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 17
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
+      {
         "id": "7b134d37-4838-44b9-aed8-1c8675d18847",
         "trigger": "startup",
         "startedAt": "2026-08-18T18:48:50.019Z",
@@ -1732,7 +1885,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-18T18:56:15.571Z",
-    "nextRunAt": "2026-08-19T00:56:15.571Z"
+    "lastRunAt": "2026-08-18T19:46:39.076Z",
+    "nextRunAt": "2026-08-19T01:46:39.076Z"
   }
 }

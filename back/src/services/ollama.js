@@ -54,6 +54,7 @@ export function prepareDocumentText(text = '', limit = config.ollamaMaxInputChar
 }
 
 export async function analyzeWithOllama(document) {
+  if (config.analysisProvider === 'github') return analyzeWithGitHubModels(document);
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), config.ollamaTimeoutMs);
   const documentText = prepareDocumentText(document.text);
@@ -92,7 +93,46 @@ export async function analyzeWithOllama(document) {
   }
 }
 
+async function analyzeWithGitHubModels(document) {
+  if (!config.githubToken) throw new Error('GITHUB_TOKEN não foi disponibilizado para a análise na nuvem.');
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), config.ollamaTimeoutMs);
+  const documentText = prepareDocumentText(document.text);
+  try {
+    const response = await fetch('https://models.github.ai/inference/chat/completions', {
+      method: 'POST',
+      headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${config.githubToken}`, 'Content-Type': 'application/json' },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: config.githubModel,
+        temperature: 0.1,
+        max_tokens: 1400,
+        response_format: { type: 'json_schema', json_schema: { name: 'analise_tributaria', strict: true, schema: analysisSchema } },
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: `URL oficial: ${document.url}\nTítulo da página: ${document.title}\n\nConteúdo:\n${documentText}` },
+        ],
+      }),
+    });
+    if (!response.ok) {
+      const details = await response.text();
+      throw new Error(`GitHub Models respondeu com status ${response.status}: ${details.slice(0, 240)}`);
+    }
+    const result = await response.json();
+    return JSON.parse(result.choices?.[0]?.message?.content || '');
+  } catch (error) {
+    if (error.name === 'AbortError') throw new Error('A análise do GitHub Models excedeu o tempo limite.');
+    if (error instanceof SyntaxError) throw new Error('O GitHub Models devolveu uma análise em formato inválido.');
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export async function ollamaStatus() {
+  if (config.analysisProvider === 'github') {
+    return { available: Boolean(config.githubToken), model: config.githubModel, provider: 'GitHub Models', installed: true };
+  }
   try {
     const response = await fetch(`${config.ollamaUrl}/api/tags`, { signal: AbortSignal.timeout(2500) });
     if (!response.ok) return { available: false, model: config.ollamaModel };
