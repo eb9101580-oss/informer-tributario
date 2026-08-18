@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: tax-monitor-main
@@ -16,11 +15,10 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
-      ANALYSIS_PROVIDER: github
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_MODEL: openai/gpt-4o-mini
+      ANALYSIS_PROVIDER: ollama
+      OLLAMA_MODEL: qwen3:4b
       PYTHON_COMMAND: python3
       MONITOR_ENABLED: 'false'
       MONITOR_LOOKBACK_DAYS: '7'
@@ -28,19 +26,19 @@ jobs:
       OLLAMA_TIMEOUT_MS: '180000'
     steps:
       - name: Baixar o projeto
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
 
       - name: Preparar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: back/package-lock.json
 
       - name: Preparar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: pip
@@ -50,6 +48,16 @@ jobs:
         run: |
           npm ci --prefix back
           python -m pip install -r back/scraper/requirements.txt
+
+      - name: Preparar analisador local
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve > /tmp/ollama.log 2>&1 &
+          for attempt in {1..20}; do
+            curl --fail --silent http://127.0.0.1:11434/api/tags && break
+            sleep 2
+          done
+          ollama pull "$OLLAMA_MODEL"
 
       - name: Consultar, analisar e registrar fontes oficiais
         run: node back/scripts/run-monitor.js
