@@ -2,6 +2,7 @@
   "name": "informer-tributario",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "setup": "npm install && npm run install:all && python -m pip install -r back/scraper/requirements.txt",
     "install:all": "npm --prefix back install && npm --prefix front install",

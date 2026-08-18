@@ -6,3 +6,4 @@ back/data/*.tmp
 .vercel/
 __pycache__/
 *.py[cod]
+.env.local
