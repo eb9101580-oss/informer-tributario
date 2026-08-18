@@ -344,7 +344,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T21:54:34.319Z",
+        "discoveredAt": "2026-08-18T22:34:09.145Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -360,7 +360,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T21:54:34.319Z",
+        "discoveredAt": "2026-08-18T22:34:09.145Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -376,7 +376,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T21:54:34.319Z",
+        "discoveredAt": "2026-08-18T22:34:09.145Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -392,7 +392,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T21:54:34.319Z",
+        "discoveredAt": "2026-08-18T22:34:09.145Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -408,8 +408,40 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T21:54:34.319Z",
+        "discoveredAt": "2026-08-18T22:34:09.145Z",
         "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "MPV 01340 2026 — Autoriza a concessão de subvenção econômica à comercialização de óleo diesel de uso rodoviário no território nacional por produtores e importadores de óleo diesel, dispõe sobre o imposto de exportação sobre óleo diesel e altera a Lei nº 9.847, de 26 de outubro de 1999.",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/173051",
+        "publishedAt": "2026-03-12",
+        "documentKind": "Matéria legislativa",
+        "externalId": "173051",
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "sourceAcronym": "SF",
+        "sourceType": "official",
+        "discoveryMethod": "senado-api",
+        "discoveredAt": "2026-08-18T22:34:06.333Z",
+        "id": "23daa5796754d582f0d4f9be",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "MPV 01341 2026 — Dispõe sobre o prazo de isenção, redução ou suspensão de tributos previstos nos regimes aduaneiros especiais de drawback no caso de importação de cacau.",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/173052",
+        "publishedAt": "2026-03-12",
+        "documentKind": "Matéria legislativa",
+        "externalId": "173052",
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "sourceAcronym": "SF",
+        "sourceType": "official",
+        "discoveryMethod": "senado-api",
+        "discoveredAt": "2026-08-18T22:34:06.333Z",
+        "id": "eabf62c733974fbec026dd12",
         "status": "pending",
         "attempts": 0
       },
@@ -1433,6 +1465,106 @@
       }
     ],
     "runs": [
+      {
+        "id": "c57055fd-9b7b-47c4-b785-bb08af31c8c7",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-18T22:34:02.417Z",
+        "finishedAt": "2026-08-18T22:35:11.875Z",
+        "discovered": 7,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 3,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 19
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "4bce8dd8-1dc4-4c55-8762-7993d4de55c8",
         "trigger": "github-actions-discovery",
@@ -2750,7 +2882,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-18T21:54:38.275Z",
-    "nextRunAt": "2026-08-19T03:54:38.275Z"
+    "lastRunAt": "2026-08-18T22:35:11.875Z",
+    "nextRunAt": "2026-08-19T04:35:11.875Z"
   }
 }
