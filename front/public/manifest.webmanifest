@@ -1,0 +1,14 @@
+{
+  "name": "Informer - Inteligência Tributária",
+  "short_name": "Informer",
+  "description": "Radar brasileiro de decisões e informações tributárias obtidas de fontes oficiais.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#173b37",
+  "lang": "pt-BR",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/informer-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

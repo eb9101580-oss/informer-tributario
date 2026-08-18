@@ -350,9 +350,9 @@ button { cursor: pointer; }
 }
 
 @media (max-width: 620px) {
-  .topbar { padding: 0 16px; }
+  .topbar { padding: env(safe-area-inset-top) 16px 0; min-height: calc(58px + env(safe-area-inset-top)); }
   .topbar__date span, .environment { display: none; }
-  .page { padding: 23px 15px; }
+  .page { padding: 23px max(15px, env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) max(15px, env(safe-area-inset-left)); }
   .page-header { align-items: start; flex-direction: column; margin-bottom: 21px; }
   .page-header h1 { font-size: 29px; }
   .refresh-button { align-self: stretch; justify-content: center; }
@@ -397,4 +397,7 @@ button { cursor: pointer; }
   .monitor-actions { flex-direction: column; }
   .monitor-actions button, .monitor-actions a { justify-content: center; }
   .candidate { grid-template-columns: 70px 1fr auto; }
+  button, a, input { min-height: 44px; }
+  .alert-card { touch-action: manipulation; }
+  .drawer { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
 }
