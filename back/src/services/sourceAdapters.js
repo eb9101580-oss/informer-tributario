@@ -100,6 +100,34 @@ async function discoverStj() {
   });
 }
 
+function decodeXml(value = '') {
+  return value
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim();
+}
+
+function rssValue(item, tag) {
+  return decodeXml(item.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'))?.[1] || '');
+}
+
+async function discoverRss(source) {
+  const response = await fetch(source.discoveryUrl, { headers: { Accept: 'application/rss+xml, application/xml;q=0.9' }, signal: AbortSignal.timeout(30000) });
+  if (!response.ok) throw new Error(`Feed respondeu com status ${response.status}.`);
+  const xml = await response.text();
+  return [...xml.matchAll(/<item(?:\s[^>]*)?>([\s\S]*?)<\/item>/gi)].flatMap((match) => {
+    const item = match[1];
+    const title = rssValue(item, 'title');
+    const description = rssValue(item, 'description');
+    const url = rssValue(item, 'link');
+    if (!url.startsWith('https://') || !isTaxRelated(title, description, url)) return [];
+    const published = rssValue(item, 'pubDate');
+    const publishedAt = Number.isNaN(Date.parse(published)) ? '' : new Date(published).toISOString();
+    return [{ title, url: cleanUrl(url), publishedAt, documentKind: 'Notícia jornalística especializada' }];
+  }).slice(0, 60);
+}
+
 async function discoverLinks(source) {
   const result = await discoverOfficialLinks(source.discoveryUrl || source.url);
   return result.links.filter((item) => isCandidateEligible(source.id, item.title, item.url)).slice(0, 60).map((item) => ({
@@ -112,8 +140,9 @@ export async function discoverSourceCandidates(source, lookbackDays = 7) {
   if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays);
   else if (source.adapter === 'senado-api') items = await discoverSenado(source, lookbackDays);
   else if (source.adapter === 'stj-open-data') items = await discoverStj();
+  else if (source.adapter === 'rss') items = await discoverRss(source);
   else items = await discoverLinks(source);
-  return items.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  return items.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
 }
 
 export const taxTerms = TAX_TERMS;

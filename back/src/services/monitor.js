@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { config } from '../config.js';
-import { officialSources } from '../data/officialSources.js';
+import { monitoredSources } from '../data/officialSources.js';
 import { collectOfficialPage } from './collector.js';
 import { analyzeWithOllama } from './ollama.js';
 import { calculateScore, relevanceLabel } from './scoring.js';
@@ -33,6 +33,7 @@ function makeAlert(analysis, document, candidate) {
     provenance: {
       collector: 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, sourceCharacters: document.characters,
       sourceId: candidate.sourceId, sourceName: candidate.sourceName, discoveredBy: candidate.discoveryMethod,
+      sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
     },
   };
@@ -65,7 +66,7 @@ export async function getMonitorSnapshot() {
     analyzed: monitor.candidates.filter((item) => item.status === 'analyzed').length,
     discarded: monitor.candidates.filter((item) => item.status === 'discarded').length,
     errors: monitor.candidates.filter((item) => item.status === 'error').length,
-    sources: officialSources.length,
+    sources: monitoredSources.length,
   };
 }
 
@@ -82,13 +83,13 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       ...database,
       monitor: { ...monitorData(database), candidates: monitorData(database).candidates.map((item) => item.status === 'analyzing' ? { ...item, status: 'pending', error: 'Análise retomada após reinício do servidor.' } : item) },
     }));
-    const results = await mapWithConcurrency(officialSources, 3, async (source) => {
+    const results = await mapWithConcurrency(monitoredSources, 3, async (source) => {
       runtime.currentSource = source.acronym;
       return { source, items: await discoverSourceCandidates(source, config.monitorLookbackDays) };
     });
     const found = [];
     results.forEach((result, index) => {
-      const source = officialSources[index];
+      const source = monitoredSources[index];
       if (result.status === 'fulfilled') {
         found.push(...result.value.items);
         run.sources.push({ id: source.id, acronym: source.acronym, status: 'ok', found: result.value.items.length });

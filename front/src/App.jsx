@@ -20,7 +20,7 @@ const pageTitles = {
   alerts: ['Central de alertas', 'Acontecimentos que pedem atenção do escritório.'],
   opportunities: ['Radar de oportunidades', 'Possibilidades de atuação que merecem análise jurídica.'],
   collector: ['Coletor inteligente', 'Transforme documentos oficiais em análises estruturadas.'],
-  sources: ['Fontes oficiais', 'Os canais primários que alimentam o radar tributário.'],
+  sources: ['Fontes monitoradas', 'Canais oficiais e jornalísticos que alimentam o radar tributário.'],
   feedback: ['Aprendizado de relevância', 'Seu feedback ajuda o radar a priorizar melhor.'],
 };
 
@@ -148,7 +148,7 @@ export default function App() {
         </section>
 
         <section className="panel overview-feed">
-          <div className="panel__heading"><div><h2>Feed oficial personalizado</h2><p>Maior nota primeiro, ajustado pelos seus votos de relevância</p></div><span className="live-dot" /></div>
+          <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Decisões e notícias com maior nota primeiro, ajustadas pelos seus votos</p></div><span className="live-dot" /></div>
           <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
           {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhum alerta oficial publicado</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
         </section>
@@ -164,7 +164,7 @@ export default function App() {
         <header className="topbar">
           <button className="icon-button menu-button" onClick={() => setSidebarOpen(true)}><Menu /></button>
           <div className="topbar__date"><CalendarDays size={17} /><span>{new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }).format(new Date())}</span></div>
-          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Fontes oficiais</span><button className="icon-button notification"><BellRing size={20} /><i /></button></div>
+          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Fontes verificadas</span><button className="icon-button notification"><BellRing size={20} /><i /></button></div>
         </header>
         <div className="page">
           <div className="page-header">

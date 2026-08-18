@@ -7,7 +7,7 @@ const items = [
   { icon: Bell, label: 'Alertas', id: 'alerts' },
   { icon: Bookmark, label: 'Oportunidades', id: 'opportunities' },
   { icon: Bot, label: 'Coletor IA', id: 'collector' },
-  { icon: Landmark, label: 'Fontes oficiais', id: 'sources' },
+  { icon: Landmark, label: 'Fontes monitoradas', id: 'sources' },
   { icon: MessageSquareText, label: 'Feedbacks', id: 'feedback' },
 ];
 

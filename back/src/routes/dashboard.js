@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { readDatabase } from '../services/store.js';
-import { officialSources } from '../data/officialSources.js';
+import { monitoredSources } from '../data/officialSources.js';
 
 export const dashboardRouter = Router();
 
@@ -19,7 +19,7 @@ dashboardRouter.get('/', async (_request, response, next) => {
         relevant: relevant.length,
         urgent: urgent.length,
         opportunities: opportunities.length,
-        monitoredSources: officialSources.length,
+        monitoredSources: monitoredSources.length,
       },
       opportunities: opportunities.slice(0, 4),
       lastUpdatedAt: database.meta.lastUpdatedAt,

@@ -41,7 +41,7 @@ export function MonitorPage({ onAlerts }) {
       </div>
       {error && <div className="collector-error"><AlertTriangle size={17} />{error}</div>}
       <div className="monitor-metrics">
-        <div><FileSearch /><strong>{status.sources}</strong><span>fontes oficiais</span></div>
+        <div><FileSearch /><strong>{status.sources}</strong><span>fontes monitoradas</span></div>
         <div><Clock3 /><strong>{status.queued}</strong><span>documentos na fila</span></div>
         <div><CheckCircle2 /><strong>{status.analyzed}</strong><span>alertas reais publicados</span></div>
         <div><AlertTriangle /><strong>{status.errors}</strong><span>itens com erro</span></div>

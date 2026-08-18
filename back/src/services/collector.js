@@ -12,6 +12,7 @@ const allowedDomains = [
   'carf.economia.gov.br', 'fazenda.gov.br', 'confaz.fazenda.gov.br', 'in.gov.br',
   'camara.leg.br', 'senado.leg.br', 'sefaz.pr.gov.br', 'trf1.jus.br', 'trf2.jus.br',
   'trf3.jus.br', 'trf4.jus.br', 'trf5.jus.br', 'trf6.jus.br',
+  'jota.info',
 ];
 
 export function validateOfficialUrl(rawUrl) {
@@ -31,7 +32,10 @@ export function collectOfficialPage(url) {
 
 function runPython(script, url, timeoutMs, timeoutMessage) {
   return new Promise((resolvePromise, reject) => {
-    const child = spawn(config.pythonCommand, [script, url], { windowsHide: true });
+    const child = spawn(config.pythonCommand, [script, url], {
+      windowsHide: true,
+      env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
+    });
     let stdout = '';
     let stderr = '';
     const timer = setTimeout(() => {

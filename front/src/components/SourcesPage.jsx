@@ -22,7 +22,7 @@ export function SourcesPage({ onCollector }) {
           const Icon = sourceIcons[source.id] || Building2;
           return (
             <article className={`source-card source-card--${source.color}`} key={source.id}>
-              <div className="source-card__top"><span><Icon /></span><b>{source.acronym}</b><em>Prioridade {source.priority}</em></div>
+              <div className="source-card__top"><span><Icon /></span><b>{source.acronym}</b><em>{source.sourceType === 'journalistic' ? 'Fonte jornalística' : `Prioridade ${source.priority}`}</em></div>
               <small>{source.category}</small><h3>{source.name}</h3><p>{source.description}</p>
               <div className="source-focus">{source.focus.map((item) => <span key={item}>{item}</span>)}</div>
               <div className="source-card__footer"><span><CalendarClock size={15} /> {source.monitoring}</span><a href={source.url} target="_blank" rel="noreferrer">Abrir fonte <ExternalLink size={15} /></a></div>

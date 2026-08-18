@@ -55,3 +55,14 @@ export const officialSources = [
     url, discoveryUrl: url, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 6 horas', priority: 8 + index, color: 'blue', adapter: 'links',
   })),
 ];
+
+export const complementarySources = [
+  {
+    id: 'jota', name: 'JOTA', acronym: 'JOTA', category: 'Imprensa jurídica especializada', sourceType: 'journalistic',
+    description: 'Notícias e análises sobre direito tributário, tribunais, CARF, Congresso e reforma tributária.',
+    url: 'https://www.jota.info/', discoveryUrl: 'https://portal.jota.info/feed',
+    focus: ['Direito tributário', 'STF e STJ', 'CARF e reforma tributária'], monitoring: 'A cada 10 minutos', priority: 14, color: 'purple', adapter: 'rss',
+  },
+];
+
+export const monitoredSources = [...officialSources, ...complementarySources];

@@ -100,6 +100,7 @@ button { cursor: pointer; }
 .priority--medium { --soft: #eef2df; --accent: #607329; }
 .priority--low { --soft: #edf1f0; --accent: #6b7977; }
 .status { background: #eef3f2; color: #687876; }
+.source-kind { color: #66528e; background: #f0ecf8; font-size: 8px; text-transform: uppercase; font-weight: 800; letter-spacing: .05em; padding: 4px 7px; border-radius: 4px; }
 .alert-card h3 { font-size: 13px; line-height: 1.35; color: #213735; margin: 8px 0 5px; }
 .alert-card p { font-size: 11px; line-height: 1.45; color: #6e7b7a; margin: 0 0 9px; }
 .alert-card__footer { display: flex; align-items: center; flex-wrap: wrap; gap: 11px; color: #8b9796; font-size: 9px; }
