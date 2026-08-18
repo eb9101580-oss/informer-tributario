@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 45
     env:
       ANALYSIS_PROVIDER: ollama
-      OLLAMA_MODEL: qwen3:4b
+      OLLAMA_MODEL: qwen3:1.7b
       PYTHON_COMMAND: python3
       MONITOR_ENABLED: 'false'
       MONITOR_LOOKBACK_DAYS: '7'
