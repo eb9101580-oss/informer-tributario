@@ -454,7 +454,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:47:32.578Z",
+        "discoveredAt": "2026-08-18T19:51:34.226Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -469,7 +469,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:47:32.578Z",
+        "discoveredAt": "2026-08-18T19:51:34.226Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -484,7 +484,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:47:32.578Z",
+        "discoveredAt": "2026-08-18T19:51:34.226Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -499,7 +499,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:47:32.578Z",
+        "discoveredAt": "2026-08-18T19:51:34.226Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -514,7 +514,7 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-18T19:47:32.578Z",
+        "discoveredAt": "2026-08-18T19:51:34.226Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -1084,9 +1084,9 @@
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "3a3a2871d936acec0acbe8cb",
         "status": "error",
-        "attempts": 1,
-        "error": "GitHub Models respondeu com status 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "analyzedAt": "2026-08-18T19:47:44.004Z"
+        "attempts": 2,
+        "error": "A análise do Ollama excedeu 3 minutos.",
+        "analyzedAt": "2026-08-18T19:54:38.543Z"
       },
       {
         "title": "AgInt no REsp 2254806 — TRIBUTÁRIO. IRPJ E CSLL. BASE DE CÁLCULO REDUZIDA. PRESTADORA DE SERVIÇOS HOSPITALARES. ATIVIDADE. AMBIENTE DE TERCEIRO. VALIDADE. 1. A Primeira Seção do Superior Tribunal de Justiça, no julgamento do REsp 1116399/BA, submetido ao regime dos recursos repetitiv",
@@ -1101,9 +1101,9 @@
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "2cf39968517f91971d7c1b22",
         "status": "error",
-        "attempts": 1,
-        "error": "GitHub Models respondeu com status 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n",
-        "analyzedAt": "2026-08-18T19:47:45.058Z"
+        "attempts": 2,
+        "error": "A análise do Ollama excedeu 3 minutos.",
+        "analyzedAt": "2026-08-18T19:57:40.546Z"
       },
       {
         "title": "AgInt no AREsp 2906267 — PROCESSUAL CIVIL E TRIBUTÁRIO. EXECUÇÃO FISCAL. REDUÇÃO DE GARANTIA. PROGRAMA DE PARCELAMENTO INCENTIVADO. NEGATIVA DE PRESTAÇÃO JURISDICIONAL. INEXISTÊNCIA. INTERPRETAÇÃO DE DIREITO LOCAL. REEXAME FÁTICO-PROBATÓRIO. IMPOSSIBILIDADE. 1. A ausência de impugnaçã",
@@ -1519,6 +1519,98 @@
       }
     ],
     "runs": [
+      {
+        "id": "d6f12f9e-67cf-4280-b03c-3704d2b1af83",
+        "trigger": "github-actions",
+        "startedAt": "2026-08-18T19:51:29.502Z",
+        "finishedAt": "2026-08-18T19:57:40.548Z",
+        "discovered": 5,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 3,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 17
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "c1984cd7-dd96-48e4-999a-0f00042b3b8f",
         "trigger": "github-actions",
@@ -1981,7 +2073,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-18T19:47:45.059Z",
-    "nextRunAt": "2026-08-19T01:47:45.059Z"
+    "lastRunAt": "2026-08-18T19:57:40.548Z",
+    "nextRunAt": "2026-08-19T01:57:40.548Z"
   }
 }
