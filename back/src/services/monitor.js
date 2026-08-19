@@ -56,7 +56,7 @@ function sourceTypeRank(candidate) {
 
 function freshnessRank(candidate, now = Date.now()) {
   const discoveredAt = Date.parse(candidate.discoveredAt || '');
-  return Number.isFinite(discoveredAt) && now - discoveredAt <= 24 * 60 * 60 * 1000 ? 0 : 1;
+  return Number.isFinite(discoveredAt) && now - discoveredAt <= 2 * 60 * 60 * 1000 ? 0 : 1;
 }
 
 function sectionRank(candidate) {
