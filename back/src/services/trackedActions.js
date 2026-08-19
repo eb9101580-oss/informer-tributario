@@ -67,6 +67,14 @@ function sanitizeTracker(tracker = {}) {
   return { ...tracker, sourceUrl, publicUrl: sourceUrl, movementAlerts };
 }
 
+export function hasTrackedActionStateChanged(previous = {}, next = {}) {
+  const stableState = (tracker) => {
+    const { lastCheckedAt, updatedAt, ...state } = tracker;
+    return state;
+  };
+  return JSON.stringify(stableState(previous)) !== JSON.stringify(stableState(next));
+}
+
 function encryptionKey() {
   return createHash('sha256').update(config.trackedActionsEncryptionKey).digest();
 }
@@ -298,11 +306,12 @@ export async function refreshTrackedAction(id) {
       lastError: null,
     };
     current.trackers[index] = updated;
-    await writeTrackedActions(current);
+    if (hasTrackedActionStateChanged(tracker, updated)) await writeTrackedActions(current);
     return updated;
   } catch (error) {
-    current.trackers[index] = { ...tracker, lastCheckedAt: checkedAt, updatedAt: checkedAt, lastError: error.message };
-    if (actionsPersistenceConfigured()) await writeTrackedActions(current);
+    const failed = { ...tracker, lastCheckedAt: checkedAt, updatedAt: checkedAt, lastError: error.message };
+    current.trackers[index] = failed;
+    if (actionsPersistenceConfigured() && hasTrackedActionStateChanged(tracker, failed)) await writeTrackedActions(current);
     throw error;
   }
 }
