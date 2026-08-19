@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID, createCipheriv, createDecipheriv, createHash, randomBytes } from 'node:crypto';
 import { config } from '../config.js';
-import { normalizeCourt, queryDataJud } from './datajud.js';
+import { normalizeCourt, publicSourceUrl, queryDataJud } from './datajud.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const localPath = resolve(here, '../../data/tracked-actions.json');
@@ -13,7 +13,7 @@ const githubPath = 'back/data/tracked-actions.json';
 function actionMovementAlert(tracker, result, movement) {
   const now = new Date().toISOString();
   const tribunal = movement.court || result.court?.toUpperCase() || tracker.court?.toUpperCase();
-  const sourceUrl = result.sourceUrl || `https://api-publica.datajud.cnj.jus.br/api_publica_${tracker.court}/_search`;
+  const sourceUrl = publicSourceUrl(result.court || tracker.court, tracker.query, result.sourceUrl);
   return {
     id: `action-${tracker.id}-${movement.id}`,
     title: `${tracker.label}: ${movement.name}`,
@@ -51,6 +51,20 @@ function actionMovementAlert(tracker, result, movement) {
     },
     sections: [],
   };
+}
+
+function sanitizeTracker(tracker = {}) {
+  const sourceUrl = publicSourceUrl(tracker.court, tracker.query, tracker.sourceUrl);
+  const movementAlerts = (tracker.movementAlerts || []).map((alert) => {
+    const officialUrl = publicSourceUrl(tracker.court, tracker.query, alert.officialUrl);
+    const collectorUrl = publicSourceUrl(tracker.court, tracker.query, alert.provenance?.collectorUrl);
+    return {
+      ...alert,
+      officialUrl,
+      provenance: alert.provenance ? { ...alert.provenance, collectorUrl } : alert.provenance,
+    };
+  });
+  return { ...tracker, sourceUrl, publicUrl: sourceUrl, movementAlerts };
 }
 
 function encryptionKey() {
@@ -157,8 +171,8 @@ export function actionsStatus() {
 }
 
 export async function readTrackedActions() {
-  if (config.serverless && config.githubToken) return (await readGithub()).data;
-  return readLocal();
+  const data = config.serverless && config.githubToken ? (await readGithub()).data : await readLocal();
+  return { ...data, trackers: data.trackers.map(sanitizeTracker) };
 }
 
 async function writeTrackedActions(data) {
@@ -268,7 +282,8 @@ export async function refreshTrackedAction(id) {
     error.statusCode = 404;
     throw error;
   }
-  const tracker = current.trackers[index];
+  const tracker = sanitizeTracker(current.trackers[index]);
+  current.trackers[index] = tracker;
   const checkedAt = new Date().toISOString();
   try {
     const result = await queryDataJud(tracker);

@@ -51,6 +51,38 @@ export function normalizeProcessNumber(value) {
   return digits.length === 20 ? digits : '';
 }
 
+// Endpoints do DataJud são uma API técnica autenticada e nunca devem ser
+// apresentados como links para o usuário. Estes são os portais públicos dos
+// tribunais para conferência manual do processo.
+const PUBLIC_COURT_PORTALS = {
+  stf: 'https://portal.stf.jus.br/processos/',
+  stj: 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/',
+  trf1: 'https://processual.trf1.jus.br/consultaProcessual/',
+  trf2: 'https://www10.trf2.jus.br/consultas/',
+  trf3: 'https://web.trf3.jus.br/consultas/Internet/ConsultaProcessual/Processo',
+  trf4: 'https://www.trf4.jus.br/trf4/consultas/consulta-processual',
+  trf5: 'https://pje.trf5.jus.br/pje/ConsultaPublica/listView.seam',
+  trf6: 'https://www.trf6.jus.br/consultas/consulta-processual/',
+};
+
+const CNJ_PUBLIC_PORTAL = 'https://www.cnj.jus.br/consultas-publicas/';
+
+export function isDataJudApiUrl(value) {
+  return /^https?:\/\/api-publica\.datajud\.cnj\.jus\.br\//i.test(String(value || '').trim());
+}
+
+export function publicCourtUrl(court, query = '') {
+  const requestedCourt = String(court || '').trim().toLowerCase();
+  const inferredCourt = inferCourtFromProcessNumber(query);
+  const effectiveCourt = inferredCourt || requestedCourt;
+  return PUBLIC_COURT_PORTALS[effectiveCourt] || CNJ_PUBLIC_PORTAL;
+}
+
+export function publicSourceUrl(court, query = '', candidate = '') {
+  const source = String(candidate || '').trim();
+  return source && !isDataJudApiUrl(source) ? source : publicCourtUrl(court, query);
+}
+
 export function inferCourtFromProcessNumber(value) {
   const digits = String(value || '').replace(/\D/g, '');
   if (digits.length !== 20) return null;
@@ -333,7 +365,7 @@ export async function queryDataJud(tracker) {
       }
       throw fail(`DataJud recusou a consulta (${detail}).`, response.status === 401 || response.status === 403 ? 502 : response.status);
     }
-    return { ...summarizeDataJudResponse(body, court), court };
+    return { ...summarizeDataJudResponse(body, court), court, sourceUrl: publicCourtUrl(court, query) };
   } catch (error) {
     if (error.name === 'AbortError') throw fail('A consulta ao DataJud excedeu 25 segundos.', 504);
     if (error.statusCode) throw error;

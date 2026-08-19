@@ -9,9 +9,21 @@ function formatDate(value, withTime = true) {
   return new Intl.DateTimeFormat('pt-BR', withTime ? { dateStyle: 'short', timeStyle: 'short' } : { dateStyle: 'short' }).format(date);
 }
 
-function sourceUrl(court) {
-  if (court === 'stf') return 'https://portal.stf.jus.br/processos/';
-  return `https://api-publica.datajud.cnj.jus.br/api_publica_${court}/_search`;
+const PUBLIC_COURT_PORTALS = {
+  stf: 'https://portal.stf.jus.br/processos/',
+  stj: 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/',
+};
+
+function publicSourceUrl(item) {
+  const candidate = item.publicUrl || item.sourceUrl || '';
+  if (candidate && !/api-publica\.datajud\.cnj\.jus\.br/i.test(candidate)) return candidate;
+  return PUBLIC_COURT_PORTALS[item.court] || 'https://www.cnj.jus.br/consultas-publicas/';
+}
+
+function sourceLabel(item) {
+  if (item.court === 'stf') return 'Abrir processo oficial do STF';
+  if (item.court === 'stj') return 'Abrir consulta pública do STJ';
+  return `Abrir consulta pública do ${item.court?.toUpperCase()}`;
 }
 
 export function ActionsPage() {
@@ -136,7 +148,7 @@ export function ActionsPage() {
             {item.lastError && <p className="tracked-action__error"><AlertCircle size={14} />{item.lastError}</p>}
             {item.latestMovement && <div className="latest-movement"><small>ÚLTIMA MOVIMENTAÇÃO · {formatDate(item.latestMovement.date)}</small><strong>{item.latestMovement.name}</strong>{item.latestMovement.complement && <p>{item.latestMovement.complement}</p>}<span>{item.latestMovement.processNumber || 'Tema consultado'}{item.latestMovement.court ? ` · ${item.latestMovement.court}` : ''}</span></div>}
             {!!item.movements?.length && <details><summary>Ver histórico ({item.movements.length})</summary><ol className="movement-history">{item.movements.slice(0, 12).map((movement) => <li key={movement.id}><time>{formatDate(movement.date)}</time><div><strong>{movement.name}</strong>{movement.complement && <small>{movement.complement}</small>}</div></li>)}</ol></details>}
-            <a className="tracked-action__source" href={item.sourceUrl || sourceUrl(item.court)} target="_blank" rel="noreferrer">{item.court === 'stf' ? 'Abrir processo oficial do STF' : `Abrir índice oficial do ${item.court?.toUpperCase()}`} <ExternalLink size={12} /></a>
+            <a className="tracked-action__source" href={publicSourceUrl(item)} target="_blank" rel="noreferrer">{sourceLabel(item)} <ExternalLink size={12} /></a>
           </article>
         ))}
       </div>
