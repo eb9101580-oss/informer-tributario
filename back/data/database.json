@@ -515,7 +515,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -532,7 +532,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -549,7 +549,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -566,7 +566,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -583,7 +583,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -600,7 +600,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -617,7 +617,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -634,7 +634,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -651,7 +651,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -668,7 +668,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -685,8 +685,118 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:47:54.741Z",
+        "discoveredAt": "2026-08-19T14:51:30.787Z",
         "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Ajustes SINIEF 2026 — atualização diária",
+        "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/2026?informer_snapshot=2026-08-19",
+        "collectionUrl": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/2026",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Índice oficial de Ajustes SINIEF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "fallbackReason": "A descoberta de links excedeu 60 segundos.",
+        "sourceId": "confaz-ajustes",
+        "sourceName": "CONFAZ - Ajustes SINIEF",
+        "sourceAcronym": "CONFAZ",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:52:27.388Z",
+        "id": "d187b1386e5d551cbffa0bfa",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD Contribuições 1.35",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais/guia_pratico_efd_contribuicoes_versao_1_35-18_06_2021.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:51:32.003Z",
+        "id": "0ccc96b30535f8bfe43e7174",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual de Escrituração da EFD-Contribuições - PJ do Lucro Presumido - PVA Versão 2.04",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais/manual-de-escrituracao-da-efd-contribuicoes-pj-do-lucro-presumido-pva-versao-2-04.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:51:32.003Z",
+        "id": "dd161b6f984b24f9f199e294",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "IVA: IBS e CBS Receita prepara Instrução Normativa para detalhar uso de créditos de PIS/Cofins na CBS Últimas notícias Fisco deve adiar prazo de desistência do Simples híbrido A reforma tributária não falha na lei, mas nas pessoas Selma Casagrande assume diretoria comercial e reforça estratégia de c",
+        "url": "https://www.reformatributaria.com/reforma-tributaria-nas-eleicoes/eleicoes-entenda-o-que-os-candidatos-a-presidente-propoem-para-a-reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:51:42.331Z",
+        "id": "86b47075c7d6f14a7853da85",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Marcelo Braz Fonseca é o novo sócio da área tributária do Cescon Barrieu",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/marcelo-braz-fonseca-e-o-novo-socio-da-area-tributaria-do-cescon-barrieu/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:51:42.331Z",
+        "id": "fc28af6368ddb416cb806771",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Arts. 228 e 233, §10 da LC 214/25: qual a alíquota de IBS/CBS aplicável às corretoras de seguros nos anos de transição?",
+        "url": "https://www.reformatributaria.com/opiniao/arts-228-e-233-10-da-lc-214-25-qual-a-aliquota-de-ibs-cbs-aplicavel-as-corretoras-de-seguros-nos-anos-de-transicao/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:51:42.331Z",
+        "id": "9e0f53bed532a7483cd58c2a",
         "status": "pending",
         "attempts": 0
       },
@@ -9491,6 +9601,237 @@
     ],
     "runs": [
       {
+        "id": "9b4794ba-3fe5-4d91-9284-913c42044583",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T14:51:16.801Z",
+        "finishedAt": "2026-08-19T14:52:27.410Z",
+        "discovered": 17,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 17
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1
+          }
+        ]
+      },
+      {
         "id": "78d70805-13a0-4ca3-bea7-ada6ac7da681",
         "trigger": "github-actions-discovery",
         "startedAt": "2026-08-19T14:47:34.927Z",
@@ -14215,7 +14556,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T14:48:48.655Z",
-    "nextRunAt": "2026-08-19T20:48:48.655Z"
+    "lastRunAt": "2026-08-19T14:52:27.410Z",
+    "nextRunAt": "2026-08-19T20:52:27.410Z"
   }
 }
