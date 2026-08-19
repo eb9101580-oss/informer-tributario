@@ -6,6 +6,7 @@ import { config } from '../config.js';
 const here = dirname(fileURLToPath(import.meta.url));
 const scriptPath = resolve(here, '../../scraper/collector.py');
 const discoveryScriptPath = resolve(here, '../../scraper/discover.py');
+const stfJurisprudenceScriptPath = resolve(here, '../../scraper/stf_jurisprudence.py');
 
 const allowedDomains = [
   'stf.jus.br', 'stj.jus.br', 'gov.br', 'receita.economia.gov.br', 'pgfn.gov.br',
@@ -28,13 +29,23 @@ export function validateOfficialUrl(rawUrl) {
   return parsed.toString();
 }
 
-export function collectOfficialPage(url) {
-  return runPython(scriptPath, url, 60000, 'A coleta excedeu o limite de 60 segundos.');
+export async function collectOfficialPage(url) {
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      return await runPython(scriptPath, url, 60000, 'A coleta excedeu o limite de 60 segundos.');
+    } catch (error) {
+      lastError = error;
+      if (attempt < 3) await new Promise((resolvePromise) => setTimeout(resolvePromise, attempt * 1200));
+    }
+  }
+  throw lastError;
 }
 
-function runPython(script, url, timeoutMs, timeoutMessage) {
+function runPython(script, input, timeoutMs, timeoutMessage) {
   return new Promise((resolvePromise, reject) => {
-    const child = spawn(config.pythonCommand, [script, url], {
+    const args = Array.isArray(input) ? input : [input];
+    const child = spawn(config.pythonCommand, [script, ...args], {
       windowsHide: true,
       env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
     });
@@ -66,6 +77,10 @@ function runPython(script, url, timeoutMs, timeoutMessage) {
 
 export function discoverOfficialLinks(url) {
   return runPython(discoveryScriptPath, validateOfficialUrl(url), 60000, 'A descoberta de links excedeu 60 segundos.');
+}
+
+export function discoverStfJurisprudence(targetDate = '', lookbackDays = 7) {
+  return runPython(stfJurisprudenceScriptPath, [targetDate || '', String(lookbackDays)], 150000, 'A pesquisa de jurisprudência do STF excedeu 150 segundos.');
 }
 
 export const officialDomains = allowedDomains;
