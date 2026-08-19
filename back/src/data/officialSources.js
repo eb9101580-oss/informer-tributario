@@ -61,7 +61,7 @@ export const officialSources = [
   {
     id: 'stf', name: 'Supremo Tribunal Federal', acronym: 'STF', category: 'Jurisprudência constitucional',
     description: 'Acórdãos, decisões monocráticas, repercussão geral e controle concentrado em matéria tributária.',
-    url: 'https://jurisprudencia.stf.jus.br/pages/search', discoveryUrl: 'https://portal.stf.jus.br/jurisprudenciaRepercussao/',
+    url: 'https://jurisprudencia.stf.jus.br/pages/search', discoveryUrl: 'https://noticias.stf.jus.br/',
     focus: ['Acórdãos', 'Repercussão geral', 'Modulação de efeitos'], monitoring: 'A cada 6 horas', priority: 5, color: 'red', adapter: 'links',
   },
   {
@@ -81,7 +81,7 @@ export const officialSources = [
     id: 'stf-informativos', name: 'STF — Informativos de Jurisprudência', acronym: 'INF STF', category: 'Informativos constitucionais',
     description: 'Informativos do STF e decisões destacadas sobre constitucionalidade, repartição de competências e tributação.',
     url: 'https://portal.stf.jus.br/textos/verTexto.asp?servico=informativoSTF',
-    discoveryUrl: 'https://portal.stf.jus.br/textos/verTexto.asp?servico=informativoSTF',
+    discoveryUrl: 'https://noticias.stf.jus.br/',
     focus: ['Informativos', 'Repercussão geral', 'Direito tributário'], monitoring: 'A cada 6 horas', priority: 9, color: 'red', adapter: 'links',
   },
   {
