@@ -14,7 +14,7 @@ const allowedDomains = [
   'scon.stj.jus.br', 'portal.stf.jus.br',
   'camara.leg.br', 'senado.leg.br', 'sefaz.pr.gov.br', 'trf1.jus.br', 'trf2.jus.br',
   'trf3.jus.br', 'trf4.jus.br', 'trf5.jus.br', 'trf6.jus.br',
-  'jota.info',
+  'jota.info', 'reformatributaria.com', 'cgibs.gov.br', 'folha.uol.com.br', 'valor.globo.com',
 ];
 
 export function validateOfficialUrl(rawUrl) {

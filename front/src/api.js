@@ -18,6 +18,8 @@ export const api = {
   intelligenceStatus: () => request('/intelligence/status'),
   analyzeUrl: (url, persist = true) => request('/intelligence/analyze-url', { method: 'POST', body: JSON.stringify({ url, persist }) }),
   sources: () => request('/sources'),
+  sections: () => request('/sections'),
+  section: (id) => request(`/sections/${encodeURIComponent(id)}`),
   monitorStatus: () => request('/monitor/status'),
   monitorRuns: () => request('/monitor/runs'),
   monitorCandidates: (status = '') => request(`/monitor/candidates?${new URLSearchParams(status ? { status } : {})}`),

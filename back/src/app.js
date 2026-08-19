@@ -11,6 +11,7 @@ import { sourcesRouter } from './routes/sources.js';
 import { monitorRouter } from './routes/monitor.js';
 import { subscriptionsRouter } from './routes/subscriptions.js';
 import { actionsRouter } from './routes/actions.js';
+import { sectionsRouter } from './routes/sections.js';
 
 export const app = express();
 
@@ -37,6 +38,7 @@ app.use('/api/sources', sourcesRouter);
 app.use('/api/monitor', monitorRouter);
 app.use('/api/subscriptions', subscriptionsRouter);
 app.use('/api/actions', actionsRouter);
+app.use('/api/sections', sectionsRouter);
 
 app.use((_request, response) => response.status(404).json({ message: 'Rota não encontrada.' }));
 app.use((error, _request, response, _next) => {

@@ -1,4 +1,5 @@
 import { discoverOfficialLinks } from './collector.js';
+import { sectionIdsForSource } from '../data/sections.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
@@ -28,6 +29,14 @@ export function hasStrongTaxSignal(...values) {
 }
 
 export function isCandidateEligible(sourceId, title, url) {
+  if (sourceId === 'confaz-ajustes') return /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(`${title} ${url}`);
+  if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
+  if (['reforma-cgibs', 'reforma-portal', 'reforma-folha', 'reforma-valor'].includes(sourceId)) {
+    return /reforma|ibs|cbs|imposto seletivo|documento fiscal|nota t[eé]cnica|regulamenta|tribut/i.test(`${title} ${url}`);
+  }
+  if (['sped-notas-tecnicas', 'sped-ecd', 'sped-ecf', 'sped-efd-contribuicoes', 'sped-efd-icms-ipi', 'sped-efd-reinf', 'sped-e-financeira', 'sped-esocial', 'sped-central-balancos', 'sped-dere'].includes(sourceId)) {
+    return /manual|leiaute|layout|nota t[eé]cnica|orienta|vers[aã]o|tabela|sped|ecd|ecf|efd|reinf|esocial|financeira|dere/i.test(`${title} ${url}`);
+  }
   if (['receita-cosit', 'receita-in', 'receita-notas'].includes(sourceId)) {
     const sourceText = normalizeSearchText(title);
     const isNormasLink = /normas(?:internet2)?\.receita\.fazenda\.gov\.br/i.test(url) && /consulta\/externa|link\.action/i.test(url);
@@ -165,7 +174,7 @@ async function discoverLinks(source) {
       : source.id === 'receita-in' ? 'Instrução Normativa ou ato RFB'
         : source.id === 'receita-notas' ? 'Nota ou parecer normativo'
           : /\.pdf(?:$|\?)/i.test(normalized.url) ? 'Documento oficial em PDF' : 'Publicação oficial');
-    return { ...normalized, documentKind };
+    return { ...normalized, documentKind, sections: normalized.sections || source.sections || sectionIdsForSource(source.id) };
   });
 }
 
@@ -176,7 +185,7 @@ export async function discoverSourceCandidates(source, lookbackDays = 7) {
   else if (source.adapter === 'stj-open-data') items = await discoverStj();
   else if (source.adapter === 'rss') items = await discoverRss(source);
   else items = await discoverLinks(source);
-  return items.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  return items.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
 }
 
 export const taxTerms = TAX_TERMS;

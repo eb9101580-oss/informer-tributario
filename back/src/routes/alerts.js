@@ -2,6 +2,8 @@ import { Router } from 'express';
 import { randomUUID } from 'node:crypto';
 import { readDatabase, updateDatabase } from '../services/store.js';
 import { calculateScore, relevanceLabel } from '../services/scoring.js';
+import { readTrackedActions } from '../services/trackedActions.js';
+import { sectionIdsForSource } from '../data/sections.js';
 
 export const alertsRouter = Router();
 
@@ -20,18 +22,36 @@ function normalizeAlert(payload, current = {}) {
   };
 }
 
+function sectionsForAlert(alert) {
+  return alert.sections?.length ? alert.sections : sectionIdsForSource(alert.provenance?.sourceId);
+}
+
+async function allAlerts(database) {
+  try {
+    const tracked = await readTrackedActions();
+    const movementAlerts = tracked.trackers.flatMap((tracker) => tracker.movementAlerts || []);
+    return [...database.alerts, ...movementAlerts];
+  } catch (error) {
+    // O feed continua disponível em ambientes sem persistência de ações configurada.
+    if (error.statusCode === 503) return database.alerts;
+    throw error;
+  }
+}
+
 alertsRouter.get('/', async (request, response, next) => {
   try {
     const { search = '', relevance = 'all', status = 'all', kind = 'all' } = request.query;
     const database = await readDatabase();
+    const all = await allAlerts(database);
     const term = search.toLocaleLowerCase('pt-BR').trim();
-    const alerts = database.alerts
+    const alerts = all
       .filter(isOfficialRelevantAlert)
       .filter((alert) => !term || [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])]
         .join(' ').toLocaleLowerCase('pt-BR').includes(term))
       .filter((alert) => relevance === 'all' || alert.relevance === relevance)
       .filter((alert) => status === 'all' || alert.status === status)
       .filter((alert) => kind === 'all' || alert.kind === kind)
+      .filter((alert) => !request.query.section || sectionsForAlert(alert).includes(request.query.section))
       .sort((a, b) => (b.score - a.score) || new Date(b.publishedAt) - new Date(a.publishedAt));
 
     response.json({ items: alerts, total: alerts.length });
@@ -43,7 +63,7 @@ alertsRouter.get('/', async (request, response, next) => {
 alertsRouter.get('/:id', async (request, response, next) => {
   try {
     const database = await readDatabase();
-    const alert = database.alerts.find((item) => item.id === request.params.id);
+    const alert = (await allAlerts(database)).find((item) => item.id === request.params.id);
     if (!alert) return response.status(404).json({ message: 'Alerta não encontrado.' });
     response.json(alert);
   } catch (error) {

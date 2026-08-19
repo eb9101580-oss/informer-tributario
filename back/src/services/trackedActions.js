@@ -10,6 +10,49 @@ const localPath = resolve(here, '../../data/tracked-actions.json');
 const localTempPath = `${localPath}.tmp`;
 const githubPath = 'back/data/tracked-actions.json';
 
+function actionMovementAlert(tracker, result, movement) {
+  const now = new Date().toISOString();
+  const tribunal = movement.court || result.court?.toUpperCase() || tracker.court?.toUpperCase();
+  const sourceUrl = result.sourceUrl || `https://api-publica.datajud.cnj.jus.br/api_publica_${tracker.court}/_search`;
+  return {
+    id: `action-${tracker.id}-${movement.id}`,
+    title: `${tracker.label}: ${movement.name}`,
+    theme: tracker.label,
+    agency: tribunal,
+    taxes: [tracker.court?.toUpperCase() || 'PROCESSO'],
+    status: movement.name,
+    kind: 'Movimentação processual',
+    impactType: 'Atenção',
+    summary: `Foi registrada uma nova movimentação oficial no acompanhamento ${tracker.label}.`,
+    whatChanged: movement.complement ? `${movement.name}. ${movement.complement}` : movement.name,
+    practicalImpact: 'Revise o andamento, a decisão ou o prazo correspondente antes de orientar o cliente.',
+    officeAction: `Conferir a publicação oficial e atualizar o controle do processo ${movement.processNumber || ''}.`.trim(),
+    affectedProfiles: [],
+    opportunity: null,
+    score: 8.5,
+    relevance: 'Alta relevância',
+    officialUrl: sourceUrl,
+    publishedAt: movement.date || now,
+    createdAt: now,
+    updatedAt: now,
+    isDemo: false,
+    movementId: movement.id,
+    provenance: {
+      collector: 'DataJud / portal oficial',
+      analyzer: 'Regra de movimentação processual',
+      collectorUrl: sourceUrl,
+      sourceCharacters: 0,
+      sourceId: `tracked-action-${tracker.court}`,
+      sourceName: `Ação acompanhada · ${tribunal}`,
+      discoveredBy: 'tracked-action-refresh',
+      sourceType: 'official',
+      documentKind: 'Movimentação processual oficial',
+      discoveredAt: now,
+    },
+    sections: [],
+  };
+}
+
 function encryptionKey() {
   return createHash('sha256').update(config.trackedActionsEncryptionKey).digest();
 }
@@ -232,6 +275,9 @@ export async function refreshTrackedAction(id) {
     const updated = {
       ...tracker,
       ...result,
+      movementAlerts: result.latestMovement && !(tracker.movementAlerts || []).some((alert) => alert.movementId === result.latestMovement.id)
+        ? [actionMovementAlert(tracker, result, result.latestMovement), ...(tracker.movementAlerts || [])].slice(0, 50)
+        : (tracker.movementAlerts || []),
       lastCheckedAt: checkedAt,
       updatedAt: checkedAt,
       lastError: null,

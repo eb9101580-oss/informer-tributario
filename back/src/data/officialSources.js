@@ -97,6 +97,72 @@ export const officialSources = [
     discoveryUrl: 'https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-assunto',
     focus: ['Pareceres', 'Dívida ativa', 'Súmulas'], monitoring: 'A cada 6 horas', priority: 11, color: 'blue', adapter: 'links',
   },
+  {
+    id: 'confaz-ajustes', name: 'CONFAZ - Ajustes SINIEF', acronym: 'CONFAZ', category: 'Obrigações acessórias estaduais',
+    description: 'Ajustes SINIEF, convênios e atos que alteram documentos fiscais, escriturações e procedimentos dos contribuintes.',
+    url: 'https://www.confaz.fazenda.gov.br/legislacao/ajustes', discoveryUrl: 'https://www.confaz.fazenda.gov.br/legislacao/ajustes',
+    focus: ['Ajustes SINIEF', 'Documentos fiscais', 'Leiautes'], monitoring: 'A cada 6 horas', priority: 7, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-ecd', name: 'SPED - ECD', acronym: 'ECD', category: 'Escrituração contábil digital',
+    description: 'Manuais, leiautes, notas técnicas e validadores da Escrituração Contábil Digital.',
+    url: 'https://sped.rfb.gov.br/item/show/273', discoveryUrl: 'https://sped.rfb.gov.br/item/show/273',
+    focus: ['Manual ECD', 'Leiaute', 'Validador'], monitoring: 'A cada 6 horas', priority: 8, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-ecf', name: 'SPED - ECF', acronym: 'ECF', category: 'Escrituração fiscal digital',
+    description: 'Manuais, leiautes, tabelas dinâmicas e atualizações da Escrituração Contábil Fiscal.',
+    url: 'https://sped.rfb.gov.br/item/show/1644', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1644',
+    focus: ['Manual ECF', 'Leiaute', 'Planos referenciais'], monitoring: 'A cada 6 horas', priority: 9, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-efd-contribuicoes', name: 'SPED - EFD-Contribuições', acronym: 'EFD-C', category: 'Escrituração fiscal digital',
+    description: 'Notas técnicas, tabelas, procedimentos e versões do programa gerador da EFD-Contribuições.',
+    url: 'https://sped.rfb.gov.br/item/show/268', discoveryUrl: 'https://sped.rfb.gov.br/item/show/268',
+    focus: ['Notas técnicas', 'Tabelas', 'PIS e Cofins'], monitoring: 'A cada 6 horas', priority: 10, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-efd-icms-ipi', name: 'SPED - EFD ICMS IPI', acronym: 'EFD-ICMS/IPI', category: 'Escrituração fiscal digital',
+    description: 'Guias práticos, notas orientativas e manuais de leiaute da EFD ICMS IPI.',
+    url: 'https://sped.rfb.gov.br/item/show/1573', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1573',
+    focus: ['Guia prático', 'ICMS e IPI', 'Leiaute'], monitoring: 'A cada 6 horas', priority: 11, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-efd-reinf', name: 'SPED - EFD-Reinf', acronym: 'EFD-Reinf', category: 'Escrituração fiscal digital',
+    description: 'Manuais do usuário e desenvolvedor, leiautes, tabelas e notas técnicas da EFD-Reinf.',
+    url: 'https://sped.rfb.gov.br/item/show/2225', discoveryUrl: 'https://sped.rfb.gov.br/item/show/2225',
+    focus: ['Manual', 'Leiautes', 'Notas técnicas'], monitoring: 'A cada 6 horas', priority: 12, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-e-financeira', name: 'SPED - e-Financeira', acronym: 'e-Financeira', category: 'Escrituração fiscal digital',
+    description: 'Manuais, leiautes, schemas e tabelas de códigos da e-Financeira.',
+    url: 'https://sped.rfb.gov.br/item/show/1179', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1179',
+    focus: ['Manuais', 'Leiautes', 'Schemas'], monitoring: 'A cada 6 horas', priority: 13, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-esocial', name: 'SPED - eSocial', acronym: 'eSocial', category: 'Escrituração fiscal, previdenciária e trabalhista',
+    description: 'Documentação técnica e alterações do eSocial que impactam informações fiscais, previdenciárias e trabalhistas.',
+    url: 'https://sped.rfb.gov.br/item/show/1507', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1507',
+    focus: ['Documentação técnica', 'Eventos', 'Leiautes'], monitoring: 'A cada 6 horas', priority: 14, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-central-balancos', name: 'SPED - Central de Balanços', acronym: 'Central', category: 'Escrituração contábil digital',
+    description: 'Publicações, regras e documentos da Central de Balanços do SPED.',
+    url: 'https://sped.rfb.gov.br/item/show/4150', discoveryUrl: 'https://sped.rfb.gov.br/item/show/4150',
+    focus: ['Demonstrações', 'Documentos contábeis', 'Autenticidade'], monitoring: 'A cada 6 horas', priority: 15, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
+  },
+  {
+    id: 'sped-dere', name: 'SPED - DeRE / Reforma', acronym: 'DeRE', category: 'Obrigação acessória da reforma',
+    description: 'Manual, leiautes, schemas e regras de validação da Declaração de Regimes Específicos do IBS e da CBS.',
+    url: 'https://sped.rfb.gov.br/item/show/2922', discoveryUrl: 'https://sped.rfb.gov.br/item/show/2922',
+    focus: ['IBS e CBS', 'Manual DeRE', 'Leiautes'], monitoring: 'A cada 6 horas', priority: 16, color: 'gold', adapter: 'links', sections: ['reforma', 'obrigacoes'],
+  },
+  {
+    id: 'reforma-cgibs', name: 'CGIBS - Comitê Gestor do IBS', acronym: 'CGIBS', category: 'Reforma tributária do consumo',
+    description: 'Notícias, atos, resoluções e documentação oficial da implementação do IBS.',
+    url: 'https://www.cgibs.gov.br/', discoveryUrl: 'https://www.cgibs.gov.br/noticias',
+    focus: ['IBS', 'Resoluções', 'Documentação técnica'], monitoring: 'A cada 6 horas', priority: 5, color: 'gold', adapter: 'links', sections: ['reforma'],
+  },
   ...[
     ['trf1', 'Tribunal Regional Federal da 1ª Região', 'TRF1', 'https://www.trf1.jus.br/trf1/carta-servicos/jurisprudencia'],
     ['trf2', 'Tribunal Regional Federal da 2ª Região', 'TRF2', 'https://www.trf2.jus.br/trf2/consultas-e-servicos/jurisprudencia'],
@@ -112,6 +178,24 @@ export const officialSources = [
 ];
 
 export const complementarySources = [
+  {
+    id: 'reforma-portal', name: 'Portal da Reforma Tributária', acronym: 'RT', category: 'Imprensa e análise especializada', sourceType: 'journalistic',
+    description: 'Notícias, estudos e análises sobre IBS, CBS, regulamentação e implementação da reforma tributária.',
+    url: 'https://www.reformatributaria.com/', discoveryUrl: 'https://www.reformatributaria.com/',
+    focus: ['Reforma tributária', 'IBS e CBS', 'Notas técnicas'], monitoring: 'A cada 10 minutos', priority: 15, color: 'purple', adapter: 'links', sections: ['reforma'],
+  },
+  {
+    id: 'reforma-folha', name: 'Folha de S.Paulo - Mercado / Tributário', acronym: 'FOLHA', category: 'Imprensa econômica', sourceType: 'journalistic',
+    description: 'Cobertura jornalística sobre economia, política fiscal e reforma tributária.',
+    url: 'https://www1.folha.uol.com.br/mercado/', discoveryUrl: 'https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online',
+    focus: ['Reforma tributária', 'Economia', 'Política fiscal'], monitoring: 'A cada 10 minutos', priority: 16, color: 'purple', adapter: 'links', sections: ['reforma'],
+  },
+  {
+    id: 'reforma-valor', name: 'Valor Econômico - Legislação', acronym: 'VALOR', category: 'Imprensa econômica', sourceType: 'journalistic',
+    description: 'Cobertura de legislação, tributos, negócios e impactos econômicos da reforma.',
+    url: 'https://valor.globo.com/legislacao/', discoveryUrl: 'https://valor.globo.com/legislacao/',
+    focus: ['Legislação', 'Tributos', 'Reforma tributária'], monitoring: 'A cada 10 minutos', priority: 17, color: 'purple', adapter: 'links', sections: ['reforma'],
+  },
   {
     id: 'jota', name: 'JOTA', acronym: 'JOTA', category: 'Imprensa jurídica especializada', sourceType: 'journalistic',
     description: 'Notícias e análises sobre direito tributário, tribunais, CARF, Congresso e reforma tributária.',

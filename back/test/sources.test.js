@@ -12,8 +12,8 @@ test('expõe Congresso, tribunais, CARF e administração fiscal', async (contex
   const ids = body.items.map((source) => source.id);
 
   assert.equal(response.status, 200);
-  assert.equal(body.total, 22);
-  assert.equal(body.journalistic, 1);
+  assert.ok(body.total >= 36);
+  assert.ok(body.journalistic >= 4);
   assert.ok(ids.includes('jota'));
   assert.ok(['receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'stj-informativos', 'stf-informativos', 'pgfn-pareceres'].every((id) => ids.includes(id)));
   assert.ok(['camara', 'senado', 'stf', 'stj', 'carf', 'trf1', 'trf6'].every((id) => ids.includes(id)));

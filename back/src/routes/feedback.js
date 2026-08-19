@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { randomUUID } from 'node:crypto';
 import { readDatabase, updateDatabase } from '../services/store.js';
+import { readTrackedActions } from '../services/trackedActions.js';
 
 export const feedbackRouter = Router();
 const allowedRatings = ['irrelevante', 'pouco relevante', 'relevante', 'muito relevante', 'urgente'];
@@ -21,7 +22,9 @@ feedbackRouter.post('/', async (request, response, next) => {
       return response.status(400).json({ message: 'Alerta e avaliação válida são obrigatórios.' });
     }
     const database = await readDatabase();
-    if (!database.alerts.some((alert) => alert.id === alertId)) {
+    const tracked = await readTrackedActions();
+    const actionAlert = tracked.trackers.some((tracker) => (tracker.movementAlerts || []).some((alert) => alert.id === alertId));
+    if (!database.alerts.some((alert) => alert.id === alertId) && !actionAlert) {
       return response.status(404).json({ message: 'Alerta não encontrado.' });
     }
     const feedback = { id: randomUUID(), alertId, rating, reason, createdAt: new Date().toISOString() };

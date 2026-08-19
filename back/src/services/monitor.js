@@ -6,6 +6,7 @@ import { analyzeWithOllama } from './ollama.js';
 import { calculateScore, relevanceLabel } from './scoring.js';
 import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isTaxRelated } from './sourceAdapters.js';
 import { readDatabase, updateDatabase } from './store.js';
+import { sectionIdsForSource } from '../data/sections.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -36,6 +37,7 @@ function makeAlert(analysis, document, candidate) {
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
     },
+    sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
   };
 }
 

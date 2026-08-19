@@ -14,6 +14,7 @@ import { SourcesPage } from './components/SourcesPage.jsx';
 import { MonitorPage } from './components/MonitorPage.jsx';
 import { PublicBlog } from './components/PublicBlog.jsx';
 import { ActionsPage } from './components/ActionsPage.jsx';
+import { SectionPage } from './components/SectionPage.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -25,6 +26,8 @@ const pageTitles = {
   sources: ['Fontes monitoradas', 'Canais oficiais e jornalísticos que alimentam o radar tributário.'],
   feedback: ['Aprendizado de relevância', 'Seu feedback ajuda o radar a priorizar melhor.'],
   actions: ['Ações acompanhadas', 'Status e movimentações recentes dos temas e processos que você escolheu observar.'],
+  reforma: ['Reforma tributária', 'IBS, CBS, CGIBS, regulamentação e impactos operacionais.'],
+  obrigacoes: ['Obrigações acessórias', 'Manuais, leiautes e alterações nas escriturações digitais.'],
 };
 
 function LoadingState() {
@@ -124,6 +127,8 @@ export default function App() {
     if (activePage === 'monitor') return <MonitorPage onAlerts={() => { setActivePage('alerts'); loadData(); }} />;
 
     if (activePage === 'actions') return <ActionsPage />;
+
+    if (activePage === 'reforma' || activePage === 'obrigacoes') return <SectionPage sectionId={activePage} onOpen={setSelectedAlert} onFeedback={sendFeedback} feedbackFor={voteFor} />;
 
     if (activePage === 'feedback') return (
       <section className="page-section feedback-page">
