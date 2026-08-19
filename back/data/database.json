@@ -457,7 +457,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T09:21:49.935Z",
+        "discoveredAt": "2026-08-19T09:57:46.559Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -473,7 +473,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T09:21:49.935Z",
+        "discoveredAt": "2026-08-19T09:57:46.559Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -489,7 +489,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T09:21:49.935Z",
+        "discoveredAt": "2026-08-19T09:57:46.559Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -505,7 +505,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T09:21:49.935Z",
+        "discoveredAt": "2026-08-19T09:57:46.559Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -521,8 +521,23 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T09:21:49.935Z",
+        "discoveredAt": "2026-08-19T09:57:46.559Z",
         "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Com composição completa, Carf afasta concomitância de multa isolada e de ofício",
+        "url": "https://portal.jota.info/tributos/composicao-completa-carf-afasta-concomitancia-multa-isolada-de-oficia",
+        "publishedAt": "2026-08-19T09:34:34.000Z",
+        "documentKind": "Notícia jornalística especializada",
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "sourceAcronym": "JOTA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "rss",
+        "discoveredAt": "2026-08-19T09:57:52.160Z",
+        "id": "efeb3aac9a5d05ae48399cc8",
         "status": "pending",
         "attempts": 0
       },
@@ -1584,6 +1599,106 @@
       }
     ],
     "runs": [
+      {
+        "id": "cf7b4b62-dc2f-43d9-ae1d-04df190456eb",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T09:57:41.373Z",
+        "finishedAt": "2026-08-19T09:58:48.710Z",
+        "discovered": 6,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 3,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 19
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1
+          }
+        ]
+      },
       {
         "id": "80f9152d-df91-4296-b990-75438dbe44ee",
         "trigger": "github-actions-discovery",
@@ -4576,7 +4691,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T09:21:53.569Z",
-    "nextRunAt": "2026-08-19T15:21:53.569Z"
+    "lastRunAt": "2026-08-19T09:58:48.710Z",
+    "nextRunAt": "2026-08-19T15:58:48.710Z"
   }
 }
