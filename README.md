@@ -97,6 +97,8 @@ TRACKED_ACTIONS_ENCRYPTION_KEY=chave_aleatoria_forte
 
 Na Vercel, `GITHUB_TOKEN` também é necessário para persistir os acompanhamentos. No GitHub Actions, crie os segredos `DATAJUD_API_KEY` e `TRACKED_ACTIONS_ENCRYPTION_KEY`. A API do DataJud fornece metadados e movimentações de processos públicos; processos em segredo não aparecem na API.
 
+O endpoint público do DataJud não inclui o STF. Para acompanhamentos do Supremo, selecione **STF (portal oficial)** e cole o link `portal.stf.jus.br/processos/detalhe.asp?incidente=...`; o sistema consulta a página oficial, a aba de andamentos e a aba de decisões. Por exemplo, a notícia do ICMS sobre produtos intermediários identifica o RE 1.424.015, Tema 1.465.
+
 Os registros iniciais continuam sendo cenários demonstrativos e aparecem identificados como tal. Alertas criados pela varredura usam `isDemo: false` e sempre guardam o endereço oficial e a trilha de proveniência.
 
 ## Verificação

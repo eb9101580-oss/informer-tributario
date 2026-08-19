@@ -7,6 +7,7 @@ import {
   refreshAllTrackedActions,
   refreshTrackedAction,
   removeTrackedAction,
+  updateTrackedAction,
 } from '../services/trackedActions.js';
 
 export const actionsRouter = Router();
@@ -39,6 +40,14 @@ actionsRouter.post('/refresh-all', async (_request, response, next) => {
 
 actionsRouter.post('/:id/refresh', async (request, response, next) => {
   try { response.json({ item: await refreshTrackedAction(request.params.id) }); } catch (error) { next(error); }
+});
+
+actionsRouter.put('/:id', async (request, response, next) => {
+  try {
+    const tracker = await updateTrackedAction(request.params.id, request.body || {});
+    const refreshed = await refreshTrackedAction(tracker.id);
+    response.json({ item: refreshed, message: 'Acompanhamento atualizado e consultado na fonte oficial.' });
+  } catch (error) { next(error); }
 });
 
 actionsRouter.delete('/:id', async (request, response, next) => {

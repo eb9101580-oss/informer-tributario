@@ -177,6 +177,38 @@ export async function addTrackedAction(input) {
   return saved.trackers[0];
 }
 
+export async function updateTrackedAction(id, input) {
+  if (!config.datajudApiKey || !actionsPersistenceConfigured()) {
+    const error = new Error('Configure DATAJUD_API_KEY e TRACKED_ACTIONS_ENCRYPTION_KEY (e GITHUB_TOKEN na Vercel) para salvar acompanhamentos.');
+    error.statusCode = 503;
+    throw error;
+  }
+  const values = validateInput(input);
+  const current = config.serverless && config.githubToken ? (await readGithub()).data : await readLocal();
+  const index = current.trackers.findIndex((item) => item.id === id);
+  if (index < 0) {
+    const error = new Error('Acompanhamento não encontrado.');
+    error.statusCode = 404;
+    throw error;
+  }
+  const now = new Date().toISOString();
+  current.trackers[index] = {
+    ...current.trackers[index],
+    ...values,
+    updatedAt: now,
+    lastCheckedAt: null,
+    status: 'Aguardando nova consulta',
+    resultCount: 0,
+    processCount: 0,
+    latestMovement: null,
+    movements: [],
+    processes: [],
+    lastError: null,
+  };
+  await writeTrackedActions(current);
+  return current.trackers[index];
+}
+
 export async function removeTrackedAction(id) {
   const current = config.serverless && config.githubToken ? (await readGithub()).data : await readLocal();
   const trackers = current.trackers.filter((item) => item.id !== id);

@@ -27,6 +27,7 @@ export const api = {
   actionsStatus: () => request('/actions/status'),
   actions: () => request('/actions'),
   createAction: (payload) => request('/actions', { method: 'POST', body: JSON.stringify(payload) }),
+  updateAction: (id, payload) => request(`/actions/${encodeURIComponent(id)}`, { method: 'PUT', body: JSON.stringify(payload) }),
   refreshAction: (id) => request(`/actions/${encodeURIComponent(id)}/refresh`, { method: 'POST' }),
   refreshAllActions: () => request('/actions/refresh-all', { method: 'POST' }),
   removeAction: (id) => request(`/actions/${encodeURIComponent(id)}`, { method: 'DELETE' }),
