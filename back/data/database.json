@@ -1,9 +1,65 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T01:57:04.314Z",
+    "lastUpdatedAt": "2026-08-19T07:07:28.640Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Agravo Interno - Recurso Especial - Execução Fiscal - Dinheiro não é bem de capital",
+      "theme": "Direito Tributário",
+      "agency": "Superior Tribunal de Justiça (STJ)",
+      "taxes": [
+        "Lei 11.101/2005",
+        "Lei 14.112/2020"
+      ],
+      "status": "Análise",
+      "kind": "Agravo Interno",
+      "impactType": "Risco",
+      "publishedAt": "2026-06-08T00:00:00Z",
+      "summary": "O STJ negou provimento ao agravo interno, afirmando que o dinheiro, sendo fungível e sem função produtiva direta, não se enquadra como bem de capital. A competência do juízo da execução fiscal é limitada a atos constritivos sobre bens de capital essenciais, enquanto o juízo da recuperação judicial tem competência só em",
+      "whatChanged": "sobre bens de capital essenciais, mediante cooperação jurisdicional.",
+      "practicalImpact": "O resultado afeta a execução fiscal de bens não considerados como bens de capital, limitando a competência do juízo da recuperação judicial em casos de penhora sobre dinheiro.",
+      "officeAction": "Negado provimento ao agravo interno.",
+      "affectedProfiles": [
+        "Empresas de Importação e Exportação",
+        "Fazendas Estaduais",
+        "Advogados de Recuperação Judicial"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 6,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Agravo Interno - Recurso Especial - Execução Fiscal - Dinheiro não é bem de capital",
+        "period": "2026-06-08",
+        "action": "Negado provimento ao agravo interno.",
+        "confidence": "alto"
+      },
+      "id": "761b92d5-eba8-4965-8a8d-0f464b61db83",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202300749890&dt_publicacao=11%2F06%2F2026",
+      "isDemo": false,
+      "createdAt": "2026-08-19T07:07:28.639Z",
+      "updatedAt": "2026-08-19T07:07:28.639Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:1.7b",
+        "sourceCharacters": 20411,
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "discoveredBy": "stj-open-data",
+        "sourceType": "official",
+        "documentKind": "Inteiro teor de acórdão",
+        "discoveredAt": "2026-08-18T18:33:16.784Z"
+      }
+    },
     {
       "relevant": true,
       "title": "AGRAVO EM RECURSO ESPECIAL Nº 2148071 - RJ (2022/0176934-2)",
@@ -817,8 +873,11 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "6af25dae82d427190a501eb4",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T07:07:28.640Z",
+        "score": 7.1,
+        "alertId": "761b92d5-eba8-4965-8a8d-0f464b61db83"
       },
       {
         "title": "AgInt na DESIS no AREsp 1540289 — TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO INTERNO. HOMOLOGAÇÃO DE DESISTÊNCIA E RENÚNCIA. ALEGAÇÃO DE OMISSÃO NA DECISÃO AGRAVADA. HONORÁRIOS. INADEQUAÇÃO DA VIA ELEITA. FUNGIBILIDADE RECURSAL. INVIABILIDADE. AUSÊNCIA DE DÚVIDA OBJETIVA SOBRE O RECURSO CABÍVEL. RE",
@@ -1445,6 +1504,105 @@
       }
     ],
     "runs": [
+      {
+        "id": "5d5d2455-fc1b-4a94-b8b0-e72826a91daf",
+        "trigger": "github-actions-analysis",
+        "startedAt": "2026-08-19T07:06:00.178Z",
+        "finishedAt": "2026-08-19T07:07:28.641Z",
+        "discovered": 0,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 19
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 522."
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "b0396f2d-21f6-42ab-a938-f7d992cf4db5",
         "trigger": "github-actions-discovery",
@@ -3945,7 +4103,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T06:05:20.456Z",
-    "nextRunAt": "2026-08-19T12:05:20.456Z"
+    "lastRunAt": "2026-08-19T07:07:28.641Z",
+    "nextRunAt": "2026-08-19T13:07:28.641Z"
   }
 }
