@@ -1,6 +1,5 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
-// Dois meses corridos, incluindo o dia atual e os 61 dias anteriores.
-export const FEED_WINDOW_DAYS = 62;
+export const FEED_WINDOW_DAYS = 7;
 const BRAZIL_TIME_ZONE = 'America/Sao_Paulo';
 const brazilDateFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: BRAZIL_TIME_ZONE,

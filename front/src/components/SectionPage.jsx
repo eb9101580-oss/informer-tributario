@@ -46,7 +46,7 @@ export function SectionPage({ sectionId, onOpen, onFeedback, feedbackFor }) {
       <div className="section-page__heading section-page__heading--feed"><div><h2>Alertas e alterações detectadas</h2><p>Publicações oficiais têm prioridade; notícias são mantidas como contexto e levam ao texto original.</p></div><span>{feed.length} itens</span></div>
       {error && <div className="inline-error">{error}<button onClick={load}>Tentar novamente</button></div>}
       <div className="alerts-list">{feed.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={onOpen} onFeedback={onFeedback ? (value) => onFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante') : undefined} feedback={feedbackFor?.(alert.id)} />)}</div>
-      {!feed.length && <div className="empty-state"><ArrowUpRight size={28} /><h3>Nenhuma publicação dos últimos 2 meses</h3><p>As fontes estão cadastradas e aparecerão após o próximo ciclo de varredura.</p></div>}
+      {!feed.length && <div className="empty-state"><ArrowUpRight size={28} /><h3>Nenhuma publicação dos últimos 7 dias</h3><p>As fontes estão cadastradas e aparecerão após o próximo ciclo de varredura.</p></div>}
     </section>
   );
 }

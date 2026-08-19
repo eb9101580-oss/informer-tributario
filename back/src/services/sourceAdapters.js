@@ -221,6 +221,7 @@ const DJEN_DECISION_PATTERN = /ac[oó]rd[aã]o|decis[aã]o|senten[cç]a|julgamen
 const DJEN_PAGE_SIZE = 100;
 let djenRequestQueue = Promise.resolve();
 let djenLastRequestAt = 0;
+let djenBlockedUntil = 0;
 
 export function isDjenDecision(item = {}) {
   return DJEN_DECISION_PATTERN.test(`${item.tipoDocumento || ''} ${item.tipoComunicacao || ''}`);
@@ -268,14 +269,26 @@ async function fetchDjenPage(source, targetDate, page, pageSize) {
     pagina: String(page),
     meio: 'D',
   });
+  const url = `${DJEN_API}?${params}`;
   const request = djenRequestQueue.then(async () => {
-    const pause = Math.max(0, 250 - (Date.now() - djenLastRequestAt));
-    if (pause) await new Promise((resolve) => setTimeout(resolve, pause));
-    try {
-      return await fetchJson(`${DJEN_API}?${params}`, { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' });
-    } finally {
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      const pause = Math.max(0, 3200 - (Date.now() - djenLastRequestAt), djenBlockedUntil - Date.now());
+      if (pause) await new Promise((resolve) => setTimeout(resolve, pause));
+      const response = await fetch(url, {
+        headers: { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' },
+        signal: AbortSignal.timeout(30000),
+      });
       djenLastRequestAt = Date.now();
+      const remaining = Number(response.headers.get('x-ratelimit-remaining'));
+      if (Number.isFinite(remaining) && remaining <= 0) djenBlockedUntil = Date.now() + 65000;
+      if (response.ok) return response.json();
+      if ([403, 429].includes(response.status) && attempt === 0) {
+        djenBlockedUntil = Date.now() + 65000;
+        continue;
+      }
+      throw new Error(`Fonte respondeu com status ${response.status}.`);
     }
+    throw new Error('Limite temporário da API do DJEN excedido.');
   });
   djenRequestQueue = request.catch(() => undefined);
   return request;
