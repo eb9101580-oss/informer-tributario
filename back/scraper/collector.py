@@ -7,6 +7,7 @@ Toda a orquestração, validação e análise permanece no backend JavaScript.
 import json
 import re
 import sys
+from datetime import datetime
 from html import unescape
 from io import BytesIO
 from pypdf import PdfReader
@@ -27,6 +28,23 @@ def clean_text(value: str) -> str:
         if line and (not lines or lines[-1] != line):
             lines.append(line)
     return "\n".join(lines)
+
+
+def publication_date(text: str) -> str:
+    """Extract an explicit publication date without confusing it with a case date."""
+    patterns = [
+        r"(?:publicad[oa]|atualizad[oa]|data\s+de\s+publica[cç][aã]o)\s*(?:em|:)?\s*(\d{1,2}/\d{1,2}/\d{4})",
+        r"\b(\d{1,2}/\d{1,2}/\d{4})\s*\n\s*\d{1,2}:\d{2}\s*\n\s*-\s*[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ ]+",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if not match:
+            continue
+        try:
+            return datetime.strptime(match.group(1), "%d/%m/%Y").date().isoformat()
+        except ValueError:
+            pass
+    return ""
 
 
 def pdf_document(url: str, body: bytes) -> dict:
@@ -63,7 +81,7 @@ def fallback_document(url: str, body: bytes, content_type: str) -> dict:
     title_match = re.search(r"<title[^>]*>([\s\S]*?)</title>", raw, re.IGNORECASE)
     html = re.sub(r"<(script|style|noscript|nav|footer|header)[^>]*>[\s\S]*?</\1>", "\n", raw, flags=re.IGNORECASE)
     text = clean_text(unescape(re.sub(r"<[^>]+>", "\n", html)))
-    return {"url": url, "title": clean_text(unescape(title_match.group(1) if title_match else "Documento sem título")), "text": text[:60000], "characters": len(text), "contentType": content_type or "text/html", "parser": "urllib"}
+    return {"url": url, "title": clean_text(unescape(title_match.group(1) if title_match else "Documento sem título")), "text": text[:60000], "characters": len(text), "contentType": content_type or "text/html", "parser": "urllib", "publishedAt": publication_date(text)}
 
 
 def collect(url: str) -> dict:
@@ -110,6 +128,7 @@ def collect(url: str) -> dict:
         "text": text[:60000],
         "characters": len(text),
         "contentType": content_type or "text/html",
+        "publishedAt": publication_date(text),
     }
 
 

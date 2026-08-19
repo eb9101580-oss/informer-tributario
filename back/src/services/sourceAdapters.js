@@ -9,6 +9,7 @@ const TAX_TERMS = [
   'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
 ];
 const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'cofins', 'irpj', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof']);
+const TRF_TAX_PATTERN = /tribut|imposto|icms|\biss\b|\bipi\b|\bpis\b|cofins|irpj|csll|contribui[cç][aã]o social|execu[cç][aã]o fiscal|d[ií]vida ativa|contencioso fiscal|receita federal|fazenda nacional/i;
 
 export function normalizeSearchText(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -30,6 +31,11 @@ export function hasStrongTaxSignal(...values) {
 
 export function isCandidateEligible(sourceId, title, url) {
   if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
+  if (/^trf[1-6]$/.test(sourceId)) {
+    const navigationPath = /\/(?:acessibilidade|contato|institucional|magistrado|servicos?|sistemas?)(?:\/|$)/i;
+    if (navigationPath.test(new URL(url).pathname)) return false;
+    return TRF_TAX_PATTERN.test(`${title} ${url}`);
+  }
   if (sourceId === 'confaz-ajustes') return /\/ajustes\/\d{4}\/[^/]+/i.test(url) && /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(title);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
   if (['reforma-cgibs', 'reforma-portal', 'reforma-folha', 'reforma-valor'].includes(sourceId)) {
@@ -189,6 +195,7 @@ async function discoverLinks(source) {
       ? 'Solução de Consulta ou Divergência COSIT'
       : source.id === 'receita-in' ? 'Instrução Normativa ou ato RFB'
         : source.id === 'receita-notas' ? 'Nota ou parecer normativo'
+          : /^trf[1-6]$/.test(source.id) ? 'Notícia ou decisão oficial de TRF'
           : /\.pdf(?:$|\?)/i.test(normalized.url) ? 'Documento oficial em PDF' : 'Publicação oficial');
     return { ...normalized, documentKind, sections: normalized.sections || source.sections || sectionIdsForSource(source.id) };
   });

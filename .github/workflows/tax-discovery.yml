@@ -18,7 +18,7 @@ jobs:
       MONITOR_ANALYZE: 'false'
       PYTHON_COMMAND: python3
       MONITOR_ENABLED: 'false'
-      MONITOR_LOOKBACK_DAYS: '14'
+      MONITOR_LOOKBACK_DAYS: '30'
       MONITOR_MAX_ANALYSES_PER_RUN: '0'
     steps:
       - name: Baixar o projeto

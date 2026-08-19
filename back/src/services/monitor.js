@@ -31,7 +31,7 @@ function makeAlert(analysis, document, candidate) {
   const analyzedPublishedAt = Number.isNaN(Date.parse(analysis.publishedAt)) ? null : analysis.publishedAt;
   return {
     ...analysis, id: randomUUID(), score, relevance: relevanceLabel(score), officialUrl: candidate.url,
-    publishedAt: candidate.publishedAt || analyzedPublishedAt,
+    publishedAt: candidate.publishedAt || document.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: now, updatedAt: now,
     provenance: {
       collector: 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
@@ -197,6 +197,14 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
           reserved.push(candidate);
           reservedIds.add(candidate.id);
         }
+      }
+      // Se houver uma publicação tributária de TRF, ela não deve ficar
+      // indefinidamente atrás das fontes com maior volume de atualizações.
+      const trfCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId)
+        && !reservedIds.has(candidate.id));
+      if (trfCandidate && reserved.length < config.monitorMaxAnalyses) {
+        reserved.push(trfCandidate);
+        reservedIds.add(trfCandidate.id);
       }
       const queue = [...reserved, ...prioritizedQueue.filter((item) => !reservedIds.has(item.id))]
         .slice(0, config.monitorMaxAnalyses);

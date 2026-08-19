@@ -16,12 +16,11 @@ import { PublicBlog } from './components/PublicBlog.jsx';
 import { ActionsPage } from './components/ActionsPage.jsx';
 import { SectionPage } from './components/SectionPage.jsx';
 import { SettingsPage } from './components/SettingsPage.jsx';
-import { isRecentAlert } from './utils/alertSorting.js';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
   overview: ['Visão geral', 'O que realmente importa no cenário tributário hoje.'],
-  radar: ['Radar tributário diário', 'As principais movimentações organizadas por relevância.'],
+  radar: ['Radar tributário diário', 'As movimentações mais recentes aparecem primeiro.'],
   alerts: ['Central de alertas', 'Acontecimentos que pedem atenção do escritório.'],
   opportunities: ['Radar de oportunidades', 'Possibilidades de atuação que merecem análise jurídica.'],
   collector: ['Coletor inteligente', 'Transforme documentos oficiais em análises estruturadas.'],
@@ -93,11 +92,9 @@ export default function App() {
       return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
     }, 0);
     return [...filteredAlerts].sort((left, right) => {
-      const leftRecent = isRecentAlert(left);
-      const rightRecent = isRecentAlert(right);
-      return (leftRecent === rightRecent ? 0 : leftRecent ? -1 : 1)
-        || (right.score + profileScore(right)) - (left.score + profileScore(left))
-        || (Date.parse(right.publishedAt || '') - Date.parse(left.publishedAt || ''));
+      const dateDifference = (Date.parse(right.publishedAt || right.createdAt || '') || 0)
+        - (Date.parse(left.publishedAt || left.createdAt || '') || 0);
+      return dateDifference || (right.score + profileScore(right)) - (left.score + profileScore(left));
     });
   }, [filteredAlerts, feedback]);
   const [title, subtitle] = pageTitles[activePage];
@@ -170,9 +167,9 @@ export default function App() {
         </section>
 
         <section className="panel overview-feed">
-          <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Decisões e notícias com maior nota primeiro, ajustadas pelos seus votos</p></div><span className="live-dot" /></div>
+          <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Publicações mais novas primeiro; seus votos ajudam a aperfeiçoar a relevância</p></div><span className="live-dot" /></div>
           <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
-          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação dos últimos 14 dias</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
+          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação dos últimos 30 dias</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
         </section>
       </>
     );

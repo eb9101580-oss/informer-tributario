@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { candidateFingerprint, candidateId } from '../src/services/monitor.js';
-import { hasStrongTaxSignal, isTaxRelated, normalizeSearchText } from '../src/services/sourceAdapters.js';
+import { hasStrongTaxSignal, isCandidateEligible, isTaxRelated, normalizeSearchText } from '../src/services/sourceAdapters.js';
 
 test('filtro tributário ignora acentos e identifica tributos', () => {
   assert.equal(normalizeSearchText('Execução e Contribuição'), 'execucao e contribuicao');
@@ -21,4 +21,10 @@ test('id do candidato é estável por URL', () => {
 test('fingerprint agrupa processos com a mesma ementa', () => {
   const base = { sourceId: 'stj' };
   assert.equal(candidateFingerprint({ ...base, title: 'REsp 1 — Ementa tributária idêntica' }), candidateFingerprint({ ...base, title: 'REsp 2 — Ementa tributária idêntica' }));
+});
+
+test('TRFs aceitam notícia tributária e rejeitam navegação institucional', () => {
+  assert.equal(isCandidateEligible('trf1', 'Informativos Avisos Infojef', 'https://www.trf1.jus.br/trf1/informativos'), false);
+  assert.equal(isCandidateEligible('trf1', 'Sistemas Imposto de Renda', 'https://www.trf1.jus.br/trf1/magistrado/sistemas'), false);
+  assert.equal(isCandidateEligible('trf4', 'Turma decide incidência de Cofins sobre receita', 'https://www.trf4.jus.br/noticia/123'), true);
 });

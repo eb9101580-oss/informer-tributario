@@ -3,6 +3,7 @@
 import json
 import re
 import sys
+import unicodedata
 from datetime import datetime
 from urllib.parse import urljoin
 from scrapling.fetchers import Fetcher
@@ -24,6 +25,24 @@ def publication_date(value: str) -> str:
                 return parser(match.group(1)).date().isoformat()
             except ValueError:
                 pass
+    normalized = "".join(
+        character for character in unicodedata.normalize("NFD", text.lower())
+        if unicodedata.category(character) != "Mn"
+    )
+    month_numbers = {
+        "janeiro": 1, "fevereiro": 2, "marco": 3, "abril": 4,
+        "maio": 5, "junho": 6, "julho": 7, "agosto": 8,
+        "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12,
+    }
+    match = re.search(
+        r"\b(\d{1,2})\s*(?:de\s+)?(" + "|".join(month_numbers) + r")(?:\s+de|,)?\s+(\d{4})\b",
+        normalized,
+    )
+    if match:
+        try:
+            return datetime(int(match.group(3)), month_numbers[match.group(2)], int(match.group(1))).date().isoformat()
+        except ValueError:
+            pass
     return ""
 
 
@@ -85,13 +104,13 @@ def discover(url: str) -> dict:
         seen.add(absolute)
         context = clean(" ".join(anchor.xpath("ancestor::*[self::tr or self::li or self::article or contains(@class, 'item')][1]//text()").getall()))
         links.append({"title": (context or title)[:300], "url": absolute, "publishedAt": publication_date(f"{context} {title}")})
-        if len(links) >= 300:
+        if len(links) >= 1000:
             break
     for item in state_links(page):
         if item["url"] not in seen:
             seen.add(item["url"])
             links.append(item)
-        if len(links) >= 300:
+        if len(links) >= 1000:
             break
     return {"url": url, "links": links}
 

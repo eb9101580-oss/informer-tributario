@@ -164,16 +164,16 @@ export const officialSources = [
     focus: ['IBS', 'Resoluções', 'Documentação técnica'], monitoring: 'A cada 6 horas', priority: 5, color: 'gold', adapter: 'links', sections: ['reforma'],
   },
   ...[
-    ['trf1', 'Tribunal Regional Federal da 1ª Região', 'TRF1', 'https://www.trf1.jus.br/trf1/carta-servicos/jurisprudencia'],
-    ['trf2', 'Tribunal Regional Federal da 2ª Região', 'TRF2', 'https://www.trf2.jus.br/trf2/consultas-e-servicos/jurisprudencia'],
-    ['trf3', 'Tribunal Regional Federal da 3ª Região', 'TRF3', 'https://web.trf3.jus.br/jurisprudencia/home/index/1'],
-    ['trf4', 'Tribunal Regional Federal da 4ª Região', 'TRF4', 'https://www.trf4.jus.br/trf4/controlador.php?acao=pagina_visualizar&id_pagina=2801'],
-    ['trf5', 'Tribunal Regional Federal da 5ª Região', 'TRF5', 'https://jurisprudencia.trf5.jus.br/jurisprudencia/pesquisa.wsp'],
-    ['trf6', 'Tribunal Regional Federal da 6ª Região', 'TRF6', 'https://portal.trf6.jus.br/'],
-  ].map(([id, name, acronym, url], index) => ({
+    ['trf1', 'Tribunal Regional Federal da 1ª Região', 'TRF1', 'https://www.trf1.jus.br/trf1/carta-servicos/jurisprudencia', 'https://www.trf1.jus.br/trf1/noticias/'],
+    ['trf2', 'Tribunal Regional Federal da 2ª Região', 'TRF2', 'https://www.trf2.jus.br/trf2/consultas-e-servicos/jurisprudencia', 'https://trf2.jus.br/trf2/comunicacao'],
+    ['trf3', 'Tribunal Regional Federal da 3ª Região', 'TRF3', 'https://web.trf3.jus.br/jurisprudencia/home/index/1', 'https://web.trf3.jus.br/noticias/Noticiar/ExibirUltimasNoticias'],
+    ['trf4', 'Tribunal Regional Federal da 4ª Região', 'TRF4', 'https://www.trf4.jus.br/trf4/controlador.php?acao=pagina_visualizar&id_pagina=2801', 'https://www.trf4.jus.br/trf4/controlador.php?acao=noticia_portal'],
+    ['trf5', 'Tribunal Regional Federal da 5ª Região', 'TRF5', 'https://jurisprudencia.trf5.jus.br/jurisprudencia/pesquisa.wsp', 'https://www.trf5.jus.br/index.php/noticias'],
+    ['trf6', 'Tribunal Regional Federal da 6ª Região', 'TRF6', 'https://portal.trf6.jus.br/', 'https://portal.trf6.jus.br/noticias/'],
+  ].map(([id, name, acronym, url, discoveryUrl], index) => ({
     id, name, acronym, category: 'Jurisprudência federal regional',
     description: 'Decisões, acórdãos, precedentes e informativos oficiais da Justiça Federal regional.',
-    url, discoveryUrl: url, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 6 horas', priority: 12 + index, color: 'blue', adapter: 'links',
+    url, discoveryUrl, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 20 minutos', priority: 12 + index, color: 'blue', adapter: 'links',
   })),
 ];
 

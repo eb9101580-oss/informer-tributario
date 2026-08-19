@@ -11,17 +11,9 @@ export function isRecentAlert(alert, now = Date.now()) {
   return now - alertPublishedTimestamp(alert) <= 30 * DAY_MS;
 }
 
-/**
- * Keeps the feed current without hiding older decisions and manuals.
- * Items published in the last 30 days come first; score orders items
- * inside each freshness group, followed by the publication date.
- */
-export function compareFeedAlerts(left, right, now = Date.now()) {
+/** Orders the feed chronologically; score is only a tie-breaker. */
+export function compareFeedAlerts(left, right) {
   const leftDate = alertPublishedTimestamp(left);
   const rightDate = alertPublishedTimestamp(right);
-  const leftRecent = isRecentAlert(left, now) ? 0 : 1;
-  const rightRecent = isRecentAlert(right, now) ? 0 : 1;
-  return leftRecent - rightRecent
-    || ((right.score || 0) - (left.score || 0))
-    || (rightDate - leftDate);
+  return (rightDate - leftDate) || ((right.score || 0) - (left.score || 0));
 }

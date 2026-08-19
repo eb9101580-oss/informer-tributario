@@ -54,7 +54,11 @@ alertsRouter.get('/', async (request, response, next) => {
       .filter((alert) => status === 'all' || alert.status === status)
       .filter((alert) => kind === 'all' || alert.kind === kind)
       .filter((alert) => !request.query.section || sectionsForAlert(alert).includes(request.query.section))
-      .sort((a, b) => (b.score - a.score) || new Date(b.publishedAt) - new Date(a.publishedAt));
+      .sort((a, b) => {
+        const dateDifference = (Date.parse(b.publishedAt || b.createdAt || '') || 0)
+          - (Date.parse(a.publishedAt || a.createdAt || '') || 0);
+        return dateDifference || (b.score - a.score);
+      });
 
     response.json({ items: alerts, total: alerts.length });
   } catch (error) {

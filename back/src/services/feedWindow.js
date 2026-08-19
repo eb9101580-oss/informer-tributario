@@ -1,5 +1,5 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
-export const FEED_WINDOW_DAYS = 14;
+export const FEED_WINDOW_DAYS = 30;
 const BRAZIL_TIME_ZONE = 'America/Sao_Paulo';
 const brazilDateFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: BRAZIL_TIME_ZONE,
