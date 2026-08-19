@@ -15,6 +15,7 @@ import { MonitorPage } from './components/MonitorPage.jsx';
 import { PublicBlog } from './components/PublicBlog.jsx';
 import { ActionsPage } from './components/ActionsPage.jsx';
 import { SectionPage } from './components/SectionPage.jsx';
+import { SettingsPage } from './components/SettingsPage.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -28,6 +29,7 @@ const pageTitles = {
   actions: ['Ações acompanhadas', 'Status e movimentações recentes dos temas e processos que você escolheu observar.'],
   reforma: ['Reforma tributária', 'IBS, CBS, CGIBS, regulamentação e impactos operacionais.'],
   obrigacoes: ['Obrigações acessórias', 'Manuais, leiautes e alterações nas escriturações digitais.'],
+  settings: ['Configurações', 'Preferências de alertas e entrega de notificações.'],
 };
 
 function LoadingState() {
@@ -128,6 +130,8 @@ export default function App() {
 
     if (activePage === 'actions') return <ActionsPage />;
 
+    if (activePage === 'settings') return <SettingsPage />;
+
     if (activePage === 'reforma' || activePage === 'obrigacoes') return <SectionPage sectionId={activePage} onOpen={setSelectedAlert} onFeedback={sendFeedback} feedbackFor={voteFor} />;
 
     if (activePage === 'feedback') return (
@@ -175,7 +179,7 @@ export default function App() {
         <header className="topbar">
           <button className="icon-button menu-button" onClick={() => setSidebarOpen(true)}><Menu /></button>
           <div className="topbar__date"><CalendarDays size={17} /><span>{new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }).format(new Date())}</span></div>
-          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Fontes verificadas</span><button className="icon-button notification"><BellRing size={20} /><i /></button></div>
+          <div className="topbar__right"><span className="environment"><ShieldCheck size={16} /> Fontes verificadas</span><button className="icon-button notification" onClick={() => { setActivePage('alerts'); setRelevance('urgent'); }} aria-label="Abrir alertas nota 8 ou superior" title="Alertas nota 8 ou superior"><BellRing size={20} /><i /></button></div>
         </header>
         <div className="page">
           <div className="page-header">

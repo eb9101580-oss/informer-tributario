@@ -31,8 +31,8 @@ export function Sidebar({ active, onChange, open, onClose }) {
         ))}
       </nav>
       <div className="sidebar__bottom">
-        <button className="nav__item"><Settings size={19} /><span>Configurações</span></button>
-        <div className="profile"><span className="profile__avatar">JM</span><span><strong>Julia Martins</strong><small>Administradora</small></span></div>
+        <button className="nav__item" onClick={() => { onChange('settings'); onClose(); }}><Settings size={19} /><span>Configurações</span></button>
+        <div className="profile"><span className="profile__avatar">JM</span><span><strong>Julia Antunes Da Silva</strong><small>Administradora</small></span></div>
       </div>
     </aside>
   );

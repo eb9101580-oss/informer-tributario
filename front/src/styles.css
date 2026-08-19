@@ -170,6 +170,27 @@ button { cursor: pointer; }
 .feedback-steps strong { font-size: 13px; display: block; color: #29413e; }
 .feedback-steps p { font-size: 11px; line-height: 1.5; color: #788582; margin: 5px 0 0; }
 
+.settings-page { max-width: 860px; margin: 0 auto; }
+.settings-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding: 25px; border-radius: 12px; background: linear-gradient(135deg, #e9f5f1, #fdfbf4); border: 1px solid #d3e7e1; }
+.settings-hero span { display: flex; align-items: center; gap: 7px; color: #2a766a; text-transform: uppercase; letter-spacing: .08em; font-size: 10px; font-weight: 800; }
+.settings-hero h2 { margin: 9px 0 6px; color: #173e39; font: 500 27px Georgia, serif; }
+.settings-hero p { margin: 0; color: #637572; font-size: 12px; line-height: 1.55; }
+.settings-status { display: flex; align-items: flex-start; gap: 11px; margin-top: 18px; padding: 16px; border-radius: 10px; color: #9b5d24; background: #fff6e8; border: 1px solid #f0dbb8; }
+.settings-status--ready { color: #267463; background: #edf8f4; border-color: #cce7de; }
+.settings-status strong { display: block; font-size: 12px; }
+.settings-status p { margin: 4px 0 0; color: #71817e; font-size: 11px; line-height: 1.5; }
+.settings-form { margin-top: 22px; padding: 19px; border: 1px solid #e1e9e7; border-radius: 11px; }
+.settings-form > label { display: block; color: #45615c; font-size: 11px; font-weight: 750; margin-bottom: 8px; }
+.settings-form > div { display: flex; align-items: center; gap: 9px; border: 1px solid #d8e3e0; background: #fbfdfc; border-radius: 8px; padding-left: 11px; color: #78908b; }
+.settings-form input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: #294541; padding: 11px 0; font-size: 12px; }
+.settings-form button { border: 0; border-radius: 7px; padding: 10px 13px; margin-right: 4px; font-size: 10px; font-weight: 750; }
+.settings-form button.primary { color: white; background: var(--green); }
+.settings-form button:disabled { opacity: .6; }
+.settings-form small { display: block; color: #6d7b79; font-size: 10px; margin-top: 9px; }
+.settings-notes { margin-top: 18px; color: #657572; font-size: 11px; line-height: 1.6; }
+.settings-notes strong { color: #284b45; font-size: 12px; }
+.settings-notes p { margin: 5px 0 0; }
+
 .collector-page { display: grid; gap: 18px; }
 .pipeline { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); background: white; border-radius: 13px; padding: 19px; }
 .pipeline > div { min-width: 130px; display: grid; justify-items: center; text-align: center; }
@@ -554,6 +575,11 @@ button { cursor: pointer; }
   .actions-intro h2 { font-size: 23px; }
   .tracked-action { padding: 15px; }
   .tracked-action h3 { font-size: 18px; }
+  .settings-hero { padding: 20px 17px; }
+  .settings-hero h2 { font-size: 23px; }
+  .settings-form > div { align-items: stretch; flex-wrap: wrap; padding: 0 0 0 10px; }
+  .settings-form input { min-width: calc(100% - 42px); }
+  .settings-form button { width: 100%; margin: 0 4px 4px 0; }
   button, a, input { min-height: 44px; }
   .alert-card { touch-action: manipulation; }
   .drawer { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
