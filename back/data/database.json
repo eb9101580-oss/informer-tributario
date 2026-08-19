@@ -1,9 +1,66 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T07:07:28.640Z",
+    "lastUpdatedAt": "2026-08-19T13:12:17.579Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "AGRAVO EM RECURSO ESPECIAL Nº 2185315 - GO (2022/0246788-4)",
+      "theme": "Direito Tributário",
+      "agency": "Superior Tribunal de Justiça (STJ)",
+      "taxes": [
+        "ICMS-ST",
+        "Responsabilidade Solidária"
+      ],
+      "status": "Análise",
+      "kind": "Agravo em Recurso Especial",
+      "impactType": "Ambos",
+      "publishedAt": "2026-06-11",
+      "summary": "O acórdão nega provimento ao agravo interno, destacando a irrelevância da legislação estadual em relação à matéria central da controvérsia, que depende de interpretação de norma geral de direito tributário prevista em lei federal.",
+      "whatChanged": "O acórdão rejeita provimento ao agravo interno, afirmando que a legislação estadual não é suficiente para resolver a controvérsia, já que a solução depende de norma geral de direito tributário federal.",
+      "practicalImpact": "O acórdão pode influenciar a interpretação de normas tributárias relacionadas a responsabilidade solidária e a aplicação de leis federais em casos de substituição de tributos.",
+      "officeAction": "Negado provimento ao agravo interno.",
+      "affectedProfiles": [
+        "Empresas de Distribuição de Combustíveis",
+        "Estados de Goiás",
+        "Advogados Tributários"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Agravo em Recurso Especial",
+        "period": "2022/0246788-4",
+        "action": "Negado provimento",
+        "confidence": "baixo"
+      },
+      "id": "4ccdd098-d64f-4501-a51a-16a495820d74",
+      "score": 7.4,
+      "relevance": "Relevante",
+      "officialUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202202467884&dt_publicacao=11%2F06%2F2026",
+      "isDemo": false,
+      "createdAt": "2026-08-19T13:12:17.577Z",
+      "updatedAt": "2026-08-19T13:12:17.577Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:1.7b",
+        "collectorUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202202467884&dt_publicacao=11%2F06%2F2026",
+        "sourceCharacters": 17646,
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "discoveredBy": "stj-open-data",
+        "sourceType": "official",
+        "documentKind": "Inteiro teor de acórdão",
+        "discoveredAt": "2026-08-18T18:33:16.784Z"
+      }
+    },
     {
       "relevant": true,
       "title": "Agravo Interno - Recurso Especial - Execução Fiscal - Dinheiro não é bem de capital",
@@ -457,7 +514,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -473,7 +530,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -489,7 +546,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -505,7 +562,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -521,7 +578,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -537,7 +594,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -553,7 +610,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -569,7 +626,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -585,7 +642,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -601,7 +658,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -617,7 +674,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:04:58.703Z",
+        "discoveredAt": "2026-08-19T13:09:40.762Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -3670,8 +3727,11 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "b37445a171cc6951b6873745",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T13:12:17.579Z",
+        "score": 7.4,
+        "alertId": "4ccdd098-d64f-4501-a51a-16a495820d74"
       },
       {
         "title": "AgInt no REsp 2029243 — PROCESSUAL CIVIL E TRIBUTÁRIO. AGRAVO INTERNO. RECURSO ESPECIAL. REEXAME DE FATOS E DE PROVAS. IMPOSSIBILIDADE. SÚMULA 7/STJ. DISSÍDIO JURISPRUDENCIAL PREJUDICADO. PROVIMENTO NEGADO. 1. O reexame do contexto fático-probatório dos autos redunda na formação de n",
@@ -4253,6 +4313,154 @@
       }
     ],
     "runs": [
+      {
+        "id": "3cf378ec-84aa-4560-ab6d-d538547d6ae5",
+        "trigger": "github-actions-analysis",
+        "startedAt": "2026-08-19T13:09:25.050Z",
+        "finishedAt": "2026-08-19T13:12:17.582Z",
+        "discovered": 11,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 3,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 15
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 22
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1
+          }
+        ]
+      },
       {
         "id": "97643084-acc2-41ff-9d4e-b392a8161d8c",
         "trigger": "github-actions-discovery",
@@ -7887,7 +8095,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T13:05:51.794Z",
-    "nextRunAt": "2026-08-19T19:05:51.794Z"
+    "lastRunAt": "2026-08-19T13:12:17.582Z",
+    "nextRunAt": "2026-08-19T19:12:17.582Z"
   }
 }
