@@ -23,6 +23,6 @@ export const config = {
   monitorEnabled: process.env.VERCEL !== '1' && process.env.MONITOR_ENABLED !== 'false',
   monitorIntervalMinutes: Math.max(15, Number(process.env.MONITOR_INTERVAL_MINUTES) || 360),
   monitorMaxAnalyses: Math.max(0, Number(process.env.MONITOR_MAX_ANALYSES_PER_RUN) || 2),
-  monitorLookbackDays: Math.max(1, Number(process.env.MONITOR_LOOKBACK_DAYS) || 30),
+  monitorLookbackDays: Math.max(1, Number(process.env.MONITOR_LOOKBACK_DAYS) || 62),
   monitorInitialDelayMs: Math.max(5000, Number(process.env.MONITOR_INITIAL_DELAY_MS) || 15000),
 };

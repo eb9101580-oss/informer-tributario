@@ -1,5 +1,6 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
-export const FEED_WINDOW_DAYS = 30;
+// Dois meses-calendário podem abranger até 62 dias.
+export const FEED_WINDOW_DAYS = 62;
 const BRAZIL_TIME_ZONE = 'America/Sao_Paulo';
 const brazilDateFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: BRAZIL_TIME_ZONE,
