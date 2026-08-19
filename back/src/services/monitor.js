@@ -158,6 +158,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.filter((item) => {
         if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
+        if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !item.inlineText && !item.publishedAt) return false;
         if (['pending', 'error'].includes(item.status) && !item.backfillDate && !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return false;
         const fingerprint = candidateFingerprint(item);
         if (['pending', 'error'].includes(item.status) && (publishedFingerprints.has(fingerprint) || pendingFingerprints.has(fingerprint))) return false;
@@ -213,7 +214,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
         });
       const reserved = [];
       const reservedIds = new Set();
-      const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId)
+      const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId) && candidate.inlineText
         && /inteiro teor|acórdão|decisão/i.test(candidate.documentKind))
         || prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão/i.test(candidate.documentKind));
       if (judicialCandidate) {
