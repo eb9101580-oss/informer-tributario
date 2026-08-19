@@ -183,12 +183,18 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
           return String(right.publishedAt || right.discoveredAt).localeCompare(String(left.publishedAt || left.discoveredAt));
         });
       // Reserva vagas para Obrigações acessórias para que Reforma não monopolize a fila.
-      const obligationSlots = Math.min(2, config.monitorMaxAnalyses);
-      const reservedObligations = prioritizedQueue
-        .filter((item) => candidateSections(item).includes('obrigacoes'))
-        .slice(0, obligationSlots);
-      const reservedIds = new Set(reservedObligations.map((item) => item.id));
-      const queue = [...reservedObligations, ...prioritizedQueue.filter((item) => !reservedIds.has(item.id))]
+      const reserved = [];
+      const reservedIds = new Set();
+      for (const sectionId of ['reforma', 'obrigacoes']) {
+        for (const candidate of prioritizedQueue) {
+          if (reserved.length >= config.monitorMaxAnalyses || reservedIds.size >= Math.min(4, config.monitorMaxAnalyses)) break;
+          if (reservedIds.has(candidate.id) || !candidateSections(candidate).includes(sectionId)) continue;
+          if (reserved.filter((item) => candidateSections(item).includes(sectionId)).length >= 2) break;
+          reserved.push(candidate);
+          reservedIds.add(candidate.id);
+        }
+      }
+      const queue = [...reserved, ...prioritizedQueue.filter((item) => !reservedIds.has(item.id))]
         .slice(0, config.monitorMaxAnalyses);
       for (const candidate of queue) {
         runtime.currentSource = candidate.sourceAcronym;
