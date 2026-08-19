@@ -169,7 +169,7 @@ export default function App() {
         <section className="panel overview-feed">
           <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Publicações mais novas primeiro; seus votos ajudam a aperfeiçoar a relevância</p></div><span className="live-dot" /></div>
           <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
-          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação dos últimos 7 dias</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
+          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação dos últimos 2 meses</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
         </section>
       </>
     );

@@ -50,7 +50,7 @@ npm.cmd run dev
 
 O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consulta a cada seis horas. Abra **Varredura automática** para acompanhar a fonte atual, fila, documentos, falhas e histórico de ciclos.
 
-No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos seis dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela de sete dias é revisitada em aproximadamente duas horas. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
+No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos 61 dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela de dois meses é revisitada progressivamente. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
 
 O fluxo é:
 
@@ -68,7 +68,7 @@ Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `ba
 MONITOR_ENABLED=true
 MONITOR_INTERVAL_MINUTES=360
 MONITOR_MAX_ANALYSES_PER_RUN=2
-MONITOR_LOOKBACK_DAYS=7
+MONITOR_LOOKBACK_DAYS=62
 ```
 
 Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
