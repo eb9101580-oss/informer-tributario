@@ -213,7 +213,9 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
         });
       const reserved = [];
       const reservedIds = new Set();
-      const judicialCandidate = prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão/i.test(candidate.documentKind));
+      const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId)
+        && /inteiro teor|acórdão|decisão/i.test(candidate.documentKind))
+        || prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão/i.test(candidate.documentKind));
       if (judicialCandidate) {
         reserved.push(judicialCandidate);
         reservedIds.add(judicialCandidate.id);
