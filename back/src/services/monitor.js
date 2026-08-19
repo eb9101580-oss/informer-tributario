@@ -41,6 +41,22 @@ function makeAlert(analysis, document, candidate) {
   };
 }
 
+function candidateSections(candidate) {
+  return candidate.sections?.length ? candidate.sections : sectionIdsForSource(candidate.sourceId);
+}
+
+function operationalUpdateRank(candidate) {
+  const text = `${candidate.title || ''} ${candidate.documentKind || ''}`;
+  return /instru[cç][aã]o normativa|portaria|solu[cç][aã]o de (consulta|diverg[eê]ncia)|nota t[eé]cnica|ajuste sinief|manual|leiaute|layout|resolu[cç][aã]o|decreto|lei|altera[cç][aã]o/i.test(text) ? 0 : 1;
+}
+
+function sectionRank(candidate) {
+  const sections = candidateSections(candidate);
+  if (sections.includes('reforma')) return 0;
+  if (sections.includes('obrigacoes')) return 1;
+  return 2;
+}
+
 async function mapWithConcurrency(items, concurrency, mapper) {
   const results = [];
   let cursor = 0;
@@ -134,6 +150,12 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       const queue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || (item.status === 'error' && item.attempts < 3))
         .sort((left, right) => {
+          const leftSection = sectionRank(left);
+          const rightSection = sectionRank(right);
+          if (leftSection !== rightSection) return leftSection - rightSection;
+          const leftOperational = operationalUpdateRank(left);
+          const rightOperational = operationalUpdateRank(right);
+          if (leftOperational !== rightOperational) return leftOperational - rightOperational;
           const leftDecision = /inteiro teor|acórdão|decisão/i.test(left.documentKind) ? 0 : 1;
           const rightDecision = /inteiro teor|acórdão|decisão/i.test(right.documentKind) ? 0 : 1;
           if (leftDecision !== rightDecision) return leftDecision - rightDecision;
@@ -151,7 +173,13 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
         runtime.currentDocument = candidate.title;
         try {
           await updateDatabase((data) => ({ ...data, monitor: { ...monitorData(data), candidates: monitorData(data).candidates.map((item) => item.id === candidate.id ? { ...item, status: 'analyzing', attempts: item.attempts + 1 } : item) } }));
-          const document = await collectOfficialPage(candidate.collectionUrl || candidate.url);
+          const document = {
+            ...(await collectOfficialPage(candidate.collectionUrl || candidate.url)),
+            candidateTitle: candidate.title,
+            documentKind: candidate.documentKind,
+            sourceName: candidate.sourceName,
+            sections: candidateSections(candidate),
+          };
           if (document.characters < 200) throw new Error('Documento sem texto suficiente.');
           const analysis = await analyzeWithOllama(document);
           const alert = makeAlert(analysis, document, candidate);
