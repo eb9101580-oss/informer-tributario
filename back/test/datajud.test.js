@@ -1,10 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeProcessNumber, summarizeDataJudResponse } from '../src/services/datajud.js';
+import { normalizeCourt, normalizeProcessNumber, summarizeDataJudResponse } from '../src/services/datajud.js';
 
 test('normaliza número CNJ e preserva consulta por tema', () => {
   assert.equal(normalizeProcessNumber('0000000-00.0000.0.00.0000'), '00000000000000000000');
   assert.equal(normalizeProcessNumber('ICMS'), '');
+  assert.throws(() => normalizeCourt('stf'), /tribunal DataJud válido/);
 });
 
 test('resume movimentos reais do formato DataJud em ordem decrescente', () => {

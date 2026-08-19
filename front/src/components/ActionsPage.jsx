@@ -93,7 +93,7 @@ export function ActionsPage() {
           <div className="panel__heading"><div><h2>Novo acompanhamento</h2><p>Uma consulta por tribunal</p></div><Plus size={20} /></div>
           <label>Nome do acompanhamento<input value={form.label} onChange={(event) => setForm({ ...form, label: event.target.value })} placeholder="Tema ICMS" required maxLength={120} /></label>
           <label>Tema ou número do processo<input value={form.query} onChange={(event) => setForm({ ...form, query: event.target.value })} placeholder="ICMS ou 0000000-00.0000.0.00.0000" required maxLength={160} /><small>Para processo, use o número CNJ completo; para tema, use termos objetivos.</small></label>
-          <label>Tribunal<select value={form.court} onChange={(event) => setForm({ ...form, court: event.target.value })}>{(status?.courts || []).map((court) => <option value={court.value} key={court.value}>{court.label}</option>)}</select></label>
+          <label>Tribunal<select value={form.court} onChange={(event) => setForm({ ...form, court: event.target.value })}>{(status?.courts || []).map((court) => <option value={court.value} key={court.value}>{court.label}</option>)}</select><small>O STF não aparece porque não possui índice público no DataJud; para ele será necessária uma integração oficial própria.</small></label>
           <button className="primary-button" disabled={saving || !status?.enabled}><Search size={17} />{saving ? 'Consultando DataJud...' : 'Adicionar e consultar'}</button>
           {!status?.enabled && <p className="form-hint">A função será habilitada quando DATAJUD_API_KEY, chave de criptografia e persistência do backend estiverem configuradas.</p>}
         </form>

@@ -2,7 +2,6 @@ import { config } from '../config.js';
 
 const COURT_LABELS = {
   stj: 'STJ',
-  stf: 'STF',
   trf1: 'TRF1', trf2: 'TRF2', trf3: 'TRF3', trf4: 'TRF4', trf5: 'TRF5', trf6: 'TRF6',
   tjsp: 'TJSP', tjrj: 'TJRJ', tjmg: 'TJMG', tjrs: 'TJRS', tjpr: 'TJPR', tjba: 'TJBA',
 };
@@ -140,6 +139,9 @@ export async function queryDataJud(tracker) {
     const body = await response.json().catch(() => ({}));
     if (!response.ok) {
       const detail = body?.error?.reason || body?.message || `status ${response.status}`;
+      if (response.status === 404 && /no such index/i.test(String(detail))) {
+        throw fail(`${courtLabel(court)} não possui índice público no DataJud. Escolha um tribunal disponível na lista.`, 400);
+      }
       throw fail(`DataJud recusou a consulta (${detail}).`, response.status === 401 || response.status === 403 ? 502 : response.status);
     }
     return summarizeDataJudResponse(body, court);
