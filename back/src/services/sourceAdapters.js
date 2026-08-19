@@ -29,13 +29,28 @@ export function hasStrongTaxSignal(...values) {
 }
 
 export function isCandidateEligible(sourceId, title, url) {
+  if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
   if (sourceId === 'confaz-ajustes') return /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(`${title} ${url}`);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
   if (['reforma-cgibs', 'reforma-portal', 'reforma-folha', 'reforma-valor'].includes(sourceId)) {
     return /reforma|ibs|cbs|imposto seletivo|documento fiscal|nota t[eé]cnica|regulamenta|tribut/i.test(`${title} ${url}`);
   }
-  if (['sped-notas-tecnicas', 'sped-ecd', 'sped-ecf', 'sped-efd-contribuicoes', 'sped-efd-icms-ipi', 'sped-efd-reinf', 'sped-e-financeira', 'sped-esocial', 'sped-central-balancos', 'sped-dere'].includes(sourceId)) {
-    return /manual|leiaute|layout|nota t[eé]cnica|orienta|vers[aã]o|tabela|sped|ecd|ecf|efd|reinf|esocial|financeira|dere/i.test(`${title} ${url}`);
+  if (sourceId === 'sped-notas-tecnicas') return /manual|manu[aá]i|leiaute|layout|nota t[eé]cnica|orienta|vers[aã]o|tabela|atualiz|ecd|ecf|efd|reinf|esocial|financeira|dere/i.test(`${title} ${url}`);
+  if (sourceId === 'sped-dere') return /\bdere\b|declara[cç][aã]o de regimes especiais|manual|leiaute|nota t[eé]cnica|orienta|vers[aã]o/i.test(`${title} ${url}`);
+  if (['sped-ecd', 'sped-ecf', 'sped-efd-contribuicoes', 'sped-efd-icms-ipi', 'sped-efd-reinf', 'sped-e-financeira', 'sped-esocial', 'sped-central-balancos', 'sped-dere'].includes(sourceId)) {
+    const moduleTerms = {
+      'sped-ecd': /\becd\b|escritura[cç][aã]o cont[aá]bil/i,
+      'sped-ecf': /\becf\b|escritura[cç][aã]o cont[aá]bil fiscal/i,
+      'sped-efd-contribuicoes': /efd.?contribui[cç][oõ]es|contribui[cç][oõ]es|pis|cofins/i,
+      'sped-efd-icms-ipi': /efd.?icms|icms|ipi/i,
+      'sped-efd-reinf': /reinf/i,
+      'sped-e-financeira': /e.?financeira|financeira/i,
+      'sped-esocial': /esocial/i,
+      'sped-central-balancos': /central.{0,12}balan[cç]os|balan[cç]os/i,
+      'sped-dere': /\bdere\b|regimes espec[ií]ficos/i,
+    }[sourceId];
+    const text = `${title} ${url}`;
+    return moduleTerms.test(text) && /manual|manu[aá]i|leiaute|layout|nota t[eé]cnica|orienta|vers[aã]o|tabela|atualiz|documenta[cç][aã]o|programa/i.test(text);
   }
   if (['receita-cosit', 'receita-in', 'receita-notas'].includes(sourceId)) {
     const sourceText = normalizeSearchText(title);

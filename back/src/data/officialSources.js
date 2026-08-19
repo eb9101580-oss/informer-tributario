@@ -37,7 +37,7 @@ export const officialSources = [
   {
     id: 'sped-notas-tecnicas', name: 'SPED — Documentos e Notas Técnicas', acronym: 'SPED', category: 'Escrituração fiscal digital',
     description: 'Documentos técnicos, manuais e notas do Sistema Público de Escrituração Digital relacionados às obrigações tributárias.',
-    url: 'https://sped.rfb.gov.br/item/show/271', discoveryUrl: 'https://sped.rfb.gov.br/item/show/271',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais',
     focus: ['SPED', 'EFD', 'Documentos técnicos'], monitoring: 'A cada 6 horas', priority: 6, color: 'teal', adapter: 'links',
   },
   {
@@ -106,55 +106,55 @@ export const officialSources = [
   {
     id: 'sped-ecd', name: 'SPED - ECD', acronym: 'ECD', category: 'Escrituração contábil digital',
     description: 'Manuais, leiautes, notas técnicas e validadores da Escrituração Contábil Digital.',
-    url: 'https://sped.rfb.gov.br/item/show/273', discoveryUrl: 'https://sped.rfb.gov.br/item/show/273',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd',
     focus: ['Manual ECD', 'Leiaute', 'Validador'], monitoring: 'A cada 6 horas', priority: 8, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-ecf', name: 'SPED - ECF', acronym: 'ECF', category: 'Escrituração fiscal digital',
     description: 'Manuais, leiautes, tabelas dinâmicas e atualizações da Escrituração Contábil Fiscal.',
-    url: 'https://sped.rfb.gov.br/item/show/1644', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1644',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf',
     focus: ['Manual ECF', 'Leiaute', 'Planos referenciais'], monitoring: 'A cada 6 horas', priority: 9, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-efd-contribuicoes', name: 'SPED - EFD-Contribuições', acronym: 'EFD-C', category: 'Escrituração fiscal digital',
     description: 'Notas técnicas, tabelas, procedimentos e versões do programa gerador da EFD-Contribuições.',
-    url: 'https://sped.rfb.gov.br/item/show/268', discoveryUrl: 'https://sped.rfb.gov.br/item/show/268',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes',
     focus: ['Notas técnicas', 'Tabelas', 'PIS e Cofins'], monitoring: 'A cada 6 horas', priority: 10, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-efd-icms-ipi', name: 'SPED - EFD ICMS IPI', acronym: 'EFD-ICMS/IPI', category: 'Escrituração fiscal digital',
     description: 'Guias práticos, notas orientativas e manuais de leiaute da EFD ICMS IPI.',
-    url: 'https://sped.rfb.gov.br/item/show/1573', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1573',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi',
     focus: ['Guia prático', 'ICMS e IPI', 'Leiaute'], monitoring: 'A cada 6 horas', priority: 11, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-efd-reinf', name: 'SPED - EFD-Reinf', acronym: 'EFD-Reinf', category: 'Escrituração fiscal digital',
     description: 'Manuais do usuário e desenvolvedor, leiautes, tabelas e notas técnicas da EFD-Reinf.',
-    url: 'https://sped.rfb.gov.br/item/show/2225', discoveryUrl: 'https://sped.rfb.gov.br/item/show/2225',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf',
     focus: ['Manual', 'Leiautes', 'Notas técnicas'], monitoring: 'A cada 6 horas', priority: 12, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-e-financeira', name: 'SPED - e-Financeira', acronym: 'e-Financeira', category: 'Escrituração fiscal digital',
     description: 'Manuais, leiautes, schemas e tabelas de códigos da e-Financeira.',
-    url: 'https://sped.rfb.gov.br/item/show/1179', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1179',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira',
     focus: ['Manuais', 'Leiautes', 'Schemas'], monitoring: 'A cada 6 horas', priority: 13, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-esocial', name: 'SPED - eSocial', acronym: 'eSocial', category: 'Escrituração fiscal, previdenciária e trabalhista',
     description: 'Documentação técnica e alterações do eSocial que impactam informações fiscais, previdenciárias e trabalhistas.',
-    url: 'https://sped.rfb.gov.br/item/show/1507', discoveryUrl: 'https://sped.rfb.gov.br/item/show/1507',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/esocial', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/esocial',
     focus: ['Documentação técnica', 'Eventos', 'Leiautes'], monitoring: 'A cada 6 horas', priority: 14, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-central-balancos', name: 'SPED - Central de Balanços', acronym: 'Central', category: 'Escrituração contábil digital',
     description: 'Publicações, regras e documentos da Central de Balanços do SPED.',
-    url: 'https://sped.rfb.gov.br/item/show/4150', discoveryUrl: 'https://sped.rfb.gov.br/item/show/4150',
+    url: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/central-de-balancos', discoveryUrl: 'https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/central-de-balancos',
     focus: ['Demonstrações', 'Documentos contábeis', 'Autenticidade'], monitoring: 'A cada 6 horas', priority: 15, color: 'teal', adapter: 'links', sections: ['obrigacoes'],
   },
   {
     id: 'sped-dere', name: 'SPED - DeRE / Reforma', acronym: 'DeRE', category: 'Obrigação acessória da reforma',
     description: 'Manual, leiautes, schemas e regras de validação da Declaração de Regimes Específicos do IBS e da CBS.',
-    url: 'https://sped.rfb.gov.br/item/show/2922', discoveryUrl: 'https://sped.rfb.gov.br/item/show/2922',
+    url: 'https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/empresa/sped/declaracao-de-regimes-especiais-dere/declaracao-de-regimes-especiais', discoveryUrl: 'https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/empresa/sped/declaracao-de-regimes-especiais-dere/declaracao-de-regimes-especiais',
     focus: ['IBS e CBS', 'Manual DeRE', 'Leiautes'], monitoring: 'A cada 6 horas', priority: 16, color: 'gold', adapter: 'links', sections: ['reforma', 'obrigacoes'],
   },
   {

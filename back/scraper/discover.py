@@ -27,6 +27,49 @@ def publication_date(value: str) -> str:
     return ""
 
 
+def state_links(page) -> list[dict]:
+    """Lê os resultados carregados no estado inicial do novo portal gov.br/sped.
+
+    O portal renderiza os comunicados e manuais via React; eles não aparecem como
+    âncoras HTML para um coletor simples, mas ficam disponíveis no JSON
+    `window.__data` entregue no primeiro carregamento.
+    """
+    body = page.body.decode("utf-8", errors="replace") if isinstance(page.body, bytes) else str(page.body)
+    marker = "window.__data="
+    start = body.find(marker)
+    if start < 0:
+        return []
+    start += len(marker)
+    end = body.find("</script>", start)
+    if end < 0:
+        return []
+    raw = body[start:end].rstrip(";\n ")
+    raw = re.sub(r":undefined\b", ":null", raw)
+    try:
+        state = json.loads(raw)
+    except (TypeError, ValueError):
+        return []
+
+    found = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            file_data = value.get("file") if isinstance(value.get("file"), dict) else {}
+            url = value.get("getURL") or value.get("targetUrl") or file_data.get("download") or value.get("@id")
+            title = clean(value.get("title") or value.get("Title") or "")
+            if url and title and str(url).startswith("https://") and not str(url).endswith(("/@navigation", "/@breadcrumbs", "/@types", "/@workflow")):
+                modified = value.get("modified") or value.get("ModificationDate") or value.get("effective") or value.get("EffectiveDate") or ""
+                found.append({"title": title[:300], "url": str(url), "publishedAt": publication_date(str(modified))})
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(state)
+    return found
+
+
 def discover(url: str) -> dict:
     page = Fetcher.get(url, timeout=30, stealthy_headers=True)
     links = []
@@ -42,6 +85,12 @@ def discover(url: str) -> dict:
         seen.add(absolute)
         context = clean(" ".join(anchor.xpath("ancestor::*[self::tr or self::li or self::article or contains(@class, 'item')][1]//text()").getall()))
         links.append({"title": (context or title)[:300], "url": absolute, "publishedAt": publication_date(f"{context} {title}")})
+        if len(links) >= 300:
+            break
+    for item in state_links(page):
+        if item["url"] not in seen:
+            seen.add(item["url"])
+            links.append(item)
         if len(links) >= 300:
             break
     return {"url": url, "links": links}

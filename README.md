@@ -24,6 +24,8 @@ O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` sã
 - CARF e PGFN;
 - TRF1, TRF2, TRF3, TRF4, TRF5 e TRF6.
 
+O painel também separa duas curadorias temáticas: **Reforma tributária** (Portal da Reforma, CGIBS, Folha, Valor, NF-e e atos oficiais) e **Obrigações acessórias** (Ajustes SINIEF, NF-e e os módulos ECD, ECF, EFD-Contribuições, EFD ICMS/IPI, EFD-Reinf, e-Financeira, eSocial, Central de Balanços e DeRE). Os manuais e leiautes do SPED usam as páginas oficiais do novo portal `gov.br/sped`, que expõem a versão e a data de modificação do documento.
+
 Câmara e Senado usam os serviços oficiais de dados abertos. O STJ usa seu catálogo oficial de dados abertos e gera links para o inteiro teor dos acórdãos. Os demais conectores consultam os portais oficiais de jurisprudência, precedentes ou publicações. Cada falha é registrada por fonte e nunca é tratada como “nenhuma novidade”.
 
 ## Requisitos e instalação
@@ -87,6 +89,8 @@ Sem essas chaves, o painel continua funcionando, mas o cadastro informa que o en
 ## Ações acompanhadas e DataJud
 
 Em **Ações acompanhadas**, cadastre um tema tributário (por exemplo, `ICMS`) ou um número CNJ e selecione o tribunal. O painel consulta a API Pública do DataJud, mostra a movimentação mais recente e conserva o histórico resumido. Um workflow do GitHub consulta os acompanhamentos a cada 10 minutos e publica somente o estado criptografado em `back/data/tracked-actions.json`.
+
+Quando uma nova movimentação é detectada, ela é transformada em um alerta oficial com nota 8,5 e aparece automaticamente no dashboard, no feed geral e no histórico do acompanhamento. O alerta mantém a data, a descrição do movimento e o link oficial do processo.
 
 Configure a chave pública vigente do CNJ somente como segredo de ambiente; nunca a grave no código:
 
