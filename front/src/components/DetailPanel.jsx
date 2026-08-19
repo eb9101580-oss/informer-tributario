@@ -44,7 +44,7 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
 
         <section><h3>Clientes potencialmente afetados</h3><div className="profile-tags">{alert.affectedProfiles.map((profile) => <span key={profile}>{profile}</span>)}</div></section>
 
-        {alert.officialUrl ? <a className="source-link" href={alert.officialUrl} target="_blank" rel="noreferrer">Acessar fonte oficial <ExternalLink size={17} /></a> : <span className="source-link source-link--disabled">Fonte oficial pendente de confirmação</span>}
+        {alert.officialUrl ? <a className="source-link" href={alert.officialUrl} target="_blank" rel="noreferrer">{alert.provenance?.sourceType === 'journalistic' ? 'Acessar fonte jornalística' : 'Acessar fonte oficial'} <ExternalLink size={17} /></a> : <span className="source-link source-link--disabled">{alert.provenance?.sourceType === 'journalistic' ? 'Fonte jornalística pendente de confirmação' : 'Fonte oficial pendente de confirmação'}</span>}
 
         {alert.provenance && <div className="provenance-box"><strong>Trilha de verificação</strong><span>Tipo: {alert.provenance.sourceType === 'journalistic' ? 'Fonte jornalística especializada' : 'Fonte oficial'}</span><span>Fonte: {alert.provenance.sourceName || alert.agency}</span><span>Documento: {alert.provenance.documentKind || 'Publicação monitorada'}</span><span>Coleta: {alert.provenance.collector} · análise local: {alert.provenance.analyzer}</span></div>}
 
