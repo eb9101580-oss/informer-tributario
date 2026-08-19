@@ -50,6 +50,10 @@ function operationalUpdateRank(candidate) {
   return /instru[cç][aã]o normativa|portaria|solu[cç][aã]o de (consulta|diverg[eê]ncia)|nota t[eé]cnica|ajuste sinief|manual|leiaute|layout|resolu[cç][aã]o|decreto|lei|altera[cç][aã]o/i.test(text) ? 0 : 1;
 }
 
+function sourceTypeRank(candidate) {
+  return candidate.sourceType === 'official' ? 0 : 1;
+}
+
 function sectionRank(candidate) {
   const sections = candidateSections(candidate);
   if (sections.includes('reforma')) return 0;
@@ -150,12 +154,15 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       const queue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || (item.status === 'error' && item.attempts < 3))
         .sort((left, right) => {
-          const leftSection = sectionRank(left);
-          const rightSection = sectionRank(right);
-          if (leftSection !== rightSection) return leftSection - rightSection;
           const leftOperational = operationalUpdateRank(left);
           const rightOperational = operationalUpdateRank(right);
           if (leftOperational !== rightOperational) return leftOperational - rightOperational;
+          const leftSourceType = sourceTypeRank(left);
+          const rightSourceType = sourceTypeRank(right);
+          if (leftSourceType !== rightSourceType) return leftSourceType - rightSourceType;
+          const leftSection = sectionRank(left);
+          const rightSection = sectionRank(right);
+          if (leftSection !== rightSection) return leftSection - rightSection;
           const leftDecision = /inteiro teor|acórdão|decisão/i.test(left.documentKind) ? 0 : 1;
           const rightDecision = /inteiro teor|acórdão|decisão/i.test(right.documentKind) ? 0 : 1;
           if (leftDecision !== rightDecision) return leftDecision - rightDecision;
