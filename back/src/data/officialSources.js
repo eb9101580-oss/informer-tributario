@@ -60,15 +60,15 @@ export const officialSources = [
   },
   {
     id: 'stf', name: 'Supremo Tribunal Federal', acronym: 'STF', category: 'Jurisprudência constitucional',
-    description: 'Acórdãos, decisões monocráticas, repercussão geral e controle concentrado em matéria tributária.',
+    description: 'Acórdãos e decisões monocráticas da pesquisa oficial de jurisprudência, além das notícias do STF, filtrados por matéria tributária.',
     url: 'https://jurisprudencia.stf.jus.br/pages/search', discoveryUrl: 'https://noticias.stf.jus.br/',
-    focus: ['Acórdãos', 'Repercussão geral', 'Modulação de efeitos'], monitoring: 'A cada 6 horas', priority: 5, color: 'red', adapter: 'links',
+    focus: ['Acórdãos', 'Decisões monocráticas', 'Notícias'], monitoring: 'A cada 6 horas', priority: 5, color: 'red', adapter: 'stf-jurisprudence',
   },
   {
     id: 'stj', name: 'Superior Tribunal de Justiça', acronym: 'STJ', category: 'Jurisprudência federal',
-    description: 'Decisões, acórdãos, recursos repetitivos e precedentes qualificados sobre legislação tributária federal.',
-    url: 'https://dadosabertos.web.stj.jus.br/', discoveryUrl: 'https://processo.stj.jus.br/repetitivos/temas_repetitivos/?pesquisaAvancada=true',
-    focus: ['Acórdãos', 'Recursos repetitivos', 'Primeira Seção'], monitoring: 'A cada 6 horas', priority: 6, color: 'red', adapter: 'stj-open-data',
+    description: 'Decisões terminativas e acórdãos publicados diariamente no Diário da Justiça, filtrados pela classe Direito Tributário da TPU/CNJ.',
+    url: 'https://dadosabertos.web.stj.jus.br/dataset/integras-de-decisoes-terminativas-e-acordaos-do-diario-da-justica', discoveryUrl: 'https://dadosabertos.web.stj.jus.br/dataset/integras-de-decisoes-terminativas-e-acordaos-do-diario-da-justica',
+    focus: ['Decisões terminativas', 'Acórdãos', 'Direito tributário'], monitoring: 'A cada 6 horas', priority: 6, color: 'red', adapter: 'stj-open-data',
   },
   {
     id: 'stj-informativos', name: 'STJ — Informativos de Jurisprudência', acronym: 'INF STJ', category: 'Informativos judiciais',
@@ -172,8 +172,8 @@ export const officialSources = [
     ['trf6', 'Tribunal Regional Federal da 6ª Região', 'TRF6', 'https://portal.trf6.jus.br/', 'https://portal.trf6.jus.br/noticias/'],
   ].map(([id, name, acronym, url, discoveryUrl], index) => ({
     id, name, acronym, category: 'Jurisprudência federal regional',
-    description: 'Decisões, acórdãos, precedentes e informativos oficiais da Justiça Federal regional.',
-    url, discoveryUrl, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 20 minutos', priority: 12 + index, color: 'blue', adapter: 'links',
+    description: 'Decisões publicadas pelo tribunal no DJEN/CNJ e notícias oficiais da Justiça Federal regional.',
+    url, discoveryUrl, focus: ['Decisões no DJEN', 'Acórdãos', 'Notícias'], monitoring: 'A cada 20 minutos', priority: 12 + index, color: 'blue', adapter: 'trf-djen',
   })),
 ];
 

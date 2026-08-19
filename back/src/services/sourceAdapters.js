@@ -1,5 +1,6 @@
-import { discoverOfficialLinks } from './collector.js';
+import { discoverOfficialLinks, discoverStfJurisprudence } from './collector.js';
 import { sectionIdsForSource } from '../data/sections.js';
+import { publicationDateKey } from './feedWindow.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
@@ -102,15 +103,24 @@ async function fetchJson(url, headers = {}) {
   return response.json();
 }
 
-async function discoverCamara(_source, lookbackDays) {
-  const end = new Date();
-  const start = new Date(end.getTime() - lookbackDays * 86400000);
+async function discoverCamara(_source, lookbackDays, targetDate = null) {
+  const end = targetDate ? new Date(`${targetDate}T12:00:00Z`) : new Date();
+  const start = targetDate ? end : new Date(end.getTime() - lookbackDays * 86400000);
   const params = new URLSearchParams({ dataInicio: start.toISOString().slice(0, 10), dataFim: end.toISOString().slice(0, 10), ordem: 'DESC', ordenarPor: 'id', itens: '100' });
   const data = await fetchJson(`https://dadosabertos.camara.leg.br/api/v2/proposicoes?${params}`, { Accept: 'application/json' });
-  return (data.dados || []).filter((item) => isTaxRelated(item.ementa, item.siglaTipo)).map((item) => ({
-    title: `${item.siglaTipo} ${item.numero}/${item.ano} — ${item.ementa}`,
-    url: `https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=${item.id}`,
-    publishedAt: `${item.ano}-01-01`, documentKind: 'Proposição legislativa', externalId: String(item.id),
+  const taxItems = (data.dados || []).filter((item) => isTaxRelated(item.ementa, item.siglaTipo));
+  return Promise.all(taxItems.map(async (item) => {
+    let details = item;
+    try {
+      const detail = await fetchJson(item.uri || `https://dadosabertos.camara.leg.br/api/v2/proposicoes/${item.id}`, { Accept: 'application/json' });
+      details = detail.dados || item;
+    } catch { /* A consulta exata já limita a data; o item resumido continua útil. */ }
+    return {
+      title: `${item.siglaTipo} ${item.numero}/${item.ano} — ${item.ementa}`,
+      url: `https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=${item.id}`,
+      publishedAt: details.dataApresentacao || (targetDate ? `${targetDate}T12:00:00-03:00` : ''),
+      documentKind: 'Proposição legislativa', externalId: String(item.id),
+    };
   }));
 }
 
@@ -119,8 +129,9 @@ function senateItems(data) {
   return Array.isArray(items) ? items : [items];
 }
 
-async function discoverSenado(_source, lookbackDays) {
-  const data = await fetchJson(`https://legis.senado.leg.br/dadosabertos/materia/atualizadas?numdias=${lookbackDays}`, { Accept: 'application/json' });
+async function discoverSenado(_source, lookbackDays, targetDate = null) {
+  const targetAge = targetDate ? Math.ceil((Date.now() - Date.parse(`${targetDate}T12:00:00Z`)) / 86400000) + 1 : lookbackDays;
+  const data = await fetchJson(`https://legis.senado.leg.br/dadosabertos/materia/atualizadas?numdias=${Math.max(1, targetAge)}`, { Accept: 'application/json' });
   return senateItems(data).flatMap((item) => {
     const identification = item?.IdentificacaoMateria || {};
     const basics = item?.DadosBasicosMateria || {};
@@ -129,32 +140,159 @@ async function discoverSenado(_source, lookbackDays) {
     const summary = basics.EmentaMateria || basics.ExplicacaoEmentaMateria || '';
     if (!code || !isTaxRelated(summary, label)) return [];
     return [{ title: `${label} — ${summary}`, url: `https://www25.senado.leg.br/web/atividade/materias/-/materia/${code}`, publishedAt: basics.DataApresentacao || '', documentKind: 'Matéria legislativa', externalId: String(code) }];
-  }).slice(0, 80);
+  });
 }
 
-function stjPublicationDate(value = '') {
-  const match = value.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+export function stjPublicationDate(value = '') {
+  if (typeof value === 'number' || /^\d{11,}$/.test(String(value).trim())) {
+    const date = new Date(Number(value));
+    return Number.isNaN(date.getTime()) ? '' : publicationDateKey(date);
+  }
+  const calendarDate = publicationDateKey(value);
+  if (calendarDate) return calendarDate;
+  const match = String(value).match(/(\d{2})\/(\d{2})\/(\d{4})/);
   return match ? `${match[3]}-${match[2]}-${match[1]}` : '';
 }
 
-async function discoverStj() {
-  const datasets = ['espelhos-de-acordaos-primeira-secao', 'espelhos-de-acordaos-primeira-turma', 'espelhos-de-acordaos-segunda-turma'];
-  const collections = await Promise.all(datasets.map(async (dataset) => {
-    const packageData = await fetchJson(`https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=${dataset}`);
-    const resource = (packageData.result?.resources || [])
-      .filter((item) => item.format?.toUpperCase() === 'JSON' && /\.json(?:$|\?)/i.test(item.url))
-      .sort((left, right) => String(right.name || right.last_modified).localeCompare(String(left.name || left.last_modified)))[0];
-    if (!resource) return [];
-    return fetchJson(resource.url);
-  }));
-  return collections.flat().filter((item) => isTaxRelated(item.ementa, item.teseJuridica, item.referenciasLegislativas)).slice(0, 50).map((item) => {
-    const publishedAt = stjPublicationDate(item.dataPublicacao);
-    const processLabel = `${item.siglaClasse || 'Processo'} ${item.numeroProcesso || item.numeroRegistro}`;
-    const summary = String(item.ementa || '').replace(/\s+/g, ' ').trim();
-    const params = new URLSearchParams({ num_registro: item.numeroRegistro });
-    if (publishedAt) params.set('dt_publicacao', publishedAt.split('-').reverse().join('/'));
-    return { title: `${processLabel} — ${summary.slice(0, 260)}`, url: `https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?${params}`, publishedAt, documentKind: 'Inteiro teor de acórdão', externalId: String(item.id || item.numeroRegistro) };
+const STJ_DAILY_DATASET = 'integras-de-decisoes-terminativas-e-acordaos-do-diario-da-justica';
+
+function stjResourceDate(resource = {}) {
+  const match = String(resource.name || '').match(/^metadados(\d{4})(\d{2})(\d{2})(?:\.json)?$/i);
+  return match ? `${match[1]}-${match[2]}-${match[3]}` : '';
+}
+
+export function hasStjTaxSubject(value = '') {
+  return String(value).split(',').some((path) => /^0*14(?:\.|$)/.test(path.trim()));
+}
+
+export function selectStjMetadataResources(resources = [], targetDate = null) {
+  const dated = resources
+    .filter((item) => item.format?.toUpperCase() === 'JSON' && stjResourceDate(item))
+    .map((item) => ({ ...item, publicationDate: stjResourceDate(item) }))
+    .sort((left, right) => right.publicationDate.localeCompare(left.publicationDate));
+  return targetDate ? dated.filter((item) => item.publicationDate === targetDate).slice(0, 1) : dated.slice(0, 1);
+}
+
+function stjMetadataItems(payload) {
+  if (Array.isArray(payload)) return payload;
+  for (const key of ['documentos', 'items', 'dados']) {
+    if (Array.isArray(payload?.[key])) return payload[key];
+  }
+  return [];
+}
+
+export function mapStjDailyDecisions(payload, resourceDate) {
+  const seen = new Set();
+  return stjMetadataItems(payload).flatMap((item) => {
+    if (!hasStjTaxSubject(item.assuntos)) return [];
+    const publishedAt = stjPublicationDate(item.dataPublicacao) || resourceDate;
+    if (!publishedAt || publishedAt !== resourceDate) return [];
+    const registration = String(item.numeroRegistro || '').replace(/\D/g, '');
+    if (!registration) return [];
+    const params = new URLSearchParams({ num_registro: registration, dt_publicacao: publishedAt.split('-').reverse().join('/') });
+    const url = `https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?${params}`;
+    if (seen.has(url)) return [];
+    seen.add(url);
+    const type = String(item.tipoDocumento || 'Decisão').replace(/\s+/g, ' ').trim();
+    const process = String(item.processo || item.numeroRegistro || 'Processo').replace(/\s+/g, ' ').trim();
+    const outcome = String(item.teor || '').replace(/\s+/g, ' ').trim();
+    const minister = String(item.NM_MINISTRO || '').replace(/\s+/g, ' ').trim();
+    return [{
+      title: [type, process, outcome, minister].filter(Boolean).join(' · ').slice(0, 300),
+      url,
+      publishedAt,
+      documentKind: /ac[oó]rd[aã]o/i.test(type) ? 'Inteiro teor de acórdão' : 'Inteiro teor de decisão terminativa',
+      externalId: String(item.SeqDocumento || item.numeroRegistro),
+      fingerprintKey: `stj-djen:${item.SeqDocumento || `${registration}:${publishedAt}`}`,
+    }];
   });
+}
+
+async function discoverStj(_source, _lookbackDays, targetDate = null) {
+  const packageData = await fetchJson(`https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=${STJ_DAILY_DATASET}`);
+  const resources = selectStjMetadataResources(packageData.result?.resources || [], targetDate);
+  if (!resources.length) return [];
+  const collections = await Promise.all(resources.map(async (resource) => mapStjDailyDecisions(await fetchJson(resource.url), resource.publicationDate)));
+  return collections.flat();
+}
+
+const DJEN_API = 'https://comunicaapi.pje.jus.br/api/v1/comunicacao';
+const DJEN_DECISION_PATTERN = /ac[oó]rd[aã]o|decis[aã]o|senten[cç]a|julgamento|voto|liminar|tutela/i;
+
+export function isDjenDecision(item = {}) {
+  return DJEN_DECISION_PATTERN.test(`${item.tipoDocumento || ''} ${item.tipoComunicacao || ''}`);
+}
+
+function djenTaxContext(value = '') {
+  const text = String(value).replace(/\s+/g, ' ').trim();
+  const match = text.match(/.{0,90}(?:tribut[aá]ri|execu[cç][aã]o fiscal|cr[eé]dito fiscal|imposto|icms|iss|ipi|pis|cofins|irpj|csll|cbs|ibs).{0,180}/i);
+  return (match?.[0] || text.slice(0, 270)).trim();
+}
+
+export function mapDjenDecisions(payload, source, targetDate) {
+  const seen = new Set();
+  return (payload?.items || []).flatMap((item) => {
+    const publishedAt = publicationDateKey(item.data_disponibilizacao || item.datadisponibilizacao);
+    const officialText = String(item.texto || '').replace(/\s+/g, ' ').trim();
+    if (!isDjenDecision(item) || !publishedAt || (targetDate && publishedAt !== targetDate) || !isTaxRelated(officialText)) return [];
+    const externalId = String(item.id || item.numeroComunicacao || item.hash || '');
+    if (!externalId || seen.has(externalId)) return [];
+    seen.add(externalId);
+    const process = item.numeroprocessocommascara || item.numero_processo || 'Processo sem número';
+    const kind = item.tipoDocumento || item.tipoComunicacao || 'Decisão';
+    const certificateUrl = item.hash ? `${DJEN_API}/${encodeURIComponent(item.hash)}/certidao` : item.link;
+    if (!certificateUrl?.startsWith('https://')) return [];
+    return [{
+      title: `${kind} · ${process} · ${item.nomeOrgao || source.acronym} — Direito tributário: ${djenTaxContext(officialText)}`.slice(0, 500),
+      url: certificateUrl,
+      publishedAt,
+      documentKind: `Decisão judicial publicada no DJEN (${kind})`,
+      externalId,
+      fingerprintKey: `djen:${externalId}`,
+      inlineText: officialText,
+      inlineParser: 'API oficial do DJEN/CNJ',
+    }];
+  });
+}
+
+async function fetchDjenPage(source, targetDate, page, pageSize) {
+  const params = new URLSearchParams({
+    siglaTribunal: source.acronym,
+    texto: 'tributario',
+    dataDisponibilizacaoInicio: targetDate,
+    dataDisponibilizacaoFim: targetDate,
+    itensPorPagina: String(pageSize),
+    pagina: String(page),
+    meio: 'D',
+  });
+  return fetchJson(`${DJEN_API}?${params}`, { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' });
+}
+
+async function discoverDjen(source, targetDate = null) {
+  const publicationDate = targetDate || publicationDateKey(new Date());
+  const sample = await fetchDjenPage(source, publicationDate, 1, 5);
+  const count = Math.max(0, Number(sample.count) || 0);
+  if (!count) return [];
+  const payload = count <= 5 ? sample : await fetchDjenPage(source, publicationDate, Math.ceil(count / 100), 100);
+  return mapDjenDecisions(payload, source, publicationDate);
+}
+
+async function combineDiscoveries(discoveries) {
+  const results = await Promise.allSettled(discoveries);
+  const items = results.flatMap((result) => result.status === 'fulfilled' ? result.value : []);
+  if (results.every((result) => result.status === 'rejected')) throw results[0].reason;
+  return items;
+}
+
+async function discoverTrf(source, targetDate = null) {
+  return combineDiscoveries([discoverDjen(source, targetDate), discoverLinks(source)]);
+}
+
+async function discoverStf(source, lookbackDays, targetDate = null) {
+  return combineDiscoveries([
+    discoverStfJurisprudence(targetDate || '', lookbackDays).then((result) => result.items || []),
+    discoverLinks(source),
+  ]);
 }
 
 function decodeXml(value = '') {
@@ -201,13 +339,14 @@ async function discoverLinks(source) {
   });
 }
 
-async function discoverConfaz(source) {
+async function discoverConfaz(source, targetDate = null) {
   const year = new Date().getFullYear();
   const yearUrl = `${source.url.replace(/\/$/, '')}/${year}/${year}`;
   let result;
   try {
     result = await discoverOfficialLinks(yearUrl);
   } catch (error) {
+    if (targetDate) return [];
     // O índice do CONFAZ pode ficar lento; ainda assim deixamos uma fotografia
     // diária da página oficial na fila, sem transformar a fonte em erro.
     const day = new Date().toISOString().slice(0, 10);
@@ -227,15 +366,25 @@ async function discoverConfaz(source) {
     .map((item) => ({ ...item, url: cleanUrl(item.url), documentKind: 'Ajuste SINIEF ou publicação CONFAZ', sections: source.sections || sectionIdsForSource(source.id) }));
 }
 
-export async function discoverSourceCandidates(source, lookbackDays = 7) {
+export function sourceDateCoverage(source) {
+  if (source.adapter === 'stj-open-data' || source.adapter === 'camara-api') return 'exact';
+  if (source.adapter === 'senado-api') return 'date-filtered';
+  if (source.adapter === 'stf-jurisprudence' || source.adapter === 'trf-djen') return 'mixed';
+  return 'current-index';
+}
+
+export async function discoverSourceCandidates(source, lookbackDays = 7, { targetDate = null } = {}) {
   let items;
-  if (source.id === 'confaz-ajustes') items = await discoverConfaz(source);
-  else if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays);
-  else if (source.adapter === 'senado-api') items = await discoverSenado(source, lookbackDays);
-  else if (source.adapter === 'stj-open-data') items = await discoverStj();
+  if (source.id === 'confaz-ajustes') items = await discoverConfaz(source, targetDate);
+  else if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays, targetDate);
+  else if (source.adapter === 'senado-api') items = await discoverSenado(source, lookbackDays, targetDate);
+  else if (source.adapter === 'stj-open-data') items = await discoverStj(source, lookbackDays, targetDate);
+  else if (source.adapter === 'stf-jurisprudence') items = await discoverStf(source, lookbackDays, targetDate);
+  else if (source.adapter === 'trf-djen') items = await discoverTrf(source, targetDate);
   else if (source.adapter === 'rss') items = await discoverRss(source);
   else items = await discoverLinks(source);
-  return items.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  const datedItems = targetDate ? items.filter((item) => publicationDateKey(item.publishedAt) === targetDate) : items;
+  return datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
 }
 
 export const taxTerms = TAX_TERMS;

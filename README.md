@@ -26,7 +26,7 @@ O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` sã
 
 O painel também separa duas curadorias temáticas: **Reforma tributária** (Portal da Reforma, CGIBS, Folha, Valor, NF-e e atos oficiais) e **Obrigações acessórias** (Ajustes SINIEF, NF-e e os módulos ECD, ECF, EFD-Contribuições, EFD ICMS/IPI, EFD-Reinf, e-Financeira, eSocial, Central de Balanços e DeRE). Os manuais e leiautes do SPED usam as páginas oficiais do novo portal `gov.br/sped`, que expõem a versão e a data de modificação do documento.
 
-Câmara e Senado usam os serviços oficiais de dados abertos. O STJ usa seu catálogo oficial de dados abertos e gera links para o inteiro teor dos acórdãos. Os demais conectores consultam os portais oficiais de jurisprudência, precedentes ou publicações. Cada falha é registrada por fonte e nunca é tratada como “nenhuma novidade”.
+Câmara e Senado usam os serviços oficiais de dados abertos. O STJ consulta o conjunto diário de decisões terminativas e acórdãos do Diário da Justiça e filtra a raiz 14 (Direito Tributário) da TPU/CNJ. O STF consulta acórdãos e decisões monocráticas na pesquisa oficial por data. TRF1 a TRF6 consultam as decisões publicadas na API pública do DJEN/CNJ e preservam, em paralelo, suas notícias oficiais. Os demais conectores consultam os portais oficiais de notícias, precedentes ou publicações. Cada falha é registrada por fonte e nunca é tratada como “nenhuma novidade”.
 
 ## Requisitos e instalação
 
@@ -70,6 +70,12 @@ MONITOR_LOOKBACK_DAYS=7
 ```
 
 Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
+
+### Busca por data
+
+Em **Varredura automática**, escolha uma data e use **Puxar publicações**. A busca reúne todas as categorias tributárias monitoradas — notícias, atos, normas, proposições legislativas e decisões — e coloca os resultados na fila sem consumir o Ollama.
+
+O histórico do ciclo informa a cobertura de cada fonte. STF, STJ, Câmara e as decisões dos seis TRFs possuem consulta judicial pela data; o Senado é filtrado pela data informada. Portais de notícias e índices genéricos nem sempre oferecem arquivo histórico; nesses casos, o sistema verifica somente os itens datados que ainda aparecem no índice atual e sinaliza essa limitação, sem atribuir uma data inexistente ao conteúdo.
 
 ## Alertas por e-mail
 
