@@ -131,7 +131,7 @@ function senateItems(data) {
 
 async function discoverSenado(_source, lookbackDays, targetDate = null) {
   const targetAge = targetDate ? Math.ceil((Date.now() - Date.parse(`${targetDate}T12:00:00Z`)) / 86400000) + 1 : lookbackDays;
-  const data = await fetchJson(`https://legis.senado.leg.br/dadosabertos/materia/atualizadas?numdias=${Math.max(1, targetAge)}`, { Accept: 'application/json' });
+  const data = await fetchJson(`https://legis.senado.leg.br/dadosabertos/materia/atualizadas?numdias=${Math.min(30, Math.max(1, targetAge))}`, { Accept: 'application/json' });
   return senateItems(data).flatMap((item) => {
     const identification = item?.IdentificacaoMateria || {};
     const basics = item?.DadosBasicosMateria || {};
@@ -218,6 +218,9 @@ async function discoverStj(_source, _lookbackDays, targetDate = null) {
 
 const DJEN_API = 'https://comunicaapi.pje.jus.br/api/v1/comunicacao';
 const DJEN_DECISION_PATTERN = /ac[oó]rd[aã]o|decis[aã]o|senten[cç]a|julgamento|voto|liminar|tutela/i;
+const DJEN_PAGE_SIZE = 100;
+let djenRequestQueue = Promise.resolve();
+let djenLastRequestAt = 0;
 
 export function isDjenDecision(item = {}) {
   return DJEN_DECISION_PATTERN.test(`${item.tipoDocumento || ''} ${item.tipoComunicacao || ''}`);
@@ -265,34 +268,42 @@ async function fetchDjenPage(source, targetDate, page, pageSize) {
     pagina: String(page),
     meio: 'D',
   });
-  return fetchJson(`${DJEN_API}?${params}`, { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' });
+  const request = djenRequestQueue.then(async () => {
+    const pause = Math.max(0, 250 - (Date.now() - djenLastRequestAt));
+    if (pause) await new Promise((resolve) => setTimeout(resolve, pause));
+    try {
+      return await fetchJson(`${DJEN_API}?${params}`, { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' });
+    } finally {
+      djenLastRequestAt = Date.now();
+    }
+  });
+  djenRequestQueue = request.catch(() => undefined);
+  return request;
 }
 
 async function discoverDjen(source, targetDate = null) {
   const publicationDate = targetDate || publicationDateKey(new Date());
-  const sample = await fetchDjenPage(source, publicationDate, 1, 5);
-  const count = Math.max(0, Number(sample.count) || 0);
+  const firstPage = await fetchDjenPage(source, publicationDate, 1, DJEN_PAGE_SIZE);
+  const count = Math.max(0, Number(firstPage.count) || 0);
   if (!count) return [];
-  const payload = count <= 5 ? sample : await fetchDjenPage(source, publicationDate, Math.ceil(count / 100), 100);
-  return mapDjenDecisions(payload, source, publicationDate);
-}
-
-async function combineDiscoveries(discoveries) {
-  const results = await Promise.allSettled(discoveries);
-  const items = results.flatMap((result) => result.status === 'fulfilled' ? result.value : []);
-  if (results.every((result) => result.status === 'rejected')) throw results[0].reason;
-  return items;
+  const pageCount = Math.ceil(count / DJEN_PAGE_SIZE);
+  const remainingPages = await Promise.all(Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) => (
+    fetchDjenPage(source, publicationDate, index + 2, DJEN_PAGE_SIZE)
+  )));
+  const items = [firstPage, ...remainingPages].flatMap((payload) => payload.items || []);
+  return mapDjenDecisions({ items }, source, publicationDate);
 }
 
 async function discoverTrf(source, targetDate = null) {
-  return combineDiscoveries([discoverDjen(source, targetDate), discoverLinks(source)]);
+  const decisions = await discoverDjen(source, targetDate);
+  const news = await discoverLinks(source).catch(() => []);
+  return [...decisions, ...news];
 }
 
 async function discoverStf(source, lookbackDays, targetDate = null) {
-  return combineDiscoveries([
-    discoverStfJurisprudence(targetDate || '', lookbackDays).then((result) => result.items || []),
-    discoverLinks(source),
-  ]);
+  const jurisprudence = await discoverStfJurisprudence(targetDate || '', lookbackDays).then((result) => result.items || []);
+  const news = await discoverLinks(source).catch(() => []);
+  return [...jurisprudence, ...news];
 }
 
 function decodeXml(value = '') {

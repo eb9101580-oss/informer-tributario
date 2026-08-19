@@ -50,6 +50,8 @@ npm.cmd run dev
 
 O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consulta a cada seis horas. Abra **Varredura automática** para acompanhar a fonte atual, fila, documentos, falhas e histórico de ciclos.
 
+No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos 30 dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela mensal é revisitada em aproximadamente 10 horas. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
+
 O fluxo é:
 
 1. consultar cada fonte oficial;
@@ -66,7 +68,7 @@ Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `ba
 MONITOR_ENABLED=true
 MONITOR_INTERVAL_MINUTES=360
 MONITOR_MAX_ANALYSES_PER_RUN=2
-MONITOR_LOOKBACK_DAYS=7
+MONITOR_LOOKBACK_DAYS=31
 ```
 
 Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
@@ -91,6 +93,8 @@ ALERTS_MIN_SCORE=8
 ```
 
 Sem essas chaves, o painel continua funcionando, mas o cadastro informa que o envio está aguardando configuração. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
+
+Na Vercel, as rotas de leitura consultam o `database.json` atual do branch `main`. Assim, os commits de dados produzidos pelo GitHub Actions chegam ao feed sem exigir um novo build da interface a cada varredura; a cópia incluída no deploy permanece como contingência se o GitHub estiver indisponível.
 
 ## Ações acompanhadas e DataJud
 

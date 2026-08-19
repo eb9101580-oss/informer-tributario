@@ -178,7 +178,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       run.discovered = additions.length;
       const sourceRank = (item) => ['stf', 'stj', 'stj-informativos', 'stf-informativos', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'diario-oficial', 'pgfn-pareceres'].includes(item.sourceId) ? 1 : 2;
       additions.sort((left, right) => sourceRank(left) - sourceRank(right));
-      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 2000) } };
+      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 5000) } };
     });
 
     if (analyze && config.monitorMaxAnalyses > 0) {
