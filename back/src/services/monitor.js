@@ -189,6 +189,12 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       // Reserva vagas para Obrigações acessórias para que Reforma não monopolize a fila.
       const reserved = [];
       const reservedIds = new Set();
+      // Decisões tributárias dos TRFs entram primeiro na análise reservada.
+      const trfCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId));
+      if (trfCandidate && reserved.length < config.monitorMaxAnalyses) {
+        reserved.push(trfCandidate);
+        reservedIds.add(trfCandidate.id);
+      }
       for (const sectionId of ['reforma', 'obrigacoes']) {
         for (const candidate of prioritizedQueue) {
           if (reserved.length >= config.monitorMaxAnalyses || reservedIds.size >= Math.min(4, config.monitorMaxAnalyses)) break;
@@ -197,14 +203,6 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
           reserved.push(candidate);
           reservedIds.add(candidate.id);
         }
-      }
-      // Se houver uma publicação tributária de TRF, ela não deve ficar
-      // indefinidamente atrás das fontes com maior volume de atualizações.
-      const trfCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId)
-        && !reservedIds.has(candidate.id));
-      if (trfCandidate && reserved.length < config.monitorMaxAnalyses) {
-        reserved.push(trfCandidate);
-        reservedIds.add(trfCandidate.id);
       }
       const queue = [...reserved, ...prioritizedQueue.filter((item) => !reservedIds.has(item.id))]
         .slice(0, config.monitorMaxAnalyses);
