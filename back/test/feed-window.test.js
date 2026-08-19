@@ -4,10 +4,11 @@ import { isCurrentFeedItem, isPublishedWithinDays, publicationDateKey } from '..
 
 const now = new Date('2026-08-19T15:00:00Z');
 
-test('feed aceita somente hoje e ontem no calendario brasileiro', () => {
+test('feed aceita os ultimos 14 dias no calendario brasileiro', () => {
   assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-19' }, now), true);
   assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-18T08:30:00Z' }, now), true);
-  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-17T23:59:59Z' }, now), false);
+  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-06T00:00:00Z' }, now), true);
+  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-05T23:59:59Z' }, now), false);
   assert.equal(isCurrentFeedItem({ publishedAt: '' }, now), false);
 });
 

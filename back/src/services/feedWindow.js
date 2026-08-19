@@ -1,4 +1,5 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
+export const FEED_WINDOW_DAYS = 14;
 const BRAZIL_TIME_ZONE = 'America/Sao_Paulo';
 const brazilDateFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: BRAZIL_TIME_ZONE,
@@ -23,7 +24,7 @@ export function publicationDateKey(value) {
   return Number.isNaN(date.getTime()) ? null : dateKeyFromDate(date);
 }
 
-export function isPublishedWithinDays(value, days = 2, now = new Date(), { allowUnknown = false } = {}) {
+export function isPublishedWithinDays(value, days = FEED_WINDOW_DAYS, now = new Date(), { allowUnknown = false } = {}) {
   const key = publicationDateKey(value);
   if (!key) return allowUnknown;
   const today = dateKeyFromDate(now);
@@ -35,5 +36,5 @@ export function isPublishedWithinDays(value, days = 2, now = new Date(), { allow
 }
 
 export function isCurrentFeedItem(item, now = new Date()) {
-  return isPublishedWithinDays(item?.publishedAt, 2, now);
+  return isPublishedWithinDays(item?.publishedAt, FEED_WINDOW_DAYS, now);
 }
