@@ -28,10 +28,10 @@ function makeAlert(analysis, document, candidate) {
   const now = new Date().toISOString();
   return {
     ...analysis, id: randomUUID(), score, relevance: relevanceLabel(score), officialUrl: candidate.url,
-    publishedAt: Number.isNaN(Date.parse(analysis.publishedAt)) ? (candidate.publishedAt || now) : analysis.publishedAt,
+    publishedAt: candidate.publishedAt || (Number.isNaN(Date.parse(analysis.publishedAt)) ? now : analysis.publishedAt),
     isDemo: false, createdAt: now, updatedAt: now,
     provenance: {
-      collector: 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, sourceCharacters: document.characters,
+      collector: 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
       sourceId: candidate.sourceId, sourceName: candidate.sourceName, discoveredBy: candidate.discoveryMethod,
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
@@ -121,7 +121,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
         return [{ ...item, id, status: 'pending', attempts: 0 }];
       });
       run.discovered = additions.length;
-      const sourceRank = (item) => ['stf', 'stj', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'diario-oficial'].includes(item.sourceId) ? 1 : 2;
+      const sourceRank = (item) => ['stf', 'stj', 'stj-informativos', 'stf-informativos', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'diario-oficial', 'pgfn-pareceres'].includes(item.sourceId) ? 1 : 2;
       additions.sort((left, right) => sourceRank(left) - sourceRank(right));
       return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 2000) } };
     });
@@ -149,7 +149,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
         runtime.currentDocument = candidate.title;
         try {
           await updateDatabase((data) => ({ ...data, monitor: { ...monitorData(data), candidates: monitorData(data).candidates.map((item) => item.id === candidate.id ? { ...item, status: 'analyzing', attempts: item.attempts + 1 } : item) } }));
-          const document = await collectOfficialPage(candidate.url);
+          const document = await collectOfficialPage(candidate.collectionUrl || candidate.url);
           if (document.characters < 200) throw new Error('Documento sem texto suficiente.');
           const analysis = await analyzeWithOllama(document);
           const alert = makeAlert(analysis, document, candidate);

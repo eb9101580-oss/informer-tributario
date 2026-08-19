@@ -50,7 +50,7 @@ export function MonitorPage({ onAlerts }) {
         <div className="panel">
           <div className="panel__heading"><div><h2>Documentos descobertos</h2><p>Links oficiais filtrados por assunto tributário</p></div><button className="text-button" onClick={onAlerts}>Abrir alertas</button></div>
           <div className="candidate-list">
-            {candidates.slice(0, 18).map((item) => <div className="candidate" key={item.id}><span className={`candidate__status candidate__status--${item.status}`}>{statusLabels[item.status] || item.status}</span><div><strong>{item.title}</strong><small>{item.sourceAcronym} · {item.documentKind} · {dateTime(item.discoveredAt)}</small>{item.error && <em>{item.error}</em>}</div><a href={item.url} target="_blank" rel="noreferrer" aria-label="Abrir documento oficial"><ExternalLink size={15} /></a></div>)}
+            {candidates.slice(0, 18).map((item) => <div className="candidate" key={item.id}><span className={`candidate__status candidate__status--${item.status}`}>{statusLabels[item.status] || item.status}</span><div><strong>{item.title}</strong><small>{item.sourceAcronym} · {item.documentKind} · Publicado em {dateTime(item.publishedAt || item.discoveredAt)} · coletado em {dateTime(item.discoveredAt)}</small>{item.error && <em>{item.error}</em>}</div><a href={item.url} target="_blank" rel="noreferrer" aria-label="Abrir documento oficial"><ExternalLink size={15} /></a></div>)}
             {!candidates.length && <p className="monitor-empty">Execute a primeira varredura para preencher a fila.</p>}
           </div>
         </div>

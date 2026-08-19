@@ -13,7 +13,7 @@ export function SourcesPage({ onCollector }) {
   return (
     <section className="sources-page">
       <div className="sources-intro">
-        <div><span><ShieldCheck size={17} /> Curadoria de fontes primárias</span><h2>Onde nasce a informação tributária confiável</h2><p>O radar cobre administração fiscal, Diário Oficial, Congresso, STF, STJ, CARF e os seis TRFs. Notícias ajudam na descoberta, mas todo alerta real mantém o link do documento oficial analisado.</p></div>
+        <div><span><ShieldCheck size={17} /> Curadoria de fontes primárias</span><h2>Onde nasce a informação tributária confiável</h2><p>O radar cobre Receita Federal (COSIT, IN, Notas e Atos), DOU, NF-e, SPED, informativos do STF e STJ, Congresso, CARF, PGFN e os seis TRFs. Notícias ajudam na descoberta, mas todo alerta real mantém o link da publicação original.</p></div>
         <button onClick={onCollector}>Analisar uma publicação <ArrowUpRight size={17} /></button>
       </div>
       {error && <div className="collector-error">{error}</div>}

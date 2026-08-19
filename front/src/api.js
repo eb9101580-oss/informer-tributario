@@ -22,4 +22,6 @@ export const api = {
   monitorRuns: () => request('/monitor/runs'),
   monitorCandidates: (status = '') => request(`/monitor/candidates?${new URLSearchParams(status ? { status } : {})}`),
   runMonitor: (analyze = true) => request('/monitor/run', { method: 'POST', body: JSON.stringify({ analyze }) }),
+  subscriptionStatus: () => request('/subscriptions/status'),
+  subscribe: (email) => request('/subscriptions', { method: 'POST', body: JSON.stringify({ email }) }),
 };

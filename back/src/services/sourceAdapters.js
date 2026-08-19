@@ -4,6 +4,7 @@ const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
   'icms', 'iss', 'ipi', 'pis', 'cofins', 'irpj', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof',
   'execucao fiscal', 'divida ativa', 'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal',
+  'solucao de consulta', 'solucao de divergencia', 'instrucao normativa', 'nota tecnica', 'nota fiscal eletronica', 'informativo', 'parecer', 'sped',
   'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
 ];
 const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'cofins', 'irpj', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof']);
@@ -27,6 +28,19 @@ export function hasStrongTaxSignal(...values) {
 }
 
 export function isCandidateEligible(sourceId, title, url) {
+  if (['receita-cosit', 'receita-in', 'receita-notas'].includes(sourceId)) {
+    const sourceText = normalizeSearchText(title);
+    const isNormasLink = /normas(?:internet2)?\.receita\.fazenda\.gov\.br/i.test(url) && /consulta\/externa|link\.action/i.test(url);
+    if (!isNormasLink) return false;
+    if (sourceId === 'receita-cosit') return /cosit|solucao de consulta|solucao de divergencia/.test(sourceText);
+    if (sourceId === 'receita-in') return /instrucao normativa|ato declaratorio/.test(sourceText);
+    return /nota|parecer/.test(sourceText);
+  }
+  if (sourceId === 'nfe-notas-tecnicas') return /nota|t[eé�]cnica/i.test(title) || /exibirArquivo/i.test(url);
+  if (sourceId === 'sped-notas-tecnicas') return /nota|t[eé�]cnica|sped/i.test(title) && isTaxRelated(title);
+  if (sourceId === 'stj-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
+  if (sourceId === 'stf-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
+  if (sourceId === 'pgfn-pareceres') return /parecer|s[úu�]mula|decis[aã�]o|tribut/i.test(title) && isTaxRelated(title);
   if (!isTaxRelated(title, url)) return false;
   if (sourceId === 'receita-federal') return /\/assuntos\/noticias\/20\d{2}\//i.test(url);
   if (sourceId === 'diario-oficial') return /\/web\/dou\/-\//i.test(url);
@@ -35,8 +49,20 @@ export function isCandidateEligible(sourceId, title, url) {
 
 function cleanUrl(rawUrl) {
   const url = new URL(rawUrl);
-  url.hash = '';
+  if (!url.hostname.includes('normasinternet2.receita.fazenda.gov.br')) url.hash = '';
   return url.toString();
+}
+
+function enrichReceitaNormasCandidate(item) {
+  const url = cleanUrl(item.url);
+  const match = url.match(/normasinternet2\.receita\.fazenda\.gov\.br\/#\/consulta\/externa\/(\d+)/i);
+  if (!match) return { ...item, url };
+  return {
+    ...item,
+    url,
+    collectionUrl: `https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/${match[1]}/visao/original`,
+    documentKind: 'Ato normativo da Receita Federal',
+  };
 }
 
 async function fetchJson(url, headers = {}) {
@@ -130,9 +156,17 @@ async function discoverRss(source) {
 
 async function discoverLinks(source) {
   const result = await discoverOfficialLinks(source.discoveryUrl || source.url);
-  return result.links.filter((item) => isCandidateEligible(source.id, item.title, item.url)).slice(0, 60).map((item) => ({
-    ...item, url: cleanUrl(item.url), documentKind: /\.pdf(?:$|\?)/i.test(item.url) ? 'Documento oficial em PDF' : 'Publicação oficial',
-  }));
+  return result.links.filter((item) => isCandidateEligible(source.id, item.title, item.url)).slice(0, 60).map((item) => {
+    const normalized = ['receita-cosit', 'receita-in', 'receita-notas'].includes(source.id)
+      ? enrichReceitaNormasCandidate(item)
+      : { ...item, url: cleanUrl(item.url) };
+    const documentKind = normalized.documentKind || (source.id === 'receita-cosit'
+      ? 'Solução de Consulta ou Divergência COSIT'
+      : source.id === 'receita-in' ? 'Instrução Normativa ou ato RFB'
+        : source.id === 'receita-notas' ? 'Nota ou parecer normativo'
+          : /\.pdf(?:$|\?)/i.test(normalized.url) ? 'Documento oficial em PDF' : 'Publicação oficial');
+    return { ...normalized, documentKind };
+  });
 }
 
 export async function discoverSourceCandidates(source, lookbackDays = 7) {

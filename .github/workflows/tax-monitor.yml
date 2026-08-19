@@ -24,6 +24,8 @@ jobs:
       MONITOR_LOOKBACK_DAYS: '7'
       MONITOR_MAX_ANALYSES_PER_RUN: '1'
       OLLAMA_TIMEOUT_MS: '600000'
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      ALERTS_FROM_EMAIL: ${{ secrets.ALERTS_FROM_EMAIL }}
     steps:
       - name: Baixar o projeto
         uses: actions/checkout@v5
@@ -62,14 +64,17 @@ jobs:
       - name: Consultar, analisar e registrar fontes oficiais
         run: node back/scripts/run-monitor.js
 
+      - name: Notificar cadastros com nota alta
+        run: node back/scripts/notify-subscribers.js
+
       - name: Publicar dados atualizados
         run: |
-          if git diff --quiet -- back/data/database.json; then
+          if git diff --quiet -- back/data/database.json back/data/subscriptions.json; then
             echo "Nenhuma alteracao nos dados."
             exit 0
           fi
           git config user.name "informer-tributario[bot]"
           git config user.email "informer-tributario[bot]@users.noreply.github.com"
-          git add back/data/database.json
+          git add back/data/database.json back/data/subscriptions.json
           git commit -m "Atualiza varredura tributaria oficial"
           git push origin main

@@ -18,10 +18,10 @@ O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` sã
 
 ## Fontes monitoradas
 
-- Receita Federal e Diário Oficial da União;
+- Receita Federal, sistema Normas (COSIT, Instruções Normativas, Notas e Pareceres), Diário Oficial da União, NF-e e SPED;
 - Câmara dos Deputados e Senado Federal;
-- STF e STJ;
-- CARF;
+- STF e STJ, incluindo seus informativos de jurisprudência;
+- CARF e PGFN;
 - TRF1, TRF2, TRF3, TRF4, TRF5 e TRF6.
 
 Câmara e Senado usam os serviços oficiais de dados abertos. O STJ usa seu catálogo oficial de dados abertos e gera links para o inteiro teor dos acórdãos. Os demais conectores consultam os portais oficiais de jurisprudência, precedentes ou publicações. Cada falha é registrada por fonte e nunca é tratada como “nenhuma novidade”.
@@ -68,6 +68,21 @@ MONITOR_LOOKBACK_DAYS=7
 ```
 
 Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
+
+## Alertas por e-mail
+
+O feed público possui cadastro para receber alertas com nota 8 ou superior. O envio usa a API do Resend (plano gratuito para testes) e a persistência dos cadastros na Vercel usa o conteúdo do repositório via `GITHUB_TOKEN`. Configure no ambiente da Vercel e nos segredos do GitHub Actions:
+
+```dotenv
+GITHUB_TOKEN=token_com_permissao_de_conteudo_no_repositorio
+GITHUB_REPOSITORY=eb9101580-oss/informer-tributario
+SUBSCRIPTIONS_ENCRYPTION_KEY=chave_aleatoria_forte_compartilhada_com_a_vercel
+RESEND_API_KEY=re_xxxxxxxxx
+ALERTS_FROM_EMAIL=Informer Tributário <onboarding@resend.dev>
+ALERTS_MIN_SCORE=8
+```
+
+Sem essas chaves, o painel continua funcionando, mas o cadastro informa que o envio está aguardando configuração. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
 
 Os registros iniciais continuam sendo cenários demonstrativos e aparecem identificados como tal. Alertas criados pela varredura usam `isDemo: false` e sempre guardam o endereço oficial e a trilha de proveniência.
 

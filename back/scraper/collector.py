@@ -18,6 +18,16 @@ def clean_text(value: str) -> str:
 def collect(url: str) -> dict:
     page = Fetcher.get(url, timeout=30, stealthy_headers=True)
     content_type = (page.headers.get("content-type") or "").lower()
+    if "json" in content_type:
+        raw = page.body.decode("utf-8", errors="replace") if isinstance(page.body, bytes) else str(page.body)
+        text = clean_text(raw)
+        return {
+            "url": url,
+            "title": "Documento oficial em dados estruturados",
+            "text": text[:60000],
+            "characters": len(text),
+            "contentType": content_type,
+        }
     if "application/pdf" in content_type or url.lower().split("?")[0].endswith(".pdf"):
         reader = PdfReader(BytesIO(page.body))
         text = clean_text(" ".join((pdf_page.extract_text() or "") for pdf_page in reader.pages))

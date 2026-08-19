@@ -4,7 +4,10 @@ const scoreTone = (score) => score >= 9 ? 'critical' : score >= 8 ? 'high' : sco
 
 export function AlertCard({ alert, onOpen, onFeedback, feedback = 0 }) {
   const tone = scoreTone(alert.score);
-  const time = new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit' }).format(new Date(alert.publishedAt));
+  const publishedDate = new Date(alert.publishedAt);
+  const publishedLabel = Number.isNaN(publishedDate.getTime())
+    ? 'Data de publicação não informada'
+    : new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(publishedDate);
 
   return (
     <article className="alert-card" onClick={() => onOpen(alert)}>
@@ -22,7 +25,7 @@ export function AlertCard({ alert, onOpen, onFeedback, feedback = 0 }) {
         <p>{alert.summary}</p>
         <div className="alert-card__footer">
           <span><Building2 size={15} />{alert.agency}</span>
-          <span><Clock3 size={15} />Hoje, {time}</span>
+          <time dateTime={alert.publishedAt}><Clock3 size={15} />Publicado em {publishedLabel}</time>
           <div className="taxes">{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
           {onFeedback && <div className="card-feedback" aria-label="Avaliar relevância">
             <button className={feedback === 1 ? 'selected' : ''} aria-label="Gostei" aria-pressed={feedback === 1} onClick={(event) => { event.stopPropagation(); onFeedback(1); }}><ThumbsUp size={16} /><span>Gostei</span></button>

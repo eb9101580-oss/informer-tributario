@@ -10,6 +10,8 @@ const discoveryScriptPath = resolve(here, '../../scraper/discover.py');
 const allowedDomains = [
   'stf.jus.br', 'stj.jus.br', 'gov.br', 'receita.economia.gov.br', 'pgfn.gov.br',
   'carf.economia.gov.br', 'fazenda.gov.br', 'confaz.fazenda.gov.br', 'in.gov.br',
+  'normas.receita.fazenda.gov.br', 'normasinternet2.receita.fazenda.gov.br', 'nfe.fazenda.gov.br', 'www.nfe.fazenda.gov.br', 'sped.rfb.gov.br',
+  'scon.stj.jus.br', 'portal.stf.jus.br',
   'camara.leg.br', 'senado.leg.br', 'sefaz.pr.gov.br', 'trf1.jus.br', 'trf2.jus.br',
   'trf3.jus.br', 'trf4.jus.br', 'trf5.jus.br', 'trf6.jus.br',
   'jota.info',

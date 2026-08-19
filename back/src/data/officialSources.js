@@ -7,10 +7,44 @@ export const officialSources = [
     focus: ['Soluções de consulta', 'Atos normativos', 'Obrigações acessórias'], monitoring: 'A cada 6 horas', priority: 1, color: 'blue', adapter: 'links',
   },
   {
+    id: 'receita-cosit', name: 'Receita Federal — Soluções COSIT', acronym: 'COSIT', category: 'Interpretação oficial da legislação',
+    description: 'Soluções de Consulta e Soluções de Divergência da Coordenação-Geral de Tributação, com a interpretação oficial da RFB.',
+    url: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action',
+    discoveryUrl: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action?termoBusca=tribut&siglaOrgaoFacet=Cosit',
+    focus: ['Soluções de Consulta', 'Soluções de Divergência', 'COSIT'], monitoring: 'A cada 6 horas', priority: 2, color: 'blue', adapter: 'links',
+  },
+  {
+    id: 'receita-in', name: 'Receita Federal — Instruções Normativas', acronym: 'IN RFB', category: 'Atos normativos federais',
+    description: 'Instruções Normativas e atos da Receita Federal que criam, alteram ou disciplinam obrigações e procedimentos tributários.',
+    url: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action',
+    discoveryUrl: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action?termoBusca=tribut&siglaOrgaoFacet=RFB',
+    focus: ['Instruções Normativas', 'Atos Declaratórios', 'Obrigações acessórias'], monitoring: 'A cada 6 horas', priority: 3, color: 'gold', adapter: 'links',
+  },
+  {
+    id: 'receita-notas', name: 'Receita Federal — Notas e Pareceres', acronym: 'NOTAS', category: 'Orientação tributária',
+    description: 'Notas, pareceres normativos e orientações publicadas no sistema oficial de Normas da Receita Federal.',
+    url: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action',
+    discoveryUrl: 'https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action?termoBusca=nota',
+    focus: ['Notas', 'Pareceres', 'Orientações'], monitoring: 'A cada 6 horas', priority: 4, color: 'gold', adapter: 'links',
+  },
+  {
+    id: 'nfe-notas-tecnicas', name: 'Portal Nacional da NF-e — Notas Técnicas', acronym: 'NF-e', category: 'Documentação fiscal eletrônica',
+    description: 'Notas Técnicas e alterações de leiaute e regras de validação da NF-e e da NFC-e, incluindo a Reforma Tributária do Consumo.',
+    url: 'https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=',
+    discoveryUrl: 'https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=',
+    focus: ['Notas Técnicas', 'NF-e e NFC-e', 'Reforma tributária'], monitoring: 'A cada 6 horas', priority: 5, color: 'teal', adapter: 'links',
+  },
+  {
+    id: 'sped-notas-tecnicas', name: 'SPED — Documentos e Notas Técnicas', acronym: 'SPED', category: 'Escrituração fiscal digital',
+    description: 'Documentos técnicos, manuais e notas do Sistema Público de Escrituração Digital relacionados às obrigações tributárias.',
+    url: 'https://sped.rfb.gov.br/item/show/271', discoveryUrl: 'https://sped.rfb.gov.br/item/show/271',
+    focus: ['SPED', 'EFD', 'Documentos técnicos'], monitoring: 'A cada 6 horas', priority: 6, color: 'teal', adapter: 'links',
+  },
+  {
     id: 'diario-oficial', name: 'Diário Oficial da União', acronym: 'DOU', category: 'Publicação normativa',
     description: 'Leis, decretos, portarias, instruções normativas e demais atos federais publicados oficialmente.',
     url: 'https://www.in.gov.br/consulta', discoveryUrl: 'https://www.in.gov.br/web/dou',
-    focus: ['Leis e decretos', 'Atos normativos', 'Vigência'], monitoring: 'A cada 6 horas', priority: 2, color: 'gold', adapter: 'links',
+    focus: ['Leis e decretos', 'Atos normativos', 'Vigência'], monitoring: 'A cada 6 horas', priority: 7, color: 'gold', adapter: 'links',
   },
   {
     id: 'camara', name: 'Câmara dos Deputados', acronym: 'CD', category: 'Processo legislativo',
@@ -37,10 +71,31 @@ export const officialSources = [
     focus: ['Acórdãos', 'Recursos repetitivos', 'Primeira Seção'], monitoring: 'A cada 6 horas', priority: 6, color: 'red', adapter: 'stj-open-data',
   },
   {
+    id: 'stj-informativos', name: 'STJ — Informativos de Jurisprudência', acronym: 'INF STJ', category: 'Informativos judiciais',
+    description: 'Informativos e edições extraordinárias do STJ, filtrados para localizar teses e decisões com impacto tributário.',
+    url: 'https://scon.stj.jus.br/jurisprudencia/externo/informativo/',
+    discoveryUrl: 'https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&livre=tribut',
+    focus: ['Informativos', 'Teses tributárias', 'Primeira Seção'], monitoring: 'A cada 6 horas', priority: 8, color: 'red', adapter: 'links',
+  },
+  {
+    id: 'stf-informativos', name: 'STF — Informativos de Jurisprudência', acronym: 'INF STF', category: 'Informativos constitucionais',
+    description: 'Informativos do STF e decisões destacadas sobre constitucionalidade, repartição de competências e tributação.',
+    url: 'https://portal.stf.jus.br/textos/verTexto.asp?servico=informativoSTF',
+    discoveryUrl: 'https://portal.stf.jus.br/textos/verTexto.asp?servico=informativoSTF',
+    focus: ['Informativos', 'Repercussão geral', 'Direito tributário'], monitoring: 'A cada 6 horas', priority: 9, color: 'red', adapter: 'links',
+  },
+  {
     id: 'carf', name: 'Conselho Administrativo de Recursos Fiscais', acronym: 'CARF', category: 'Contencioso administrativo',
     description: 'Acórdãos e decisões do contencioso administrativo tributário federal.',
     url: 'https://www.gov.br/carf/pt-br/jurisprudencia/acordaos-carf', discoveryUrl: 'https://www.gov.br/carf/pt-br/jurisprudencia/acordaos-carf',
-    focus: ['Acórdãos', 'Súmulas', 'Resoluções'], monitoring: 'A cada 6 horas', priority: 7, color: 'gold', adapter: 'links',
+    focus: ['Acórdãos', 'Súmulas', 'Resoluções'], monitoring: 'A cada 6 horas', priority: 10, color: 'gold', adapter: 'links',
+  },
+  {
+    id: 'pgfn-pareceres', name: 'PGFN — Pareceres e decisões por assunto', acronym: 'PGFN', category: 'Procuradoria da Fazenda Nacional',
+    description: 'Pareceres, súmulas e decisões judiciais organizados por temas tributários, cobrança e dívida ativa da União.',
+    url: 'https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-assunto',
+    discoveryUrl: 'https://www.gov.br/pgfn/pt-br/cidadania-tributaria/por-assunto',
+    focus: ['Pareceres', 'Dívida ativa', 'Súmulas'], monitoring: 'A cada 6 horas', priority: 11, color: 'blue', adapter: 'links',
   },
   ...[
     ['trf1', 'Tribunal Regional Federal da 1ª Região', 'TRF1', 'https://www.trf1.jus.br/trf1/carta-servicos/jurisprudencia'],
@@ -52,7 +107,7 @@ export const officialSources = [
   ].map(([id, name, acronym, url], index) => ({
     id, name, acronym, category: 'Jurisprudência federal regional',
     description: 'Decisões, acórdãos, precedentes e informativos oficiais da Justiça Federal regional.',
-    url, discoveryUrl: url, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 6 horas', priority: 8 + index, color: 'blue', adapter: 'links',
+    url, discoveryUrl: url, focus: ['Acórdãos', 'Decisões', 'Precedentes'], monitoring: 'A cada 6 horas', priority: 12 + index, color: 'blue', adapter: 'links',
   })),
 ];
 

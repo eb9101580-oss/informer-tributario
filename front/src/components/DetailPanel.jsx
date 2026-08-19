@@ -12,6 +12,11 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
   const [sent, setSent] = useState(false);
   if (!alert) return null;
 
+  const publishedDate = new Date(alert.publishedAt);
+  const publishedLabel = Number.isNaN(publishedDate.getTime())
+    ? 'Data de publicação não informada'
+    : new Intl.DateTimeFormat('pt-BR', { dateStyle: 'full', timeStyle: 'short' }).format(publishedDate);
+
   const submitFeedback = async (rating) => {
     setSelected(rating);
     await onFeedback(alert.id, rating);
@@ -23,7 +28,7 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
       <aside className="drawer">
         <button className="drawer__close icon-button" onClick={onClose} aria-label="Fechar"><X /></button>
         <div className="drawer__score"><strong>{String(alert.score).replace('.', ',')}</strong><span>/10 · {alert.relevance}</span></div>
-        <div className="drawer__tags"><span>{alert.status}</span>{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
+        <div className="drawer__tags"><span>{alert.status}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
         <h2>{alert.title}</h2>
 
         <section><h3>O que aconteceu</h3><p>{alert.summary}</p></section>

@@ -143,10 +143,10 @@ export default function App() {
     return (
       <>
         <section className="metrics-grid">
-          <MetricCard icon={FileSearch} value={dashboard.metrics.relevant} label="Itens relevantes" detail="Nota 6 ou superior" tone="blue" />
-          <MetricCard icon={BellRing} value={dashboard.metrics.urgent} label="Alertas urgentes" detail="Ação prioritária" tone="red" />
-          <MetricCard icon={CircleDollarSign} value={dashboard.metrics.opportunities} label="Oportunidades" detail="Para análise jurídica" tone="gold" />
-          <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais prioritárias" tone="teal" />
+          <MetricCard icon={FileSearch} value={dashboard.metrics.relevant} label="Itens relevantes" detail="Nota 6 ou superior" tone="blue" onClick={() => { setActivePage('radar'); setRelevance('all'); }} />
+          <MetricCard icon={BellRing} value={dashboard.metrics.urgent} label="Alertas urgentes" detail="Nota 8 ou superior" tone="red" onClick={() => { setActivePage('alerts'); setRelevance('urgent'); }} />
+          <MetricCard icon={CircleDollarSign} value={dashboard.metrics.opportunities} label="Oportunidades" detail="Para análise jurídica" tone="gold" onClick={() => setActivePage('opportunities')} />
+          <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais e jornalísticas" tone="teal" onClick={() => setActivePage('sources')} />
         </section>
 
         <section className="panel overview-feed">

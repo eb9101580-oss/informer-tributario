@@ -11,7 +11,7 @@ dashboardRouter.get('/', async (_request, response, next) => {
       && alert.score >= 6
       && /^https:\/\//i.test(alert.officialUrl || '')
       && Boolean(alert.provenance?.sourceId));
-    const urgent = relevant.filter((alert) => alert.score >= 9);
+    const urgent = relevant.filter((alert) => alert.score >= 8);
     const opportunities = relevant.filter((alert) => ['Oportunidade', 'Ambos'].includes(alert.impactType));
 
     response.json({
