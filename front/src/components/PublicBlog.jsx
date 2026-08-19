@@ -35,7 +35,7 @@ export function PublicBlog() {
         {loading && !alerts.length ? <div className="public-blog__loading"><span className="loading-spinner" />Carregando o feed...</div> : <section className="public-blog__feed"><div className="public-blog__feed-heading"><h2>Últimas publicações</h2><span>{feed.length} itens</span></div><div className="alerts-list">{feed.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelected} />)}</div>{!feed.length && <p className="public-blog__empty">Nenhuma publicação relevante foi analisada ainda.</p>}</section>}
       </main>
       <footer className="public-blog__footer"><span>Informer · inteligência tributária</span><a href="/admin">Acessar administração <ExternalLink size={14} /></a></footer>
-      <DetailPanel alert={selected} onClose={() => setSelected(null)} onFeedback={async () => {}} />
+      <DetailPanel alert={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }

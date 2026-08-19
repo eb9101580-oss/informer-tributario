@@ -48,10 +48,10 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
 
         {alert.provenance && <div className="provenance-box"><strong>Trilha de verificação</strong><span>Tipo: {alert.provenance.sourceType === 'journalistic' ? 'Fonte jornalística especializada' : 'Fonte oficial'}</span><span>Fonte: {alert.provenance.sourceName || alert.agency}</span><span>Documento: {alert.provenance.documentKind || 'Publicação monitorada'}</span><span>Coleta: {alert.provenance.collector} · análise local: {alert.provenance.analyzer}</span></div>}
 
-        <div className="feedback-box">
+        {onFeedback && <div className="feedback-box">
           <strong>{sent ? 'Obrigado pelo feedback.' : 'Este alerta foi útil?'}</strong>
           {!sent && <div>{ratings.map(({ value, label, icon: Icon }) => <button className={selected === value ? 'selected' : ''} onClick={() => submitFeedback(value)} key={value}><Icon size={16} />{label}</button>)}</div>}
-        </div>
+        </div>}
       </aside>
     </div>
   );
