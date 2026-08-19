@@ -515,7 +515,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -532,7 +532,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -549,7 +549,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -566,7 +566,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -583,7 +583,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -600,7 +600,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -617,7 +617,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -634,7 +634,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -651,7 +651,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.086Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -668,7 +668,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.087Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -685,8 +685,3336 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T14:23:28.087Z",
+        "discoveredAt": "2026-08-19T14:43:32.760Z",
         "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ECD",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/ecd",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "0b71deb9918743d959336445",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ECF",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/ecf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "353209a0f9921ee654e1bbff",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EFD-Contribuições",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/efd-contribuicoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "333fcb972a39b6c5bee2a5a6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EFD ICMS IPI",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/efd-icms-ipi",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "5c4b4f4154ff7e06c439de03",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EFD-Reinf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/efd-reinf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "7b8094e5a72d069e18653d5d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "e-Financeira",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/e-financeira",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "65fc32a5b2d2d16ad72abd6e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "DeRE",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/comunicados/dere",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "b399f7adfb9ea6d5bb2748ff",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Validador ECD",
+        "url": "https://www.gov.br/sped/pt-br/centrais-de-conteudo/downloads/validador-ecd",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "df04a3732cc99bbfcb34d92c",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Validador ECF",
+        "url": "https://www.gov.br/sped/pt-br/centrais-de-conteudo/downloads/validador-ecf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "64ea872350d34129d4bf88ed",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Validador EFD - ICMS IPI",
+        "url": "https://www.gov.br/sped/pt-br/centrais-de-conteudo/downloads/validador-efd-icms-ipi",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "d9bba05fba555e5ad6b074f9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Validador EFD-Contribuições",
+        "url": "https://www.gov.br/sped/pt-br/centrais-de-conteudo/downloads/validador-efd-contribuicoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "0bec065c3122a480f7277f35",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EFD Contribuições",
+        "url": "https://www.gov.br/sped/pt-br/centrais-de-conteudo/estatisticas-sped/efd-contribuicoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "7141eecfb6139febd0e30cbb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Escrituração Contábil Digital - ECD",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "1f6eac97dbb8b455aa139b67",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Escrituração Contábil Fiscal - ECF",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "c1e0559a895467bb7f804ddb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Escrituração Fiscal Digital - EFD ICMS IPI",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "19a6d1fcf8b922d6a9cf4483",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "eSocial",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/esocial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-notas-tecnicas",
+        "sourceName": "SPED — Documentos e Notas Técnicas",
+        "sourceAcronym": "SPED",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:23.320Z",
+        "id": "494d876985594df771658269",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Documentos Técnicos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "83450571d210badd60a25d48",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Programa Validador e Assinador da Escrituração Contábil Digital - ECD",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/validador-da-escrituracao-contabil-digital-ecd",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "e415c662ad21219356593205",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECD - Versão em pdf - Leiaute 9 (Atualização - Janeiro 2026)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos/manual_de_orientacao_da_ecd_leiaute_9_janeiro_2026.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "090de8adce6c8ec30b96f0d5",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECD - Versão em pdf - Leiaute 9 (Atualização - Novembro/2024)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos/manual_de_orientacao_da_ecd_leiaute_9_atualizacao_nov_2024.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "2ec5aa3166c11e546271e95f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECD - Versão em pdf - Leiaute 9 (Dezembro 2022)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos/manual_de_orientacao_da_ecd_2022_dezembro_leiaute_9_-04_12_2022.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "a355f072bc040044efbf7f59",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECD - Versão em pdf - Leiaute 9 (Dezembro 2021)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos/manual_de_orientacao_da_ecd_2021_dezembro_leiaute_9_-31_03_2022.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "8001f11ed844ca3419d95ef8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica ECD – Escrituração Contábil Digital nº 001, de 12 de janeiro de 2022",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecd/manuais-e-documentos-tecnicos/nota_tecnica_ecd-escrituracao_-contabil_digital_001_de_12_de_janeiro_de_2022-1.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecd",
+        "sourceName": "SPED - ECD",
+        "sourceAcronym": "ECD",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:34.321Z",
+        "id": "1eed91785e7431c1bc02c425",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Documentos Técnicos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "b087050a767a91bb495937f6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 12 - Versão em PDF (Atualização: 23/07/2026)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_ecf_leiaute_12_20_05_2026_ac_2025_sit_esp_2026.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "54bfc02ebfb6e44b07b7ddc5",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 12 - Versão em Word (Atualização: 23/07/2026)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_ecf_leiaute_12_20_05_2026_ac_2025_sit_esp_2026.docx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "430eab58a3c6809def34b672",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 12 (Atualização: 25/07/2026)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-dinamicas-e-planos-de-contas-referenciais-leiaute-12-atualizacao-28-05-2026",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "6e8645e67f0678faf4a81db6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 11 - Versão em .pdf - (Atualização: 29/09/2025)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_ecf_leiaute_11_29_09_2025.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "b8d98f3956f18667f88da79b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 10 - Versão em .pdf - (Atualização: 01/04/2024)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_ecf_leiaute_10_21_12_2023.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "1de1ee3e54a5c81cac1f328d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 9 - Versão em .pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_ecf_leiaute_9_12_12_2022.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "74c3fd3fc290a84808d49745",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da ECF Leiaute 8 - Versão em .pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/manual_de_orientacao_da_ecf_janeiro_2022.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "a3b0bf8380bfb4e0077b9b13",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 12 (Atualização: 29/01/2026)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas_dinamicas_ecf_leiaute_12_29_01_2026_ac_2025_sit_esp_2026.xlsx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "093d79c39dd40e67f0e9e1fd",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 11 (Atualização: 09/11/2025)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas_dinamicas_ecf_leiaute_11_09_11_2025_ac_2024_sit_esp_2025.xlsx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "c49b7fae62511fc01eb9a7ac",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 10 (Atualização: 15/01/2024)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas_dinamicas_ecf_leiaute_10_ac_2023_sit_esp_2024.xlsx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "65f14091a1776ac93dee0559",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 9 (Atualização: 12/04/2023)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas_dinamicas_ecf_leiaute_9_ac2022_sit_esp_2023.xlsx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "3e054b9ab25eaaab3f17b62f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 8 (Atualização: 26/07/2022)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas_dinamicas_ecf_leiaute_8_ac2021_sit_esp_2022.xlsx",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "b7ed98347f9c0250025fdbaf",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 7 (Atualização: 03/02/2021)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-leiaute-7",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "ec2a218b6ca0dc02a3005874",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 6 (Atualização: 26/06/2020)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-leiaute-6",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "7516b2fb506163c63e324269",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 5 (Atualização: 10/09/2019)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-leiaute-5",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "ac3155589c7c1a9435244c30",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 4 (Atualização: 29/06/2018)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-leiaute-4",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "8606d6fc90b3e49e2cbce198",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas Dinâmicas e Planos de Contas Referenciais - Leiaute 3 (Atualização: 19/06/2017)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/ecf/manuais-e-documentos-tecnicos/tabelas-leiaute-3",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-ecf",
+        "sourceName": "SPED - ECF",
+        "sourceAcronym": "ECF",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.158Z",
+        "id": "e0a93a9545ccc5bf16863e5f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas do Sistema",
+        "url": "https://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=SpedPisCofins",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "38475e9bd5182acb43b6779f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "5d026faf012bcf8eed83449e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas de Códigos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/tabelas-de-codigos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "76081d45e2fac4333ef5411e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas em formato txt (utilizadas pelo PVA EFD-Contribuições)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/tabelas-em-formato-txt-utilizadas-pelo-pva-efd-contribuicoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "ed196b88af0d33da8e3fcb92",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas do sistema: Sistema Pis Cofins",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/tabela-sistema",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "4f8d6586d85daedf99565a58",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Atualização de Tabelas Entes",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/atualizacao-tabelas-entes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "3946b20cbe96f25f6439e5ff",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas utilizadas na apuração da Contribuição Previdenciária sobre a Receita Bruta",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/tabelas-de-codigos/tabelas-utilizadas-na-apuracao-da-contribuicao-previdenciaria-sobre-a-receita-bruta",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "9ca07679722d2d9a21e05b5b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas utilizadas na apuração das Contribuições para o PIS/Pasep e da Cofins",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/tabelas-de-codigos/tabelas-utilizadas-na-apuracao-das-contribuicoes-para-o-pis-pasep-e-da-cofins",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "sourceAcronym": "EFD-C",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:35.520Z",
+        "id": "aecaf249a35ebb5b3dfd5ce1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "O Ato COTEPE ICMS nº 44, de 07 de agosto de 2018 , que dispõe sobre os documentos fiscais e as especificações técnicas do leiaute do arquivo digital da EFD-ICMS/IPI.",
+        "url": "https://www.confaz.fazenda.gov.br/legislacao/atos/2018/ato-cotepe-icms-44-18",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "898fbcf9dcef3983db8dbd1e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Documentos Técnicos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "17ff3bcdaa3ea043994ae50a",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Atualização de Tabelas Entes",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/atualizacao-tabelas-entes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "0894558fbc5514e0b0450ca1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático EFD ICMS IPI versão 3.2.3",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/guia%20pratico",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "7326a0fed4ed6b2aab62f7fe",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Orientativa 01/2026 - NFGás (modelo 76)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/nota-orientativa-efd-icms-ipi-2026-001-v1-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "792879d3d80b1241118ae8b0",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Orientativa EFD ICMS IPI 2026.001 v1.0",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nota-orientativa-efd-icms-ipi-2026-001-v1-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "4942a659945181a941a7ce4b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD ICMS IPI 3.2.3.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/guia-pratico-efd-versao-3-2-3.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "94136cd370237413cfed1c8f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica 2026.001 v1.0.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nt-2026-001-v1-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "87d401d14df95f8ce5eb0543",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/guia-pratico-da-efd-icms-ipi-3-2.2",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "888c48094b3c85c6f084e69f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD ICMS IPI 3.2.1",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/guia-pratico-efd-versao-3-2-1.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "70f9e8c63201c0cca13d8954",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD ICMS IPI 3.2.0",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/guia-pratico-efd-versao-3-2-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "5818909000e148047eb416b9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Prático da EFD ICMS IPI 3.1.9",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/guia-pratico-efd-versao-3-1-9.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "eea095a1849c5566b63f1e8f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica 2025.001 v1.0 (leiaute versão 020)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nt-2025-001-v1-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "8a79e19eae5518ad00ac5094",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica 2024.001 v1.0 (leiaute versão 019)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nt_efd-icms-ipi-2024-001-v1-0.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "b63ca8a86e6fa0404936cebe",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica 2023.001 v 1.2 (leiaute versão 018)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nota-tecnica-efd-icms-ipi-2023-001-v1-2.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "18a484df24a02d4a4c76aeb9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Nota Técnica 2023.001 v 1.1 (leiaute versão 018)",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi/manuais-e-documentos-tecnicos/nota-tecnica-efd-icms-ipi-2023-001-v1-1.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-icms-ipi",
+        "sourceName": "SPED - EFD ICMS IPI",
+        "sourceAcronym": "EFD-ICMS/IPI",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.534Z",
+        "id": "7dd232208881f2d93af0dcf8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas do Sistema",
+        "url": "https://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=reinf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "832ee04853e1e18cb25597b8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Documentos Técnicos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "70791feebfa8d0cab945dfda",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.7.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manualorientacaodesenvolvedor-reinf-v2-7.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "ec2b2bebe89f3f76cbfdc6be",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.6.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manualorientacaodesenvolvedor-reinf-v2-6.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "2e7b873b6ddd45feb716727f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.5.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manualorientacaodesenvolvedor-reinf-v2-5.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "39b72631c1127d524c3caea7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.4.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manualorientacaodesenvolvedor-reinf-v2-4.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "470a8597b97b8b8c54d79d47",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.3.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manual-orientacao-2.3",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "d2628beacf039dd09ece96f4",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.2.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manual-v-2.2",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "a3a07d3b3a68f6ecd4787a59",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual da EFD-Reinf versão 2.1.2.1.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manual-da-efd-reinf-versao-2-1-2-1.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "7ef96b1942d9e5e5f1b24cc6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.1.2pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manula-v-2.1.2",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "a1f8a36e705ce0b3e53a7505",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v2.1.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/manual-v-2.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "c9bfd1f6304836ef6b41804e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v1.5.1.1.pdf",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "385de91ff70122735678fb4c",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5.1.2",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1.2",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "3a6b203aafaaa1d049106e83",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5.1.4",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1.4",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "3e1f0162aa9af6a94a7c0967",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5.1.5",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1.5",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "487bc4b0bd51cfd4f41875e8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5.1",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "1ff2f5feae3362773c9ad849",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "2c7d6a74b2750f7ff336501d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.2.1.1.1",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.2.1.1.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "a1625feeb276ce9abfc7593d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.2.1.1",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.2.1.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "bb718ea6ec7637987478e989",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.2.1.2",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.2.1.2",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "ec2f204168c1bc86442e0d17",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.1",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.1",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "bfaaa86bde6b3605f7299316",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.3",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.3",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "9bfd33dee3f21b45efd0a14b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.5.1.3",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.5.1.3",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "5695db73b7e5b092d41bf588",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.2.0",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.2.0",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "932e697b64932fd3e70429d7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.03.02",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.03.02",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "e0be1ae98ce901658cb3b8d8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "ManualOrientacaoDesenvolvedor-REINF-v.1.03.03",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-reinf/manuais-e-documentos-tecnicos/v.1.03.03",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-efd-reinf",
+        "sourceName": "SPED - EFD-Reinf",
+        "sourceAcronym": "EFD-Reinf",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:36.677Z",
+        "id": "04b9389109e2d554d576643e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Documentação Técnica",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "303372115c9eefe163a72bd3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portal SPED Tabela - e-Financeira",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/portal-sped-tabela-e-financeira",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "dc827bec95c3a9431c9db7dc",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Leiautes",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos/manuais-e-leiautes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "eae197fbdb4ea66b76c222c0",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Squemas",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos/esquemas",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "1833974a3983c4c2bd1b3c83",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Legislação",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos/legislacao",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "cd4a85debf3a23db716b9e2b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas de Códigos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos/tabelas-de-codigos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "92498b7d37acb15cb5c7782f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Exemplos de eventos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/e-financeira/manuais-e-documento-tecnicos/exemplos-de-eventos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-e-financeira",
+        "sourceName": "SPED - e-Financeira",
+        "sourceAcronym": "e-Financeira",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.732Z",
+        "id": "053f235295bc2c3319e13b0f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Acesso ao sistema Acesse o eSocial Orientações de acesso ao eSocial por meio do Gov.br Semáforo Cronograma de implantação Produção Restrita - Ambiente de Testes Orientações - Procuração Eletrônica e Assinatura Digital",
+        "url": "https://www.gov.br/esocial/pt-br/acesso-ao-sistema",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "81d72c5967473e4996259ba8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Orientações - Procuração Eletrônica e Assinatura Digital",
+        "url": "https://www.gov.br/esocial/pt-br/acesso-ao-sistema/orientacoes-assinatura-digital-e-procuracao-eletronica",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "f6784ae120f04f62e405c4ee",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Empregador Doméstico Manual do Doméstico Perguntas Frequentes Histórico das Perguntas Frequentes - Empregador Doméstico App eSocial Doméstico Orientações Como Acessar o eSocial Consultar Guias Pagas Documento de Arrecadação do eSocial - DAE Direitos do Trabalhador Doméstico Guia FGTS - Recolhimento ",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "c9b8037f13b69d987743bf79",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual do Doméstico",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/manual-do-empregador-domestico",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "f4e5567dd7dd2e8340b54402",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Orientações Como Acessar o eSocial Consultar Guias Pagas Documento de Arrecadação do eSocial - DAE Direitos do Trabalhador Doméstico Guia FGTS - Recolhimento Anterior a 10/2015 FGTS para Empregador Doméstico Saque FGTS Seguro Desemprego Recebimento de benefícios do INSS pelo trabalhador doméstico Tu",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "3e430773e9f129992fd6f52d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Como Acessar o eSocial",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/como-acessar-o-esocial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "f14f15cf4f7f53021e6aad28",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Consultar Guias Pagas",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/consultar-guias-pagas",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "cfa8a9637cc285f3395187e7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Documento de Arrecadação do eSocial - DAE",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/documento-de-arrecadacao-do-esocial-dae",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "e50b09cc09328788b1b47aa6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Direitos do Trabalhador Doméstico",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/direitos-do-trabalhador-domestico",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "4549df69ef90e12993870c41",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Saque FGTS",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/saque-fgts",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "3fb1750dc6fb4bf49c405941",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Seguro Desemprego",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/seguro-desemprego",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "cac3f9b6d4732ef2fbac8d77",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Recebimento de benefícios do INSS pelo trabalhador doméstico",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/recebimento-de-beneficios-do-inss-pelo-trabalhador-domestico",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "3c3e2b2d8d4410b712b6cbb7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tutoriais em vídeo",
+        "url": "https://www.gov.br/esocial/pt-br/empregador-domestico/orientacoes/tutoriais-em-video",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "9f43803b8d5dd5baa5178407",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual Web Processo Trabalhista",
+        "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/manual-do-usuario-esocial-web-processo-trabalhista.pdf",
+        "publishedAt": "",
+        "documentKind": "Documento oficial em PDF",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "b89d0deeb2ceafd88840fe97",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Empresas e Órgãos Públicos Manual WEB GERAL / SST Perguntas Frequentes Orientações Consulta Qualificação Cadastral Manual WEB Processo Trabalhista Videoaulas Processos Trabalhistas",
+        "url": "https://www.gov.br/esocial/pt-br/empresas",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "37f341000a64d9c50e1c0454",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual WEB GERAL / SST",
+        "url": "https://www.gov.br/esocial/pt-br/empresas/manual-web-geral",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "ddb9907ff937634b3bada861",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Orientações",
+        "url": "https://www.gov.br/esocial/pt-br/empresas/orientacoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "7aa2288a6a9464efadd0ea81",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Microempreendedor Individual Manual WEB MEI Perguntas Frequentes Portal do Empreendedor",
+        "url": "https://www.gov.br/esocial/pt-br/microempreendedor-individual",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "b6de0efce4c30e416399a370",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual WEB MEI",
+        "url": "https://www.gov.br/esocial/pt-br/microempreendedor-individual/microempreendedor-individual-mei",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "ae325518ec06d923e89a2a01",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Segurado Especial Manual do Segurado Especial",
+        "url": "https://www.gov.br/esocial/pt-br/segurado-especial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "848135e9f464d6402b6c98cf",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manual do Segurado Especial",
+        "url": "https://www.gov.br/esocial/pt-br/segurado-especial/manual-do-segurado-especial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "10f5cfc0f1901bd9439914cb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Documentação Técnica",
+        "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "f82ad8a66bf030cc6b66dd81",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Centrais de conteúdo Conheça o eSocial Legislação Empregador Doméstico Empresas MEI CORONAVíRUS - Orientações",
+        "url": "https://www.gov.br/esocial/pt-br/centrais-de-conteudo",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "b00ef0abc7cbbc9f1ce51100",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "CORONAVíRUS - Orientações",
+        "url": "https://www.gov.br/esocial/pt-br/centrais-de-conteudo/coronavirus-orientacoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "e9ffb293f514d585be5f7fdb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tabelas do eSocial Consulta tabelas do eSocial",
+        "url": "https://www.gov.br/esocial/pt-br/tabelas-do-esocial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "eb68b39468791ea5fdc13ced",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Consulta tabelas do eSocial",
+        "url": "https://frontend.esocial.gov.br/adm/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "6e2ff9381870d71624c73f8e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "01/07/2026 - Entrada em produção dos esquemas XSD eSocial - Leiautes v. S-1.3 (até NT 06/2026) - CNPJ alfanumérico",
+        "url": "https://www.gov.br/esocial/pt-br/centrais-de-conteudo/agenda/2026-07-01-entrada-em-producao-dos-esquemas-xsd-esocial-leiautes-v-s-1-3-ate-nt-06-2026-cnpj-alfanumerico",
+        "publishedAt": "2026-07-01",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "288011ce1f9468faf95e9190",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Disponibilizadas novas naturezas de rubrica relacionadas ao programa Crédito do Trabalhador e à assistência médica e odontológica",
+        "url": "https://www.gov.br/esocial/pt-br/noticias/esocial-disponibiliza-natureza-de-rubrica-9253-para-desconto-do-credito-do-trabalhador",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "6394305f4fea521157219bfe",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Crédito do Trabalhador: orientações sobre o empréstimo consignado no eSocial",
+        "url": "https://www.gov.br/esocial/pt-br/noticias/credito-do-trabalhador-orientacoes-sobre-o-emprestimo-consignado-no-esocial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "2e6f92272e8fac742ab65ceb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "COMUNICADO - ORIENTAÇÕES ADICIONAIS SOBRE A IMPLANTAÇÃO DA FUNCIONALIDADE DE GARANTIAS NO CRÉDITO DO TRABALHADOR",
+        "url": "https://www.gov.br/esocial/pt-br/noticias/comunicado-orientacoes-adicionais-sobre-a-implantacao-da-funcionalidade-de-garantias-no-credito-do-trabalhador",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-esocial",
+        "sourceName": "SPED - eSocial",
+        "sourceAcronym": "eSocial",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:37.647Z",
+        "id": "6bafb5db6f4cee2a8032ad33",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Manuais e Documentos Técnicos",
+        "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/central-de-balancos/manuais-e-documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "obrigacoes"
+        ],
+        "sourceId": "sped-central-balancos",
+        "sourceName": "SPED - Central de Balanços",
+        "sourceAcronym": "Central",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.717Z",
+        "id": "062d0937dd6adbde5893380f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Abrir menu principal de navegação",
+        "url": "https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/empresa/sped/declaracao-de-regimes-especiais-dere/declaracao-de-regimes-especiais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "88d83e86e1fb20508a425ac7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Taxas de Juros",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/pagamentos-e-parcelamentos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "9e2cfc2659a7b99bc99e482a",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Orientações sobre Processos Digitais",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/processos-digitais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "9179db1c06d96db773b2cb27",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Mais Orientações Tributárias Fiscalização Benefícios Fiscais Cadastros Cobranças e Intimações Controles Fiscais Especiais Declarações e Demonstrativos Julgamento Administrativo Pagamentos e Parcelamentos Restituição, Ressarcimento, Reembolso e Compensação Senhas de acesso Sigilo Fiscal Tributos",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "fe455d406b37373a80de8a8c",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fiscalização",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/auditoria-fiscal",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "8679b9cde1c9d11c031f3f69",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Benefícios Fiscais",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/beneficios-fiscais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "b76cc15b7e1c8818bd3735a2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Cadastros",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cadastros",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "0109b7500bac9ad6e6edb223",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Cobranças e Intimações",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cobrancas-e-intimacoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "205221fa2bc718b23a00a3c6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Controles Fiscais Especiais",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/regimes-e-controles-especiais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "bf0d43b452274d400bde2937",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Declarações e Demonstrativos",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "755450635509ac57ea80f479",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Julgamento Administrativo",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/julgamento-administrativo",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "193894050aab237e85df4319",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Restituição, Ressarcimento, Reembolso e Compensação",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/restituicao-ressarcimento-reembolso-e-compensacao",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "9e06b8e1654f2c3505550b63",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Senhas de acesso",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/senhas",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "a6ba8bd46bf2e1e20074d434",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Sigilo Fiscal",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/sigilo-fiscal",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "3436f85c5c060303ecf86f3f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tributos",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/tributos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "63b27c69bb52d5b4beaf6a5b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional Sinter Siscomex Sped",
+        "url": "https://www.gov.br/receitafederal/pt-br/portais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "2164a3e88564c4a52cf0e936",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portal CNIR",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cadastros/portal-cnir",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "8f730f804bccaf482b87eda2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "GOV.BR Serviços Buscar serviços por Categorias Órgãos Estados Serviços por público alvo Cidadãos Empresas Órgãos e Entidades Públicas Demais segmentos (ONGs, organizações sociais, etc) Servidor Público Temas em Destaque Orçamento Nacional Redes de Atendimento da Administração Pública Federal Proteçã",
+        "url": "https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/sped/declaracao-de-regimes-especiais-dere/declaracao-de-regimes-especiais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "sourceAcronym": "DeRE",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:38.567Z",
+        "id": "396128d2c5daa0e7247380b1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Acessibilidade",
+        "url": "https://www.cgibs.gov.br/acessibilidade",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "ca088f0af0cf351f34eec966",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Contato",
+        "url": "https://www.cgibs.gov.br/fale-conosco",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "1590809a1f3a9a40db97c167",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Mapa do site",
+        "url": "https://www.cgibs.gov.br/mapa-do-site",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "e6a35a09cbe0e2220d4bc3e8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "CGIBS - Comitê Gestor do IBS",
+        "url": "https://www.cgibs.gov.br/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "eb6311825bb306580ed84ca7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Inicial",
+        "url": "https://www.cgibs.gov.br/inicial",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "86582f23d0ac519bde4ff663",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Quem somos",
+        "url": "https://www.cgibs.gov.br/quem-somos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "1b4af5c39494b23a13c356b2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Conselho Superior",
+        "url": "https://www.cgibs.gov.br/conselho-superior",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "41b3423a5ee61e1019984ef7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Organograma",
+        "url": "https://www.cgibs.gov.br/organograma",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "9a4130712533a68758aed6fd",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Regimento Interno",
+        "url": "https://www.cgibs.gov.br/regimento-interno",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "6280a02c2990d4ea4b4cb5a4",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Notícias",
+        "url": "https://www.cgibs.gov.br/noticias-menu",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "abe07b65298ae8752954cd40",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia Orientativo (PDF)",
+        "url": "https://www.cgibs.gov.br/guia-orientativo-pdf",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "2e05f688989038e4d3fa6c0f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Painel Interativo",
+        "url": "https://www.cgibs.gov.br/painel-interativo",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "f42638e952d46e0232bd20f7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guias",
+        "url": "https://www.cgibs.gov.br/guias",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "270c8fe05ff09f56b9f001dc",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Cartilhas",
+        "url": "https://www.cgibs.gov.br/cartilhas",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "1fa8f9f88dde8d9ecbee4753",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Comunicados Oficiais",
+        "url": "https://www.cgibs.gov.br/comunicados-oficiais",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "0e921398e882f0ab302e4f9d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Documentos Técnicos",
+        "url": "https://www.cgibs.gov.br/documentos-tecnicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "e1adaf787d1a73ddc70869b6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Vídeos",
+        "url": "https://www.cgibs.gov.br/videos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "552e174e9ceb422f43542c96",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Leis",
+        "url": "https://www.cgibs.gov.br/leis",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "3ddcfdda8954e473b0091eb5",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Resoluções",
+        "url": "https://www.cgibs.gov.br/resolucoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "6770b091a69b3eff431f4440",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Regulamentos",
+        "url": "https://www.cgibs.gov.br/regulamentos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "91dc87fa6b06f5156fe0e817",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portarias",
+        "url": "https://www.cgibs.gov.br/portarias",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "32dbec5f92a2ab3357a13c07",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Atos Conjuntos",
+        "url": "https://www.cgibs.gov.br/atos-conjuntos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "5d3d014d547655df816f505c",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Relatórios",
+        "url": "https://www.cgibs.gov.br/relatorios",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "c94d1f2e7b5a8da9dd027ce1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Atos Técnicos Conjuntos",
+        "url": "https://www.cgibs.gov.br/atos-tecnicos-conjuntos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "56a24e30ebb9b3262c6b13d2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Transparência",
+        "url": "https://www.cgibs.gov.br/transparencia",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "b2f0bb8e5550043484e08fcf",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portal de Serviços",
+        "url": "https://www.cgibs.gov.br/portal-de-servicos",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "47beb1e76084a7e59b0253de",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Ouvidoria",
+        "url": "https://www.cgibs.gov.br/ouvidoria",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "7da9bf90fe550b5db507a485",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Em qualquer data",
+        "url": "https://www.cgibs.gov.br/noticias",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "91844c0ff0aedf7680250521",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Institucional Quem somos Conselho Superior Organograma Regimento Interno",
+        "url": "https://www.cgibs.gov.br/institucional",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "22ab93461de00ffc5169a48d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Guia - Impactos Administrativos Guia Orientativo (PDF) Painel Interativo",
+        "url": "https://www.cgibs.gov.br/guia-orientativo-para-impactos-administrativos-da-reforma-tributaria",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "15683d9a800a4b916fcb642d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Central de Conteúdo Guias Cartilhas Comunicados Oficiais Documentos Técnicos Vídeos",
+        "url": "https://www.cgibs.gov.br/central-de-conteudo",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "44d53128b25927ab97ef6ea4",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Legislações Leis Resoluções Regulamentos Portarias Atos Conjuntos Relatórios Atos Técnicos Conjuntos",
+        "url": "https://www.cgibs.gov.br/legislacoes",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "50122f0e0d240a73ad2b5d95",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Termos de Uso",
+        "url": "https://www.cgibs.gov.br/termos-de-uso",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "7b02730a8b302659828fb173",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Aviso de Cookies",
+        "url": "https://www.cgibs.gov.br/aviso-de-cookies",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-cgibs",
+        "sourceName": "CGIBS - Comitê Gestor do IBS",
+        "sourceAcronym": "CGIBS",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:42.005Z",
+        "id": "5513dbeb45ac7954b26f0b2e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Enap, Comsefaz, FNP e Sefaz-CE lançam curso sobre a reforma tributária do consumo",
+        "url": "https://www.reformatributaria.com/cursos/enap-lanca-curso-sobre-a-reforma-tributaria-do-consumo/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:45.676Z",
+        "id": "7e70af08a31df91ab6ced46a",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Sair",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:43:47.331Z",
+        "id": "27b07cefadb9d5ff4f65e49d",
         "status": "pending",
         "attempts": 0
       },
@@ -1516,24 +4844,6 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:27:18.013Z",
         "id": "726b2fbbe25a6ca6550caae5",
-        "status": "pending",
-        "attempts": 0
-      },
-      {
-        "title": "Ir para o conteúdo [1]",
-        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online",
-        "publishedAt": "",
-        "documentKind": "Publicação oficial",
-        "sections": [
-          "reforma"
-        ],
-        "sourceId": "reforma-folha",
-        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
-        "sourceAcronym": "FOLHA",
-        "sourceType": "journalistic",
-        "discoveryMethod": "links",
-        "discoveredAt": "2026-08-19T14:27:19.340Z",
-        "id": "27b07cefadb9d5ff4f65e49d",
         "status": "pending",
         "attempts": 0
       },
@@ -5838,6 +9148,240 @@
     ],
     "runs": [
       {
+        "id": "183917aa-f931-4a32-8957-2d29090cfb7a",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T14:43:18.230Z",
+        "finishedAt": "2026-08-19T14:44:43.131Z",
+        "discovered": 194,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 5,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1
+          }
+        ]
+      },
+      {
         "id": "cb98757d-26db-41ec-9ed8-69acba5e5d6b",
         "trigger": "github-actions-discovery",
         "startedAt": "2026-08-19T14:23:12.923Z",
@@ -9864,7 +13408,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T14:28:08.041Z",
-    "nextRunAt": "2026-08-19T20:28:08.041Z"
+    "lastRunAt": "2026-08-19T14:44:43.131Z",
+    "nextRunAt": "2026-08-19T20:44:43.131Z"
   }
 }
