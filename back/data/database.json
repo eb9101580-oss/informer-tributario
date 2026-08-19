@@ -1,9 +1,200 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T22:54:50.411Z",
+    "lastUpdatedAt": "2026-08-19T23:23:14.958Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1618221 — DECISÃO: Recurso extraordinário com agravo contra inadmissão do RE, com fundamento na alínea 'a' do permissivo constitucional",
+      "theme": "Recurso extraordinário tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imposto de Renda",
+        "Previdência Complementar",
+        "Regime tributário regressivo",
+        "Lei 14.803/2024",
+        "Lei 11.053/2004"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu que não há possibilidade de opção pelo regime tributário regressivo para contribuintes que ingressaram posteriormente a 1º de janeiro de 2005, sob a previdência complementar, conforme leis 11.053/2004 e 14.803/2024. A parte autora alegou que, em 1971, aderiu ao Plano PPSP-NR da Petrobras, mas não teve razão ao sustentar a possibilidade de opção pelo regime regressivo após a alteração da Lei 14.803/2024.",
+      "whatChanged": "A decisão do STF reforça que a opção pelo regime tributário regressivo não é válida para contribuintes que ingressaram posteriormente a 1º de janeiro de 2005 na previdência complementar, mesmo após a alteração promovida pela Lei 14.803/2024.",
+      "practicalImpact": "Contribuintes que ingressaram na previdência complementar após 1º de janeiro de 2005 não podem optar pelo regime tributário regressivo, mesmo após a Lei 14.803/2024, o que pode gerar impacto financeiro na tributação de previdência complementar.",
+      "officeAction": "O recurso extraordinário foi desprovido, mantendo a sentença anterior, com rejeição dos embargos de declaração.",
+      "affectedProfiles": [
+        "Contribuintes de previdência complementar",
+        "Empresas com Plano PPSP-NR",
+        "Petrobras",
+        "Contribuintes com ingresso posterior a 1º de janeiro de 2005",
+        "Contribuintes com opção pelo regime regressivo"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Recurso extraordinário tributário: Opção pelo regime regressivo inválida para contribuintes com ingresso posterior a 1º de janeiro de 2005",
+        "period": "2024-07-15",
+        "action": "Reavaliar a opção tributária para contribuintes com ingresso posterior a 1º de janeiro de 2005 na previdência complementar",
+        "confidence": "alto"
+      },
+      "id": "9a6d3e1c-ae73-482a-97fd-7f9be1a2a5dd",
+      "score": 7.8,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810823/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T23:23:14.952Z",
+      "updatedAt": "2026-08-19T23:23:14.952Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810823/false",
+        "sourceCharacters": 1200,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T23:03:20.880Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617041 — 1º, II, \"a\" e \"f\", da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea \"c",
+      "theme": "Interposição do apelo extremo em recurso extraordinário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS",
+        "Lei local",
+        "Ato de governo local",
+        "Constituição Federal",
+        "Lei Federal",
+        "Art. 102, III, da Lei Federal"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF decidiu que é incabível a interposição do apelo extremo pelo permissivo da alínea \"c\" do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. O julgamento foi baseado em precedentes do STF que rejeitaram a validade de leis ou atos locais contestados em face da Constituição Federal.",
+      "whatChanged": "A decisão do STF reforça que a interposição do apelo extremo é incabível quando a lei ou ato de governo local é contestado em face da Constituição Federal, mantendo o Tribunal de origem responsável por julgar a validade.",
+      "practicalImpact": "Empresas e órgãos públicos devem evitar a interposição de apelos extremos em casos de contestação de leis ou atos locais em face da Constituição Federal, já que o STF rejeitou o recurso extraordinário com base na alínea \"c\" do art. 102, III, da Lei Fundamental.",
+      "officeAction": "O STF decidiu que é incabível a interposição do apelo extremo pelo permissivo da alínea \"c\" do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal.",
+      "affectedProfiles": [
+        "Empresas",
+        "Órgãos públicos",
+        "Tribunais de origem",
+        "Advogados tributários",
+        "Gestores de políticas públicas"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Reavaliação da validade de leis e atos locais em face da Constituição Federal",
+        "period": "2023-10-18 a 2024-12-31",
+        "action": "Empresas e órgãos públicos devem revisar a validade de leis e atos locais contestados em face da Constituição Federal, evitando a interposição de apelos extremos sem base legal.",
+        "confidence": "médio"
+      },
+      "id": "bc9bf487-37b3-4f7a-8235-5fe52a2edca0",
+      "score": 7.5,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T23:20:21.213Z",
+      "updatedAt": "2026-08-19T23:20:21.213Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
+        "sourceCharacters": 1209,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T23:03:20.880Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1615808 ED — Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, LXXVIII, da Constituição,",
+      "theme": "Inadmissibilidade de recurso por análise de normas legais e reexame de fatos ema",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "CTN (Código Tributário Nas",
+        "Lei 6.830/80 - LEF",
+        "Art. 156, V, do CTN",
+        "Súmula 279 do STF",
+        "Art. 108 do Código Tributário",
+        "Art. 374 e 379 do Código Civil"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "A decisão monocrática do STF confirma a inadmissibilidade de recurso por análise de normas legais (CTN e LEF) e reexame de fatos em via extraordinária, destacando a inviabilidade de reconhecer extinção do crédito tributário pela prescrição. O precedente reforça que a instância extraordinária não pode ser utilizada para análise de normas legais ou reexame de fatos e provas.",
+      "whatChanged": "A decisão do STF reforça que a via extraordinária não é adequada para análise de normas legais (art. 156, V, do CTN e Lei 6.830/80) ou reexame de fatos e provas (Súmula 279), impedindo a extinção do crédito tributário pela prescrição.",
+      "practicalImpact": "Empresas devem evitar a utilização da via extraordinária para analisar normas legais ou reexame de fatos e provas, já que a decisão do STF confirma a inviabilidade dessa abordagem para extinção do crédito tributário pela prescrição.",
+      "officeAction": "Recurso inadmissível por análise de normas legais e reexame de fatos em via extraordinária, conforme decisão do STF.",
+      "affectedProfiles": [
+        "Empresas com crédito tributário em execução fiscal",
+        "Procuradores de tributação",
+        "Advogados de empresas",
+        "Fiscais de tributação",
+        "Organizações de defesa de direitos tributários"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Inadmissibilidade de recurso por análise de normas legais e reexame de fatos em via extraordinária",
+        "period": "2023-10-18",
+        "action": "Evitar utilização da via extraordinária para análise de normas legais ou reexame de fatos e provas",
+        "confidence": "alto"
+      },
+      "id": "01e9117e-6273-462a-acba-a2a54413f1e1",
+      "score": 6.3,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T23:12:21.464Z",
+      "updatedAt": "2026-08-19T23:12:21.464Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
+        "sourceCharacters": 1294,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T23:03:20.880Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1617877 — inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea",
@@ -1720,7 +1911,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "1bc698f91c433f137e261317",
         "status": "pending",
         "attempts": 0,
@@ -1741,7 +1932,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "61716aa5626f058729a7ad2f",
         "status": "pending",
         "attempts": 0,
@@ -1762,29 +1953,8 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "6b24e5a5f87a529f7df35c28",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1615808 ED — Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, LXXVIII, da Constituição Federal, pretende-se a análise de normas legais (art. 156, V, do CTN e Lei 6.830/80 - LEF), bem co",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615808&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810600",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
-        "inlineText": "Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, LXXVIII, da Constituição Federal, pretende-se a análise de normas legais (art. 156, V, do CTN e Lei 6.830/80 - LEF), bem como o reexame de fatos e provas (Súmula 279 do STF), a fim de que seja reconhecida, no caso concreto, a extinção do crédito tributário pela prescrição, extinguindo-se a execução fiscal, o que é inviável na via extraordinária. A respeito, confira-se, em casos similares, os seguintes precedentes: “ TRIBUTÁRIO . EXTINÇÃO DO CRÉDITO TRIBUTÁRIO . COMPENSAÇÃO. PRETENSÃO DE SUBSTITUIR REGRAMENTO REGULAMENTAR PELO SISTEMA DE IMPUTAÇÃO AO PAGAMENTO PREVISTO NO CÓDIGO CIVIL. PRESCRIÇÃO. OFENSA À COISA JULGADA. OFENSA INDIRETA OU REFLEXA. ART. 108 DO CÓDIGO TRIBUTÁRIO NACIONAL. ARTS. 374 E 379 DO CÓDIGO CIVIL. ALTERAÇÃO DA LEI 10.677/2003. INVIABILIDADE. CONTROLE DE LEGALIDADE. DEBATE DE ÍNDOLE INFRACONSTITUCIONAL. DESPROVIMENTO. 1. O direito adquirido, o ato jurídico perfeito e a coisa julgada, quando objeto de verificação de cada caso concreto acerca da ocorrência ou não de violação, não desafiam a instância extraordinária, posto implicar análise LEG-FED LEI-005172 ANO-1966 ART-00156 INC-00005 CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
-        "id": "84bf80b91653de88acffee6f",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1804,7 +1974,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "f75ff59ad714411f10ac4e61",
         "status": "pending",
         "attempts": 0,
@@ -1825,7 +1995,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -1846,29 +2016,8 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "6899546bd55aa851ba80c388",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1617041 — 1º, II, \"a\" e \"f\", da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617041&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810479",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
-        "inlineText": "1º, II, \"a\" e \"f\", da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. Colho como precedentes o ARE 1.321.299-AgR, Rel. Min. Luiz Fux (Presidente), Tribunal Pleno, DJe 13.8.2021; e o ARE 1.270.810-AgR, Rel. Min. Dias Toffoli (Presidente), Tribunal Pleno, DJe 27.10.2020, verbis: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISS PRIVILEGIADO. SOCIEDADE DE ÍNDOLE EMPRESARIAL. RECURSO EXTRAORDINÁRIO FUNDADO NAS ALÍNEAS C E D DO INCISO III DO ART. 102 DA CONSTITUIÇÃO FEDERAL. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI OU ATO DE GOVERNO LOCAL CONTESTADOS EM FACE DA CARTA MAGNA. NÃO OCORRÊNCIA. PRECEDENTES. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI LOCAL CONSTESTADA EM FACE DE LEI FEDERAL. NÃO OCORRÊNCIA. PRECEDENTES. PREQUESTIONAMENTO. AUSÊNCIA. LEGISLAÇÃO INFRACONSTITUCIONAL. OFENSA REFLEXA. FATOS E PROVAS. REEXAME. IMPOSSIBILIDADE. PRECEDENTES. 1. O acórdão recorrido não julgou válida lei ou ato de governo local contestados",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
-        "id": "b08425deb90df4f07c6c7b85",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1888,29 +2037,8 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "5449b2622c0048278fad17bb",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1603683 — observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora par",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603683&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810357",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
-        "inlineText": "observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora para o acórdão a Ministra Cármen Lúcia, o Supremo Tribunal reafirmou essa orientação jurisprudencial de que, no regime de pagamentos ao qual se sujeitam os entes públicos, “o acessório segue o principal” (Plenário, DJe 10.2.2015). Na mesma linha é, por exemplo, o seguinte julgado: “RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . (...) CORREÇÃO MONETÁRIA. OBRIGAÇÃO ACESSÓRIA. REGIME DE PRECATÓRIO: DESNECESSIDADE. O ACESSÓRIO SEGUE O PRINCIPAL. PRECEDENTES. RECURSO EXTRAORDINÁRIO COM AGRAVO NÃO CONHECIDO” (ARE n. 1.594.573, Relatora a Ministra Cármen Lúcia, decisão monocrática transitada em julgado, DJe 31.3.2026). No § 8º do art. 100 da Constituição da República, dispõe-se ser “vedada a expedição de precatórios complementares ou suplementares de valor pago, bem como o fracionamento, repartição ou quebra do valor da execução para fins de enquadramento de parcela do total ao que dispõe o § 3º deste artigo”. Com fundamento",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
-        "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1930,8 +2058,29 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "15b8b7c58ee87acaa0f1644f",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1603683 — observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora par",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603683&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810357",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
+        "inlineText": "observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora para o acórdão a Ministra Cármen Lúcia, o Supremo Tribunal reafirmou essa orientação jurisprudencial de que, no regime de pagamentos ao qual se sujeitam os entes públicos, “o acessório segue o principal” (Plenário, DJe 10.2.2015). Na mesma linha é, por exemplo, o seguinte julgado: “RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . (...) CORREÇÃO MONETÁRIA. OBRIGAÇÃO ACESSÓRIA. REGIME DE PRECATÓRIO: DESNECESSIDADE. O ACESSÓRIO SEGUE O PRINCIPAL. PRECEDENTES. RECURSO EXTRAORDINÁRIO COM AGRAVO NÃO CONHECIDO” (ARE n. 1.594.573, Relatora a Ministra Cármen Lúcia, decisão monocrática transitada em julgado, DJe 31.3.2026). No § 8º do art. 100 da Constituição da República, dispõe-se ser “vedada a expedição de precatórios complementares ou suplementares de valor pago, bem como o fracionamento, repartição ou quebra do valor da execução para fins de enquadramento de parcela do total ao que dispõe o § 3º deste artigo”. Com fundamento",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
+        "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1951,11 +2100,102 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "discoveredAt": "2026-08-19T23:23:37.634Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1618221 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: RECURSO INOMINADO. TRIB",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810823/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618221&classe=ARE",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810823",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810823/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: RECURSO INOMINADO. TRIBUTÁRIO . OPÇÃO PELO REGIME DE TRIBUTAÇÃO REGRESSIVA. PREVIDÊNCIA COMPLEMENTAR. INGRESSO POSTERIOR A 1º DE JANEIRO DE 2005. IMPOSSIBILIDADE. LEIS Nº 11.053/2004 E Nº 14.803/2024. RECURSO DA PARTE AUTORA CONHECIDO E DESPROVIDO. SENTENÇA MANTIDA. Opostos os embargos de declaração, foram rejeitados. No recurso extraordinário sustenta-se violação do(s) art.(s) 5º, caput, II; 145, § 1º; 150, I, II da Constituição Federal. Decido. Analisados os autos, colhe-se do voto condutor do acórdão atacado a seguinte fundamentação: No caso concreto, a parte autora alega que, em 1971, aderiu ao Plano PPSP-NR administrado pela Fundação Petrobras de Seguridade Social – Petros, Entidade Fechada de Previdência Complementar; contudo, se manteve no regime progressivo e que, com a alteração promovida pela Lei nº 14.803/2024, entende fazer jus à possibilidade de opção pelo regime regressivo. Contudo, não assiste razão ao recorrente. Para que fizesse jus",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T23:03:20.880Z",
+        "id": "7b28d2c0a36536535b024af0",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T23:23:14.958Z",
+        "score": 7.8,
+        "alertId": "9a6d3e1c-ae73-482a-97fd-7f9be1a2a5dd"
+      },
+      {
+        "title": "ARE 1615808 ED — Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, LXXVIII, da Constituição Federal, pretende-se a análise de normas legais (art. 156, V, do CTN e Lei 6.830/80 - LEF), bem co",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615808&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810600",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810600/false",
+        "inlineText": "Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, LXXVIII, da Constituição Federal, pretende-se a análise de normas legais (art. 156, V, do CTN e Lei 6.830/80 - LEF), bem como o reexame de fatos e provas (Súmula 279 do STF), a fim de que seja reconhecida, no caso concreto, a extinção do crédito tributário pela prescrição, extinguindo-se a execução fiscal, o que é inviável na via extraordinária. A respeito, confira-se, em casos similares, os seguintes precedentes: “ TRIBUTÁRIO . EXTINÇÃO DO CRÉDITO TRIBUTÁRIO . COMPENSAÇÃO. PRETENSÃO DE SUBSTITUIR REGRAMENTO REGULAMENTAR PELO SISTEMA DE IMPUTAÇÃO AO PAGAMENTO PREVISTO NO CÓDIGO CIVIL. PRESCRIÇÃO. OFENSA À COISA JULGADA. OFENSA INDIRETA OU REFLEXA. ART. 108 DO CÓDIGO TRIBUTÁRIO NACIONAL. ARTS. 374 E 379 DO CÓDIGO CIVIL. ALTERAÇÃO DA LEI 10.677/2003. INVIABILIDADE. CONTROLE DE LEGALIDADE. DEBATE DE ÍNDOLE INFRACONSTITUCIONAL. DESPROVIMENTO. 1. O direito adquirido, o ato jurídico perfeito e a coisa julgada, quando objeto de verificação de cada caso concreto acerca da ocorrência ou não de violação, não desafiam a instância extraordinária, posto implicar análise LEG-FED LEI-005172 ANO-1966 ART-00156 INC-00005 CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T23:03:20.880Z",
+        "id": "84bf80b91653de88acffee6f",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T23:12:21.469Z",
+        "score": 6.3,
+        "alertId": "01e9117e-6273-462a-acba-a2a54413f1e1"
+      },
+      {
+        "title": "ARE 1617041 — 1º, II, \"a\" e \"f\", da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617041&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810479",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810479/false",
+        "inlineText": "1º, II, \"a\" e \"f\", da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. Colho como precedentes o ARE 1.321.299-AgR, Rel. Min. Luiz Fux (Presidente), Tribunal Pleno, DJe 13.8.2021; e o ARE 1.270.810-AgR, Rel. Min. Dias Toffoli (Presidente), Tribunal Pleno, DJe 27.10.2020, verbis: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISS PRIVILEGIADO. SOCIEDADE DE ÍNDOLE EMPRESARIAL. RECURSO EXTRAORDINÁRIO FUNDADO NAS ALÍNEAS C E D DO INCISO III DO ART. 102 DA CONSTITUIÇÃO FEDERAL. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI OU ATO DE GOVERNO LOCAL CONTESTADOS EM FACE DA CARTA MAGNA. NÃO OCORRÊNCIA. PRECEDENTES. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI LOCAL CONSTESTADA EM FACE DE LEI FEDERAL. NÃO OCORRÊNCIA. PRECEDENTES. PREQUESTIONAMENTO. AUSÊNCIA. LEGISLAÇÃO INFRACONSTITUCIONAL. OFENSA REFLEXA. FATOS E PROVAS. REEXAME. IMPOSSIBILIDADE. PRECEDENTES. 1. O acórdão recorrido não julgou válida lei ou ato de governo local contestados",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T23:03:20.880Z",
+        "id": "b08425deb90df4f07c6c7b85",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T23:20:21.218Z",
+        "score": 7.5,
+        "alertId": "bc9bf487-37b3-4f7a-8235-5fe52a2edca0"
+      },
+      {
+        "title": "Governo institui grupo interministerial para regulamentar incentivos tributários da LC 224",
+        "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/governo-institui-grupo-interministerial-para-regulamentar-incentivos-tributarios-da-lc-224/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T23:08:02.200Z",
+        "id": "74d6cdebf102e3412c37d353",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null
       },
       {
         "title": "ARE 1615897 — condenar a parte recorrente ao pagamento de honorários advocatícios em favor do patrono da recorrida, nos termos do artigo 55, caput, da Lei n. 9.099/1995, aplicável ao Juizado Especial da Fazenda Pública, conforme disposto no artigo 27 da Lei n. 12.153/2009.”",
@@ -2064,9 +2304,11 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-19T21:22:55.526Z",
         "id": "55ed586971e03a85c0f20193",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "error",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-19T23:15:25.186Z"
       },
       {
         "title": "PAR 1/0 — Parecer da Comissão  (CCOM) à TVR 66/2026",
@@ -4217,8 +4459,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "e3e0f7350c4941f5df089928",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T23:17:26.229Z",
+        "score": 6.8,
+        "alertId": null
       },
       {
         "title": "Nota Técnica 6/2016 - Sociedades corretoras de seguros - Apuração e escrituração do PIS/Pasep e da Cofins",
@@ -9847,6 +10092,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "1845068f-cc97-495d-b451-723b0d7cbf92",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-19T23:23:14.988Z",
+        "finishedAt": "2026-08-19T23:29:30.768Z",
+        "discovered": 10,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "1ec53ab8-c560-4968-ba56-16e67a1635ee",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-19T23:02:48.618Z",
+        "finishedAt": "2026-08-19T23:23:14.976Z",
+        "discovered": 23,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 1,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 15,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 53,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "230499b6-1134-44da-8a36-017175d86519",
         "trigger": "github-actions-history",
@@ -21241,7 +22018,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T23:01:06.847Z",
-    "nextRunAt": "2026-08-20T05:01:06.847Z"
+    "lastRunAt": "2026-08-19T23:29:30.768Z",
+    "nextRunAt": "2026-08-20T05:29:30.768Z"
   }
 }
