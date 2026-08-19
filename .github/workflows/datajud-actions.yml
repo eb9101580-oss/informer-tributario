@@ -1,0 +1,51 @@
+name: Atualizar ações acompanhadas no DataJud
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: datajud-actions-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      DATAJUD_API_KEY: ${{ secrets.DATAJUD_API_KEY }}
+      TRACKED_ACTIONS_ENCRYPTION_KEY: ${{ secrets.TRACKED_ACTIONS_ENCRYPTION_KEY }}
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: back/package-lock.json
+
+      - name: Instalar dependências
+        run: npm ci --prefix back
+
+      - name: Consultar movimentações no DataJud
+        run: node back/scripts/update-tracked-actions.js
+
+      - name: Publicar estado atualizado
+        run: |
+          if git diff --quiet -- back/data/tracked-actions.json; then
+            echo "Nenhuma movimentação nova."
+            exit 0
+          fi
+          git config user.name "informer-tributario[bot]"
+          git config user.email "informer-tributario[bot]@users.noreply.github.com"
+          git add back/data/tracked-actions.json
+          git commit -m "Atualiza ações acompanhadas do DataJud"
+          git push origin main

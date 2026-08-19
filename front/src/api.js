@@ -24,4 +24,10 @@ export const api = {
   runMonitor: (analyze = true) => request('/monitor/run', { method: 'POST', body: JSON.stringify({ analyze }) }),
   subscriptionStatus: () => request('/subscriptions/status'),
   subscribe: (email) => request('/subscriptions', { method: 'POST', body: JSON.stringify({ email }) }),
+  actionsStatus: () => request('/actions/status'),
+  actions: () => request('/actions'),
+  createAction: (payload) => request('/actions', { method: 'POST', body: JSON.stringify(payload) }),
+  refreshAction: (id) => request(`/actions/${encodeURIComponent(id)}/refresh`, { method: 'POST' }),
+  refreshAllActions: () => request('/actions/refresh-all', { method: 'POST' }),
+  removeAction: (id) => request(`/actions/${encodeURIComponent(id)}`, { method: 'DELETE' }),
 };

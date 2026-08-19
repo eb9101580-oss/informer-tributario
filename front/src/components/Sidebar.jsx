@@ -1,9 +1,10 @@
-import { Activity, Bell, Bookmark, Bot, Landmark, LayoutDashboard, MessageSquareText, Radar, Scale, Settings, X } from 'lucide-react';
+import { Activity, Bell, Bookmark, Bot, Gavel, Landmark, LayoutDashboard, MessageSquareText, Radar, Scale, Settings, X } from 'lucide-react';
 
 const items = [
   { icon: LayoutDashboard, label: 'Visão geral', id: 'overview' },
   { icon: Radar, label: 'Radar diário', id: 'radar' },
   { icon: Activity, label: 'Varredura automática', id: 'monitor' },
+  { icon: Gavel, label: 'Ações acompanhadas', id: 'actions' },
   { icon: Bell, label: 'Alertas', id: 'alerts' },
   { icon: Bookmark, label: 'Oportunidades', id: 'opportunities' },
   { icon: Bot, label: 'Coletor IA', id: 'collector' },

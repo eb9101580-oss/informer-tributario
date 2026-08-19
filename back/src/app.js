@@ -10,6 +10,7 @@ import { intelligenceRouter } from './routes/intelligence.js';
 import { sourcesRouter } from './routes/sources.js';
 import { monitorRouter } from './routes/monitor.js';
 import { subscriptionsRouter } from './routes/subscriptions.js';
+import { actionsRouter } from './routes/actions.js';
 
 export const app = express();
 
@@ -19,7 +20,8 @@ app.use(express.json({ limit: '200kb' }));
 
 app.use('/api', (request, response, next) => {
   const isSubscriptionRequest = request.path.startsWith('/subscriptions');
-  if (config.serverless && request.method !== 'GET' && !isSubscriptionRequest) {
+  const isActionsRequest = request.path.startsWith('/actions');
+  if (config.serverless && request.method !== 'GET' && !isSubscriptionRequest && !isActionsRequest) {
     return response.status(503).json({ message: 'Esta ação exige o backend persistente com Ollama. A versão Vercel é somente leitura.' });
   }
   next();
@@ -34,6 +36,7 @@ app.use('/api/intelligence', intelligenceRouter);
 app.use('/api/sources', sourcesRouter);
 app.use('/api/monitor', monitorRouter);
 app.use('/api/subscriptions', subscriptionsRouter);
+app.use('/api/actions', actionsRouter);
 
 app.use((_request, response) => response.status(404).json({ message: 'Rota não encontrada.' }));
 app.use((error, _request, response, _next) => {

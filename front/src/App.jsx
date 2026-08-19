@@ -13,6 +13,7 @@ import { CollectorPage } from './components/CollectorPage.jsx';
 import { SourcesPage } from './components/SourcesPage.jsx';
 import { MonitorPage } from './components/MonitorPage.jsx';
 import { PublicBlog } from './components/PublicBlog.jsx';
+import { ActionsPage } from './components/ActionsPage.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -23,6 +24,7 @@ const pageTitles = {
   collector: ['Coletor inteligente', 'Transforme documentos oficiais em análises estruturadas.'],
   sources: ['Fontes monitoradas', 'Canais oficiais e jornalísticos que alimentam o radar tributário.'],
   feedback: ['Aprendizado de relevância', 'Seu feedback ajuda o radar a priorizar melhor.'],
+  actions: ['Ações acompanhadas', 'Status e movimentações recentes dos temas e processos que você escolheu observar.'],
 };
 
 function LoadingState() {
@@ -120,6 +122,8 @@ export default function App() {
     if (activePage === 'sources') return <SourcesPage onCollector={() => setActivePage('collector')} />;
 
     if (activePage === 'monitor') return <MonitorPage onAlerts={() => { setActivePage('alerts'); loadData(); }} />;
+
+    if (activePage === 'actions') return <ActionsPage />;
 
     if (activePage === 'feedback') return (
       <section className="page-section feedback-page">

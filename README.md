@@ -84,6 +84,19 @@ ALERTS_MIN_SCORE=8
 
 Sem essas chaves, o painel continua funcionando, mas o cadastro informa que o envio está aguardando configuração. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
 
+## Ações acompanhadas e DataJud
+
+Em **Ações acompanhadas**, cadastre um tema tributário (por exemplo, `ICMS`) ou um número CNJ e selecione o tribunal. O painel consulta a API Pública do DataJud, mostra a movimentação mais recente e conserva o histórico resumido. Um workflow do GitHub consulta os acompanhamentos a cada 10 minutos e publica somente o estado criptografado em `back/data/tracked-actions.json`.
+
+Configure a chave pública vigente do CNJ somente como segredo de ambiente; nunca a grave no código:
+
+```dotenv
+DATAJUD_API_KEY=chave_publica_vigente_do_cnj
+TRACKED_ACTIONS_ENCRYPTION_KEY=chave_aleatoria_forte
+```
+
+Na Vercel, `GITHUB_TOKEN` também é necessário para persistir os acompanhamentos. No GitHub Actions, crie os segredos `DATAJUD_API_KEY` e `TRACKED_ACTIONS_ENCRYPTION_KEY`. A API do DataJud fornece metadados e movimentações de processos públicos; processos em segredo não aparecem na API.
+
 Os registros iniciais continuam sendo cenários demonstrativos e aparecem identificados como tal. Alertas criados pela varredura usam `isDemo: false` e sempre guardam o endereço oficial e a trilha de proveniência.
 
 ## Verificação
