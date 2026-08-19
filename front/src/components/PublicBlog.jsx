@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { api } from '../api.js';
 import { AlertCard } from './AlertCard.jsx';
 import { DetailPanel } from './DetailPanel.jsx';
+import { compareFeedAlerts } from '../utils/alertSorting.js';
 
 export function PublicBlog() {
   const [alerts, setAlerts] = useState([]);
@@ -24,7 +25,7 @@ export function PublicBlog() {
   };
 
   useEffect(() => { load(); }, []);
-  const feed = useMemo(() => [...alerts].sort((left, right) => right.score - left.score || new Date(right.publishedAt) - new Date(left.publishedAt)), [alerts]);
+  const feed = useMemo(() => [...alerts].sort(compareFeedAlerts), [alerts]);
 
   const subscribe = async (event) => {
     event.preventDefault();

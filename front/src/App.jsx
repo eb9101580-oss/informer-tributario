@@ -16,6 +16,7 @@ import { PublicBlog } from './components/PublicBlog.jsx';
 import { ActionsPage } from './components/ActionsPage.jsx';
 import { SectionPage } from './components/SectionPage.jsx';
 import { SettingsPage } from './components/SettingsPage.jsx';
+import { isRecentAlert } from './utils/alertSorting.js';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -91,7 +92,13 @@ export default function App() {
       const sharedTaxes = (alert.taxes || []).filter((tax) => (vote.taxes || []).includes(tax)).length * 0.25;
       return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
     }, 0);
-    return [...filteredAlerts].sort((left, right) => (right.score + profileScore(right)) - (left.score + profileScore(left)) || new Date(right.publishedAt) - new Date(left.publishedAt));
+    return [...filteredAlerts].sort((left, right) => {
+      const leftRecent = isRecentAlert(left);
+      const rightRecent = isRecentAlert(right);
+      return (leftRecent === rightRecent ? 0 : leftRecent ? -1 : 1)
+        || (right.score + profileScore(right)) - (left.score + profileScore(left))
+        || (Date.parse(right.publishedAt || '') - Date.parse(left.publishedAt || ''));
+    });
   }, [filteredAlerts, feedback]);
   const [title, subtitle] = pageTitles[activePage];
 

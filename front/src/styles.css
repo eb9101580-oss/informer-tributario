@@ -190,6 +190,7 @@ button { cursor: pointer; }
 .settings-notes { margin-top: 18px; color: #657572; font-size: 11px; line-height: 1.6; }
 .settings-notes strong { color: #284b45; font-size: 12px; }
 .settings-notes p { margin: 5px 0 0; }
+.settings-provider-hint { margin: 13px 0 0; padding: 10px 12px; border-radius: 7px; color: #7b6027; background: #fff8e8; border: 1px solid #f0dfb8; font-size: 10px; line-height: 1.5; }
 
 .collector-page { display: grid; gap: 18px; }
 .pipeline { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); background: white; border-radius: 13px; padding: 19px; }

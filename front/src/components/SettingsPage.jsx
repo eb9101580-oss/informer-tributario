@@ -51,6 +51,7 @@ export function SettingsPage() {
         {message && <small>{message}</small>}
       </form>
       <div className="settings-notes"><strong>Como funciona</strong><p>As inscrições são armazenadas de forma criptografada. A cada varredura automática, o Informer envia uma mensagem para cada cadastro ativo, sem repetir o mesmo alerta.</p></div>
+      {!ready && <p className="settings-provider-hint">Provedor configurado no sistema: {status?.provider || 'Resend'}. Para ativar os envios, configure RESEND_API_KEY e um remetente verificado em ALERTS_FROM_EMAIL no Vercel e nos segredos do GitHub Actions.</p>}
     </section>
   );
 }

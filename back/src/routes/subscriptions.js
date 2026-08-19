@@ -7,6 +7,7 @@ export const subscriptionsRouter = Router();
 
 subscriptionsRouter.get('/status', (_request, response) => {
   response.json({
+    provider: 'Resend',
     enabled: emailConfigured() && Boolean(config.subscriptionEncryptionKey) && (!config.serverless || Boolean(config.githubToken)),
     emailConfigured: emailConfigured(),
     persistenceConfigured: Boolean(config.subscriptionEncryptionKey) && (!config.serverless || Boolean(config.githubToken)),

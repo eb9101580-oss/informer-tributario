@@ -2,6 +2,7 @@ import { ArrowUpRight, BookOpenCheck, Building2, CalendarClock, ExternalLink, La
 import { useEffect, useMemo, useState } from 'react';
 import { api } from '../api.js';
 import { AlertCard } from './AlertCard.jsx';
+import { compareFeedAlerts } from '../utils/alertSorting.js';
 
 const icons = { reforma: Scale, obrigacoes: BookOpenCheck };
 const sourceIcons = { 'reforma-cgibs': Landmark, 'confaz-ajustes': Building2, 'nfe-notas-tecnicas': BookOpenCheck };
@@ -22,7 +23,7 @@ export function SectionPage({ sectionId, onOpen, onFeedback, feedbackFor }) {
 
   useEffect(() => { load(); }, [sectionId]);
   const Icon = icons[sectionId] || ShieldCheck;
-  const feed = useMemo(() => [...alerts].sort((left, right) => (right.score - left.score) || new Date(right.publishedAt) - new Date(left.publishedAt)), [alerts]);
+  const feed = useMemo(() => [...alerts].sort(compareFeedAlerts), [alerts]);
 
   if (!section && !error) return <div className="loading"><span /><p>Carregando seção...</p></div>;
   if (error && !section) return <div className="empty-state"><ShieldCheck size={28} /><h3>Não foi possível carregar a seção</h3><p>{error}</p><button onClick={load}>Tentar novamente</button></div>;
