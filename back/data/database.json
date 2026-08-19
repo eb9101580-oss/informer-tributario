@@ -1,9 +1,259 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T22:26:07.570Z",
+    "lastUpdatedAt": "2026-08-19T22:54:50.411Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1617877 — inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea",
+      "theme": "Interpretação constitucional e tributária",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS",
+        "Lei local",
+        "Ato de governo local",
+        "Constituição Federal",
+        "Art. 102, III, da Lei Federal",
+        "Inciso IX da Constituição"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF decidiu que é incabível a interposição do apelo extremo pelo permissivo da alínea \"c\" do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. O julgamento foi baseado em precedentes do STF que reforçam a inconstitucionalidade de leis ou atos locais que não sejam compatíveis com a Constituição Federal.",
+      "whatChanged": "A decisão do STF confirma que a alínea \"c\" do art. 102, III, da Lei Fundamental não permite a interposição do apelo extremo em casos de contestação de leis ou atos de governo local em face da Constituição Federal. Isso reforça a necessidade de compatibilidade entre leis locais e a Constituição Federal.",
+      "practicalImpact": "Empresas e órgãos públicos devem revisar a conformidade de leis e atos locais com a Constituição Federal, especialmente em relação ao ISS e outros tributos, para evitar riscos de inconstitucionalidade. O STF reforça a importância de seguir os precedentes para evitar contestações futuras.",
+      "officeAction": "Revisão de leis e atos locais para garantir conformidade com a Constituição Federal, especialmente no que diz respeito ao ISS e outros tributos.",
+      "affectedProfiles": [
+        "Empresas",
+        "Órgãos públicos",
+        "Advogados tributários",
+        "Construtoras",
+        "Sociedades de íncline empresarial"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão de leis e atos locais para conformidade com a Constituição Federal",
+        "period": "2023-10-18 a 2024-12-31",
+        "action": "Revisão de leis e atos locais para garantir conformidade com a Constituição Federal, especialmente no que diz respeito ao ISS e outros tributos",
+        "confidence": "alto"
+      },
+      "id": "cd7385b4-faf8-4df0-bb67-2ab871e8b292",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:54:50.404Z",
+      "updatedAt": "2026-08-19T22:54:50.404Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
+        "sourceCharacters": 1211,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T22:34:34.714Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Rcl 98754 — serviços públicos essenciais e estratégicos de tratamento de informações e processamento de dados para o Governo Federal, nos termos do art. 1º da Lei 5.615/70",
+      "theme": "Imunidade recíproca para SERPRO em serviços públicos essenciais",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Precatórios",
+        "Imposto de Renda",
+        "PIS/Cofins",
+        "ISS",
+        "ICMS",
+        "IPI"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "A Primeira Turma do STF reconheceu a imunidade recíproca para a SERPRO, empresa estatal que presta serviços públicos essenciais ao Governo Federal, conforme art. 150, inciso VI, alínea \"a\" da CF/88. A decisão afirma que a SERPRO está sob regime de precatório para seus débitos judiciais, com base na natureza jurídica de serviços essenciais para a Administração Pública.",
+      "whatChanged": "A SERPRO, como empresa estatal que desempenha serviços públicos essenciais, é imune de processos judiciais que não sejam de natureza tributária, conforme decisão do STF. A imunidade recíproca é aplicada para débitos tributários, permitindo que a SERPRO seja submetida ao regime de precatório para pagamento de tributos.",
+      "practicalImpact": "Empresas estatais que prestam serviços públicos essenciais podem ser beneficiadas com imunidade recíproca para débitos tributários, permitindo o pagamento via precatório. Isso reduz a complexidade tributária e a exposição a processos judiciais para empresas estatais que atuem em áreas críticas da Administração Pública.",
+      "officeAction": "A SERPRO deve ser submetida ao regime de precatório para pagamento de tributos, garantindo que seus débitos judiciais sejam resolvidos sem interferência em suas operações essenciais.",
+      "affectedProfiles": [
+        "Empresas estatais do setor público",
+        "Organizações que prestam serviços essenciais ao Governo Federal",
+        "Empresas de processamento de dados públicos",
+        "Administração pública federal",
+        "Tributação de serviços públicos"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Imunidade recíproca para SERPRO em serviços públicos essenciais",
+        "period": "2025-10-08 a 2026-12-31",
+        "action": "Ajuste de processos tributários para empresas estatais que prestam serviços essenciais ao Governo Federal, garantindo o pagamento via precatório",
+        "confidence": "alto"
+      },
+      "id": "3bd6267a-d733-44df-8b73-3d3332ed8f6d",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810975/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:52:01.463Z",
+      "updatedAt": "2026-08-19T22:52:01.463Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810975/false",
+        "sourceCharacters": 1209,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T22:34:34.714Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "SBT 1/0 — Estabelece o acréscimo de alíquota de 10% sobre o Imposto de importação incidente sobre mercadoria estrangeira devida pelo importador para leite e outros lácteos",
+      "theme": "Imposto de Importação",
+      "agency": "Câmara dos Deputados",
+      "taxes": [
+        "Imposto de Importação",
+        "Leite e outros lácteos"
+      ],
+      "status": "Em andamento",
+      "kind": "Proposição legislativa",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-18T15:51",
+      "summary": "Proposição de lei apresentada pela deputada Lafayette de Andrada (PL-MG) que estabelece acréscimo de 10% sobre o Imposto de Importação para leite e outros lácteos. A proposição está em tramitação na Comissão de Desenvolvimento Econômico (CDE) com data de apresentação em 18/08/2026.",
+      "whatChanged": "A proposta altera a alíquota do Imposto de Importação para leite e outros lácteos, acrescentando 10% sobre a base tributária atual.",
+      "practicalImpact": "Importadores de leite e outros produtos lácteos devem considerar o acréscimo de 10% no imposto de importação a partir da aprovação da proposta, impactando custos operacionais e preços finais dos produtos.",
+      "officeAction": "A proposta está em tramitação na Comissão de Desenvolvimento Econômico (CDE) com data de apresentação em 18/08/2026. Não há informações sobre ações específicas do órgão para a proposta.",
+      "affectedProfiles": [
+        "Importadores de leite",
+        "Empresas de processamento de lácteos",
+        "Comércio exterior",
+        "Produtos lácteos importados",
+        "Setor de alimentos"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 6,
+        "financialImpact": 7,
+        "reach": 9,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Ajuste tributário para leite e outros lácteos",
+        "period": "A partir da aprovação da proposta na Câmara dos Deputados",
+        "action": "Importadores devem revisar custos e ajustar preços para considerar o acréscimo de 10% no Imposto de Importação",
+        "confidence": "médio"
+      },
+      "id": "27bb9c74-6b09-4ad0-8a0b-c441b5718a94",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2643990",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:47:02.529Z",
+      "updatedAt": "2026-08-19T22:47:02.529Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2643990",
+        "sourceCharacters": 3257,
+        "sourceId": "camara",
+        "sourceName": "Câmara dos Deputados",
+        "discoveredBy": "camara-api",
+        "sourceType": "official",
+        "documentKind": "Proposição legislativa",
+        "discoveredAt": "2026-08-19T21:22:55.526Z"
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1615897 — condenar a parte recorrente ao pagamento de honorários advocatícios em favor do patrono da recorrida, nos termos do artigo 55, caput, da Lei n. 9.099/1995, aplicável",
+      "theme": "Honorários advocatícios em Juizado Especial da Fazenda Pública",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Lei n. 9.099/1995",
+        "Lei n. 12.153/2009"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF condenou a parte recorrente ao pagamento de honorários advocatícios em favor do patrono da recorrida, conforme art. 55, caput, da Lei 9.099/1995, aplicável ao Juizado Especial da Fazenda Pública. A decisão segue o art. 27 da Lei 12.153/2009 e incide na Súmula 279 do STF, que veda reexame de fatos e provas em sede extraordinária.",
+      "whatChanged": "A decisão estabelece que, para acolher as razões recursais e concluir pela competência da justiça estadual, seria necessário reexame de fatos e provas, o que é incabível em sede extraordinária. A decisão se baseia na Súmula 279 do STF e em precedentes que negam seguimento ao agravo em casos de reexame de matéria fática.",
+      "practicalImpact": "Profissionais de tributação devem garantir a conformidade com a Lei 9.099/1995 e Lei 12.153/2009 em processos de Juizado Especial da Fazenda Pública, evitando reexame de fatos e provas em sede extraordinária. A decisão reforça a necessidade de adequação na aplicação de honorários advocatícios para evitar custos adicionais.",
+      "officeAction": "Condenação de honorários advocatícios em favor do patrono da recorrida, conforme art. 55, caput, da Lei 9.099/1995, aplicável ao Juizado Especial da Fazenda Pública, conforme art. 27 da Lei 12.153/2009.",
+      "affectedProfiles": [
+        "Advogados de tributação",
+        "Juizados Especiais da Fazenda Pública",
+        "Servidores públicos vinculados ao RGPS",
+        "Processos tributários",
+        "Recurso extraordinário"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Condenação de honorários advocatícios em Juizado Especial da Fazenda Pública",
+        "period": "2026-04-08",
+        "action": "Garantir conformidade com a Lei 9.099/1995 e Lei 12.153/2009 em processos tributários, evitando reexame de fatos e provas em sede extraordinária",
+        "confidence": "alto"
+      },
+      "id": "b18e8655-e036-4cba-adea-bc81b1fdf6a4",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810639/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:43:44.494Z",
+      "updatedAt": "2026-08-19T22:43:44.494Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810639/false",
+        "sourceCharacters": 1207,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T22:34:34.714Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "RHC 271436 — art. 2º, inciso II, da Lei n. 8.137/90, na forma do art. 71 do Código Penal",
@@ -1470,7 +1720,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "1bc698f91c433f137e261317",
         "status": "pending",
         "attempts": 0,
@@ -1491,7 +1741,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "61716aa5626f058729a7ad2f",
         "status": "pending",
         "attempts": 0,
@@ -1512,29 +1762,8 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "6b24e5a5f87a529f7df35c28",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1617877 — inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei o",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617877&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810556",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
-        "inlineText": "inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. Colho como precedentes o ARE 1.321.299-AgR, Rel. Min. Luiz Fux (Presidente), Tribunal Pleno, DJe 13.8.2021; e o ARE 1.270.810-AgR, Rel. Min. Dias Toffoli (Presidente), Tribunal Pleno, DJe 27.10.2020, verbis: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISS PRIVILEGIADO. SOCIEDADE DE ÍNDOLE EMPRESARIAL. RECURSO EXTRAORDINÁRIO FUNDADO NAS ALÍNEAS C E D DO INCISO III DO ART. 102 DA CONSTITUIÇÃO FEDERAL. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI OU ATO DE GOVERNO LOCAL CONTESTADOS EM FACE DA CARTA MAGNA. NÃO OCORRÊNCIA. PRECEDENTES. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI LOCAL CONSTESTADA EM FACE DE LEI FEDERAL. NÃO OCORRÊNCIA. PRECEDENTES. PREQUESTIONAMENTO. AUSÊNCIA. LEGISLAÇÃO INFRACONSTITUCIONAL. OFENSA REFLEXA. FATOS E PROVAS. REEXAME. IMPOSSIBILIDADE. PRECEDENTES. 1. O acórdão recorrido não julgou válida lei ou ato de governo local contestados",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
-        "id": "fad4309d9d186e1cd455e6c5",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1554,7 +1783,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "84bf80b91653de88acffee6f",
         "status": "pending",
         "attempts": 0,
@@ -1575,7 +1804,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "f75ff59ad714411f10ac4e61",
         "status": "pending",
         "attempts": 0,
@@ -1596,7 +1825,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -1617,7 +1846,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "6899546bd55aa851ba80c388",
         "status": "pending",
         "attempts": 0,
@@ -1638,7 +1867,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "b08425deb90df4f07c6c7b85",
         "status": "pending",
         "attempts": 0,
@@ -1659,29 +1888,8 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "5449b2622c0048278fad17bb",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1614537 — EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não ",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1614537&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810328",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
-        "inlineText": "EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não conhecimento do recurso, por não terem sido efetivamente impugnados todos os fundamentos da decisão que inadmitiu o recurso extraordinário, autoriza a certificação do trânsito em julgado da decisão agravada e a baixa imediata do feito à origem. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . COMPENSAÇÃO DE TRIBUTOS. REGIME DE PRECATÓRIOS. INAPLICABILIDADE DO TEMA 1.262 DA REPERCUSSÃO GERAL: QUESTÃO DE MÉRITO RESOLVIDA PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS DA DECISÃO DE INADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO: SÚMULA N. 287 DESTE SUPREMO TRIBUNAL. ÓBICE JURÍDICO IMPEDITIVO AO REGULAR PROCESSAMENTO DO RECURSO. DECISÃO AGRAVADA MANTIDA. AGRAVO REGIMENTAL NÃO CONHECIDO, COM DETERMINAÇÃO DE CERTIFICAÇÃO DO TRÂNSITO EM JULGADO E BAIXA IMEDIATA DO PROCESSO À ORIGEM, INDEPENDENTE DA PUBLICAÇÃO DO ACÓRDÃO” (ARE nº 1.561.650/SC-AgR, Primeira Turma",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
-        "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1701,8 +1909,29 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "f82f2f0e73f3d7258329ba67",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1614537 — EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1614537&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810328",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
+        "inlineText": "EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não conhecimento do recurso, por não terem sido efetivamente impugnados todos os fundamentos da decisão que inadmitiu o recurso extraordinário, autoriza a certificação do trânsito em julgado da decisão agravada e a baixa imediata do feito à origem. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . COMPENSAÇÃO DE TRIBUTOS. REGIME DE PRECATÓRIOS. INAPLICABILIDADE DO TEMA 1.262 DA REPERCUSSÃO GERAL: QUESTÃO DE MÉRITO RESOLVIDA PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS DA DECISÃO DE INADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO: SÚMULA N. 287 DESTE SUPREMO TRIBUNAL. ÓBICE JURÍDICO IMPEDITIVO AO REGULAR PROCESSAMENTO DO RECURSO. DECISÃO AGRAVADA MANTIDA. AGRAVO REGIMENTAL NÃO CONHECIDO, COM DETERMINAÇÃO DE CERTIFICAÇÃO DO TRÂNSITO EM JULGADO E BAIXA IMEDIATA DO PROCESSO À ORIGEM, INDEPENDENTE DA PUBLICAÇÃO DO ACÓRDÃO” (ARE nº 1.561.650/SC-AgR, Primeira Turma",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
+        "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -1722,11 +1951,83 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T22:26:31.604Z",
+        "discoveredAt": "2026-08-19T22:55:16.178Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1615897 — condenar a parte recorrente ao pagamento de honorários advocatícios em favor do patrono da recorrida, nos termos do artigo 55, caput, da Lei n. 9.099/1995, aplicável ao Juizado Especial da Fazenda Pública, conforme disposto no artigo 27 da Lei n. 12.153/2009.”",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810639/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615897&classe=ARE",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810639",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810639/false",
+        "inlineText": "condenar a parte recorrente ao pagamento de honorários advocatícios em favor do patrono da recorrida, nos termos do artigo 55, caput, da Lei n. 9.099/1995, aplicável ao Juizado Especial da Fazenda Pública, conforme disposto no artigo 27 da Lei n. 12.153/2009.” Como se vê, para acolher as razões recursais e concluir pela competência da justiça estadual, seria necessário reexame de fatos e provas dos autos, o que se mostra incabível em sede extraordinária. Incidência da Súmula nº 279 desta Corte. Nesse sentido, colaciono os seguintes precedentes: “RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. CONTRIBUIÇÃO PREVIDENCIÁRIA. SERVIDORA PÚBLICA MUNICIPAL VINCULADA AO REGIME GERAL DE PREVIDÊNCIA SOCIAL - RGPS. AÇÃO DE REPETIÇÃO DE INDÉBITO. LEGITIMIDADE PASSIVA. JUSTIÇA COMPETENTE. REEXAME DE MATÉRIA FÁTICA. VEDAÇÃO. SÚMULA 279 DO STF. NEGADO SEGUIMENTO AO AGRAVO” (ARE 1.595.530, Relator Ministro Luiz Fux, DJe 8/4/2026) “DIREITO PROCESSUAL CIVIL E PREVIDENCIÁRIO. RECURSO EXTRAORDINÁRIO COM AGRAVO. SERVIDORA PÚBLICA MUNICIPAL VINCULADA AO RGPS. CONTRIBUIÇÃO PREVIDENCIÁRIA SOBRE VERBAS TRANSITÓRIAS. COMPETÊNCIA DA JUSTIÇA FEDERAL. REEXAME DE FATOS E PROVAS E DE LEGISLAÇÃO",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T22:34:34.714Z",
+        "id": "499895577277b42bd3cf543d",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T22:43:44.502Z",
+        "score": 7.1,
+        "alertId": "b18e8655-e036-4cba-adea-bc81b1fdf6a4"
+      },
+      {
+        "title": "Rcl 98754 — serviços púbicos essenciais e estratégicos de tratamento de informações e processamento de dados para o Governo Federal, nos termos do art. 1º da Lei 5.615/70. A partir da análise da natureza jurídica dessa empresa estatal e das peculiaridades que conformam a ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810975/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=98754&classe=Rcl",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810975",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810975/false",
+        "inlineText": "serviços púbicos essenciais e estratégicos de tratamento de informações e processamento de dados para o Governo Federal, nos termos do art. 1º da Lei 5.615/70. A partir da análise da natureza jurídica dessa empresa estatal e das peculiaridades que conformam a execução de seus serviços, a Primeira Turma desta CORTE reconheceu o direito à imunidade recíproca em favor da SERPRO, nos termos do art. 150, inciso VI, alínea “a” da CF/88, por ocasião do julgamento da ACO 2.658/DF, Rel. Min. LUÍS ROBERTO BARROSO, cuja decisão monocrática recebeu a seguinte ementa elucidativa: “DIREITO CONSTITUCIONAL E TRIBUTÁRIO . AÇÃO CÍVEL ORIGINÁRIA. SERVIÇO FEDERAL DE PROCESSAMENTO DE DADOS - SERPRO. IMUNIDADE RECÍPROCA. 1. Empresa pública que desempenha serviços públicos essenciais ao funcionamento da Administração Pública. Extensão da imunidade assegurada pelo art. 150, VI, a, da Constituição Federal. 2. Pedido julgado parcialmente procedente.” Nessa mesma linha, reconhecendo que a SERPRO presta serviços públicos essenciais que legitimam a submissão de seus débitos judiciais ao regime de precatório, cito as seguintes decisões monocráticas: RCL 85.615, Rel. Min. CRISTIANO ZANIN, DJe de 08/10/2025; RCL 85.225/MG",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T22:34:34.714Z",
+        "id": "525d1bc1f1cd3865438e3226",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T22:52:01.470Z",
+        "score": 8.7,
+        "alertId": "3bd6267a-d733-44df-8b73-3d3332ed8f6d"
+      },
+      {
+        "title": "ARE 1617877 — inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei o",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617877&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810556",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810556/false",
+        "inlineText": "inciso IX; 226 e 227 da Constituição Federal. Decido. Analisados os autos, verifica-se, de plano, incabível a interposição do apelo extremo pelo permissivo da alínea “c” do art. 102, III, da Lei Fundamental, deixando o Tribunal de origem de julgar válida lei ou ato de governo local contestado em face da Constituição Federal. Colho como precedentes o ARE 1.321.299-AgR, Rel. Min. Luiz Fux (Presidente), Tribunal Pleno, DJe 13.8.2021; e o ARE 1.270.810-AgR, Rel. Min. Dias Toffoli (Presidente), Tribunal Pleno, DJe 27.10.2020, verbis: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISS PRIVILEGIADO. SOCIEDADE DE ÍNDOLE EMPRESARIAL. RECURSO EXTRAORDINÁRIO FUNDADO NAS ALÍNEAS C E D DO INCISO III DO ART. 102 DA CONSTITUIÇÃO FEDERAL. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI OU ATO DE GOVERNO LOCAL CONTESTADOS EM FACE DA CARTA MAGNA. NÃO OCORRÊNCIA. PRECEDENTES. ACÓRDÃO RECORRIDO QUE JULGA VÁLIDA LEI LOCAL CONSTESTADA EM FACE DE LEI FEDERAL. NÃO OCORRÊNCIA. PRECEDENTES. PREQUESTIONAMENTO. AUSÊNCIA. LEGISLAÇÃO INFRACONSTITUCIONAL. OFENSA REFLEXA. FATOS E PROVAS. REEXAME. IMPOSSIBILIDADE. PRECEDENTES. 1. O acórdão recorrido não julgou válida lei ou ato de governo local contestados",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-19T22:34:34.714Z",
+        "id": "fad4309d9d186e1cd455e6c5",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T22:54:50.411Z",
+        "score": 7.6,
+        "alertId": "cd7385b4-faf8-4df0-bb67-2ab871e8b292"
       },
       {
         "title": "Cirurgias odontológicas podem ter presunção menor no Lucro Presumido, diz Receita",
@@ -1883,9 +2184,12 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-19T21:22:55.526Z",
         "id": "dbf9afa8c3543aed7cc91eb5",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-19T22:47:02.536Z",
+        "score": 7.2,
+        "alertId": "27bb9c74-6b09-4ad0-8a0b-c441b5718a94"
       },
       {
         "title": "PRL 1/0 — Parecer do Relator, Dep. Lafayette de Andrada (PL-MG), pela aprovação do PL 4747/23 e do PL 5240/23, apensado,  e do Substitutivo da Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural, com substitutivo.",
@@ -3892,8 +4196,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "c676661f686f8ddab2c86e97",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T22:49:14.639Z",
+        "score": 8.2,
+        "alertId": null
       },
       {
         "title": "Nota Técnica 7/2018 - Migração da escrituração da CPRB na EFD-Contribuições para a EFD-Reinf",
@@ -9540,6 +9847,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "230499b6-1134-44da-8a36-017175d86519",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-19T22:54:50.431Z",
+        "finishedAt": "2026-08-19T23:01:06.847Z",
+        "discovered": 12,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 6,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "06fea4fd-3a5b-46fb-9c16-14b9ee051b34",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-19T22:34:05.957Z",
+        "finishedAt": "2026-08-19T22:54:50.418Z",
+        "discovered": 25,
+        "analyzed": 5,
+        "published": 4,
+        "discarded": 1,
+        "errors": 6,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 15,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 53,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "5e4a5d55-3951-4ed9-a25f-5cc7e54322f2",
         "trigger": "github-actions-history",
@@ -20402,7 +21241,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T22:32:23.508Z",
-    "nextRunAt": "2026-08-20T04:32:23.508Z"
+    "lastRunAt": "2026-08-19T23:01:06.847Z",
+    "nextRunAt": "2026-08-20T05:01:06.847Z"
   }
 }
