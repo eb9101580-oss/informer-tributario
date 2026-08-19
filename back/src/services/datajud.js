@@ -198,7 +198,8 @@ async function queryStf(tracker) {
   } catch (error) {
     if (error.name === 'AbortError') throw fail('A consulta ao portal do STF excedeu 25 segundos.', 504);
     if (error.statusCode) throw error;
-    throw fail(`Não foi possível consultar o portal do STF: ${error.message}`, 502);
+    const cause = error?.cause?.code || error?.cause?.message;
+    throw fail(`Não foi possível consultar o portal do STF: ${error.message}${cause ? ` (${cause})` : ''}`, 502);
   } finally {
     clearTimeout(timeout);
   }
