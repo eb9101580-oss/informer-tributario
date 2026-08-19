@@ -11,6 +11,7 @@ import json
 import re
 import sys
 import tempfile
+import time
 import unicodedata
 import urllib.error
 import urllib.request
@@ -43,18 +44,24 @@ def plain_text(value: object) -> str:
     return " ".join(html.unescape(text).split())
 
 
-def request_json(url: str) -> dict:
+def request_json(url: str, retry_offset: int = 0) -> dict:
     request = urllib.request.Request(
         url,
         headers={"Accept": "application/json", "User-Agent": "Informer-Tributario/1.0"},
     )
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            return json.load(response)
-    except urllib.error.HTTPError as error:
-        if error.code == 404:
-            return {}
-        raise
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                return {}
+            if error.code not in (403, 429) or attempt == 2:
+                raise
+            # O GitHub compartilha IPs entre muitos projetos. Esperar a janela
+            # oficial evita perder os cadernos quando a cota daquele IP zerou.
+            time.sleep(65 + retry_offset)
+    return {}
 
 
 def download(url: str, destination) -> None:
@@ -99,7 +106,7 @@ def selected_item(item: dict, tribunal: str, target_date: str) -> dict | None:
 
 
 def discover(tribunal: str, target_date: str) -> dict:
-    metadata = request_json(f"{API}/{tribunal}/{target_date}/D")
+    metadata = request_json(f"{API}/{tribunal}/{target_date}/D", (int(tribunal[-1]) - 1) * 3)
     archive_url = metadata.get("url")
     if not archive_url:
         return {"items": [], "status": "no-resource"}
