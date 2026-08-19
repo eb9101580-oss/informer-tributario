@@ -1,9 +1,136 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T13:12:17.579Z",
+    "lastUpdatedAt": "2026-08-19T15:51:17.272Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "NFCom terá nova regra para cobrança de terceiros a partir de 2027; acesse nota técnica",
+      "theme": "Reforma Tributária",
+      "agency": "Receita Federal, Comitê Gestor do IBS e Encat",
+      "taxes": [
+        "NFCom",
+        "CNPJ",
+        "Cobrança de terceiros",
+        "IBS/CBS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Publicação oficial",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-13T00:00:00",
+      "summary": "Nota técnica (2026.002 – RTC – Versão 1.01a) publicada pela Receita Federal, Comitê Gestor do IBS e Encat estabelece que a partir de 4 de janeiro de 2027, a NFCom exigirá o preenchimento do CNPJ do terceiro cobrado em itens com CClass iniciando em 110, no campo CNPJCobrTerc.",
+      "whatChanged": "A partir de 4/01/2027, a NFCom exigirá o preenchimento do CNPJ do terceiro cobrado em itens de cobrança de terceiros com CClass iniciando em 110, informando o dado no campo CNPJCobrTerc.",
+      "practicalImpact": "Empresas que realizam cobranças de terceiros em NFCom devem garantir o preenchimento do CNPJ do terceiro no campo CNPJCobrTerc a partir de 4/01/2027 para evitar inconsistências na emissão de notas fiscais.",
+      "officeAction": "Receita Federal, Comitê Gestor do IBS e Encat publicaram nota técnica (2026.002 – RTC – Versão 1.01a) estabelecendo a aplicação da regra para 4 de janeiro de 2027.",
+      "affectedProfiles": [
+        "Empresas com cobranças de terceiros em NFCom",
+        "Organizações que utilizam NFCom para emissão de notas fiscais",
+        "Clientes que recebem cobranças de terceiros via NFCom",
+        "Empresas com atividade de serviços de comunicação eletrônica",
+        "Organizações que utilizam o CNPJ do terceiro em transações fiscais"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Preparação para exigência de CNPJ do terceiro em NFCom a partir de 2027",
+        "period": "2027-01-04",
+        "action": "Garantir preenchimento do CNPJ do terceiro no campo CNPJCobrTerc para itens com CClass iniciando em 110",
+        "confidence": "alto"
+      },
+      "id": "14a4249b-ce65-4447-a928-feaaa2bd9ce6",
+      "score": 7.5,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.reformatributaria.com/documentos-fiscais/nfcom-tera-nova-regra-para-cobranca-de-terceiros-a-partir-de-2027-acesse-nota-tecnica/",
+      "isDemo": false,
+      "createdAt": "2026-08-19T15:51:17.268Z",
+      "updatedAt": "2026-08-19T15:51:17.268Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.reformatributaria.com/documentos-fiscais/nfcom-tera-nova-regra-para-cobranca-de-terceiros-a-partir-de-2027-acesse-nota-tecnica/",
+        "sourceCharacters": 2157,
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "discoveredBy": "links",
+        "sourceType": "journalistic",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-08-19T14:45:32.987Z"
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "Secretária do RS é eleita 2ª vice-presidente do Comitê Gestor do IBS",
+      "theme": "Reforma tributária",
+      "agency": "Portal da Reforma Tributária",
+      "taxes": [
+        "IBS",
+        "CBS",
+        "DFes"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Publicação oficial",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-13",
+      "summary": "A secretária de Fazenda do Rio Grande do Sul, Pricilla Santana, foi eleita 2ª vice-presidente do Comitê Gestor do IBS em 12/08/2026. O Conselho Superior do Comitê Gestor do IBS empossou novos integrantes da estrutura diretiva, incluindo profissionais com experiência em tributação e fiscalização. O programa de conformidade tributária (PNCT) foi aprovado para incentivar o preenchimento correto dos campos de IBS e CBS nos DFes, evitando sanções por descumprimento das obrigações acessórias.",
+      "whatChanged": "A mudança inclui a eleição de Pricilla Santana como 2ª vice-presidente do Comitê Gestor do IBS e a aprovação do PNCT (Programa Nacional de Conformidade Tributária), que obriga contribuintes a corrigir inconsistências no preenchimento dos campos de IBS e CBS nos DFes até o final do exercício fiscal, evitando sanções por descumprimento das obrigações acessórias.",
+      "practicalImpact": "Empresas devem garantir o preenchimento correto dos campos de IBS e CBS nos DFes para evitar sanções. O PNCT incentiva a correção de inconsistências até o final do exercício fiscal, com lançamento oficial por meio do ato conjunto RFB/CGIBS nº 4 de 2026, que estabelece calendário para emissão obrigatória dos DFes com destaques do IBS e CBS.",
+      "officeAction": "O Comitê Gestor do IBS aprovou o PNCT (Programa Nacional de Conformidade Tributária) para incentivar o preenchimento correto dos campos de IBS e CBS nos DFes, evitando sanções por descumprimento das obrigações acessórias. O programa foi divulgado pelo ato conjunto RFB/CGIBS nº 4 de 2026, com início da obrigatoriedade da emissão dos DFes com destaques do IBS e CBS.",
+      "affectedProfiles": [
+        "Empresas com emissão de DFes",
+        "Contadores",
+        "Auditorias fiscais",
+        "Receita Federal",
+        "Estados e Municípios"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Programa Nacional de Conformidade Tributária (PNCT) para preenchimento correto de IBS e CBS",
+        "period": "Até o final do exercício fiscal",
+        "action": "Corrigir inconsistências nos DFes para evitar sanções",
+        "confidence": "alto"
+      },
+      "id": "e95ed34d-b244-4027-a592-a1c2f66e6957",
+      "score": 7,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.reformatributaria.com/comite-gestor-do-ibs-reforma-tributaria/secretaria-do-rs-e-eleita-2a-vice-presidente-do-comite-gestor-do-ibs/",
+      "isDemo": false,
+      "createdAt": "2026-08-19T15:47:54.803Z",
+      "updatedAt": "2026-08-19T15:47:54.803Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.reformatributaria.com/comite-gestor-do-ibs-reforma-tributaria/secretaria-do-rs-e-eleita-2a-vice-presidente-do-comite-gestor-do-ibs/",
+        "sourceCharacters": 4329,
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "discoveredBy": "links",
+        "sourceType": "journalistic",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-08-19T14:48:03.783Z"
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
     {
       "relevant": true,
       "title": "AGRAVO EM RECURSO ESPECIAL Nº 2185315 - GO (2022/0246788-4)",
@@ -504,6 +631,266 @@
   "monitor": {
     "candidates": [
       {
+        "title": "CC 218817 — PROCESSUAL CIVIL. CONFLITO NEGATIVO DE COMPETÊNCIA. AÇÃO DE REPARAÇÃO POR DANOS MORAIS E MATERIAIS CUMULADA COM DECLARAÇÃO DE NULIDADE DE ATO JURÍDICO. EXCLUSÃO SUPERVENIENTE DE ENTE PÚBLICO ESTADUAL DO POLO PASSIVO. RECONHECIMENTO DE PRESCRIÇÃO. MATÉRIA DE MÉ",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202600055740&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1438449",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "3b2910018760666294c0d8e7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no MS 31967 — PROCESSUAL CIVIL. ADMINISTRATIVO. MILITAR. AGRAVO INTERNO NO MANDADO DE SEGURANÇA. ANISTIA POLÍTICA. REVISÃO DE PORTARIA. PENSÃO. AUSÊNCIA DE DIREITO LÍQUIDO E CERTO. NECESSIDADE DE DILAÇÃO PROBATÓRIA. TEMA N. 839/STF. ADPF 777. EFEITOS RESTRITOS. INEXISTÊNCIA",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202600077450&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1440255",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "703f23ef3f10c2b4af8191fc",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no MS 32048 — PROCESSUAL CIVIL. ADMINISTRATIVO. CERTIFICAÇÃO DE ENTIDADE BENEFICENTE DE ASSISTÊNCIA SOCIAL (CEBAS). LEI COMPLEMENTAR N. 187/2021. PEDIDO ADMINISTRATIVO EM TRÂMITE. ALEGADA MORA DA ADMINISTRAÇÃO. NECESSIDADE DE DILIGÊNCIAS POR CULPA DA IMPETRANTE. AUSÊNCIA DE",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202600631979&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1440254",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "4b29cf6667a5efd76bfa0146",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no MS 31754 — PROCESSUAL CIVIL. NA ORIGEM: MANDADO DE SEGURANÇA. NOMEAÇÃO E POSSE NO CARGO DE ADMINISTRADOR. MINISTÉRIO DO ESTADO DE SAÚDE. NESTA CORTE, DENEGOU-SE A SEGURANÇA. AGRAVO INTERNO. ANÁLISE DAS ALEGAÇÕES. MANUTENÇÃO DA DECISÃO RECORRIDA QUE DENEGOU A SEGURANÇA, P",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202504051115&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1440253",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "bce400900ff4256975ad820a",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt na AR 8105 — PROCESSUAL CIVIL. AGRAVO INTERNO NA AÇÃO RESCISÓRIA. VIOLAÇÃO LITERAL À NORMA JURÍDICA (ART. 966, V, CPC/2015). ART. 12, DA LEI N. 10.559/2002. MATÉRIA SUSCITADA NÃO EXAMINADA NO ACÓRDÃO RESCINDENDO. NÃO CABIMENTO. INDEFERIMENTO LIMINAR. ARGUMENTOS INSUFICIENT",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202600758803&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1440185",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "c0a2b8ff4d8bf1e818e128ca",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt nos EREsp 1985986 — PROCESSUAL CIVIL. ADMINISTRATIVO. AGRAVO INTERNO. RECURSO ESPECIAL. EXECUÇÃO INDIVIDUAL. ILEGITIMIDADE ATIVA. AÇÃO COLETIVA N. 5043841-31.2012.4.04.7100. ASSUFRGS. PCCTAE. LISTA NOMINAL DE SUBSTITUÍDOS. TEMA N. 823/STF. EXPRESSA LIMITAÇÃO SUBJETIVA. DESPROVIME",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202200431162&dt_publicacao=19%2F06%2F2026",
+        "publishedAt": "2026-06-19",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1440183",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "6b36e6b06e47dcd2ce1c83c3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EDcl no REsp 2158358 — PROCESSUAL CIVIL. RECURSO ESPECIAL REPETITIVO. TEMA 1.317 DO STJ. EMBARGOS DE DECLARAÇÃO. VÍCIOS DE INTEGRAÇÃO. NÃO OCORRÊNCIA. 1. Os embargos de declaração, nos termos do art. 1.022 do CPC, têm ensejo quando há obscuridade, contradição, omissão ou erro materi",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202402646011&dt_publicacao=18%2F06%2F2026",
+        "publishedAt": "2026-06-18",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1437118",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "baa3cd54eb54dc348e941c41",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "EDcl no AgInt no AREsp 2854053 — PROCESSUAL CIVIL. EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NOS EMBARGOS DE DECLARAÇÃO NO AGRAVO EM RECURSO ESPECIAL. TEMA REPETITIVO 1.371/STJ. JUÍZO DE CONFORMIDADE OU DE ADEQUAÇÃO. DEVOLUÇÃO AO TRIBUNAL DE ORIGEM. 1. A Primeira Seção do STJ julgou o REsp n. ",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202500374665&dt_publicacao=09%2F06%2F2026",
+        "publishedAt": "2026-06-09",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "960043",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "7cf32d47d716b8ee7719bad7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no AREsp 2481882 — PROCESSUAL. AGRAVO INTERNO. AGRAVO EM RECURSO ESPECIAL. VIOLAÇÃO AOS ARTS. 489 E 1.022 DO CPC. NÃO OCORRÊNCIA. LEGISLAÇÃO LOCAL. IMPOSSIBILIDADE DE EXAME. SÚMULA 280/STF. VIOLAÇÃO A DISPOSITIVO CONSTITUCIONAL. COMPETÊNCIA DO STF. DISSÍDIO JURISPRUDENCIAL PREJU",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202303676254&dt_publicacao=11%2F06%2F2026",
+        "publishedAt": "2026-06-11",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1066532",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "54b2d2ca34d46e720074ca8e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no REsp 2028839 — PROCESSUAL CIVIL. AGRAVO INTERNO. RECURSO ESPECIAL. VIOLAÇÃO AOS ARTS. 489 E 1.022 DO CPC. NÃO OCORRÊNCIA. PRINCÍPIO DA LEGALIDADE. MATÉRIA CONSTITUCIONAL. JULGAMENTO EXTRA PETITA. NÃO OCORRÊNCIA. INCLUSÃO DOS SERVIÇOS DE CAPATAZIA. VALOR ADUANEIRO. BASE DE CÁ",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202203036479&dt_publicacao=11%2F06%2F2026",
+        "publishedAt": "2026-06-11",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1072593",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "ff8255c0b979755aabca13b9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "AgInt no AREsp 3068775 — PROCESSUAL CIVIL. NEGATIVA DE PRESTAÇÃO JURISDICIONAL. AFASTAMENTO. REEXAME DE FATOS E PROVAS. IMPOSSIBILIDADE. PREQUESTIONAMENTO. AUSÊNCIA. 1. Não se vislumbra nenhum equívoco ou deficiência na fundamentação contida no acórdão recorrido, sendo possível observ",
+        "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202503825009&dt_publicacao=12%2F06%2F2026",
+        "publishedAt": "2026-06-12",
+        "documentKind": "Inteiro teor de acórdão",
+        "externalId": "1155376",
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "sourceAcronym": "STJ",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stj-open-data",
+        "discoveredAt": "2026-08-19T15:32:29.711Z",
+        "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "PRL 1/0 — Parecer da Relatora, Dep. Ana Paula Lima (PT-SC), pela constitucionalidade, juridicidade e técnica legislativa.",
+        "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644051",
+        "publishedAt": "0-01-01",
+        "documentKind": "Proposição legislativa",
+        "externalId": "2644051",
+        "sourceId": "camara",
+        "sourceName": "Câmara dos Deputados",
+        "sourceAcronym": "CD",
+        "sourceType": "official",
+        "sections": [
+          "reforma"
+        ],
+        "discoveryMethod": "camara-api",
+        "discoveredAt": "2026-08-19T15:32:24.296Z",
+        "id": "a074ea4c6085865a7fba4cbe",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Transportadoras devem exigir DCe de clientes não contribuintes do ICMS, diz Sefaz-SP",
+        "url": "https://www.reformatributaria.com/documentos-fiscais/transportadoras-devem-exigir-dce-de-clientes-nao-contribuintes-do-icms-diz-sefaz-sp/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T15:32:41.133Z",
+        "id": "150aef1c8b93951c4d882870",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Reforma tributária e plataformas digitais: da intermediação à responsabilidade pelo IBS e CBS",
+        "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-e-plataformas-digitais-da-intermediacao-a-responsabilidade-pelo-ibs-e-cbs/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T15:32:41.133Z",
+        "id": "e0cd09da8a943f794a0b34eb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "DeRE: Sistema ficará indisponível hoje à noite e deve retomar amanhã com dados excluídos",
+        "url": "https://www.reformatributaria.com/documentos-fiscais/dere-sistema-ficara-indisponivel-hoje-a-noite-e-deve-retomar-amanha-com-dados-excluidos/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T15:32:41.133Z",
+        "id": "b3be5477a4f4c58b789688cf",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
         "title": "PRL 2/0 — Parecer do Relator, Dep. Geraldo Resende (UNIÃO-MS), pela aprovação, com substitutivo.",
         "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644049",
         "publishedAt": "0-01-01",
@@ -555,8 +942,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T15:17:31.154Z",
         "id": "72997f290559f29dc3d72412",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "fetch failed",
+        "analyzedAt": "2026-08-19T15:38:30.070Z"
       },
       {
         "title": "Entenda programa de conformidade para preenchimento de IBS e CBS em documentos fiscais",
@@ -769,8 +1158,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:51:42.331Z",
         "id": "86b47075c7d6f14a7853da85",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "fetch failed",
+        "analyzedAt": "2026-08-19T15:43:32.505Z"
       },
       {
         "title": "Marcelo Braz Fonseca é o novo sócio da área tributária do Cescon Barrieu",
@@ -1075,8 +1466,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:48:03.783Z",
         "id": "ac228647ab89f4318fcd89b1",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T15:47:54.809Z",
+        "score": 7,
+        "alertId": "e95ed34d-b244-4027-a592-a1c2f66e6957"
       },
       {
         "title": "PRL 1/0 — Parecer do Relator, Dep. Benes Leocádio (UNIÃO-RN), pela aprovação, com emendas.",
@@ -1112,8 +1506,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:45:32.987Z",
         "id": "b4d03df4a1394cd1dfc01743",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T15:51:17.272Z",
+        "score": 7.5,
+        "alertId": "14a4249b-ce65-4447-a928-feaaa2bd9ce6"
       },
       {
         "title": "Receita permite dedução mensal de imposto pago no exterior sobre serviços",
@@ -5323,8 +5720,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:27:19.340Z",
         "id": "2f1e688b46c31c90a07f3950",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "fetch failed",
+        "analyzedAt": "2026-08-19T15:56:19.843Z"
       },
       {
         "title": "Folha de S.Paulo - Mercado Campanha de Flávio quer mudar reforma tributária, mas não detalha como baixar IVA \"Não estamos dizendo que vamos paralisar ou vamos acabar com a reforma tributária . Nós vamos corrigi-la. ... 18.ago.2026 às 20h10",
@@ -5359,8 +5758,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:27:19.340Z",
         "id": "aa2fdb590626ae09d7170091",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "fetch failed",
+        "analyzedAt": "2026-08-19T16:01:22.229Z"
       },
       {
         "title": "Folha de S.Paulo - Mercado Programas de Lula e Flávio fazem promessas sem dizer como vão bancar gastos tributária . ... 15.ago.2026 às 15h36",
@@ -9608,6 +10009,235 @@
       }
     ],
     "runs": [
+      {
+        "id": "c9b0fd61-55cf-43cb-953c-e06e4976d980",
+        "trigger": "github-actions-analysis",
+        "startedAt": "2026-08-19T15:32:17.397Z",
+        "finishedAt": "2026-08-19T16:01:22.235Z",
+        "discovered": 15,
+        "analyzed": 2,
+        "published": 2,
+        "discarded": 0,
+        "errors": 4,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2
+          }
+        ]
+      },
       {
         "id": "150d26be-17e9-4d65-ae96-eb41d53d975b",
         "trigger": "github-actions-discovery",
@@ -15023,7 +15653,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T15:18:17.090Z",
-    "nextRunAt": "2026-08-19T21:18:17.090Z"
+    "lastRunAt": "2026-08-19T16:01:22.235Z",
+    "nextRunAt": "2026-08-19T22:01:22.235Z"
   }
 }
