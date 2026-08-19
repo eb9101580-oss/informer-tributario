@@ -1,9 +1,267 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T20:46:16.305Z",
+    "lastUpdatedAt": "2026-08-19T21:56:28.834Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1617715 — ementado: TRIBUTÁRIO . REINTEGRA. LEI N.º 13.043/2014. APROVEITAMENTO DOS CRÉDITOS. REDUÇÃO DA ALÍQUOTA. DECRETOS N.ºS 8.415/2015, 8.543/15, 9.148/17 E 9.393/18. CRÉD",
+      "theme": "Reintegração tributária e redução da alíquota de crédito",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Crédito adicional",
+        "Redução da alíquota",
+        "Lei 13.043/2014",
+        "Decreto 8.415/2015",
+        "Decreto 8.543/2015",
+        "Decreto 9.148/2017"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF confirmou que a Lei 13.043/2014 (Reintegra) autoriza a redução progressiva da alíquota de crédito adicional para exportações, conforme os decretos 8.415/2015, 8.543/2015, 9.148/2017 e 9.393/2018. A decisão afirma que não há ilegalidade nas alterações introduzidas pelos decretos, pois a norma legal autoriza o Poder Executivo a estabelecer o percentual entre o mínimo e máximo previstos no art. 22, § 2º, da Lei 13.043/2014.",
+      "whatChanged": "A decisão do STF confirma que a redução da alíquota de crédito adicional para exportações, regulada pelos decretos mencionados, não configura ilegalidade, pois está dentro do âmbito legal autorizado pelo art. 22, § 2º, da Lei 13.043/2014.",
+      "practicalImpact": "Empresas que utilizam o crédito adicional para exportações devem atualizar seus cálculos de alíquota de crédito conforme os decretos vigentes, evitando possíveis inconsistências tributárias. O STF reforça que não há necessidade de revisão de créditos anteriores, já que as alterações estão dentro do limite legal estabelecido.",
+      "officeAction": "O STF não assumiu o papel de legislador positivo, reforçando que a redução da alíquota de crédito adicional está dentro do âmbito legal autorizado pelo art. 22, § 2º, da Lei 13.043/2014, sem violação aos princípios constitucionais da segurança jurídica e boa-fé.",
+      "affectedProfiles": [
+        "Empresas exportadoras",
+        "Organizações tributárias",
+        "Contadores e advogados especializados em tributação",
+        "Receita Federal",
+        "Empresas com crédito adicional para exportações"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Atualização de alíquota de crédito adicional para exportações",
+        "period": "2023-2024",
+        "action": "Revisar cálculos de crédito adicional para exportações com base nos decretos vigentes (8.415/2015, 8.543/2015, 9.148/2017 e 9.393/2018)",
+        "confidence": "alto"
+      },
+      "id": "3d95685a-c512-4c89-b2ae-368cea5c3d5b",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810885/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T21:56:28.828Z",
+      "updatedAt": "2026-08-19T21:56:28.828Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810885/false",
+        "sourceCharacters": 1206,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1614442 — Valores Tributários para as Empresas Exportadoras (REINTEGRA); e, por arrastamento, os Decretos nºs 8.543/15; 9.148/17 e 9.393/18, que teriam reduzido o percentual de",
+      "theme": "Constitucionalidade do REINTEGRA e calibração de percentual de apuração do créd",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "REINTEGRA",
+        "Decretos 8.543/15, 9.148/17 e",
+        "Percentual de apuração do créd",
+        "Credito tributário",
+        "Resíduo tributário"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O Plenário do STF julgou improcedentes as ações diretas que contestavam a constitucionalidade dos Decretos nºs 8.543/15, 9.148/17 e 9.393/18, que estabelecem o percentual de apuração do crédito do REINTEGRA. O Relator reconheceu a constitucionalidade do dispositivo, afirmando que a Lei 13.043/2014 delegou ao Poder Executivo a calibração do percentual de apuração (entre 0,1% e 3%) sem ilegalidade ou inconstitucionalidade.",
+      "whatChanged": "O STF confirmou que os Decretos nºs 8.543/15, 9.148/17 e 9.393/18 são constitucionais e permitem a calibração do percentual de apuração do crédito do REINTEGRA (entre 0,1% e 3%), sem violar a Lei 13.043/2014.",
+      "practicalImpact": "Empresas exportadoras podem continuar a utilizar o REINTEGRA com a calibração de percentual de apuração conforme estabelecido pelos Decretos, sem risco de inconstitucionalidade ou redução do crédito tributário.",
+      "officeAction": "O STF reconheceu a constitucionalidade dos Decretos nºs 8.543/15, 9.148/17 e 9.393/18, que definem o percentual de apuração do crédito do REINTEGRA (entre 0,1% e 3%) sem ilegalidade ou inconstitucionalidade.",
+      "affectedProfiles": [
+        "Empresas exportadoras",
+        "Empresas com REINTEGRA",
+        "Contribuintes do REINTEGRA",
+        "Poder Executivo",
+        "Jurisprudência tributária"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Oportunidade de calibração do percentual de apuração do REINTEGRA",
+        "period": "2023-10-18 a 2024-12-31",
+        "action": "Empresas exportadoras devem verificar a calibração do percentual de apuração do crédito do REINTEGRA (entre 0,1% e 3%) conforme os Decretos nºs 8.543/15, 9.148/17 e 9.393/18",
+        "confidence": "alto"
+      },
+      "id": "131c8758-5125-4090-9b1c-dc66b23e339f",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810625/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T21:52:42.002Z",
+      "updatedAt": "2026-08-19T21:52:42.002Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810625/false",
+        "sourceCharacters": 1213,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Declaração de Regimes Específicos - DeRE — Receita Federal",
+      "theme": "Reforma tributária",
+      "agency": "Receita Federal do Brasil",
+      "taxes": [
+        "Imposto de Renda Pessoa Jurídī",
+        "ICMS",
+        "ISS",
+        "PIS/COFINS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Publicação oficial",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "A Receita Federal do Brasil publicou a Declaração de Regimes Específicos (DeRE) para facilitar a tributação de empresas com regimes específicos. O documento detalha as obrigações fiscais e procedimentos para diferentes regimes tributários.",
+      "whatChanged": "A DeRE foi atualizada para incluir novas regras de declaração e obrigações fiscais para empresas que utilizam regimes específicos de tributação, como o Lucro Real e o Lucro Presumido.",
+      "practicalImpact": "Empresas com regimes específicos de tributação devem atualizar seus processos de declaração para alinhar-se às novas regras da DeRE, evitando multas e garantindo conformidade fiscal.",
+      "officeAction": "As empresas devem realizar a declaração anual de regimes específicos no SPED (Sistema Público de Escrituração Digital) até o prazo estipulado pela Receita Federal.",
+      "affectedProfiles": [
+        "Empresas com regime de tributação específico",
+        "Microempresas",
+        "Empresas de pequeno porte",
+        "Empresas com atividades em setores regulados",
+        "Empresas com operações em diferentes estados"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Atualização da Declaração de Regimes Específicos (DeRE)",
+        "period": "2026",
+        "action": "Empresas devem atualizar seus processos de declaração no SPED para seguir as novas regras da DeRE, evitando multas e garantindo conformidade fiscal.",
+        "confidence": "alto"
+      },
+      "id": "b7ef2a7e-e0eb-404c-8ca2-c3c24bd6b347",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/sped/declaracao-de-regimes-especificos-dere",
+      "isDemo": false,
+      "createdAt": "2026-08-19T21:49:23.381Z",
+      "updatedAt": "2026-08-19T21:49:23.381Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/sped/declaracao-de-regimes-especificos-dere",
+        "sourceCharacters": 522,
+        "sourceId": "sped-dere",
+        "sourceName": "SPED - DeRE / Reforma",
+        "discoveredBy": "links",
+        "sourceType": "official",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-08-19T19:57:43.477Z"
+      },
+      "sections": [
+        "reforma",
+        "obrigacoes"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "Rcl 98108 — LEI Nº 14.385/2022. ATRIBUIÇÃO À ANEEL PARA DESTINAR AOS USUÁRIOS OS VALORES DE REPETIÇÃO DE INDÉBITO TRIBUTÁRIO DAS DISTRIBUIDORAS DE ENERGIA ELÉTRICA. POLÍTICA TARIFÁ",
+      "theme": "Atribuição da ANEEL para destinar valores de repetição de indébito tributário às",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Repetição de indébito tributár",
+        "Política tarifária",
+        "Distribuidoras de energia elé电",
+        "ANEL",
+        "Lei 14.385/2022",
+        "Ação Direta"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu que a Lei nº 14.385/2022 não invade matéria reservada à lei complementar, pois não disciplina a repetição do indébito tributário, mas apenas a destinação dos valores na composição das tarifas. A norma é válida para a política tarifária sem ofender a coisa julgada ou direitos de propriedade.",
+      "whatChanged": "A Lei nº 14.385/2022 foi validada pelo STF como não invasora de matéria reservada à lei complementar, pois não disciplina a repetição do indébito tributário, mas apenas a destinação dos valores na composição das tarifas.",
+      "practicalImpact": "Empresas de distribuição de energia elétrica podem seguir a Lei nº 14.385/2022 sem risco jurídico, já que o STF confirmou que a norma não invade matéria reservada à lei complementar e não ofende a coisa julgada.",
+      "officeAction": "A Lei nº 14.385/2022 é válida para a política tarifária sem invadir matéria reservada à lei complementar, conforme decisão do STF.",
+      "affectedProfiles": [
+        "Distribuidoras de energia elétrica",
+        "Usuários de energia elétrica",
+        "ANEL",
+        "Associação Brasileira de Distribuidores de Energia Elétrica (ABRADEE)",
+        "Empresas de energia elétrica"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Validação da Lei nº 14.385/2022 para destinação de valores de repetição de indébito tributário",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Empresas de distribuição de energia elétrica devem seguir a Lei nº 14.385/2022 sem risco jurídico, já que o STF confirmou que a norma não invade matéria reservada à lei complementar.",
+        "confidence": "alto"
+      },
+      "id": "9ad7f62c-5900-42e4-848d-cd5a9cf0338c",
+      "score": 7.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811000/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T21:44:20.870Z",
+      "updatedAt": "2026-08-19T21:44:20.870Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811000/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1555073 — Ementa: Direito Tributário . Recurso Extraordinário com Agravo. ICMS. Crédito. Ativo permanente. Operações de exportação. Limitação temporal. Lei complementar. Recurソ",
@@ -964,7 +1222,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "1bc698f91c433f137e261317",
         "status": "pending",
         "attempts": 0,
@@ -985,7 +1243,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "61716aa5626f058729a7ad2f",
         "status": "pending",
         "attempts": 0,
@@ -1006,7 +1264,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "6b24e5a5f87a529f7df35c28",
         "status": "pending",
         "attempts": 0,
@@ -1027,7 +1285,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "fad4309d9d186e1cd455e6c5",
         "status": "pending",
         "attempts": 0,
@@ -1048,7 +1306,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "84bf80b91653de88acffee6f",
         "status": "pending",
         "attempts": 0,
@@ -1069,7 +1327,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "f75ff59ad714411f10ac4e61",
         "status": "pending",
         "attempts": 0,
@@ -1090,7 +1348,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -1111,7 +1369,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "6899546bd55aa851ba80c388",
         "status": "pending",
         "attempts": 0,
@@ -1132,7 +1390,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "b08425deb90df4f07c6c7b85",
         "status": "pending",
         "attempts": 0,
@@ -1153,7 +1411,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "5449b2622c0048278fad17bb",
         "status": "pending",
         "attempts": 0,
@@ -1174,7 +1432,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
@@ -1195,7 +1453,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
@@ -1216,7 +1474,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:23:06.636Z",
+        "discoveredAt": "2026-08-19T21:56:49.025Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
@@ -1518,9 +1776,11 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-19T21:16:41.215Z",
         "id": "74d5e625dadfc23679ebf304",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "error",
+        "attempts": 1,
+        "backfillDate": null,
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-19T21:47:24.598Z"
       },
       {
         "title": "AR 1578 EI — Ementa: DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . EMBARGOS INFRINGENTES EM AÇÃO RESCISÓRIA. FINSOCIAL. EMPRESAS PRESTADORAS DE SERVIÇOS. MAJORAÇÃO DE ALÍQUOTAS. VIOLAÇÃO À LITERAL DISPOSIÇÃO DE LEI. MANUTENÇÃO DO ACÓRDÃO RESCINDENTE. RECURSO DESPROVIDO. I. CASO ",
@@ -1657,9 +1917,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "7e6130c1bb3c5f7e007108e9",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T21:44:20.878Z",
+        "score": 7.7,
+        "alertId": "9ad7f62c-5900-42e4-848d-cd5a9cf0338c"
       },
       {
         "title": "ARE 1618111 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
@@ -1804,9 +2067,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "5f4ce650d20b223232112aa1",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T21:52:42.007Z",
+        "score": 7.6,
+        "alertId": "131c8758-5125-4090-9b1c-dc66b23e339f"
       },
       {
         "title": "ARE 1618223 — extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. CORREÇÃO MONETÁRIA E JUROS DE MORA (TAXA SELIC) RECEBIDOS NA REPETIÇÃO DE INDÉB",
@@ -2035,9 +2301,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "352bb95c3e53b93c4b3ceffd",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T21:56:28.834Z",
+        "score": 7.6,
+        "alertId": "3d95685a-c512-4c89-b2ae-368cea5c3d5b"
       },
       {
         "title": "ARE 1617585 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . MANDADO DE",
@@ -2464,8 +2733,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T19:57:43.477Z",
         "id": "20076f9a629b661ea765c7a2",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T21:49:23.386Z",
+        "score": 7.1,
+        "alertId": "b7ef2a7e-e0eb-404c-8ca2-c3c24bd6b347"
       },
       {
         "title": "Compartilhe por LinkedIn",
@@ -8987,6 +9259,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "9d9f0f99-a159-473f-9b5c-8c6aa0e5cbbe",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-19T21:56:28.849Z",
+        "finishedAt": "2026-08-19T22:02:44.334Z",
+        "discovered": 13,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "7c020869-bb16-49c5-b8ee-99c2d306d93a",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-19T21:34:40.306Z",
+        "finishedAt": "2026-08-19T21:56:28.840Z",
+        "discovered": 25,
+        "analyzed": 4,
+        "published": 4,
+        "discarded": 0,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "f54067e7-419a-4a0d-b19a-188e460f28cf",
         "trigger": "github-actions-history",
@@ -18785,7 +19589,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T21:29:08.633Z",
-    "nextRunAt": "2026-08-20T03:29:08.633Z"
+    "lastRunAt": "2026-08-19T22:02:44.334Z",
+    "nextRunAt": "2026-08-20T04:02:44.334Z"
   }
 }
