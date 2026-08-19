@@ -513,8 +513,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -529,8 +530,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -545,8 +547,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -561,8 +564,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -577,8 +581,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -593,8 +598,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -609,8 +615,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -625,8 +632,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -641,8 +649,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.086Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -657,8 +666,9 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.087Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -673,9 +683,1523 @@
         "sourceName": "Superior Tribunal de Justiça",
         "sourceAcronym": "STJ",
         "sourceType": "official",
+        "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T13:09:40.762Z",
+        "discoveredAt": "2026-08-19T14:23:28.087Z",
         "id": "65ea9f55a0df2e603780cad3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Diário Oficial da União Diário Oficial da União Leitura do Jornal Destaques do Diário Oficial da União Base de Dados de Publicações do DOU Verificação de autenticidade Acesso ao sistema de envio de matérias INCom Concursos e Seleções Tutorial do APP DOU Tutorial INCom Termo de Uso e Política de Priv",
+        "url": "https://www.in.gov.br/web/guest/servicos/diario-oficial-da-uniao",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "diario-oficial",
+        "sourceName": "Diário Oficial da União",
+        "sourceAcronym": "DOU",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:23:17.231Z",
+        "id": "d66c52571f943d2cfe584bf1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Leitura do Jornal",
+        "url": "https://www.in.gov.br/web/guest/leiturajornal",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "diario-oficial",
+        "sourceName": "Diário Oficial da União",
+        "sourceAcronym": "DOU",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:23:17.231Z",
+        "id": "f2bd9c15832c4c320745094b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "PortalVisitorsCounterWeb AUDIÊNCIA DO PORTAL Páginas vistas null null null Visitantes únicos null null null Diário Oficial da União Leitura do Jornal Destaques do Diário Oficial da União Base de Dados de Publicações do DOU Verificação de autenticidade Acesso ao sistema de envio de matérias INCom Con",
+        "url": "https://www.facebook.com/DiarioOficialdaUniao",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "diario-oficial",
+        "sourceName": "Diário Oficial da União",
+        "sourceAcronym": "DOU",
+        "sourceType": "official",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:23:17.231Z",
+        "id": "c31b7a3512368aabb0fcb063",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "RMA 00021 2017 — Requeiro, nos termos do artigo 93, inciso II do Regimento Interno do Senado Federal, a realização de Seminário, em Cuiabá, no Estado do Mato Grosso, no dia 12 de junho do corrente ano, no âmbito da Comissão de Meio Ambiente, com participação da Comissão Especial da Câmara dos Deputados, destinada a proferir parecer ao Projeto de Lei Complementar n.º 221, de 1998, do Deputado Germano Rigotto, que “Dá nova redação ao inciso VIII do artigo 3º da Lei Complementar n.º 87 de 1996 e insere o parágrafo 7º ao artigo 20 e o paragrafo 9º ao artigo 21 da mesma Lei Complementar” (Altera a Lei Kandir), e apensados, com o intuito de debater a mudança na legislação para a compensação da União aos Estados, Distrito Federal e Municípios, por conta da perda de receita decorrente de desoneração do Imposto sobre Circulação de Mercadorias e Serviços (ICMS).",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/129307",
+        "publishedAt": "2017-05-30",
+        "documentKind": "Matéria legislativa",
+        "externalId": "129307",
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "sourceAcronym": "SF",
+        "sourceType": "official",
+        "sections": [
+          "reforma"
+        ],
+        "discoveryMethod": "senado-api",
+        "discoveredAt": "2026-08-19T14:23:19.030Z",
+        "id": "ebda99e166cf6b4e9bf68d7d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Acessar o conteúdo",
+        "url": "https://www.reformatributaria.com/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "3a36d61446e10d096309de8d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Teste grátis Teste grátis",
+        "url": "https://www.reformatributaria.com/assinatura",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "67ffdb7c38add32f9a5bb9b1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Revista",
+        "url": "https://www.reformatributaria.com/revista/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "b5a2e58ab2edcbc139c55231",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "E-books e Estudos",
+        "url": "https://www.reformatributaria.com/ebooks-e-estudos/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "30af047e332d42bc70a5bfe1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Podcast Tax Capital",
+        "url": "https://app.reformatributaria.com/podcast",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "2b69f316b5dcc009480689ca",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Lives exclusivas",
+        "url": "https://app.reformatributaria.com/webinars",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "862f6aa2d7595548e2728dea",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Curso",
+        "url": "https://app.reformatributaria.com/academy",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "7d56f5b372b5c095186335f2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "RT PRO",
+        "url": "https://www.reformatributaria.com/rt-pro/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "7f636aa1463cc42f1a6e2c5b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fórum",
+        "url": "https://app.reformatributaria.com/forum",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "f020b5e31570e5df90cdd7e9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Conteúdo em Inglês",
+        "url": "https://www.reformatributaria.com/conteudo-em-ingles/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "753dc0439da73831a899babe",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "IA Legislação",
+        "url": "https://app.reformatributaria.com/legislacao",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "6f7e9442f504e8e96fd6ae4e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Monitor",
+        "url": "https://app.reformatributaria/monitor",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "111dfdb46a8214aa921e750f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Colunistas",
+        "url": "https://www.reformatributaria.com/colunistas/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "ed0335e0f5bf9561e9c0edd6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Notícias",
+        "url": "https://www.reformatributaria.com/ultimas-noticias/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "a1458199eccde5a4e6af25cc",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Acessar o site",
+        "url": "https://www.reformatributaria.com/minha-conta/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "264019e75e16dd6c0c8ac2b7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Acessar a plataforma",
+        "url": "https://app.reformatributaria.com/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "abd8e8326b01fd6cfacdf5b2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "IVA: IBS e CBS",
+        "url": "https://www.reformatributaria.com/category/iva/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "f7b9d0592503b785d7b01098",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "IVA: IBS e CBS Receita prepara Instrução Normativa para detalhar uso de créditos de PIS/Cofins na CBS Últimas notícias Fisco deve adiar prazo de desistência do Simples Híbrido se alíquota da CBS demorar a ser definida, diz Barreirinhas A reforma tributária não falha na lei, mas nas pessoas Selma Cas",
+        "url": "https://www.reformatributaria.com/iva/receita-prepara-instrucao-normativa-para-detalhar-uso-de-creditos-de-pis-cofins-na-cbs/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "47142409b5d83774f60b9638",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fisco deve adiar prazo de desistência do Simples Híbrido se alíquota da CBS demorar a ser definida, diz Barreirinhas",
+        "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/fisco-deve-adiar-prazo-de-desistencia-do-simples-hibrido-se-aliquota-da-cbs-demorar-a-ser-definida-diz-barreirinhas/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "419fe70d19b327199b05acdd",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "A reforma tributária não falha na lei, mas nas pessoas",
+        "url": "https://www.reformatributaria.com/opiniao/a-reforma-tributaria-nao-falha-na-lei-mas-nas-pessoas/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "0209a815de4b32d806d39bc6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Selma Casagrande assume diretoria comercial e reforça estratégia de crescimento do Portal da Reforma Tributária",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/selma-casagrande-assume-diretoria-comercial-e-reforca-estrategia-de-crescimento-do-portal-da-reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "5834718444b83eaae1f70018",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Eleições",
+        "url": "https://www.reformatributaria.com/category/reforma-tributaria-nas-eleicoes/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "48ec28b743183b69529de6a3",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Reforma tributária: 5 pontos que as concessionárias de veículos precisam resolver antes de dezembro de 2026",
+        "url": "https://www.reformatributaria.com/conteudo-patrocinado/reforma-tributaria-5-pontos-que-as-concessionarias-de-veiculos-precisam-resolver-antes-de-dezembro-de-2026/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "d5a10e3b8752b9c08e3713f9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Frente de prefeitos critica remuneração extra de até R$ 64.000 para membros do Comitê Gestor do IBS: “Sem privilégios”",
+        "url": "https://www.reformatributaria.com/comite-gestor-do-ibs-reforma-tributaria/sem-privilegios-frente-de-prefeitos-solta-nota-contra-remuneracao-extra-de-ate-r-64-mil-para-membros-do-comite-gestor-do-ibs/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "266ef765cbf3621c0ced4bca",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Confaz adia para 2027 obrigatoriedade do ajuste Sinief 49 na emissão de documentos fiscais",
+        "url": "https://www.reformatributaria.com/documentos-fiscais/confaz-adia-para-2027-obrigatoriedade-do-ajuste-sinief-49-na-emissao-de-documentos-fiscais/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "fe43b60d2a3faebfacc5cf68",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Lucro Real acende alerta para 2027, mas revisão cadastral é urgente para empresas de todos os regimes tributários",
+        "url": "https://www.reformatributaria.com/negocios/empresa-do-lucro-real-sem-cadastro-de-fornecedor-atualizado-pode-perder-credito-de-cbs-em-2027-mostra-simulacao-no-sap-inside-track/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "800350a4e18f7e97d5bfedd6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Anatomia da complexidade: a legislação do ICMS paulista exige 7 níveis de sepultura",
+        "url": "https://www.reformatributaria.com/opiniao/anatomia-da-complexidade-a-legislacao-do-icms-paulista-exige-7-niveis-de-sepultura/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "3ecd3a7281ceffbe16ab71f0",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fórum Internacional de Tributação chega a sua 10ª edição em 2 de setembro",
+        "url": "https://www.reformatributaria.com/conteudo-patrocinado/forum-internacional-de-tributacao-chega-a-sua-10a-edicao-em-setembro/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "459e30e889d09deb6eb3a42e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Câmara aprova redução de tributos para resseguradoras nacionais",
+        "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/camara-aprova-reducao-de-tributos-para-resseguradoras-nacionais/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "5d30f6d541c6d6eb80bf7335",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "O Portal que se abriu: parabéns a estes 2 anos de festa e profunda contribuição da nova linguagem da reforma tributária",
+        "url": "https://www.reformatributaria.com/opiniao/o-portal-que-se-abriu-parabens-a-estes-2-anos-de-festa-e-profunda-contribuicao-da-nova-linguagem-da-reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "d8b8089c103178cd7cf15b3d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "O motor que ninguém desliga: por que a dívida pública brasileira cresce",
+        "url": "https://www.reformatributaria.com/opiniao/o-motor-que-ninguem-desliga-por-que-a-divida-publica-brasileira-so-cresce/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "68de785e78d7a87d046a599f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "O Contencioso Administrativo na Reforma Tributária",
+        "url": "https://www.reformatributaria.com/opiniao/o-contencioso-administrativo-na-reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "8a2f18c22e0c744040029d28",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Banco Rendimento e ROIT lançam primeiro split payment privado do Brasil para a nova reforma tributária",
+        "url": "https://www.reformatributaria.com/tecnologia/banco-rendimento-e-roit-lancam-primeiro-split-payment-privado-do-brasil-para-a-nova-reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "97c187535e793148c3c32df7",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Jayana Baleeiro é a nova analista de planejamento tributário sênior na Viveo",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/jayana-baleeiro-e-a-nova-analista-de-planejamento-tributario-senior-na-viveo/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "0a58a697a5ea33c70e354b4e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Stellantis South America e Brasilata promovem profissionais da área tributária",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/stellantis-south-america-e-brasilata-promovem-profissionais-da-area-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "fe1e6dd258ca7a8917927abb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Seara, Heineken e Companhia Siderúrgica Nacional têm mudanças na área tributária",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/seara-heineken-e-companhia-siderurgica-nacional-tem-mudancas-na-area-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "1d1673e366e9cf8217208548",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Heineken, Mercado Livre e Vivo movimentam o mercado tributário",
+        "url": "https://www.reformatributaria.com/como-anda-o-mercado/heineken-mercado-livre-e-vivo-movimentam-o-mercado-tributario/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "080f116673e7c54607b10a7d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Split payment: governo estuda pagar R$ 0,39 por operação a instituições financeiras",
+        "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/split-payment-governo-propoe-r-039-por-operacao-a-instituicoes-financeiras/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "7dbd86ea316b9f2f717efd89",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "APIs trazem tabelas de classificação de NFCom, NFAg, NF3e e NFGas; acesse",
+        "url": "https://www.reformatributaria.com/documentos-fiscais/apis-trazem-tabelas-de-classificacao-de-nfcom-nfag-nf3e-e-nfgas-acesse/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "7ad28514757564cbddcb2ff1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Portal da Reforma Tributária libera Monitor de Notas Técnicas por 7 dias grátis",
+        "url": "https://www.reformatributaria.com/institucional-portal-reforma-tributaria/portal-da-reforma-tributaria-libera-monitro-de-notas-tecnicas-por-7-dias-gratis/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "d142afb524a7a5ed25922ce8",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Senado aprova mudança na LC 214 para insumos agropecuários no PL dos combustíveis; texto vai à sanção",
+        "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/camara-aprova-mudanca-na-lc-214-para-insumos-agropecuarios-no-pl-dos-combustiveis/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "360b633eef98e3d3b392b2ee",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Piloto da reforma tributária do consumo referente a Contribuição sobre Bens e Serviços (Piloto RTC-CBS) window.googletag = window.googletag || {cmd: []}; googletag.cmd.push(function() { const el = document.getElementById('div-gpt-ad-1743703526279-0'); if (el) { googletag.display('div-gpt-ad-17437035",
+        "url": "https://www.reformatributaria.com/governo/piloto-da-reforma-tributaria-do-consumo-referente-a-contribuicao-sobre-bens-e-servicos-piloto-rtc-cbs/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:18.013Z",
+        "id": "726b2fbbe25a6ca6550caae5",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Ir para o conteúdo [1]",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "27b07cefadb9d5ff4f65e49d",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Reforma tributária aumenta emissão de carbono com desoneração de proteína animal e energia O diagnóstico faz parte do trabalho \"Implicações ambientais da reforma tributária brasileira sobre o consumo das famílias\", dos economistas Samuel Bícego e Paula Carvalho Pereda. ...",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/reforma-tributaria-aumenta-emissao-de-carbono-com-desoneracao-de-proteina-animal-e-energia.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "2f1e688b46c31c90a07f3950",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Campanha de Flávio quer mudar reforma tributária, mas não detalha como baixar IVA \"Não estamos dizendo que vamos paralisar ou vamos acabar com a reforma tributária . Nós vamos corrigi-la. ... 18.ago.2026 às 20h10",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/campanha-de-flavio-quer-mudar-reforma-tributaria-mas-nao-detalha-como-baixar-iva.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "8f6b99796c0f228e45c36dbf",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Poder Possível entrada de Marçal na disputa eleitoral beneficia Flávio, diz Renan Santos Durante a participação de Renan, o público ficou em pé e bloqueou as portas de acesso para ouvi-lo sobre reforma tributária e fundo partidário. ... 17.ago.2026 às 17h52",
+        "url": "https://www1.folha.uol.com.br/poder/2026/08/possivel-entrada-de-marcal-na-disputa-eleitoral-beneficia-flavio-diz-renan-santos.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "aa2fdb590626ae09d7170091",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Programas de Lula e Flávio fazem promessas sem dizer como vão bancar gastos tributária . ... 15.ago.2026 às 15h36",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/programas-de-lula-e-flavio-fazem-promessas-sem-dizer-como-vao-bancar-gastos.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "c8f4f33258a1d0035893868c",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Colunas da Folha - Painel S.A. É fácil querer mudar escala 6x1, assim como 'a criança vai preferir ir menos à escola', diz CEO do Rei do Mate Como a reforma tributária deve impactar o Rei do Mate e todo o varejo? Será mais um empurrão do varejo para o abismo. ... 15.ago.2026 às 14h00",
+        "url": "https://www1.folha.uol.com.br/colunas/painelsa/2026/08/e-facil-querer-mudar-escala-6x1-assim-como-a-crianca-vai-preferir-ir-menos-a-escola-diz-ceo-do-rei-do-mate.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "e95b54373967825a1f2922f2",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Poder Veja pontos em que os planos de governo de Lula e Flávio Bolsonaro divergem \"Nosso desafio é sustentar taxas robustas de crescimento, ampliar os investimentos, elevar a produtividade e consolidar os avanços promovidos pela reforma tributária e pelas políticas de desenvolvime",
+        "url": "https://www1.folha.uol.com.br/poder/2026/08/veja-pontos-em-que-os-planos-de-governo-de-lula-e-flavio-bolsonaro-divergem.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "32fdc277b32108b1c1679410",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Lula promete continuidade econômica e não menciona redução de gastos em plano de governo tributária , programa de industrialização e Novo PAC serão aprofundados em um eventual quarto mandato do presidente. ... 13.ago.2026 às 22h21",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/lula-promete-continuidade-economica-e-nao-menciona-reducao-de-gastos-em-plano-de-governo.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "e87edc3463db83bbf179895e",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Plano de governo de Flávio Bolsonaro propõe tesouraço e novo teto de gastos REFORMA TRIBUTÁRIA O plano fala em \"promover a revisão e o redimensionamento da reforma tributária \" e \"da majoração de impostos efetuada pelo atual governo\". ... 13.ago.2026 às 20h48",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/plano-de-governo-de-flavio-bolsonaro-propoe-tesouraco-e-novo-teto-de-gastos.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "14de2d78cb0ea317cb93fe07",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Poder Plano de governo de Flávio Bolsonaro propõe limites ao STF e rebate discurso de Lula sobre soberania No campo tributário, o candidato do PL reafirma que pretende fazer uma revisão da reforma tributária em curso —a conversão plena só ocorrerá em 2033— com a justificativa de q",
+        "url": "https://www1.folha.uol.com.br/poder/2026/08/plano-de-governo-de-flavio-bolsonaro-propoe-limites-ao-stf-e-rebate-discurso-de-lula-sobre-soberania.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "e3588de23cb924182f88b488",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Sistema de arrecadação da reforma tributária, split payment não fica pronto para janeiro de 2027 \"Temos identificado em redes sociais influenciadores, canais que se dedicam a falar sobre economia etc., falando sobre aspectos da reforma tributária , muitas vezes ajudando a ",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/sistema-de-arrecadacao-da-reforma-tributaria-split-payment-nao-fica-pronto-para-janeiro-de-2027.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "d0a59731e5a144a7e86c5558",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Parcela de executivos que vê cenário desfavorável para infraestrutura sobe para 30,9%, diz levantamento tributária \", afirma Gustavo Gusmão, sócio da EY-Parthenon para Governo e Infraestrutura. ... 12.ago.2026 às 6h00",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/parcela-de-executivos-que-ve-cenario-desfavoravel-para-infraestrutura-sobe-para-309-diz-levantamento.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "8d3e4206000760ceb89c1adb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Colunas da Folha - Mônica Bergamo Ives Gandra e Marcos Cintra lançam livro sobre reforma tributária na FecomercioSP Tributária – EC 132/2023\" na sede da FecomercioSP, em São Paulo. ... 11.ago.2026 às 19h15",
+        "url": "https://www1.folha.uol.com.br/colunas/monicabergamo/2026/08/ives-gandra-e-marcos-cintra-lancam-livro-sobre-reforma-tributaria-na-fecomerciosp.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "d2cf611708cc3006d9d7ffbb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Ilustrada Cláudio de Oliveira celebra 50 anos de carreira com mosaico da política brasileira tributária e meta de gastos, a partir dos trabalhos publicados na Folha. ... 10.ago.2026 às 10h00",
+        "url": "https://www1.folha.uol.com.br/ilustrada/2026/08/claudio-de-oliveira-celebra-50-anos-de-carreira-com-mosaico-da-politica-brasileira.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "38c85d07c72bd1a2c5b08eef",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Associação do mercado financeiro leva agenda a campanhas e defende medidas para reduzir Custo Brasil tributária tenha poucas exceções e que benefícios tributários sejam revistos; A facilitação do investimento estrangeiro no Brasil, eliminando burocracias; Maior transparênc",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/associacao-do-mercado-financeiro-leva-agenda-a-campanhas-e-defende-medidas-para-reduzir-custo-brasil.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "db0465b7f1905581495b7464",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado El Niño aumenta risco dos emaranhados de fios, diz presidente de federação de telecomunicações Estou muito preocupada com a operacionalização da reforma tributária . Haverá aumento de preços? ... 7.ago.2026 às 23h00",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/el-nino-aumenta-risco-dos-emaranhados-de-fios-diz-presidente-de-federacao-de-telecomunicacoes.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "c4d53ae9e267c72c465692dd",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Entenda quem pode ter isenção de impostos para comprar carros após decisão do STF A decisão foi unânime e derrubou trechos da lei que regulamentou a reforma tributária . ... 7.ago.2026 às 4h00",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/entenda-quem-pode-ter-isencao-de-impostos-para-comprar-carros-apos-decisao-do-stf.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "6089ecd6eaa06c3a5684c417",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mundo Petro deixa esquerda consolidada na Colômbia mesmo após patinar em agenda de reformas Para além dessa conquista, o presidente conseguiu aprovar uma reforma tributária que aumentou impostos sobre pessoas de alta renda e uma reforma trabalhista que aumentou os pagamentos a tra",
+        "url": "https://www1.folha.uol.com.br/mundo/2026/08/petro-deixa-esquerda-consolidada-na-colombia-mesmo-apos-patinar-em-agenda-de-reformas.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "f377fe5bdc8b8242ed6a5dc1",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Colunas da Folha - Adriana Fernandes Flávio joga parado na economia e não é cobrado tributária . ... 5.ago.2026 às 18h30",
+        "url": "https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/08/flavio-joga-parado-na-economia-e-nao-e-cobrado.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "e2ac83e2fd0d25e0092317e6",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Painel do Leitor - Painel do Leitor 'O Brasil está numa terrível encruzilhada', diz leitor sobre eleições com Lula e Flávio Bolsonaro Landucci (Campinas, SP) Manifestação Editorial da Folha erra ao afirmar que a Reforma Tributária \"em quase nada dependeu do atual governo\". ... 4.ago.2026 às 22h40",
+        "url": "https://www1.folha.uol.com.br/paineldoleitor/2026/08/o-brasil-esta-numa-terrivel-encruzilhada-diz-leitor-sobre-eleicoes-com-lula-e-flavio-bolsonaro.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "b6f13590ca1afb11f1f0fb96",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Caiado escolhe ex-secretária Cristiane Schmidt como porta-voz da área econômica tributária do consumo, aprovada em dezembro de 2023. ... 4.ago.2026 às 14h20",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/caiado-escolhe-ex-secretaria-cristiane-schmidt-como-porta-voz-da-area-economica.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "02b8c9b866316fd14f0be022",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Opinião Promessas de eventual Lula 4 são pouco críveis A recente reforma tributária representou um avanço substantivo que deve melhorar o ambiente de negócios, mas resultou de um longo processo de construção no Congresso, em quase nada dependente ... 3.ago.2026 às 22h00",
+        "url": "https://www1.folha.uol.com.br/opiniao/2026/08/promessas-de-eventual-lula-4-sao-pouco-criveis.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "a86384458ea20ae68cfb329f",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado STF amplia isenção para carros a pessoas com deficiência e níveis mais baixos de autismo \"A legislação [que regulamentou a reforma tributária ] foi muito além do que poderia.\" ... 3.ago.2026 às 19h06",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/stf-amplia-isencao-para-carros-a-pessoas-com-deficiencia-e-niveis-mais-baixos-de-autismo.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "fb926d5b019cecea75f7b921",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Folha de S.Paulo - Mercado Empresas devem emitir notas fiscais com informações da reforma tributária a partir desta segunda tributária começa a valer nesta segunda-feira (3), depois de quase sete meses de adiamentos para permitir a adaptação das empresas ao novo sistema. ... 3.ago.2026 às 4h00",
+        "url": "https://www1.folha.uol.com.br/mercado/2026/08/empresas-devem-emitir-notas-fiscais-com-informacoes-da-reforma-tributaria-a-partir-desta-segunda.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "f2ead6fe5e5c4f2567f55cc5",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Painel do Leitor - Painel do Leitor Economia, ideologia e alinhamento partidário influenciam decisão de voto, dizem leitores Assinantes apontam os principais aspectos analisados para eleger um candidato Valores em comum e o bem da população em geral são considerados A desestatização e a reforma trib",
+        "url": "https://www1.folha.uol.com.br/paineldoleitor/2026/08/economia-ideologia-e-alinhamento-partidario-influenciam-decisao-de-voto-dizem-leitores.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "af58dc3c0a8e588924a1a9c9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Colunas da Folha - Painel S.A. 'Penetração do ecommerce ainda é muito pequena', diz CEO da Log Tem também a reforma tributária , que vai levar o galpão para perto da população. Algumas praças estão desproporcionais. As distorções vão sumir com a reforma. ... 1º.ago.2026 às 14h00",
+        "url": "https://www1.folha.uol.com.br/colunas/painelsa/2026/08/penetracao-do-ecommerce-ainda-e-muito-pequena-diz-ceo-da-log.shtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "85929909da291674c6383522",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "2",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online&periodo=todos&results_count=9805&search_time=0%2C035&url=https%3A%2F%2Fsearch.folha.uol.com.br%2Fsearch%3Fq%3D%2522reforma%2520tribut%25C3%25A1ria%2522%26site%3Donline%26periodo%3Dtodos&sr=26",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "8699e5551fc3f8b02b2bc2aa",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "3",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online&periodo=todos&results_count=9805&search_time=0%2C035&url=https%3A%2F%2Fsearch.folha.uol.com.br%2Fsearch%3Fq%3D%2522reforma%2520tribut%25C3%25A1ria%2522%26site%3Donline%26periodo%3Dtodos&sr=51",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "1ba6a104b917f17470faaade",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "4",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online&periodo=todos&results_count=9805&search_time=0%2C035&url=https%3A%2F%2Fsearch.folha.uol.com.br%2Fsearch%3Fq%3D%2522reforma%2520tribut%25C3%25A1ria%2522%26site%3Donline%26periodo%3Dtodos&sr=76",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "f1a7fe44f90c48377f4d2277",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "5",
+        "url": "https://search.folha.uol.com.br/search?q=%22reforma%20tribut%C3%A1ria%22&site=online&periodo=todos&results_count=9805&search_time=0%2C035&url=https%3A%2F%2Fsearch.folha.uol.com.br%2Fsearch%3Fq%3D%2522reforma%2520tribut%25C3%25A1ria%2522%26site%3Donline%26periodo%3Dtodos&sr=101",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-folha",
+        "sourceName": "Folha de S.Paulo - Mercado / Tributário",
+        "sourceAcronym": "FOLHA",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:19.340Z",
+        "id": "dd38cfa2df422267986e5c45",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tributos",
+        "url": "https://valor.globo.com/valor-data/tributos/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "c811360a42db91825c331678",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tributário",
+        "url": "https://valor.globo.com/legislacao/tributario/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "5b719552a74e06a30f34e976",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Brasil Voltar Brasil Home Brasil Mercado ilegal Concursos públicos Reforma Tributária Rumos 2026",
+        "url": "https://valor.globo.com/brasil/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "5365243bbfd8b2659139f978",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Reforma Tributária",
+        "url": "https://valor.globo.com/brasil/reforma-tributaria/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "9b9a877e2a9ad9b83d090022",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Legislação",
+        "url": "https://valor.globo.com/legislacao/noticia/2026/08/19/petrobras-se-livra-de-tributacao-na-importacao-de-floteis.ghtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "413e7a66243f9fbc69bc87c9",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fiscal",
+        "url": "https://valor.globo.com/legislacao/noticia/2026/08/18/recentes-mudancas-tributarias-sao-questionadas-em-15-processos-no-stf-aponta-levantamento.ghtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "462453f2c4584a2d50dec5bb",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Tributário STF impede cobrança de IPTU com base em tamanho do imóvel 17/08/2026 05h03 — Em Legislação",
+        "url": "https://valor.globo.com/legislacao/noticia/2026/08/17/stf-impede-cobranca-de-iptu-com-base-em-tamanho-do-imovel.ghtml",
+        "publishedAt": "2026-08-17",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "d0bc80fea0c95c425e8aa23b",
+        "status": "pending",
+        "attempts": 0
+      },
+      {
+        "title": "Fio da Meada Fio da Meada: Campanha eleitoral e tributos 17/08/2026 15h32 — Em Fio da Meada",
+        "url": "https://valor.globo.com/legislacao/fio-da-meada/post/2026/08/campanha-eleitoral-e-tributos.ghtml",
+        "publishedAt": "2026-08-17",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T14:27:20.703Z",
+        "id": "a95c526bcc62eee2f5d08830",
         "status": "pending",
         "attempts": 0
       },
@@ -4313,6 +5837,251 @@
       }
     ],
     "runs": [
+      {
+        "id": "cb98757d-26db-41ec-9ed8-69acba5e5d6b",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T14:23:12.923Z",
+        "finishedAt": "2026-08-19T14:28:08.041Z",
+        "discovered": 95,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 16,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1
+          }
+        ]
+      },
       {
         "id": "3cf378ec-84aa-4560-ab6d-d538547d6ae5",
         "trigger": "github-actions-analysis",
@@ -8095,7 +9864,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T13:12:17.582Z",
-    "nextRunAt": "2026-08-19T19:12:17.582Z"
+    "lastRunAt": "2026-08-19T14:28:08.041Z",
+    "nextRunAt": "2026-08-19T20:28:08.041Z"
   }
 }
