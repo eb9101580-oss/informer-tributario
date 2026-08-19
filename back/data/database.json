@@ -1,9 +1,141 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T15:51:17.272Z",
+    "lastUpdatedAt": "2026-08-19T16:48:09.046Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Nota Técnica 12/2026 - Redução linear de incentivos e benefícios – LC 224/2025",
+      "theme": "Redução linear de incentivos e benefícios para LC 224/2025",
+      "agency": "SPED - EFD-Contribuições",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "COFINS",
+        "ISS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Publicação oficial",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-04-02T16:38:00Z",
+      "summary": "A Nota Técnica 12/2026 do SPED estabelece regras para a redução linear de incentivos e benefícios previstos na LC 224/2025, impactando tributos como ICMS, PIS, COFINS, ISS, IRPJ e CSLL.",
+      "whatChanged": "A LC 224/2025 introduz a redução linear de incentivos e benefícios, e a Nota Técnica 12/2026 detalha como essa redução será aplicada em tributos específicos.",
+      "practicalImpact": "Empresas devem ajustar suas contabilidades para aplicar a redução linear de incentivos e benefícios conforme a LC 224/2025, evitando inconsistências na EFD-Contribuições.",
+      "officeAction": "As empresas devem implementar a redução linear de incentivos e benefícios em suas operações fiscais para cumprir a LC 224/2025 e evitar multas ou inconsistências na EFD-Contribuições.",
+      "affectedProfiles": [
+        "Empresas com incentivos fiscais",
+        "Micro e pequenas empresas",
+        "Empresas de serviços",
+        "Empresas de produção industrial",
+        "Empresas com operações de comércio"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Implementação da redução linear de incentivos e benefícios na EFD-Contribuições",
+        "period": "2026-2027",
+        "action": "Ajustar contabilidades para aplicar a redução linear conforme a LC 224/2025",
+        "confidence": "alto"
+      },
+      "id": "0dd7f77a-1780-4439-b121-6c1d5e7e7723",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/documentos-tecnicos/nota-tecnica-12-2026-reducao-linear-de-incentivos-e-beneficios-lc-224",
+      "isDemo": false,
+      "createdAt": "2026-08-19T16:48:09.042Z",
+      "updatedAt": "2026-08-19T16:48:09.042Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/documentos-tecnicos/nota-tecnica-12-2026-reducao-linear-de-incentivos-e-beneficios-lc-224",
+        "sourceCharacters": 235,
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "discoveredBy": "links",
+        "sourceType": "official",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-08-19T14:47:52.879Z"
+      },
+      "sections": [
+        "obrigacoes"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "Manual de Escrituração da EFD-Contribuições - PJ do Lucro Presumido - PVA Versão 2.04",
+      "theme": "Escrituração Digital de Contribuições",
+      "agency": "SPED - Receita Federal do Brasil",
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "ICMS",
+        "ISS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Manual oficial de escrituração",
+      "impactType": "Informativo",
+      "publishedAt": "2026-03-25T09:57:00",
+      "summary": "Manual oficial de escrituração da EFD-Contribuições para empresas de lucro presumido com PVA (Plano de Valores Adicionais) versão 2.04, publicado pela Receita Federal do Brasil em 25/03/2026. O documento detalha as obrigações fiscais e procedimentos para escrituração correta das contribuições.",
+      "whatChanged": "Atualização da versão 2.04 do manual de escrituração da EFD-Contribuições para PJ do Lucro Presumido com PVA, incluindo ajustes nas obrigações fiscais e procedimentos de escrituração.",
+      "practicalImpact": "Empresas de lucro presumido devem seguir as novas diretrizes para escrituração da EFD-Contribuições com PVA, garantindo conformidade com as obrigações fiscais de PIS, COFINS, ICMS, ISS, IRPJ e CSLL.",
+      "officeAction": "Receita Federal do Brasil publicou o manual de escrituração da EFD-Contribuições para PJ do Lucro Presumido com PVA versão 2.04, com data de publicação 25/03/2026.",
+      "affectedProfiles": [
+        "Empresas de lucro presumido",
+        "Contribuintes do PVA",
+        "Empresas com EFD-Contribuições",
+        "Receita Federal",
+        "Empresas de pequeno porte"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 3,
+        "reach": 8,
+        "clientFit": 6,
+        "actionPotential": 5
+      },
+      "opportunity": {
+        "title": "Atualização do Manual de Escrituração da EFD-Contribuições - PJ do Lucro Presumido - PVA Versão 2.04",
+        "period": "2026",
+        "action": "Atualização da escrituração para conformidade com as novas diretrizes da Receita Federal",
+        "confidence": "médio"
+      },
+      "id": "df520c4c-6193-4876-9767-c81127001f51",
+      "score": 6.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais/manual-de-escrituracao-da-efd-contribuicoes-pj-do-lucro-presumido-pva-versao-2-04.pdf",
+      "isDemo": false,
+      "createdAt": "2026-08-19T16:45:37.218Z",
+      "updatedAt": "2026-08-19T16:45:37.218Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais/manual-de-escrituracao-da-efd-contribuicoes-pj-do-lucro-presumido-pva-versao-2-04.pdf",
+        "sourceCharacters": 2566,
+        "sourceId": "sped-efd-contribuicoes",
+        "sourceName": "SPED - EFD-Contribuições",
+        "discoveredBy": "links",
+        "sourceType": "official",
+        "documentKind": "Documento oficial em PDF",
+        "discoveredAt": "2026-08-19T14:51:32.003Z"
+      },
+      "sections": [
+        "obrigacoes"
+      ]
+    },
     {
       "relevant": true,
       "title": "NFCom terá nova regra para cobrança de terceiros a partir de 2027; acesse nota técnica",
@@ -642,7 +774,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -659,7 +791,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -676,7 +808,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -693,7 +825,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -710,7 +842,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -727,7 +859,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -744,7 +876,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -761,7 +893,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -778,7 +910,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -795,7 +927,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -812,7 +944,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:27:34.981Z",
+        "discoveredAt": "2026-08-19T16:41:11.229Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -1300,8 +1432,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:51:32.003Z",
         "id": "dd161b6f984b24f9f199e294",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T16:45:37.224Z",
+        "score": 6.1,
+        "alertId": "df520c4c-6193-4876-9767-c81127001f51"
       },
       {
         "title": "IVA: IBS e CBS Receita prepara Instrução Normativa para detalhar uso de créditos de PIS/Cofins na CBS Últimas notícias Fisco deve adiar prazo de desistência do Simples híbrido A reforma tributária não falha na lei, mas nas pessoas Selma Casagrande assume diretoria comercial e reforça estratégia de c",
@@ -1374,8 +1509,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "addc8cfc510354b9101cc50e",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T16:48:09.046Z",
+        "score": 8.1,
+        "alertId": "0dd7f77a-1780-4439-b121-6c1d5e7e7723"
       },
       {
         "title": "Nota Técnica 11/2026 - Descontinuidade da EFD-Contribuições - Orientações para os contribuintes",
@@ -4709,8 +4847,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:43:42.005Z",
         "id": "3ddcfdda8954e473b0091eb5",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "Documento sem texto suficiente.",
+        "analyzedAt": "2026-08-19T16:48:13.900Z"
       },
       {
         "title": "Resoluções",
@@ -4763,8 +4903,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:43:42.005Z",
         "id": "32dbec5f92a2ab3357a13c07",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T16:51:09.192Z",
+        "score": 5.4,
+        "alertId": null
       },
       {
         "title": "Atos Conjuntos",
@@ -10151,6 +10294,235 @@
       }
     ],
     "runs": [
+      {
+        "id": "6d63d793-5121-4102-af07-0958ab288c73",
+        "trigger": "github-actions-analysis",
+        "startedAt": "2026-08-19T16:40:59.846Z",
+        "finishedAt": "2026-08-19T16:51:09.196Z",
+        "discovered": 11,
+        "analyzed": 3,
+        "published": 2,
+        "discarded": 1,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2
+          }
+        ]
+      },
       {
         "id": "366c68c4-eb32-4275-95b9-4ee26d07185f",
         "trigger": "github-actions-discovery",
@@ -16482,7 +16854,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T16:28:35.010Z",
-    "nextRunAt": "2026-08-19T22:28:35.010Z"
+    "lastRunAt": "2026-08-19T16:51:09.196Z",
+    "nextRunAt": "2026-08-19T22:51:09.196Z"
   }
 }
