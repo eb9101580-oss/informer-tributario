@@ -401,7 +401,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T03:35:00.411Z",
+        "discoveredAt": "2026-08-19T04:21:47.113Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -417,7 +417,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T03:35:00.411Z",
+        "discoveredAt": "2026-08-19T04:21:47.113Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -433,7 +433,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T03:35:00.411Z",
+        "discoveredAt": "2026-08-19T04:21:47.113Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -449,7 +449,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T03:35:00.411Z",
+        "discoveredAt": "2026-08-19T04:21:47.113Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -465,7 +465,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T03:35:00.411Z",
+        "discoveredAt": "2026-08-19T04:21:47.113Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -1525,6 +1525,106 @@
       }
     ],
     "runs": [
+      {
+        "id": "71614ea7-6b09-4ee2-9c7f-2189fcf94596",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T04:21:41.805Z",
+        "finishedAt": "2026-08-19T04:22:49.218Z",
+        "discovered": 5,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 3,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 19
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "58baf443-eb97-4bbb-9bc9-1f5758142382",
         "trigger": "github-actions-discovery",
@@ -3629,7 +3729,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T03:35:04.279Z",
-    "nextRunAt": "2026-08-19T09:35:04.279Z"
+    "lastRunAt": "2026-08-19T04:22:49.218Z",
+    "nextRunAt": "2026-08-19T10:22:49.218Z"
   }
 }
