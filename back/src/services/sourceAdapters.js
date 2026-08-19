@@ -196,7 +196,23 @@ async function discoverLinks(source) {
 async function discoverConfaz(source) {
   const year = new Date().getFullYear();
   const yearUrl = `${source.url.replace(/\/$/, '')}/${year}/${year}`;
-  const result = await discoverOfficialLinks(yearUrl);
+  let result;
+  try {
+    result = await discoverOfficialLinks(yearUrl);
+  } catch (error) {
+    // O índice do CONFAZ pode ficar lento; ainda assim deixamos uma fotografia
+    // diária da página oficial na fila, sem transformar a fonte em erro.
+    const day = new Date().toISOString().slice(0, 10);
+    return [{
+      title: `Ajustes SINIEF ${year} — atualização diária`,
+      url: `${yearUrl}?informer_snapshot=${day}`,
+      collectionUrl: yearUrl,
+      publishedAt: day,
+      documentKind: 'Índice oficial de Ajustes SINIEF',
+      sections: source.sections || sectionIdsForSource(source.id),
+      fallbackReason: error.message,
+    }];
+  }
   return result.links
     .filter((item) => isCandidateEligible(source.id, item.title, item.url))
     .slice(0, 60)
