@@ -1,4 +1,5 @@
 import { config } from '../config.js';
+import https from 'node:https';
 
 const COURT_LABELS = {
   stf: 'STF (portal oficial)',
@@ -88,6 +89,44 @@ function movementDate(movement) {
 }
 
 const STF_PROCESS_URL = 'https://portal.stf.jus.br/processos/detalhe.asp';
+const STF_INTERMEDIATE_CA_URL = 'https://secure.globalsign.com/cacert/gsgccr6alphasslca2025.crt';
+const STF_ROOT_CA_URL = 'https://secure.globalsign.com/cacert/root-r6.crt';
+let stfCaBundlePromise;
+
+function pemCertificate(buffer) {
+  const base64 = Buffer.from(buffer).toString('base64');
+  return `-----BEGIN CERTIFICATE-----\n${base64.match(/.{1,64}/g).join('\n')}\n-----END CERTIFICATE-----\n`;
+}
+
+async function stfCaBundle() {
+  if (!stfCaBundlePromise) {
+    stfCaBundlePromise = Promise.all([STF_INTERMEDIATE_CA_URL, STF_ROOT_CA_URL].map(async (url) => {
+      const response = await fetch(url);
+      if (!response.ok) throw fail(`Não foi possível obter o certificado público do portal do STF (status ${response.status}).`, 502);
+      return pemCertificate(await response.arrayBuffer());
+    })).then((certificates) => certificates.join('')).catch((error) => {
+      stfCaBundlePromise = null;
+      throw error;
+    });
+  }
+  return stfCaBundlePromise;
+}
+
+async function requestStf(url, options) {
+  const ca = await stfCaBundle();
+  return new Promise((resolve, reject) => {
+    const request = https.get(url, { ...options, ca }, (response) => {
+      const chunks = [];
+      response.on('data', (chunk) => chunks.push(chunk));
+      response.on('end', () => resolve({
+        ok: response.statusCode >= 200 && response.statusCode < 300,
+        status: response.statusCode,
+        text: async () => Buffer.concat(chunks).toString('utf8'),
+      }));
+    });
+    request.on('error', reject);
+  });
+}
 
 function decodeHtml(value) {
   return String(value || '')
@@ -150,7 +189,7 @@ async function queryStf(tracker) {
       `https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=${incident}`,
       `https://portal.stf.jus.br/processos/abaInformacoes.asp?incidente=${incident}`,
     ];
-    const responses = await Promise.all(urls.map((url) => fetch(url, {
+    const responses = await Promise.all(urls.map((url) => requestStf(url, {
       headers: {
         Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'pt-BR,pt;q=0.9',
