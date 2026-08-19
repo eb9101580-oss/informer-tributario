@@ -14,8 +14,18 @@ const PUBLIC_COURT_PORTALS = {
   stj: 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/',
 };
 
+function stjPublicSearchUrl(query) {
+  const value = String(query || '').trim();
+  const term = value.replace(/\D/g, '').length === 20 ? value.replace(/\D/g, '') : value;
+  if (!term) return PUBLIC_COURT_PORTALS.stj;
+  const params = new URLSearchParams({ termo: term, aplicacao: 'processos.ea', tipoPesquisa: 'tipoPesquisaGenerica', chordem: 'DESC', chkMorto: 'MORTO' });
+  return `https://processo.stj.jus.br/processo/pesquisa/?${params.toString()}`;
+}
+
 function publicSourceUrl(item) {
   const candidate = item.publicUrl || item.sourceUrl || '';
+  const stjLanding = /^https?:\/\/www\.stj\.jus\.br\/sites\/portalp\/Processos\/Consulta-Processual\/?$/i.test(candidate);
+  if (item.court === 'stj' && (!candidate || stjLanding || /api-publica\.datajud\.cnj\.jus\.br/i.test(candidate))) return stjPublicSearchUrl(item.query);
   if (candidate && !/api-publica\.datajud\.cnj\.jus\.br/i.test(candidate)) return candidate;
   return PUBLIC_COURT_PORTALS[item.court] || 'https://www.cnj.jus.br/consultas-publicas/';
 }

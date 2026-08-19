@@ -12,7 +12,7 @@ test('normaliza número CNJ e preserva consulta por tema', () => {
 
 test('usa consulta pública do tribunal, nunca o endpoint autenticado do DataJud', () => {
   const stjUrl = publicSourceUrl('stj', '00168675020104025101', 'https://api-publica.datajud.cnj.jus.br/api_publica_stj/_search');
-  assert.equal(stjUrl, 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/');
+  assert.equal(stjUrl, 'https://processo.stj.jus.br/processo/pesquisa/?termo=00168675020104025101&aplicacao=processos.ea&tipoPesquisa=tipoPesquisaGenerica&chordem=DESC&chkMorto=MORTO');
   assert.equal(publicCourtUrl('stj'), 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/');
   assert.doesNotMatch(stjUrl, /api-publica\.datajud/i);
 });

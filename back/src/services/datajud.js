@@ -66,6 +66,20 @@ const PUBLIC_COURT_PORTALS = {
 };
 
 const CNJ_PUBLIC_PORTAL = 'https://www.cnj.jus.br/consultas-publicas/';
+const STJ_PUBLIC_CONSULTATION = 'https://www.stj.jus.br/sites/portalp/Processos/Consulta-Processual/';
+
+function stjPublicSearchUrl(query) {
+  const term = normalizeProcessNumber(query) || String(query || '').trim();
+  if (!term) return STJ_PUBLIC_CONSULTATION;
+  const params = new URLSearchParams({
+    termo: term,
+    aplicacao: 'processos.ea',
+    tipoPesquisa: 'tipoPesquisaGenerica',
+    chordem: 'DESC',
+    chkMorto: 'MORTO',
+  });
+  return `https://processo.stj.jus.br/processo/pesquisa/?${params.toString()}`;
+}
 
 export function isDataJudApiUrl(value) {
   return /^https?:\/\/api-publica\.datajud\.cnj\.jus\.br\//i.test(String(value || '').trim());
@@ -75,12 +89,14 @@ export function publicCourtUrl(court, query = '') {
   const requestedCourt = String(court || '').trim().toLowerCase();
   const inferredCourt = inferCourtFromProcessNumber(query);
   const effectiveCourt = inferredCourt || requestedCourt;
+  if (effectiveCourt === 'stj') return stjPublicSearchUrl(query);
   return PUBLIC_COURT_PORTALS[effectiveCourt] || CNJ_PUBLIC_PORTAL;
 }
 
 export function publicSourceUrl(court, query = '', candidate = '') {
   const source = String(candidate || '').trim();
-  return source && !isDataJudApiUrl(source) ? source : publicCourtUrl(court, query);
+  const stjLanding = /^https?:\/\/www\.stj\.jus\.br\/sites\/portalp\/Processos\/Consulta-Processual\/?$/i.test(source);
+  return source && !isDataJudApiUrl(source) && !stjLanding ? source : publicCourtUrl(court, query);
 }
 
 export function inferCourtFromProcessNumber(value) {
