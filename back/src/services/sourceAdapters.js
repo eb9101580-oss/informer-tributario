@@ -30,7 +30,7 @@ export function hasStrongTaxSignal(...values) {
 
 export function isCandidateEligible(sourceId, title, url) {
   if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
-  if (sourceId === 'confaz-ajustes') return /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(`${title} ${url}`);
+  if (sourceId === 'confaz-ajustes') return /\/ajustes\/\d{4}\/[^/]+/i.test(url) && /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(title);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
   if (['reforma-cgibs', 'reforma-portal', 'reforma-folha', 'reforma-valor'].includes(sourceId)) {
     return /reforma|ibs|cbs|imposto seletivo|documento fiscal|nota t[eé]cnica|regulamenta|tribut/i.test(`${title} ${url}`);
@@ -193,9 +193,20 @@ async function discoverLinks(source) {
   });
 }
 
+async function discoverConfaz(source) {
+  const year = new Date().getFullYear();
+  const yearUrl = `${source.url.replace(/\/$/, '')}/${year}/${year}`;
+  const result = await discoverOfficialLinks(yearUrl);
+  return result.links
+    .filter((item) => isCandidateEligible(source.id, item.title, item.url))
+    .slice(0, 60)
+    .map((item) => ({ ...item, url: cleanUrl(item.url), documentKind: 'Ajuste SINIEF ou publicação CONFAZ', sections: source.sections || sectionIdsForSource(source.id) }));
+}
+
 export async function discoverSourceCandidates(source, lookbackDays = 7) {
   let items;
-  if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays);
+  if (source.id === 'confaz-ajustes') items = await discoverConfaz(source);
+  else if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays);
   else if (source.adapter === 'senado-api') items = await discoverSenado(source, lookbackDays);
   else if (source.adapter === 'stj-open-data') items = await discoverStj();
   else if (source.adapter === 'rss') items = await discoverRss(source);
