@@ -32,7 +32,7 @@ def date_range(target_date: str, lookback_days: int) -> tuple[str, str]:
         target = datetime.strptime(target_date, "%Y-%m-%d").date()
         return target.strftime("%d%m%Y"), target.strftime("%d%m%Y")
     end = datetime.now(ZoneInfo("America/Sao_Paulo")).date()
-    start = end - timedelta(days=max(0, min(lookback_days, 31) - 1))
+    start = end - timedelta(days=max(0, min(lookback_days, 7) - 1))
     return start.strftime("%d%m%Y"), end.strftime("%d%m%Y")
 
 
