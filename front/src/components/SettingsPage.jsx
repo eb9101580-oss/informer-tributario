@@ -34,6 +34,7 @@ export function SettingsPage() {
   };
 
   const ready = Boolean(status?.enabled);
+  const persistenceReady = Boolean(status?.persistenceConfigured);
   return (
     <section className="page-section settings-page">
       <div className="settings-hero">
@@ -42,7 +43,7 @@ export function SettingsPage() {
       </div>
       <div className={`settings-status ${ready ? 'settings-status--ready' : ''}`}>
         {ready ? <CheckCircle2 size={19} /> : <ShieldAlert size={19} />}
-        <div><strong>{ready ? 'Envio de alertas ativo' : 'Envio aguardando configuração'}</strong><p>{ready ? 'Seu cadastro será usado pelo ciclo automático do monitor.' : 'O cadastro só pode ser concluído depois que o armazenamento seguro e o provedor de e-mail estiverem configurados.'}</p></div>
+        <div><strong>{ready ? 'Envio de alertas ativo' : persistenceReady ? 'Cadastro pronto; envio pendente' : 'Envio aguardando configuração'}</strong><p>{ready ? 'Seu cadastro será usado pelo ciclo automático do monitor.' : persistenceReady ? 'O cadastro será armazenado com segurança. Falta apenas configurar o provedor de e-mail para realizar os envios.' : 'Configure o armazenamento seguro antes de cadastrar endereços.'}</p></div>
       </div>
       <form className="settings-form" onSubmit={subscribe}>
         <label htmlFor="settings-email">E-mail para receber alertas</label>
