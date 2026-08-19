@@ -54,6 +54,11 @@ function sourceTypeRank(candidate) {
   return candidate.sourceType === 'official' ? 0 : 1;
 }
 
+function freshnessRank(candidate, now = Date.now()) {
+  const discoveredAt = Date.parse(candidate.discoveredAt || '');
+  return Number.isFinite(discoveredAt) && now - discoveredAt <= 24 * 60 * 60 * 1000 ? 0 : 1;
+}
+
 function sectionRank(candidate) {
   const sections = candidateSections(candidate);
   if (sections.includes('reforma')) return 0;
@@ -154,6 +159,9 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       const prioritizedQueue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || (item.status === 'error' && item.attempts < 3))
         .sort((left, right) => {
+          const leftFreshness = freshnessRank(left);
+          const rightFreshness = freshnessRank(right);
+          if (leftFreshness !== rightFreshness) return leftFreshness - rightFreshness;
           const leftOperational = operationalUpdateRank(left);
           const rightOperational = operationalUpdateRank(right);
           if (leftOperational !== rightOperational) return leftOperational - rightOperational;
