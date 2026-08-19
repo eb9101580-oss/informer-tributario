@@ -1,9 +1,257 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T21:56:28.834Z",
+    "lastUpdatedAt": "2026-08-19T22:26:07.570Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "RHC 271436 — art. 2º, inciso II, da Lei n. 8.137/90, na forma do art. 71 do Código Penal",
+      "theme": "Delitos tributários e apropriação de tributos",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "Dívida ativa",
+        "Juros",
+        "Multa",
+        "Fisco Estadual"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF confirmou que a denunciada praticou 30 delitos tributários, com 16 reconhecidos na sentença, sob a forma do art. 71 do Código Penal. A empresa RAFAELA CARDOSO deixou de recolher ICMS em prazo legal, gerando débito de R$ 176.298,06 com juros e multa ao Fisco Estadual.",
+      "whatChanged": "A denúncia revela que a empresa não realizou parcelamento ou pagamento após inscrição em dívida ativa, evidenciando intenção deliberada de apropriação de tributos que não lhe pertencem, sem circunstâncias concretas de dolo além da ausência de recolhimento.",
+      "practicalImpact": "Empresas com inadimplemento tributário podem enfrentar risco de apropriação de tributos, exigindo recolhimento imediato para evitar sanções legais e financeiras.",
+      "officeAction": "Recolhimento imediato do ICMS não pago, com possibilidade de parcelamento para evitar apropriação de tributos conforme art. 71 do Código Penal.",
+      "affectedProfiles": [
+        "Empresas com inadimplemento tributário",
+        "Sujeitos passivos de ICMS",
+        "Fisco Estadual",
+        "Empresas com dívida ativa",
+        "Organizações com risco de apropriação de tributos"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 6,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Risco de apropriação de tributos para empresas com inadimplemento",
+        "period": "Imediato",
+        "action": "Recolhimento do ICMS não pago com possibilidade de parcelamento",
+        "confidence": "alto"
+      },
+      "id": "08794ed6-8da0-41d2-9be2-abbad24547f4",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810240/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:26:07.565Z",
+      "updatedAt": "2026-08-19T22:26:07.565Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810240/false",
+        "sourceCharacters": 1203,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1614560 — NÃO INCLUSÃO NA PAUTA DE VALORES VENAIS DA LEI 4.721/2011. LEGITIMIDADE DO LANÇAMENTO TRIBUTÁRIO . ACÓRDÃO REEXAMINADO. ADEQUAÇÃO DE ENTENDIMENTO",
+      "theme": "Legitimidade do lançamento tributário e adequação de entendimento no contexto de",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU",
+        "Lei 4.721/2011"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF reexaminou acórdão que decidiu pelo desprovimento do recurso do Distrito Federal e declaração de nulidade do lançamento tributário, com base na tese de constitucionalidade da lei municipal que delega ao Poder Executivo a avaliação individualizada do IPTU para imóveis novos não previstos na Planta Genérica de Valores.",
+      "whatChanged": "A decisão do STF confirma a legitimidade do lançamento tributário para imóveis novos não incluídos na Planta Genérica de Valores, sob a premissa de critérios técnicos definidos em lei e direito ao contraditório.",
+      "practicalImpact": "Contribuintes de imóveis novos não previstos na Planta Genérica de Valores podem contestar lançamentos tributários com base na tese de constitucionalidade da lei municipal que delega avaliação individualizada ao Poder Executivo.",
+      "officeAction": "O STF reexaminou acórdão que decidiu pelo desprovimento do recurso do Distrito Federal e pela declaração de nulidade do lançamento tributário, com base na tese de constitucionalidade da lei municipal que delega ao Poder Executivo a avaliação individualizada do IPTU para imóveis novos não previstos na Planta Genérica de Valores.",
+      "affectedProfiles": [
+        "Contribuintes de imóveis novos",
+        "Municípios com Planta Genérica de Valores",
+        "Tribunais de superposição",
+        "Poder Executivo municipal",
+        "Contribuintes de imóveis não previstos na Planta Genérica"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Oportunidade para contestar lançamentos tributários de imóveis novos não previstos na Planta Genérica de Valores",
+        "period": "Imediato",
+        "action": "Contribuintes devem revisar lançamentos tributários com base na tese de constitucionalidade da lei municipal que delega avaliação individualizada ao Poder Executivo",
+        "confidence": "alto"
+      },
+      "id": "b711321e-abd1-4add-8b29-ece786a8b306",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810338/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:23:35.761Z",
+      "updatedAt": "2026-08-19T22:23:35.761Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810338/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "PLP 236/2026 — Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para dispor sobre a não incidência do Imposto sobre Bens e Serviços – IBS e da Contribuição sobre Bens e",
+      "theme": "Imposto sobre Bens e Serviços (IBS) e Contribuição sobre Bens e Serviços (CBS)",
+      "agency": "Câmara dos Deputados",
+      "taxes": [
+        "Imposto sobre Bens e Serviços",
+        "Contribuição sobre Bens e Serv"
+      ],
+      "status": "Em andamento",
+      "kind": "Proposição legislativa",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19T17:51",
+      "summary": "O PLP 236/2026 propõe alterar a Lei Complementar nº 214/2025 para isentar entidades civis sem fins lucrativos de incidência do IBS e CBS sobre contribuições e operações internas, além de vedar a retenção desses valores pelo pagamento fracionado.",
+      "whatChanged": "A proposta altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para não incidir IBS e CBS sobre contribuições e operações internas das entidades civis sem fins lucrativos e seus sistemas de representação, e proíbe a retenção desses valores pelo mecanismo de pagamento fracionado.",
+      "practicalImpact": "Entidades civis sem fins lucrativos poderão evitar tributação sobre operações internas e contribuições, além de não terem mais a retenção de valores pelo pagamento fracionado, o que pode reduzir custos operacionais e melhorar a transparência financeira.",
+      "officeAction": "O PLP 236/2026 foi apresentado na Câmara dos Deputados em 19/08/2026 pelo Deputado Domingos Sávio (PL/MG) para alterar a Lei Complementar nº 214/2025, com foco em isentar entidades civis sem fins lucrativos do IBS e CBS.",
+      "affectedProfiles": [
+        "Entidades civis sem fins lucrativos",
+        "Sistemas de representação de entidades civis sem fins lucrativos",
+        "Operações internas de entidades civis sem fins lucrativos",
+        "Contribuições internas de entidades civis sem fins lucrativos",
+        "Pagamento fracionado de tributos"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Oportunidade para isenção de tributos em entidades civis sem fins lucrativos",
+        "period": "2026-08-19 a data da aprovação",
+        "action": "Acompanhar o andamento do PLP 236/2026 na Câmara dos Deputados para garantir a isenção do IBS e CBS sobre operações internas e contribuições das entidades civis sem fins lucrativos",
+        "confidence": "médio"
+      },
+      "id": "3d4307f0-5fc4-4f68-9ece-92c24b7213f6",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644238",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:18:38.793Z",
+      "updatedAt": "2026-08-19T22:18:38.793Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644238",
+        "sourceCharacters": 4412,
+        "sourceId": "camara",
+        "sourceName": "Câmara dos Deputados",
+        "discoveredBy": "camara-api",
+        "sourceType": "official",
+        "documentKind": "Proposição legislativa",
+        "discoveredAt": "2026-08-19T21:16:41.215Z"
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "AR 1578 EI — Ementa: DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . EMBARGOS INFRINGENTES EM AÇÃO RESCISÓRIA. FINSOCIAL. EMPRESAS PRESTADORAS DE SERVIÇOS. MAJORAÇÃO DE ALÍQUOTAS. VIOLAÇÃO",
+      "theme": "Interpretação constitucional da incidência da contribuição para o Finsocial e al",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Contribuição para o Finsocial",
+        "Alíquotas de contribuição para",
+        "Lei 7.787/1989",
+        "Lei 7.894/1989",
+        "Lei 8.147/1990"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF mantém o acórdão rescindente em ação rescisória que desconstituiu decisões sobre incidência da contribuição para o Finsocial e majorações de alíquotas em empresas prestadoras de serviços. O recurso foi desprovido por violação à literal disposição constitucional e manutenção da orientação jurídica.",
+      "whatChanged": "O STF confirmou que embargos infringentes são cabíveis em ação rescisória sem exigir quatro votos divergentes, conforme art. 530 do CPC/1973. A jurisprudência do STF pacificou a constitucionalidade da incidência das majorações de alíquotas do Finsocial sobre empresas prestadoras de serviços.",
+      "practicalImpact": "Empresas prestadoras de serviços devem verificar se suas contribuições para o Finsocial estão alinhadas com a interpretação constitucional atual do STF, evitando possíveis desconstituições de decisões. A violação à literal disposição constitucional pode gerar risco de desconstituição de alíquotas.",
+      "officeAction": "Recurso desprovido por violação à literal disposição constitucional e manutenção da orientação jurídica do STF.",
+      "affectedProfiles": [
+        "Empresas prestadoras de serviços",
+        "Contribuintes do Finsocial",
+        "Empresas com contribuição para o Finsocial",
+        "Empresas com alíquotas majoradas",
+        "Empresas com tributação tributária"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Ajuste na incidência da contribuição para o Finsocial",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificação da conformidade das contribuições com a interpretação constitucional atual do STF",
+        "confidence": "médio"
+      },
+      "id": "60684806-fdda-4fff-9613-74615c55c158",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568861/false",
+      "isDemo": false,
+      "createdAt": "2026-08-19T22:14:06.492Z",
+      "updatedAt": "2026-08-19T22:14:06.492Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568861/false",
+        "sourceCharacters": 2348,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-19T21:13:50.085Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1617715 — ementado: TRIBUTÁRIO . REINTEGRA. LEI N.º 13.043/2014. APROVEITAMENTO DOS CRÉDITOS. REDUÇÃO DA ALÍQUOTA. DECRETOS N.ºS 8.415/2015, 8.543/15, 9.148/17 E 9.393/18. CRÉD",
@@ -1222,7 +1470,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "1bc698f91c433f137e261317",
         "status": "pending",
         "attempts": 0,
@@ -1243,7 +1491,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "61716aa5626f058729a7ad2f",
         "status": "pending",
         "attempts": 0,
@@ -1264,7 +1512,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "6b24e5a5f87a529f7df35c28",
         "status": "pending",
         "attempts": 0,
@@ -1285,7 +1533,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "fad4309d9d186e1cd455e6c5",
         "status": "pending",
         "attempts": 0,
@@ -1306,7 +1554,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "84bf80b91653de88acffee6f",
         "status": "pending",
         "attempts": 0,
@@ -1327,7 +1575,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "f75ff59ad714411f10ac4e61",
         "status": "pending",
         "attempts": 0,
@@ -1348,7 +1596,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -1369,7 +1617,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "6899546bd55aa851ba80c388",
         "status": "pending",
         "attempts": 0,
@@ -1390,7 +1638,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "b08425deb90df4f07c6c7b85",
         "status": "pending",
         "attempts": 0,
@@ -1411,7 +1659,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "5449b2622c0048278fad17bb",
         "status": "pending",
         "attempts": 0,
@@ -1432,7 +1680,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
@@ -1453,7 +1701,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
@@ -1474,11 +1722,30 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T21:56:49.025Z",
+        "discoveredAt": "2026-08-19T22:26:31.604Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "Cirurgias odontológicas podem ter presunção menor no Lucro Presumido, diz Receita",
+        "url": "https://www.reformatributaria.com/governo/cirurgias-odontologicas-podem-ter-presuncao-menor-no-lucro-presumido-diz-receita/",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-portal",
+        "sourceName": "Portal da Reforma Tributária",
+        "sourceAcronym": "RT",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-19T22:09:27.196Z",
+        "id": "64f8a49b1f668cefaa17a080",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null
       },
       {
         "title": "PAR 1/0 — Parecer da Comissão  (CCOM) à TVR 91/2026",
@@ -1776,11 +2043,13 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-19T21:16:41.215Z",
         "id": "74d5e625dadfc23679ebf304",
-        "status": "error",
-        "attempts": 1,
+        "status": "analyzed",
+        "attempts": 2,
         "backfillDate": null,
         "error": "A coleta excedeu o limite de 60 segundos.",
-        "analyzedAt": "2026-08-19T21:47:24.598Z"
+        "analyzedAt": "2026-08-19T22:18:38.800Z",
+        "score": 7.6,
+        "alertId": "3d4307f0-5fc4-4f68-9ece-92c24b7213f6"
       },
       {
         "title": "AR 1578 EI — Ementa: DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . EMBARGOS INFRINGENTES EM AÇÃO RESCISÓRIA. FINSOCIAL. EMPRESAS PRESTADORAS DE SERVIÇOS. MAJORAÇÃO DE ALÍQUOTAS. VIOLAÇÃO À LITERAL DISPOSIÇÃO DE LEI. MANUTENÇÃO DO ACÓRDÃO RESCINDENTE. RECURSO DESPROVIDO. I. CASO ",
@@ -1799,9 +2068,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T21:13:50.085Z",
         "id": "4042d6c9dd1e24ae6d9614de",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-19T22:14:06.498Z",
+        "score": 7.2,
+        "alertId": "60684806-fdda-4fff-9613-74615c55c158"
       },
       {
         "title": "Proposta de Flávio Bolsonaro para IVA de 20% pode encarecer produtos essenciais, dizem especialistas",
@@ -2280,9 +2552,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "a3211ef0e01dc136994ec49e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T22:23:35.767Z",
+        "score": 8.2,
+        "alertId": "b711321e-abd1-4add-8b29-ece786a8b306"
       },
       {
         "title": "ARE 1617715 — ementado: TRIBUTÁRIO . REINTEGRA. LEI N.º 13.043/2014. APROVEITAMENTO DOS CRÉDITOS. REDUÇÃO DA ALÍQUOTA. DECRETOS N.ºS 8.415/2015, 8.543/15, 9.148/17 E 9.393/18. CRÉDITO ADICIONAL. ART. 22, § 2º, DA LEI Nº 13.043/2014. 1. A Lei n.º 13.043/2014 (REINTEGRA) auto",
@@ -2346,9 +2621,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "7b4ae956f8537d5a80d8f7f4",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-19T22:26:07.570Z",
+        "score": 7.2,
+        "alertId": "08794ed6-8da0-41d2-9be2-abbad24547f4"
       },
       {
         "title": "ARE 1600129 — ajuizamento da ADPF nº 1.269/DF: “Direito Tributário . Agravo regimental em recurso extraordinário com agravo. Contribuição previdenciária. Natureza da verba. Encargo legal. Decreto-lei nº 1025/69. Súmula 279/STF. Ofensa reflexa. I. Caso em exame 1.Agravo regi",
@@ -3593,8 +3871,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "9d49b64fd73f7fee21e585b9",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T22:20:47.913Z",
+        "score": 7.5,
+        "alertId": null
       },
       {
         "title": "Nota Técnica 08/2023 - Migração da escrituração do PIS-Pasep Folha da EFD-Contribuições para o eSocial.",
@@ -9259,6 +9540,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "5e4a5d55-3951-4ed9-a25f-5cc7e54322f2",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-19T22:26:07.587Z",
+        "finishedAt": "2026-08-19T22:32:23.508Z",
+        "discovered": 13,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "7be96400-c6e6-445e-8bdf-a1d565204dcd",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-19T22:04:16.226Z",
+        "finishedAt": "2026-08-19T22:26:07.576Z",
+        "discovered": 26,
+        "analyzed": 5,
+        "published": 4,
+        "discarded": 1,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "9d9f0f99-a159-473f-9b5c-8c6aa0e5cbbe",
         "trigger": "github-actions-history",
@@ -19589,7 +20402,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T22:02:44.334Z",
-    "nextRunAt": "2026-08-20T04:02:44.334Z"
+    "lastRunAt": "2026-08-19T22:32:23.508Z",
+    "nextRunAt": "2026-08-20T04:32:23.508Z"
   }
 }
