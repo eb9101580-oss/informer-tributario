@@ -774,7 +774,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "3b2910018760666294c0d8e7",
         "status": "pending",
         "attempts": 0
@@ -791,7 +791,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "703f23ef3f10c2b4af8191fc",
         "status": "pending",
         "attempts": 0
@@ -808,7 +808,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "4b29cf6667a5efd76bfa0146",
         "status": "pending",
         "attempts": 0
@@ -825,7 +825,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "bce400900ff4256975ad820a",
         "status": "pending",
         "attempts": 0
@@ -842,7 +842,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "c0a2b8ff4d8bf1e818e128ca",
         "status": "pending",
         "attempts": 0
@@ -859,7 +859,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "6b36e6b06e47dcd2ce1c83c3",
         "status": "pending",
         "attempts": 0
@@ -876,7 +876,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -893,7 +893,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -910,7 +910,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -927,7 +927,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -944,7 +944,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T16:41:11.229Z",
+        "discoveredAt": "2026-08-19T16:58:42.692Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -10295,6 +10295,235 @@
     ],
     "runs": [
       {
+        "id": "c5048507-7a1b-4b5d-954e-c4185523c084",
+        "trigger": "github-actions-discovery",
+        "startedAt": "2026-08-19T16:58:32.852Z",
+        "finishedAt": "2026-08-19T16:59:42.369Z",
+        "discovered": 11,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 23
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 18
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2
+          }
+        ]
+      },
+      {
         "id": "6d63d793-5121-4102-af07-0958ab288c73",
         "trigger": "github-actions-analysis",
         "startedAt": "2026-08-19T16:40:59.846Z",
@@ -16854,7 +17083,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T16:51:09.196Z",
-    "nextRunAt": "2026-08-19T22:51:09.196Z"
+    "lastRunAt": "2026-08-19T16:59:42.369Z",
+    "nextRunAt": "2026-08-19T22:59:42.369Z"
   }
 }
