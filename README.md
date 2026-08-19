@@ -50,7 +50,7 @@ npm.cmd run dev
 
 O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consulta a cada seis horas. Abra **Varredura automática** para acompanhar a fonte atual, fila, documentos, falhas e histórico de ciclos.
 
-No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos 61 dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela de dois meses é revisitada em aproximadamente 21 horas. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
+No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos 30 dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela mensal é revisitada em aproximadamente 10 horas. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
 
 O fluxo é:
 
