@@ -1,9 +1,66 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-18T20:36:15.274Z",
+    "lastUpdatedAt": "2026-08-19T01:57:04.314Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "AGRAVO EM RECURSO ESPECIAL Nº 2148071 - RJ (2022/0176934-2)",
+      "theme": "DIREITO TRIBUTÁRIO - DÍVIDA ATIVA (EXECUÇÃO FISCAL)",
+      "agency": "SUPERIOR TRIBUNAL DE JUSTIÇA (STJ)",
+      "taxes": [
+        "ART. 1.022 DO CPC",
+        "SÚMULA 282 DO STF",
+        "ART. 40 DA LEI 6.830/1980"
+      ],
+      "status": "Análise",
+      "kind": "Agravo em Recurso Especial",
+      "impactType": "Risco",
+      "publishedAt": "2026-06-08T11:36:23",
+      "summary": "O Agravo em Recurso Especial foi negado, com base na análise da violação ao Art. 1.022 do CPC e na ausência de prequestionamento, conforme jurisprudência do STJ. A decisão reforça a aplicação da Súmula 282 do STF e da Súmula 7 do STJ em casos de prescrição intercorrente.",
+      "whatChanged": "A decisão nega provimento ao recurso, reforçando a aplicação da jurisprudência do STJ sobre a violação ao Art. 1.022 do CPC e a questão da prescrição intercorrente.",
+      "practicalImpact": "O agravo em recurso especial foi negado, o que pode impactar a possibilidade de ação judicial em casos de dívida ativa com relação a execução fiscal, especialmente em relação ao tratamento da prescrição.",
+      "officeAction": "A decisão nega provimento ao recurso, reforçando a aplicação da jurisprudência do STJ sobre a violação ao Art. 1.022 do CPC e a questão da prescrição intercorrente.",
+      "affectedProfiles": [
+        "Municipios",
+        "Empresas tributárias",
+        "Advogados tributários"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Agravo em Recurso Especial Nº 2148071 - RJ (2022/0176934-2)",
+        "period": "2022-01-01T00:00:00Z",
+        "action": "Negado",
+        "confidence": "alto"
+      },
+      "id": "898206bc-7347-4dea-8a7a-b085ffd94cf0",
+      "score": 7.5,
+      "relevance": "Relevante",
+      "officialUrl": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202201769342&dt_publicacao=11%2F06%2F2026",
+      "isDemo": false,
+      "createdAt": "2026-08-19T01:57:04.312Z",
+      "updatedAt": "2026-08-19T01:57:04.312Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:1.7b",
+        "sourceCharacters": 25322,
+        "sourceId": "stj",
+        "sourceName": "Superior Tribunal de Justiça",
+        "discoveredBy": "stj-open-data",
+        "sourceType": "official",
+        "documentKind": "Inteiro teor de acórdão",
+        "discoveredAt": "2026-08-18T18:33:16.784Z"
+      }
+    },
     {
       "relevant": true,
       "title": "AGRAVO EM RECURSO ESPECIAL Nº 2906267 - SP (2025/0126617-0)",
@@ -344,7 +401,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T01:47:19.234Z",
+        "discoveredAt": "2026-08-19T01:54:07.122Z",
         "id": "baa3cd54eb54dc348e941c41",
         "status": "pending",
         "attempts": 0
@@ -360,7 +417,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T01:47:19.234Z",
+        "discoveredAt": "2026-08-19T01:54:07.122Z",
         "id": "7cf32d47d716b8ee7719bad7",
         "status": "pending",
         "attempts": 0
@@ -376,7 +433,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T01:47:19.234Z",
+        "discoveredAt": "2026-08-19T01:54:07.122Z",
         "id": "54b2d2ca34d46e720074ca8e",
         "status": "pending",
         "attempts": 0
@@ -392,7 +449,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T01:47:19.234Z",
+        "discoveredAt": "2026-08-19T01:54:07.122Z",
         "id": "ff8255c0b979755aabca13b9",
         "status": "pending",
         "attempts": 0
@@ -408,7 +465,7 @@
         "sourceAcronym": "STJ",
         "sourceType": "official",
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-19T01:47:19.234Z",
+        "discoveredAt": "2026-08-19T01:54:07.122Z",
         "id": "65ea9f55a0df2e603780cad3",
         "status": "pending",
         "attempts": 0
@@ -792,8 +849,11 @@
         "discoveryMethod": "stj-open-data",
         "discoveredAt": "2026-08-18T18:33:16.784Z",
         "id": "5b2d98e2fe5b8c713dacaa83",
-        "status": "pending",
-        "attempts": 0
+        "status": "analyzed",
+        "attempts": 1,
+        "analyzedAt": "2026-08-19T01:57:04.314Z",
+        "score": 7.5,
+        "alertId": "898206bc-7347-4dea-8a7a-b085ffd94cf0"
       },
       {
         "title": "AgInt nos EDcl no REsp 2006629 — PROCESSUAL CIVIL E TRIBUTÁRIO. AGRAVO INTERNO. CAPÍTULOS AUTÔNOMOS DA DECISÃO AGRAVADA. IMPUGNAÇÃO. AUSÊNCIA. PRECLUSÃO DA MATÉRIA. OCORRÊNCIA. RECURSO ESPECIAL COM FUNDAMENTO CONSTITUCIONAL. ANÁLISE PELO STJ. IMPOSSIBILIDADE. USURPAÇÃO DA COMPETÊNCIA DO STF. ",
@@ -1465,6 +1525,104 @@
       }
     ],
     "runs": [
+      {
+        "id": "4d4714b5-0296-417e-b95f-aee74f05d9d2",
+        "trigger": "github-actions-analysis",
+        "startedAt": "2026-08-19T01:54:03.533Z",
+        "finishedAt": "2026-08-19T01:57:04.316Z",
+        "discovered": 5,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 19
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 50
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 6
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0
+          }
+        ]
+      },
       {
         "id": "4529b42b-05d7-453d-9ad2-a66b0c1a7fc9",
         "trigger": "github-actions-discovery",
@@ -3274,7 +3432,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-19T01:47:22.432Z",
-    "nextRunAt": "2026-08-19T07:47:22.432Z"
+    "lastRunAt": "2026-08-19T01:57:04.316Z",
+    "nextRunAt": "2026-08-19T07:57:04.316Z"
   }
 }
