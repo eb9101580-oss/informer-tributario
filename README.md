@@ -50,7 +50,7 @@ npm.cmd run dev
 
 O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consulta a cada seis horas. Abra **Varredura automática** para acompanhar a fonte atual, fila, documentos, falhas e histórico de ciclos.
 
-No GitHub Actions, cada ciclo agendado consulta as publicações atuais e também uma data dos seis dias anteriores. A data histórica avança a cada execução; com o agendamento de 20 minutos, toda a janela de sete dias é revisitada em aproximadamente duas horas. As decisões do DJEN são paginadas integralmente por tribunal e data antes do filtro tributário.
+No GitHub Actions, cada ciclo agendado consulta todas as fontes para hoje e repete a coleta exata para ontem. Nos TRF1–TRF6, o sistema baixa o caderno diário completo e compactado do DJEN/CNJ, lê todos os JSONs e só então filtra as decisões tributárias. STJ, STF, CARF, Receita Federal, Cosit, PGFN, Confaz, Câmara, Senado, SPED, NF-e e as fontes de notícias seguem a mesma janela de hoje e ontem pelos respectivos conectores oficiais; quando uma página não informa a data, o sistema não inventa uma data histórica.
 
 O fluxo é:
 

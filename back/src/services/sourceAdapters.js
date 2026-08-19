@@ -1,6 +1,7 @@
-import { discoverOfficialLinks, discoverStfJurisprudence } from './collector.js';
+import { discoverDjenCaderno, discoverOfficialLinks, discoverStfJurisprudence } from './collector.js';
 import { sectionIdsForSource } from '../data/sections.js';
 import { publicationDateKey } from './feedWindow.js';
+import { packCandidateText } from './candidateText.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
@@ -218,10 +219,6 @@ async function discoverStj(_source, _lookbackDays, targetDate = null) {
 
 const DJEN_API = 'https://comunicaapi.pje.jus.br/api/v1/comunicacao';
 const DJEN_DECISION_PATTERN = /ac[oó]rd[aã]o|decis[aã]o|senten[cç]a|julgamento|voto|liminar|tutela/i;
-const DJEN_PAGE_SIZE = 100;
-let djenRequestQueue = Promise.resolve();
-let djenLastRequestAt = 0;
-let djenBlockedUntil = 0;
 
 export function isDjenDecision(item = {}) {
   return DJEN_DECISION_PATTERN.test(`${item.tipoDocumento || ''} ${item.tipoComunicacao || ''}`);
@@ -253,58 +250,16 @@ export function mapDjenDecisions(payload, source, targetDate) {
       documentKind: `Decisão judicial publicada no DJEN (${kind})`,
       externalId,
       fingerprintKey: `djen:${externalId}`,
-      inlineText: officialText,
+      ...packCandidateText(officialText),
       inlineParser: 'API oficial do DJEN/CNJ',
     }];
   });
 }
 
-async function fetchDjenPage(source, targetDate, page, pageSize) {
-  const params = new URLSearchParams({
-    siglaTribunal: source.acronym,
-    texto: 'tributario',
-    dataDisponibilizacaoInicio: targetDate,
-    dataDisponibilizacaoFim: targetDate,
-    itensPorPagina: String(pageSize),
-    pagina: String(page),
-    meio: 'D',
-  });
-  const url = `${DJEN_API}?${params}`;
-  const request = djenRequestQueue.then(async () => {
-    for (let attempt = 0; attempt < 2; attempt += 1) {
-      const pause = Math.max(0, 3200 - (Date.now() - djenLastRequestAt), djenBlockedUntil - Date.now());
-      if (pause) await new Promise((resolve) => setTimeout(resolve, pause));
-      const response = await fetch(url, {
-        headers: { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' },
-        signal: AbortSignal.timeout(30000),
-      });
-      djenLastRequestAt = Date.now();
-      const remaining = Number(response.headers.get('x-ratelimit-remaining'));
-      if (Number.isFinite(remaining) && remaining <= 0) djenBlockedUntil = Date.now() + 65000;
-      if (response.ok) return response.json();
-      if ([403, 429].includes(response.status) && attempt === 0) {
-        djenBlockedUntil = Date.now() + 65000;
-        continue;
-      }
-      throw new Error(`Fonte respondeu com status ${response.status}.`);
-    }
-    throw new Error('Limite temporário da API do DJEN excedido.');
-  });
-  djenRequestQueue = request.catch(() => undefined);
-  return request;
-}
-
 async function discoverDjen(source, targetDate = null) {
   const publicationDate = targetDate || publicationDateKey(new Date());
-  const firstPage = await fetchDjenPage(source, publicationDate, 1, DJEN_PAGE_SIZE);
-  const count = Math.max(0, Number(firstPage.count) || 0);
-  if (!count) return [];
-  const pageCount = Math.ceil(count / DJEN_PAGE_SIZE);
-  const remainingPages = await Promise.all(Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) => (
-    fetchDjenPage(source, publicationDate, index + 2, DJEN_PAGE_SIZE)
-  )));
-  const items = [firstPage, ...remainingPages].flatMap((payload) => payload.items || []);
-  return mapDjenDecisions({ items }, source, publicationDate);
+  const payload = await discoverDjenCaderno(source.acronym, publicationDate);
+  return mapDjenDecisions(payload, source, publicationDate);
 }
 
 async function discoverTrf(source, targetDate = null) {

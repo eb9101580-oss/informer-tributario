@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { candidateFingerprint, candidateId, normalizeMonitorTargetDate } from '../src/services/monitor.js';
 import { hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isTaxRelated, mapDjenDecisions, mapStjDailyDecisions, normalizeSearchText, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate } from '../src/services/sourceAdapters.js';
+import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
 test('filtro tributário ignora acentos e identifica tributos', () => {
   assert.equal(normalizeSearchText('Execução e Contribuição'), 'execucao e contribuicao');
@@ -91,4 +92,13 @@ test('DJEN conserva somente decisões tributárias da data e gera certidão ofic
   assert.equal(items[0].inlineParser, 'API oficial do DJEN/CNJ');
   assert.equal(isDjenDecision(payload.items[0]), true);
   assert.equal(isDjenDecision(payload.items[1]), false);
+});
+
+test('texto integral grande da decisão é compactado sem perda para a fila', () => {
+  const original = 'Decisão sobre crédito tributário de ICMS. '.repeat(1000);
+  const packed = packCandidateText(original);
+  assert.equal(packed.inlineText, undefined);
+  assert.equal(hasCandidateText(packed), true);
+  assert.equal(unpackCandidateText(packed), original);
+  assert.ok(packed.inlineTextGzip.length < original.length / 5);
 });

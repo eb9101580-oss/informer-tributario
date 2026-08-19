@@ -7,6 +7,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const scriptPath = resolve(here, '../../scraper/collector.py');
 const discoveryScriptPath = resolve(here, '../../scraper/discover.py');
 const stfJurisprudenceScriptPath = resolve(here, '../../scraper/stf_jurisprudence.py');
+const djenCadernoScriptPath = resolve(here, '../../scraper/djen_caderno.py');
 
 const allowedDomains = [
   'stf.jus.br', 'stj.jus.br', 'gov.br', 'receita.economia.gov.br', 'pgfn.gov.br',
@@ -81,6 +82,10 @@ export function discoverOfficialLinks(url) {
 
 export function discoverStfJurisprudence(targetDate = '', lookbackDays = 7) {
   return runPython(stfJurisprudenceScriptPath, [targetDate || '', String(lookbackDays)], 150000, 'A pesquisa de jurisprudência do STF excedeu 150 segundos.');
+}
+
+export function discoverDjenCaderno(tribunal, targetDate) {
+  return runPython(djenCadernoScriptPath, [tribunal, targetDate], 240000, 'A leitura do caderno completo do DJEN excedeu 240 segundos.');
 }
 
 export const officialDomains = allowedDomains;

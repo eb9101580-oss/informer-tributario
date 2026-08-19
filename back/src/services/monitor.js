@@ -8,6 +8,7 @@ import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isTa
 import { readDatabase, updateDatabase } from './store.js';
 import { sectionIdsForSource } from '../data/sections.js';
 import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
+import { hasCandidateText, unpackCandidateText } from './candidateText.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -57,7 +58,7 @@ function makeAlert(analysis, document, candidate) {
     publishedAt: candidate.publishedAt || document.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: now, updatedAt: now,
     provenance: {
-      collector: candidate.inlineText ? (candidate.inlineParser || 'Consulta oficial estruturada') : 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
+      collector: hasCandidateText(candidate) ? (candidate.inlineParser || 'Consulta oficial estruturada') : 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
       sourceId: candidate.sourceId, sourceName: candidate.sourceName, discoveredBy: candidate.discoveryMethod,
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
@@ -158,7 +159,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.filter((item) => {
         if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
-        if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !item.inlineText && !item.publishedAt) return false;
+        if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !hasCandidateText(item) && !item.publishedAt) return false;
         if (['pending', 'error'].includes(item.status) && !item.backfillDate && !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return false;
         const fingerprint = candidateFingerprint(item);
         if (['pending', 'error'].includes(item.status) && (publishedFingerprints.has(fingerprint) || pendingFingerprints.has(fingerprint))) return false;
@@ -179,7 +180,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       run.discovered = additions.length;
       const sourceRank = (item) => ['stf', 'stj', 'stj-informativos', 'stf-informativos', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'diario-oficial', 'pgfn-pareceres'].includes(item.sourceId) ? 1 : 2;
       additions.sort((left, right) => sourceRank(left) - sourceRank(right));
-      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 5000) } };
+      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) } };
     });
 
     if (analyze && config.monitorMaxAnalyses > 0) {
@@ -214,7 +215,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
         });
       const reserved = [];
       const reservedIds = new Set();
-      const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId) && candidate.inlineText
+      const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId) && hasCandidateText(candidate)
         && /inteiro teor|acórdão|decisão/i.test(candidate.documentKind))
         || prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão/i.test(candidate.documentKind));
       if (judicialCandidate) {
@@ -238,8 +239,9 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
         runtime.currentDocument = candidate.title;
         try {
           await updateDatabase((data) => ({ ...data, monitor: { ...monitorData(data), candidates: monitorData(data).candidates.map((item) => item.id === candidate.id ? { ...item, status: 'analyzing', attempts: item.attempts + 1 } : item) } }));
-          const collected = candidate.inlineText
-            ? { url: candidate.url, title: candidate.title, text: candidate.inlineText, characters: candidate.inlineText.length, contentType: 'text/plain', publishedAt: candidate.publishedAt, parser: candidate.inlineParser || 'Consulta oficial estruturada' }
+          const inlineText = unpackCandidateText(candidate);
+          const collected = inlineText
+            ? { url: candidate.url, title: candidate.title, text: inlineText, characters: inlineText.length, contentType: 'text/plain', publishedAt: candidate.publishedAt, parser: candidate.inlineParser || 'Consulta oficial estruturada' }
             : await collectOfficialPage(candidate.collectionUrl || candidate.url);
           const document = {
             ...collected,
