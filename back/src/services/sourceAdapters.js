@@ -33,6 +33,7 @@ export function isCandidateEligible(sourceId, title, url) {
   if (sourceId === 'confaz-ajustes') return /\/ajustes\/\d{4}\/[^/]+/i.test(url) && /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(title);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
   if (['reforma-cgibs', 'reforma-portal', 'reforma-folha', 'reforma-valor'].includes(sourceId)) {
+    if (/\/assinatura(?:\/|$)|\/assine(?:\/|$)|\/login(?:\/|$)|paywall|newsletter/i.test(url)) return false;
     return /reforma|ibs|cbs|imposto seletivo|documento fiscal|nota t[eé]cnica|regulamenta|tribut/i.test(`${title} ${url}`);
   }
   if (sourceId === 'sped-notas-tecnicas') return /manual|manu[aá]i|leiaute|layout|nota t[eé]cnica|orienta|vers[aã]o|tabela|atualiz|ecd|ecf|efd|reinf|esocial|financeira|dere/i.test(`${title} ${url}`);
