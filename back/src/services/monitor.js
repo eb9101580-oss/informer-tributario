@@ -7,6 +7,7 @@ import { calculateScore, relevanceLabel } from './scoring.js';
 import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isTaxRelated } from './sourceAdapters.js';
 import { readDatabase, updateDatabase } from './store.js';
 import { sectionIdsForSource } from '../data/sections.js';
+import { isPublishedWithinDays } from './feedWindow.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -27,9 +28,10 @@ export function candidateFingerprint(candidate) {
 function makeAlert(analysis, document, candidate) {
   const score = calculateScore(analysis.criteria);
   const now = new Date().toISOString();
+  const analyzedPublishedAt = Number.isNaN(Date.parse(analysis.publishedAt)) ? null : analysis.publishedAt;
   return {
     ...analysis, id: randomUUID(), score, relevance: relevanceLabel(score), officialUrl: candidate.url,
-    publishedAt: candidate.publishedAt || (Number.isNaN(Date.parse(analysis.publishedAt)) ? now : analysis.publishedAt),
+    publishedAt: candidate.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: now, updatedAt: now,
     provenance: {
       collector: 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
@@ -132,6 +134,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.filter((item) => {
         if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
+        if (['pending', 'error'].includes(item.status) && !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return false;
         const fingerprint = candidateFingerprint(item);
         if (['pending', 'error'].includes(item.status) && (publishedFingerprints.has(fingerprint) || pendingFingerprints.has(fingerprint))) return false;
         if (['pending', 'error'].includes(item.status)) pendingFingerprints.add(fingerprint);
@@ -140,6 +143,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
       const known = new Set([...retained.map((item) => item.id), ...database.alerts.map((item) => candidateId(item.officialUrl || item.id))]);
       const knownFingerprints = new Set(retained.map(candidateFingerprint));
       const additions = found.flatMap((item) => {
+        if (!isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return [];
         const id = candidateId(item.url);
         const fingerprint = candidateFingerprint(item);
         if (known.has(id) || knownFingerprints.has(fingerprint)) return [];
@@ -211,7 +215,8 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
           if (document.characters < 200) throw new Error('Documento sem texto suficiente.');
           const analysis = await analyzeWithOllama(document);
           const alert = makeAlert(analysis, document, candidate);
-          const publish = analysis.relevant && alert.score >= 6;
+          const publish = analysis.relevant && alert.score >= 6
+            && isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays);
           await updateDatabase((data) => ({
             ...data,
             alerts: publish ? [alert, ...data.alerts] : data.alerts,

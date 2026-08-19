@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { readDatabase } from '../services/store.js';
 import { monitoredSources } from '../data/officialSources.js';
 import { readTrackedActions } from '../services/trackedActions.js';
+import { isCurrentFeedItem } from '../services/feedWindow.js';
 
 export const dashboardRouter = Router();
 
@@ -18,7 +19,8 @@ dashboardRouter.get('/', async (_request, response, next) => {
     const relevant = [...database.alerts, ...movementAlerts].filter((alert) => alert.isDemo === false
       && alert.score >= 6
       && /^https:\/\//i.test(alert.officialUrl || '')
-      && Boolean(alert.provenance?.sourceId));
+      && Boolean(alert.provenance?.sourceId)
+      && isCurrentFeedItem(alert));
     const urgent = relevant.filter((alert) => alert.score >= 8);
     const opportunities = relevant.filter((alert) => ['Oportunidade', 'Ambos'].includes(alert.impactType));
 

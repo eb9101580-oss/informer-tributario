@@ -2,6 +2,7 @@ import { readDatabase } from '../src/services/store.js';
 import { config } from '../src/config.js';
 import { emailConfigured, sendEmail } from '../src/services/email.js';
 import { markAlertsNotified, readSubscriptions } from '../src/services/subscriptions.js';
+import { isCurrentFeedItem } from '../src/services/feedWindow.js';
 
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[character]));
@@ -21,6 +22,7 @@ if (!subscriptions.subscribers.length) {
 const notified = new Set(subscriptions.notifiedAlertIds);
 const candidates = database.alerts
   .filter((alert) => alert.isDemo === false && alert.score >= config.emailThreshold && /^https:\/\//i.test(alert.officialUrl || ''))
+  .filter(isCurrentFeedItem)
   .filter((alert) => !notified.has(alert.id));
 const sentIds = [];
 

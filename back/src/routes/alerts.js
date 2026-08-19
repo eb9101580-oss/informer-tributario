@@ -4,6 +4,7 @@ import { readDatabase, updateDatabase } from '../services/store.js';
 import { calculateScore, relevanceLabel } from '../services/scoring.js';
 import { readTrackedActions } from '../services/trackedActions.js';
 import { sectionIdsForSource } from '../data/sections.js';
+import { isCurrentFeedItem } from '../services/feedWindow.js';
 
 export const alertsRouter = Router();
 
@@ -40,12 +41,13 @@ async function allAlerts(database) {
 
 alertsRouter.get('/', async (request, response, next) => {
   try {
-    const { search = '', relevance = 'all', status = 'all', kind = 'all' } = request.query;
+    const { search = '', relevance = 'all', status = 'all', kind = 'all', period = 'current' } = request.query;
     const database = await readDatabase();
     const all = await allAlerts(database);
     const term = search.toLocaleLowerCase('pt-BR').trim();
     const alerts = all
       .filter(isOfficialRelevantAlert)
+      .filter((alert) => period === 'all' || isCurrentFeedItem(alert))
       .filter((alert) => !term || [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])]
         .join(' ').toLocaleLowerCase('pt-BR').includes(term))
       .filter((alert) => relevance === 'all' || alert.relevance === relevance)
