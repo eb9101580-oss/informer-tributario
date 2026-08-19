@@ -12,6 +12,7 @@ import { OpportunityCard } from './components/OpportunityCard.jsx';
 import { CollectorPage } from './components/CollectorPage.jsx';
 import { SourcesPage } from './components/SourcesPage.jsx';
 import { MonitorPage } from './components/MonitorPage.jsx';
+import { PublicBlog } from './components/PublicBlog.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -33,6 +34,7 @@ function ErrorState({ message, onRetry }) {
 }
 
 export default function App() {
+  if (window.location.pathname === '/' || window.location.pathname === '/blog') return <PublicBlog />;
   const [activePage, setActivePage] = useState('overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [dashboard, setDashboard] = useState(null);
