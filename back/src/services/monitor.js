@@ -151,7 +151,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
     if (analyze && config.monitorMaxAnalyses > 0) {
       runtime.phase = 'analysis';
       const database = await readDatabase();
-      const queue = monitorData(database).candidates
+      const prioritizedQueue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || (item.status === 'error' && item.attempts < 3))
         .sort((left, right) => {
           const leftOperational = operationalUpdateRank(left);
@@ -173,7 +173,14 @@ export async function runMonitor({ analyze = true, trigger = 'manual' } = {}) {
           const rightDirect = isTaxRelated(right.title) ? 0 : 1;
           if (leftDirect !== rightDirect) return leftDirect - rightDirect;
           return String(right.publishedAt || right.discoveredAt).localeCompare(String(left.publishedAt || left.discoveredAt));
-        })
+        });
+      // Reserva vagas para Obrigações acessórias para que Reforma não monopolize a fila.
+      const obligationSlots = Math.min(2, config.monitorMaxAnalyses);
+      const reservedObligations = prioritizedQueue
+        .filter((item) => candidateSections(item).includes('obrigacoes'))
+        .slice(0, obligationSlots);
+      const reservedIds = new Set(reservedObligations.map((item) => item.id));
+      const queue = [...reservedObligations, ...prioritizedQueue.filter((item) => !reservedIds.has(item.id))]
         .slice(0, config.monitorMaxAnalyses);
       for (const candidate of queue) {
         runtime.currentSource = candidate.sourceAcronym;
