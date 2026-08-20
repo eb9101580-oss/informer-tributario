@@ -1,9 +1,190 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T02:00:31.922Z",
+    "lastUpdatedAt": "2026-08-20T02:55:36.716Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Rcl 98322 — RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se",
+      "theme": "Inviabilidade de reclamação para contestar paralisação de processo nas instânci",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "COFINS",
+        "Repercussão Geral"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF determinou que não cabe reclamação para contestar a paralisação de processo nas instâncias ordinárias para aguardar a fixação de tese na Repercussão Geral. A decisão reforça que admitir o contrário seria convolver a Reclamação em mero substitutivo recursal, conforme precedentes do STF.",
+      "whatChanged": "A decisão monocrática do STF confirma que não é viável a reclamação para contestar a paralisação de processo nas instâncias ordinárias com objetivo de aguardar a fixação de tese na Repercussão Geral.",
+      "practicalImpact": "Empresas e advogados devem evitar a utilização de reclamações para contestar a paralisação de processos nas instâncias ordinárias, já que isso pode ser considerado um substitutivo recursal inválido.",
+      "officeAction": "O STF não permite que reclamações sejam utilizadas para contestar a paralisação de processos nas instâncias ordinárias, sob o rito da Repercussão Geral.",
+      "affectedProfiles": [
+        "Empresas tributárias",
+        "Advogados especializados em direito tributário",
+        "Jurisprudência do STF",
+        "Processos de Repercussão Geral",
+        "Reclamações em tribunais"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 3,
+        "reach": 8,
+        "clientFit": 6,
+        "actionPotential": 5
+      },
+      "opportunity": {
+        "title": "Inviabilidade de reclamação para contestar paralisação de processo nas instâncias ordinárias",
+        "period": "2023-10-18",
+        "action": "Evitar a utilização de reclamações para contestar a paralisação de processos nas instâncias ordinárias sob o rito da Repercussão Geral",
+        "confidence": "médio"
+      },
+      "id": "d343977b-585a-44df-8b88-8054bda13fd2",
+      "score": 6.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T02:55:36.710Z",
+      "updatedAt": "2026-08-20T02:55:36.710Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
+        "sourceCharacters": 1207,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T02:45:43.667Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617497 — DECISÃO: Recurso extraordinário com agravo contra inadmissão do RE, com fundamento na alínea 'a' do permissivo constitucional",
+      "theme": "Incidence of ITCD in the transmission of social shares of a company located in巴西",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ITCD",
+        "Imposto sobre Transmissão de C"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-18",
+      "summary": "O STF decidiu sobre recurso extraordinário com agravo contra inadmissão do RE, com fundamento na alínea 'a' do permissivo constitucional. O recurso apontava violação dos arts. 146, I e III, 'a'; 150, I, e 155, §1º, III, 'b' da CF. O acórdão recorrido tratava da incidência do ITCD na transmissão de cotas sociais de empresa situada no Brasil, destacando que a cobrança do ITCD não está condicionada à prévia existência de lei complementar quando o doador ou o de cujos possuía bens situados no Brasil.",
+      "whatChanged": "O STF confirmou que a cobrança do ITCD não está condicionada à prévia existência de lei complementar para transmissão de cotas sociais de empresas situadas no Brasil, desde que o doador ou o de cujos possua bens no território nacional.",
+      "practicalImpact": "Empresas que realizam transmissão de cotas sociais de empresas no Brasil podem cobrar o ITCD sem necessidade de lei complementar, desde que o doador ou o de cujos possua bens no território nacional.",
+      "officeAction": "O recurso extraordinário foi negado com base na análise da incidência do ITCD na transmissão de cotas sociais de empresas situadas no Brasil, sem necessidade de lei complementar.",
+      "affectedProfiles": [
+        "Empresas brasileiras com transmissão de cotas sociais",
+        "Doadores de empresas no Brasil",
+        "De cujos com bens no Brasil",
+        "Empresas com transmissão de cotas sociais internacionais",
+        "Empresas com transmissão de bens no Brasil"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Oportunidade para cobrança do ITCD sem lei complementar na transmissão de cotas sociais de empresas no Brasil",
+        "period": "Imediato",
+        "action": "Empresas devem verificar se a transmissão de cotas sociais está sujeita ao ITCD sem necessidade de lei complementar, conforme decisão do STF",
+        "confidence": "alto"
+      },
+      "id": "2c061e1a-4f73-4f5d-ba61-e7e8e3da26e9",
+      "score": 7.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T02:54:17.111Z",
+      "updatedAt": "2026-08-20T02:54:17.111Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
+        "sourceCharacters": 1203,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T02:45:43.667Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1589234 — engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: 'Para simples reexame de prova não cabe复发",
+      "theme": "Recurso extraordinário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Sonegação fiscal",
+        "Crimes tributários",
+        "Lei 8.137/1990"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-18",
+      "summary": "A decisão do STF confirma que o recurso extraordinário não pode ser revisto por esta Corte em face da Súmula 279, que estabelece que 'para simples reexame de prova não cabe recurso extraordinário'. A decisão rejeita a pretensão dos recorrentes que sustentam a atipicidade da conduta, indicando que a análise probatória dos autos é descabida.",
+      "whatChanged": "A Súmula 279 do STF foi aplicada para rejeitar o recurso extraordinário, estabelecendo que a simples reexame de prova não é cabível para esse tipo de recurso.",
+      "practicalImpact": "Empresas que possuem processos tributários em andamento devem evitar a interposição de recursos extraordinários com base em reexame de prova, já que a decisão do STF rejeita tal possibilidade.",
+      "officeAction": "A decisão do STF rejeita o recurso extraordinário por não se adequar à Súmula 279, que proíbe o recurso extraordinário para simples reexame de prova.",
+      "affectedProfiles": [
+        "Empresas com processos tributários",
+        "Advogados especializados em tributação",
+        "Jurisprudência do STF",
+        "Processos de sonegação fiscal",
+        "Crimes tributários"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Recurso extraordinário em processos tributários",
+        "period": "2023-10-18",
+        "action": "Evitar interposição de recursos extraordinários com base em reexame de prova",
+        "confidence": "alto"
+      },
+      "id": "89daee03-b3a1-49ca-8690-22b2d615a705",
+      "score": 7.5,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T02:52:43.849Z",
+      "updatedAt": "2026-08-20T02:52:43.849Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
+        "sourceCharacters": 1205,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T02:45:43.667Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1613825 AgR — rendimentos pagos, a qualquer título, por eles, suas autarquias e pelas fundações que instituírem e mantiverem",
@@ -2388,64 +2569,127 @@
   "monitor": {
     "candidates": [
       {
-        "title": "ARE 1589234 — engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: “Para simples reexame de prova não cabe recurso extraordinário”. Deveras, a pretensão dos recorrentes, que sustentam a atipicidade da con",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1589234&classe=ARE",
+        "title": "RE 1613206 ED — EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810370/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613206&classe=RE",
         "publishedAt": "2026-08-18",
         "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810301",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
-        "inlineText": "engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: “Para simples reexame de prova não cabe recurso extraordinário”. Deveras, a pretensão dos recorrentes, que sustentam a atipicidade da conduta, não se amolda à estreita via do apelo extremo, cujo conteúdo se restringe à discussão eminentemente de direito, mostrando-se, por tal razão, descabida a pretendida análise probatória dos autos. Nesse sentido, aliás é a jurisprudência desta Corte: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁIO COM AGRAVO. PENAL E PROCESSUAL PENAL. CRIME TRIBUTÁRIO . ALEGADA VIOLAÇÃO AO ARTIGO 102, III, DA CONSTITUIÇÃO FEDERAL. DECISÃO DE ADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO. APLICAÇÃO DE PRECEDENTE DESTA CORTE PROFERIDO NA SISTEMÁTICA DA REPERCUSSÃO GERAL (TEMA 181). INTERPOSIÇÃO DE AGRAVO. DESCABIMENTO. AGRAVO NÃO CONHECIDO NESSA PARTE. CRIME DE SONEGAÇÃO FISCAL. ARTIGO 2º, INCISO II, DA LEI 8.137/1990. ALEGADA ATIPICIDADE DA CONDUTA. OFENSA REFLEXA. NECESSIDADE DE REVOLVIMENTO DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. IMPOSSIBILIDADE. SÚMULA 279 DO STF. AGRAVO INTERNO DESPROVIDO. I. Caso em exame 1. Agravo interno interposto em face de decisão",
+        "externalId": "despacho1810370",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810370/false",
+        "inlineText": "EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO NÃO ALINHADO COM A JURISPRUDÊNCIA DESTA SUPREMA CORTE. MANUTENÇÃO DA DECISÃO EMBARGADA. OMISSÃO, CONTRADIÇÃO, OBSCURIDADE E ERRO MATERIAL. INEXISTÊNCIA. EMBARGOS REJEITADOS. 1. O recurso de embargos de declaração não é meio adequado para a rediscussão da matéria em decorrência de inconformismo do embargante. 2. No caso, não foram observados os requisitos próprios do recurso (art. 1.022, I, II e III, do CPC), uma vez que inexiste omissão, contradição, obscuridade ou erro material na decisão embargada. 3. Embargos de declaração rejeitados. DECISÃO: Trata-se de embargos de declaração opostos de decisão monocrática pela qual foi negado seguimento ao recurso extraordinário. Em suas razões recursais, a embargante sustenta a existência de omissões e contradição no decisum. Afirma que a decisão embargada teria desconsiderado o direito à compensação administrativa de indébito tributário reconhecido nas instâncias de origem (com apoio",
         "sourceId": "stf",
         "sourceName": "Supremo Tribunal Federal",
         "sourceAcronym": "STF",
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
-        "id": "1bc698f91c433f137e261317",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "c3ae7972f2eda53c95f73481",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
       },
       {
-        "title": "ARE 1617497 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: APELAÇÃO CÍVEL. DIREITO",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617497&classe=ARE",
+        "title": "RE 1617108 — fático-probatória, das cláusulas contratuais e da legislação infraconstitucional aplicável ao processo (Código Tributário Nacional). A alegada contrariedade à Constituição da República, se tivesse ocorrido, seria indireta, a inviabilizar o processamento do rec",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810335/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617108&classe=RE",
         "publishedAt": "2026-08-18",
         "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810567",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
-        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: APELAÇÃO CÍVEL. DIREITO TRIBUTÁRIO . IMPOSTOS. ITCD. MANDADO DE SEGURANÇA. INCIDÊNCIA DO ITCD NA TRANSMISSÃO DE COTAS SOCIAIS DE EMPRESA SITUADA EM TERRITÓRIO NACIONAL. POSSIBILIDADE. DESNECESSIDADE DE PRÉVIA EXISTÊNCIA DE LEI COMPLEMENTAR. A COBRANÇA DO ITCD ESTÁ CONDICIONADA À PRÉVIA EXISTÊNCIA DE LEGISLAÇÃO COMPLEMENTAR APENAS NAS HIPÓTESES EM QUE O DOADOR TIVER DOMICÍLIO OU RESIDÊNCIA NO EXTERIOR OU SE O DE CUJUS POSSUÍA BENS, ERA RESIDENTE OU DOMICILIADO OU TEVE SEU INVENTÁRIO PROCESSADO NO EXTERIOR. A AUSÊNCIA DE LEI COMPLEMENTAR NÃO ESTÁ A IMPEDIR A EXIGÊNCIA DO TRIBUTO SUB JUDICE, VISTO QUE SE TRATA DE TRANSMISSÃO DE BENS SITUADOS NO BRASIL. APELAÇÃO DESPROVIDA. Opostos os embargos de declaração, foram rejeitados. No recurso extraordinário sustenta-se violação do(s) art.(s) 146, I e III, “a”; 150, I, e 155, §1º, III, “b”, da Constituição Federal. Decido. Analisados os autos, verifica-se que, para ultrapassar o entendimento do Tribunal de origem",
+        "externalId": "despacho1810335",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810335/false",
+        "inlineText": "fático-probatória, das cláusulas contratuais e da legislação infraconstitucional aplicável ao processo (Código Tributário Nacional). A alegada contrariedade à Constituição da República, se tivesse ocorrido, seria indireta, a inviabilizar o processamento do recurso extraordinário. Incidem na espécie as Súmulas ns. 279 e 454 do Supremo Tribunal Federal. Assim, por exemplo: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. CONSTITUCIONAL E TRIBUTÁRIO . IMPOSTO DE TRANSMISSÃO DE BENS IMÓVEIS – ITBI. APLICABILIDADE ATÉ O LIMITE DO CAPITAL SOCIAL A SER INTEGRALIZADO: TEMA 796 DA REPERCUSSÃO GERAL. IMUNIDADE. REQUISITOS. ATIVIDADE PREPONDERANTE. IMPOSSIBILIDADE DE ANÁLISE DA LEGISLAÇÃO INFRACONSTITUCIONAL E DE REEXAME DO CONJUNTO FÁTICO-PROBATÓRIO: SÚMULA N. 279 DO SUPREMO TRIBUNAL FEDERAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. AGRAVO REGIMENTAL DESPROVIDO COM APLICAÇÃO DE MULTA DE 1% SOBRE O VALOR ATUALIZADO DA CAUSA, SE UNÂNIME A VOTAÇÃO” (ARE n. 1.440.478-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 24.8.2023). “Agravo regimental em recurso extraordinário com agravo. Tributário . ITBI. Imunidade tributária. Integralização do capital social. Empresa sem atividade econômica produtiva",
         "sourceId": "stf",
         "sourceName": "Supremo Tribunal Federal",
         "sourceAcronym": "STF",
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
-        "id": "61716aa5626f058729a7ad2f",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "3fdf6d5326eee10d430b758a",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
       },
       {
-        "title": "Rcl 98322 — RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se aguardar a fixação de tese a ser estabelecida pelo STF sob o rito da Repercussão Geral. 2. ",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=98322&classe=Rcl",
+        "title": "ARE 1617179 — 238-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 13.3.2012). “RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . EMBARGOS À EXECUÇÃO FISCAL. ICMS. CDA. REGULARIDADE. CRÉDITO FISCAL E VERBAS ACESSÓRIAS. AUTO DE INFRAÇÃO. COMPOSIÇÃO DE TRIBUNAL ADMINI",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810294/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617179&classe=ARE",
         "publishedAt": "2026-08-18",
         "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810152",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
-        "inlineText": "RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se aguardar a fixação de tese a ser estabelecida pelo STF sob o rito da Repercussão Geral. 2. Admitir o contrário seria convolar a Reclamação em mero substitutivo recursal. (Rcl 4.381-AgR, Rel. Min. CELSO DE MELLO, Tribunal Pleno, DJe de 5/8/2011). 3. Agravo Interno ao qual se nega provimento.” (Rcl 27.372-AgR, Rel. Min. Alexandre de Moraes, Primeira Turma, DJe de 16/10/2018 - grifei). “AGRAVO REGIMENTAL EM RECLAMAÇÃO. DIREITO TRIBUTÁRIO . COFINS. SOCIEDADES CIVIS. USURPAÇÃO DE COMPETÊNCIA. SOBRESTAMENTO DE RECURSO. SISTEMÁTICA DA REPERCUSSÃO GERAL. 1. É inviável o ajuizamento de reclamação em face de ato do Tribunal de origem que determina o sobrestamento de recurso com base em paradigma da sistemática da repercussão geral. Precedentes. CPC/73 e CPC/15. 2. Não se consideram esgotadas as instâncias ordinárias antes da realização do juízo positivo ou negativo de admissão do apelo extremo pelo Tribunal de origem em relação aos requisitos processuais, cuja resultante é a subida dos autos ao STF ou a possibilidade de interposição",
+        "externalId": "despacho1810294",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810294/false",
+        "inlineText": "238-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 13.3.2012). “RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . EMBARGOS À EXECUÇÃO FISCAL. ICMS. CDA. REGULARIDADE. CRÉDITO FISCAL E VERBAS ACESSÓRIAS. AUTO DE INFRAÇÃO. COMPOSIÇÃO DE TRIBUNAL ADMINISTRATIVO E FISCAL. VIOLAÇÃO AOS PRINCÍPIOS DA AMPLA DEFESA, DO CONTRADITÓRIO E DO DEVIDO PROCESSO LEGAL NO PROCEDIMENTO ADMINISTRATIVO. REEXAME DE FATOS E PROVAS. SÚMULA 279 DO STF. NECESSIDADE DE ANÁLISE DE LEGISLAÇÃO INFRACONSTITUCIONAL E LOCAL. REVOLVIMENTO DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. INCIDÊNCIA DAS SÚMULAS 279 E 280. EMPREGO DA TAXA SELIC PARA FINS TRIBUTÁRIOS . MATÉRIA SUBMETIDA AO REGIME DA REPERCUSSÃO GERAL. TEMA 214. RE 582.461. AGRAVO INTERPOSTO SOB A ÉGIDE DO NOVO CÓDIGO DE PROCESSO CIVIL. MAJORAÇÃO DOS HONORÁRIOS DE SUCUMBÊNCIA. ARTIGO 85, § 11, DO CPC/2015. AGRAVO DESPROVIDO” (ARE n. 1.196.837, Relator o Ministro Luiz Fux, decisão monocrática transitada em julgado, DJe 2.5.2019). 9. O Tribunal de origem assim decidiu sobre a exclusão do excesso de juros de mora incidente sobre o débito tributário : “Finalmente, não comporta conhecimento o recurso quanto ao excesso de juros de mora incidentes sobre o débito",
         "sourceId": "stf",
         "sourceName": "Supremo Tribunal Federal",
         "sourceAcronym": "STF",
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
-        "id": "6b24e5a5f87a529f7df35c28",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "08cdd9d745caf361b67e4c8e",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1612359 — Alagoas, assim ementado: “EMENTA: DIREITO TRIBUTÁRIO . APELAÇÕES CÍVEIS EM MANDADO DE SEGURANÇA. SENTENÇA QUE CONCEDEU A SEGURANÇA, PARA DECLARAR A INEXIGIBILIDADE DO DIFAL E DO FECOEP ATÉ A PUBLICAÇÃO DA LC 190/2022. (I) RECURSO DO ESTADO DE ALAGOAS. PEDIDO D",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810305/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612359&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810305",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810305/false",
+        "inlineText": "Alagoas, assim ementado: “EMENTA: DIREITO TRIBUTÁRIO . APELAÇÕES CÍVEIS EM MANDADO DE SEGURANÇA. SENTENÇA QUE CONCEDEU A SEGURANÇA, PARA DECLARAR A INEXIGIBILIDADE DO DIFAL E DO FECOEP ATÉ A PUBLICAÇÃO DA LC 190/2022. (I) RECURSO DO ESTADO DE ALAGOAS. PEDIDO DE ATRIBUIÇÃO DE EFEITO SUSPENSIVO AO RECURSO. NÃO CONHECIMENTO. INOBSERVÂNCIA AO DISPOSTO NO ART. 1.012, § 3º, DO CÓDIGO DE PROCESSO CIVIL. NÃO CONHECIMENTO DA TESE RELATIVA AO FECOEP POR AUSÊNCIA DE DIALETICIDADE. FUNDAMENTO DA PRETENSÃO RECURSAL INTEGRALMENTE DISSOCIADO DAS RAZÕES DE DECIDIR. MÉRITO. TESES DE APLICAÇÃO DA MODULAÇÃO DE EFEITOS E DE IMPOSSIBILIDADE DE O MANDADO DE SEGURANÇA GERAR EFEITOS PATRIMONIAIS PRETÉRITOS. NÃO ACOLHIDAS. MODULAÇÃO DE EFEITOS DO TEMA 1093 QUE NÃO ALCANÇAM AS AÇÕES PROPOSTAS ANTERIORMENTE AO MARCO TEMPORAL FIXADO NO JULGAMENTO DO RE 1.287.019/DF E DA ADI 546, OU SEJA, AQUELAS AJUIZADAS ANTES DE 24/2/2021. IMPETRAÇÃO OCORRIDA EM 19/11/2020. JURISPRUDÊNCIA DO STJ FIRMADA NO SENTIDO DE QUE A POSSIBILIDADE DE COMPENSAÇÃO TRIBUTÁRIA NÃO OFENDE O ENUNCIADO SUMULAR 271 DO STF. (II) APELAÇÃO DA IMPETRANTE. COMPENSAÇÃO ADMINISTRATIVA DOS CRÉDITOS TRIBUTÁRIOS RECOLHIDOS A MAIOR NO QUINQUÊNIO QUE ANTECEDE",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "f42e94d36f34a62c38cfc407",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "RE 1608972 — Ementa: Direito tributário . Recurso extraordinário. Taxa de Limpeza Pública. Serviços específicos e divisíveis. Constitucionalidade. Questionamentos referentes à natureza dos serviços. Enunciados nº 279 e nº 280 da Súmula do STF. Recurso a que se nega seguime",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810379/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1608972&classe=RE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810379",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810379/false",
+        "inlineText": "Ementa: Direito tributário . Recurso extraordinário. Taxa de Limpeza Pública. Serviços específicos e divisíveis. Constitucionalidade. Questionamentos referentes à natureza dos serviços. Enunciados nº 279 e nº 280 da Súmula do STF. Recurso a que se nega seguimento. I. Caso em exame 1. Recurso extraordinário interposto contra acórdão do Tribunal Regional Federal da 1ª Região, que julgou improcedentes os embargos à execução fiscal relativos à cobrança da Taxa de Limpeza Pública (TLP), instituída pela Lei distrital nº 6.945, de 1981, com as modificações da Lei distrital nº 2.853, de 2001. 2. A parte recorrente questiona a constitucionalidade da taxa, à luz dos critérios de especificidade e divisibilidade exigidos pelo art. 145, inc. II, da Constituição da República, alegando que a Lei nº 6.945, de 1981, em seu art. 2º, parágrafo único, al. “b”, incluía a limpeza de vias e logradouros públicos como fato gerador, o que violaria o enunciado nº 19 da Súmula Vinculante. 3. A sentença de 1º Grau rejeitou a tese de inconstitucionalidade, mantendo a cobrança da taxa. O Tribunal Regional Federal da 1ª Região negou provimento à apelação, confirmando a constitucionalidade da TLP após a alteração legislativa",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "e67f69b99e632635a2082df7",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1612647 — decisão assim ementada: “RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . PERSEGUIDA COMPENSAÇÃO DE DÉBITO FISCAL COM PRECATÓRIO. ARTIGO 78, § 2º, DA ADCT. SUPERVENIENTE DECLARAÇÃO DE INCONSTITUCIONALIDADE DO DISPOSITIVO APONTADO COMO VIOLADO. ADI 2.356/DF E ADI 2.362/DF.",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810415/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612647&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810415",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810415/false",
+        "inlineText": "decisão assim ementada: “RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . PERSEGUIDA COMPENSAÇÃO DE DÉBITO FISCAL COM PRECATÓRIO. ARTIGO 78, § 2º, DA ADCT. SUPERVENIENTE DECLARAÇÃO DE INCONSTITUCIONALIDADE DO DISPOSITIVO APONTADO COMO VIOLADO. ADI 2.356/DF E ADI 2.362/DF. TEMA 111 DO STF. RECURSO PREJUDICADO, NO PONTO. ARTIGO 100 DA CF. OFENSA REFLEXA. RECURSO NÃO ADMITIDO, QUANTO À QUESTÃO REMANESCENTE.” (e-doc. 44). 6. No agravo, a parte recorrente impugna os fundamentos da decisão recorrida, bem como renova os argumentos apresentados quando da interposição do RE (e-doc. 48). É o relatório. Decido. 7. A jurisprudência desta Corte firmou-se no sentido de que a questão referente à possibilidade de compensação de débitos tributários com precatórios devidos por ente jurídico de natureza distinta possui natureza infraconstitucional. Desse modo, eventual ofensa à Constituição da República se daria de forma meramente reflexa, o que inviabiliza o recurso extraordinário. Nesse sentido, menciono as seguintes decisões, entre outras: “EMENTA: DIREITO TRIBUTÁRIO E FINANCEIRO. PRECATÓRIO. ICMS. COMPENSAÇÃO. PRECATÓRIO DEVIDO PELO IPERGS. CRÉDITO TRIBUTÁRIO DO ESTADO DO RIO GRANDE DO SUL. AUSÊNCIA DE QUESTÃO",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "b2c21bc247543343ad3f0afa",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -2465,8 +2709,29 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "f75ff59ad714411f10ac4e61",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1617512 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . MA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810572/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617512&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810572",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810572/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. PERSE. ANTECIPAÇÃO DO ENCERRAMENTO DO BENEFÍCIO FISCAL. PRINCÍPIOS DA ANTERIORIDADE E NÃOSURPRESA. APELAÇÃO DESPROVIDA. 1. O Programa Emergencial de Retomada do Setor de Eventos (PERSE) e o Programa de Garantia aos Setores Críticos (PGSC) foram instituídos pela Lei n.º 14.148/2021, que estabelece ações emergenciais e temporárias destinadas ao setor de eventos para compensar os efeitos decorrentes das medidas de combate à pandemia da Covid-19. 2. . A Lei nº 14.859/2024 alterou a Lei nº 14.148/2021, que instituiu o PERSE, ao incluir o art. 4º-A, que estabeleceu um limite de custo fiscal para o benefício, permitindo sua extinção antecipada ao atingir esse valor, o que afasta a alegação de irrevogabilidade absoluta do benefício fiscal. 3. A revogação do benefício fiscal do PERSE, com base em limite de custo fiscal previamente estabelecido em lei e comunicado ao contribuinte, não viola os princípios da segurança",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "15a9f5877c8d1a327a9089c1",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -2486,7 +2751,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -2507,8 +2772,29 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "6899546bd55aa851ba80c388",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "RE 1615371 — DESPACHO: Vistos. João Francisco da Silveira Neto interpõe recurso extraordinário manejado em face de acórdão proferido pela 2ª Câmara de Direito Público do Tribunal de Justiça do Estado do Piauí, assim ementado: “ TRIBUTÁRIO . APELAÇÃO. EMBARGOS À EXECUÇÃO FI",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810403/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615371&classe=RE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810403",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810403/false",
+        "inlineText": "DESPACHO: Vistos. João Francisco da Silveira Neto interpõe recurso extraordinário manejado em face de acórdão proferido pela 2ª Câmara de Direito Público do Tribunal de Justiça do Estado do Piauí, assim ementado: “ TRIBUTÁRIO . APELAÇÃO. EMBARGOS À EXECUÇÃO FISCAL. DESISTÊNCIA DO EMBARGANTE. PRINCÍPIO DA CAUSALIDADE. HONORÁRIOS ADVOCATÍCIOS. CRITÉRIOS QUALITATIVOS (CPC, ART. 85, § 2º, I A IV). PRINCÍPIO DA PROPORCIONALIDADE E RAZOABILIDADE (CPC, ART. 85, § 8º). SENTENÇA MANTIDA. 1. O Apelante sustenta que a Fazenda Estadual impugnou os embargos à execução fiscal por ele proposto, alegando que a execução foi intentada exclusivamente em face da empresa Telemar Norte Leste S/A, e que não houve pretensão dirigida aos sócios, já que não integram o polo passivo da execução. 1.1. Em razão disso, por concordar com as alegações do Apelado, requereu a desistência do feito e que a sua condenação em honorários advocatícios fosse arbitrada de acordo com o princípio da causalidade, nos termos do art. 85, § 8º do CPC. 1.2. No entanto, a sentença fixou dos honorários advocatícios com base no art. 85, § 2º, I, III e IV, e § 3º, I, do CPC, observando-se o escalonamento previsto no § 5º do referido disposto",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "e962bafdc5270b3477d36904",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -2528,8 +2814,50 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "5449b2622c0048278fad17bb",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1613374 — DECISÃO RECURSO EXTRAORDINÁRIO INTERPOSTO PELA UNIÃO. TRIBUTÁRIO . REGIME ESPECIAL DE REINTEGRAÇÃO DE VALORES TRIBUTÁRIOS PARA AS EMPRESAS EXPORTADORAS – REINTEGRA. ANÁLISE DA NATUREZA JURÍDICA DO BENEFÍCIO FISCAL E DA ATIVIDADE DA EMPRESA: INTERPRETAÇÃO DA LE",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810320/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613374&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810320",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810320/false",
+        "inlineText": "DECISÃO RECURSO EXTRAORDINÁRIO INTERPOSTO PELA UNIÃO. TRIBUTÁRIO . REGIME ESPECIAL DE REINTEGRAÇÃO DE VALORES TRIBUTÁRIOS PARA AS EMPRESAS EXPORTADORAS – REINTEGRA. ANÁLISE DA NATUREZA JURÍDICA DO BENEFÍCIO FISCAL E DA ATIVIDADE DA EMPRESA: INTERPRETAÇÃO DA LEGISLAÇÃO INFRACONSTITUCIONAL. SÚMULA N. 279 DO SUPREMO TRIBUNAL FEDERAL. INEXISTÊNCIA DE CONTRARIEDADE AO ART. 97 DA CONSTITUIÇÃO DA REPÚBLICA E À SÚMULA VINCULANTE N. 10. OBSERVÂNCIA EXCLUSIVA DO PRINCÍPIO DA ANTERIORIDADE NONAGESIMAL. JULGADO RECORRIDO DIVERGENTE DA JURISPRUDÊNCIA DESTE SUPREMO TRIBUNAL. TEMA 1.108. RECURSO EXTRAORDINÁRIO PARCIALMENTE PROVIDO. RECURSO EXTRAORDINÁRIO COM AGRAVO INTERPOSTO POR ESTALEIRO ATLÂNTICO SUL S/A. TRIBUTÁRIO . EXIGÊNCIA DE REGULARIDADE FISCAL PARA FRUIÇÃO DO BENEFÍCIO. NECESSIDADE DE REEXAME DA LEGISLAÇÃO INFRACONSTITUCIONAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. RECURSO EXTRAORDINÁRIO COM AGRAVO NÃO CONHECIDO. Relatório 1. Agravo nos autos principais contra inadmissão de recurso extraordinário interposto pela empresa contribuinte e recurso extraordinário interposto pela União, ambos com base na al. a do inc. III do art. 102 da Constituição da República, contra o seguinte julgado da LEG-FED LEI-005172 ANO-1966 ART-00111 ART-70-A CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "1c15ba9bc52cfba17cda989d",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "RE 1612101 — origem reformou o julgado, nos termos da seguinte ementa: “ TRIBUTÁRIO RECURSO EXTRAORDINÁRIO. REPERCUSSÃO GERAL. TEMA 962. CORREÇÃO MONETÁRIA E JUROS MORATÓRIOS (SELIC) RECEBIDOS EM VIRTUDE DE DEVOLUÇÃO DE DEPÓSITOS JUDICIAIS, RESTITUIÇÃO OU COMPENSAÇÃO DE IN",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810333/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612101&classe=RE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810333",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810333/false",
+        "inlineText": "origem reformou o julgado, nos termos da seguinte ementa: “ TRIBUTÁRIO RECURSO EXTRAORDINÁRIO. REPERCUSSÃO GERAL. TEMA 962. CORREÇÃO MONETÁRIA E JUROS MORATÓRIOS (SELIC) RECEBIDOS EM VIRTUDE DE DEVOLUÇÃO DE DEPÓSITOS JUDICIAIS, RESTITUIÇÃO OU COMPENSAÇÃO DE INDÉBITO TRIBUTÁRIO . EXCLUSÃO DA BASE DE CÁLCULO DO IMPOSTO SOBRE A RENDA DE PESSOA JURÍDICA (IRPJ) E CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO (CSLL). JUÍZO DE RETRATAÇÃO EXERCIDO. 1. Os autos retornaram em razão de decisão da Presidência deste egrégio Tribunal Regional Federal da 5ª Região, que determinou a remessa dos autos a este órgão julgador originário para, se assim entender, realizar o juízo de retratação (art. 1.040, II, do CPC), em face da tese jurídica firmada pelo Supremo Tribunal Federal, no julgamento do Tema 962, que tratou da inconstitucionalidade a incidência do IRPJ e da CSLL sobre os valores atinentes à taxa Selic recebidos em razão de repetição de indébito tributário . 2. Em julgamento anterior, esta Primeira Turma adotou o entendimento até então dominante, no sentido de que os valores recebidos a título de taxa SELIC, na repetição de indébito tributário (artigo 174, do CTN), não escapam à tributação pelo IRPJ LEG-FED LEI-005172 ANO-1966 ART-00043 INC-00002 PAR-00001 ART-00174 CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
+        "id": "1b51458bb8f9b21a9f67f4f6",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -2549,7 +2877,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
@@ -2570,7 +2898,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
@@ -2591,11 +2919,102 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:03:24.242Z",
+        "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "Reforma Decisões da Justiça Federal afastam CBS sobre ‘cards’ colecionáveis 18/08/2026 05h03 — Em Legislação",
+        "url": "https://valor.globo.com/legislacao/noticia/2026/08/18/decisoes-da-justica-federal-afastam-cbs-sobre-cards-colecionaveis.ghtml",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-20T03:00:51.872Z",
+        "id": "e8668f9e3bd27442b2ba222e",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1589234 — engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: “Para simples reexame de prova não cabe recurso extraordinário”. Deveras, a pretensão dos recorrentes, que sustentam a atipicidade da con",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1589234&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810301",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810301/false",
+        "inlineText": "engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: “Para simples reexame de prova não cabe recurso extraordinário”. Deveras, a pretensão dos recorrentes, que sustentam a atipicidade da conduta, não se amolda à estreita via do apelo extremo, cujo conteúdo se restringe à discussão eminentemente de direito, mostrando-se, por tal razão, descabida a pretendida análise probatória dos autos. Nesse sentido, aliás é a jurisprudência desta Corte: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁIO COM AGRAVO. PENAL E PROCESSUAL PENAL. CRIME TRIBUTÁRIO . ALEGADA VIOLAÇÃO AO ARTIGO 102, III, DA CONSTITUIÇÃO FEDERAL. DECISÃO DE ADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO. APLICAÇÃO DE PRECEDENTE DESTA CORTE PROFERIDO NA SISTEMÁTICA DA REPERCUSSÃO GERAL (TEMA 181). INTERPOSIÇÃO DE AGRAVO. DESCABIMENTO. AGRAVO NÃO CONHECIDO NESSA PARTE. CRIME DE SONEGAÇÃO FISCAL. ARTIGO 2º, INCISO II, DA LEI 8.137/1990. ALEGADA ATIPICIDADE DA CONDUTA. OFENSA REFLEXA. NECESSIDADE DE REVOLVIMENTO DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. IMPOSSIBILIDADE. SÚMULA 279 DO STF. AGRAVO INTERNO DESPROVIDO. I. Caso em exame 1. Agravo interno interposto em face de decisão",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:45:43.667Z",
+        "id": "1bc698f91c433f137e261317",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T02:52:43.854Z",
+        "score": 7.5,
+        "alertId": "89daee03-b3a1-49ca-8690-22b2d615a705"
+      },
+      {
+        "title": "ARE 1617497 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: APELAÇÃO CÍVEL. DIREITO",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617497&classe=ARE",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810567",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810567/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: APELAÇÃO CÍVEL. DIREITO TRIBUTÁRIO . IMPOSTOS. ITCD. MANDADO DE SEGURANÇA. INCIDÊNCIA DO ITCD NA TRANSMISSÃO DE COTAS SOCIAIS DE EMPRESA SITUADA EM TERRITÓRIO NACIONAL. POSSIBILIDADE. DESNECESSIDADE DE PRÉVIA EXISTÊNCIA DE LEI COMPLEMENTAR. A COBRANÇA DO ITCD ESTÁ CONDICIONADA À PRÉVIA EXISTÊNCIA DE LEGISLAÇÃO COMPLEMENTAR APENAS NAS HIPÓTESES EM QUE O DOADOR TIVER DOMICÍLIO OU RESIDÊNCIA NO EXTERIOR OU SE O DE CUJUS POSSUÍA BENS, ERA RESIDENTE OU DOMICILIADO OU TEVE SEU INVENTÁRIO PROCESSADO NO EXTERIOR. A AUSÊNCIA DE LEI COMPLEMENTAR NÃO ESTÁ A IMPEDIR A EXIGÊNCIA DO TRIBUTO SUB JUDICE, VISTO QUE SE TRATA DE TRANSMISSÃO DE BENS SITUADOS NO BRASIL. APELAÇÃO DESPROVIDA. Opostos os embargos de declaração, foram rejeitados. No recurso extraordinário sustenta-se violação do(s) art.(s) 146, I e III, “a”; 150, I, e 155, §1º, III, “b”, da Constituição Federal. Decido. Analisados os autos, verifica-se que, para ultrapassar o entendimento do Tribunal de origem",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:45:43.667Z",
+        "id": "61716aa5626f058729a7ad2f",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T02:54:17.116Z",
+        "score": 7.7,
+        "alertId": "2c061e1a-4f73-4f5d-ba61-e7e8e3da26e9"
+      },
+      {
+        "title": "Rcl 98322 — RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se aguardar a fixação de tese a ser estabelecida pelo STF sob o rito da Repercussão Geral. 2. ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=98322&classe=Rcl",
+        "publishedAt": "2026-08-18",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810152",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810152/false",
+        "inlineText": "RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se aguardar a fixação de tese a ser estabelecida pelo STF sob o rito da Repercussão Geral. 2. Admitir o contrário seria convolar a Reclamação em mero substitutivo recursal. (Rcl 4.381-AgR, Rel. Min. CELSO DE MELLO, Tribunal Pleno, DJe de 5/8/2011). 3. Agravo Interno ao qual se nega provimento.” (Rcl 27.372-AgR, Rel. Min. Alexandre de Moraes, Primeira Turma, DJe de 16/10/2018 - grifei). “AGRAVO REGIMENTAL EM RECLAMAÇÃO. DIREITO TRIBUTÁRIO . COFINS. SOCIEDADES CIVIS. USURPAÇÃO DE COMPETÊNCIA. SOBRESTAMENTO DE RECURSO. SISTEMÁTICA DA REPERCUSSÃO GERAL. 1. É inviável o ajuizamento de reclamação em face de ato do Tribunal de origem que determina o sobrestamento de recurso com base em paradigma da sistemática da repercussão geral. Precedentes. CPC/73 e CPC/15. 2. Não se consideram esgotadas as instâncias ordinárias antes da realização do juízo positivo ou negativo de admissão do apelo extremo pelo Tribunal de origem em relação aos requisitos processuais, cuja resultante é a subida dos autos ao STF ou a possibilidade de interposição",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T02:45:43.667Z",
+        "id": "6b24e5a5f87a529f7df35c28",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T02:55:36.716Z",
+        "score": 6.1,
+        "alertId": "d343977b-585a-44df-8b88-8054bda13fd2"
       },
       {
         "title": "ARE 1616752 — DECISÃO: Trata-se de agravo contra decisão que inadmitiu recurso extraordinário, interposto com fundamento no art. 102, III, “a”, da Constituição Federal, contra acórdão da 3ª Turma do Tribunal Regional Federal da 3ª Região, assim ementado (e-doc. 85): “ TRIBU",
@@ -3664,132 +4083,6 @@
         "backfillDate": null
       },
       {
-        "title": "RE 1613206 ED — EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO ",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810370/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613206&classe=RE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810370",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810370/false",
-        "inlineText": "EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO NÃO ALINHADO COM A JURISPRUDÊNCIA DESTA SUPREMA CORTE. MANUTENÇÃO DA DECISÃO EMBARGADA. OMISSÃO, CONTRADIÇÃO, OBSCURIDADE E ERRO MATERIAL. INEXISTÊNCIA. EMBARGOS REJEITADOS. 1. O recurso de embargos de declaração não é meio adequado para a rediscussão da matéria em decorrência de inconformismo do embargante. 2. No caso, não foram observados os requisitos próprios do recurso (art. 1.022, I, II e III, do CPC), uma vez que inexiste omissão, contradição, obscuridade ou erro material na decisão embargada. 3. Embargos de declaração rejeitados. DECISÃO: Trata-se de embargos de declaração opostos de decisão monocrática pela qual foi negado seguimento ao recurso extraordinário. Em suas razões recursais, a embargante sustenta a existência de omissões e contradição no decisum. Afirma que a decisão embargada teria desconsiderado o direito à compensação administrativa de indébito tributário reconhecido nas instâncias de origem (com apoio",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "c3ae7972f2eda53c95f73481",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "RE 1617108 — fático-probatória, das cláusulas contratuais e da legislação infraconstitucional aplicável ao processo (Código Tributário Nacional). A alegada contrariedade à Constituição da República, se tivesse ocorrido, seria indireta, a inviabilizar o processamento do rec",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810335/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617108&classe=RE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810335",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810335/false",
-        "inlineText": "fático-probatória, das cláusulas contratuais e da legislação infraconstitucional aplicável ao processo (Código Tributário Nacional). A alegada contrariedade à Constituição da República, se tivesse ocorrido, seria indireta, a inviabilizar o processamento do recurso extraordinário. Incidem na espécie as Súmulas ns. 279 e 454 do Supremo Tribunal Federal. Assim, por exemplo: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. CONSTITUCIONAL E TRIBUTÁRIO . IMPOSTO DE TRANSMISSÃO DE BENS IMÓVEIS – ITBI. APLICABILIDADE ATÉ O LIMITE DO CAPITAL SOCIAL A SER INTEGRALIZADO: TEMA 796 DA REPERCUSSÃO GERAL. IMUNIDADE. REQUISITOS. ATIVIDADE PREPONDERANTE. IMPOSSIBILIDADE DE ANÁLISE DA LEGISLAÇÃO INFRACONSTITUCIONAL E DE REEXAME DO CONJUNTO FÁTICO-PROBATÓRIO: SÚMULA N. 279 DO SUPREMO TRIBUNAL FEDERAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. AGRAVO REGIMENTAL DESPROVIDO COM APLICAÇÃO DE MULTA DE 1% SOBRE O VALOR ATUALIZADO DA CAUSA, SE UNÂNIME A VOTAÇÃO” (ARE n. 1.440.478-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 24.8.2023). “Agravo regimental em recurso extraordinário com agravo. Tributário . ITBI. Imunidade tributária. Integralização do capital social. Empresa sem atividade econômica produtiva",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "3fdf6d5326eee10d430b758a",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "ARE 1617179 — 238-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 13.3.2012). “RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . EMBARGOS À EXECUÇÃO FISCAL. ICMS. CDA. REGULARIDADE. CRÉDITO FISCAL E VERBAS ACESSÓRIAS. AUTO DE INFRAÇÃO. COMPOSIÇÃO DE TRIBUNAL ADMINI",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810294/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617179&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810294",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810294/false",
-        "inlineText": "238-AgR, Relatora a Ministra Cármen Lúcia, Primeira Turma, DJe 13.3.2012). “RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . EMBARGOS À EXECUÇÃO FISCAL. ICMS. CDA. REGULARIDADE. CRÉDITO FISCAL E VERBAS ACESSÓRIAS. AUTO DE INFRAÇÃO. COMPOSIÇÃO DE TRIBUNAL ADMINISTRATIVO E FISCAL. VIOLAÇÃO AOS PRINCÍPIOS DA AMPLA DEFESA, DO CONTRADITÓRIO E DO DEVIDO PROCESSO LEGAL NO PROCEDIMENTO ADMINISTRATIVO. REEXAME DE FATOS E PROVAS. SÚMULA 279 DO STF. NECESSIDADE DE ANÁLISE DE LEGISLAÇÃO INFRACONSTITUCIONAL E LOCAL. REVOLVIMENTO DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. INCIDÊNCIA DAS SÚMULAS 279 E 280. EMPREGO DA TAXA SELIC PARA FINS TRIBUTÁRIOS . MATÉRIA SUBMETIDA AO REGIME DA REPERCUSSÃO GERAL. TEMA 214. RE 582.461. AGRAVO INTERPOSTO SOB A ÉGIDE DO NOVO CÓDIGO DE PROCESSO CIVIL. MAJORAÇÃO DOS HONORÁRIOS DE SUCUMBÊNCIA. ARTIGO 85, § 11, DO CPC/2015. AGRAVO DESPROVIDO” (ARE n. 1.196.837, Relator o Ministro Luiz Fux, decisão monocrática transitada em julgado, DJe 2.5.2019). 9. O Tribunal de origem assim decidiu sobre a exclusão do excesso de juros de mora incidente sobre o débito tributário : “Finalmente, não comporta conhecimento o recurso quanto ao excesso de juros de mora incidentes sobre o débito",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "08cdd9d745caf361b67e4c8e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "ARE 1612359 — Alagoas, assim ementado: “EMENTA: DIREITO TRIBUTÁRIO . APELAÇÕES CÍVEIS EM MANDADO DE SEGURANÇA. SENTENÇA QUE CONCEDEU A SEGURANÇA, PARA DECLARAR A INEXIGIBILIDADE DO DIFAL E DO FECOEP ATÉ A PUBLICAÇÃO DA LC 190/2022. (I) RECURSO DO ESTADO DE ALAGOAS. PEDIDO D",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810305/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612359&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810305",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810305/false",
-        "inlineText": "Alagoas, assim ementado: “EMENTA: DIREITO TRIBUTÁRIO . APELAÇÕES CÍVEIS EM MANDADO DE SEGURANÇA. SENTENÇA QUE CONCEDEU A SEGURANÇA, PARA DECLARAR A INEXIGIBILIDADE DO DIFAL E DO FECOEP ATÉ A PUBLICAÇÃO DA LC 190/2022. (I) RECURSO DO ESTADO DE ALAGOAS. PEDIDO DE ATRIBUIÇÃO DE EFEITO SUSPENSIVO AO RECURSO. NÃO CONHECIMENTO. INOBSERVÂNCIA AO DISPOSTO NO ART. 1.012, § 3º, DO CÓDIGO DE PROCESSO CIVIL. NÃO CONHECIMENTO DA TESE RELATIVA AO FECOEP POR AUSÊNCIA DE DIALETICIDADE. FUNDAMENTO DA PRETENSÃO RECURSAL INTEGRALMENTE DISSOCIADO DAS RAZÕES DE DECIDIR. MÉRITO. TESES DE APLICAÇÃO DA MODULAÇÃO DE EFEITOS E DE IMPOSSIBILIDADE DE O MANDADO DE SEGURANÇA GERAR EFEITOS PATRIMONIAIS PRETÉRITOS. NÃO ACOLHIDAS. MODULAÇÃO DE EFEITOS DO TEMA 1093 QUE NÃO ALCANÇAM AS AÇÕES PROPOSTAS ANTERIORMENTE AO MARCO TEMPORAL FIXADO NO JULGAMENTO DO RE 1.287.019/DF E DA ADI 546, OU SEJA, AQUELAS AJUIZADAS ANTES DE 24/2/2021. IMPETRAÇÃO OCORRIDA EM 19/11/2020. JURISPRUDÊNCIA DO STJ FIRMADA NO SENTIDO DE QUE A POSSIBILIDADE DE COMPENSAÇÃO TRIBUTÁRIA NÃO OFENDE O ENUNCIADO SUMULAR 271 DO STF. (II) APELAÇÃO DA IMPETRANTE. COMPENSAÇÃO ADMINISTRATIVA DOS CRÉDITOS TRIBUTÁRIOS RECOLHIDOS A MAIOR NO QUINQUÊNIO QUE ANTECEDE",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "f42e94d36f34a62c38cfc407",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "RE 1608972 — Ementa: Direito tributário . Recurso extraordinário. Taxa de Limpeza Pública. Serviços específicos e divisíveis. Constitucionalidade. Questionamentos referentes à natureza dos serviços. Enunciados nº 279 e nº 280 da Súmula do STF. Recurso a que se nega seguime",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810379/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1608972&classe=RE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810379",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810379/false",
-        "inlineText": "Ementa: Direito tributário . Recurso extraordinário. Taxa de Limpeza Pública. Serviços específicos e divisíveis. Constitucionalidade. Questionamentos referentes à natureza dos serviços. Enunciados nº 279 e nº 280 da Súmula do STF. Recurso a que se nega seguimento. I. Caso em exame 1. Recurso extraordinário interposto contra acórdão do Tribunal Regional Federal da 1ª Região, que julgou improcedentes os embargos à execução fiscal relativos à cobrança da Taxa de Limpeza Pública (TLP), instituída pela Lei distrital nº 6.945, de 1981, com as modificações da Lei distrital nº 2.853, de 2001. 2. A parte recorrente questiona a constitucionalidade da taxa, à luz dos critérios de especificidade e divisibilidade exigidos pelo art. 145, inc. II, da Constituição da República, alegando que a Lei nº 6.945, de 1981, em seu art. 2º, parágrafo único, al. “b”, incluía a limpeza de vias e logradouros públicos como fato gerador, o que violaria o enunciado nº 19 da Súmula Vinculante. 3. A sentença de 1º Grau rejeitou a tese de inconstitucionalidade, mantendo a cobrança da taxa. O Tribunal Regional Federal da 1ª Região negou provimento à apelação, confirmando a constitucionalidade da TLP após a alteração legislativa",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "e67f69b99e632635a2082df7",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "ARE 1612647 — decisão assim ementada: “RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . PERSEGUIDA COMPENSAÇÃO DE DÉBITO FISCAL COM PRECATÓRIO. ARTIGO 78, § 2º, DA ADCT. SUPERVENIENTE DECLARAÇÃO DE INCONSTITUCIONALIDADE DO DISPOSITIVO APONTADO COMO VIOLADO. ADI 2.356/DF E ADI 2.362/DF.",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810415/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612647&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810415",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810415/false",
-        "inlineText": "decisão assim ementada: “RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . PERSEGUIDA COMPENSAÇÃO DE DÉBITO FISCAL COM PRECATÓRIO. ARTIGO 78, § 2º, DA ADCT. SUPERVENIENTE DECLARAÇÃO DE INCONSTITUCIONALIDADE DO DISPOSITIVO APONTADO COMO VIOLADO. ADI 2.356/DF E ADI 2.362/DF. TEMA 111 DO STF. RECURSO PREJUDICADO, NO PONTO. ARTIGO 100 DA CF. OFENSA REFLEXA. RECURSO NÃO ADMITIDO, QUANTO À QUESTÃO REMANESCENTE.” (e-doc. 44). 6. No agravo, a parte recorrente impugna os fundamentos da decisão recorrida, bem como renova os argumentos apresentados quando da interposição do RE (e-doc. 48). É o relatório. Decido. 7. A jurisprudência desta Corte firmou-se no sentido de que a questão referente à possibilidade de compensação de débitos tributários com precatórios devidos por ente jurídico de natureza distinta possui natureza infraconstitucional. Desse modo, eventual ofensa à Constituição da República se daria de forma meramente reflexa, o que inviabiliza o recurso extraordinário. Nesse sentido, menciono as seguintes decisões, entre outras: “EMENTA: DIREITO TRIBUTÁRIO E FINANCEIRO. PRECATÓRIO. ICMS. COMPENSAÇÃO. PRECATÓRIO DEVIDO PELO IPERGS. CRÉDITO TRIBUTÁRIO DO ESTADO DO RIO GRANDE DO SUL. AUSÊNCIA DE QUESTÃO",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "b2c21bc247543343ad3f0afa",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
         "title": "ARE 1616587 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . MANDADO DE",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810725/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1616587&classe=ARE",
@@ -3949,48 +4242,6 @@
         "alertId": "225d0562-b3c9-4b38-80cb-e68d27aec55b"
       },
       {
-        "title": "ARE 1617512 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . MA",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810572/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617512&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810572",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810572/false",
-        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. PERSE. ANTECIPAÇÃO DO ENCERRAMENTO DO BENEFÍCIO FISCAL. PRINCÍPIOS DA ANTERIORIDADE E NÃOSURPRESA. APELAÇÃO DESPROVIDA. 1. O Programa Emergencial de Retomada do Setor de Eventos (PERSE) e o Programa de Garantia aos Setores Críticos (PGSC) foram instituídos pela Lei n.º 14.148/2021, que estabelece ações emergenciais e temporárias destinadas ao setor de eventos para compensar os efeitos decorrentes das medidas de combate à pandemia da Covid-19. 2. . A Lei nº 14.859/2024 alterou a Lei nº 14.148/2021, que instituiu o PERSE, ao incluir o art. 4º-A, que estabeleceu um limite de custo fiscal para o benefício, permitindo sua extinção antecipada ao atingir esse valor, o que afasta a alegação de irrevogabilidade absoluta do benefício fiscal. 3. A revogação do benefício fiscal do PERSE, com base em limite de custo fiscal previamente estabelecido em lei e comunicado ao contribuinte, não viola os princípios da segurança",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "15a9f5877c8d1a327a9089c1",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "RE 1615371 — DESPACHO: Vistos. João Francisco da Silveira Neto interpõe recurso extraordinário manejado em face de acórdão proferido pela 2ª Câmara de Direito Público do Tribunal de Justiça do Estado do Piauí, assim ementado: “ TRIBUTÁRIO . APELAÇÃO. EMBARGOS À EXECUÇÃO FI",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810403/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615371&classe=RE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810403",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810403/false",
-        "inlineText": "DESPACHO: Vistos. João Francisco da Silveira Neto interpõe recurso extraordinário manejado em face de acórdão proferido pela 2ª Câmara de Direito Público do Tribunal de Justiça do Estado do Piauí, assim ementado: “ TRIBUTÁRIO . APELAÇÃO. EMBARGOS À EXECUÇÃO FISCAL. DESISTÊNCIA DO EMBARGANTE. PRINCÍPIO DA CAUSALIDADE. HONORÁRIOS ADVOCATÍCIOS. CRITÉRIOS QUALITATIVOS (CPC, ART. 85, § 2º, I A IV). PRINCÍPIO DA PROPORCIONALIDADE E RAZOABILIDADE (CPC, ART. 85, § 8º). SENTENÇA MANTIDA. 1. O Apelante sustenta que a Fazenda Estadual impugnou os embargos à execução fiscal por ele proposto, alegando que a execução foi intentada exclusivamente em face da empresa Telemar Norte Leste S/A, e que não houve pretensão dirigida aos sócios, já que não integram o polo passivo da execução. 1.1. Em razão disso, por concordar com as alegações do Apelado, requereu a desistência do feito e que a sua condenação em honorários advocatícios fosse arbitrada de acordo com o princípio da causalidade, nos termos do art. 85, § 8º do CPC. 1.2. No entanto, a sentença fixou dos honorários advocatícios com base no art. 85, § 2º, I, III e IV, e § 3º, I, do CPC, observando-se o escalonamento previsto no § 5º do referido disposto",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "e962bafdc5270b3477d36904",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
         "title": "ARE 1555073 — Ementa: Direito Tributário . Recurso Extraordinário com Agravo. ICMS. Crédito. Ativo permanente. Operações de exportação. Limitação temporal. Lei complementar. Recurso não provido. I. Caso em exame 1. Recurso extraordinário com agravo interposto contra acórdão",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810015/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1555073&classe=ARE",
@@ -4013,48 +4264,6 @@
         "analyzedAt": "2026-08-19T20:46:16.305Z",
         "score": 7.6,
         "alertId": "058a035c-95d6-445c-ab39-94c069ffdac5"
-      },
-      {
-        "title": "ARE 1613374 — DECISÃO RECURSO EXTRAORDINÁRIO INTERPOSTO PELA UNIÃO. TRIBUTÁRIO . REGIME ESPECIAL DE REINTEGRAÇÃO DE VALORES TRIBUTÁRIOS PARA AS EMPRESAS EXPORTADORAS – REINTEGRA. ANÁLISE DA NATUREZA JURÍDICA DO BENEFÍCIO FISCAL E DA ATIVIDADE DA EMPRESA: INTERPRETAÇÃO DA LE",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810320/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613374&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810320",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810320/false",
-        "inlineText": "DECISÃO RECURSO EXTRAORDINÁRIO INTERPOSTO PELA UNIÃO. TRIBUTÁRIO . REGIME ESPECIAL DE REINTEGRAÇÃO DE VALORES TRIBUTÁRIOS PARA AS EMPRESAS EXPORTADORAS – REINTEGRA. ANÁLISE DA NATUREZA JURÍDICA DO BENEFÍCIO FISCAL E DA ATIVIDADE DA EMPRESA: INTERPRETAÇÃO DA LEGISLAÇÃO INFRACONSTITUCIONAL. SÚMULA N. 279 DO SUPREMO TRIBUNAL FEDERAL. INEXISTÊNCIA DE CONTRARIEDADE AO ART. 97 DA CONSTITUIÇÃO DA REPÚBLICA E À SÚMULA VINCULANTE N. 10. OBSERVÂNCIA EXCLUSIVA DO PRINCÍPIO DA ANTERIORIDADE NONAGESIMAL. JULGADO RECORRIDO DIVERGENTE DA JURISPRUDÊNCIA DESTE SUPREMO TRIBUNAL. TEMA 1.108. RECURSO EXTRAORDINÁRIO PARCIALMENTE PROVIDO. RECURSO EXTRAORDINÁRIO COM AGRAVO INTERPOSTO POR ESTALEIRO ATLÂNTICO SUL S/A. TRIBUTÁRIO . EXIGÊNCIA DE REGULARIDADE FISCAL PARA FRUIÇÃO DO BENEFÍCIO. NECESSIDADE DE REEXAME DA LEGISLAÇÃO INFRACONSTITUCIONAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. RECURSO EXTRAORDINÁRIO COM AGRAVO NÃO CONHECIDO. Relatório 1. Agravo nos autos principais contra inadmissão de recurso extraordinário interposto pela empresa contribuinte e recurso extraordinário interposto pela União, ambos com base na al. a do inc. III do art. 102 da Constituição da República, contra o seguinte julgado da LEG-FED LEI-005172 ANO-1966 ART-00111 ART-70-A CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "1c15ba9bc52cfba17cda989d",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
-      },
-      {
-        "title": "RE 1612101 — origem reformou o julgado, nos termos da seguinte ementa: “ TRIBUTÁRIO RECURSO EXTRAORDINÁRIO. REPERCUSSÃO GERAL. TEMA 962. CORREÇÃO MONETÁRIA E JUROS MORATÓRIOS (SELIC) RECEBIDOS EM VIRTUDE DE DEVOLUÇÃO DE DEPÓSITOS JUDICIAIS, RESTITUIÇÃO OU COMPENSAÇÃO DE IN",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810333/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612101&classe=RE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810333",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810333/false",
-        "inlineText": "origem reformou o julgado, nos termos da seguinte ementa: “ TRIBUTÁRIO RECURSO EXTRAORDINÁRIO. REPERCUSSÃO GERAL. TEMA 962. CORREÇÃO MONETÁRIA E JUROS MORATÓRIOS (SELIC) RECEBIDOS EM VIRTUDE DE DEVOLUÇÃO DE DEPÓSITOS JUDICIAIS, RESTITUIÇÃO OU COMPENSAÇÃO DE INDÉBITO TRIBUTÁRIO . EXCLUSÃO DA BASE DE CÁLCULO DO IMPOSTO SOBRE A RENDA DE PESSOA JURÍDICA (IRPJ) E CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO (CSLL). JUÍZO DE RETRATAÇÃO EXERCIDO. 1. Os autos retornaram em razão de decisão da Presidência deste egrégio Tribunal Regional Federal da 5ª Região, que determinou a remessa dos autos a este órgão julgador originário para, se assim entender, realizar o juízo de retratação (art. 1.040, II, do CPC), em face da tese jurídica firmada pelo Supremo Tribunal Federal, no julgamento do Tema 962, que tratou da inconstitucionalidade a incidência do IRPJ e da CSLL sobre os valores atinentes à taxa Selic recebidos em razão de repetição de indébito tributário . 2. Em julgamento anterior, esta Primeira Turma adotou o entendimento até então dominante, no sentido de que os valores recebidos a título de taxa SELIC, na repetição de indébito tributário (artigo 174, do CTN), não escapam à tributação pelo IRPJ LEG-FED LEI-005172 ANO-1966 ART-00043 INC-00002 PAR-00001 ART-00174 CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T20:18:41.383Z",
-        "id": "1b51458bb8f9b21a9f67f4f6",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
       },
       {
         "title": "ARE 1617500 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
@@ -4479,24 +4688,6 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T18:28:22.714Z",
         "id": "a83d4dad173b876db856e801",
-        "status": "pending",
-        "attempts": 0
-      },
-      {
-        "title": "Reforma Decisões da Justiça Federal afastam CBS sobre ‘cards’ colecionáveis 18/08/2026 05h03 — Em Legislação",
-        "url": "https://valor.globo.com/legislacao/noticia/2026/08/18/decisoes-da-justica-federal-afastam-cbs-sobre-cards-colecionaveis.ghtml",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Publicação oficial",
-        "sections": [
-          "reforma"
-        ],
-        "sourceId": "reforma-valor",
-        "sourceName": "Valor Econômico - Legislação",
-        "sourceAcronym": "VALOR",
-        "sourceType": "journalistic",
-        "discoveryMethod": "links",
-        "discoveredAt": "2026-08-19T18:28:26.369Z",
-        "id": "e8668f9e3bd27442b2ba222e",
         "status": "pending",
         "attempts": 0
       },
@@ -5273,9 +5464,9 @@
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "c58accfc3587699d68f9399d",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-20T01:58:12.115Z"
+        "analyzedAt": "2026-08-20T02:52:50.935Z"
       },
       {
         "title": "Nota Técnica 3/2013 - Escrituração do Crédito Presumido do Álcool - Medida Provisória nº 613",
@@ -8429,9 +8620,9 @@
         "discoveredAt": "2026-08-19T14:43:42.005Z",
         "id": "3ddcfdda8954e473b0091eb5",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-19T16:48:13.900Z"
+        "analyzedAt": "2026-08-20T02:52:49.324Z"
       },
       {
         "title": "Resoluções",
@@ -10502,21 +10693,6 @@
         "attempts": 0
       },
       {
-        "title": "Carf derruba cobrança de R$ 870 milhões por compra de cervejaria pela Ambev",
-        "url": "https://portal.jota.info/tributos/carf-derruba-cobranca-de-r-870-milhoes-por-compra-de-cervejaria-pela-ambev",
-        "publishedAt": "2026-08-18T10:14:18.000Z",
-        "documentKind": "Notícia jornalística especializada",
-        "sourceId": "jota",
-        "sourceName": "JOTA",
-        "sourceAcronym": "JOTA",
-        "sourceType": "journalistic",
-        "discoveryMethod": "rss",
-        "discoveredAt": "2026-08-18T20:47:15.892Z",
-        "id": "a2982899269d2aca818449bf",
-        "status": "pending",
-        "attempts": 0
-      },
-      {
         "title": "EDcl no AgInt na Rcl 49632 — EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NA RECLAMAÇÃO. DIREITO PROCESSUAL CIVIL. ERRO DE FATO CONFIGURADO. CERTIDÃO DE INTEMPESTIVIDADE CANCELADA. TEMPESTIVIDADE RECONHECIDA. EFEITOS INFRINGENTES. AGRAVO INTERNO. RECLAMAÇÃO. TEMA REPETITIVO 566/STJ. AUSÊNCIA ",
         "url": "https://processo.stj.jus.br/SCON/GetInteiroTeorDoAcordao?num_registro=202502835894&dt_publicacao=19%2F06%2F2026",
         "publishedAt": "2026-06-19",
@@ -10850,6 +11026,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "4d5fc5e0-1a95-49d3-9556-ec950d7868ef",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-20T02:55:36.734Z",
+        "finishedAt": "2026-08-20T03:01:55.469Z",
+        "discovered": 18,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 6,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "c3e0cd6d-b155-4f10-bf68-ea543915b2d6",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T02:45:03.636Z",
+        "finishedAt": "2026-08-20T02:55:36.726Z",
+        "discovered": 10,
+        "analyzed": 3,
+        "published": 3,
+        "discarded": 0,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 10,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 15,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "149a6866-d058-4d10-b051-2c455687795c",
         "trigger": "github-actions-history",
@@ -24372,7 +25080,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T02:09:12.416Z",
-    "nextRunAt": "2026-08-20T08:09:12.416Z"
+    "lastRunAt": "2026-08-20T03:01:55.469Z",
+    "nextRunAt": "2026-08-20T09:01:55.469Z"
   }
 }
