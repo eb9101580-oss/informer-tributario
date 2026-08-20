@@ -1,9 +1,194 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T02:55:36.716Z",
+    "lastUpdatedAt": "2026-08-20T05:27:26.460Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "HC 275928 — ocorrência da prescrição da pretensão punitiva retroativa, decorrida entre a data da constituição definitiva do crédito tributário (27/02/2012) e a data do recebimento",
+      "theme": "Prescrição da pretensão punitiva retroativa em tributação",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imposto de Renda",
+        "ICMS",
+        "PIS/COFINS",
+        "ISS",
+        "Credito tributário",
+        "Dívida tributária"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu que a prescrição da pretensão punitiva retroativa ocorre quando a diferença entre a data da constituição definitiva do crédito tributário (27/02/2012) e a data do recebimento da denúncia (04/05/2021) ultrapassa o prazo legal, conforme arts. 107, inciso IV, 109, inciso IV e 110, § 1º do Código Penal. A decisão afirma que a ausência de causa válida de suspensão do prazo prescricional por parcelamento tributário não é suficiente para evitar a prescrição.",
+      "whatChanged": "A decisão do STF estabelece que a prescrição da pretensão punitiva retroativa ocorre se a diferença entre a data da constituição definitiva do crédito tributário e a data do recebimento da denúncia ultrapassar o prazo legal, sem necessidade de análise fático-administrativa para suspensão do prazo prescricional.",
+      "practicalImpact": "Empresas devem verificar se a diferença entre a data da constituição definitiva do crédito tributário e a data do recebimento da denúncia ultrapassa o prazo legal para evitar a prescrição da pretensão punitiva retroativa. A ausência de parcelamento tributário apto a suspender o prazo prescricional pode levar à prescrição.",
+      "officeAction": "Empresas devem analisar se a diferença entre a data da constituição definitiva do crédito tributário e a data do recebimento da denúncia ultrapassa o prazo legal para evitar a prescrição da pretensão punitiva retroativa, conforme decisão do STF.",
+      "affectedProfiles": [
+        "Empresas com dívidas tributárias",
+        "Empresas com crédito tributário constituido",
+        "Empresas com denúncia de dívida tributária",
+        "Empresas com parcelamento tributário",
+        "Empresas com prazo prescricional"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Análise da prescrição da pretensão punitiva retroativa",
+        "period": "2021-05-04 a 2024-12-31",
+        "action": "Verificar se a diferença entre a data da constituição definitiva do crédito tributário e a data do recebimento da denúncia ultrapassa o prazo legal para evitar a prescrição da pretensão punitiva retroativa",
+        "confidence": "alto"
+      },
+      "id": "12673e1f-c1bc-4c39-8d3d-a5d9a1baf78b",
+      "score": 7.9,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810960/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T05:27:26.449Z",
+      "updatedAt": "2026-08-20T05:27:26.449Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810960/false",
+        "sourceCharacters": 1213,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617879 — Súmula 279/STF. Sobre o tema, a propósito: \"Agravo regimental no recurso extraordinário com agravo. Direito Tributário . ITBI. Integralização de capital social. Isen",
+      "theme": "ITBI e integralização de capital social",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ITBI",
+        "Imposto sobre Transmissão de B"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF confirmou que o recurso extraordinário não pode ser utilizado para analisar matéria infraconstitucional ou reexame de fatos e provas. A decisão afeta empresas com inatividade, determinando multa de 1% do valor da causa e majoração de honorários advocatícios em 10% para a parte recorrente.",
+      "whatChanged": "A Súmula 279/STF estabelece que o recurso extraordinário não se aplica a matéria infraconstitucional ou reexame de fatos e provas. A decisão impacta empresas com inatividade que utilizam ITBI para integralização de capital social.",
+      "practicalImpact": "Empresas com inatividade que realizaram integralização de capital social com ITBI podem enfrentar multa de 1% do valor atualizado da causa e majoração de honorários advocatícios em 10% para a parte recorrente.",
+      "officeAction": "A decisão do STF determina que o recurso extraordinário não pode ser utilizado para análise de matéria infraconstitucional ou reexame de fatos e provas, com aplicação de multa de 1% do valor atualizado da causa e majoração de honorários advocatícios em 10% para a parte recorrente.",
+      "affectedProfiles": [
+        "Empresas com inatividade",
+        "Empresas que realizam integralização de capital social",
+        "Empresas que utilizam ITBI para incorporação de bens",
+        "Empresas com processos tributários em andamento",
+        "Empresas com inatividade e integralização de capital social"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 6,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Risco de multa de 1% para empresas com inatividade que utilizam ITBI para integralização de capital social",
+        "period": "2019-12-04 a presente",
+        "action": "Verificar se a empresa está em inatividade e se utilizou ITBI para integralização de capital social",
+        "confidence": "médio"
+      },
+      "id": "9e56535f-6eec-4cde-beae-c7ba26e290d2",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810678/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T05:24:16.291Z",
+      "updatedAt": "2026-08-20T05:24:16.291Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810678/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1618111 — DECISÃO: Recurso extraordinário com agravo contra inadmissão do recurso extraordinário no Direito Tributário",
+      "theme": "Incidência do ICMS sobre TUST/TUSD",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "TUST",
+        "TUSD"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu sobre recurso extraordinário com agravo contra inadmissão de recurso extraordinário no Direito Tributário. O recurso foi interposto com fundamento na alínea 'a' do permissivo constitucional. O acórdão recorrido aborda a incidência do ICMS sobre TUST/TUSD, com foco no tema 286 do STJ e na modulação de efeitos para preservar tutelas provisórias até 27/03/2017.",
+      "whatChanged": "O STF confirmou a admissibilidade do recurso extraordinário com agravo, mantendo a decisão de inadmissão do recurso extraordinário. O tema 286 do STJ foi analisado em relação à incidência do ICMS sobre TUST/TUSD, com a possibilidade de modulação de efeitos para preservar tutelas provisórias até 27/03/2017.",
+      "practicalImpact": "Empresas que utilizam TUST/TUSD na fatura de energia elétrica devem revisar a base de cálculo do ICMS, já que a decisão pode impactar a incidência tributária. A modulação de efeitos para preservar tutelas provisórias até 27/03/2017 sugere que a decisão não afeta imediatamente a aplicação do ICMS sobre essas tarifas.",
+      "officeAction": "A decisão do STF não altera a incidência do ICMS sobre TUST/TUSD, mas mantém a possibilidade de modulação de efeitos para preservar tutelas provisórias até 27/03/2017. A decisão não implica mudança na base de cálculo do ICMS para essas tarifas.",
+      "affectedProfiles": [
+        "Empresas de energia elétrica",
+        "Empresas de distribuição",
+        "Contribuintes do ICMS",
+        "Sistemas de transmissão de energia",
+        "Tributação de energia elétrica"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão da base de cálculo do ICMS para TUST/TUSD",
+        "period": "Até 27/03/2017",
+        "action": "Revisar a incidência do ICMS sobre TUST/TUSD para garantir conformidade com a decisão do STF",
+        "confidence": "alto"
+      },
+      "id": "a4b0b03d-0e74-4d43-8a97-ffe6adb29b43",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810778/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T05:15:30.572Z",
+      "updatedAt": "2026-08-20T05:15:30.572Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810778/false",
+        "sourceCharacters": 1199,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Rcl 98322 — RECURSAL. INVIABILIDADE. 1. Não cabe Reclamação para o SUPREMO TRIBUNAL FEDERAL com o objetivo de contestar a paralisação de processo nas instâncias ordinárias, para se",
@@ -3802,9 +3987,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "7408ee98ce388efc96cbf79c",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T05:15:30.581Z",
+        "score": 7.6,
+        "alertId": "a4b0b03d-0e74-4d43-8a97-ffe6adb29b43"
       },
       {
         "title": "ARE 1617879 — Súmula 279/STF. Sobre o tema, a propósito: “Agravo regimental no recurso extraordinário com agravo. Direito Tributário . ITBI. Integralização de capital social. Isenção. Inatividade da empresa. Legislação infraconstitucional. Ofensa reflexa. Fatos e provas. Re",
@@ -3823,9 +4011,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "d18c8aedb3838d661f8e76b0",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T05:24:16.303Z",
+        "score": 7.2,
+        "alertId": "9e56535f-6eec-4cde-beae-c7ba26e290d2"
       },
       {
         "title": "ARE 1618388 — analisar a causa à luz da interpretação dada à legislação infraconstitucional pertinente e reexaminar os fatos e as provas dos autos, o que não é cabível em sede de recurso extraordinário, nos termos da Súmula 279/STF. Sobre o tema, a propósito: DIREITO TRIBUT",
@@ -3865,9 +4056,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "4a313864bca8e7aa9c10ea3e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T05:27:26.460Z",
+        "score": 7.9,
+        "alertId": "12673e1f-c1bc-4c39-8d3d-a5d9a1baf78b"
       },
       {
         "title": "ARE 1617800 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . ADEQUAÇÃO ",
@@ -5358,9 +5552,9 @@
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "3c89e20014380ff328e81915",
         "status": "error",
-        "attempts": 1,
-        "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-20T04:36:05.006Z"
+        "attempts": 2,
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-20T05:21:38.032Z"
       },
       {
         "title": "Nota Técnica 2/2013 - Escrituração dos Registros 1900 e F525 - PJ tributadas pelo Lucro Presumido",
@@ -8752,8 +8946,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:43:42.005Z",
         "id": "50122f0e0d240a73ad2b5d95",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-20T05:18:34.297Z"
       },
       {
         "title": "Termos de Uso",
@@ -10902,6 +11098,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "f9932e11-5057-4ff0-85cf-899ea4c79fe5",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T05:27:26.488Z",
+        "finishedAt": "2026-08-20T05:38:14.374Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 22,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "3f437f40-f5a1-427e-8f03-6be0bf764beb",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T05:00:40.132Z",
+        "finishedAt": "2026-08-20T05:27:26.467Z",
+        "discovered": 0,
+        "analyzed": 3,
+        "published": 3,
+        "discarded": 0,
+        "errors": 27,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 10,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "c8bad760-8919-4446-a110-7f562e47efbd",
         "trigger": "github-actions-history",
@@ -26020,7 +26748,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T04:49:14.158Z",
-    "nextRunAt": "2026-08-20T10:49:14.158Z"
+    "lastRunAt": "2026-08-20T05:38:14.374Z",
+    "nextRunAt": "2026-08-20T11:38:14.374Z"
   }
 }
