@@ -62,6 +62,26 @@ jobs:
           npm ci --prefix back
           python -m pip install -r back/scraper/requirements.txt
 
+      - name: Descobrir fontes e publicar triagem imediata
+        env:
+          MONITOR_ANALYZE: 'false'
+          MONITOR_DISCOVER: 'true'
+        run: node back/scripts/run-monitor.js
+
+      - name: Publicar triagem antes do modelo
+        run: |
+          if git diff --quiet -- back/data/database.json; then
+            echo "Nenhuma triagem nova."
+            exit 0
+          fi
+          git config user.name "informer-tributario[bot]"
+          git config user.email "informer-tributario[bot]@users.noreply.github.com"
+          git add back/data/database.json
+          git commit -m "Publica triagem tributaria imediata"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
       - name: Preparar analisador local
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
@@ -80,10 +100,10 @@ jobs:
             exit 1
           fi
 
-      - name: Consultar, analisar e registrar fontes oficiais
+      - name: Analisar fila persistida com o modelo
         run: |
           curl --fail --silent http://127.0.0.1:11434/api/tags > /tmp/ollama-before-monitor.json
-          node back/scripts/run-monitor.js
+          node back/scripts/run-analysis.js
 
       - name: Notificar cadastros com nota alta
         run: node back/scripts/notify-subscribers.js

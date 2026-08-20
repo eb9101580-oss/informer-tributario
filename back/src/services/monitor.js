@@ -255,7 +255,7 @@ export async function getMonitorSnapshot() {
   };
 }
 
-export async function runMonitor({ analyze = true, trigger = 'manual', targetDate: rawTargetDate = null } = {}) {
+export async function runMonitor({ analyze = true, discover = true, trigger = 'manual', targetDate: rawTargetDate = null } = {}) {
   const targetDate = normalizeMonitorTargetDate(rawTargetDate);
   if (runtime.running) return { accepted: false, message: 'Já existe uma varredura em andamento.' };
   runtime.running = true;
@@ -279,6 +279,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
           : item),
       },
     }));
+    if (discover) {
     const results = await mapWithConcurrency(monitoredSources, 3, async (source) => {
       runtime.currentSource = source.acronym;
       return { source, items: await discoverSourceCandidates(source, config.monitorLookbackDays, { targetDate }) };
@@ -355,6 +356,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
           },
         };
       });
+    }
     }
 
     if (analyze && config.monitorMaxAnalyses > 0) {
