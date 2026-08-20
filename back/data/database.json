@@ -1,9 +1,190 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-19T23:54:13.027Z",
+    "lastUpdatedAt": "2026-08-20T00:25:13.029Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "RE 1616546 — Consoante ao entendimento do STF: reconhecimento de repercussão geral sobre imunidade tributária recíproca para sociedades de economia mista prestadoras de serviço de住",
+      "theme": "Imunidade tributária recíproca para sociedades de economia mista prestadoras de.",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imunidade tributária recíproca",
+        "Sociedade de economia mista",
+        "Serviço público essencial",
+        "Construção de moradias para ba"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF reconheceu repercussão geral da matéria constitucional sobre aplicação da imunidade tributária recíproca para sociedades de economia mista prestadoras de serviço público essencial de construção de moradias para famílias de baixa renda, em decisão publicada no DJe de 8/1/21. O tema nº 1.122 estabelece que a imunidade tributária recíproca se aplica a essas sociedades, com base no art. 150, VI, A da Constituição Federal.",
+      "whatChanged": "O STF confirmou que a imunidade tributária recíproca se aplica a sociedades de economia mista que prestam serviço público essencial de construção de moradias para famílias de baixa renda, estabelecendo que a matéria constitucional está sob repercussão geral.",
+      "practicalImpact": "Empresas de economia mista envolvidas na construção de moradias para baixa renda devem verificar se estão sob imunidade tributária recíproca, evitando possíveis multas ou ações fiscais por não cumprimento da norma constitucional.",
+      "officeAction": "Recurso extraordinário provido para exame do recurso, com reconhecimento de repercussão geral da matéria constitucional sobre imunidade tributária recíproca para sociedades de economia mista prestadoras de serviço público essencial.",
+      "affectedProfiles": [
+        "Empresas de economia mista",
+        "Sociedades prestadoras de serviços públicos essenciais",
+        "Famílias de baixa renda",
+        "Administração pública",
+        "Organizações de moradias para baixa renda"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Reconhecimento de repercussão geral sobre imunidade tributária recíproca para sociedades de economia mista",
+        "period": "2021-01-08",
+        "action": "Verificação da aplicação da imunidade tributária recíproca para sociedades de economia mista envolvidas na construção de moradias para baixa renda",
+        "confidence": "alto"
+      },
+      "id": "fa8fb0b1-8df7-4040-83af-3d1f7016f483",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810603/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T00:25:13.020Z",
+      "updatedAt": "2026-08-20T00:25:13.020Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810603/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T00:03:29.230Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1616754 — Não conheço do recurso quanto à matéria relativa ao Tema 339 da Repercussão Geral. O acórdão recorrido está em harmonia com a Súmula nº 688/STF sobre incidência da CΠ",
+      "theme": "Contribuição Previdenciária Patronal (CPI)",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Contribuição Previdenciária (C"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF não conhece do recurso sobre Tema 339 da Repercussão Geral. Confirma que o acórdão recorrido está em harmonia com a Súmula nº 688/STF, que estabelece que é legítima a incidência da contribuição previdenciária sobre o décimo terceiro salário.",
+      "whatChanged": "A Súmula nº 688/STF do STF confirma que a contribuição previdenciária patronal (CPI) deve incidir sobre o décimo terceiro salário, conforme entendimento consolidado na jurisprudência do Supremo Tribunal Federal.",
+      "practicalImpact": "Empresas devem garantir a incidência da contribuição previdenciária sobre o décimo terceiro salário para evitar multas e ações judiciais por não conformidade com a legislação tributária.",
+      "officeAction": "A decisão do STF reforça a necessidade de incidência da contribuição previdenciária patronal sobre o décimo terceiro salário, alinhando-se à jurisprudência consolidada da Súmula nº 688/STF.",
+      "affectedProfiles": [
+        "Empresas com funcionários",
+        "Empresas que pagam décimo terceiro salário",
+        "Empresas com atividade tributária",
+        "Empresas com contribuição previdenciária patronal",
+        "Empresas com tributação de salários"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Incidence da Contribuição Previdenciária sobre o Décimo Terceiro Salário",
+        "period": "2020-03-20 a presente",
+        "action": "Garantir a incidência da contribuição previdenciária patronal (CPI) sobre o décimo terceiro salário para evitar multas e ações judiciais",
+        "confidence": "alto"
+      },
+      "id": "1a9942ff-0157-4129-9c6f-460aeba33118",
+      "score": 7.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810622/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T00:22:20.104Z",
+      "updatedAt": "2026-08-20T00:22:20.104Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810622/false",
+        "sourceCharacters": 1200,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T00:03:29.230Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617897 — DECISÃO: Recurso extraordinário com agravo contra inadmissão de recurso extraordinário com fundamento na alínea 'a' do permissivo constitucional",
+      "theme": "ICMS sobre mercadoria dada em bonificação",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "Ricms/sc"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF confirmou em julgamento monocrático a sentença denegatória de recurso extraordinário que alegava vinculação da bonificação de produtos às vendas realizadas, mesmo com notas fiscais diferentes. A decisão afasta a teoria de que a bonificação pode ser vinculada à venda sem necessidade de emissão de nota fiscal única, conforme art. 23, III, parágrafo único, do Ricms/SC.",
+      "whatChanged": "A decisão do STF afasta a possibilidade de cobrança de ICMS sobre mercadorias dadas em bonificação sem emissão de nota fiscal única, exigindo vinculação à venda e não permitindo a bonificação que compreenda na entrega maior quantidade de produto vendido.",
+      "practicalImpact": "Empresas devem emitir nota fiscal única contendo a bonificação e venda dos produtos para evitar cobrança de ICMS, conforme exigido pelo STF. A ausência de contradição entre o art. 23, inciso III, parágrafo único, do Ricms/SC e o entendimento do STJ no tema 144 foi confirmada.",
+      "officeAction": "Requer emissão de nota fiscal única com bonificação e venda para evitar cobrança de ICMS. A teoria de que a bonificação pode ser vinculada às vendas sem nota fiscal única foi rejeitada pelo STF.",
+      "affectedProfiles": [
+        "Empresas que utilizam bonificação de produtos",
+        "Empresas que emitem notas fiscais diferentes para vendas e bonificações",
+        "Empresas que utilizam ICMS sobre mercadorias dadas em bonificação",
+        "Empresas que seguem o entendimento do STJ no tema 144",
+        "Empresas que aplicam o art. 23, inciso III, parágrafo único, do Ricms/SC"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Requisito de nota fiscal única para bonificação de produtos",
+        "period": "2024-02-27",
+        "action": "Emissão de nota fiscal única contendo a bonificação e venda dos produtos para evitar cobrança de ICMS",
+        "confidence": "alto"
+      },
+      "id": "009c256c-4734-4c21-9000-9b8233cd88ab",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810818/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T00:12:26.670Z",
+      "updatedAt": "2026-08-20T00:12:26.670Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810818/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-20T00:03:29.230Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1612710 ED — verificar a incidência do encargo no mesmo período temporal. É o relatório. Decido. Não está presente nenhuma hipótese autorizadora da oposição do recurso declarat",
@@ -2101,7 +2282,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "1bc698f91c433f137e261317",
         "status": "pending",
         "attempts": 0,
@@ -2122,7 +2303,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "61716aa5626f058729a7ad2f",
         "status": "pending",
         "attempts": 0,
@@ -2143,7 +2324,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "6b24e5a5f87a529f7df35c28",
         "status": "pending",
         "attempts": 0,
@@ -2164,7 +2345,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "f75ff59ad714411f10ac4e61",
         "status": "pending",
         "attempts": 0,
@@ -2185,7 +2366,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "771ddaba7a6defd6731ed521",
         "status": "pending",
         "attempts": 0,
@@ -2206,7 +2387,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "6899546bd55aa851ba80c388",
         "status": "pending",
         "attempts": 0,
@@ -2227,7 +2408,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "5449b2622c0048278fad17bb",
         "status": "pending",
         "attempts": 0,
@@ -2248,7 +2429,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "15b8b7c58ee87acaa0f1644f",
         "status": "pending",
         "attempts": 0,
@@ -2269,7 +2450,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "f82f2f0e73f3d7258329ba67",
         "status": "pending",
         "attempts": 0,
@@ -2290,11 +2471,83 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-19T23:54:34.372Z",
+        "discoveredAt": "2026-08-20T00:25:34.695Z",
         "id": "3439059c86899fc699ed0817",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
+      },
+      {
+        "title": "ARE 1617897 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: AGRAVO INTERNO EM APELA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810818/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617897&classe=ARE",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810818",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810818/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: AGRAVO INTERNO EM APELAÇÃO CÍVEL. TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS SOBRE MERCADORIA DADA EM BONIFICAÇÃO. SENTENÇA DENEGATÓRIA CONFIRMADA EM JULGAMENTO MONOCRÁTICO DO RECURSO DE APELAÇÃO. 1. AGRAVO INTERNO DA EMPRESA IMPETRANTE. ALEGADA A DEVIDA VINCULAÇÃO DA BONIFICAÇÃO DE PRODUTOS COM AS VENDAS REALIZADAS, MESMO QUE EM NOTAS FISCAIS DIFERENTES, PARA O AFASTAMENTO DA COBRANÇA DE ICMS SOBRE AS MERCADORIAS. TESE AFASTADA. NECESSIDADE DE EMISSÃO DE NOTA FISCAL ÚNICA CONTENDO A BONIFICAÇÃO E VENDA DOS PRODUTOS, CONFORME ART. 23, III, PARÁGRAFO ÚNICO, DO RICMS/SC. BONIFICAÇÃO QUE COMPREENDE NA ENTREGA MAIOR DE QUANTIDADE DE PRODUTO VENDIDO. NECESSIDADE DE VINCULAÇÃO À VENDA SOB PENA DE RECONHECIMENTO DE DOAÇÃO. AUSÊNCIA DE \"CONTRADIÇÃO ENTRE A EXIGÊNCIA DE NOTA FISCAL ÚNICA CONTIDA NO ART. 23, INCISO III, PARÁGRAFO ÚNICO, DO RICMS E O ENTENDIMENTO DO STJ NO TEMA 144\" (AC N. 5024741-20.2021.8.24.0008, REL. VILSON FONTANA. J. 27-02-2024). ENTENDIMENTO",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T00:03:29.230Z",
+        "id": "68323c918e6d751b4b5e0d72",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T00:12:26.680Z",
+        "score": 8.1,
+        "alertId": "009c256c-4734-4c21-9000-9b8233cd88ab"
+      },
+      {
+        "title": "ARE 1616754 — Assim, não conheço do recurso quanto à matéria relativa ao Tema 339 da Repercussão Geral. Quanto ao décimo terceiro salário, verifica-se que o acórdão recorrido está em harmonia com o entendimento consolidado no enunciado da Súmula nº 688/STF que assim dispõe:",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810622/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1616754&classe=ARE",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810622",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810622/false",
+        "inlineText": "Assim, não conheço do recurso quanto à matéria relativa ao Tema 339 da Repercussão Geral. Quanto ao décimo terceiro salário, verifica-se que o acórdão recorrido está em harmonia com o entendimento consolidado no enunciado da Súmula nº 688/STF que assim dispõe: É legítima a incidência da contribuição previdenciária sobre o 13º salário. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . CONTRIBUIÇÃO PREVIDENCIÁRIA PATRONAL. INCIDÊNCIA SOBRE DÉCIMO TERCEIRO SALÁRIO. SÚMULA N. 688 DO SUPREMO TRIBUNAL FEDERAL. PRECEDENTES. AGRAVO REGIMENTAL AO QUAL SE NEGA PROVIMENTO” (ARE 1.243.584 AgR, Segunda Turma, Relatora a Ministra Cármen Lúcia, Dje 20/3/2020) (g.n.) “AGRAVO REGIMENTAL NOS EMBARGOS DE DECLARAÇÃO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . CONTRIBUIÇÃO PREVIDENCIÁRIA PATRONAL. SAT/RAT INCIDENTE SOBRE DÉCIMO-TERCEIRO SALÁRIO. ACÓRDÃO RECORRIDO EM HARMONIA COM A JURISPRUDÊNCIA DO STF. SÚMULA 688/STF. MATÉRIA INFRACONSTITUCIONAL AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO. I – As razões do agravo regimental são inaptas para desconstituir os fundamentos da decisão agravada, que, por isso, se mantêm hígidos. II – A jurisprudência do Supremo Tribunal",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T00:03:29.230Z",
+        "id": "856a5364956bceec42f615b0",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T00:22:20.111Z",
+        "score": 7.7,
+        "alertId": "1a9942ff-0157-4129-9c6f-460aeba33118"
+      },
+      {
+        "title": "RE 1616546 — consoante ao entendimento deste Supremo Tribunal. É o relatório. Decido. Verifica-se que, após a oposição dos embargados de divergência, a Corte reconheceu, no ARE nº 1.289.782/SP-RG, Rel. Min. Nunes Marques, a repercussão geral da matéria constitucional debat",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810603/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1616546&classe=RE",
+        "publishedAt": "2026-08-19",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1810603",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810603/false",
+        "inlineText": "consoante ao entendimento deste Supremo Tribunal. É o relatório. Decido. Verifica-se que, após a oposição dos embargados de divergência, a Corte reconheceu, no ARE nº 1.289.782/SP-RG, Rel. Min. Nunes Marques, a repercussão geral da matéria constitucional debatida nestes autos. O assunto corresponde ao Tema nº 1.122, no qual se discutirá a aplicação da “imunidade tributária recíproca em favor de sociedade de economia mista prestadora de serviço público relativo à construção de moradias para famílias de baixa renda”. O acórdão está assim ementado: “RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . EXECUÇÃO FISCAL. IMUNIDADE RECÍPROCA. ARTIGO 150, VI, A, DA CONSTITUIÇÃO FEDERAL. EXTENSÃO. SOCIEDADE DE ECONOMIA MISTA PRESTADORA DE SERVIÇO PÚBLICO ESSENCIAL. CONSTRUÇÃO DE MORADIAS VOLTADAS À POPULAÇÃO DE BAIXA RENDA. MULTIPLICIDADE DE RECURSOS EXTRAORDINÁRIOS. DISSENSO JURISPRUDENCIAL. PAPEL UNIFORMIZADOR DO SUPREMO TRIBUNAL FEDERAL. RELEVÂNCIA DA QUESTÃO CONSTITUCIONAL. AGRAVO PROVIDO PARA EXAME DO RECURSO EXTRAORDINÁRIO. MANIFESTAÇÃO PELA EXISTÊNCIA DE REPERCUSSÃO GERAL” (ARE nº 1.289.782/SP-RG, Tribunal Pleno, Rel. Min. Nunes Marques, DJe de 8/1/21). É pacífico nessa Corte o entendimento",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T00:03:29.230Z",
+        "id": "73350087856d3f349fece085",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T00:25:13.029Z",
+        "score": 8.7,
+        "alertId": "fa8fb0b1-8df7-4040-83af-3d1f7016f483"
       },
       {
         "title": "ARE 1616928 — em recurso extraordinário, o reexame dos fatos e das provas dos autos. Incidência da Súmula nº 279/STF. 2. Agravo regimental não provido. 3. Havendo prévia fixação de honorários advocatícios pelas instâncias de origem, seu valor monetário será majorado em 10% ",
@@ -2384,10 +2637,10 @@
         "discoveredAt": "2026-08-19T23:36:50.405Z",
         "id": "d5e49c233dbea1a6a0ab9b23",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "backfillDate": null,
         "error": "fetch failed",
-        "analyzedAt": "2026-08-19T23:46:24.762Z"
+        "analyzedAt": "2026-08-20T00:17:28.959Z"
       },
       {
         "title": "ARE 1618221 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: RECURSO INOMINADO. TRIB",
@@ -4784,8 +5037,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "7620738628f26cf9de7c368d",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-20T00:19:38.713Z",
+        "score": 7.1,
+        "alertId": null
       },
       {
         "title": "Nota Técnica 4/2014 - Escrituração do Bloco \"I\", a partir de 01 de janeiro de 2014",
@@ -10378,6 +10634,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "87cac44f-d5d4-48d4-8075-4146f9636823",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-18",
+        "startedAt": "2026-08-20T00:25:13.056Z",
+        "finishedAt": "2026-08-20T00:31:36.600Z",
+        "discovered": 10,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "3a2a473a-6efd-4e13-bae0-9a6758413d7a",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T00:03:06.047Z",
+        "finishedAt": "2026-08-20T00:25:13.037Z",
+        "discovered": 16,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 1,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 15,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 53,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 367,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "cbad94ed-716f-4625-8068-e1f289581a13",
         "trigger": "github-actions-history",
@@ -22836,7 +23624,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T00:00:29.060Z",
-    "nextRunAt": "2026-08-20T06:00:29.060Z"
+    "lastRunAt": "2026-08-20T00:31:36.600Z",
+    "nextRunAt": "2026-08-20T06:31:36.600Z"
   }
 }
