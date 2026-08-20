@@ -1,9 +1,85 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T19:41:24.040Z",
+    "lastUpdatedAt": "2026-08-20T20:22:33.768Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "PLP 237/2026 - Senado Federal",
+      "theme": "Incentivo tributário à contratação de aprendizes e jovens recém-formados emeduca",
+      "agency": "Senado Federal",
+      "taxes": [
+        "Lucro real",
+        "Lucro presumido",
+        "Simples Nacional"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Projeto de Lei Complementar",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-20",
+      "summary": "O Projeto de Lei Complementar nº 237/2026, autorizado pelo Senador Angelo Coronel (REPUBLICANOS/BA), institui incentivo tributário para pessoas jurídicas tributadas com base no lucro real, lucro presumido ou optantes pelo Simples Nacional que contratarem aprendizes e jovens recém-formados em cursos de educação profissional técnica de nível médio ou superior. O projeto está em tramitação no Senado Federal e foi autuado para publicação.",
+      "whatChanged": "O projeto propõe incentivo tributário para empresas que contratarem aprendizes e jovens recém-formados em cursos técnicos de nível médio ou superior, com base em critérios de tributação como lucro real, lucro presumido ou Simples Nacional.",
+      "practicalImpact": "Empresas que atendam aos critérios de contratação de aprendizes e jovens recém-formados em cursos técnicos de nível médio ou superior podem beneficiar-se de incentivos fiscais específicos, visando a promoção de educação profissional e redução de custos operacionais.",
+      "officeAction": "O projeto foi autuado no Plenário do Senado Federal em 20/08/2026 e está aguardando despacho para publicação no Diário Oficial.",
+      "affectedProfiles": [
+        "Empresas com contratação de aprendizes",
+        "Empresas com contratação de jovens recém-formados",
+        "Empresas tributadas com base no lucro real",
+        "Empresas tributadas com base no lucro presumido",
+        "Empresas optantes pelo Simples Nacional"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Incentivo tributário para contratação de aprendizes e jovens recém-formados",
+        "period": "2026-08-20 a publicação do projeto no Diário Oficial",
+        "action": "Empresas devem se preparar para implementar a contratação de aprendizes e jovens recém-formados em cursos técnicos de nível médio ou superior para aproveitar o incentivo tributário previsto no PLP 237/2026",
+        "confidence": "alto"
+      },
+      "id": "0d6526a5-3ecf-4df7-94a8-7c9a72140158",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175545",
+      "isDemo": false,
+      "createdAt": "2026-08-20T19:58:08.537Z",
+      "updatedAt": "2026-08-20T19:58:08.537Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175545",
+        "sourceCharacters": 3007,
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "discoveredBy": "senado-api",
+        "sourceType": "official",
+        "documentKind": "Matéria legislativa",
+        "discoveredAt": "2026-08-20T18:52:47.442Z",
+        "fastTriage": {
+          "score": 72,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
     {
       "relevant": true,
       "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5023462-65.2026.4.03.0000 · Gab. 08 - DES. FED. CARLOS DELGADO — Direito tributário: resultado útil do processo. A…",
@@ -12443,43 +12519,58 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 0006609-65.2009.4.03.6110 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: e transcrever a ementa (ID 332044536) do acórdão supra, ora embargado, in…",
-      "theme": "Direito tributário",
+      "title": "Acórdão TRF3: Embargos de declaração acolhidos parcialmente no caso de imunidade constitucional para contribuição previdenciária sobre receitas de exportação indireta",
+      "theme": "Direito tributário: imunidade constitucional para exportações indiretas via 'trd",
       "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária",
+        "Exportações",
+        "Imunidade Constitucional",
+        "Trading Companies",
+        "Repercussão Geral STF"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 2ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO / REMESSA NECESSÁRIA 1728 Nº 0006609-65.2009.4.03.6110 RELATOR: ALESSANDRO DIAFERIA APELANTE: COOPERATIVA AGRICOLA DE CAPAO BONITO, UNIAO FEDERAL - FAZENDA NACIONAL ADVOGADO do(a) APELANTE: MARCIO MACIEL PLETZ - RS58405-A ADVOGADO do(a)…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão TRF3 (número 0006609-65.2009.4.03.6110) acolheu parcialmente embargos de declaração para adequar a decisão ao Tema 674 do STF, que estabelece que a imunidade constitucional (art. 149, § 2º, I, CF/1988) se aplica às exportações indiretas realizadas por meio de trading companies. A decisão reconhece a aplicabilidade da imunidade tributária às operações indiretas, mas mantém a necessidade de comprovação documental da efetiva realização das operações para fins de fiscalização posterior pela Receita Federal.",
+      "whatChanged": "O acórdão TRF3 adequou-se ao Tema 674 do STF (RE 759.244), confirmado em 2020, estabelecendo que a imunidade constitucional para contribuição previdenciária sobre receitas de exportação indireta é aplicável quando comprovada a participação de trading companies. A decisão mantém a exigência de comprovação documental para evitar a fiscalização posterior pela Receita Federal.",
+      "practicalImpact": "Empresas que realizam exportações indiretas por meio de trading companies devem garantir comprovação documental da efetiva realização das operações para aproveitar a imunidade constitucional, sem prejudicar a fiscalização tributária. A decisão não altera a necessidade de compensação tributária com contribuições previdenciárias, mas estabelece critérios claros para sua aplicação.",
+      "officeAction": "Empresas devem revisar seus registros para comprovar a efetiva realização de operações indiretas de exportação, garantindo a conformidade com a imunidade constitucional e a fiscalização posterior pela Receita Federal. A compensação de contribuições previdenciárias deve seguir os critérios do art. 26-A da Lei nº 11.457/2007.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de exportação indireta",
+        "Cooperativas agrícolas",
+        "Empresas que utilizam trading companies",
+        "Receita Federal do Brasil",
+        "Empresas com operações de exportação indireta"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ajuste de imunidade constitucional para exportações indiretas via trading companies",
+        "period": "2024-04-25 a 2025-04-25",
+        "action": "Revisar registros para comprovação documental da efetiva realização de operações indiretas de exportação, garantindo conformidade com a imunidade constitucional e a fiscalização posterior pela Receita Federal",
+        "confidence": "alto"
+      },
       "id": "f0c43174-88fb-4e37-81a6-747bac7b68ef",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.9,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR47F7z2hGT73wAyYdy4gaO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.162Z",
-      "updatedAt": "2026-08-20T17:10:19.162Z",
+      "updatedAt": "2026-08-20T20:06:43.495Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR47F7z2hGT73wAyYdy4gaO/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf3",
@@ -12506,45 +12597,54 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 0020063-74.2011.4.03.6100 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: 0020063-74.2011.4.03.6100 RELATOR: ALESSANDRO DIAFERIA APELANTE: CONBRAS…",
-      "theme": "Direito tributário · ISS",
-      "agency": "Tribunal Regional Federal da 3ª Região",
+      "title": "Acórdão judicial: 0020063-74.2011.4.03.6100 - Incidência de contribuição previdenciária sobre terço constitucional de férias",
+      "theme": "Direito tributário: Contribuição previdenciária patronal",
+      "agency": "Tribunal Regional Federal da 3ª Região (TRF3)",
       "taxes": [
-        "ISS"
+        "Contribuição previdenciária (C"
       ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 2ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL 198 Nº 0020063-74.2011.4.03.6100 RELATOR: ALESSANDRO DIAFERIA APELANTE: CONBRAS MANUTENCAO LTDA, ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA., ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA., ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA.,…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão do TRF3 confirma que a contribuição previdenciária patronal incide sobre o terço constitucional de férias, alinhando-se à tese do STF no Tema 985. A decisão afasta a exigibilidade das contribuições sobre os valores pagos nos primeiros 15 dias de afastamento do empregado doente ou acidentado, mas mantém a incidência sobre o terço constitucional de férias.",
+      "whatChanged": "A decisão do TRF3 3ª Região afasta a exigibilidade da contribuição previdenciária sobre os valores pagos nos primeiros 15 dias de afastamento do empregado doente ou acidentado, mas mantém a incidência sobre o terço constitucional de férias, conforme orientação do STF no Tema 985.",
+      "practicalImpact": "Empresas devem revisar a base de cálculo da contribuição previdenciária para evitar incidência sobre o terço constitucional de férias, enquanto os valores pagos nos primeiros 15 dias de afastamento do empregado doente ou acidentado não estão sujeitos à contribuição patronal.",
+      "officeAction": "Revisão da base de cálculo da contribuição previdenciária para evitar incidência sobre o terço constitucional de férias, com foco nos valores pagos nos primeiros 15 dias de afastamento do empregado doente ou acidentado.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com funcionários em afastamento por doença ou acidente",
+        "Empresas com funcionários em férias",
+        "Empresas com contribuições previdenciárias patronais",
+        "Empresas com terço constitucional de férias",
+        "Empresas com afastamento de empregados"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da base de cálculo da contribuição previdenciária para evitar incidência sobre o terço constitucional de férias",
+        "period": "2024-09-09 a 2025-09-09",
+        "action": "Revisão da base de cálculo da contribuição previdenciária para evitar incidência sobre o terço constitucional de férias, com foco nos valores pagos nos primeiros 15 dias de afastamento do empregado doente ou acidentado",
+        "confidence": "alto"
+      },
       "id": "1ae49d8d-04d5-4390-9e9e-71bafc91514f",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aX689F45qUrTVzleWZoWe2dL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.163Z",
-      "updatedAt": "2026-08-20T17:10:19.163Z",
+      "updatedAt": "2026-08-20T20:14:08.263Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aX689F45qUrTVzleWZoWe2dL/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf3",
@@ -12571,43 +12671,54 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 0003792-20.2012.4.03.6111 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: , que o art. 28, § 9º, da Lei 8.212/1991 relaciona as hipóteses em que haverá…",
-      "theme": "Direito tributário",
+      "title": "Acórdão · 0003792-20.2012.4.03.6111 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: que o art. 28, § 9º, da Lei 8.212/1991 relaciona as hipóteses em que haverá deso",
+      "theme": "Contribuição previdenciária: incidência sobre férias gozadas e aviso prévio indi",
       "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária (C"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-20. em face da decisão monocrática, a qual negou provimento a ambas as apelações interpostas e à remessa necessária, mantendo a sentença que, em relação à CDA nº 40.174.495-7, declarou extinto o feito, com resolução do mérito, com fundamento no art.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão do TRF3 confirma a incidência de contribuição previdenciária sobre férias gozadas e aviso prévio indenizado, alinhando-se à jurisprudência do STJ. O relator destaca que, embora o art. 28, § 9º da Lei 8.212/1991 relacione hipóteses de desoneração, não apresenta critério distintivo para não incidência. O STF, no RE 565160, já reconheceu a necessidade de clareza na interpretação.",
+      "whatChanged": "O acórdão estabelece que férias gozadas e aviso prévio indenizado são tributáveis, conforme jurisprudência do STJ, reforçando a incidência da contribuição previdenciária sobre verbas remuneratórias. O art. 28, § 9º da Lei 8.212/1991 não oferece critério claro para desoneração, gerando ambiguidade na aplicação tributária.",
+      "practicalImpact": "Empresas devem revisar a base de cálculo das contribuições previdenciárias para incluir férias gozadas e aviso prévio indenizado, evitando desonerações incorretas. A falta de critério distintivo no art. 28, § 9º da Lei 8.212/1991 pode levar a aplicações inconsistentes, exigindo maior atenção na classificação das verbas.",
+      "officeAction": "Revisar a base de cálculo das contribuições previdenciárias para incluir férias gozadas e aviso prévio indenizado, conforme jurisprudência do STJ. Verificar se as verbas estão alinhadas com o art. 28, § 9º da Lei 8.212/1991 para evitar desonerações incorretas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com funcionários que recebem férias gozadas",
+        "Empresas com aviso prévio indenizado",
+        "Empresas com contribuições previdenciárias",
+        "Empresas com verbas remuneratórias",
+        "Empresas com tributação de contribuições previdenciárias"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da base de cálculo das contribuições previdenciárias",
+        "period": "2023-10-15 a 2024-12-31",
+        "action": "Revisar a base de cálculo das contribuições previdenciárias para incluir férias gozadas e aviso prévio indenizado, conforme jurisprudência do STJ",
+        "confidence": "alto"
+      },
       "id": "64fa5efd-ba9b-469b-9c7e-5a4f0cca5dad",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBZ9vFGXkUjTpDEBXYzwDv82/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.163Z",
-      "updatedAt": "2026-08-20T17:10:19.163Z",
+      "updatedAt": "2026-08-20T20:22:33.719Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBZ9vFGXkUjTpDEBXYzwDv82/certidao",
         "sourceCharacters": 13999,
         "sourceId": "trf3",
@@ -34366,8 +34477,8 @@
         "discoveryMethod": "senado-api",
         "discoveredAt": "2026-08-20T18:52:47.442Z",
         "id": "01fc813fafc857dcba2a7405",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 72,
@@ -34379,7 +34490,15 @@
             "assunto-tributario-forte"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-20T19:58:08.582Z",
+        "analyzedPublishedAt": "2026-08-20T00:00:00",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "alertId": "0d6526a5-3ecf-4df7-94a8-7c9a72140158",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "RE 1602361 ED — LEG-FED LEI-005172 ANO-1966 ART-00146 CTN-1966 CÓDIGO TRIBUTÁRIO NACIONAL",
@@ -37739,7 +37858,7 @@
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
         "status": "fast-published",
-        "attempts": 3,
+        "attempts": 4,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -37756,7 +37875,7 @@
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-08-20T19:08:21.301Z"
+        "analyzedAt": "2026-08-20T19:54:05.938Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -38172,8 +38291,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "4ea2697432213cf3ccadc36f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -38189,7 +38308,14 @@
         },
         "alertId": "f0c43174-88fb-4e37-81a6-747bac7b68ef",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T20:06:43.537Z",
+        "analyzedPublishedAt": "2024-04-25T00:00:00",
+        "relevant": true,
+        "score": 7.9,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 0020063-74.2011.4.03.6100 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: 0020063-74.2011.4.03.6100 RELATOR: ALESSANDRO DIAFERIA APELANTE: CONBRAS MANUTENCAO LTDA, ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA., ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA., ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA., ISS MANUTENCAO E SERVICOS INTEGRADOS LTDA. ADVOGADO",
@@ -38209,8 +38335,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "0d71f29fcd4517e75f9a55e5",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -38226,7 +38352,14 @@
         },
         "alertId": "1ae49d8d-04d5-4390-9e9e-71bafc91514f",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T20:14:08.306Z",
+        "analyzedPublishedAt": "2024-09-09",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 0003792-20.2012.4.03.6111 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: , que o art. 28, § 9º, da Lei 8.212/1991 relaciona as hipóteses em que haverá desoneração tributária da contribuição previdenciária, contudo, sem apresentar rigoroso critério distintivo de hipóteses de não incidência. O Supremo Tribunal Federal, no julgamento do RE 565160, de re",
@@ -38246,8 +38379,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "bd0fb7ce1a24e9d23633f670",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -38263,7 +38396,14 @@
         },
         "alertId": "64fa5efd-ba9b-469b-9c7e-5a4f0cca5dad",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T20:22:33.768Z",
+        "analyzedPublishedAt": "2023-10-15T00:00:00",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 5021057-60.2026.4.04.7200 · 5ª Vara Federal de Florianópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5021057-60.2026.4.04.7200/SC AUTOR : JUREMA DOS SANTOS ADVOGADO(A) : SABRINA COLONETTI BACK (OAB SC042143) ADVOGADO(A) : PHELIPPE GUESSER (OAB SC041791) SENTENÇA Ante o exposto, HOMOLOGO o acordo nos exatos termos em que celebra",
@@ -62731,6 +62871,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "aded95b3-867d-4f7a-b2cf-3806f1d441cc",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T19:44:04.796Z",
+        "finishedAt": "2026-08-20T20:22:33.852Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "170a2620-d443-4d15-bb5a-ef079bc34dbe",
         "trigger": "github-actions-history",
@@ -89300,239 +89453,9 @@
             "found": 2
           }
         ]
-      },
-      {
-        "id": "150d26be-17e9-4d65-ae96-eb41d53d975b",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T15:17:06.525Z",
-        "finishedAt": "2026-08-19T15:18:17.090Z",
-        "discovered": 8,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "error",
-            "found": 0,
-            "message": "Fonte respondeu com status 409."
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T19:41:24.067Z",
-    "nextRunAt": "2026-08-21T01:41:24.067Z"
+    "lastRunAt": "2026-08-20T20:22:33.852Z",
+    "nextRunAt": "2026-08-21T02:22:33.852Z"
   }
 }
