@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T15:02:40.631Z",
+    "lastUpdatedAt": "2026-08-20T15:41:42.859Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -3794,45 +3794,56 @@
     },
     {
       "relevant": true,
-      "title": "Solução de Consulta 152 Cosit 20/08/2026 Assunto: Contribuições Sociais Previdenciárias PRODUTOR RURAL PESSOA FÍSICA INSCRITO NO CADASTRO DE ATIVIDADE ECONÔMICA DA PESSOA FÍSICA…",
-      "theme": "Direito tributário",
-      "agency": "Receita Federal — Soluções COSIT",
-      "taxes": [],
+      "title": "Solução de Consulta Cosit nº 152, de 17/08/2026: Contribuições Sociais Previdenciárias para Produtor Rural inscrito no CAEPF explorando atividade hoteleira como empresário individu",
+      "theme": "Contribuições Sociais Previdenciárias - Produtor Rural inscrito no CAEPF exploră",
+      "agency": "Receita Federal - Coordenação-Geral de Tributação (Cosit)",
+      "taxes": [
+        "Contribuição Social Previdenci"
+      ],
       "status": "Fato confirmado",
-      "kind": "Solução de Consulta ou Divergência COSIT",
-      "impactType": "Informativo",
+      "kind": "Solução de Consulta Cosit",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Receita Federal — Soluções COSIT publicou solução de consulta ou divergência cosit em 2026-08-20. O registro oficial foi identificado no monitoramento tributário.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A Solução de Consulta Cosit nº 152, de 17/08/2026, esclarece que a mera inscrição no CNPJ como empresário individual não determina incidência da contribuição social do salário-educação sobre remunerações vinculadas à atividade rural, desde que a atividade rural permaneça segregada da hoteleira, sem compartilhamento de empregados ou confusão nas folhas de pagamento.",
+      "whatChanged": "A contribuição social para o salário-educação não incide sobre remunerações vinculadas à atividade rural quando o produtor rural inscrito no CAEPF explora simultaneamente atividade hoteleira como empresário individual, desde que a atividade rural seja material, operacional e cadastralmente segregada da hoteleira.",
+      "practicalImpact": "Produtor rural inscrito no CAEPF que explora atividade hoteleira como empresário individual pode evitar incidência da contribuição social do salário-educação sobre remunerações vinculadas à atividade rural, desde que mantenha segregação operacional e cadastral entre as atividades.",
+      "officeAction": "A Solução de Consulta Cosit nº 152 estabelece que a atividade rural não está sujeita à contribuição social do salário-educação se permanecer segregada da hoteleira, sem compartilhamento de empregados ou confusão nas folhas de pagamento.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Produtor rural inscrito no CAEPF",
+        "Empresários individuais explorando atividade hoteleira",
+        "Empregados vinculados à atividade rural",
+        "Empresas com atividades simultâneas rural e hoteleira",
+        "Contribuintes com inscrição no CNPJ como empresário individual"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
-        "legalImpact": 7,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Otimização de Contribuição Social Previdenciária para Produtor Rural",
+        "period": "2026-08-20 a 2027-08-20",
+        "action": "Verificar segregação operacional e cadastral entre atividades rural e hoteleira para evitar incidência da contribuição social do salário-educação sobre remunerações vinculadas à atividade rural",
+        "confidence": "alto"
+      },
       "id": "b716cc29-7860-4dce-9c96-b3d3adabc09c",
-      "score": 8.4,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152979",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.008Z",
-      "updatedAt": "2026-08-20T14:46:01.008Z",
+      "updatedAt": "2026-08-20T15:21:58.254Z",
       "provenance": {
-        "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152979/visao/original",
-        "sourceCharacters": 0,
+        "sourceCharacters": 6011,
         "sourceId": "receita-cosit",
         "sourceName": "Receita Federal — Soluções COSIT",
         "discoveredBy": "receita-normas",
@@ -3856,47 +3867,61 @@
     },
     {
       "relevant": true,
-      "title": "Solução de Consulta 3042 Disit/SRRF03 20/08/2026 Assunto: Imposto sobre a Renda de Pessoa Jurídica - IRPJ SERVIÇOS DE AUXÍLIO DIAGNÓSTICO E TERAPIA. LUCRO PRESUMIDO. REDUÇÃO DO…",
-      "theme": "Direito tributário · IRPJ",
+      "title": "Solução de Consulta Disit/SRRF03 nº 3042, de 18/08/2026 - IRPJ e CSLL para serviços de auxílio diagnóstico e terapia com SLU",
+      "theme": "Imposto sobre a Renda de Pessoa Jurídica - IRPJ e Contribuição Social sobre o Lu",
       "agency": "Receita Federal — Soluções COSIT",
       "taxes": [
-        "IRPJ"
+        "IRPJ",
+        "CSLL",
+        "RDC nº 50/2002",
+        "Lei nº 9.249/1995",
+        "Lei nº 10.522/2002",
+        "IN RFB nº 1.234/2012"
       ],
       "status": "Fato confirmado",
-      "kind": "Solução de Consulta ou Divergência COSIT",
-      "impactType": "Informativo",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Receita Federal — Soluções COSIT publicou solução de consulta ou divergência cosit em 2026-08-20. O registro oficial foi identificado no monitoramento tributário.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Solução de Consulta da Receita Federal (Disit/SRRF03 nº 3042) de 18/08/2026 estabelece que sociedades limitadas unipessoais (SLU) podem utilizar 8% para IRPJ e 12% para CSLL na sistemática do lucro presumido, desde que atendam às normas da Anvisa e tenham alvará sanitário. A solução vincula-se a outras soluções COSIT de 2023 e 2025.",
+      "whatChanged": "A partir de 01/01/2009, SLUs podem aplicar 8% (IRPJ) e 12% (CSLL) para apuração do lucro presumido, desde que os serviços de auxílio diagnóstico e terapia correspondam às atribuições 1-4 da RDC nº 50/2002 e haja alvará sanitário estadual ou municipal.",
+      "practicalImpact": "Empresas de SLU que prestam serviços médicos com alvará sanitário podem reduzir a alíquota de IRPJ e CSLL para 8% e 12% respectivamente, evitando a aplicação de alíquotas mais altas para atividades não organizadas economicamente.",
+      "officeAction": "A Receita Federal estabelece que SLUs com atividade médica organizada (não apenas prestação pessoal de serviços) e alvará sanitário podem usar alíquotas reduzidas de 8% (IRPJ) e 12% (CSLL) na sistemática do lucro presumido.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de SLU prestando serviços de auxílio diagnóstico e terapia",
+        "Empresas com alvará sanitário estadual ou municipal",
+        "Empresas com atividade médica organizada economicamente",
+        "Empresas que atendem às normas da Anvisa",
+        "Empresas com alíquota de lucro presumido"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 4,
         "legalImpact": 7,
-        "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Redução de alíquotas para SLUs com atividade médica organizada",
+        "period": "A partir de 01/01/2009",
+        "action": "Aplicar alíquota de 8% (IRPJ) e 12% (CSLL) para SLUs que atendam às normas da Anvisa e tenham alvará sanitário",
+        "confidence": "alto"
+      },
       "id": "a6482abd-841b-436d-81c6-a15035f4f013",
-      "score": 8.4,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152972",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.009Z",
-      "updatedAt": "2026-08-20T14:46:01.009Z",
+      "updatedAt": "2026-08-20T15:33:43.065Z",
       "provenance": {
-        "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152972/visao/original",
-        "sourceCharacters": 0,
+        "sourceCharacters": 8256,
         "sourceId": "receita-cosit",
         "sourceName": "Receita Federal — Soluções COSIT",
         "discoveredBy": "receita-normas",
@@ -3920,47 +3945,57 @@
     },
     {
       "relevant": true,
-      "title": "Solução de Consulta 3041 Disit/SRRF03 20/08/2026 Assunto: Imposto sobre a Renda de Pessoa Jurídica - IRPJ LUCRO PRESUMIDO. SERVIÇOS DE SAÚDE. PERCENTUAL DE PRESUNÇÃO REDUZIDO.…",
-      "theme": "Direito tributário · IRPJ",
+      "title": "Solução de Consulta Disit/SRRF03 nº 3041, de 18/08/2026: IRPJ e CSLL para serviços de saúde com percentual reduzido de 8% e 12%",
+      "theme": "Imposto sobre a Renda de Pessoa Jurídica - IRPJ e Contribuição Social sobre o Lu",
       "agency": "Receita Federal — Soluções COSIT",
       "taxes": [
-        "IRPJ"
+        "IRPJ",
+        "CSLL"
       ],
       "status": "Fato confirmado",
-      "kind": "Solução de Consulta ou Divergência COSIT",
-      "impactType": "Informativo",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Receita Federal — Soluções COSIT publicou solução de consulta ou divergência cosit em 2026-08-20. O registro oficial foi identificado no monitoramento tributário.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A Solução de Consulta Disit/SRRF03 nº 3041, de 18/08/2026, estabelece que para pessoas jurídicas tributadas com base no lucro presumido, o percentual de 8% (IRPJ) e 12% (CSLL) será aplicado sobre a receita bruta de serviços hospitalares e de auxílio diagnóstico e terapia, conforme a Resolução RDC Anvisa nº 50, de 2002, desde que a prestadora seja organizada sob forma de sociedade empresária e atenda às normas da Anvisa. O não atendimento dos requisitos implica aplicação do percentual de 32%.",
+      "whatChanged": "A Solução de Consulta define que a base de cálculo do IRPJ e CSLL para serviços de saúde com percentual reduzido de 8% e 12% se aplica apenas se a prestadora for sociedade empresária e atender às normas da Anvisa, conforme Resolução RDC Anvisa nº 50, de 2002.",
+      "practicalImpact": "Empresas prestadoras de serviços hospitalares e de auxílio diagnóstico e terapia devem verificar se estão organizadas sob forma de sociedade empresária e atendem às normas da Anvisa para aplicar o percentual reduzido de 8% (IRPJ) e 12% (CSLL) na base de cálculo. Caso contrário, o percentual de 32% será aplicado.",
+      "officeAction": "A Receita Federal estabelece que a Solução de Consulta Disit/SRRF03 nº 3041, de 18/08/2026, é vinculada à Solução de Consulta COSIT nº 147, de 20/07/2023, e aplica-se a empresas que prestam serviços hospitalares e de auxílio diagnóstico e terapia conforme a Resolução RDC Anvisa nº 50, de 2002.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de saúde com serviços hospitalares",
+        "Empresas de saúde com serviços de auxílio diagnóstico e terapia",
+        "Prestadoras de serviços de saúde organizadas sob forma de sociedade empresária",
+        "Empresas que atendem às normas da Anvisa",
+        "Empresas com base de cálculo do IRPJ e CSLL no lucro presumido"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 4,
         "legalImpact": 7,
-        "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ajuste na base de cálculo do IRPJ e CSLL para serviços de saúde com percentual reduzido",
+        "period": "2026-08-20 a 2026-08-20",
+        "action": "Verificação da organização sob forma de sociedade empresária e conformidade com as normas da Anvisa para aplicar o percentual reduzido de 8% (IRPJ) e 12% (CSLL) na base de cálculo",
+        "confidence": "alto"
+      },
       "id": "90edc912-adf4-473f-882b-fe536c2557f4",
-      "score": 8.4,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152971",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.009Z",
-      "updatedAt": "2026-08-20T14:46:01.009Z",
+      "updatedAt": "2026-08-20T15:41:42.820Z",
       "provenance": {
-        "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152971/visao/original",
-        "sourceCharacters": 0,
+        "sourceCharacters": 6221,
         "sourceId": "receita-cosit",
         "sourceName": "Receita Federal — Soluções COSIT",
         "discoveredBy": "receita-normas",
@@ -4314,46 +4349,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo B · 1010250-75.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão do…",
-      "theme": "Direito tributário · ISS, Cofins",
+      "title": "Sentença Tipo B · 1010250-75.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão doISS",
+      "theme": "Exclusão do ISS da base de cálculo do PIS e COFINS",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "ISS",
-        "Cofins"
+        "PIS",
+        "COFINS"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária de Goiás 1ª Vara Federal Cível da SJGO SENTENÇA TIPO \"B\" PROCESSO: 1010250-75.2026.4.01.3500 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: ALFA SOLUCOES E LOGISTICA LTDA REPRESENTANTES POLO ATIVO: JULIANNA SAMPAIO CARDOSO ROSA - GO42531 POLO PASSIVO: DELEGADO DA RECEITA FEDERAL DE GOIAS e outros SENTENÇA Cuidam os autos de mandado de segurança visando à…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que o valor do ISS não deve ser incluído na base de cálculo do PIS e COFINS, seguindo o entendimento do STF sobre o ICMS. O tribunal rejeitou a necessidade de sobrestamento e aplicou a jurisprudência consolidada na AC 0016743-96.2014.4.01.3600/MT, destacando que o ISS não compõe o conceito de faturamento.",
+      "whatChanged": "O valor do ISS é excluído da base de cálculo do PIS e COFINS, conforme entendimento do STF e jurisprudência do TRF1, já que não se incorpora ao patrimônio do contribuinte e não é considerado faturamento.",
+      "practicalImpact": "Empresas optantes pelo regime tributário do Simples Nacional devem revisar suas bases de cálculo para evitar inclusão do ISS, garantindo conformidade com a jurisprudência do STF e TRF1.",
+      "officeAction": "Revisão da base de cálculo para exclusão do ISS, aplicação da correção monetária via Taxa SELIC e ajuste de custas conforme o Manual de Cálculos da Justiça Federal.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas optantes pelo Simples Nacional",
+        "Contribuintes de ISS",
+        "Empresas com base de cálculo do PIS e COFINS",
+        "Empresas com tributação de serviços",
+        "Contribuintes do ISS"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão do ISS da base de cálculo do PIS e COFINS",
+        "period": "2024-12-08 a 2025-01-20",
+        "action": "Revisão da base de cálculo para exclusão do ISS, aplicação da correção monetária via Taxa SELIC e ajuste de custas conforme o Manual de Cálculos da Justiça Federal",
+        "confidence": "alto"
+      },
       "id": "bc034e7b-0a72-4583-b3fc-77e12cd6e3a1",
-      "score": 8.2,
+      "score": 8.5,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkORAzUEmOhbTGja9N6Ka931z/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.011Z",
-      "updatedAt": "2026-08-20T14:46:01.011Z",
+      "updatedAt": "2026-08-20T15:15:13.395Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkORAzUEmOhbTGja9N6Ka931z/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -10082,8 +10127,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "d3f43d539a847a699158170f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -10099,7 +10144,14 @@
         },
         "alertId": "bc034e7b-0a72-4583-b3fc-77e12cd6e3a1",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T15:15:13.435Z",
+        "analyzedPublishedAt": "2024-12-08T00:00:00",
+        "relevant": true,
+        "score": 8.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1061090-98.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: são de tutela cautelar antecedente inaudita altera parte para autorizar o recolhimento do PIS/COFINS sem inclusão das próprias contribuições em suas bases de cálculo, por ofensa as disposições expressas aos artigos 145, §1º, e 195, I, da Constituição Federal, suspendendo a",
@@ -20368,8 +20420,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-20T12:23:43.984Z",
         "id": "e66d9f2f63ae44cd124ed81a",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 84,
@@ -20385,7 +20437,14 @@
         },
         "alertId": "b716cc29-7860-4dce-9c96-b3d3adabc09c",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T15:21:58.289Z",
+        "analyzedPublishedAt": "2026-08-20",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 151 Cosit 20/08/2026 Assunto: Regimes Aduaneiros AERONAVES ESTRANGEIRAS. IMPORTAÇÃO DEFINITIVA. NACIONALIZAÇÃO. REGIME COMUM DE IMPORTAÇÃO. DESPACHO PARA CONSUMO. Aplica-se o regime comum de tributação à aeronave estrangeira importada a título definitivo (nacionalizada). O despac",
@@ -20475,8 +20534,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-20T12:23:43.984Z",
         "id": "3e8e617d798ebb1405b3de1a",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 84,
@@ -20492,7 +20551,14 @@
         },
         "alertId": "a6482abd-841b-436d-81c6-a15035f4f013",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T15:33:43.103Z",
+        "analyzedPublishedAt": "2026-08-20",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 3041 Disit/SRRF03 20/08/2026 Assunto: Imposto sobre a Renda de Pessoa Jurídica - IRPJ LUCRO PRESUMIDO. SERVIÇOS DE SAÚDE. PERCENTUAL DE PRESUNÇÃO REDUZIDO. REQUISITOS. Para efeito de determinação da base de cálculo do IRPJ devido pela pessoa jurídica tributada com base no lucro p",
@@ -20510,8 +20576,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-20T12:23:43.984Z",
         "id": "f45bdd014f68faf284525efc",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 84,
@@ -20527,7 +20593,14 @@
         },
         "alertId": "90edc912-adf4-473f-882b-fe536c2557f4",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T15:41:42.859Z",
+        "analyzedPublishedAt": "2026-08-20",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Congresso aprova PLP 124/2022 e abre caminho para soluções consensuais de conflitos tributários",
@@ -32179,9 +32252,9 @@
         "discoveredAt": "2026-08-19T14:52:27.388Z",
         "id": "d187b1386e5d551cbffa0bfa",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "error": "A coleta excedeu o limite de 60 segundos.",
-        "analyzedAt": "2026-08-20T14:19:13.109Z"
+        "analyzedAt": "2026-08-20T15:25:02.145Z"
       },
       {
         "title": "Manual de Escrituração da EFD-Contribuições - PJ do Lucro Presumido - PVA Versão 2.04",
@@ -32748,6 +32821,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "75bee025-2462-4fdb-a49b-b64d6a0c1e88",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T15:05:59.951Z",
+        "finishedAt": "2026-08-20T15:41:42.937Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "f479ec7e-538a-4f95-b289-1f4a2c56c562",
         "trigger": "github-actions-history",
@@ -57078,109 +57164,9 @@
             "found": 0
           }
         ]
-      },
-      {
-        "id": "71614ea7-6b09-4ee2-9c7f-2189fcf94596",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T04:21:41.805Z",
-        "finishedAt": "2026-08-19T04:22:49.218Z",
-        "discovered": 5,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 3,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 19
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 6
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T15:02:40.667Z",
-    "nextRunAt": "2026-08-20T21:02:40.667Z"
+    "lastRunAt": "2026-08-20T15:41:42.937Z",
+    "nextRunAt": "2026-08-20T21:41:42.937Z"
   }
 }
