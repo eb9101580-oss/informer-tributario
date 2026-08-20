@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T18:09:12.454Z",
+    "lastUpdatedAt": "2026-08-20T18:50:04.869Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -6724,43 +6724,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5050656-32.2022.4.02.5101 · 30ª Vara Federal do Rio de Janeiro — Direito tributário: LIQUIDAÇÃO PELO PROCEDIMENTO COMUM Nº 5050656-32.2022.4.02.5101/RJ AUTOR :…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5050656-32.2022.4.02.5101 · 30ª Vara Federal do Rio de Janeiro — Direito tributário: LIQUIDAÇÃO PELO PROCEDIMENTO COMUM Nº 5050656-32.2022.4.02.5101/RJ",
+      "theme": "Embragues de declaração em liquidação tributária",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "SELIC",
+        "Juros",
+        "Correção monetária",
+        "Obrigação tributária"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Sustenta a embargante, em síntese, que a decisão embargada incorreu em omissão (art.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Decisão judicial que rejeita embargos de declaração da CLÍNICA DE REPOUSO TRÊS RIOS LTDA. em liquidação tributária, fixando o valor da obrigação em R$ 4.296.609,63 até junho de 2022. A decisão destaca que não há omissão na liquidação, já que a atualização do montante não é essencial para o deslinde da controvérsia, e a União Federal não se opõe à aplicação da taxa SELIC a partir de junho de 2022.",
+      "whatChanged": "A decisão rejeita os embargos de declaração da CLÍNICA DE REPOUSO TRÊS RIOS LTDA. em liquidação tributária, mantendo o valor da obrigação em R$ 4.296.609,63 até junho de 2022, sem necessidade de atualização prévia dos cálculos.",
+      "practicalImpact": "Empresas devem verificar se há necessidade de atualização de valores tributários após a data-base homologada, considerando a aplicação da taxa SELIC a partir de junho de 2022, sem alteração no valor liquidado.",
+      "officeAction": "A decisão rejeita os embargos de declaração da CLÍNICA DE REPOUSO TRÊS RIOS LTDA. em liquidação tributária, mantendo o valor da obrigação em R$ 4.296.609,63 até junho de 2022, sem necessidade de atualização prévia dos cálculos.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com liquidação tributária",
+        "Clientes de tributação",
+        "Advogados de tributação",
+        "Fiscais de tributação",
+        "Organizações públicas"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
         "clientFit": 7,
-        "actionPotential": 6
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Aplicação da taxa SELIC na liquidação tributária",
+        "period": "A partir de junho de 2022",
+        "action": "Verificar se há necessidade de atualização de valores tributários após a data-base homologada, considerando a aplicação da taxa SELIC a partir de junho de 2022",
+        "confidence": "médio"
+      },
       "id": "65e09951-f5a8-49dc-ae46-609ac0264f75",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvRbvuLA7iXTNDW3eRyo3rGz/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.158Z",
-      "updatedAt": "2026-08-20T17:10:19.158Z",
+      "updatedAt": "2026-08-20T18:26:55.591Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvRbvuLA7iXTNDW3eRyo3rGz/certidao",
         "sourceCharacters": 3534,
         "sourceId": "trf2",
@@ -6787,47 +6802,58 @@
     },
     {
       "relevant": true,
-      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5003324-66.2025.4.03.6126 · Gab. 14 - DES. FED. MARCELO SARAIVA — Direito tributário: isposições do art. 171, parágrafo…",
-      "theme": "Direito tributário · IPI, PIS, Cofins",
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5003324-66.2025.4.03.6126 · Gab. 14 - DES. FED. MARCELO SARAIVA — Direito tributário: isposições do art. 171, parágrafo ún",
+      "theme": "IPI não recuperável na base de cálculo de PIS e COFINS",
       "agency": "Tribunal Regional Federal da 3ª Região",
       "taxes": [
         "IPI",
         "PIS",
-        "Cofins"
+        "COFINS",
+        "IN/RFB 2121/22",
+        "IN/RFB 2152/23"
       ],
       "status": "Fato confirmado",
-      "kind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial com resolução de mérito sobre tributação",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão monocrática terminativa com resolução de mérito judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 4ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO / REMESSA NECESSÁRIA (1728) Nº 5003324-66.2025.4.03.6126 RELATOR: MARCELO MESQUITA SARAIVA APELANTE: DELEGADO DA RECEITA FEDERAL EM SANTO ANDRÉ//SP, UNIAO FEDERAL - FAZENDA NACIONAL APELADO: BELEZA RENOVADA COMERCIO VAREJISTA DE…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O juízo decidiu que o IPI não recuperável não integra a base de cálculo dos créditos de PIS e COFINS após a vigência da IN/RFB 2121/22, conforme entendimento do STJ no tema 1373. A decisão confirma a vedação da inclusão do IPI não recuperável na base de cálculo, evitando conflito com a não cumulatividade das contribuições sociais.",
+      "whatChanged": "A decisão do TRF3 afirma que o IPI não recuperável incidente na venda do bem pelo fornecedor não deve ser incluído na base de cálculo dos créditos de PIS e COFINS, seguindo a tese do STJ no tema 1373. Isso evita a inclusão do IPI não recuperável na base de cálculo, garantindo a não cumulatividade das contribuições sociais.",
+      "practicalImpact": "Empresas devem evitar incluir o IPI não recuperável na base de cálculo de PIS e COFINS, seguindo a interpretação do STJ. A decisão não altera a aplicação das IN/RFB 2121/22 e 2152/23, mas estabelece claramente a vedação da inclusão do IPI não recuperável na base de cálculo.",
+      "officeAction": "O juízo determinou que a União não deve aplicar o art. 171, parágrafo único, III, da IN/RFB 2121/22 quanto ao creditamento do IPI não-recuperável na base de cálculo de apuração dos créditos de PIS e COFINS. A restituição do indébito é possível apenas por ação própria.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com operações de venda de bens",
+        "Contribuintes do IPI",
+        "Empresas que utilizam o regime não cumulativo de PIS e COFINS",
+        "Receita Federal do Brasil",
+        "Empresas com tributação de IPI não recuperável"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "O IPI não recuperável não integra a base de cálculo de PIS e COFINS após a vigência da IN/RFB 2121/22",
+        "period": "Após a vigência da IN/RFB 2121/22 (15/12/2022)",
+        "action": "Empresas devem evitar incluir o IPI não recuperável na base de cálculo de PIS e COFINS, seguindo a tese do STJ no tema 1373",
+        "confidence": "alto"
+      },
       "id": "0b5f86ad-3fa3-40f5-b60e-8a632bf593ba",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgXF7xdH5TGKOzWYmrz2A1/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.159Z",
-      "updatedAt": "2026-08-20T17:10:19.159Z",
+      "updatedAt": "2026-08-20T18:35:38.548Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgXF7xdH5TGKOzWYmrz2A1/certidao",
         "sourceCharacters": 10489,
         "sourceId": "trf3",
@@ -6854,45 +6880,55 @@
     },
     {
       "relevant": true,
-      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5016881-34.2026.4.03.0000 · Gab. 08 - DES. FED. CARLOS DELGADO — Direito tributário: om efeitos de negativa, em nome da…",
-      "theme": "Direito tributário · IPVA",
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5016881-34.2026.4.03.0000 · Gab. 08 - DES. FED. CARLOS DELGADO — Direito tributário: om efeitos de negativa, em nome da da",
+      "theme": "Imunidade tributária recíproca para empresas públicas federais no IPVA",
       "agency": "Tribunal Regional Federal da 3ª Região",
       "taxes": [
-        "IPVA"
+        "IPVA",
+        "Imposto sobre a Propriedade de"
       ],
       "status": "Fato confirmado",
-      "kind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial com resolução de mérito",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão monocrática terminativa com resolução de mérito judicial publicada no djen em 2026-08-20. a concessão da antecipação da tutela almejada, de forma a suspender a exigibilidade do IPVA em face da Autora, até o final da presente lide; 2.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Decisão do TRF3 que suspende a exigibilidade do IPVA para a CPRM, empresa pública federal que presta serviço público essencial, com base na imunidade tributária recíproca prevista no art. 150, VI, 'a', da CF. A decisão reconhece que empresas públicas federais que atuem em serviços essenciais e não concorrnciais são beneficiárias da imunidade, evitando a cobrança do IPVA até o julgamento definitivo do agravo.",
+      "whatChanged": "A decisão do TRF3 confirma que empresas públicas federais, como a CPRM, que prestam serviços públicos essenciais e não concorrnciais, estão isentas do IPVA até o julgamento definitivo do processo, com base na imunidade tributária recíproca prevista no art. 150, VI, 'a', da Constituição Federal.",
+      "practicalImpact": "Empresas públicas federais que prestam serviços essenciais (como pesquisa mineral) podem suspender a exigibilidade do IPVA sobre seus veículos até o julgamento final do processo, evitando cobrança, inscrição em dívida ativa e restrições cadastrais.",
+      "officeAction": "Suspensão temporária da exigibilidade do IPVA para veículos da CPRM até o julgamento definitivo do agravo, com base na imunidade tributária recíproca prevista no art. 150, VI, 'a', da CF.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas públicas federais",
+        "Organizações de pesquisa mineral",
+        "Empresas com imunidade tributária recíproca",
+        "Contribuintes do IPVA",
+        "Estados que cobram IPVA"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Suspensão temporária do IPVA para empresas públicas federais com serviço essencial",
+        "period": "Até o julgamento definitivo do agravo",
+        "action": "Reconhecer a imunidade tributária recíproca para empresas públicas federais que prestam serviços essenciais e não concorrnciais, evitando cobrança do IPVA",
+        "confidence": "alto"
+      },
       "id": "091c6b36-5b76-4316-9f74-d6f3c18754cb",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8RezFmXH3TBXAVK6ABQLjKw/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.160Z",
-      "updatedAt": "2026-08-20T17:10:19.160Z",
+      "updatedAt": "2026-08-20T18:42:39.690Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8RezFmXH3TBXAVK6ABQLjKw/certidao",
         "sourceCharacters": 12977,
         "sourceId": "trf3",
@@ -6919,43 +6955,59 @@
     },
     {
       "relevant": true,
-      "title": "Decisão · 5005345-41.2022.4.03.6119 · Gab. Vice Presidência — Direito tributário: ontra acórdão proferido por Órgão fracionário deste Tribunal, conforme a seguinte ementa:…",
-      "theme": "Direito tributário",
+      "title": "Decisão judicial: 5005345-41.2022.4.03.6119 - GNTP Pizzaria vs União Federal sobre PERSE e inscrição no Cadastur",
+      "theme": "Tributário: PERSE (Programa Emergencial de Retomada do Setor de Eventos) e inscr",
       "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "CSLL",
+        "IRPJ",
+        "Simples Nacional",
+        "Cadastur"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-20. interpôs Recurso Extraordinário e Recurso Especial contra acórdão proferido por Órgão fracionário deste Tribunal, conforme a seguinte ementa: TRIBUTÁRIO.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O tribunal negou recurso extraordinário da GNTP Pizzaria, que alegava direito à alíquota zero de PIS, COFINS, CSLL e IRPJ por meio do PERSE, pois não estava inscrito no Cadastur. A decisão afirma que empresas optantes pelo Simples Nacional não podem usufruir do benefício fiscal do PERSE, conforme previsto na Lei 14.148/2021 e no art. 24 da LC 123/2006.",
+      "whatChanged": "A decisão reforça que empresas optantes pelo Simples Nacional não têm direito ao benefício fiscal do PERSE, mesmo que estejam inscritas no Cadastur, conforme a interpretação do STF na Súmula 636/STF.",
+      "practicalImpact": "Empresas optantes pelo Simples Nacional devem evitar a inscrição no Cadastur para não perder o benefício fiscal do PERSE, já que a decisão afirma que o regime tributário não permite a fruição do benefício fiscal.",
+      "officeAction": "A decisão nega o recurso extraordinário da GNTP Pizzaria, que alegava direito à alíquota zero de tributos por meio do PERSE, pois não estava inscrito no Cadastur. A empresa deve recolher tributos conforme o regime do Simples Nacional.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas optantes pelo Simples Nacional",
+        "Contribuintes do setor de eventos",
+        "Empresas com atividade em CNAE 56.11-2-01",
+        "Empresas inscritas no Cadastur",
+        "Empresas com inscrição no Cadastro de Prestadores de Serviços Turísticos"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade: Empresas optantes pelo Simples Nacional devem revisar inscrição no Cadastur para evitar perda de benefício fiscal PERSE",
+        "period": "2024-10-11 a 2025-03-31",
+        "action": "Revisar inscrição no Cadastur e confirmar se estão elegíveis para o PERSE",
+        "confidence": "médio"
+      },
       "id": "f36649da-943c-41d2-bbdc-ae3613a8e90c",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQRVmFlVBT7Tdl7LnYek9aWL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.160Z",
-      "updatedAt": "2026-08-20T17:10:19.160Z",
+      "updatedAt": "2026-08-20T18:50:04.822Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQRVmFlVBT7Tdl7LnYek9aWL/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf3",
@@ -28308,7 +28360,7 @@
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
         "status": "fast-published",
-        "attempts": 1,
+        "attempts": 2,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -28325,7 +28377,7 @@
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-08-20T17:46:54.148Z"
+        "analyzedAt": "2026-08-20T18:21:50.018Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -28433,8 +28485,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "2b41ca60e4263cf57a24a30d",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -28450,7 +28502,14 @@
         },
         "alertId": "65e09951-f5a8-49dc-ae46-609ac0264f75",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T18:26:55.636Z",
+        "analyzedPublishedAt": "2023-10-30T00:00:00",
+        "relevant": true,
+        "score": 6.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5003324-66.2025.4.03.6126 · Gab. 14 - DES. FED. MARCELO SARAIVA — Direito tributário: isposições do art. 171, parágrafo único, III, da IN/RFB 2121/22 quanto ao creditamento do IPI não-recuperável na base de cálculo de apuração dos créditos de PIS e da COFINS. (Id. 380434080). Por meio de sentença, o r. Juízo a quo julgou procedente a ação, concedendo a orde",
@@ -28470,8 +28529,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "b2332125080cf7ce32ee5c9f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -28487,7 +28546,14 @@
         },
         "alertId": "0b5f86ad-3fa3-40f5-b60e-8a632bf593ba",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T18:35:38.590Z",
+        "analyzedPublishedAt": "2025-03-17T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5016881-34.2026.4.03.0000 · Gab. 08 - DES. FED. CARLOS DELGADO — Direito tributário: om efeitos de negativa, em nome da Autora, a que alude os termos do artigo 206, do Código Tributário Nacional, sob pena de tornar inócua os efeitos da decisão concedida e sob pena do perecimento de direito; 3. Seja julgada, após o devido processo legal, procedente a ação, para d",
@@ -28507,8 +28573,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "a562418f5d8cd674108d13c0",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -28524,7 +28590,14 @@
         },
         "alertId": "091c6b36-5b76-4316-9f74-d6f3c18754cb",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T18:42:39.732Z",
+        "analyzedPublishedAt": "2023-12-09T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 5005345-41.2022.4.03.6119 · Gab. Vice Presidência — Direito tributário: ontra acórdão proferido por Órgão fracionário deste Tribunal, conforme a seguinte ementa: TRIBUTÁRIO. PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. PROGRAMA EMERGENCIAL DE RETOMADA DO SETOR DE EVENTOS. PERSE. LEI 14.148/2021. INSCRIÇÃO NO CADASTUR. AUSÊNCIA DE INTERESSE PROCESSUAL. IN",
@@ -28544,8 +28617,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "de5477bc5b551868dc2961d1",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -28561,7 +28634,14 @@
         },
         "alertId": "f36649da-943c-41d2-bbdc-ae3613a8e90c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T18:50:04.869Z",
+        "analyzedPublishedAt": "2024-10-11T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 5005514-46.2026.4.03.6100 · Gab. 12 - DES. FED. WILSON ZAUHY — Direito tributário: 26.4.03.6100 RELATOR: WILSON ZAUHY FILHO APELANTE: DELEGADO DA DELEGACIA DE ADMINISTRAÇÃO TRIBUTÁRIA DA RECEITA FEDERAL DO BRASIL (DERAT/SPO), UNIAO FEDERAL - FAZENDA NACIONAL APELADO: SETE PARTNERS CONSULTORIA E PROJETOS LTDA ADVOGADO do(a) APELADO: ANDRE VILLAC POLINESIO - SP2",
@@ -53011,6 +53091,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "69f728f4-44dc-4643-a26f-d81bf6ce431b",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T18:11:48.719Z",
+        "finishedAt": "2026-08-20T18:50:04.923Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "8ebf00ef-811b-4d07-ae3d-6d784982ff4a",
         "trigger": "github-actions-history",
@@ -79590,254 +79683,9 @@
             "found": 1
           }
         ]
-      },
-      {
-        "id": "cb98757d-26db-41ec-9ed8-69acba5e5d6b",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T14:23:12.923Z",
-        "finishedAt": "2026-08-19T14:28:08.041Z",
-        "discovered": 95,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 16,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T18:09:12.498Z",
-    "nextRunAt": "2026-08-21T00:09:12.498Z"
+    "lastRunAt": "2026-08-20T18:50:04.923Z",
+    "nextRunAt": "2026-08-21T00:50:04.923Z"
   }
 }
