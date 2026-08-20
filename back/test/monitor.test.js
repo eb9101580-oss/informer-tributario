@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { candidateFingerprint, candidateId, fastTriageCandidate, normalizeMonitorTargetDate } from '../src/services/monitor.js';
+import { candidateFingerprint, candidateId, fastTriageCandidate, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
 import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
@@ -68,6 +68,14 @@ test('data manual aceita apenas dia civil válido e não futuro', () => {
   assert.equal(normalizeMonitorTargetDate('', now), null);
   assert.throws(() => normalizeMonitorTargetDate('2026-02-30', now), /data válida/);
   assert.throws(() => normalizeMonitorTargetDate('2026-08-20', now), /futuro/);
+});
+
+test('busca complementar de ontem preserva a fila de hoje', () => {
+  const now = new Date('2026-08-20T15:00:00-03:00');
+  assert.equal(shouldRetainQueuedCandidate({ publishedAt: '2026-08-20' }, '2026-08-19', now), true);
+  assert.equal(shouldRetainQueuedCandidate({ publishedAt: '2026-08-19' }, null, now), true);
+  assert.equal(shouldRetainQueuedCandidate({ publishedAt: '2026-08-18' }, null, now), false);
+  assert.equal(shouldRetainQueuedCandidate({ publishedAt: '' }, null, now), false);
 });
 
 test('STJ seleciona o arquivo diário pedido e somente assuntos da raiz tributária 14', () => {

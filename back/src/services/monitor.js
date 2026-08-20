@@ -49,6 +49,14 @@ export function normalizeMonitorTargetDate(value, now = new Date()) {
   return targetDate;
 }
 
+export function shouldRetainQueuedCandidate(item, targetDate = null, now = new Date()) {
+  // Uma busca complementar por data não pode apagar candidatos coletados no
+  // ciclo principal. A limpeza da janela ocorre apenas na varredura geral.
+  if (targetDate) return true;
+  const candidateDate = publicationDateKey(item.publishedAt) || item.backfillDate;
+  return isPublishedWithinDays(candidateDate, config.monitorLookbackDays, now);
+}
+
 function makeAlert(analysis, document, candidate) {
   const score = calculateScore(analysis.criteria);
   const now = new Date().toISOString();
@@ -193,10 +201,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const retained = monitor.candidates.filter((item) => {
         if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
         if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !hasCandidateText(item) && !item.publishedAt) return false;
-        if (['pending', 'error'].includes(item.status)) {
-          const candidateDate = publicationDateKey(item.publishedAt) || item.backfillDate;
-          if (targetDate ? candidateDate !== targetDate : !isPublishedWithinDays(candidateDate, config.monitorLookbackDays)) return false;
-        }
+        if (['pending', 'error'].includes(item.status) && !shouldRetainQueuedCandidate(item, targetDate)) return false;
         const fingerprint = candidateFingerprint(item);
         if (['pending', 'error'].includes(item.status) && (publishedFingerprints.has(fingerprint) || pendingFingerprints.has(fingerprint))) return false;
         if (['pending', 'error'].includes(item.status)) pendingFingerprints.add(fingerprint);
