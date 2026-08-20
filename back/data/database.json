@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T21:11:18.052Z",
+    "lastUpdatedAt": "2026-08-20T21:47:10.906Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -14326,43 +14326,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5000645-02.2026.4.04.7009 · 22ª Vara Federal de Curitiba — Direito tributário: Cumprimento de Sentença contra Fazenda Pública (JEF) Nº…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5000645-02.2026.4.04.7009 · 22ª Vara Federal de Curitiba — Direito tributário: Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5000645-02.2026.4.04.7009/",
+      "theme": "Cumprimento de Sentença contra Fazenda Pública (JEF) - Aposentadoria por Tempo",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "Aposentadoria por Tempo de Con",
+        "Contribuição Previdenciária",
+        "INSS",
+        "CEAB",
+        "DIB",
+        "DER"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5000645-02.2026.4.04.7009/PR REQUERENTE : JAIRO DA LUZ SELIGER ADVOGADO(A) : TAYNA FERNANDA SIMAO (OAB PR116790) ADVOGADO(A) : ROBERTO CARLOS HAUAGGE (OAB PR074297) ADVOGADO(A) : LUANA MIRELLY PEREIRA DE ALMEIDA (OAB PR131988) DESPACHO/DECISÃO 1.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Decisão judicial que rejeita alegações do autor sobre a CEAB não considerar períodos de benefício por incapacidade, confirmando que o tempo de serviço militar (30/01/1984 a 30/03/1985) foi computado na contagem administrativa do INSS, resultando em 34 anos, 03 meses e 16 dias de contribuição até 12/11/2025. O acordo homologado não reconheceu períodos de contribuição individual posteriores a 01/09/2020, que foram renunciados para fins de concessão de aposentadoria por tempo de contribuição.",
+      "whatChanged": "O INSS reconheceu o tempo de serviço militar (30/01/1984 a 30/03/1985) como parte do período administrativo incontroverso, resultando em 34 anos, 03 meses e 16 dias de contribuição até 12/11/2025. Os períodos de benefício por incapacidade (auxílio-doença) foram computados como tempo de contribuição, conforme demonstrado no evento 33.1.",
+      "practicalImpact": "Empresas e contribuintes devem verificar se os períodos de serviço militar e benefícios por incapacidade estão sendo corretamente computados no cálculo de tempo de contribuição para aposentadoria por tempo de contribuição. O acordo homologado renunciou a períodos de contribuição individual posteriores a 01/09/2020, que devem ser analisados em demandas futuras.",
+      "officeAction": "O juízo rejeitou as alegações do evento 46.1, confirmando que o tempo de serviço militar foi computado na contagem administrativa do INSS, resultando em 34 anos, 03 meses e 16 dias de contribuição até 12/11/2025. Os períodos de benefício por incapacidade foram incluídos na contagem de tempo de contribuição.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com tempo de serviço militar",
+        "Aposentados por tempo de contribuição",
+        "Empresas com contribuintes individuais",
+        "Beneficiários de auxílio-doença",
+        "Pessoas com períodos de contribuição individual após 01/09/2020"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
         "clientFit": 7,
-        "actionPotential": 6
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão de contagem de tempo de contribuição para aposentadoria por tempo de contribuição",
+        "period": "Até 12/11/2025",
+        "action": "Verificar se os períodos de serviço militar e benefícios por incapacidade estão sendo corretamente computados no cálculo de tempo de contribuição para aposentadoria por tempo de contribuição",
+        "confidence": "alto"
+      },
       "id": "b27c489b-20e6-4dbf-ba57-2728cfa14df6",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqZvrSxQoc4Tny43GZrvMJbg/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.234Z",
-      "updatedAt": "2026-08-20T17:16:50.234Z",
+      "updatedAt": "2026-08-20T21:30:54.676Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqZvrSxQoc4Tny43GZrvMJbg/certidao",
         "sourceCharacters": 6048,
         "sourceId": "trf4",
@@ -14389,43 +14405,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5003877-34.2026.4.04.7102 · 3ª Vara Federal de Santa Maria — Direito tributário: CUMPRIMENTO DE SENTENÇA Nº 5003877-34.2026.4.04.7102/RS EXECUTADO : CIRES RENI…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5003877-34.2026.4.04.7102 · 3ª Vara Federal de Santa Maria — Direito tributário: CUMPRIMENTO DE SENTENÇA Nº 5003877-34.2026.4.04.7102/RS EXECUTADO",
+      "theme": "Correção monetária de honorários advocatícios em processos tributários",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "Honorários advocatícios",
+        "Correção monetária",
+        "SELIC",
+        "IPCA-E",
+        "CPC",
+        "EC 113/2021"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. CUMPRIMENTO DE SENTENÇA Nº 5003877-34.2026.4.04.7102/RS EXECUTADO : CIRES RENI PRADO LIMA HOHER ADVOGADO(A) : RICARDO MUNARSKI JOBIM (OAB RS047849) ADVOGADO(A) : CHRISTIAN LEFANCE SODER (OAB RS093537) DESPACHO/DECISÃO Vistos, etc.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Decisão judicial confirma a aplicação da correção monetária desde o ajuizamento para honorários advocatícios fixados em percentual sobre o valor da causa, seguindo a Súmula 14 do STJ. A Contadoria Judicial aplicou corretamente o IPCA-E até o trânsito em julgado e a SELIC após, com valor total de R$ 71.576,96 até abril de 2026.",
+      "whatChanged": "A decisão rejeita a impugnação da executada sobre a correção monetária dos honorários advocatícios, estabelecendo que a correção deve ocorrer desde o ajuizamento da ação, conforme Súmula 14 do STJ, e não apenas após o trânsito em julgado.",
+      "practicalImpact": "Empresas e profissionais de direito tributário devem garantir a correção monetária desde o ajuizamento para honorários advocatícios em processos tributários, evitando riscos de execução incorreta de honorários.",
+      "officeAction": "A decisão confirma a aplicação da Súmula 14 do STJ para correção monetária de honorários advocatícios em processos tributários, utilizando IPCA-E até trânsito em julgado e SELIC após, com valor total de R$ 71.576,96 até abril de 2026.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com processos tributários",
+        "Profissionais de direito tributário",
+        "Advogados",
+        "Contadores",
+        "Executivos de tributação"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Aplicação correta da Súmula 14 do STJ para correção monetária de honorários advocatícios",
+        "period": "2026-04-01",
+        "action": "Garantir correção monetária desde o ajuizamento para honorários advocatícios em processos tributários",
+        "confidence": "alto"
+      },
       "id": "6a304e97-b929-4639-a778-d8404bc5d58c",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MrSXq5SmT8oVEpZ4eny8l/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.234Z",
-      "updatedAt": "2026-08-20T17:16:50.234Z",
+      "updatedAt": "2026-08-20T21:35:45.222Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MrSXq5SmT8oVEpZ4eny8l/certidao",
         "sourceCharacters": 4324,
         "sourceId": "trf4",
@@ -14452,43 +14484,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5045469-35.2024.4.04.7100 · 17ª Vara Federal de Porto Alegre — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5045469-35.2024.4.04.7100/RS AUTOR…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5045469-35.2024.4.04.7100 · 17ª Vara Federal de Porto Alegre — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5045469-35.2024.4.04.7100/RS",
+      "theme": "Atualização de crédito previdenciário com base em índices de atualização monetář",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "INPC",
+        "IPCA",
+        "SELIC",
+        "Código Civil (art. 406, § 1º)",
+        "EC 113/2021",
+        "EC 136/2025"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Os consectários legais foram fixados da seguinte forma -evento 152.1 : a) no período anterior a 08/12/2021 , deve haver a incidência dos seguintes índices (STF, Tema 810; STJ, Tema 905): a.1) atualização monetária: a.1.1) pelo INPC, no caso de ações previdenciárias; a.1.2) pelo IPCA, no caso de benefícios assistenciais; a.2) índice de juros aplicáveis à poupança (Lei n.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O INSS foi condenado a pagar prestações vencidas com atualização desde o vencimento até o pagamento. Os índices de atualização foram definidos: INPC para ações previdenciárias até 08/12/2021, SELIC até 31/08/2025 e, a partir de 10/09/2025, SELIC com base no Código Civil. A parte autora concordou com a forma de atualização, homologando a desistência do recurso da Fazenda Pública com fulcro no art. 998 do CPC.",
+      "whatChanged": "A decisão estabelece que a atualização do crédito previdenciário deve seguir os índices de INPC até 08/12/2021, SELIC até 31/08/2025 e, a partir de 10/09/2025, SELIC com base no Código Civil (art. 406, § 1º). A composição sobre os índices esvaziou o recurso da Fazenda Pública, resultando na homologação da desistência com fulcro no art. 998 do CPC.",
+      "practicalImpact": "Empresas e contribuintes devem atualizar prestações vencidas com os índices definidos: INPC até 08/12/2021, SELIC até 31/08/2025 e, a partir de 10/09/2025, SELIC com base no Código Civil. A decisão impacta diretamente o cálculo de prestações previdenciárias e a conformidade com a legislação tributária federal.",
+      "officeAction": "O INSS deve pagar as prestações vencidas com atualização monetária conforme os índices estabelecidos: INPC até 08/12/2021, SELIC até 31/08/2025 e, a partir de 10/09/2025, SELIC com base no Código Civil (art. 406, § 1º). A decisão homologa a desistência do recurso da Fazenda Pública com fulcro no art. 998 do CPC.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes previdenciários",
+        "INSS",
+        "Juizados Especiais Cíveis",
+        "Empresas com obrigações previdenciárias",
+        "Advogados especializados em direito tributário"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Atualização de crédito previdenciário com base em índices de atualização monetária",
+        "period": "De 08/12/2021 a 10/09/2025",
+        "action": "Revisar prestações vencidas com os índices estabelecidos: INPC até 08/12/2021, SELIC até 31/08/2025 e, a partir de 10/09/2025, SELIC com base no Código Civil (art. 406, § 1º)",
+        "confidence": "alto"
+      },
       "id": "f7731f0c-1a87-45bc-9bb0-5070a703f04b",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8AkYr3S7v8f5TwpEbLR4dOjxN/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.235Z",
-      "updatedAt": "2026-08-20T17:16:50.235Z",
+      "updatedAt": "2026-08-20T21:40:24.353Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8AkYr3S7v8f5TwpEbLR4dOjxN/certidao",
         "sourceCharacters": 2464,
         "sourceId": "trf4",
@@ -14578,43 +14626,57 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 0065947-77.2025.4.05.8300 · 3ª Relatoria da 1ª TR/PE — Direito tributário: ENTE: JOAO PAULO DE SANTANA GUEDES - PE41195-A RECORRIDO: FAZENDA NACIONAL EMENTA DIREITO…",
-      "theme": "Direito tributário",
+      "title": "Acórdão · 0065947-77.2025.4.05.8300 · 3ª Relatoria da 1ª TR/PE — Direito tributário: ENTE: JOAO PAULO DE SANTANA GUEDES - PE41195-A RECORRIDO: FAZENDA NACIONAL",
+      "theme": "Imposto de Renda: tributação de valores acumulados de BPC/LOAS pelo regime de a)",
       "agency": "Tribunal Regional Federal da 5ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "BPC/LOAS",
+        "Retenção na fonte",
+        "SELIC"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 5ª Região publicou acórdão judicial publicada no djen em 2026-08-20. EMENTA PODER JUDICIÁRIO Turma Recursal de Pernambuco 1ª Turma Recursal de Pernambuco RECURSO INOMINADO CÍVEL (460) Nº 0065947-77.2025.4.05.8300 RECORRENTE: ROMARIO CORREIA DE MELO ADVOGADO do(a) RECORRENTE: JOAO PAULO DE SANTANA GUEDES - PE41195-A RECORRIDO: FAZENDA NACIONAL EMENTA DIREITO TRIBUTÁRIO.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Acórdão do TRF-5ª Região reconhece ilegalidade da retenção de Imposto de Renda sobre valores acumulados de BPC/LOAS, determinando restituição de R$ 2.537,42 com SELIC. A tributação deve ser feita mês a mês, considerando as parcelas e competências específicas, não pelo montante global.",
+      "whatChanged": "A retenção de Imposto de Renda sobre valores acumulados de BPC/LOAS foi considerada ilegal, exigindo restituição com SELIC. A tributação deve ser feita mês a mês, não pelo montante global.",
+      "practicalImpact": "Contribuintes que receberam BPC/LOAS acumuladamente devem verificar se a retenção foi feita com base no montante global, exigindo restituição se aplicada a regra do art. 12-B da Lei nº 7.713/1988 sem observância das competências específicas.",
+      "officeAction": "Recurso provido para reformar a sentença e condenar a UNIÃO à restituição de R$ 2.537,42 com SELIC, observando o regime de competência para tributação de BPC/LOAS acumulados.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com BPC/LOAS acumulados",
+        "Empresas que retêm na fonte",
+        "Pessoas físicas com renda mensal de BPC",
+        "Contribuintes com tributação indistinta de montante acumulado",
+        "Receita Federal"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da tributação de BPC/LOAS acumulados: aplicação do regime de competência",
+        "period": "2025-04-05 a 2025-04-30",
+        "action": "Verificar se retenção foi feita com base no montante global, solicitar restituição se aplicada a regra do art. 12-B sem observância das competências específicas",
+        "confidence": "alto"
+      },
       "id": "f2090a62-9db8-4898-9ef3-3628fc8b7d1c",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8Li9yacrTVzleWYoWe2dL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.236Z",
-      "updatedAt": "2026-08-20T17:16:50.236Z",
+      "updatedAt": "2026-08-20T21:47:10.863Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8Li9yacrTVzleWYoWe2dL/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf5",
@@ -16916,43 +16978,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5008142-32.2025.4.02.5110 · 5ª Turma Recursal do Rio de Janeiro — Direito tributário: ular declaratório de união estável ou (ii) informar o CPF da companheira…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5008142-32.2025.4.02.5110 · 5ª Turma Recursal do Rio de Janeiro — Direito tributário: ular declaratório de união estável ou (ii) informar o CPF da companheira na",
+      "theme": "Previdência: União estável e prova material para pensão por morte",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Pensão por morte",
+        "União estável",
+        "Prova material",
+        "INSS",
+        "Lei 8.213/1991",
+        "MP 871/2019"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. NÃO SÃO REGRAS PROCESSUAIS APLICÁVEIS DE IMEDIATO (SE FOSSEM, INCORRERIAM EM INCONSTITUCIONALIDADE FORMAL, POR VIOLAÇÃO DO ART.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A 5ª Turma Recursal do Rio de Janeiro declarou inconstitucional a aplicação imediata da Lei 13.846/2019 (conversão da MP 871/2019) para pensão por morte em óbitos anteriores a 18/01/2019. A decisão estabelece que a tarifação da prova material exigida pela lei só se aplica a óbitos ocorridos a partir de 02/08/2019, garantindo vacatio legis de 45 dias após a publicação da lei. O INSS deve reconhecer pensão por morte com base na prova documental e declarações em vídeo para óbitos anteriores à MP 871/2019.",
+      "whatChanged": "A Lei 13.846/2019, que alterou a redação dos §§ 5º e 6º do art. 16 da Lei 8.213/1991, exigiu prova material contemporânea da união estável sem limitação temporal para pensão por morte. A decisão da 5ª Turma Recursal do Rio de Janeiro determinou que essa regra não se aplica a óbitos anteriores a 18/01/2019, garantindo vacatio legis de 45 dias para adaptação da população ao novo regime.",
+      "practicalImpact": "Pessoas que faleceram antes de 18/01/2019 não precisam comprovar união estável com prova material contemporânea. O INSS deve reconhecer pensão por morte com base em provas documentais e declarações em vídeo, sem exigir a apresentação de documentos após o óbito. A decisão evita a surpresa para clientes que não tiveram tempo de se adaptar às novas regras.",
+      "officeAction": "A 5ª Turma Recursal do Rio de Janeiro declarou inconstitucional a aplicação imediata da Lei 13.846/2019 para pensão por morte em óbitos anteriores a 18/01/2019, estabelecendo que a tarifação da prova material só se aplica a óbitos ocorridos a partir de 02/08/2019. O INSS deve reconhecer pensão por morte com base na prova documental e declarações em vídeo para óbitos anteriores à MP 871/2019.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Segurados que faleceram antes de 18/01/2019",
+        "Companheiras que não formalizaram vínculo com o segurado",
+        "Pessoas com união estável não documentada",
+        "INSS",
+        "Clientes de previdência"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento de pensão por morte com base em provas documentais para óbitos anteriores a 18/01/2019",
+        "period": "2025-01-01 a 2025-01-31",
+        "action": "O INSS deve reconhecer pensão por morte com base na prova documental e declarações em vídeo para óbitos anteriores a 18/01/2019, sem exigir prova material contemporânea.",
+        "confidence": "alto"
+      },
       "id": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNYy5uqL2SnTkg4OaY5eBjo9/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.157Z",
-      "updatedAt": "2026-08-20T17:10:19.157Z",
+      "updatedAt": "2026-08-20T21:24:32.248Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNYy5uqL2SnTkg4OaY5eBjo9/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf2",
@@ -43069,8 +43147,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
-        "status": "fast-published",
-        "attempts": 5,
+        "status": "analyzed",
+        "attempts": 6,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -43087,7 +43165,13 @@
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-08-20T20:39:09.150Z"
+        "analyzedAt": "2026-08-20T21:24:32.286Z",
+        "analyzedPublishedAt": "2025-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -43878,8 +43962,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "3c3337073302fd2dbf1419c4",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -43895,7 +43979,14 @@
         },
         "alertId": "b27c489b-20e6-4dbf-ba57-2728cfa14df6",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T21:30:54.716Z",
+        "analyzedPublishedAt": "2025-09-10T00:00:00",
+        "relevant": true,
+        "score": 6.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5003877-34.2026.4.04.7102 · 3ª Vara Federal de Santa Maria — Direito tributário: CUMPRIMENTO DE SENTENÇA Nº 5003877-34.2026.4.04.7102/RS EXECUTADO : CIRES RENI PRADO LIMA HOHER ADVOGADO(A) : RICARDO MUNARSKI JOBIM (OAB RS047849) ADVOGADO(A) : CHRISTIAN LEFANCE SODER (OAB RS093537) DESPACHO/DECISÃO Vistos, etc. Trata-se de cumprimento de sentença mov",
@@ -43915,8 +44006,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "ec040eab035fc21b8c0ac340",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -43932,7 +44023,14 @@
         },
         "alertId": "6a304e97-b929-4639-a778-d8404bc5d58c",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T21:35:45.261Z",
+        "analyzedPublishedAt": "2026-04-01T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5045469-35.2024.4.04.7100 · 17ª Vara Federal de Porto Alegre — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5045469-35.2024.4.04.7100/RS AUTOR : MARINA RASQUIM DOS SANTOS LUNARDI BAPTISTA (Pais) ADVOGADO(A) : DALMARA SILVERIO FRANCISCO (OAB RS105662) ADVOGADO(A) : DALMARA SILVERIO FRANCISCO AUTOR : DAVI LUNARDI BAPTISTA (Absolutamente",
@@ -43952,8 +44050,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "a5bab2d2d86b9eb8ee425fee",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -43969,7 +44067,14 @@
         },
         "alertId": "f7731f0c-1a87-45bc-9bb0-5070a703f04b",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T21:40:24.401Z",
+        "analyzedPublishedAt": "2024-08-15T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 0034757-71.2026.4.05.8200 · 3ª Vara Federal PB — Direito tributário: feito. Ocorre que a parte autora não comprovou que o menor é seu dependente para fins de imposto de renda Deste modo, ante a ausência de provas, pugna a União pela improcedência do feito.\" Aventa, ainda, a prescrição quinquenal. Relatório circunstanciado dispensado, nos termo",
@@ -44026,8 +44131,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:52:26.031Z",
         "id": "1302c68226acf11c5270fdc6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -44043,7 +44148,14 @@
         },
         "alertId": "f2090a62-9db8-4898-9ef3-3628fc8b7d1c",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T21:47:10.906Z",
+        "analyzedPublishedAt": "2025-04-05T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 0001128-10.2025.4.05.8405 · 1ª Relatoria da 1ª Turma Recursal RN — Direito tributário: EMENTA PODER JUDICIÁRIO Turma Recursal do Rio Grande do Norte 1ª Turma Recursal do Rio Grande do Norte RECURSO INOMINADO CÍVEL (460) Nº 0001128-10.2025.4.05.8405 RECORRENTE: GUILHERME NASCIMENTO SILVA ADVOGADO do(a) RECORRENTE: KAYO MELO DE SOUSA - RN12873-A RECORRIDO:",
@@ -68344,6 +68456,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "e9ec9f3e-eb21-4f39-a74d-0c46f1d681a0",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T21:14:45.855Z",
+        "finishedAt": "2026-08-20T21:47:10.940Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "2a18ca0d-a6ec-46cb-96ba-eed85a49574a",
         "trigger": "github-actions-history",
@@ -94917,238 +95042,9 @@
             "found": 2
           }
         ]
-      },
-      {
-        "id": "c5048507-7a1b-4b5d-954e-c4185523c084",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T16:58:32.852Z",
-        "finishedAt": "2026-08-19T16:59:42.369Z",
-        "discovered": 11,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T21:11:18.082Z",
-    "nextRunAt": "2026-08-21T03:11:18.082Z"
+    "lastRunAt": "2026-08-20T21:47:10.940Z",
+    "nextRunAt": "2026-08-21T03:47:10.940Z"
   }
 }
