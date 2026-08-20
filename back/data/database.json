@@ -1,9 +1,2532 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T18:01:24.561Z",
+    "lastUpdatedAt": "2026-08-20T18:09:12.454Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 1020940-37.2019.4.01.0000 · SEC.GAB.12 (Des. Federal RUBENS ROLLO D OLIVEIRA) — Direito tributário: nte tese: É aplicável às condenações da Fazenda Pública…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. Agravo de Instrumento Nº 1020940-37.2019.4.01.0000/MG AGRAVADO : HELENA ALVES FERREIRA ADVOGADO(A) : ROGERIO MAURICIO NASCIMENTO TOLEDO (OAB SP225341) ADVOGADO(A) : CASSIO AUGUSTO CINTRA TOLEDO (OAB SP276273) DESPACHO/DECISÃO Trata-se de agravo de instrumento interposto pelo INSS contra decisão que, nos autos de cumprimento de sentença de ação previdenciária, acolheu parcialmente a impugnação apresentada pela…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "8b394860-7945-4482-a8ee-de856513a0d8",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/kWByzDGYz1BcJLkTvTQmB9nZebmAjO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.447Z",
+      "updatedAt": "2026-08-20T18:09:12.447Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/kWByzDGYz1BcJLkTvTQmB9nZebmAjO/certidao",
+        "sourceCharacters": 6082,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 0056213-82.2015.4.01.3800 · 12ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Cumprimento de Sentença contra a Fazenda Pública (Vara…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. Cumprimento de Sentença contra a Fazenda Pública (Vara Cível) Nº 0056213-82.2015.4.01.3800/MG EXEQUENTE : SUPERMERCADOS BH COMERCIO DE ALIMENTOS S/A ADVOGADO(A) : GUILHERME TEIXEIRA DE SOUZA (OAB MG083096) ADVOGADO(A) : CAROLINA HEINE COUTINHO (OAB MG146619) ADVOGADO(A) : AROLDO PLINIO GONCALVES (OAB MG013735) ADVOGADO(A) : WALDIR ROCHA PENA (OAB MG060555) ADVOGADO(A) : ANA CAROLINA LOBATO DE LIMA PAULA (OAB…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "841cba99-af82-438b-a980-73caa2c79602",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkOZAwXS5BIbTGja9LRKa931z/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.447Z",
+      "updatedAt": "2026-08-20T18:09:12.447Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkOZAwXS5BIbTGja9LRKa931z/certidao",
+        "sourceCharacters": 4625,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 1017905-38.2023.4.06.3800 · 4ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. RECURSO CÍVEL Nº 1017905-38.2023.4.06.3800/MG RECORRENTE : JOSE MALAQUIAS DE MOURA (AUTOR) ADVOGADO(A) : ANA PAULA DE LOUREDO SILVA (OAB MG161713) DESPACHO/DECISÃO O INSS opôs embargos de declaração (Evento 70, EMBDECL1), nos quais, preliminarmente, formulou proposta de transação, condicionando a desistência do recurso à concordância expressa da parte autora com a incidência da taxa Selic como índice único a partir…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "42660761-3c3d-4f67-83b9-b15aa061aa9f",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dRONaI9nInTX372BYDGMoWQ/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.447Z",
+      "updatedAt": "2026-08-20T18:09:12.447Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dRONaI9nInTX372BYDGMoWQ/certidao",
+        "sourceCharacters": 3341,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 1001691-94.2022.4.06.3803 · 03ª Vara Cível e JEF Adjunto de Uberlândia — Direito tributário: Cumprimento de Sentença contra Fazenda Pública (JEF Cível) Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. Cumprimento de Sentença contra Fazenda Pública (JEF Cível) Nº 1001691-94.2022.4.06.3803/MG REQUERENTE : SIDNEY BENEDITO SILVA ADVOGADO(A) : ARTHUR SROUR VIDAL (OAB MG136000) DESPACHO/DECISÃO A sentença proferida no evento 85, SENT1 fixou a condenação da parte executada (CEF) nos seguintes termos: – pagamento de indenização por danos morais no valor de R$ 7.000,00 ; – restituição da quantia de R$ 3.438,84 ; –…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "39b2e6b3-f45b-4d79-899f-0f181bbdc749",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qOELQJv6bGvFelrCXTNDW3EZyo3rGz/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.448Z",
+      "updatedAt": "2026-08-20T18:09:12.448Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qOELQJv6bGvFelrCXTNDW3EZyo3rGz/certidao",
+        "sourceCharacters": 3000,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 1001139-17.2022.4.06.3808 · 6ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. RECURSO CÍVEL Nº 1001139-17.2022.4.06.3808/MG RECORRENTE : JONATHAN RITA VALENTINO (AUTOR) ADVOGADO(A) : MARCELO FAGUNDES RODRIGUES (OAB MG152609) ADVOGADO(A) : JORGE DO CARMO RODRIGUES (OAB MG042055) DESPACHO/DECISÃO O INSS opôs embargos declaratórios contra o acórdão alegando omissão na fixação dos consectários legais e sustentando a impossibilidade de incidência da taxa SELIC antes da citação válida por ausência…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "22ecc5f3-e3e7-40d2-93c2-a6a21b0fb451",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wN6y85S3zQcnTkg4OQR5eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.448Z",
+      "updatedAt": "2026-08-20T18:09:12.448Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wN6y85S3zQcnTkg4OQR5eBjo9/certidao",
+        "sourceCharacters": 923,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 6005282-81.2024.4.06.3811 · 6ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-19. RECURSO CÍVEL Nº 6005282-81.2024.4.06.3811/MG RECORRENTE : VERA LUCIA PEREIRA RODRIGUES (AUTOR) ADVOGADO(A) : VANDEIR JUNIO DA SILVA (OAB MG168245) DESPACHO/DECISÃO O INSS opôs embargos declaratórios contra o acórdão alegando omissão na fixação dos consectários legais e sustentando a impossibilidade de incidência da taxa SELIC antes da citação válida por ausência de mora da Fazenda Pública, apontando a afetação do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "ad4f3ca4-909e-4e29-b911-50c9b34c729d",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/n1OxBm7ZEOXTENyfaTpdaywR3revpE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.448Z",
+      "updatedAt": "2026-08-20T18:09:12.448Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/n1OxBm7ZEOXTENyfaTpdaywR3revpE/certidao",
+        "sourceCharacters": 918,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-20T16:54:00.108Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5001540-58.2026.4.02.5120 · 2ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5001540-58.2026.4.02.5120/RJ RELATOR : Juiz Federal LUIZ CLAUDIO…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-19. PENSÃO POR MORTE CONCEDIDA EXCLUSIVAMENTE A FILHO MENOR IMPÚBERE, NASCIDO APÓS O FATO GERADOR, CUJA PATERNIDADE FOI RECONHECIDA JUDICIALMENTE EM AÇÃO DE INVESTIGAÇÃO E RECONHECIMENTO DE PATERNIDADE POST MORTEM .",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "2fcc266b-2e36-4834-a5be-ca718efa5736",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2lR3wu95QC9TXG5lrRyPD35n/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.448Z",
+      "updatedAt": "2026-08-20T18:09:12.448Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2lR3wu95QC9TXG5lrRyPD35n/certidao",
+        "sourceCharacters": 1980,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:20:34.460Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5065892-82.2026.4.02.5101 · 6ª Turma Recursal do Rio de Janeiro — Direito tributário: RRIDO : DAVID WILLIAM JUNGES (AUTOR) ADVOGADO(A) : AMANDA CARNEVALE CORREA (OAB…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-19. ACÓRDÃO A 6ª Turma Recursal do Rio de Janeiro decidiu, por unanimidade, CONHECER e NEGAR PROVIMENTO ao recurso inominado da parte ré, mantendo a sentença recorrida, na forma da fundamentação supra.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "812f5d9b-ca2a-494d-a630-79c98b86ff04",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8Jx61muVOPteTaqbEd61ObAW3/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.448Z",
+      "updatedAt": "2026-08-20T18:09:12.448Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8Jx61muVOPteTaqbEd61ObAW3/certidao",
+        "sourceCharacters": 1167,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:20:34.460Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5001716-86.2025.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5001716-86.2025.4.02.5115/RJ AUTOR : JOEL…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5001716-86.2025.4.02.5115/RJ AUTOR : JOEL VERGINIO DA SILVA ADVOGADO(A) : ANTONIO CARLOS COSTA CASTRO (OAB RJ069047) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO, nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "df1d533b-f91a-449c-a4a5-4d60e14a85b9",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVq6wNuaGJSKTyP7vmRAKmGWl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.449Z",
+      "updatedAt": "2026-08-20T18:09:12.449Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVq6wNuaGJSKTyP7vmRAKmGWl/certidao",
+        "sourceCharacters": 4135,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:34.460Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5001288-70.2026.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5001288-70.2026.4.02.5115/RJ AUTOR : THIAGO…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. 3º CC)) ADVOGADO(A) : JULIANA SATIKO HIRAYAMA (OAB RJ201050) AUTOR : JACKELINE PEREIRA GOUVEA (Pais) ADVOGADO(A) : JULIANA SATIKO HIRAYAMA (OAB RJ201050) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO, nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "bee3463c-8428-480f-a978-1f10379664c5",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbvuwzeuXTNDW3EYyo3rGz/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.449Z",
+      "updatedAt": "2026-08-20T18:09:12.449Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbvuwzeuXTNDW3EYyo3rGz/certidao",
+        "sourceCharacters": 4006,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:34.460Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5000418-25.2026.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5000418-25.2026.4.02.5115/RJ AUTOR : BEATRIZ…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5000418-25.2026.4.02.5115/RJ AUTOR : BEATRIZ CRISTINA RODRIGUES DE MELLO ADVOGADO(A) : VANESSA GOMES DE SOUZA ABREU (OAB RJ143194) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO, nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "40fac5e6-b187-4f8d-8b1f-2c3dc1c0d9a1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dQP4g8rBZ75uGXgIqTzVpnaRn27bML/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.449Z",
+      "updatedAt": "2026-08-20T18:09:12.449Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dQP4g8rBZ75uGXgIqTzVpnaRn27bML/certidao",
+        "sourceCharacters": 3780,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:34.460Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5001882-59.2025.4.03.6128 · Gab. 21 - DES. FED. MAIRAN MAIA — Direito tributário: ndiaí/SP, no qual requer seja reconhecido o direito de não incluir, na base de cálculo…",
+      "theme": "Direito tributário · ICMS, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-19. ADVOGADO do(a) APELANTE: JONATHAS AUGUSTO BUSANELLI - SP247195-A APELADO: UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA RECEITA FEDERAL DO BRASIL EM JUNDIAI FISCAL DA LEI: MINISTERIO PUBLICO FEDERAL RELATÓRIO Cuida-se de recurso de apelação interposto por Fluid Brasil Sistemas e Tecnologia Ltda, em sede de mandado de segurança impetrado em face do Delegado da Receita Federal do Brasil em Jundiaí/SP, no qual requer…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "20d0b2e6-81a8-43b4-a7f0-61de346e3ff5",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRyJFwqBInTkg4OQ65eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.450Z",
+      "updatedAt": "2026-08-20T18:09:12.450Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRyJFwqBInTkg4OQ65eBjo9/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5014166-23.2024.4.03.6100 · Gab. 21 - DES. FED. MAIRAN MAIA — Direito tributário: 00 RELATOR: MAIRAN GONCALVES MAIA JUNIOR APELANTE: DELEGADO DA DELEGACIA DE…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-19. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO / REMESSA NECESSÁRIA 1728 Nº 5014166-23.2024.4.03.6100 RELATOR: MAIRAN GONCALVES MAIA JUNIOR APELANTE: DELEGADO DA DELEGACIA DE ADMINISTRAÇÃO TRIBUTÁRIA DA RECEITA FEDERAL DO BRASIL (DERAT/SPO), UNIAO FEDERAL - FAZENDA NACIONAL ADVOGADO…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "93fd09a8-65a3-4b81-8b09-7a7983ae6248",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkOYADFaAESbTGja9LZKa931z/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.450Z",
+      "updatedAt": "2026-08-20T18:09:12.450Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkOYADFaAESbTGja9LZKa931z/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença tipo M · 5004136-43.2026.4.03.6104 · 1ª Vara Federal de Santos — Direito tributário: bargantes alegam, em síntese, a existência de vícios na decisão embargada, quais…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença tipo M)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença tipo m) em 2026-08-19. PODER JUDICIÁRIO 1ª Vara Federal de Santos Praça Barão do Rio Branco, 30, Centro, Santos - SP - CEP: 11010-040 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5004136-43.2026.4.03.6104 IMPETRANTE: MANFRIM INDUSTRIAL E COMERCIAL LTDA, MANFRIM INDUSTRIAL E COMERCIAL LTDA ADVOGADO do(a) IMPETRANTE: PEDRO LUCAS ALVES DE BRITO - SP315645 IMPETRADO: UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c06b9372-2b68-4f61-bbc9-59f3d34ce20e",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9ZQKFJjJTDT5N7grRgMzm2n/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.451Z",
+      "updatedAt": "2026-08-20T18:09:12.451Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9ZQKFJjJTDT5N7grRgMzm2n/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença tipo M)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5003414-12.2026.4.03.6103 · 1ª Vara Federal de São José dos Campos — Direito tributário: 2.808/2025 e Instrução Normativa RFB nº 2.305/2025, bem como assegurado o…",
+      "theme": "Direito tributário · IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. Tertuliano Delphim Júnior, 522, Parque Residencial Aquarius, São José Dos Campos - SP - CEP: 12246-001 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5003414-12.2026.4.03.6103 IMPETRANTE: ESPORTE VALE - COMERCIAL DE ARTIGOS ESPORTIVOS LTDA ADVOGADO do(a) IMPETRANTE: RODRIGO ANDRADE DIACOV - SP201992 ADVOGADO do(a) IMPETRANTE: ANDREIA FOGACA RODRIGUES MARICATO - SP224527 IMPETRADO:…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b6c0bbfa-ad6e-4dbb-87b0-8de4981d5901",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M36qjFvoNIyTJ1jWwZgozp85/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.451Z",
+      "updatedAt": "2026-08-20T18:09:12.451Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M36qjFvoNIyTJ1jWwZgozp85/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5004698-68.2025.4.03.6110 · 4ª Vara Federal de Sorocaba — Direito tributário: FEDERAL EM SOROCABA e outro, objetivando a declaração de inexistência de relação…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. ADVOGADO do(a) IMPETRANTE: RODRIGO HENRIQUE PIRES - MG143096 ADVOGADO do(a) IMPETRANTE: PAULO HONORIO DE CASTRO JUNIOR - MG140220 IMPETRADO: DELEGADO DA RECEITA FEDERAL EM SOROCABA//SP FISCAL DA LEI: MINISTERIO PUBLICO FEDERAL LITISCONSORTE: UNIAO FEDERAL - FAZENDA NACIONAL SENTENÇA Vistos em Inspeção.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c39c075d-fddf-43aa-87dd-25c62f2a79b2",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmERnlFGB7HlTlPJ7aZqrnD41/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.452Z",
+      "updatedAt": "2026-08-20T18:09:12.452Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmERnlFGB7HlTlPJ7aZqrnD41/certidao",
+        "sourceCharacters": 12419,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença Tipo B · 5002933-98.2026.4.03.6119 · 1ª Vara Federal de Guarulhos — Direito tributário: RECEITA FEDERAL DO BRASIL EM GUARULHOS. A impetrante sustenta que os valores…",
+      "theme": "Direito tributário · ISS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ISS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-19. PODER JUDICIÁRIO 1ª Vara Federal de Guarulhos Avenida Salgado Filho, 2050, Centro, Guarulhos - SP - CEP: 07115-000 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5002933-98.2026.4.03.6119 IMPETRANTE: FRANKLIN & FRANKLIN LTDA ADVOGADO do(a) IMPETRANTE: RAFAEL ROMERO SESSA - SP292649 ADVOGADO do(a) IMPETRANTE: GABRIELA GONCALES GOMES IMPETRADO: UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "785952c0-a4b2-41c5-84fe-a6145541e624",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JKg5dkqmYLqFWpAimTwgazxR1NarD3/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.452Z",
+      "updatedAt": "2026-08-20T18:09:12.452Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JKg5dkqmYLqFWpAimTwgazxR1NarD3/certidao",
+        "sourceCharacters": 12108,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5004088-18.2025.4.03.6105 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: elo art. 178 do CTN e a necessidade…",
+      "theme": "Direito tributário · PIS, Cofins, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (decisão monocrática terminativa com resolução de mérito) em 2026-08-19. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 3ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL (198) Nº 5004088-18.2025.4.03.6105 RELATOR: RUBENS ALEXANDRE ELIAS CALIXTO APELANTE: RC RESTAURANTE LTDA ADVOGADO do(a) APELANTE: JOAO CARLOS DE LIMA JUNIOR - SP142452-A APELADO: UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "21b59fd3-625a-45f8-88e3-112c8c3da8b1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/9JqKnM286BdF11phOTBm4p7YWjAkoy/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.453Z",
+      "updatedAt": "2026-08-20T18:09:12.453Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/9JqKnM286BdF11phOTBm4p7YWjAkoy/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000691-39.2025.4.03.6108 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: ão do exercício das atividades nos…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (decisão monocrática terminativa com resolução de mérito) em 2026-08-19. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 3ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL (198) Nº 5000691-39.2025.4.03.6108 RELATOR: RUBENS ALEXANDRE ELIAS CALIXTO APELANTE: RODOSNACK SEM LIMITES LANCHONETE E RESTAURANTE LTDA ADVOGADO do(a) APELANTE: GRAZIELA DE SOUZA JUNQUEIRA - SP177073-A APELADO: DELEGADO DA RECEITA…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "911ef384-5f93-4eaa-879d-345780f87330",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2l63AFMLGS9TXG5lrYyPD35n/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.453Z",
+      "updatedAt": "2026-08-20T18:09:12.453Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2l63AFMLGS9TXG5lrYyPD35n/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000364-21.2026.4.03.6121 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: elo art. 178 do CTN e a necessidade…",
+      "theme": "Direito tributário · PIS, Cofins, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (decisão monocrática terminativa com resolução de mérito) em 2026-08-19. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 3ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL (198) Nº 5000364-21.2026.4.03.6121 RELATOR: RUBENS ALEXANDRE ELIAS CALIXTO APELANTE: AJOC INVESTIMENTOS E PARTICIPACOES LTDA ADVOGADO do(a) APELANTE: KEVEHLLYSON AZEVEDO DO NASCIMENTO APELADO: UNIAO FEDERAL - FAZENDA NACIONAL,…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "1e8667f2-d9e2-46e1-929e-c7391637da2f",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5Ro1FK3QI7TK7q2mZkXgDen/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:09:12.454Z",
+      "updatedAt": "2026-08-20T18:09:12.454Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5Ro1FK3QI7TK7q2mZkXgDen/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Decisão Monocrática Terminativa com Resolução de Mérito)",
+        "discoveredAt": "2026-08-20T12:20:34.885Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5025377-05.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização nacional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Estado do Rio de Janeiro (Evento 28, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "1342b1ab-d4c2-4a33-9226-22cabbe57384",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQm6NJujn2soTy97Wb6kWV9dl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.492Z",
+      "updatedAt": "2026-08-20T18:06:40.492Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQm6NJujn2soTy97Wb6kWV9dl/certidao",
+        "sourceCharacters": 2248,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5063353-80.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização nacional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Estado do Rio de Janeiro (Evento 43, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c1d6878e-1521-47ad-8835-2c6e976d3158",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dYOauw9eInTX37296DGMoWQ/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.492Z",
+      "updatedAt": "2026-08-20T18:06:40.492Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dYOauw9eInTX37296DGMoWQ/certidao",
+        "sourceCharacters": 2233,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5075966-35.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização nacional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Estado do Rio de Janeiro (Evento 36, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f8b74e4a-6923-4bf5-b416-94806264ce03",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZjGuW9VfgTWJ1oLYwL5MW2/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.493Z",
+      "updatedAt": "2026-08-20T18:06:40.493Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZjGuW9VfgTWJ1oLYwL5MW2/certidao",
+        "sourceCharacters": 2226,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5011590-06.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão:…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização regional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Rio de Janeiro (Evento 33, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da Saúde e do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "0a553546-5fb6-43ae-b0c6-84b64ac28a52",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGX64VunzqSGT73wAyYdy4gaO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.493Z",
+      "updatedAt": "2026-08-20T18:06:40.493Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGX64VunzqSGT73wAyYdy4gaO/certidao",
+        "sourceCharacters": 2141,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5032599-24.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão:…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização regional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Rio de Janeiro (Evento 34, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da Saúde e do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "e4ae2dd2-22c0-4a52-b6f1-32726d9418c3",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8Jx61muMPMSeTaqbEg61ObAW3/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.493Z",
+      "updatedAt": "2026-08-20T18:06:40.493Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8Jx61muMPMSeTaqbEg61ObAW3/certidao",
+        "sourceCharacters": 2133,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5117460-74.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão:…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização regional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Rio de Janeiro (Evento 35, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da Saúde e do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "a6d19f13-00bb-40f6-87e3-0f55634a2eb4",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dROauwGeTnTX3729ZDGMoWQ/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.494Z",
+      "updatedAt": "2026-08-20T18:06:40.494Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dROauwGeTnTX3729ZDGMoWQ/certidao",
+        "sourceCharacters": 2126,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5032363-72.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão:…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização regional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Rio de Janeiro (Evento 33, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da Saúde e do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d72b1d9d-2b5d-4849-930a-755ef67eb11c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmRNJujA2UoTy97WbRkWV9dl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.494Z",
+      "updatedAt": "2026-08-20T18:06:40.494Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmRNJujA2UoTy97WbRkWV9dl/certidao",
+        "sourceCharacters": 2125,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5108814-75.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização regional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Rio de Janeiro (Evento 42, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da Saúde e do…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "4c0893df-77c7-4039-a5ea-48fe245f9043",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm7REXueDphaTpdayvY3revpE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.494Z",
+      "updatedAt": "2026-08-20T18:06:40.494Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm7REXueDphaTpdayvY3revpE/certidao",
+        "sourceCharacters": 2079,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5068457-53.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: de tal patamar, observada a prescrição quinquenal, conforme a ementa do…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Trata-se de pedido de uniformização nacional de interpretação de lei federal interposto, tempestivamente, contra a decisão prolatada por Turma Recursal dos Juizados Especiais Federais da Seção Judiciária do Estado do Rio de Janeiro (Evento 35, RELVOTO1 e ACOR2), em que se discute incidência de contribuição previdenciária (PSS) sobre a parcela excedente da Gratificação de Desempenho da Carreira da Previdência, da…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f181943a-8aa4-4844-9fb1-0585220c2351",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuODBIrTVzleWZoWe2dL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.495Z",
+      "updatedAt": "2026-08-20T18:06:40.495Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuODBIrTVzleWZoWe2dL/certidao",
+        "sourceCharacters": 2016,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5006645-50.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: PAVANA LTDA ADVOGADO(A) : ANDRÉ LUÍS MOREIRA DOS SANTOS EMENTA DIREITO PROCESSUAL…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "95cad1ac-2dee-4602-8965-5d59181370f2",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRy5udnphnTkg4OaR5eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.495Z",
+      "updatedAt": "2026-08-20T18:06:40.495Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRy5udnphnTkg4OaR5eBjo9/certidao",
+        "sourceCharacters": 6027,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5002480-57.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: DE SOUZA (OAB RJ177138) ADVOGADO(A) : KAROLINE MORAES SEGAT (OAB RJ247767) EMENTA…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Agravo de Instrumento Nº 5002480-57.2026.4.02.0000/RJ RELATOR : Juiz Federal WILNEY MAGNO DE AZEVEDO SILVA AGRAVANTE : ALFA LAVAL AALBORG INDUSTRIA E COMERCIO LTDA ADVOGADO(A) : GERARDO GALLO CANDIDO (OAB RJ129858) ADVOGADO(A) : CARLOS ANTONIO AZEVEDO DE SOUZA (OAB RJ177138) ADVOGADO(A) : KAROLINE MORAES SEGAT (OAB RJ247767) EMENTA DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "5274869f-00e6-4161-8595-e3aa1c4f3952",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQ6VKulJET7Tdl7LnZek9aWL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.495Z",
+      "updatedAt": "2026-08-20T18:06:40.495Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQ6VKulJET7Tdl7LnZek9aWL/certidao",
+        "sourceCharacters": 4988,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5011079-13.2023.4.02.5101 · SECRETARIA DA 6ª TURMA ESPECIALIZADA — Direito tributário: ETROBRAS). AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS (ANP).…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. (PETROBRAS) contra sentença que, em sede de TUTELA PROVISÓRIA DE URGÊNCIA DE NATUREZA CAUTELAR/ ANTECIPADA REQUERIDA EM CARÁTER ANTECEDENTE ajuizada em face da AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS (ANP), julgou parcialmente procedente o pedido “determinando que se comunique à Requerida que os créditos consubstanciados no Ofício E-ANP/SPG 001248/22 (Processo Administrativo Originário nº…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d4897740-ba81-4a4b-88f4-4db2a35dc693",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnZkGumN7FDTelJ2AZAve9mD/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.496Z",
+      "updatedAt": "2026-08-20T18:06:40.496Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnZkGumN7FDTelJ2AZAve9mD/certidao",
+        "sourceCharacters": 4771,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5007223-13.2026.4.02.0000 · SECRETARIA DA 6ª TURMA ESPECIALIZADA — Direito tributário: (OAB RJ121320) ADVOGADO(A) : MAURO ZUPEKAN (OAB RJ127181) EMENTA EMBARGOS DE…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Embargos de declaração opostos contra acórdão que negou provimento a agravo de instrumento e manteve decisão que rejeitou exceção de pré-executividade em execução fiscal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "fff8cc32-4c9d-4fda-b7cf-81315db471b6",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dYOauQvyInTX37296DGMoWQ/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.496Z",
+      "updatedAt": "2026-08-20T18:06:40.496Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dYOauQvyInTX37296DGMoWQ/certidao",
+        "sourceCharacters": 4715,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5119012-16.2021.4.02.5101 · SECRETARIA DA 8ª TURMA ESPECIALIZADA — Direito tributário: VOGADO(A) : IARA JULIA CAETANO DE AGUIAR (OAB RJ216485) EMENTA ADMINISTRATIVO.…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Apelação interposta pela União (Fazenda Nacional) contra sentença que acolheu os embargos à execução fiscal da executada para declarar a nulidade da cobrança fundada em CDA decorrente de procedimento administrativo instaurado para responsabilizar a concessionária aeroportuária pelo ressarcimento de mercadorias extraviadas, extinguindo a execução fiscal correlata.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "3bcc2dbe-1d2c-4ff7-9bd7-cc9b42d3bdb8",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7lYxNumnAHyTKBA826EJaAPk/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.497Z",
+      "updatedAt": "2026-08-20T18:06:40.497Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7lYxNumnAHyTKBA826EJaAPk/certidao",
+        "sourceCharacters": 4359,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5004661-31.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: E DA SILVA NETTO (OAB ES010099) ADVOGADO(A) : ADILSON JOSÉ CRUZEIRO (OAB…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b19c038e-2f3c-48e2-abc7-1829ff0d9fc1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8Reoue1DC3TBXAVKZABQLjK/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.498Z",
+      "updatedAt": "2026-08-20T18:06:40.498Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8Reoue1DC3TBXAVKZABQLjK/certidao",
+        "sourceCharacters": 4272,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:24:25.587Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5002762-32.2025.4.03.6102 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: r unanimidade, negou provimento à apelação da impetrante. Segue a ementa (ID…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Acórdão que, por unanimidade, negou provimento à apelação da impetrante.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "82289356-29d0-4506-a4d2-f295a798c7db",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnZkkF7bOUDTelJ2AZAve9mD/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.499Z",
+      "updatedAt": "2026-08-20T18:06:40.499Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnZkkF7bOUDTelJ2AZAve9mD/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.000Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5008192-81.2024.4.03.6301 · 4º Juiz Federal da 2ª TR SP — Direito tributário: ão por morte defluem da análise sistemática dos artigos 74 e 16 da Lei nº 8.213-91. Além…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Sentença de improcedência pela falta de qualidade de segurado do instituidor do benefício, impugnada por recurso da parte autora postulando reforma do julgado.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "bdd2d8b3-f47d-41cf-9b5f-a3bc177b2e05",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2nqe4VJb6awFloVIzTn1dXNYKk7AgO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.499Z",
+      "updatedAt": "2026-08-20T18:06:40.499Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2nqe4VJb6awFloVIzTn1dXNYKk7AgO/certidao",
+        "sourceCharacters": 12542,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.000Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5000089-50.2023.4.03.6130 · 1ª Vara Federal de Osasco — Direito tributário: são da segurança para reconhecer o direito líquido e certo da Impetrante de não incluir o…",
+      "theme": "Direito tributário · ISS, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ISS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. PODER JUDICIÁRIO 1ª Vara Federal de Osasco Rua Avelino Lopes, 281/291, Centro, Osasco - SP - CEP: 06090-035 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5000089-50.2023.4.03.6130 IMPETRANTE: TRANSDUSON MEDICOS ASSOCIADOS LTDA ADVOGADO do(a) IMPETRANTE: RENATA MARTINS GOMES - MG85907 IMPETRADO: DELEGADO DA RECEITA FEDERAL EM OSASCO//SP, UNIAO FEDERAL - FAZENDA NACIONAL FISCAL DA LEI:…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "04d52251-1810-4419-bea8-103bebc46f64",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/vLko4Pw1YXwFwJ4coTGjdX3ZbAKq5V/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.500Z",
+      "updatedAt": "2026-08-20T18:06:40.500Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/vLko4Pw1YXwFwJ4coTGjdX3ZbAKq5V/certidao",
+        "sourceCharacters": 12469,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.000Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5003368-85.2025.4.03.6126 · 1ª Vara Federal de Santo André — Direito tributário: PC). São hipóteses de cabimento deste recurso a existência de obscuridade,…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. PODER JUDICIÁRIO 1ª Vara Federal de Santo André Avenida Pereira Barreto, 1299, Paraíso, Santo André - SP - CEP: 09190-610 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5003368-85.2025.4.03.6126 IMPETRANTE: CADIUM COMERCIO IMPORTACAO E EXPORTACAO LTDA ADVOGADO do(a) IMPETRANTE: RAFAEL PANDOLFO - SP249312-A IMPETRADO: DELEGADO DA ALFÂNDEGA DA RECEITA FEDERAL NO PORTO DE SANTOS, DELEGADO…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "5f0f29cd-30c8-44e2-bb85-cc1d1066d5b2",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVq6w4FGEVFKTyP7vDZAKmGWl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.500Z",
+      "updatedAt": "2026-08-20T18:06:40.500Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVq6w4FGEVFKTyP7vDZAKmGWl/certidao",
+        "sourceCharacters": 9956,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.000Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5005966-51.2020.4.03.6105 · 8ª Vara Federal de Campinas — Direito tributário: ficada na inicial, contra ato do DELEGADO DA RECEITA FEDERAL EM CAMPINAS para exclusão do…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. PODER JUDICIÁRIO 8ª Vara Federal de Campinas Avenida Aquidaban, 465, Centro, Campinas - SP - CEP: 13015-210 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5005966-51.2020.4.03.6105 PARTE AUTORA: EMBRASA EMBALAGEM BRASILEIRA IND COM LIMITADA ADVOGADO do(a) PARTE AUTORA: CARLOS EDUARDO DOMINGUES AMORIM - SP256440-A ADVOGADO do(a) PARTE AUTORA: JULIANA CRISTINA MARTINELLI RAIMUNDI -…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "13c189d5-90d8-4b56-9542-2594e76e5397",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/geNaPz7wY5pFrAEh8T9e5woZBMJpDr/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-20T18:06:40.501Z",
+      "updatedAt": "2026-08-20T18:06:40.501Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/geNaPz7wY5pFrAEh8T9e5woZBMJpDr/certidao",
+        "sourceCharacters": 5448,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.000Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença · 5020932-13.2026.4.04.7000 · 10ª Vara Federal de Curitiba — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5020932-13.2026.4.04.7000/PR AUTOR : APARECIDA…",
@@ -24697,7 +27220,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "efd98dd339a73cdc31da5187",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24711,7 +27234,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "8b394860-7945-4482-a8ee-de856513a0d8",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 0056213-82.2015.4.01.3800 · 12ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Cumprimento de Sentença contra a Fazenda Pública (Vara Cível) Nº 0056213-82.2015.4.01.3800/MG EXEQUENTE : SUPERMERCADOS BH COMERCIO DE ALIMENTOS S/A ADVOGADO(A) : GUILHERME TEIXEIRA DE SOUZA (OAB MG083096) ADVOGADO(A) : CAROLINA HEINE COUTINHO (OAB MG146619) ADVOGADO(A)",
@@ -24731,7 +27257,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "40c22b8d57f0cca729c01647",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24745,7 +27271,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "841cba99-af82-438b-a980-73caa2c79602",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 1017905-38.2023.4.06.3800 · 4ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº 1017905-38.2023.4.06.3800/MG RECORRENTE : JOSE MALAQUIAS DE MOURA (AUTOR) ADVOGADO(A) : ANA PAULA DE LOUREDO SILVA (OAB MG161713) DESPACHO/DECISÃO O INSS opôs embargos de declaração (Evento 70, EMBDECL1), nos quais, preliminarmente, formulou proposta de",
@@ -24765,7 +27294,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "5b9f4e9cd5223b7178d89d06",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24779,7 +27308,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "42660761-3c3d-4f67-83b9-b15aa061aa9f",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 1001691-94.2022.4.06.3803 · 03ª Vara Cível e JEF Adjunto de Uberlândia — Direito tributário: Cumprimento de Sentença contra Fazenda Pública (JEF Cível) Nº 1001691-94.2022.4.06.3803/MG REQUERENTE : SIDNEY BENEDITO SILVA ADVOGADO(A) : ARTHUR SROUR VIDAL (OAB MG136000) DESPACHO/DECISÃO A sentença proferida no evento 85, SENT1 fixou a condenação da parte executada",
@@ -24799,7 +27331,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "b698bd00c78bb5590cb80824",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24813,7 +27345,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "39b2e6b3-f45b-4d79-899f-0f181bbdc749",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 1001139-17.2022.4.06.3808 · 6ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº 1001139-17.2022.4.06.3808/MG RECORRENTE : JONATHAN RITA VALENTINO (AUTOR) ADVOGADO(A) : MARCELO FAGUNDES RODRIGUES (OAB MG152609) ADVOGADO(A) : JORGE DO CARMO RODRIGUES (OAB MG042055) DESPACHO/DECISÃO O INSS opôs embargos declaratórios contra o acórdão",
@@ -24833,7 +27368,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "5e46e6f67c14af641de73060",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24847,7 +27382,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "22ecc5f3-e3e7-40d2-93c2-a6a21b0fb451",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 6005282-81.2024.4.06.3811 · 6ª Turma Recursal dos Juizados Especiais Federais de Minas Gerais — Direito tributário: RECURSO CÍVEL Nº 6005282-81.2024.4.06.3811/MG RECORRENTE : VERA LUCIA PEREIRA RODRIGUES (AUTOR) ADVOGADO(A) : VANDEIR JUNIO DA SILVA (OAB MG168245) DESPACHO/DECISÃO O INSS opôs embargos declaratórios contra o acórdão alegando omissão na fixação dos consectários legais e",
@@ -24867,7 +27405,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:54:00.108Z",
         "id": "1e15bb0d6c959046dac60b12",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -24881,7 +27419,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "ad4f3ca4-909e-4e29-b911-50c9b34c729d",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 1009194-69.2024.4.01.3502 · Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Anápolis-GO — Direito tributário: PODER JUDICIÁRIO Justiça Federal Subseção Judiciária de Anápolis, GO 1ª Vara Federal e 1º Juizado Especial Federal Avenida Universitária, Quadra 02, lote, 05, Jardim Bandeirante, Anápolis, GO, CEP 75083-035, tel. 62 4015-8605. End. eletrônico: 01vara.sepip.ans@trf1.jus.",
@@ -30641,7 +33182,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "3ed803313cc2c6b033804899",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30655,7 +33196,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "1342b1ab-d4c2-4a33-9226-22cabbe57384",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5120369-89.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: 369-89.2025.4.02.5101/RJ RECORRENTE : MARCELO DOS SANTOS PEREIRA (AUTOR) ADVOGADO(A) : LARISSA GOMES GUIMARAES CONRADO DOS SANTOS (OAB RJ244469) ADVOGADO(A) : JARDEL ROMULO CONRADO DOS SANTOS (OAB RJ215916) DESPACHO/DECISÃO 1. Trata-se de pedido de uniformização nacional d",
@@ -30707,7 +33251,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "35e02909088baa447337b5d4",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30721,7 +33265,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "c1d6878e-1521-47ad-8835-2c6e976d3158",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5075966-35.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: TRIBUTÁRIO. SERVIDOR PÚBLICO ATIVO. NÃO INCIDÊNCIA DA CONTRIBUIÇÃO PREVIDENCIÁRIA SOBRE PARCELAS DE GRATIFICAÇÃO DE DESEMPENHO NÃO INCORPORÁVEIS À APOSENTADORIA. ENTENDIMENTOS DA TNU E TRU",
@@ -30740,7 +33287,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "0f767666261a41110bdf257b",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30754,7 +33301,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "f8b74e4a-6923-4bf5-b416-94806264ce03",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5011590-06.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: ADMINISTRATIVO. TRIBUTÁRIO. REPETIÇÃO DE VALORES DESCONTADOS A TÍTULO DE PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO DE ATIVIDADE DE SAÚDE E TRABALHO ( GDPST ). ALEGAÇÃO DE NÃO INCORPORAÇÃO À APOSENTADORIA. NÃO I",
@@ -30773,7 +33323,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "db8e838b0e7c18b5122f72ab",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30787,7 +33337,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "0a553546-5fb6-43ae-b0c6-84b64ac28a52",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5032599-24.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: ADMINISTRATIVO. TRIBUTÁRIO. REPETIÇÃO DE VALORES DESCONTADOS A TÍTULO DE PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO DE ATIVIDADE DE SAÚDE E TRABALHO (GDPST). ALEGAÇÃO DE NÃO INCORPORAÇÃO À APOSENTADORIA. NÃO INC",
@@ -30806,7 +33359,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "7e1590eca4910124edfd71db",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30820,7 +33373,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "e4ae2dd2-22c0-4a52-b6f1-32726d9418c3",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5117460-74.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: ADMINISTRATIVO. TRIBUTÁRIO. REPETIÇÃO DE VALORES DESCONTADOS A TÍTULO DE PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO DE ATIVIDADE DE SAÚDE E TRABALHO (GDPST). ALEGAÇÃO DE NÃO INCORPORAÇÃO À APOSENTADORIA. NÃO INC",
@@ -30839,7 +33395,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "a92757d421df02fd793112f7",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30853,7 +33409,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "a6d19f13-00bb-40f6-87e3-0f55634a2eb4",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5032363-72.2026.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: ADMINISTRATIVO. TRIBUTÁRIO. REPETIÇÃO DE VALORES DESCONTADOS A TÍTULO DE PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO DE ATIVIDADE DE SAÚDE E TRABALHO (GDPST). ALEGAÇÃO DE NÃO INCORPORAÇÃO À APOSENTADORIA. NÃO INC",
@@ -30872,7 +33431,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "0880bde6ce8d5f5a14176888",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30886,7 +33445,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "d72b1d9d-2b5d-4849-930a-755ef67eb11c",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5108814-75.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: dos além de tal patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: TRIBUTÁRIO. ABSTENÇÃO DE DESCONTO DE CONTRIBUIÇÃO PREVIDENCIÁRIA (PSS) SOBRE PARCELA DE GRATIFICAÇÃO DE DESEMPENHO (GDPST) E REPETIÇÃO DOS VALORES RECOLHIDOS AO MESMO TÍTULO. SENTENÇA DE IM",
@@ -30905,7 +33467,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "a6cf6678cf780e60f4fe4963",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30919,7 +33481,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "4c0893df-77c7-4039-a5ea-48fe245f9043",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5068457-53.2025.4.02.5101 · Juízo Gestor das Turmas Recursais — Direito tributário: de tal patamar, observada a prescrição quinquenal, conforme a ementa do acórdão: DIREITO TRIBUTÁRIO. RECURSO INOMINADO. SERVIDOR PÚBLICO FEDERAL. CONTRIBUIÇÃO PREVIDENCIÁRIA (PSS). GRATIFICAÇÃO DE DESEMPENHO (GDPST). BASE DE CÁLCULO. REGIME DA MÉDIA CONTRIBUTIVA. AUSÊNCIA DE PA",
@@ -30938,7 +33503,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "8b33f2a58dad31230606c8dc",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30952,7 +33517,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "f181943a-8aa4-4844-9fb1-0585220c2351",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5006645-50.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: PAVANA LTDA ADVOGADO(A) : ANDRÉ LUÍS MOREIRA DOS SANTOS EMENTA DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO. AGRAVO DE INSTRUMENTO. CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA. CESSÃO DE CRÉDITO JUDICIAL. EMPRESA DEVEDORA DA FAZENDA NACIONAL. CRÉDITO MATRIZ DE NATUREZA TRIBUTÁRIA.",
@@ -30971,7 +33539,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "ee7d8478141f8c854c542de6",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -30985,7 +33553,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "95cad1ac-2dee-4602-8965-5d59181370f2",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5002480-57.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: DE SOUZA (OAB RJ177138) ADVOGADO(A) : KAROLINE MORAES SEGAT (OAB RJ247767) EMENTA DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO DE INSTRUMENTO. CUMPRIMENTO DE SENTENÇA. HONORÁRIOS ADVOCATÍCIOS SUCUMBENCIAIS. TRANSAÇÃO TRIBUTÁRIA. INEXIGIBILIDADE DO TÍTULO EXECUTIVO. VEDAÇÃO À DU",
@@ -31004,7 +33575,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "43da547ba5bc1f7f64249334",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31018,7 +33589,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "5274869f-00e6-4161-8595-e3aa1c4f3952",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5011079-13.2023.4.02.5101 · SECRETARIA DA 6ª TURMA ESPECIALIZADA — Direito tributário: ETROBRAS). AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS (ANP). CRÉDITO NÃO TRIBUTÁRIO. ROYALTIES E PARTICIPAÇÃO ESPECIAL. TUTELA PROVISÓRIA DE URGÊNCIA REQUERIDA EM CARÁTER ANTECEDENTE. DEPÓSITO CAUÇÃO. EXPEDIÇÃO DE CPEN E NÃO INCLUSÃO NO CADIN. DEFERIMENTO. SUSPE",
@@ -31037,7 +33611,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "954a41c5a2ba6e0dcbed7b35",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31051,7 +33625,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "d4897740-ba81-4a4b-88f4-4db2a35dc693",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5007223-13.2026.4.02.0000 · SECRETARIA DA 6ª TURMA ESPECIALIZADA — Direito tributário: (OAB RJ121320) ADVOGADO(A) : MAURO ZUPEKAN (OAB RJ127181) EMENTA EMBARGOS DE DECLARAÇÃO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. CITAÇÃO POR EDITAL. NECESSIDADE DE DILAÇÃO PROBATÓRIA. CERTIDÃO DE DÍVIDA ATIVA. HIGIDEZ DO TÍTULO. INAPLICABILIDADE DO TEMA 1.350 DO STJ. INEXISTÊN",
@@ -31070,7 +33647,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "f0a724b13ff4c0ee3a6b4866",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31084,7 +33661,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "fff8cc32-4c9d-4fda-b7cf-81315db471b6",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5119012-16.2021.4.02.5101 · SECRETARIA DA 8ª TURMA ESPECIALIZADA — Direito tributário: VOGADO(A) : IARA JULIA CAETANO DE AGUIAR (OAB RJ216485) EMENTA ADMINISTRATIVO. EMBARGOS À EXECUÇÃO FISCAL. CONCESSIONÁRIA AEROPORTUÁRIA. EXTRAVIO DE MERCADORIAS. DEVER DE GUARDA. TRANSFERÊNCIA DAS MERCADORIAS À CONCESSIONÁRIA. AUSÊNCIA DE COMPROVAÇÃO. NULIDADE DO PROCEDIMENTO ADMINIST",
@@ -31103,7 +33683,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "255c22a6d5745138196f7714",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31117,7 +33697,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "3bcc2dbe-1d2c-4ff7-9bd7-cc9b42d3bdb8",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5004661-31.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: E DA SILVA NETTO (OAB ES010099) ADVOGADO(A) : ADILSON JOSÉ CRUZEIRO (OAB ES012149) EMENTA TRIBUTÁRIO. AGRAVO DE INSTRUMENTO E AGRAVO INTERNO. CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA. TÍTULO EXECUTIVO DE CUNHO MERAMENTE DECLARATÓRIO. EFICÁCIA EXECUTIVA DA SENTENÇA DECLAR",
@@ -31136,7 +33719,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:25.587Z",
         "id": "e7f54b00547194b07dd8fe04",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31150,7 +33733,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b19c038e-2f3c-48e2-abc7-1829ff0d9fc1",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5002762-32.2025.4.03.6102 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: r unanimidade, negou provimento à apelação da impetrante. Segue a ementa (ID 347314134): “TRIBUTÁRIO – PROCESSO CIVIL – MANDADO DE SEGURANÇA – APELAÇÃO – INCIDÊNCIA PIS COFINS SOBRE SUAS PRÓPRIAS BASES – CONSTITUICIONALIDADE – ORIENTAÇÃO DESTA CORTE REGIONAL. I. CASO EM EXAME 1.",
@@ -31169,7 +33755,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.000Z",
         "id": "19723c7f014c784279e4f550",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31183,7 +33769,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "82289356-29d0-4506-a4d2-f295a798c7db",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5008192-81.2024.4.03.6301 · 4º Juiz Federal da 2ª TR SP — Direito tributário: ão por morte defluem da análise sistemática dos artigos 74 e 16 da Lei nº 8.213-91. Além disso, embora não seja necessária a carência para a pensão por morte (art. 26, I, da Lei nº 8.213-91), é imprescindível a demonstração de que o instituidor da pensão almejada ostentava",
@@ -31202,7 +33791,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.000Z",
         "id": "9e78e5eae80c4263950d967d",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31216,7 +33805,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "bdd2d8b3-f47d-41cf-9b5f-a3bc177b2e05",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Sentença · 5000089-50.2023.4.03.6130 · 1ª Vara Federal de Osasco — Direito tributário: são da segurança para reconhecer o direito líquido e certo da Impetrante de não incluir o ISS na base de cálculo do IRPJ e CSLL sobre os exercícios em que operou pela sistemática de lucro presumido. Emenda à inicial foi apresentada. Custas processuais foram recolhidas. A m",
@@ -31235,7 +33827,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.000Z",
         "id": "499cd76784168c5aecea825d",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31249,7 +33841,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "04d52251-1810-4419-bea8-103bebc46f64",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Sentença · 5003368-85.2025.4.03.6126 · 1ª Vara Federal de Santo André — Direito tributário: PC). São hipóteses de cabimento deste recurso a existência de obscuridade, contradição, omissão ou erro material na decisão judicial proferida (art. 1022 do CPC). Além disso, para a correção de erros materiais também é possível a correção de ofício (art. 494, I do CPC). Qu",
@@ -31268,7 +33863,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.000Z",
         "id": "bb05312624f9d88409fdc7cd",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31282,7 +33877,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "5f0f29cd-30c8-44e2-bb85-cc1d1066d5b2",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Sentença · 5005966-51.2020.4.03.6105 · 8ª Vara Federal de Campinas — Direito tributário: ficada na inicial, contra ato do DELEGADO DA RECEITA FEDERAL EM CAMPINAS para exclusão do ICMS, PIS e COFINS da base de cálculo do IRPJ e CSLL, bem como para que seja reconhecido o direito à repetição dos valores recolhidos indevidamente nos últimos cinco anos. Relata a imp",
@@ -31301,7 +33899,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.000Z",
         "id": "d757923779b9e153fb4fd462",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -31315,7 +33913,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "13c189d5-90d8-4b56-9542-2594e76e5397",
+        "fastPublishedAt": "2026-08-20T18:06:40.501Z",
+        "error": null
       },
       {
         "title": "Decisão · 5023901-12.2026.4.03.6100 · 21ª Vara Cível Federal de São Paulo — Direito tributário: 59725 IMPETRADO: UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA DELEGACIA DE ADMINISTRAÇÃO TRIBUTÁRIA DA RECEITA FEDERAL DO BRASIL (DERAT/SPO) FISCAL DA LEI: MINISTERIO PUBLICO FEDERAL DECISÃO Trata-se de Mandado de Segurança impetrado por SENDAS DISTRIBUIDORA S/A em face do DELE",
@@ -41727,7 +44328,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.460Z",
         "id": "9fa3af8847352b8aad65eaf3",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41741,7 +44342,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "2fcc266b-2e36-4834-a5be-ca718efa5736",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5065892-82.2026.4.02.5101 · 6ª Turma Recursal do Rio de Janeiro — Direito tributário: RRIDO : DAVID WILLIAM JUNGES (AUTOR) ADVOGADO(A) : AMANDA CARNEVALE CORREA (OAB RJ177046) TRIBUTÁRIO. IMPOSTO DE RENDA. PRETENSÃO DE NÃO INCIDÊNCIA. ADICIONAL DE INTERVALO. TEMA 306 DA TNU. VERBAS INDENIZATÓRIAS. NÃO INCIDÊNCIA. SENTENÇA MANTIDA. RECURSO DA UNIÃO CONHECIDO E IMP",
@@ -41760,7 +44364,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.460Z",
         "id": "59ce0df87ac9720298d61976",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41774,7 +44378,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "812f5d9b-ca2a-494d-a630-79c98b86ff04",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 5001716-86.2025.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5001716-86.2025.4.02.5115/RJ AUTOR : JOEL VERGINIO DA SILVA ADVOGADO(A) : ANTONIO CARLOS COSTA CASTRO (OAB RJ069047) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO, nos termos do art. 487, I, do CPC/2015, para condenar",
@@ -41793,7 +44400,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.460Z",
         "id": "eba7ee42a7182d0e96582920",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41807,7 +44414,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "df1d533b-f91a-449c-a4a5-4d60e14a85b9",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 5001288-70.2026.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5001288-70.2026.4.02.5115/RJ AUTOR : THIAGO PEREIRA GOUVEA GOMES (Absolutamente Incapaz (Art. 3º CC)) ADVOGADO(A) : JULIANA SATIKO HIRAYAMA (OAB RJ201050) AUTOR : JACKELINE PEREIRA GOUVEA (Pais) ADVOGADO(A) : JULIANA SATIKO HIRA",
@@ -41826,7 +44436,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.460Z",
         "id": "97185a5de16f7a64f22aac47",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41840,7 +44450,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "bee3463c-8428-480f-a978-1f10379664c5",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 5000418-25.2026.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5000418-25.2026.4.02.5115/RJ AUTOR : BEATRIZ CRISTINA RODRIGUES DE MELLO ADVOGADO(A) : VANESSA GOMES DE SOUZA ABREU (OAB RJ143194) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO, nos termos do art. 487, I, do CPC/2015,",
@@ -41859,7 +44472,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.460Z",
         "id": "8bda3177175783e53e78c27c",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41873,7 +44486,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "40fac5e6-b187-4f8d-8b1f-2c3dc1c0d9a1",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5001882-59.2025.4.03.6128 · Gab. 21 - DES. FED. MAIRAN MAIA — Direito tributário: ndiaí/SP, no qual requer seja reconhecido o direito de não incluir, na base de cálculo do IRPJ e da CSLL, inclusive nas apurações mensais por estimativa, os valores correspondentes a incentivos fiscais e/ou financeiros-fiscais de ICMS classificados como “grandezas positivas",
@@ -41892,7 +44508,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "842d113a81d8033416cfcea5",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41906,7 +44522,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "20d0b2e6-81a8-43b4-a7f0-61de346e3ff5",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5014166-23.2024.4.03.6100 · Gab. 21 - DES. FED. MAIRAN MAIA — Direito tributário: 00 RELATOR: MAIRAN GONCALVES MAIA JUNIOR APELANTE: DELEGADO DA DELEGACIA DE ADMINISTRAÇÃO TRIBUTÁRIA DA RECEITA FEDERAL DO BRASIL (DERAT/SPO), UNIAO FEDERAL - FAZENDA NACIONAL ADVOGADO do(a) APELADO: DANIEL AZEVEDO NOCETTI - SP441509-A ADVOGADO do(a) APELADO: BRUNO SARTORI DE CA",
@@ -41925,7 +44544,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "b85c1fb20ef2c6713f8fde19",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41939,7 +44558,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "93fd09a8-65a3-4b81-8b09-7a7983ae6248",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença tipo M · 5004136-43.2026.4.03.6104 · 1ª Vara Federal de Santos — Direito tributário: bargantes alegam, em síntese, a existência de vícios na decisão embargada, quais sejam: Omissão Processual e Error in Procedendo: sustentam que a decisão foi omissa quanto às consequências práticas do acolhimento da preliminar de ilegitimidade passiva para o pedido de comp",
@@ -41958,7 +44580,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "63e84d55dcfd532b2f47a913",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -41972,7 +44594,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "c06b9372-2b68-4f61-bbc9-59f3d34ce20e",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 5003414-12.2026.4.03.6103 · 1ª Vara Federal de São José dos Campos — Direito tributário: 2.808/2025 e Instrução Normativa RFB nº 2.305/2025, bem como assegurado o recolhimento do IRPJ e da CSLL segundo os percentuais definidos nas Leis nº 9.249/1995 e nº 9.430/199. A medida liminar é para suspender a incidência das novas regras de tributação. As custas processu",
@@ -41991,7 +44616,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "c86e3b97e1ddc7b5a0bf6f28",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42005,7 +44630,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b6c0bbfa-ad6e-4dbb-87b0-8de4981d5901",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença · 5004698-68.2025.4.03.6110 · 4ª Vara Federal de Sorocaba — Direito tributário: FEDERAL EM SOROCABA e outro, objetivando a declaração de inexistência de relação jurídico-tributária que a obrigue ao recolhimento do PIS-Importação e da Cofins-Importação incidentes sobre a importação de serviços que ela toma. Subsidiariamente, pleiteia o reconhecimento do dire",
@@ -42024,7 +44652,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "587e586b0689a5a05cf02b79",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42038,7 +44666,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "c39c075d-fddf-43aa-87dd-25c62f2a79b2",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Sentença Tipo B · 5002933-98.2026.4.03.6119 · 1ª Vara Federal de Guarulhos — Direito tributário: RECEITA FEDERAL DO BRASIL EM GUARULHOS. A impetrante sustenta que os valores relativos ao ISS não podem servir de base de cálculo para incidência das contribuições ao Pis e Cofins, pois são valores que não ingressam efetivamente em seus cofres, fazendo com que recolha trib",
@@ -42057,7 +44688,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "93ab643d31ee391ad62f8e26",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42071,7 +44702,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "785952c0-a4b2-41c5-84fe-a6145541e624",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5004088-18.2025.4.03.6105 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: elo art. 178 do CTN e a necessidade de preservação da segurança jurídica, do planejamento tributário e do direito adquirido. Subsidiariamente pleiteia a aplicação das anterioridades anual e nonagesimal relativamente ao IRPJ, CSLL, PIS e COFINS. Existentes contrarrazões. Manifest",
@@ -42090,7 +44724,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "4c402d1202da3c4bb6fbddaa",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42104,7 +44738,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "21b59fd3-625a-45f8-88e3-112c8c3da8b1",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000691-39.2025.4.03.6108 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: ão do exercício das atividades nos períodos legalmente estabelecidos, adesão ao Domicílio Tributário Eletrônico e regularidades cadastral, fiscal, perante o CADIN e o FGTS. Argumenta, ainda, que a instituição posterior do limite global de R$ 15 bilhões não poderia prejudicar a s",
@@ -42123,7 +44760,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "e089d339e3033b8911e4fce0",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42137,7 +44774,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "911ef384-5f93-4eaa-879d-345780f87330",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000364-21.2026.4.03.6121 · Gab. 46 - DES. FED. RUBENS CALIXTO — Direito tributário: elo art. 178 do CTN e a necessidade de preservação da segurança jurídica, do planejamento tributário e do direito adquirido. Subsidiariamente pleiteia a aplicação das anterioridades anual e nonagesimal relativamente ao IRPJ, CSLL, PIS e COFINS. Existentes contrarrazões. Manifest",
@@ -42156,7 +44796,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:34.885Z",
         "id": "c6ffa5f7341ae99b541dc3c6",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -42170,7 +44810,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "1e8667f2-d9e2-46e1-929e-c7391637da2f",
+        "fastPublishedAt": "2026-08-20T18:09:12.454Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5006656-41.2024.4.03.6105 · Gab. 09 - DES. FED. ADRIANA PILEGGI — Direito tributário: emanda na qual se pretende o reconhecimento do direito de excluir os valores relativos ao PIS e à COFINS de suas próprias bases de cálculo, bem como a restituição dos valores recolhidos indevidamente a esse título nos 5 (cinco) anos anteriores ao ajuizamento da ação. Em su",
@@ -50368,6 +53011,682 @@
       }
     ],
     "runs": [
+      {
+        "id": "8ebf00ef-811b-4d07-ae3d-6d784982ff4a",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T18:06:40.677Z",
+        "finishedAt": "2026-08-20T18:09:12.498Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 33731,
+              "entries": 34,
+              "processed": 33731,
+              "dateMatched": 33731,
+              "decisionMatched": 7022,
+              "taxMatched": 2412,
+              "deduplicated": 2247,
+              "duplicates": 165,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 53,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 12992,
+              "entries": 13,
+              "processed": 12992,
+              "dateMatched": 12992,
+              "decisionMatched": 6508,
+              "taxMatched": 1481,
+              "deduplicated": 1479,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24864,
+              "entries": 25,
+              "processed": 24864,
+              "dateMatched": 24864,
+              "decisionMatched": 9788,
+              "taxMatched": 4955,
+              "deduplicated": 4773,
+              "duplicates": 182,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 57,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 30583,
+              "entries": 31,
+              "processed": 30583,
+              "dateMatched": 30583,
+              "decisionMatched": 12422,
+              "taxMatched": 2212,
+              "deduplicated": 2210,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24048,
+              "entries": 25,
+              "processed": 24048,
+              "dateMatched": 24048,
+              "decisionMatched": 5843,
+              "taxMatched": 2614,
+              "deduplicated": 2538,
+              "duplicates": 76,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 12658,
+              "entries": 13,
+              "processed": 12658,
+              "dateMatched": 12658,
+              "decisionMatched": 4600,
+              "taxMatched": 844,
+              "deduplicated": 844,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "c338d6ae-5367-4d83-9d30-8a6c4aa4f2b2",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-20T18:02:52.385Z",
+        "finishedAt": "2026-08-20T18:06:40.609Z",
+        "discovered": 10,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 4,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 47,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "21a190ac-03bc-4a29-914f-f0064aa7f0c5",
         "trigger": "github-actions-analysis",
@@ -76516,305 +79835,9 @@
             "found": 1
           }
         ]
-      },
-      {
-        "id": "3cf378ec-84aa-4560-ab6d-d538547d6ae5",
-        "trigger": "github-actions-analysis",
-        "startedAt": "2026-08-19T13:09:25.050Z",
-        "finishedAt": "2026-08-19T13:12:17.582Z",
-        "discovered": 11,
-        "analyzed": 1,
-        "published": 1,
-        "discarded": 0,
-        "errors": 3,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 15
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 22
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1
-          }
-        ]
-      },
-      {
-        "id": "97643084-acc2-41ff-9d4e-b392a8161d8c",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T13:04:47.434Z",
-        "finishedAt": "2026-08-19T13:05:51.794Z",
-        "discovered": 176,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 3,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 15
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 22
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T18:01:24.593Z",
-    "nextRunAt": "2026-08-21T00:01:24.593Z"
+    "lastRunAt": "2026-08-20T18:09:12.498Z",
+    "nextRunAt": "2026-08-21T00:09:12.498Z"
   }
 }
