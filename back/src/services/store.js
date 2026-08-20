@@ -12,14 +12,11 @@ async function readBundledDatabase() {
   return JSON.parse(content);
 }
 
-async function readGitHubDatabase() {
+async function readGitHubDatabase(ref) {
   const repository = process.env.GITHUB_REPOSITORY || 'eb9101580-oss/informer-tributario';
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) throw new Error('Repositório GitHub inválido.');
-  // O CDN do raw.githubusercontent.com pode manter o conteúdo anterior mesmo
-  // com cache:no-store. Um bucket curto força a leitura do commit recém-gravado
-  // sem criar uma URL diferente para cada acesso ao feed.
-  const cacheVersion = Math.floor(Date.now() / 30_000);
-  const response = await fetch(`https://raw.githubusercontent.com/${repository}/main/back/data/database.json?v=${cacheVersion}`, {
+  if (!/^[a-f0-9]{40}$/i.test(ref || '')) throw new Error('Commit do deploy inválido.');
+  const response = await fetch(`https://raw.githubusercontent.com/${repository}/${ref}/back/data/database.json`, {
     headers: { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0', 'Cache-Control': 'no-cache' },
     cache: 'no-store',
     signal: AbortSignal.timeout(10000),
@@ -30,8 +27,11 @@ async function readGitHubDatabase() {
 
 export async function readDatabase() {
   if (process.env.VERCEL === '1') {
-    try { return await readGitHubDatabase(); }
-    catch (error) { console.warn(`Falha ao ler o feed atualizado no GitHub; usando a cópia do deploy: ${error.message}`); }
+    const deploymentCommit = process.env.VERCEL_GIT_COMMIT_SHA;
+    if (deploymentCommit) {
+      try { return await readGitHubDatabase(deploymentCommit); }
+      catch (error) { console.warn(`Falha ao ler o banco do commit do deploy; usando a cópia empacotada: ${error.message}`); }
+    }
   }
   return readBundledDatabase();
 }
