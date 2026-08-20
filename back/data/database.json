@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T17:18:30.042Z",
+    "lastUpdatedAt": "2026-08-20T18:01:24.561Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -4045,43 +4045,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ",
+      "theme": "Revisão da Renda Mensal Inicial (RMI) em aposentadoria por idade com base na cor",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "SELIC",
+        "IPCA",
+        "Juros de mora",
+        "Revisão previdenciária",
+        "Renda Mensal Inicial (RMI)"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto contra sentença que concedeu aposentadoria por idade ao autor.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despocho judicial determina a revisão da Renda Mensal Inicial (RMI) do benefício de aposentadoria por idade do autor, fixando-a em R$ 1.388,70 para a data de concessão em 01/10/2015. O INSS reconheceu erro administrativo no cálculo original, aplicando corretamente a legislação anterior à Emenda Constitucional nº 103/2019. A decisão aplica a taxa SELIC para correção monetária e juros de mora, considerando a fase anterior à EC nº 113/2021.",
+      "whatChanged": "A decisão do TRF 2ª Região estabelece que, para a fase anterior à expedição dos requisitórios, os cálculos devem seguir os critérios anteriores à EC nº 113/2021, aplicando a taxa SELIC para correção monetária e juros de mora. O INSS reconheceu erro administrativo no cálculo da RMI, corrigindo o valor para R$ 1.388,70.",
+      "practicalImpact": "Empresas de segurado e autônomos devem revisar cálculos previdenciários para garantir a inclusão de contribuições inferiores ao salário mínimo, evitando erros administrativos. O uso correto da SELIC para correção monetária e juros de mora é obrigatório para benefícios anteriores à EC nº 113/2021.",
+      "officeAction": "O INSS deve revisar os cálculos da RMI para benefícios de aposentadoria por idade, considerando contribuições inferiores ao salário mínimo e aplicando a taxa SELIC até a data da concessão do benefício.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Segurados com aposentadoria por idade",
+        "Autônomos",
+        "Empregados",
+        "Instituto Nacional do Seguro Social (INSS)",
+        "Juizados Especiais Federais"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da RMI com base na aplicação correta da SELIC para benefícios anteriores à EC nº 113/2021",
+        "period": "2023-12-15 a 2024-12-15",
+        "action": "Revisar cálculos previdenciários para inclusão de contribuições inferiores ao salário mínimo e aplicar a taxa SELIC até a data da concessão do benefício",
+        "confidence": "alto"
+      },
       "id": "d8288c4e-7e33-4337-8bc1-0080b956c478",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DbuaBehATgEwL2YnyG1xN/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.157Z",
-      "updatedAt": "2026-08-20T17:10:19.157Z",
+      "updatedAt": "2026-08-20T17:54:14.901Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DbuaBehATgEwL2YnyG1xN/certidao",
         "sourceCharacters": 8371,
         "sourceId": "trf2",
@@ -4108,43 +4123,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5036597-97.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: o autor ARTIDONIO CHAMAS COELHO , CPF 228.756.387-34 ,…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5036597-97.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: o autor ARTIDONIO CHAMAS COELHO , CPF 228.756.387-34 , de",
+      "theme": "Dedução de contribuições extraordinárias para previdência complementar no IRPF",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "Contribuições extraordinárias",
+        "Plano de previdência privada",
+        "Deficit de plano de previdênca",
+        "Equacionamento/saneamento dodé"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5036597-97.2026.4.02.5101/RJ REQUERENTE : ARTIDONIO CHAMAS COELHO ADVOGADO(A) : LUCIANA RESENDE DE SOUZA LIMA (OAB RJ129045) ADVOGADO(A) : MIOMIR DAVIDOVIC LEAL (OAB RJ097890) ADVOGADO(A) : IGOR PECANHA COUTO ALVES (OAB RJ179878) DESPACHO/DECISÃO 1 - Ante o trânsito em julgado do título judicial em 21/07/2026 (evento 25), providencie a Secretaria a alteração…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despatcho judicial determina a dedução das contribuições extraordinárias recolhidas para equacionamento do déficit de plano de previdência complementar mantido pela Fundação Petrobrás de Seguridade Social (PETROS) da base de cálculo do IRPF, com limite máximo de 12%. O autor, ARTIDONIO CHAMAS COELHO (CPF 228.756.387-34), foi autorizado a deduzir até 12% das contribuições extraordinárias, conforme previsto no art. 11 da Lei nº 9.532/97.",
+      "whatChanged": "A decisão estabelece que a dedução das contribuições extraordinárias para equacionamento do déficit de plano de previdência complementar deve ser implementada por meio de declaração de ajuste anual do IRPF, não sendo possível o encaminhamento de ofício à entidade de previdência complementar para dedução na fonte.",
+      "practicalImpact": "Contribuintes com plano de previdência complementar mantido pela PETROS podem deduzir até 12% das contribuições extraordinárias recolhidas para equacionamento do déficit de plano de previdência complementar na base de cálculo do IRPF, desde que realizem ajuste anual na declaração de imposto de renda.",
+      "officeAction": "A Secretaria deve alterar a classe do processo para 'CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA (JEF)', intimar a Delegacia da Receita Federal do Brasil no Rio de Janeiro I (DRF/RJ 1), e proceder à retificação do valor da causa após análise da planilha contendo o montante devido.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com plano de previdência complementar PETROS",
+        "Pessoas físicas com contribuições extraordinárias para previdência complementar",
+        "Autos de execução fiscal com dedução de contribuições extraordinárias",
+        "Contribuintes com plano de previdência privada",
+        "Pessoas físicas com débitos fiscais"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Dedução de contribuições extraordinárias para previdência complementar no IRPF",
+        "period": "2026-07-21 a 2026-07-31",
+        "action": "Realizar ajuste anual na declaração de imposto de renda para deduzir até 12% das contribuições extraordinárias recolhidas para equacionamento do déficit de plano de previdência complementar",
+        "confidence": "alto"
+      },
       "id": "ed951e27-4f2f-435d-af3e-709a94b79092",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGuePbi3Tgy2onYmDByKE/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.158Z",
-      "updatedAt": "2026-08-20T17:10:19.158Z",
+      "updatedAt": "2026-08-20T18:01:24.519Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGuePbi3Tgy2onYmDByKE/certidao",
         "sourceCharacters": 7789,
         "sourceId": "trf2",
@@ -6640,43 +6670,59 @@
     },
     {
       "relevant": true,
-      "title": "Decisão · 1053336-17.2026.4.01.3300 · 10ª Vara Federal Cível da SJBA — Direito tributário: ia - SINDJUFE/BA. O título executivo judicial declarou a inexistência de relação…",
-      "theme": "Direito tributário",
-      "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "title": "Decisão judicial: inexistência de relação jurídico-tributária sobre IR sobre juros de mora da URV (11,98%) - SINDJUFE/BA",
+      "theme": "Imposto de Renda - Juros de mora da URV",
+      "agency": "Tribunal Regional Federal da 1ª Região (SJBA)",
+      "taxes": [
+        "Imposto de Renda (IRPF)",
+        "Juros de mora",
+        "URV (Unidade de Referência deV",
+        "SELIC",
+        "IPCA-15/IBGE",
+        "Taxa Legal"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 10ª Vara Federal Cível da SJBA PROCESSO: 1053336-17.2026.4.01.3300 CLASSE: CUMPRIMENTO INDIVIDUAL DE SENTENÇA EM AÇÕES COLETIVAS (15160) POLO ATIVO: AURORA LOPES DOS REIS REPRESENTANTES POLO ATIVO: RICARDO BAPTISTA PORTNOI - BA68995 e JOAO AUGUSTO MENDES DE CARVALHO FRANCO - BA72580 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) DECISÃO I.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O juiz federal da 10ª Vara Federal Cível da SJBA declarou a inexistência de relação jurídico-tributária sobre a incidência do Imposto de Renda (IRPF) sobre juros de mora da URV (11,98%). Condenou a União Federal à devolução dos valores indevidamente retidos na fonte, corrigidos monetariamente e com juros moratórios simples de 0,5% ao mês a partir da data de citação. A decisão estabelece a necessidade de adequação dos cálculos de liquidação conforme a Emenda Constitucional nº 136/2025 e o Manual de Cálculos da Justiça Federal de 2026 (Resolução CJF nº 990/2026).",
+      "whatChanged": "A decisão determina que os cálculos de liquidação devem seguir a regra de transição estabelecida pela EC nº 136/2025 e Resolução CJF nº 990/2026: até agosto de 2025, aplicar a Taxa SELIC simples; a partir de setembro de 2025, usar correção monetária pelo IPCA-15/IBGE e juros de mora pela Taxa Legal (SELIC deduzido do IPCA-15).",
+      "practicalImpact": "Empresas e servidores públicos devem revisar cálculos de tributação para juros de mora da URV, garantindo a adequação aos novos parâmetros fiscais e judiciais a partir de setembro de 2025. A União Federal é obrigada a devolver valores indevidamente retidos, corrigidos monetariamente e com juros moratórios simples de 0,5% ao mês.",
+      "officeAction": "A parte exequente deve apresentar a conta de liquidação retificada no prazo de 15 dias, aplicando a regra de transição estabelecida pela EC nº 136/2025 e Resolução CJF nº 990/2026, com data-base de 05/2026 para facilitar a verificação técnica.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos com retenções tributárias na fonte",
+        "Sindicatos de trabalhadores do Poder Judiciário Federal",
+        "Empresas que realizam retenções de IRPF",
+        "Fazenda Nacional (União Federal)",
+        "Juizados Federais"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "authority": 8,
+        "novelty": 9,
+        "legalImpact": 9,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ajuste de cálculos tributários para juros de mora da URV (11,98%)",
+        "period": "Setembro de 2025 a 2026",
+        "action": "Revisar cálculos de liquidação de IRPF com base na regra de transição estabelecida pela EC nº 136/2025 e Resolução CJF nº 990/2026",
+        "confidence": "alto"
+      },
       "id": "deabcdf8-3c8d-48a6-9e35-22beab583ec5",
-      "score": 8.2,
+      "score": 8.3,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR4yUwGEfGT73wAy6dy4gaO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T16:52:26.385Z",
-      "updatedAt": "2026-08-20T16:52:26.385Z",
+      "updatedAt": "2026-08-20T17:29:49.401Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR4yUwGEfGT73wAy6dy4gaO/certidao",
         "sourceCharacters": 9416,
         "sourceId": "trf1",
@@ -7207,43 +7253,57 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5010633-84.2021.4.02.5002 · 1ª Vara Federal de Cachoeiro de Itapemirim — Direito tributário: rsal/ES para julgar procedente o pedido e declarar o direito da…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5010633-84.2021.4.02.5002 · 1ª Vara Federal de Cachoeiro de Itapemirim — Direito tributário: rsal/ES para julgar procedente o pedido e declarar o direito da part",
+      "theme": "Isenção de imposto de renda sobre proventos de aposentadoria",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "Receita Federal",
+        "PGFN",
+        "Previdência Social"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5010633-84.2021.4.02.5002/ES REQUERENTE : ECY MACHADO DE BRITO ADVOGADO(A) : THAIANY LEAL DE OLIVEIRA (OAB ES035293) ADVOGADO(A) : ADRIANA DA SILVA VAILLANT GALVAO (OAB ES029770) DESPACHO/DECISÃO A sentença proferida no evento 119, DOC1 foi reformada pela 1ª Turma Recursal/ES para julgar procedente o pedido e declarar o direito da parte autora à isenção de…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despatcho judicial confirma a isenção de imposto de renda sobre proventos de aposentadoria para o autor, com restituição de valores indevidamente recolhidos pela União. A decisão observa a prescrição quinquenal e determina a atualização dos valores com correção monetária e juros de mora conforme o Manual de Cálculos da Justiça Federal.",
+      "whatChanged": "A decisão reforma a sentença para isenção de IR sobre proventos de aposentadoria e condena a União a restituir valores indevidamente recolhidos, com atualização monetária e juros de mora. A União tem prazo de 30 dias para apresentar demonstrativo atualizado do crédito, com possibilidade de impugnação da parte autora.",
+      "practicalImpact": "A parte autora pode obter restituição de imposto de renda com atualização monetária e juros de mora, desde que a União apresente os cálculos dentro do prazo estipulado. A AGÊNCIA DA PREVIDÊNCIA SOCIAL deve implementar a isenção junto ao benefício previdenciário do autor.",
+      "officeAction": "Intimação da AGÊNCIA DA PREVIDÊNCIA SOCIAL para implementar a isenção de IR no benefício previdenciário do autor e comprovar o cumprimento da determinação judicial. A União tem 30 dias para apresentar demonstrativo atualizado do crédito, observando critérios do Manual de Cálculos da Justiça Federal.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Aposentados",
+        "Contribuintes com isenção de IR",
+        "Receita Federal",
+        "PGFN",
+        "Previdência Social"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 7,
+        "reach": 6,
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção de imposto de renda sobre proventos de aposentadoria",
+        "period": "30 dias para apresentação do demonstrativo atualizado",
+        "action": "Intimação da Previdência Social para implementar a isenção e apresentação do cálculo atualizado pela União",
+        "confidence": "alto"
+      },
       "id": "d075ea4d-6c0d-49fc-a198-df26c87056d4",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.3,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgAu7kXc5TGKOzWRmrz2A1/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T16:52:26.390Z",
-      "updatedAt": "2026-08-20T16:52:26.390Z",
+      "updatedAt": "2026-08-20T17:36:53.932Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgAu7kXc5TGKOzWRmrz2A1/certidao",
         "sourceCharacters": 9555,
         "sourceId": "trf2",
@@ -25026,8 +25086,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:04.433Z",
         "id": "69a2a18b3336d5a07948ebf8",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -25043,7 +25103,14 @@
         },
         "alertId": "deabcdf8-3c8d-48a6-9e35-22beab583ec5",
         "fastPublishedAt": "2026-08-20T16:52:26.392Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T17:29:49.442Z",
+        "analyzedPublishedAt": "2025-09-09",
+        "relevant": true,
+        "score": 8.3,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 1021254-89.2025.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1021254-89.2025.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: A. D. S. C. REPRESENTANTE: LUCILENE DE SOUSA SILVA Advogados do(a) AUTOR: JONATAN DOS SA",
@@ -25359,8 +25426,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "d77c6f13ad7d6b3fda5c2618",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -25376,7 +25443,14 @@
         },
         "alertId": "d075ea4d-6c0d-49fc-a198-df26c87056d4",
         "fastPublishedAt": "2026-08-20T16:52:26.392Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T17:36:53.968Z",
+        "analyzedPublishedAt": "2023-10-18T00:00:00",
+        "relevant": true,
+        "score": 7.3,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 5002571-65.2025.4.02.5115 · 1ª Vara Federal de Teresópolis — Direito tributário: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5002571-65.2025.4.02.5115/RJ AUTOR : ELSON DA COSTA GONCALVES ADVOGADO(A) : TATIANA THEOPHILO MEDEIROS (OAB RJ223993) ADVOGADO(A) : DAFYNE AMALIA TEIXEIRA (OAB RJ175391) SENTENÇA DISPOSITIVO Em face do exposto, ACOLHO O PEDIDO,",
@@ -25693,7 +25767,7 @@
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
         "status": "fast-published",
-        "attempts": 0,
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -25709,7 +25783,8 @@
         },
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": "A análise do Ollama excedeu 10 minutos.",
+        "analyzedAt": "2026-08-20T17:46:54.148Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -25729,8 +25804,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "d83477ef878147e560603067",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -25746,7 +25821,14 @@
         },
         "alertId": "d8288c4e-7e33-4337-8bc1-0080b956c478",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T17:54:14.944Z",
+        "analyzedPublishedAt": "2023-12-15T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5036597-97.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: o autor ARTIDONIO CHAMAS COELHO , CPF 228.756.387-34 , de \" deduzir da base de cálculo do imposto de renda pessoa física as contribuições extraordinárias recolhidas para equacionamento/saneamento do déficit apurado no plano de previdência complementar mantido pela Fundação Pet",
@@ -25766,8 +25848,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "9d77281888895bdab9d4f321",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -25783,7 +25865,14 @@
         },
         "alertId": "ed951e27-4f2f-435d-af3e-709a94b79092",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T18:01:24.561Z",
+        "analyzedPublishedAt": "2026-07-21T00:00:00",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5050656-32.2022.4.02.5101 · 30ª Vara Federal do Rio de Janeiro — Direito tributário: LIQUIDAÇÃO PELO PROCEDIMENTO COMUM Nº 5050656-32.2022.4.02.5101/RJ AUTOR : CLINICA DE REPOUSO TRES RIOS LTDA ADVOGADO(A) : ROBERTO DIAS CECOTTO (OAB RJ163738) ADVOGADO(A) : EDSON WIZIACK JUNIOR (OAB RJ133969) DESPACHO/DECISÃO Trata-se de embargos de declaração opostos p",
@@ -50279,6 +50368,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "21a190ac-03bc-4a29-914f-f0064aa7f0c5",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T17:21:23.770Z",
+        "finishedAt": "2026-08-20T18:01:24.593Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "55b5e558-5827-4a38-be51-060123275a30",
         "trigger": "github-actions-history",
@@ -76710,108 +76812,9 @@
             "found": 1
           }
         ]
-      },
-      {
-        "id": "4e8fd6bb-1394-4f63-8a3e-89a1bba21709",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T12:00:57.355Z",
-        "finishedAt": "2026-08-19T12:01:09.347Z",
-        "discovered": 5,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 2,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 19
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 6
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T17:18:30.068Z",
-    "nextRunAt": "2026-08-20T23:18:30.068Z"
+    "lastRunAt": "2026-08-20T18:01:24.593Z",
+    "nextRunAt": "2026-08-21T00:01:24.593Z"
   }
 }
