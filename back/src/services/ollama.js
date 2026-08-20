@@ -1,4 +1,14 @@
 import { config } from '../config.js';
+import { Agent, fetch as undiciFetch } from 'undici';
+
+// O Ollama pode gastar vários minutos avaliando decisões longas antes do
+// primeiro token. O fetch padrão do Node encerra essa espera aos 300 segundos.
+// O AbortController abaixo continua sendo o limite total da análise.
+const ollamaDispatcher = new Agent({
+  connectTimeout: 10_000,
+  headersTimeout: config.ollamaTimeoutMs + 5_000,
+  bodyTimeout: config.ollamaTimeoutMs + 5_000,
+});
 
 const analysisSchema = {
   type: 'object',
@@ -162,14 +172,15 @@ export async function analyzeWithOllama(document) {
   const timeout = setTimeout(() => controller.abort(), config.ollamaTimeoutMs);
   const documentText = prepareDocumentText(document.text);
   try {
-    const response = await fetch(`${config.ollamaUrl}/api/chat`, {
+    const response = await undiciFetch(`${config.ollamaUrl}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      dispatcher: ollamaDispatcher,
       signal: controller.signal,
       body: JSON.stringify({
         model: config.ollamaModel,
-        // O streaming envia os cabeçalhos imediatamente e evita o limite
-        // interno de 5 minutos do fetch/Undici enquanto o runner usa CPU.
+        // Depois da avaliação inicial, cada fragmento mantém a conexão ativa
+        // enquanto o runner conclui a geração em CPU.
         stream: true,
         think: false,
         keep_alive: '10m',

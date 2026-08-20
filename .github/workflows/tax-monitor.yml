@@ -27,7 +27,7 @@ jobs:
       MONITOR_ENABLED: 'false'
       MONITOR_LOOKBACK_DAYS: '2'
       MONITOR_MAX_ANALYSES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
-      OLLAMA_MAX_INPUT_CHARS: '14000'
+      OLLAMA_MAX_INPUT_CHARS: '10000'
       OLLAMA_TIMEOUT_MS: '600000'
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       ALERTS_FROM_EMAIL: ${{ secrets.ALERTS_FROM_EMAIL }}
