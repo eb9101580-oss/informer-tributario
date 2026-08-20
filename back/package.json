@@ -10,10 +10,12 @@
     "test": "node --test"
   },
   "dependencies": {
+    "better-auth": "^1.7.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
+    "pg": "^8.23.0",
     "undici": "^7.29.0"
   }
 }

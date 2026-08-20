@@ -7,7 +7,7 @@ import { compareFeedAlerts } from '../utils/alertSorting.js';
 const icons = { reforma: Scale, obrigacoes: BookOpenCheck };
 const sourceIcons = { 'reforma-cgibs': Landmark, 'confaz-ajustes': Building2, 'nfe-notas-tecnicas': BookOpenCheck };
 
-export function SectionPage({ sectionId, onOpen, onFeedback, feedbackFor }) {
+export function SectionPage({ sectionId, onOpen, onFeedback, feedbackFor, savedFor, onSave }) {
   const [section, setSection] = useState(null);
   const [alerts, setAlerts] = useState([]);
   const [error, setError] = useState('');
@@ -45,7 +45,7 @@ export function SectionPage({ sectionId, onOpen, onFeedback, feedbackFor }) {
 
       <div className="section-page__heading section-page__heading--feed"><div><h2>Alertas e alterações detectadas</h2><p>Publicações oficiais têm prioridade; notícias são mantidas como contexto e levam ao texto original.</p></div><span>{feed.length} itens</span></div>
       {error && <div className="inline-error">{error}<button onClick={load}>Tentar novamente</button></div>}
-      <div className="alerts-list">{feed.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={onOpen} onFeedback={onFeedback ? (value) => onFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante') : undefined} feedback={feedbackFor?.(alert.id)} />)}</div>
+      <div className="alerts-list">{feed.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={onOpen} onFeedback={onFeedback ? (value) => onFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante') : undefined} feedback={feedbackFor?.(alert.id)} saved={savedFor?.(alert.id)} onSave={onSave ? () => onSave(alert) : undefined} />)}</div>
       {!feed.length && <div className="empty-state"><ArrowUpRight size={28} /><h3>Nenhuma publicação de hoje ou ontem</h3><p>As fontes estão cadastradas e aparecerão após o próximo ciclo de varredura.</p></div>}
     </section>
   );

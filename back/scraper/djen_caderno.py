@@ -40,10 +40,11 @@ MAX_CANDIDATES = bounded_environment_integer("DJEN_MAX_CANDIDATES_PER_TRIBUNAL_D
 CANDIDATE_POOL_SIZE = min(4000, MAX_CANDIDATES * 4)
 DECISION_PATTERN = re.compile(r"acordao|decisao|sentenca|julgamento|voto|liminar|tutela")
 TAX_PATTERN = re.compile(
-    r"tribut|imposto|\bicms\b|\biss\b|\bipi\b|\bpis\b|cofins|irpj|csll|\bcbs\b|\bibs\b|"
+    r"\btribut(?:os?|ar|ad[oa]s?|acao|acoes|ari[oa]s?|avel|aveis)\b|imposto|\bicms\b|\biss\b|\bipi\b|\bpis\b|cofins|irpj|csll|\bcbs\b|\bibs\b|"
     r"irrf|irpf|iptu|ipva|itbi|pasep|cide|funrural|afrmm|itcmd|\bitr\b|\biof\b|"
-    r"aduaneir|importacao|exportacao|imunidade|isencao|repeticao (?:de |do )?indebito|"
-    r"\btaxas?\b|emprestimo compulsorio|contribuicao social|contribuicao previdenciaria|execucao fiscal|"
+    r"aduaneir|importacao|exportacao|imunidade|isencao|(?:repeticao (?:de |do )?indebito|indebito) (?:tributario|fiscal)|"
+    r"taxa (?:tributaria|fiscal|selic|de fiscalizacao|de servico publico|de poder de policia|municipal|estadual|federal)|"
+    r"emprestimo compulsorio|contribuicao social|contribuicao previdenciaria|execucao fiscal|"
     r"divida ativa|credito fiscal|credito tributario|debito fiscal|fazenda nacional|receita federal|"
     r"compensacao tributaria|parcelamento tributario|beneficio fiscal"
 )
@@ -61,7 +62,8 @@ NAMED_TAX_PATTERNS = tuple(re.compile(pattern) for pattern in (
     r"\bicms\b", r"\biss\b", r"\bipi\b", r"\bpis\b", r"cofins", r"irpj", r"csll",
     r"irrf", r"irpf", r"iptu", r"ipva", r"itbi", r"pasep", r"cide", r"funrural", r"afrmm",
     r"\bcbs\b", r"\bibs\b", r"itcmd", r"\bitr\b", r"\biof\b", r"aduaneir",
-    r"importacao", r"exportacao", r"imunidade", r"isencao", r"repeticao (?:de |do )?indebito",
+    r"importacao", r"exportacao", r"imunidade", r"isencao", r"(?:repeticao (?:de |do )?indebito|indebito) (?:tributario|fiscal)",
+    r"taxa (?:tributaria|fiscal|selic|de fiscalizacao|de servico publico|de poder de policia)",
     r"emprestimo compulsorio", r"contribuicao social", r"contribuicao previdenciaria",
 ))
 

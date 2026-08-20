@@ -1,6 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { config } from '../config.js';
-import { monitoredSources } from '../data/officialSources.js';
 import { collectOfficialPage } from './collector.js';
 import { analyzeDocument } from './ollama.js';
 import { calculateScore, relevanceLabel } from './scoring.js';
@@ -9,6 +8,8 @@ import { readDatabase, updateDatabase } from './store.js';
 import { sectionIdsForSource } from '../data/sections.js';
 import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
 import { hasCandidateText, unpackCandidateText } from './candidateText.js';
+import { loadMonitoredSources } from './customSources.js';
+import { collectPublicSourceDocument } from './sourceSafety.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -72,6 +73,7 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
       sourceId: candidate.sourceId, sourceName: candidate.sourceName, discoveredBy: candidate.discoveryMethod,
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
+      sourceDocumentType: candidate.sourceDocumentType,
       fastTriage: candidate.fastTriage || fastTriageCandidate(candidate),
     },
     sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
@@ -113,7 +115,8 @@ const OPERATIONAL_SOURCES = new Set(['receita-cosit', 'receita-in', 'receita-not
 // sinais explícitos. Ela examina toda a fila em milissegundos; o Ollama fica
 // reservado para a análise jurídica detalhada dos candidatos mais promissores.
 export function fastTriageCandidate(candidate) {
-  const text = `${candidate.title || ''} ${candidate.documentKind || ''}`;
+  const cleanTitle = String(candidate.title || '').replace(/[—-]\s*direito tribut[aá]rio\s*:\s*/i, ' ');
+  const text = `${cleanTitle} ${candidate.documentKind || ''} ${unpackCandidateText(candidate).slice(0, 14000)}`;
   const signals = [];
   let score = 0;
   if (publicationDateKey(candidate.publishedAt)) { score += 20; signals.push('data-confirmada'); }
@@ -167,7 +170,7 @@ export function canFastPublishCandidate(candidate) {
   return (candidate.sourceType || 'official') === 'official'
     && triage.score >= 70
     && structured
-    && isCandidateEligible(candidate.sourceId, candidate.title, candidate.url);
+    && isCandidateEligible(candidate.sourceId, candidate.title, candidate.url, unpackCandidateText(candidate));
 }
 
 export function makeFastAlert(candidate) {
@@ -216,6 +219,7 @@ export function makeFastAlert(candidate) {
       discoveredBy: candidate.discoveryMethod,
       sourceType: candidate.sourceType || 'official',
       documentKind: kind,
+      sourceDocumentType: candidate.sourceDocumentType,
       discoveredAt: candidate.discoveredAt,
       fastTriage: triage,
     },
@@ -244,6 +248,7 @@ export function getMonitorRuntime() {
 export async function getMonitorSnapshot() {
   const database = await readDatabase();
   const monitor = monitorData(database);
+  const sources = await loadMonitoredSources();
   return {
     runtime: getMonitorRuntime(), lastRunAt: monitor.lastRunAt, nextRunAt: monitor.nextRunAt,
     queued: monitor.candidates.filter((item) => item.status === 'pending').length,
@@ -251,7 +256,7 @@ export async function getMonitorSnapshot() {
     analyzed: monitor.candidates.filter((item) => item.status === 'analyzed').length,
     discarded: monitor.candidates.filter((item) => item.status === 'discarded').length,
     errors: monitor.candidates.filter((item) => item.status === 'error').length,
-    sources: monitoredSources.length,
+    sources: sources.length,
   };
 }
 
@@ -265,6 +270,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
   const run = { id: randomUUID(), trigger, targetDate, startedAt: runtime.startedAt, finishedAt: null, discovered: 0, analyzed: 0, published: 0, discarded: 0, errors: 0, sources: [] };
 
   try {
+    const sources = await loadMonitoredSources();
     await updateDatabase((database) => ({
       ...database,
       monitor: { ...monitorData(database), candidates: monitorData(database).candidates.map((item) => item.status === 'analyzing' ? { ...item, status: 'pending', error: 'Análise retomada após reinício do servidor.' } : item) },
@@ -280,13 +286,13 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       },
     }));
     if (discover) {
-    const results = await mapWithConcurrency(monitoredSources, 3, async (source) => {
+    const results = await mapWithConcurrency(sources, 3, async (source) => {
       runtime.currentSource = source.acronym;
       return { source, items: await discoverSourceCandidates(source, config.monitorLookbackDays, { targetDate }) };
     });
     const found = [];
     results.forEach((result, index) => {
-      const source = monitoredSources[index];
+      const source = sources[index];
       if (result.status === 'fulfilled') {
         found.push(...result.value.items);
         run.sources.push({ id: source.id, acronym: source.acronym, status: 'ok', found: result.value.items.length, dateCoverage: targetDate ? sourceDateCoverage(source) : null, ...(result.value.items.discoveryTelemetry ? { telemetry: result.value.items.discoveryTelemetry } : {}) });
@@ -301,7 +307,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       const publishedFingerprints = new Set(monitor.candidates.filter((item) => ['analyzed', 'fast-published'].includes(item.status)).map(candidateFingerprint));
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.filter((item) => {
-        if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
+        if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url, unpackCandidateText(item))) return false;
         if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !hasCandidateText(item) && !item.publishedAt) return false;
         if (['pending', 'error'].includes(item.status) && !shouldRetainQueuedCandidate(item, targetDate)) return false;
         const fingerprint = candidateFingerprint(item);
@@ -428,7 +434,9 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           const inlineText = unpackCandidateText(candidate);
           const collected = inlineText
             ? { url: candidate.url, title: candidate.title, text: inlineText, characters: inlineText.length, contentType: 'text/plain', publishedAt: candidate.publishedAt, parser: candidate.inlineParser || 'Consulta oficial estruturada' }
-            : await collectOfficialPage(candidate.collectionUrl || candidate.url);
+            : candidate.sourceId.startsWith('custom-')
+              ? await collectPublicSourceDocument(candidate.collectionUrl || candidate.url)
+              : await collectOfficialPage(candidate.collectionUrl || candidate.url);
           const document = {
             ...collected,
             candidateTitle: candidate.title,

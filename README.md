@@ -10,6 +10,7 @@ front (React/Vite)
        ↓ REST
 back (Node/Express)
   ├─ agendador, conectores, triagem tributária rápida, fila e deduplicação
+  ├─ Better Auth + PostgreSQL/Neon → usuários, sessões, preferências e fontes
   ├─ Scrapling (adaptador Python) → HTML e PDF oficial
   └─ Ollama (API local) → análise jurídica detalhada dos itens priorizados
 ```
@@ -30,8 +31,9 @@ Câmara e Senado usam os serviços oficiais de dados abertos. O STJ consulta o c
 
 ## Requisitos e instalação
 
-- Node.js 20 ou superior;
+- Node.js 22 ou superior;
 - Python 3.10 ou superior;
+- PostgreSQL 14 ou superior (o plano gratuito do Neon é suficiente para testes);
 - Ollama em execução para as análises.
 
 No PowerShell, use `npm.cmd` se a política de execução bloquear `npm.ps1`:
@@ -45,6 +47,30 @@ npm.cmd run dev
 - Painel: http://localhost:5173
 - API: http://localhost:3333
 - Saúde: http://localhost:3333/api/health
+
+## Login, usuários e PostgreSQL/Neon
+
+O painel interno usa [Better Auth](https://www.better-auth.com/) com links mágicos enviados por e-mail. Não existe cadastro público: o administrador inicial é definido por ambiente e somente ele pode convidar novos usuários na engrenagem de configurações. Os papéis são:
+
+- `admin`: acessa a operação completa e gerencia usuários, sugestões e fontes;
+- `user`: acessa o feed, ações acompanhadas, Reforma Tributária, Obrigações Acessórias, alertas, oportunidades e feedback.
+
+Crie um projeto PostgreSQL no [Neon](https://neon.tech/docs/get-started-with-neon/signing-up), copie a connection string com SSL e configure `back/.env` sem versionar o arquivo:
+
+```dotenv
+DATABASE_URL=
+DATABASE_POOL_MAX=5
+BETTER_AUTH_SECRET=
+BETTER_AUTH_URL=http://localhost:3333
+AUTH_FRONTEND_URL=http://localhost:5173
+AUTH_TRUSTED_ORIGINS=http://localhost:5173,http://localhost:3333
+AUTH_ADMIN_EMAIL=
+AUTH_ADMIN_NAME=
+```
+
+Gere `BETTER_AUTH_SECRET` com pelo menos 32 bytes aleatórios; por exemplo, `openssl rand -base64 32`. Não reutilize a chave do Resend, do GitHub ou do DataJud. Na primeira chamada de autenticação, o backend aplica de forma idempotente a migration [001_auth_and_user_data.sql](back/migrations/001_auth_and_user_data.sql) e cria ou promove `AUTH_ADMIN_EMAIL` como administrador. Se preferir provisionar antes do primeiro acesso, execute o mesmo SQL no console do Neon.
+
+Em produção com um único deploy Vercel, use o domínio público em `BETTER_AUTH_URL`, `AUTH_FRONTEND_URL` e `AUTH_TRUSTED_ORIGINS`. Não é necessário criar um segundo frontend: `/app` entrega a experiência adequada ao papel da sessão. Cookies de produção são `HttpOnly`, `Secure` e `SameSite=Lax`.
 
 ## Varredura automática
 
@@ -82,24 +108,28 @@ O histórico do ciclo informa a cobertura de cada fonte. STF, STJ, Câmara e as 
 
 ## Alertas por e-mail
 
-O feed público possui cadastro para receber alertas com nota 8 ou superior. O envio usa a API do Resend (plano gratuito para testes) e a persistência dos cadastros na Vercel usa o conteúdo do repositório via `GITHUB_TOKEN`. Configure no ambiente da Vercel e nos segredos do GitHub Actions:
+O envio usa a API do [Resend](https://resend.com/docs/send-with-nodejs). A Vercel precisa da chave para links mágicos, convites e notificações do painel; o GitHub Actions precisa dela para os alertas gerados pela varredura. Verifique um domínio no Resend antes de usar remetentes próprios. `onboarding@resend.dev` serve apenas para os testes permitidos pela conta.
+
+Configure na Vercel e, quando indicado, também nos segredos do GitHub Actions. Os campos abaixo devem receber valores no provedor, nunca no repositório:
 
 ```dotenv
-GITHUB_TOKEN=token_com_permissao_de_conteudo_no_repositorio
-GITHUB_REPOSITORY=eb9101580-oss/informer-tributario
-SUBSCRIPTIONS_ENCRYPTION_KEY=chave_aleatoria_forte_compartilhada_com_a_vercel
-RESEND_API_KEY=re_xxxxxxxxx
-ALERTS_FROM_EMAIL=Informer Tributário <onboarding@resend.dev>
+GITHUB_TOKEN=
+GITHUB_REPOSITORY=
+SUBSCRIPTIONS_ENCRYPTION_KEY=
+RESEND_API_KEY=
+ALERTS_FROM_EMAIL=
 ALERTS_MIN_SCORE=8
 ```
 
-Sem essas chaves, o painel continua funcionando, mas o cadastro informa que o envio está aguardando configuração. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
+Para que a varredura do GitHub Actions também notifique as contas criadas no painel, adicione `DATABASE_URL` como secret do repositório, além de `RESEND_API_KEY`, `ALERTS_FROM_EMAIL` e `SUBSCRIPTIONS_ENCRYPTION_KEY`. Use a connection string com pool do Neon e nunca a grave no YAML.
+
+Sem `RESEND_API_KEY` e `ALERTS_FROM_EMAIL`, o painel pode ler os dados, mas convites, login por e-mail e alertas não são enviados. Revogue imediatamente qualquer chave que tenha aparecido em imagem, terminal, log ou commit e gere outra no painel do Resend. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
 
 Na Vercel, as rotas de leitura consultam o `database.json` atual do branch `main`. Assim, os commits de dados produzidos pelo GitHub Actions chegam ao feed sem exigir um novo build da interface a cada varredura; a cópia incluída no deploy permanece como contingência se o GitHub estiver indisponível.
 
 ## Ações acompanhadas e DataJud
 
-Em **Ações acompanhadas**, cadastre um tema tributário (por exemplo, `ICMS`) ou um número CNJ e selecione o tribunal. O painel consulta a API Pública do DataJud, mostra a movimentação mais recente e conserva o histórico resumido. Um workflow do GitHub consulta os acompanhamentos a cada 10 minutos e publica somente o estado criptografado em `back/data/tracked-actions.json`.
+Em **Ações acompanhadas**, cadastre um tema tributário (por exemplo, `ICMS`) ou um número CNJ e selecione o tribunal. O painel consulta a API Pública do DataJud, mostra a movimentação mais recente e conserva o histórico resumido. Um workflow do GitHub consulta os acompanhamentos uma vez por dia e publica somente o estado criptografado em `back/data/tracked-actions.json`.
 
 Quando uma nova movimentação é detectada, ela é transformada em um alerta oficial com nota 8,5 e aparece automaticamente no dashboard, no feed geral e no histórico do acompanhamento. O alerta mantém a data, a descrição do movimento e o link oficial do processo.
 
@@ -108,13 +138,30 @@ Configure a chave pública vigente do CNJ somente como segredo de ambiente; nunc
 ```dotenv
 DATAJUD_API_KEY=chave_publica_vigente_do_cnj
 TRACKED_ACTIONS_ENCRYPTION_KEY=chave_aleatoria_forte
+ACTIONS_CRON_SECRET=segredo_aleatorio_compartilhado
 ```
 
-Na Vercel, `GITHUB_TOKEN` também é necessário para persistir os acompanhamentos. No GitHub Actions, crie os segredos `DATAJUD_API_KEY` e `TRACKED_ACTIONS_ENCRYPTION_KEY`. A API do DataJud fornece metadados e movimentações de processos públicos; processos em segredo não aparecem na API.
+Use exatamente o mesmo `ACTIONS_CRON_SECRET` na Vercel e no segredo homônimo do GitHub Actions; ele autentica o `POST /api/actions/refresh-all` diário. Na Vercel, `GITHUB_TOKEN` também é necessário para persistir os acompanhamentos. No GitHub Actions, crie os segredos `DATAJUD_API_KEY`, `TRACKED_ACTIONS_ENCRYPTION_KEY` e `ACTIONS_CRON_SECRET`. A API do DataJud fornece metadados e movimentações de processos públicos; processos em segredo não aparecem na API.
 
 O endpoint público do DataJud não inclui o STF. Para acompanhamentos do Supremo, selecione **STF (portal oficial)** e cole o link `portal.stf.jus.br/processos/detalhe.asp?incidente=...`; o sistema consulta a página oficial, a aba de andamentos e a aba de decisões. Por exemplo, a notícia do ICMS sobre produtos intermediários identifica o RE 1.424.015, Tema 1.465.
 
-Os registros iniciais continuam sendo cenários demonstrativos e aparecem identificados como tal. Alertas criados pela varredura usam `isDemo: false` e sempre guardam o endereço oficial e a trilha de proveniência.
+## Fontes personalizadas no monitor automático
+
+Fontes cadastradas por usuários ficam pendentes até aprovação do administrador. O backend valida HTTPS e bloqueia endereços privados antes de permitir a coleta. As fontes ativas ficam no PostgreSQL e o endpoint público `/api/sources/approved-custom` entrega apenas o catálogo mínimo necessário ao coletor, sem dados de usuários.
+
+Quando o monitor roda junto do backend e possui `DATABASE_URL`, deixe `CUSTOM_SOURCES_URL` vazio: ele lê o catálogo diretamente do banco. Para o GitHub Actions, que não precisa receber a credencial do Neon, aponte a variável para o endpoint público do deploy:
+
+```dotenv
+CUSTOM_SOURCES_URL=https://SEU_DOMINIO/api/sources/approved-custom
+```
+
+O workflow `tax-monitor.yml` pode definir esse endereço como variável normal, pois ele não é segredo. O endpoint garante a migration antes da consulta, então também funciona no primeiro acesso a um banco novo.
+
+### Checklist de produção
+
+Na Vercel, configure `DATABASE_URL`, `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL`, `AUTH_FRONTEND_URL`, `AUTH_TRUSTED_ORIGINS`, `AUTH_ADMIN_EMAIL`, `AUTH_ADMIN_NAME`, `RESEND_API_KEY`, `ALERTS_FROM_EMAIL`, `ACTIONS_CRON_SECRET`, `GITHUB_TOKEN` e as chaves já usadas pelo DataJud. No GitHub Actions, mantenha como secrets somente credenciais e chaves; `CUSTOM_SOURCES_URL` pode permanecer como variável pública. Depois do deploy, valide `/api/health`, solicite o link mágico do administrador e só então envie convites aos usuários.
+
+O feed interno e o blog público exibem somente alertas reais (`isDemo: false`), com endereço original e trilha de proveniência verificável.
 
 ## Verificação
 

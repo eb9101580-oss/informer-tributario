@@ -43,7 +43,7 @@ export function PublicBlog() {
     <div className="public-blog">
       <header className="public-blog__header">
         <a className="public-blog__brand" href="/"><span><Scale size={22} /></span><strong>informer</strong><small>radar tributário</small></a>
-        <div className="public-blog__actions"><a href="/admin">Área administrativa <ArrowRight size={15} /></a><button onClick={load} disabled={loading} aria-label="Atualizar feed"><RefreshCw className={loading ? 'spinning' : ''} size={17} /></button></div>
+        <div className="public-blog__actions"><a href="/app">Entrar <ArrowRight size={15} /></a><button onClick={load} disabled={loading} aria-label="Atualizar feed"><RefreshCw className={loading ? 'spinning' : ''} size={17} /></button></div>
       </header>
       <main className="public-blog__main">
         <section className="public-blog__intro"><div><span><ShieldCheck size={16} /> Fontes verificadas</span><h1>Radar tributário</h1><p>Decisões, normas e notícias jornalísticas sobre direito tributário brasileiro, das mais novas para as mais antigas.</p></div><small>Atualizado automaticamente<br />a cada 20 minutos</small></section>
@@ -51,7 +51,7 @@ export function PublicBlog() {
         {loading && !alerts.length ? <div className="public-blog__loading"><span className="loading-spinner" />Carregando o feed...</div> : <section className="public-blog__feed"><div className="public-blog__feed-heading"><h2>Hoje e ontem</h2><span>{feed.length} itens</span></div><div className="alerts-list">{feed.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelected} />)}</div>{!feed.length && <p className="public-blog__empty">Nenhuma publicação relevante de hoje ou ontem foi analisada ainda.</p>}</section>}
         <section className="public-blog__subscribe"><div><span><Mail size={16} /> Alertas por e-mail</span><h2>Receba primeiro o que merece atenção</h2><p>Cadastre seu e-mail e receba uma mensagem quando uma publicação atingir nota 8 ou superior.</p></div><form onSubmit={subscribe}><label htmlFor="public-subscription-email">Seu melhor e-mail</label><div><input id="public-subscription-email" type="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder="voce@empresa.com.br" /><button type="submit" disabled={submitting}>{submitting ? 'Salvando...' : 'Quero receber'}</button></div>{subscriptionMessage && <small>{subscriptionMessage}</small>}</form></section>
       </main>
-      <footer className="public-blog__footer"><span>Informer · inteligência tributária</span><a href="/admin">Acessar administração <ExternalLink size={14} /></a></footer>
+      <footer className="public-blog__footer"><span>Informer · inteligência tributária</span><a href="/app">Acessar área interna <ExternalLink size={14} /></a></footer>
       <DetailPanel alert={selected} onClose={() => setSelected(null)} />
     </div>
   );

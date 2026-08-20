@@ -1,8 +1,9 @@
-import { ArrowRight, Building2, Clock3, ThumbsDown, ThumbsUp } from 'lucide-react';
+import { ArrowRight, Bookmark, Building2, Clock3, ThumbsDown, ThumbsUp } from 'lucide-react';
+import { displayAlertTitle } from '../utils/alertPresentation.js';
 
 const scoreTone = (score) => score >= 9 ? 'critical' : score >= 8 ? 'high' : score >= 6 ? 'medium' : 'low';
 
-export function AlertCard({ alert, onOpen, onFeedback, feedback = 0 }) {
+export function AlertCard({ alert, onOpen, onFeedback, feedback = 0, saved = false, onSave }) {
   const tone = scoreTone(alert.score);
   const publishedDate = new Date(alert.publishedAt);
   const publishedLabel = Number.isNaN(publishedDate.getTime())
@@ -21,7 +22,7 @@ export function AlertCard({ alert, onOpen, onFeedback, feedback = 0 }) {
           <span className="status">{alert.status}</span>
           <span className="source-kind">{alert.provenance?.sourceType === 'journalistic' ? 'Jornalística' : 'Oficial'}</span>
         </div>
-        <h3>{alert.title}</h3>
+        <h3>{displayAlertTitle(alert.title)}</h3>
         <p>{alert.summary}</p>
         <div className="alert-card__footer">
           <span><Building2 size={15} />{alert.agency}</span>
@@ -31,6 +32,7 @@ export function AlertCard({ alert, onOpen, onFeedback, feedback = 0 }) {
             <button className={feedback === 1 ? 'selected' : ''} aria-label="Gostei" aria-pressed={feedback === 1} onClick={(event) => { event.stopPropagation(); onFeedback(1); }}><ThumbsUp size={16} /><span>Gostei</span></button>
             <button className={feedback === -1 ? 'selected dislike' : ''} aria-label="Não gostei" aria-pressed={feedback === -1} onClick={(event) => { event.stopPropagation(); onFeedback(-1); }}><ThumbsDown size={16} /><span>Não gostei</span></button>
           </div>}
+          {onSave && <button className={`card-save ${saved ? 'selected' : ''}`} aria-label={saved ? 'Remover dos salvos' : 'Salvar publicação'} aria-pressed={saved} onClick={(event) => { event.stopPropagation(); onSave(); }}><Bookmark size={17} fill={saved ? 'currentColor' : 'none'} /><span>{saved ? 'Salvo' : 'Salvar'}</span></button>}
           <button aria-label="Abrir detalhes"><ArrowRight size={19} /></button>
         </div>
       </div>

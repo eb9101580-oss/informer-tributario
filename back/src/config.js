@@ -4,6 +4,8 @@ export const config = {
   serverless: process.env.VERCEL === '1',
   port: Number(process.env.PORT) || 3333,
   frontendUrl: process.env.FRONTEND_URL || 'http://localhost:5173',
+  actionCronSecret: process.env.ACTIONS_CRON_SECRET || '',
+  customSourcesUrl: process.env.CUSTOM_SOURCES_URL || '',
   pythonCommand: process.env.PYTHON_COMMAND || 'python',
   ollamaUrl: process.env.OLLAMA_URL || 'http://localhost:11434',
   ollamaModel: process.env.OLLAMA_MODEL || 'qwen3:4b',

@@ -3,7 +3,7 @@ name: Atualizar ações acompanhadas no DataJud
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 11 * * *'
 
 permissions:
   contents: write
@@ -21,4 +21,6 @@ jobs:
         run: |
           curl --fail --show-error --retry 2 --retry-delay 3 --retry-all-errors \
             -X POST "https://informer-tributario.vercel.app/api/actions/refresh-all" \
-            -H "Accept: application/json"
+            -H "Accept: application/json" \
+            -H "Authorization: Bearer ${{ secrets.ACTIONS_CRON_SECRET }}" \
+            --output /dev/null

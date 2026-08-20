@@ -1,5 +1,6 @@
-import { ArrowUpRight, Check, ExternalLink, Lightbulb, ShieldAlert, ThumbsDown, ThumbsUp, X } from 'lucide-react';
-import { useState } from 'react';
+import { Bookmark, Check, ExternalLink, Lightbulb, ShieldAlert, ThumbsDown, ThumbsUp, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { displayAlertTitle, displayDocumentKind, sentenceTypeExplanation, sourceDocumentClassification } from '../utils/alertPresentation.js';
 
 const ratings = [
   { value: 'irrelevante', label: 'Irrelevante', icon: ThumbsDown },
@@ -7,10 +8,14 @@ const ratings = [
   { value: 'muito relevante', label: 'Muito relevante', icon: ThumbsUp },
 ];
 
-export function DetailPanel({ alert, onClose, onFeedback }) {
+export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave }) {
   const [selected, setSelected] = useState('');
   const [sent, setSent] = useState(false);
+  useEffect(() => { setSelected(''); setSent(false); }, [alert?.id]);
   if (!alert) return null;
+
+  const sourceClassification = sourceDocumentClassification(alert);
+  const classificationExplanation = sentenceTypeExplanation(sourceClassification);
 
   const publishedDate = new Date(alert.publishedAt);
   const publishedLabel = Number.isNaN(publishedDate.getTime())
@@ -29,7 +34,7 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
         <button className="drawer__close icon-button" onClick={onClose} aria-label="Fechar"><X /></button>
         <div className="drawer__score"><strong>{String(alert.score).replace('.', ',')}</strong><span>/10 · {alert.relevance}</span></div>
         <div className="drawer__tags"><span>{alert.status}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
-        <h2>{alert.title}</h2>
+        <h2>{displayAlertTitle(alert.title)}</h2>
 
         <section><h3>O que aconteceu</h3><p>{alert.summary}</p></section>
         <section><h3>O que mudou</h3><p>{alert.whatChanged}</p></section>
@@ -51,7 +56,9 @@ export function DetailPanel({ alert, onClose, onFeedback }) {
 
         {alert.officialUrl ? <a className="source-link" href={alert.officialUrl} target="_blank" rel="noreferrer">{alert.provenance?.sourceType === 'journalistic' ? 'Acessar fonte jornalística' : 'Acessar fonte oficial'} <ExternalLink size={17} /></a> : <span className="source-link source-link--disabled">{alert.provenance?.sourceType === 'journalistic' ? 'Fonte jornalística pendente de confirmação' : 'Fonte oficial pendente de confirmação'}</span>}
 
-        {alert.provenance && <div className="provenance-box"><strong>Trilha de verificação</strong><span>Tipo: {alert.provenance.sourceType === 'journalistic' ? 'Fonte jornalística especializada' : 'Fonte oficial'}</span><span>Fonte: {alert.provenance.sourceName || alert.agency}</span><span>Documento: {alert.provenance.documentKind || 'Publicação monitorada'}</span><span>Coleta: {alert.provenance.collector} · análise local: {alert.provenance.analyzer}</span></div>}
+        {onSave && <button className={`drawer-save ${saved ? 'drawer-save--active' : ''}`} onClick={() => onSave(alert)}><Bookmark size={18} fill={saved ? 'currentColor' : 'none'} />{saved ? 'Publicação salva para ler depois' : 'Salvar publicação para ler depois'}</button>}
+
+        {alert.provenance && <div className="provenance-box"><strong>Trilha de verificação</strong><span>Tipo: {alert.provenance.sourceType === 'journalistic' ? 'Fonte jornalística especializada' : 'Fonte oficial'}</span><span>Fonte: {alert.provenance.sourceName || alert.agency}</span><span>Documento: {displayDocumentKind(alert.provenance.documentKind || 'Publicação monitorada')}</span>{sourceClassification && <span>Classificação original do tribunal: {sourceClassification}{classificationExplanation ? ` — ${classificationExplanation}` : ''}. Não representa nota ou prioridade.</span>}<span>Coleta: {alert.provenance.collector} · análise local: {alert.provenance.analyzer}</span></div>}
 
         {onFeedback && <div className="feedback-box">
           <strong>{sent ? 'Obrigado pelo feedback.' : 'Este alerta foi útil?'}</strong>

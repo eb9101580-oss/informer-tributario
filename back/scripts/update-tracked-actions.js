@@ -10,6 +10,6 @@ if (!status.persistenceConfigured) {
   process.exit(0);
 }
 
-const items = await refreshAllTrackedActions();
+const items = await refreshAllTrackedActions({ isSystem: true });
 console.log(`Acompanhamentos consultados: ${items.length}.`);
 items.forEach((item) => console.log(`${item.label}: ${item.status || item.lastError || 'sem status'}`));

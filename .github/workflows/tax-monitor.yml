@@ -34,9 +34,11 @@ jobs:
       MONITOR_MAX_ANALYSES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
       OLLAMA_MAX_INPUT_CHARS: '10000'
       OLLAMA_TIMEOUT_MS: '600000'
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       ALERTS_FROM_EMAIL: ${{ secrets.ALERTS_FROM_EMAIL }}
       SUBSCRIPTIONS_ENCRYPTION_KEY: ${{ secrets.SUBSCRIPTIONS_ENCRYPTION_KEY }}
+      CUSTOM_SOURCES_URL: 'https://informer-tributario.vercel.app/api/sources/approved-custom'
     steps:
       - name: Baixar o projeto
         uses: actions/checkout@v5

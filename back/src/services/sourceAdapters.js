@@ -2,17 +2,19 @@ import { discoverDjenCaderno, discoverOfficialLinks, discoverStfJurisprudence } 
 import { sectionIdsForSource } from '../data/sections.js';
 import { publicationDateKey } from './feedWindow.js';
 import { packCandidateText } from './candidateText.js';
+import { discoverPublicSourceLinks } from './sourceSafety.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
   'icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm',
   'execucao fiscal', 'divida ativa', 'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal',
   'imposto de importacao', 'imposto de exportacao', 'tributacao na importacao', 'tributacao na exportacao', 'regime aduaneiro', 'despacho aduaneiro', 'aduaneir',
-  'imunidade tributaria', 'isencao tributaria', 'isencao fiscal', 'repeticao de indebito', 'taxa tributaria', 'taxa de fiscalizacao', 'taxa selic', 'emprestimo compulsorio',
+  'imunidade tributaria', 'isencao tributaria', 'isencao fiscal', 'repeticao de indebito tributario', 'indebito tributario', 'taxa tributaria', 'taxa de fiscalizacao', 'taxa selic', 'emprestimo compulsorio',
   'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
   'fato gerador', 'auto de infracao', 'processo administrativo fiscal', 'lancamento fiscal', 'contencioso fiscal',
 ];
 const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm']);
+const TRIBUTARY_WORD_PATTERN = /\btribut(?:os?|ar|ad[oa]s?|acao|acoes|ari[oa]s?|avel|aveis)\b/i;
 
 export function normalizeSearchText(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -20,7 +22,7 @@ export function normalizeSearchText(value = '') {
 
 export function isTaxRelated(...values) {
   const text = normalizeSearchText(values.flat().filter(Boolean).join(' '));
-  return TAX_TERMS.some((term) => SHORT_TAX_TERMS.has(term)
+  return TRIBUTARY_WORD_PATTERN.test(text) || TAX_TERMS.filter((term) => term !== 'tribut').some((term) => SHORT_TAX_TERMS.has(term)
     ? new RegExp(`(^|[^a-z0-9])${term}([^a-z0-9]|$)`, 'i').test(text)
     : text.includes(term));
 }
@@ -32,12 +34,13 @@ export function hasStrongTaxSignal(...values) {
     : text.includes(term)) || /direito tributario|sistema tributario|materia tributaria/.test(text);
 }
 
-export function isCandidateEligible(sourceId, title, url) {
+export function isCandidateEligible(sourceId, title, url, content = '') {
   if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
   if (/^trf[1-6]$/.test(sourceId)) {
     const navigationPath = /\/(?:acessibilidade|contato|institucional|magistrado|servicos?|sistemas?)(?:\/|$)/i;
     if (navigationPath.test(new URL(url).pathname)) return false;
-    return isTaxRelated(title, url);
+    const titleWithoutClassifier = String(title || '').replace(/[—-]\s*direito tribut[aá]rio\s*:\s*/i, ' ');
+    return isTaxRelated(content || titleWithoutClassifier, url);
   }
   if (sourceId === 'confaz-ajustes') return /\/ajustes\/\d{4}\/[^/]+/i.test(url) && /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(title);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
@@ -384,8 +387,13 @@ export function isDjenDecision(item = {}) {
 
 function djenTaxContext(value = '') {
   const text = String(value).replace(/\s+/g, ' ').trim();
-  const match = text.match(/.{0,90}(?:tribut[aá]ri|execu[cç][aã]o fiscal|cr[eé]dito fiscal|imposto|icms|iss|ipi|pis|cofins|irpj|csll|cbs|ibs).{0,180}/i);
+  const match = text.match(/.{0,90}(?:tribut[aá]ri|execu[cç][aã]o fiscal|cr[eé]dito fiscal|imposto|\bicms\b|\biss\b|\bipi\b|\bpis\b|cofins|irpj|csll|\bcbs\b|\bibs\b).{0,180}/i);
   return (match?.[0] || text.slice(0, 270)).trim();
+}
+
+function djenDisplayKind(value = '') {
+  const kind = String(value || '').replace(/\s+/g, ' ').trim();
+  return /^senten[cç]a\s+tipo\s+[a-z0-9]+(?:\b|$)/i.test(kind) ? 'Sentença' : (kind || 'Decisão');
 }
 
 export function mapDjenDecisions(payload, source, targetDate) {
@@ -398,14 +406,16 @@ export function mapDjenDecisions(payload, source, targetDate) {
     if (!externalId || seen.has(externalId)) return [];
     seen.add(externalId);
     const process = item.numeroprocessocommascara || item.numero_processo || 'Processo sem número';
-    const kind = item.tipoDocumento || item.tipoComunicacao || 'Decisão';
+    const kind = String(item.tipoDocumento || item.tipoComunicacao || 'Decisão').replace(/\s+/g, ' ').trim();
+    const displayKind = djenDisplayKind(kind);
     const certificateUrl = item.hash ? `${DJEN_API}/${encodeURIComponent(item.hash)}/certidao` : item.link;
     if (!certificateUrl?.startsWith('https://')) return [];
     return [{
-      title: `${kind} · ${process} · ${item.nomeOrgao || source.acronym} — Direito tributário: ${djenTaxContext(officialText)}`.slice(0, 500),
+      title: `${displayKind} · ${process} · ${item.nomeOrgao || source.acronym} — Direito tributário: ${djenTaxContext(officialText)}`.slice(0, 500),
       url: certificateUrl,
       publishedAt,
-      documentKind: `Decisão judicial publicada no DJEN (${kind})`,
+      documentKind: `${displayKind} judicial publicada no DJEN`,
+      sourceDocumentType: kind,
       externalId,
       fingerprintKey: `djen:${externalId}`,
       ...packCandidateText(officialText),
@@ -490,6 +500,14 @@ async function discoverLinks(source) {
   });
 }
 
+async function discoverCustomLinks(source) {
+  const result = await discoverPublicSourceLinks(source.discoveryUrl || source.url);
+  return result.links
+    .filter((item) => isCandidateEligible(source.id, item.title, item.url))
+    .slice(0, 60)
+    .map((item) => ({ ...item, documentKind: 'Publicação de fonte personalizada aprovada' }));
+}
+
 async function discoverConfaz(source, targetDate = null) {
   const year = new Date().getFullYear();
   const yearUrl = `${source.url.replace(/\/$/, '')}/${year}/${year}`;
@@ -535,6 +553,7 @@ export async function discoverSourceCandidates(source, lookbackDays = 7, { targe
   else if (source.adapter === 'stf-jurisprudence') items = await discoverStf(source, lookbackDays, targetDate);
   else if (source.adapter === 'trf-djen') items = await discoverTrf(source, targetDate);
   else if (source.adapter === 'rss') items = await discoverRss(source);
+  else if (source.adapter === 'custom-links') items = await discoverCustomLinks(source);
   else items = await discoverLinks(source);
   const datedItems = targetDate ? items.filter((item) => publicationDateKey(item.publishedAt) === targetDate) : items;
   const normalizedItems = datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));

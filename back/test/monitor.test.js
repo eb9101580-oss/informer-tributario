@@ -13,6 +13,8 @@ test('filtro tributário ignora acentos e identifica tributos', () => {
   assert.equal(hasStrongTaxSignal('Crédito tributário de ICMS'), true);
   assert.equal(isTaxRelated('Retenção de IRRF e contribuição ao PASEP'), true);
   assert.equal(isTaxRelated('Imunidade tributária e repetição de indébito de IPTU'), true);
+  assert.equal(isTaxRelated('Empréstimo consignado com taxa de juros e repetição de indébito bancário'), false);
+  assert.equal(isTaxRelated('Atributo processual da sentença civil'), false);
   assert.equal(isTaxRelated('Regime aduaneiro e AFRMM na importação'), true);
   assert.equal(isTaxRelated('Nota técnica sobre manutenção de computadores'), false);
   assert.equal(isTaxRelated('Parecer da comissão de cultura'), false);
@@ -49,6 +51,8 @@ test('TRFs aceitam notícia tributária e rejeitam navegação institucional', (
   assert.equal(isCandidateEligible('trf1', 'Informativos Avisos Infojef', 'https://www.trf1.jus.br/trf1/informativos'), false);
   assert.equal(isCandidateEligible('trf1', 'Sistemas Imposto de Renda', 'https://www.trf1.jus.br/trf1/magistrado/sistemas'), false);
   assert.equal(isCandidateEligible('trf4', 'Turma decide incidência de Cofins sobre receita', 'https://www.trf4.jus.br/noticia/123'), true);
+  assert.equal(isCandidateEligible('trf1', 'Sentença — Direito tributário: empréstimo consignado', 'https://comunicaapi.pje.jus.br/certidao', 'Taxa de juros e repetição de indébito bancário.'), false);
+  assert.equal(isCandidateEligible('trf1', 'Sentença — Direito tributário: empresa pública', 'https://comunicaapi.pje.jus.br/certidao', 'Imposto sobre serviços, ISS e imunidade tributária recíproca.'), true);
 });
 
 test('Receita aceita atos normativos tributários e elimina autorizações individuais', () => {
@@ -180,10 +184,11 @@ test('CARF consulta a publicação por data e mapeia somente PDF e datas válido
 test('DJEN conserva somente decisões tributárias da data e gera certidão oficial estável', () => {
   const source = { id: 'trf3', acronym: 'TRF3' };
   const payload = { items: [
-    { id: 10, hash: 'hash-publico', data_disponibilizacao: '2026-08-19', tipoDocumento: 'Decisão', tipoComunicacao: 'Intimação', nomeOrgao: '3ª Turma', numeroprocessocommascara: '5000000-00.2026.4.03.0000', texto: 'Decisão sobre crédito tributário de ICMS.' },
+    { id: 10, hash: 'hash-publico', data_disponibilizacao: '2026-08-19', tipoDocumento: 'Sentença Tipo B', tipoComunicacao: 'Intimação', nomeOrgao: '3ª Turma', numeroprocessocommascara: '5000000-00.2026.4.03.0000', texto: 'A omissão foi debatida. Decisão sobre crédito tributário de ICMS.' },
     { id: 11, hash: 'ato', data_disponibilizacao: '2026-08-19', tipoDocumento: 'Ato ordinatório', tipoComunicacao: 'Intimação', texto: 'Parcelamento do débito tributário.' },
     { id: 12, hash: 'civil', data_disponibilizacao: '2026-08-19', tipoDocumento: 'Sentença', tipoComunicacao: 'Intimação', texto: 'Sentença de responsabilidade civil.' },
     { id: 13, hash: 'ontem', data_disponibilizacao: '2026-08-18', tipoDocumento: 'Acórdão', tipoComunicacao: 'Intimação', texto: 'Acórdão sobre imposto de renda.' },
+    { id: 14, hash: 'consumidor', data_disponibilizacao: '2026-08-19', tipoDocumento: 'Sentença', tipoComunicacao: 'Intimação', texto: 'Empréstimo consignado com taxa de juros e repetição de indébito bancário.' },
   ] };
   const items = mapDjenDecisions(payload, source, '2026-08-19');
   assert.equal(items.length, 1);
@@ -191,6 +196,11 @@ test('DJEN conserva somente decisões tributárias da data e gera certidão ofic
   assert.equal(items[0].publishedAt, '2026-08-19');
   assert.match(items[0].url, /hash-publico\/certidao$/);
   assert.match(items[0].title, /Direito tributário/);
+  assert.match(items[0].title, /crédito tributário/);
+  assert.match(items[0].title, /^Sentença ·/);
+  assert.doesNotMatch(items[0].title, /Tipo B/i);
+  assert.equal(items[0].sourceDocumentType, 'Sentença Tipo B');
+  assert.equal(items[0].documentKind, 'Sentença judicial publicada no DJEN');
   assert.match(items[0].inlineText, /crédito tributário/);
   assert.equal(items[0].inlineParser, 'API oficial do DJEN/CNJ');
   assert.equal(isDjenDecision(payload.items[0]), true);

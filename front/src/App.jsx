@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   BellRing, Bookmark, Building2, CalendarDays, ChevronDown, CircleAlert, CircleDollarSign,
-  FileSearch, Menu, RefreshCw, Search, ShieldCheck, SlidersHorizontal, Sparkles, X,
+  FileSearch, Menu, RefreshCw, Search, ShieldCheck, Sparkles, X,
 } from 'lucide-react';
 import { api } from './api.js';
 import { Sidebar } from './components/Sidebar.jsx';
@@ -9,21 +9,20 @@ import { MetricCard } from './components/MetricCard.jsx';
 import { AlertCard } from './components/AlertCard.jsx';
 import { DetailPanel } from './components/DetailPanel.jsx';
 import { OpportunityCard } from './components/OpportunityCard.jsx';
-import { CollectorPage } from './components/CollectorPage.jsx';
 import { SourcesPage } from './components/SourcesPage.jsx';
 import { MonitorPage } from './components/MonitorPage.jsx';
 import { PublicBlog } from './components/PublicBlog.jsx';
 import { ActionsPage } from './components/ActionsPage.jsx';
 import { SectionPage } from './components/SectionPage.jsx';
 import { SettingsPage } from './components/SettingsPage.jsx';
+import { LoginPage } from './components/LoginPage.jsx';
+import { FeedbackPage } from './components/FeedbackPage.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
   overview: ['Visão geral', 'O que realmente importa no cenário tributário hoje.'],
-  radar: ['Radar tributário diário', 'As movimentações mais recentes aparecem primeiro.'],
   alerts: ['Central de alertas', 'Acontecimentos que pedem atenção do escritório.'],
   opportunities: ['Radar de oportunidades', 'Possibilidades de atuação que merecem análise jurídica.'],
-  collector: ['Coletor inteligente', 'Transforme documentos oficiais em análises estruturadas.'],
   sources: ['Fontes monitoradas', 'Canais oficiais e jornalísticos que alimentam o radar tributário.'],
   feedback: ['Aprendizado de relevância', 'Seu feedback ajuda o radar a priorizar melhor.'],
   actions: ['Ações acompanhadas', 'Status e movimentações recentes dos temas e processos que você escolheu observar.'],
@@ -42,6 +41,10 @@ function ErrorState({ message, onRetry }) {
 
 export default function App() {
   if (window.location.pathname === '/' || window.location.pathname === '/blog') return <PublicBlog />;
+  return <InternalApp />;
+}
+
+function InternalApp() {
   const [activePage, setActivePage] = useState('overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [dashboard, setDashboard] = useState(null);
@@ -52,9 +55,24 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [updatedAt, setUpdatedAt] = useState(new Date());
-  const [feedback, setFeedback] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('informer-feedback-v1') || '[]'); } catch { return []; }
-  });
+  const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+  const [feedback, setFeedback] = useState([]);
+  const [savedAlertIds, setSavedAlertIds] = useState([]);
+  const [savedPublications, setSavedPublications] = useState([]);
+  const [preferences, setPreferences] = useState({ emailAlerts: true, actionAlerts: true, minimumScore: 8 });
+
+  const isAdmin = String(user?.role || '').split(',').includes('admin');
+
+  useEffect(() => {
+    api.me().then((data) => {
+      setUser(data.user);
+      setFeedback(data.reactions || []);
+      setSavedAlertIds(data.savedAlertIds || []);
+      setSavedPublications(data.savedPublications || []);
+      setPreferences(data.preferences || { emailAlerts: true, actionAlerts: true, minimumScore: 8 });
+    }).catch(() => setUser(null)).finally(() => setAuthLoading(false));
+  }, []);
 
   const loadData = async () => {
     setLoading(true);
@@ -71,18 +89,28 @@ export default function App() {
     }
   };
 
-  useEffect(() => { loadData(); }, []);
+  useEffect(() => { if (user) loadData(); }, [user?.id]);
+
+  useEffect(() => {
+    const adminOnly = ['monitor', 'sources', 'settings'];
+    if (user && !isAdmin && adminOnly.includes(activePage)) setActivePage('overview');
+  }, [activePage, isAdmin, user]);
 
   const filteredAlerts = useMemo(() => {
     const term = search.toLocaleLowerCase('pt-BR').trim();
-    return alerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl).filter((alert) => {
-      const searchable = [alert.title, alert.summary, alert.theme, alert.agency, ...alert.taxes].join(' ').toLocaleLowerCase('pt-BR');
-      const relevanceMatch = relevance === 'all' || (relevance === 'urgent' ? alert.score >= 8 : alert.score >= 6 && alert.score < 8);
+    const availableAlerts = relevance === 'saved'
+      ? [...alerts, ...savedPublications
+        .filter((saved) => !alerts.some((alert) => alert.id === saved.publicationId))
+        .map((saved) => ({ ...saved.snapshot, id: saved.snapshot?.id || saved.publicationId }))]
+      : alerts;
+    return availableAlerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl).filter((alert) => {
+      const searchable = [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])].join(' ').toLocaleLowerCase('pt-BR');
+      const relevanceMatch = relevance === 'all'
+        || (relevance === 'urgent' ? alert.score >= 8 : relevance === 'saved' ? savedAlertIds.includes(alert.id) : alert.score >= 6 && alert.score < 8);
       return (!term || searchable.includes(term)) && relevanceMatch;
     });
-  }, [alerts, search, relevance]);
+  }, [alerts, search, relevance, savedAlertIds, savedPublications]);
 
-  const opportunities = alerts.filter((alert) => alert.opportunity);
   const rankedAlerts = useMemo(() => {
     const profileScore = (alert) => feedback.reduce((total, vote) => {
       if (vote.alertId === alert.id) return total + vote.value * 2;
@@ -91,12 +119,18 @@ export default function App() {
       const sharedTaxes = (alert.taxes || []).filter((tax) => (vote.taxes || []).includes(tax)).length * 0.25;
       return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
     }, 0);
+    const personalizedScore = (alert) => {
+      const published = Date.parse(alert.publishedAt || alert.createdAt || '') || Date.now();
+      const ageDays = Math.max(0, (Date.now() - published) / 86400000);
+      return Number(alert.score || 0) + profileScore(alert) - Math.min(2, ageDays * 0.35);
+    };
     return [...filteredAlerts].sort((left, right) => {
-      const dateDifference = (Date.parse(right.publishedAt || right.createdAt || '') || 0)
-        - (Date.parse(left.publishedAt || left.createdAt || '') || 0);
-      return dateDifference || (right.score + profileScore(right)) - (left.score + profileScore(left));
+      const preferenceDifference = personalizedScore(right) - personalizedScore(left);
+      if (Math.abs(preferenceDifference) > 0.15) return preferenceDifference;
+      return (Date.parse(right.publishedAt || right.createdAt || '') || 0) - (Date.parse(left.publishedAt || left.createdAt || '') || 0);
     });
   }, [filteredAlerts, feedback]);
+  const opportunities = rankedAlerts.filter((alert) => alert.opportunity);
   const [title, subtitle] = pageTitles[activePage];
 
   const sendFeedback = async (alertId, rating) => {
@@ -104,13 +138,39 @@ export default function App() {
     if (!alert) return;
     const value = ['muito relevante', 'relevante'].includes(rating) ? 1 : -1;
     const vote = { alertId, value, agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] };
+    const previous = feedback;
     const next = [...feedback.filter((item) => item.alertId !== alertId), vote];
     setFeedback(next);
-    localStorage.setItem('informer-feedback-v1', JSON.stringify(next));
-    try { await api.sendFeedback({ alertId, rating }); } catch { /* Na Vercel, o aprendizado permanece salvo neste navegador. */ }
+    try { await api.setReaction(alertId, value, { agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] }); }
+    catch (requestError) { setFeedback(previous); setError(requestError.message); }
   };
 
   const voteFor = (alertId) => feedback.find((item) => item.alertId === alertId)?.value || 0;
+  const savedFor = (alertId) => savedAlertIds.includes(alertId);
+  const toggleSaved = async (alertOrId) => {
+    const alertId = typeof alertOrId === 'string' ? alertOrId : alertOrId?.id;
+    const alert = typeof alertOrId === 'string'
+      ? alerts.find((item) => item.id === alertId) || savedPublications.find((item) => item.publicationId === alertId)?.snapshot
+      : alertOrId;
+    if (!alertId || !alert) return;
+    const wasSaved = savedFor(alertId);
+    setSavedAlertIds((items) => wasSaved ? items.filter((id) => id !== alertId) : [...items, alertId]);
+    setSavedPublications((items) => wasSaved
+      ? items.filter((item) => item.publicationId !== alertId)
+      : [{ publicationId: alertId, snapshot: alert, savedAt: new Date().toISOString() }, ...items.filter((item) => item.publicationId !== alertId)]);
+    try { if (wasSaved) await api.removeSavedAlert(alertId); else await api.saveAlert(alert); }
+    catch (requestError) {
+      setSavedAlertIds((items) => wasSaved ? [...items, alertId] : items.filter((id) => id !== alertId));
+      setSavedPublications((items) => wasSaved
+        ? [{ publicationId: alertId, snapshot: alert, savedAt: new Date().toISOString() }, ...items]
+        : items.filter((item) => item.publicationId !== alertId));
+      setError(requestError.message);
+    }
+  };
+
+  const logout = async () => {
+    try { await api.logout(); } finally { window.location.assign('/login'); }
+  };
 
   const mainContent = () => {
     if (loading) return <LoadingState />;
@@ -126,33 +186,26 @@ export default function App() {
       </section>
     );
 
-    if (activePage === 'collector') return <CollectorPage onCollected={loadData} onOpen={setSelectedAlert} />;
-
-    if (activePage === 'sources') return <SourcesPage onCollector={() => setActivePage('collector')} />;
+    if (activePage === 'sources' && isAdmin) return <SourcesPage />;
 
     if (activePage === 'monitor') return <MonitorPage onAlerts={() => { setActivePage('alerts'); loadData(); }} />;
 
     if (activePage === 'actions') return <ActionsPage />;
 
-    if (activePage === 'settings') return <SettingsPage />;
+    if (activePage === 'settings' && isAdmin) return <SettingsPage />;
 
-    if (activePage === 'reforma' || activePage === 'obrigacoes') return <SectionPage sectionId={activePage} onOpen={setSelectedAlert} onFeedback={sendFeedback} feedbackFor={voteFor} />;
+    if (activePage === 'reforma' || activePage === 'obrigacoes') return <SectionPage sectionId={activePage} onOpen={setSelectedAlert} onFeedback={sendFeedback} feedbackFor={voteFor} savedFor={savedFor} onSave={toggleSaved} />;
 
-    if (activePage === 'feedback') return (
-      <section className="page-section feedback-page">
-        <div className="feedback-intro"><span><SlidersHorizontal /></span><div><h2>O radar aprende com o escritório</h2><p>Abra um alerta e informe se ele foi irrelevante, relevante ou muito relevante. As avaliações ficam registradas para orientar os critérios futuros.</p></div></div>
-        <div className="feedback-steps"><div><b>01</b><strong>Leia o alerta</strong><p>Confira a fonte, o impacto e a possível atuação.</p></div><div><b>02</b><strong>Avalie</strong><p>Use os botões de feedback no fim do detalhamento.</p></div><div><b>03</b><strong>Refine</strong><p>Padrões recorrentes ajudam a melhorar a priorização.</p></div></div>
-      </section>
-    );
+    if (activePage === 'feedback') return <FeedbackPage user={user} preferences={preferences} onPreferencesChange={setPreferences} />;
 
-    if (activePage === 'radar' || activePage === 'alerts') return (
+    if (activePage === 'alerts') return (
       <section className="page-section">
         <div className="filters filters--wide">
           <label><Search size={18} /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar tema, tributo ou órgão..." />{search && <button onClick={() => setSearch('')}><X size={15} /></button>}</label>
-          <div className="segmented"><button className={relevance === 'all' ? 'active' : ''} onClick={() => setRelevance('all')}>Todos</button><button className={relevance === 'urgent' ? 'active' : ''} onClick={() => setRelevance('urgent')}>Alta prioridade</button><button className={relevance === 'relevant' ? 'active' : ''} onClick={() => setRelevance('relevant')}>Relevantes</button></div>
+          <div className="segmented"><button className={relevance === 'all' ? 'active' : ''} onClick={() => setRelevance('all')}>Todos</button><button className={relevance === 'urgent' ? 'active' : ''} onClick={() => setRelevance('urgent')}>Alta prioridade</button><button className={relevance === 'relevant' ? 'active' : ''} onClick={() => setRelevance('relevant')}>Relevantes</button><button className={relevance === 'saved' ? 'active' : ''} onClick={() => setRelevance('saved')}><Bookmark size={15} /> Salvos</button></div>
         </div>
         <div className="section-heading"><div><span className="live-dot" /> Monitoramento ativo</div><small>{filteredAlerts.length} resultados</small></div>
-        <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
+        <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} saved={savedFor(alert.id)} onSave={() => toggleSaved(alert)} />)}</div>
         {!filteredAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhum alerta encontrado</h3><p>Tente remover um filtro ou buscar outro termo.</p></div>}
       </section>
     );
@@ -160,24 +213,27 @@ export default function App() {
     return (
       <>
         <section className="metrics-grid">
-          <MetricCard icon={FileSearch} value={dashboard.metrics.relevant} label="Itens relevantes" detail="Nota 6 ou superior" tone="blue" onClick={() => { setActivePage('radar'); setRelevance('all'); }} />
+          <MetricCard icon={FileSearch} value={dashboard.metrics.relevant} label="Itens relevantes" detail="Nota 6 ou superior" tone="blue" onClick={() => { setActivePage('alerts'); setRelevance('all'); }} />
           <MetricCard icon={BellRing} value={dashboard.metrics.urgent} label="Alertas urgentes" detail="Nota 8 ou superior" tone="red" onClick={() => { setActivePage('alerts'); setRelevance('urgent'); }} />
           <MetricCard icon={CircleDollarSign} value={dashboard.metrics.opportunities} label="Oportunidades" detail="Para análise jurídica" tone="gold" onClick={() => setActivePage('opportunities')} />
-          <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais e jornalísticas" tone="teal" onClick={() => setActivePage('sources')} />
+          <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais e jornalísticas" tone="teal" onClick={isAdmin ? () => setActivePage('sources') : undefined} />
         </section>
 
         <section className="panel overview-feed">
           <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Publicações mais novas primeiro; seus votos ajudam a aperfeiçoar a relevância</p></div><span className="live-dot" /></div>
-          <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} />)}</div>
+          <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} saved={savedFor(alert.id)} onSave={() => toggleSaved(alert)} />)}</div>
           {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação de hoje ou ontem</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
         </section>
       </>
     );
   };
 
+  if (authLoading) return <div className="auth-loading"><LoadingState /></div>;
+  if (!user) return <LoginPage />;
+
   return (
     <div className="app-shell">
-      <Sidebar active={activePage} onChange={setActivePage} open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <Sidebar active={activePage} onChange={setActivePage} open={sidebarOpen} onClose={() => setSidebarOpen(false)} user={user} onLogout={logout} />
       {sidebarOpen && <div className="mobile-backdrop" onClick={() => setSidebarOpen(false)} />}
       <main className="main">
         <header className="topbar">
@@ -194,7 +250,7 @@ export default function App() {
           {mainContent()}
         </div>
       </main>
-      <DetailPanel alert={selectedAlert} onClose={() => setSelectedAlert(null)} onFeedback={sendFeedback} />
+      <DetailPanel alert={selectedAlert} onClose={() => setSelectedAlert(null)} onFeedback={sendFeedback} saved={selectedAlert ? savedFor(selectedAlert.id) : false} onSave={toggleSaved} />
     </div>
   );
 }

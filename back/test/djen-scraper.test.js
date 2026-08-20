@@ -58,9 +58,11 @@ import djen_caderno as djen
 terms = [
     "IRRF", "IRPF", "IPTU", "IPVA", "ITBI", "PASEP", "CIDE", "FUNRURAL", "AFRMM",
     "direito aduaneiro", "tributação da importação", "incentivo à exportação",
-    "imunidade", "isenção", "repetição de indébito", "taxa", "empréstimo compulsório",
+    "imunidade", "isenção", "repetição de indébito tributário", "taxa de fiscalização", "empréstimo compulsório",
 ]
+non_tax_terms = ["repetição de indébito bancário", "taxa de juros", "taxa de inscrição", "atributo da sentença"]
 matches = {term: bool(djen.TAX_PATTERN.search(djen.normalized(term))) for term in terms}
+non_tax_matches = {term: bool(djen.TAX_PATTERN.search(djen.normalized(term))) for term in non_tax_terms}
 decision = djen.selected_item({
     "id": 1,
     "data_disponibilizacao": "2026-08-19",
@@ -75,7 +77,14 @@ non_decision = djen.selected_item({
     "tipoComunicacao": "Intimação",
     "texto": "Discussão sobre IRRF.",
 }, "TRF1", "2026-08-19")
-print(json.dumps({"matches": matches, "decision": decision is not None, "nonDecision": non_decision is not None}))
+consumer_decision = djen.selected_item({
+    "id": 3,
+    "data_disponibilizacao": "2026-08-19",
+    "tipoDocumento": "Sentença",
+    "tipoComunicacao": "Intimação",
+    "texto": "Empréstimo consignado com taxa de juros abusiva e repetição de indébito bancário.",
+}, "TRF1", "2026-08-19")
+print(json.dumps({"matches": matches, "nonTaxMatches": non_tax_matches, "decision": decision is not None, "nonDecision": non_decision is not None, "consumerDecision": consumer_decision is not None}))
 `;
   const execution = spawnSync(process.env.PYTHON_COMMAND || 'python', ['-c', code], {
     cwd: new URL('../..', import.meta.url),
@@ -84,8 +93,10 @@ print(json.dumps({"matches": matches, "decision": decision is not None, "nonDeci
   assert.equal(execution.status, 0, execution.stderr);
   const result = JSON.parse(execution.stdout);
   assert.deepEqual(Object.values(result.matches), Array(Object.keys(result.matches).length).fill(true));
+  assert.deepEqual(Object.values(result.nonTaxMatches), Array(Object.keys(result.nonTaxMatches).length).fill(false));
   assert.equal(result.decision, true);
   assert.equal(result.nonDecision, false);
+  assert.equal(result.consumerDecision, false);
 });
 
 test('streaming do ZIP limita, deduplica e diversifica decisões preservando telemetria', () => {

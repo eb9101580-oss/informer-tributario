@@ -14,8 +14,9 @@ function actionMovementAlert(tracker, result, movement) {
   const now = new Date().toISOString();
   const tribunal = movement.court || result.court?.toUpperCase() || tracker.court?.toUpperCase();
   const sourceUrl = publicSourceUrl(result.court || tracker.court, tracker.query, result.sourceUrl);
+  const stableMovementKey = movementKey(movement);
   return {
-    id: `action-${tracker.id}-${movement.id}`,
+    id: `action-${tracker.id}-${createHash('sha256').update(stableMovementKey).digest('hex').slice(0, 32)}`,
     title: `${tracker.label}: ${movement.name}`,
     theme: tracker.label,
     agency: tribunal,
@@ -37,6 +38,8 @@ function actionMovementAlert(tracker, result, movement) {
     updatedAt: now,
     isDemo: false,
     movementId: movement.id,
+    movementKey: stableMovementKey,
+    ownerId: tracker.ownerId || null,
     provenance: {
       collector: 'DataJud / portal oficial',
       analyzer: 'Regra de movimentação processual',
@@ -65,6 +68,29 @@ function sanitizeTracker(tracker = {}) {
     };
   });
   return { ...tracker, sourceUrl, publicUrl: sourceUrl, movementAlerts };
+}
+
+export function movementKey(movement = {}) {
+  const processKey = movement.processId || movement.processNumber || 'processo';
+  const movementIdentifier = movement.id || createHash('sha256')
+    .update(`${movement.date || ''}|${movement.name || ''}|${movement.complement || ''}`)
+    .digest('hex')
+    .slice(0, 20);
+  return `${processKey}:${movementIdentifier}`;
+}
+
+export function newMovementAlerts(tracker, result) {
+  const previousAlerts = tracker.movementAlerts || [];
+  const previousMovements = tracker.movements || [];
+  const known = new Set([
+    ...previousAlerts.map((alert) => alert.movementKey || `${alert.processId || alert.processNumber || 'processo'}:${alert.movementId}`),
+    ...previousMovements.map(movementKey),
+  ]);
+  const movements = Array.isArray(result.movements) ? result.movements : [];
+  const isFirstSnapshot = !tracker.lastCheckedAt && previousMovements.length === 0;
+  const unseen = movements.filter((movement) => !known.has(movementKey(movement)));
+  const selected = isFirstSnapshot ? unseen.slice(0, 1) : unseen;
+  return selected.map((movement) => actionMovementAlert(tracker, result, movement));
 }
 
 export function hasTrackedActionStateChanged(previous = {}, next = {}) {
@@ -183,6 +209,25 @@ export async function readTrackedActions() {
   return { ...data, trackers: data.trackers.map(sanitizeTracker) };
 }
 
+export function trackersVisibleToActor(trackers = [], actor = null) {
+  if (actor?.isSystem || actor?.isAdmin) return trackers;
+  if (!actor?.userId) return [];
+  return trackers.filter((tracker) => tracker.ownerId && tracker.ownerId === actor.userId);
+}
+
+export async function readTrackedActionsForUser(user) {
+  const data = await readTrackedActions();
+  const isAdmin = String(user?.role || '').split(',').map((role) => role.trim()).includes('admin');
+  return { ...data, trackers: trackersVisibleToActor(data.trackers, { userId: user?.id, isAdmin }) };
+}
+
+function assertTrackerAccess(tracker, actor) {
+  if (actor?.isSystem || actor?.isAdmin || (tracker.ownerId && tracker.ownerId === actor?.userId)) return;
+  const error = new Error('Acompanhamento não encontrado.');
+  error.statusCode = 404;
+  throw error;
+}
+
 async function writeTrackedActions(data) {
   requireEncryptionKey();
   if (config.serverless) {
@@ -215,7 +260,7 @@ function validateInput(input = {}) {
   return { label, query, court: normalizeCourt(input.court || 'stj') };
 }
 
-export async function addTrackedAction(input) {
+export async function addTrackedAction(input, ownerId = null) {
   if (!config.datajudApiKey || !actionsPersistenceConfigured()) {
     const error = new Error('Configure DATAJUD_API_KEY e TRACKED_ACTIONS_ENCRYPTION_KEY (e GITHUB_TOKEN na Vercel) para salvar acompanhamentos.');
     error.statusCode = 503;
@@ -227,6 +272,7 @@ export async function addTrackedAction(input) {
   const tracker = {
     id: randomUUID(),
     ...values,
+    ownerId,
     createdAt: now,
     updatedAt: now,
     lastCheckedAt: null,
@@ -242,7 +288,7 @@ export async function addTrackedAction(input) {
   return saved.trackers[0];
 }
 
-export async function updateTrackedAction(id, input) {
+export async function updateTrackedAction(id, input, actor = null) {
   if (!config.datajudApiKey || !actionsPersistenceConfigured()) {
     const error = new Error('Configure DATAJUD_API_KEY e TRACKED_ACTIONS_ENCRYPTION_KEY (e GITHUB_TOKEN na Vercel) para salvar acompanhamentos.');
     error.statusCode = 503;
@@ -256,6 +302,7 @@ export async function updateTrackedAction(id, input) {
     error.statusCode = 404;
     throw error;
   }
+  assertTrackerAccess(current.trackers[index], actor);
   const now = new Date().toISOString();
   current.trackers[index] = {
     ...current.trackers[index],
@@ -274,15 +321,17 @@ export async function updateTrackedAction(id, input) {
   return current.trackers[index];
 }
 
-export async function removeTrackedAction(id) {
+export async function removeTrackedAction(id, actor = null) {
   const current = config.serverless && config.githubToken ? (await readGithub()).data : await readLocal();
+  const tracker = current.trackers.find((item) => item.id === id);
+  if (tracker) assertTrackerAccess(tracker, actor);
   const trackers = current.trackers.filter((item) => item.id !== id);
   if (trackers.length === current.trackers.length) return false;
   await writeTrackedActions({ trackers });
   return true;
 }
 
-export async function refreshTrackedAction(id) {
+export async function refreshTrackedAction(id, actor = null) {
   const current = config.serverless && config.githubToken ? (await readGithub()).data : await readLocal();
   const index = current.trackers.findIndex((item) => item.id === id);
   if (index < 0) {
@@ -290,24 +339,24 @@ export async function refreshTrackedAction(id) {
     error.statusCode = 404;
     throw error;
   }
+  assertTrackerAccess(current.trackers[index], actor);
   const tracker = sanitizeTracker(current.trackers[index]);
   current.trackers[index] = tracker;
   const checkedAt = new Date().toISOString();
   try {
     const result = await queryDataJud(tracker);
+    const generatedAlerts = newMovementAlerts(tracker, result);
     const updated = {
       ...tracker,
       ...result,
-      movementAlerts: result.latestMovement && !(tracker.movementAlerts || []).some((alert) => alert.movementId === result.latestMovement.id)
-        ? [actionMovementAlert(tracker, result, result.latestMovement), ...(tracker.movementAlerts || [])].slice(0, 50)
-        : (tracker.movementAlerts || []),
+      movementAlerts: [...generatedAlerts, ...(tracker.movementAlerts || [])].slice(0, 100),
       lastCheckedAt: checkedAt,
       updatedAt: checkedAt,
       lastError: null,
     };
     current.trackers[index] = updated;
     if (hasTrackedActionStateChanged(tracker, updated)) await writeTrackedActions(current);
-    return updated;
+    return { ...updated, newMovementAlerts: generatedAlerts };
   } catch (error) {
     const failed = { ...tracker, lastCheckedAt: checkedAt, updatedAt: checkedAt, lastError: error.message };
     current.trackers[index] = failed;
@@ -316,12 +365,18 @@ export async function refreshTrackedAction(id) {
   }
 }
 
-export async function refreshAllTrackedActions() {
+export async function refreshAllTrackedActions(actor = null) {
+  if (!actor?.isSystem && !actor?.isAdmin && !actor?.userId) {
+    const error = new Error('Autenticação obrigatória para atualizar acompanhamentos.');
+    error.statusCode = 401;
+    throw error;
+  }
   const current = await readTrackedActions();
+  const trackers = trackersVisibleToActor(current.trackers, actor);
   const results = [];
-  for (const tracker of current.trackers) {
+  for (const tracker of trackers) {
     try {
-      results.push(await refreshTrackedAction(tracker.id));
+      results.push(await refreshTrackedAction(tracker.id, actor));
     } catch (error) {
       results.push({ ...tracker, lastError: error.message });
     }
