@@ -2585,9 +2585,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "c3ae7972f2eda53c95f73481",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "discarded",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-20T03:40:39.348Z",
+        "score": 7.6,
+        "alertId": null
       },
       {
         "title": "RE 1617108 — fático-probatória, das cláusulas contratuais e da legislação infraconstitucional aplicável ao processo (Código Tributário Nacional). A alegada contrariedade à Constituição da República, se tivesse ocorrido, seria indireta, a inviabilizar o processamento do rec",
@@ -2627,9 +2630,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "08cdd9d745caf361b67e4c8e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "discarded",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-20T03:46:03.437Z",
+        "score": 7.2,
+        "alertId": null
       },
       {
         "title": "ARE 1612359 — Alagoas, assim ementado: “EMENTA: DIREITO TRIBUTÁRIO . APELAÇÕES CÍVEIS EM MANDADO DE SEGURANÇA. SENTENÇA QUE CONCEDEU A SEGURANÇA, PARA DECLARAR A INEXIGIBILIDADE DO DIFAL E DO FECOEP ATÉ A PUBLICAÇÃO DA LC 190/2022. (I) RECURSO DO ESTADO DE ALAGOAS. PEDIDO D",
@@ -2648,9 +2654,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "f42e94d36f34a62c38cfc407",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "discarded",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-20T03:49:27.936Z",
+        "score": 8.1,
+        "alertId": null
       },
       {
         "title": "RE 1608972 — Ementa: Direito tributário . Recurso extraordinário. Taxa de Limpeza Pública. Serviços específicos e divisíveis. Constitucionalidade. Questionamentos referentes à natureza dos serviços. Enunciados nº 279 e nº 280 da Súmula do STF. Recurso a que se nega seguime",
@@ -2695,27 +2704,6 @@
         "backfillDate": "2026-08-18"
       },
       {
-        "title": "ARE 1615410 ED — situação de obscuridade, omissão ou contradição, vêm a ser opostos com o inadmissível objeto de infringir o julgado, em ordem a viabilizar um indevido reexame da causa (AI 177.313-AgR-ED, Rel. Min. Celso de Mello). Restou claro na decisão embargada que o recur",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810523/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615410&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810523",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810523/false",
-        "inlineText": "situação de obscuridade, omissão ou contradição, vêm a ser opostos com o inadmissível objeto de infringir o julgado, em ordem a viabilizar um indevido reexame da causa (AI 177.313-AgR-ED, Rel. Min. Celso de Mello). Restou claro na decisão embargada que o recurso é inadmissível porque, na hipótese dos autos, a pretexto de violação ao art. 5º, XXIV, da Constituição Federal, pretende-se a análise de normas legais (Decretos 3.365/1941 e 15.852/2022 e Código Civil), bem como o reexame de fatos e provas (Súmula 279 do STF), a fim de que seja reconhecida, no caso concreto, a extinção do crédito tributário pela prescrição, extinguindo-se a execução fiscal, o que é inviável na via extraordinária. A respeito, confira-se, em casos similares, os seguintes precedentes: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DESAPROPRIAÇÃO. INTERESSE SOCIAL. REFORMA AGRÁRIA. JUSTA INDENIZAÇÃO. ALEGADA OFENSA AO ART. 5º, XXIV, DA CONSTITUIÇÃO FEDERAL. INFRACONSTITUCIONAL. REEXAME DE CONJUNTO FÁTICO PROBATÓRIO. IMPOSSIBILIDADE. ÓBICE DA SÚMULA 279 DO STF. 1. A repercussão geral pressupõe recurso admissível sob o crivo dos demais requisitos constitucionais e processuais de admissibilidade (art.",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "f75ff59ad714411f10ac4e61",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
         "title": "ARE 1617512 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . MA",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810572/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617512&classe=ARE",
@@ -2737,48 +2725,6 @@
         "backfillDate": "2026-08-18"
       },
       {
-        "title": "ARE 1615338 — decidido pelo tribunal de origem” (Plenário, DJe 3.12.2009). Essa orientação jurisprudencial foi acolhida pela legislação processual vigente, na qual, nos termos do § 2º do art. 1.030 e do caput do art. 1.042 do Código de Processo Civil, previsto o agravo inte",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810307/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615338&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810307",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810307/false",
-        "inlineText": "decidido pelo tribunal de origem” (Plenário, DJe 3.12.2009). Essa orientação jurisprudencial foi acolhida pela legislação processual vigente, na qual, nos termos do § 2º do art. 1.030 e do caput do art. 1.042 do Código de Processo Civil, previsto o agravo interno como recurso cabível contra decisão da presidência de tribunal ou de turma recursal pela qual se aplica a sistemática da repercussão geral para inadmitir, negar seguimento ou concluir prejudicado o recurso extraordinário. Confiram-se, por exemplo, os seguintes julgados: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . EXCEÇÃO DE PRÉ-EXECUTIVIDADE. PRESCRIÇÃO. IMPOSSIBILIDADE DE ANÁLISE DA LEGISLAÇÃO INFRACONSTITUCIONAL E DE REEXAME DO CONJUNTO FÁTICO-PROBATÓRIO. SÚMULA N. 279 DO SUPREMO TRIBUNAL FEDERAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. AGRAVO CONTRA DECISÃO DO JUÍZO DE ORIGEM PELA QUAL APLICADA A SISTEMÁTICA DA REPERCUSSÃO GERAL: RECURSO INCABÍVEL. PRECEDENTES. CAPUT DO ART. 1.042 DO CÓDIGO DE PROCESSO CIVIL/2015. AGRAVO REGIMENTAL DESPROVIDO, COM APLICAÇÃO DE MULTA DE 1% SOBRE O VALOR ATUALIZADO DA CAUSA, SE UNÂNIME A VOTAÇÃO” (ARE n. 1.443.183-AgR, Relatora a Ministra Cármen Lúcia, Primeira",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "771ddaba7a6defd6731ed521",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1615044 ED — embargos de declaração opostos contra decisão monocrática assim fundamentada (eDOC 199): “Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento nas alíneas \"a\" e \"c\" do per",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810576/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615044&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810576",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810576/false",
-        "inlineText": "embargos de declaração opostos contra decisão monocrática assim fundamentada (eDOC 199): “Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento nas alíneas \"a\" e \"c\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. APELAÇÃO CÍVEL. ICMS SUBSTITUIÇÃO TRIBUTÁRIA. RESPONSABILIDADE TRIBUTÁRIA DO CONTRIBUINTE SUBSTITUÍDO. PRESUNÇÃO DE LEGALIDADE DA CDA. MULTA TRIBUTÁRIA. NÃO CONFIGURAÇÃO DE CONFISCO. HONORÁRIOS ADVOCATÍCIOS. APLICAÇÃO DAS FAIXAS ESCALONADAS DO ART. 85, §3º, DO CPC. RECURSO PARCIALMENTE PROVIDO. I. CASO EM EXAME Apelação cível interposta contra sentença que julgou improcedentes os Embargos à Execução Fiscal ajuizados em face do Estado de Minas Gerais, mantendo a exigibilidade do crédito tributário consubstanciado em Certidão de Dívida Ativa relativa ao ICMS-ST referente ao período de outubro de 2014 a julho de 2016. A parte apelante pleiteia: (i) reconhecimento de ilegitimidade para figurar como responsável tributária; (ii) cancelamento ou redução da multa por alegado caráter confiscatório; e (iii) readequação dos honorários",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "6899546bd55aa851ba80c388",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
         "title": "RE 1615371 — DESPACHO: Vistos. João Francisco da Silveira Neto interpõe recurso extraordinário manejado em face de acórdão proferido pela 2ª Câmara de Direito Público do Tribunal de Justiça do Estado do Piauí, assim ementado: “ TRIBUTÁRIO . APELAÇÃO. EMBARGOS À EXECUÇÃO FI",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810403/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1615371&classe=RE",
@@ -2795,27 +2741,6 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T02:56:04.729Z",
         "id": "e962bafdc5270b3477d36904",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1616889 — Declaração no Recurso Extraordinário n. 912.888-RG, Tema 827 da repercussão geral, Redator para o acórdão o Ministro Luiz Fux, este Supremo Tribunal Federal acolheu parcialmente os embargos de declaração opostos por Sindicato Nacional das Empresas de Telefonia",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810361/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1616889&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810361",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810361/false",
-        "inlineText": "Declaração no Recurso Extraordinário n. 912.888-RG, Tema 827 da repercussão geral, Redator para o acórdão o Ministro Luiz Fux, este Supremo Tribunal Federal acolheu parcialmente os embargos de declaração opostos por Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel Celular e Pessoal, “para modular os efeitos da declaração de constitucionalidade no tempo, de modo que o ICMS incida sobre a ‘assinatura básica mensal sem franquia’ a partir da data da publicação da ata de julgamento do acórdão no qual o mérito foi apreciado, isto é, 21/10/2016”. Esta a ementa do acórdão: “CONSTITUCIONAL. TRIBUTÁRIO . IMPOSTO SOBRE OPERAÇÕES DE CIRCULAÇÃO DE MERCADORIAS E DE SERVIÇOS DE COMUNICAÇÃO E DE TRANSPORTE INTERMUNICIPAL E INTERESTADUAL DE PESSOAS E DE BENS. ICMS. TELEFONIA. ASSINATURA BÁSICA MENSAL SEM FRANQUIA DE MINUTOS. CARACTERIZAÇÃO COMO TELECOMUNICAÇÃO. INCIDÊNCIA. PROCESSUAL. EMBARGOS DE DECLARAÇÃO. EFEITOS MODIFICATIVOS OU INFRINGENTES. CONTRADIÇÃO. ERRO DE FATO. PREMISSA. ALEGADA INTERPRETAÇÃO EQUIVOCADA DA OPERAÇÃO REMUNERADA COM A ASSINATURA BÁSICA MENSAL SEM FRANQUIA. INEXISTÊNCIA. QUESTÃO DE DIREITO RELACIONADA À CLASSIFICAÇÃO JURÍDICA. PEDIDO PARA MODULAÇÃO TEMPORAL DOS EFEITOS",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "5449b2622c0048278fad17bb",
         "status": "pending",
         "attempts": 0,
         "backfillDate": "2026-08-18"
@@ -2863,69 +2788,6 @@
         "backfillDate": "2026-08-18"
       },
       {
-        "title": "ARE 1614537 — EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não ",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1614537&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810328",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810328/false",
-        "inlineText": "EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não conhecimento do recurso, por não terem sido efetivamente impugnados todos os fundamentos da decisão que inadmitiu o recurso extraordinário, autoriza a certificação do trânsito em julgado da decisão agravada e a baixa imediata do feito à origem. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . COMPENSAÇÃO DE TRIBUTOS. REGIME DE PRECATÓRIOS. INAPLICABILIDADE DO TEMA 1.262 DA REPERCUSSÃO GERAL: QUESTÃO DE MÉRITO RESOLVIDA PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS DA DECISÃO DE INADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO: SÚMULA N. 287 DESTE SUPREMO TRIBUNAL. ÓBICE JURÍDICO IMPEDITIVO AO REGULAR PROCESSAMENTO DO RECURSO. DECISÃO AGRAVADA MANTIDA. AGRAVO REGIMENTAL NÃO CONHECIDO, COM DETERMINAÇÃO DE CERTIFICAÇÃO DO TRÂNSITO EM JULGADO E BAIXA IMEDIATA DO PROCESSO À ORIGEM, INDEPENDENTE DA PUBLICAÇÃO DO ACÓRDÃO” (ARE nº 1.561.650/SC-AgR, Primeira Turma",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "15b8b7c58ee87acaa0f1644f",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1603683 — observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora par",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603683&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810357",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810357/false",
-        "inlineText": "observar o princípio jurídico de que “o acessório segue a sorte do principal” (RE n. 527.971-AgR-ED, Relator o Ministro Cezar Peluso, Segunda Turma, DJe 19.10.2007). No julgamento do Recurso Extraordinário n. 564.132, Tema 18 da repercussão geral, Redatora para o acórdão a Ministra Cármen Lúcia, o Supremo Tribunal reafirmou essa orientação jurisprudencial de que, no regime de pagamentos ao qual se sujeitam os entes públicos, “o acessório segue o principal” (Plenário, DJe 10.2.2015). Na mesma linha é, por exemplo, o seguinte julgado: “RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . (...) CORREÇÃO MONETÁRIA. OBRIGAÇÃO ACESSÓRIA. REGIME DE PRECATÓRIO: DESNECESSIDADE. O ACESSÓRIO SEGUE O PRINCIPAL. PRECEDENTES. RECURSO EXTRAORDINÁRIO COM AGRAVO NÃO CONHECIDO” (ARE n. 1.594.573, Relatora a Ministra Cármen Lúcia, decisão monocrática transitada em julgado, DJe 31.3.2026). No § 8º do art. 100 da Constituição da República, dispõe-se ser “vedada a expedição de precatórios complementares ou suplementares de valor pago, bem como o fracionamento, repartição ou quebra do valor da execução para fins de enquadramento de parcela do total ao que dispõe o § 3º deste artigo”. Com fundamento",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "f82f2f0e73f3d7258329ba67",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
-        "title": "ARE 1612686 — hígidos. V - Agravo regimental a que se nega provimento, com aplicação da multa (art. 1.021, § 4°, do CPC).” (ARE 1166703 AgR / SP, Relator(a): Min. RICARDO LEWANDOWSKI, Segunda Turma, DJe de 18/11/2019) “EMENTA: AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM",
-        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810368/false",
-        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1612686&classe=ARE",
-        "publishedAt": "2026-08-18",
-        "documentKind": "Decisão monocrática do STF",
-        "externalId": "despacho1810368",
-        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1810368/false",
-        "inlineText": "hígidos. V - Agravo regimental a que se nega provimento, com aplicação da multa (art. 1.021, § 4°, do CPC).” (ARE 1166703 AgR / SP, Relator(a): Min. RICARDO LEWANDOWSKI, Segunda Turma, DJe de 18/11/2019) “EMENTA: AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . CONTRIBUIÇÃO PREVIDENCIÁRIA PATRONAL. INCIDÊNCIA SOBRE O TERÇO DE FÉRIAS: APLICAÇÃO DA SISTEMÁTICA DA REPERCUSSÃO GERAL NA ORIGEM. TEMA 985. JUÍZO DE RETRATAÇÃO. PREJUDICIALIDADE DO RECURSO EXTRAORDINÁRIO. IMPOSSIBILIDADE DE SOBRESTAMENTO DO FEITO. VERBAS TRABALHISTAS E ENCARGOS SOCIAIS. NATUREZA JURÍDICA. COMPENSAÇÃO TRIBUTÁRIA. SÚMULAS NS. 279 E 636 DO SUPREMO TRIBUNAL FEDERAL. AUSÊNCIA DE OFENSA CONSTITUCIONAL DIRETA. AGRAVO REGIMENTAL DESPROVIDO, COM APLICAÇÃO DE MULTA DE 1% SOBRE O VALOR ATUALIZADO DA CAUSA, SE UNÂNIME A VOTAÇÃO.” (ARE 1497038 AgR / DF, Relator(a): Min. CÁRMEN LÚCIA, Primeira Turma, DJe de 21/8/2024) “Ementa: DIREITO TRIBUTÁRIO . AGRAVO INTERNO EM EMBARGOS DE DECLARAÇÃO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. CONTRIBUIÇÃO PREVIDENCIÁRIA PATRONAL. COMPENSAÇÃO DE VALORES RECOLHIDOS A MAIOR. RESTRIÇÃO. CARÁTER INFRACONSTITUCIONAL DA CONTROVÉRSIA. INCIDÊNCIA SOBRE HORAS EXTRAS E ADICIONAIS. OFENSA",
-        "sourceId": "stf",
-        "sourceName": "Supremo Tribunal Federal",
-        "sourceAcronym": "STF",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-20T02:56:04.729Z",
-        "id": "3439059c86899fc699ed0817",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
-      },
-      {
         "title": "Reforma Decisões da Justiça Federal afastam CBS sobre ‘cards’ colecionáveis 18/08/2026 05h03 — Em Legislação",
         "url": "https://valor.globo.com/legislacao/noticia/2026/08/18/decisoes-da-justica-federal-afastam-cbs-sobre-cards-colecionaveis.ghtml",
         "publishedAt": "2026-08-18",
@@ -2940,9 +2802,12 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-20T03:00:51.872Z",
         "id": "e8668f9e3bd27442b2ba222e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": "2026-08-18"
+        "status": "discarded",
+        "attempts": 1,
+        "backfillDate": "2026-08-18",
+        "analyzedAt": "2026-08-20T03:43:03.657Z",
+        "score": 7.5,
+        "alertId": null
       },
       {
         "title": "ARE 1589234 — engendrado nos autos, não pode ser revisto por esta Suprema Corte, em face da incidência da Súmula 279 do STF, que dispõe: “Para simples reexame de prova não cabe recurso extraordinário”. Deveras, a pretensão dos recorrentes, que sustentam a atipicidade da con",
@@ -5464,9 +5329,9 @@
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "c58accfc3587699d68f9399d",
         "status": "error",
-        "attempts": 2,
+        "attempts": 3,
         "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-20T02:52:50.935Z"
+        "analyzedAt": "2026-08-20T03:43:05.057Z"
       },
       {
         "title": "Nota Técnica 3/2013 - Escrituração do Crédito Presumido do Álcool - Medida Provisória nº 613",
@@ -11026,6 +10891,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "9d0e82ff-b833-4d7c-bd5d-3b4d69c501ac",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T03:49:27.962Z",
+        "finishedAt": "2026-08-20T03:55:43.720Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "b9fb7d42-5c46-4c84-ae73-65674b3dc3a0",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T03:31:09.405Z",
+        "finishedAt": "2026-08-20T03:49:27.943Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 0,
+        "discarded": 4,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 15,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "4d5fc5e0-1a95-49d3-9556-ec950d7868ef",
         "trigger": "github-actions-history",
@@ -25080,7 +25477,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T03:01:55.469Z",
-    "nextRunAt": "2026-08-20T09:01:55.469Z"
+    "lastRunAt": "2026-08-20T03:55:43.720Z",
+    "nextRunAt": "2026-08-20T09:55:43.720Z"
   }
 }
