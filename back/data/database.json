@@ -1,9 +1,83 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T18:55:48.374Z",
+    "lastUpdatedAt": "2026-08-20T19:33:45.050Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "PL 5135/2026 — Veda a aplicação dos regimes aduaneiros especiais de drawback à importação de cacau inteiro ou partido, em bruto ou torrado, classificado no código 1801.00.00 da NCM",
+      "theme": "Aduanário",
+      "agency": "Câmara dos Deputados",
+      "taxes": [
+        "Imposto sobre Produtos Industر"
+      ],
+      "status": "Em andamento",
+      "kind": "Proposição legislativa",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20T15:16",
+      "summary": "O Projeto de Lei 5135/2026 propõe vedar a aplicação dos regimes aduaneiros especiais de drawback à importação de cacau classificado no código 1801.00.00 da NCM. O projeto foi apresentado pelo Deputado Félix Mendonça Júnior (PDT/BA) em 20/08/2026 e está em tramitação na Câmara dos Deputados.",
+      "whatChanged": "A proposta altera a aplicação dos regimes aduaneiros especiais de drawback para importação de cacau, impactando a tributação de produtos agrícolas importados.",
+      "practicalImpact": "Empresas que importam cacau podem enfrentar alterações na tributação e no processo aduaneiro, exigindo ajustes em suas operações e contabilidades.",
+      "officeAction": "O projeto está em tramitação na Câmara dos Deputados com a última ação da Mesa Diretora em 20/08/2026, mas não há informações sobre pareceres ou votações concluídas.",
+      "affectedProfiles": [
+        "Empresas de importação de cacau",
+        "Operadores aduaneiros",
+        "Empresas de processamento de cacau",
+        "Exportadores de cacau",
+        "Organizações de agricultura"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 5,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Vedação de regimes aduaneiros de drawback para cacau",
+        "period": "2026-08-20 a data de aprovação",
+        "action": "Ajustar processos aduaneiros e contabilidades para evitar impactos na tributação de cacau importado",
+        "confidence": "médio"
+      },
+      "id": "a2eeb7d9-1af3-48e4-97b2-dbe64ffe6cf4",
+      "score": 6.4,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644273",
+      "isDemo": false,
+      "createdAt": "2026-08-20T19:12:00.848Z",
+      "updatedAt": "2026-08-20T19:12:00.848Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644273",
+        "sourceCharacters": 3813,
+        "sourceId": "camara",
+        "sourceName": "Câmara dos Deputados",
+        "discoveredBy": "camara-api",
+        "sourceType": "official",
+        "documentKind": "Proposição legislativa",
+        "discoveredAt": "2026-08-20T18:52:46.832Z",
+        "fastTriage": {
+          "score": 72,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
     {
       "relevant": true,
       "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5006656-41.2024.4.03.6105 · Gab. 09 - DES. FED. ADRIANA PILEGGI — Direito tributário: emanda na qual se pretende o…",
@@ -9595,43 +9669,59 @@
     },
     {
       "relevant": true,
-      "title": "Decisão · 5005514-46.2026.4.03.6100 · Gab. 12 - DES. FED. WILSON ZAUHY — Direito tributário: 26.4.03.6100 RELATOR: WILSON ZAUHY FILHO APELANTE: DELEGADO DA DELEGACIA DE…",
-      "theme": "Direito tributário",
+      "title": "Decisão judicial: Apelação e Reexame Necessário (5005514-46.2026.4.03.6100) sobre exclusão do ISS da base de cálculo do PIS e COFINS",
+      "theme": "Exclusão do ISS da base de cálculo do PIS e COFINS",
       "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "ISS",
+        "ICMS",
+        "SELIC",
+        "Lei 11.457/2007"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-20. sentença (ID 385428849) proferida em Mandado de Segurança impetrado por SETE PARTNERS CONSULTORIA E PROJETOS LTDA.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A decisão do TRF3 confirma a possibilidade de exclusão do valor do ISS da base de cálculo do PIS e COFINS, conforme entendimento do STF no RE 574.706/PR-RG. A União (Fazenda Nacional) apelou para reformar a sentença que concedeu segurança para exclusão do ISS, mas a decisão foi negada. O entendimento do STF sobre ICMS não se aplica ao ISS, mas a jurisprudência da TRF3 estabelece que o ISS também deve ser excluído das bases de cálculo do PIS e COFINS.",
+      "whatChanged": "A decisão do TRF3 afirma que o ISS pode ser excluído da base de cálculo do PIS e COFINS, seguindo a linha jurisprudencial do STF no RE 574.706/PR-RG, que não inclui o ICMS nas bases de cálculo. A União apelou para reformar a sentença, mas o TRF3 negou provimento à apelação, reforçando a possibilidade de exclusão do ISS.",
+      "practicalImpact": "Empresas que utilizam ISS em notas fiscais devem revisar suas bases de cálculo do PIS e COFINS para garantir a exclusão do ISS, evitando pagamentos indevidos. A decisão impacta contribuintes que pagam PIS e COFINS com base incluindo ISS, exigindo ajustes contábeis e fiscais.",
+      "officeAction": "A decisão do TRF3 nega provimento à apelação da União e ao reexame necessário, mantendo a possibilidade de exclusão do ISS da base de cálculo do PIS e COFINS, com aplicação da taxa SELIC para compensação de valores indevidamente pagos após o trânsito em julgado.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas que utilizam ISS em notas fiscais",
+        "Contribuintes do PIS e COFINS",
+        "Fazenda Nacional",
+        "Receita Federal do Brasil",
+        "Consultorias tributárias"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão do ISS da base de cálculo do PIS e COFINS: ajuste contábil obrigatório",
+        "period": "2024-05-13 a 2025-05-13",
+        "action": "Revisar bases de cálculo do PIS e COFINS para excluir o ISS, ajustar pagamentos e garantir compensação com SELIC para valores indevidos",
+        "confidence": "alto"
+      },
       "id": "b1ef2537-082a-4b97-9b09-743e5f20fab1",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnYkkFK21UDTelJ2AYAve9mD/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.161Z",
-      "updatedAt": "2026-08-20T17:10:19.161Z",
+      "updatedAt": "2026-08-20T19:20:41.922Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnYkkFK21UDTelJ2AYAve9mD/certidao",
         "sourceCharacters": 11296,
         "sourceId": "trf3",
@@ -9658,43 +9748,54 @@
     },
     {
       "relevant": true,
-      "title": "Decisão · 5002628-44.2026.4.03.6110 · 4ª Vara Federal de Sorocaba — Direito tributário: a impetrante provimento judicial que lhe assegure a suspensão da exigibilidade do crédito…",
-      "theme": "Direito tributário",
-      "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "title": "Decisão judicial: 5002628-44.2026.4.03.6110 — Suspensão da exigibilidade do IRPJ e CSLL sobre repetição de indébito tributário",
+      "theme": "Suspensão da exigibilidade de tributos sobre repetição de indébito",
+      "agency": "4ª Vara Federal de Sorocaba — Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "Imposto de Renda da Pessoa Jur"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO 4ª Vara Federal de Sorocaba Avenida Antônio Carlos Comitre, 295, Parque Campolim, Sorocaba - SP - CEP: 18047-620 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5002628-44.2026.4.03.6110 IMPETRANTE: ILOTTO TECNOLOGIA LTDA ADVOGADO do(a) IMPETRANTE: DANIEL PUGA - GO21324 ADVOGADO do(a) IMPETRANTE: DALMO JACOB DO AMARAL JUNIOR - SP201171-A IMPETRADO: UNIAO FEDERAL - FAZENDA…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A decisão judicial suspende a exigibilidade do IRPJ e CSLL sobre o montante agregado à repetição de indébito tributário, com base na incidência da TAXA SELIC. A impetrante alega que a taxa não gera acréscimo patrimonial, mas a decisão indefere a medida liminar por não haver demonstração de risco irreparável ou ineficácia da medida caso não seja concedida imediatamente.",
+      "whatChanged": "A decisão do TJF da 3ª Região indefere a suspensão da exigibilidade do IRPJ e CSLL sobre repetição de indébito tributário, reafirmando que a taxa Selic não configura acréscimo patrimonial para o contribuinte, mas não concede a medida liminar por ausência de risco irreparável.",
+      "practicalImpact": "Empresas que possuem repetição de indébitos tributários devem monitorar a incidência da TAXA SELIC no cálculo do IRPJ e CSLL, já que a decisão não suspende a exigibilidade, mas reforça a necessidade de análise da natureza da taxa para evitar acréscimos patrimoniais.",
+      "officeAction": "A decisão indefere a suspensão da exigibilidade do IRPJ e CSLL sobre repetição de indébito tributário, exigindo que a impetrante retifique o valor da causa e notifique a autoridade impetrada no prazo de dez dias.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com repetição de indébitos tributários",
+        "Contribuintes do IRPJ e CSLL",
+        "Delegados da Receita Federal",
+        "Empresas que utilizam a TAXA SELIC para correção monetária",
+        "Organizações com indébitos tributários em processo de repetição"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
         "clientFit": 7,
         "actionPotential": 6
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Suspensão da exigibilidade do IRPJ e CSLL sobre repetição de indébito tributário",
+        "period": "2024-05-15 a 2024-05-31",
+        "action": "Análise da incidência da TAXA SELIC no cálculo do IRPJ e CSLL para evitar acréscimos patrimoniais",
+        "confidence": "médio"
+      },
       "id": "ce4e15e9-c882-469b-89fc-2327311d66da",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.3,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZj1FebQTgTWJ1oL6wL5MW2/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.161Z",
-      "updatedAt": "2026-08-20T17:10:19.161Z",
+      "updatedAt": "2026-08-20T19:24:50.364Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZj1FebQTgTWJ1oL6wL5MW2/certidao",
         "sourceCharacters": 4069,
         "sourceId": "trf3",
@@ -9721,43 +9822,59 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5032140-06.2025.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: ATÓRIO Trata-se de embargos de declaração opostos contra acórdão assim ementado:…",
-      "theme": "Direito tributário",
+      "title": "Acórdão · 5032140-06.2025.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: ATÓRIO",
+      "theme": "Validade da Certidão de Dívida Ativa (CDA) em execução fiscal",
       "agency": "Tribunal Regional Federal da 3ª Região",
-      "taxes": [],
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "Contribuições previdenciárias",
+        "Contribuições parafiscais",
+        "Multa moratória",
+        "Taxa SELIC"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-20. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 2ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual AGRAVO DE INSTRUMENTO 202 Nº 5032140-06.2025.4.03.0000 RELATOR: LUIS CARLOS HIROKI MUTA AGRAVANTE: ISAVIC TRANSPORTE E ARMAZENAMENTO LTDA - EPP ADVOGADO do(a) AGRAVANTE: EMILY ALVES DE LIMA - SP492936-A ADVOGADO do(a) AGRAVANTE: MARIANA BARBOZA…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão confirma a validade da Certidão de Dívida Ativa (CDA) em execução fiscal, reconhecendo que ela possui presunção relativa de certeza e liquidez, conforme art. 3º da Lei 6.830/1980. A CDA é válida se contiver todos os elementos legais, incluindo origem, fundamento legal, valores, atualização, juros e multa, sem necessidade de notificação prévia ao contribuinte. A multa moratória de até 20% é considerada legítima e não confiscatória, a Taxa SELIC é índice legal para atualização e juros, e o encargo de 20% do Decreto-Lei 1.025/1969 permanece válido após o CPC/2015.",
+      "whatChanged": "A CDA é válida se contiver todos os elementos legais previstos no CTN e na Lei 6.830/1980, sem necessidade de notificação prévia ao contribuinte. A multa moratória de até 20% é considerada legítima e não confiscatória, a Taxa SELIC é índice legal para atualização e juros, e o encargo de 20% do Decreto-Lei 1.025/1969 permanece válido após o CPC/2015.",
+      "practicalImpact": "Contribuintes podem utilizar a CDA como título executivo válido sem notificação prévia, garantindo a presunção de certeza e liquidez. Empresas devem verificar a validade da CDA para evitar embargos de declaração e garantir a conformidade com os requisitos legais de execução fiscal.",
+      "officeAction": "A CDA é válida se contiver todos os elementos legais previstos no CTN e na Lei 6.830/1980, incluindo origem, fundamento legal, valores, atualização, juros e multa. A multa moratória de até 20% é considerada legítima e não confiscatória, a Taxa SELIC é índice legal para atualização e juros, e o encargo de 20% do Decreto-Lei 1.025/1969 permanece válido após o CPC/2015.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com execuções fiscais",
+        "Contribuintes federais",
+        "Advogados de tributação",
+        "Administração pública",
+        "Jurisprudência tributária"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Validade da Certidão de Dívida Ativa em execução fiscal",
+        "period": "2025-06-06 a 2025-06-30",
+        "action": "Verificação da validade da CDA para evitar embargos de declaração e garantir conformidade com os requisitos legais de execução fiscal",
+        "confidence": "alto"
+      },
       "id": "c2e17939-9adb-45ab-9b15-f7ec8f1c6315",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXR89FgkjIrTVzleW6oWe2dL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.162Z",
-      "updatedAt": "2026-08-20T17:10:19.162Z",
+      "updatedAt": "2026-08-20T19:33:45.008Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXR89FgkjIrTVzleW6oWe2dL/certidao",
         "sourceCharacters": 13999,
         "sourceId": "trf3",
@@ -31640,8 +31757,8 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-20T18:52:46.832Z",
         "id": "e73b9aa65c6f6d4c9247d4c9",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 72,
@@ -31653,7 +31770,15 @@
             "assunto-tributario-forte"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-20T19:12:00.888Z",
+        "analyzedPublishedAt": "2026-08-20T00:00:00Z",
+        "relevant": true,
+        "score": 6.4,
+        "discardReason": null,
+        "alertId": "a2eeb7d9-1af3-48e4-97b2-dbe64ffe6cf4",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "PLP 00237 2026 — Institui incentivo tributário à contratação adicional de aprendizes e de jovens recém-formados em cursos de educação profissional técnica de nível médio ou de educação superior por pessoas jurídicas tributadas com base no lucro real ou no lucro presumido e por optantes pelo Simples Nacional.",
@@ -35044,7 +35169,7 @@
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
         "status": "fast-published",
-        "attempts": 2,
+        "attempts": 3,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -35061,7 +35186,7 @@
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-08-20T18:21:50.018Z"
+        "analyzedAt": "2026-08-20T19:08:21.301Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -35345,8 +35470,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "2c03c5f80e31876a6717a63f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -35362,7 +35487,14 @@
         },
         "alertId": "b1ef2537-082a-4b97-9b09-743e5f20fab1",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T19:20:41.965Z",
+        "analyzedPublishedAt": "2024-05-13T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 5002628-44.2026.4.03.6110 · 4ª Vara Federal de Sorocaba — Direito tributário: a impetrante provimento judicial que lhe assegure a suspensão da exigibilidade do crédito tributário, no tocante à incidência do imposto de renda da pessoa jurídica e da contribuição social sobre o lucro líquido sobre o montante agregado à repetição de indébito tributário, pela",
@@ -35382,8 +35514,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "cd567a0fb86705b28bc0bcb4",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -35399,7 +35531,14 @@
         },
         "alertId": "ce4e15e9-c882-469b-89fc-2327311d66da",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T19:24:50.406Z",
+        "analyzedPublishedAt": "2024-05-15T00:00:00",
+        "relevant": true,
+        "score": 6.3,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5032140-06.2025.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: ATÓRIO Trata-se de embargos de declaração opostos contra acórdão assim ementado: “DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO INTERNO EM AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. NULIDADE DA CDA. PRESUNÇÃO DE CERTEZA E LIQUIDEZ. DÉBITO CONSTITUÍDO P",
@@ -35419,8 +35558,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:51.696Z",
         "id": "364c322e1ef80e55bd59d27c",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -35436,7 +35575,14 @@
         },
         "alertId": "c2e17939-9adb-45ab-9b15-f7ec8f1c6315",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T19:33:45.050Z",
+        "analyzedPublishedAt": "2025-06-06T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 0006609-65.2009.4.03.6110 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: e transcrever a ementa (ID 332044536) do acórdão supra, ora embargado, in verbis: DIREITO TRIBUTÁRIO. MANDADO DE SEGURANÇA. CONTRIBUIÇÃO PREVIDENCIÁRIA SOBRE RECEITAS DE EXPORTAÇÃO. IMUNIDADE CONSTITUCIONAL. OPERAÇÕES INDIRETAS REALIZADAS POR INTERMÉDIO DE TRADING COMPANIES. TEM",
@@ -59895,6 +60041,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "c03365f9-f154-4b04-9000-d02ae73af80e",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T18:58:20.285Z",
+        "finishedAt": "2026-08-20T19:33:45.082Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "14152ae2-edb5-45c8-ab5d-12040ce4f955",
         "trigger": "github-actions-history",
@@ -86465,241 +86624,9 @@
             "found": 1
           }
         ]
-      },
-      {
-        "id": "78d70805-13a0-4ca3-bea7-ada6ac7da681",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T14:47:34.927Z",
-        "finishedAt": "2026-08-19T14:48:48.655Z",
-        "discovered": 26,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 3,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 17
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T18:55:48.402Z",
-    "nextRunAt": "2026-08-21T00:55:48.402Z"
+    "lastRunAt": "2026-08-20T19:33:45.082Z",
+    "nextRunAt": "2026-08-21T01:33:45.082Z"
   }
 }
