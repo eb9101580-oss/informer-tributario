@@ -9,8 +9,11 @@ test('Vercel lê o banco mais recente do GitHub sem depender de novo deploy', as
   process.env.VERCEL = '1';
   process.env.GITHUB_REPOSITORY = 'org/projeto';
   global.fetch = async (url, options) => {
-    assert.equal(url, 'https://raw.githubusercontent.com/org/projeto/main/back/data/database.json');
+    const requestUrl = new URL(url);
+    assert.equal(requestUrl.origin + requestUrl.pathname, 'https://raw.githubusercontent.com/org/projeto/main/back/data/database.json');
+    assert.match(requestUrl.searchParams.get('v'), /^\d+$/);
     assert.equal(options.cache, 'no-store');
+    assert.equal(options.headers['Cache-Control'], 'no-cache');
     return { ok: true, json: async () => ({ alerts: [{ id: 'novo-alerta' }] }) };
   };
 

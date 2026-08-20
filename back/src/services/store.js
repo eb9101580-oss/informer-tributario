@@ -15,8 +15,12 @@ async function readBundledDatabase() {
 async function readGitHubDatabase() {
   const repository = process.env.GITHUB_REPOSITORY || 'eb9101580-oss/informer-tributario';
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) throw new Error('Repositório GitHub inválido.');
-  const response = await fetch(`https://raw.githubusercontent.com/${repository}/main/back/data/database.json`, {
-    headers: { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0' },
+  // O CDN do raw.githubusercontent.com pode manter o conteúdo anterior mesmo
+  // com cache:no-store. Um bucket curto força a leitura do commit recém-gravado
+  // sem criar uma URL diferente para cada acesso ao feed.
+  const cacheVersion = Math.floor(Date.now() / 30_000);
+  const response = await fetch(`https://raw.githubusercontent.com/${repository}/main/back/data/database.json?v=${cacheVersion}`, {
+    headers: { Accept: 'application/json', 'User-Agent': 'Informer-Tributario/1.0', 'Cache-Control': 'no-cache' },
     cache: 'no-store',
     signal: AbortSignal.timeout(10000),
   });
