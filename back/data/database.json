@@ -1,9 +1,249 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T08:07:27.563Z",
+    "lastUpdatedAt": "2026-08-20T09:09:19.535Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1616587 — DECISÃO: Recurso extraordinário com agravo contra inadmissão do RE, com fundamento na alínea 'a' do permissivo constitucional. IRPJ e CSLL: dedução de juros sobre o资本",
+      "theme": "Dedução de juros sobre capital próprio no IRPJ e CSLL",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "Juros sobre capital próprio"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu provido o recurso extraordinário com agravo, permitindo a dedução de juros sobre capital próprio (JCP) pagos aos sócios e acionistas do IRPJ e CSLL em anos distintos da apuração. A decisão reconhece a ilegalidade da restrição da IN nº 11/96 que limita o aproveitamento do benefício fiscal ao regime de competência.",
+      "whatChanged": "A decisão do STF anula a restrição da IN nº 11/96 que limitava a dedução de JCP ao regime de competência, permitindo sua dedução em anos distintos da apuração do IRPJ e CSLL.",
+      "practicalImpact": "Empresas podem deduzir JCP pagos em anos anteriores do ano de apuração do IRPJ e CSLL, desde que não haja restrição temporal na legislação aplicável.",
+      "officeAction": "O recurso extraordinário foi provido com agravo, concedendo segurança para dedução de JCP em anos distintos da apuração do IRPJ e CSLL.",
+      "affectedProfiles": [
+        "Empresas com sócios e acionistas",
+        "Empresas com dedução de JCP no IRPJ e CSLL",
+        "Empresas com apuração de IRPJ e CSLL em anos distintos"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Dedução de JCP em anos distintos do IRPJ e CSLL",
+        "period": "2023-10-18 a 2024-12-31",
+        "action": "Reavaliar dedução de JCP em anos anteriores para IRPJ e CSLL",
+        "confidence": "alto"
+      },
+      "id": "eb962187-dd1a-423f-99a0-9edf18beed0a",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810725/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T09:09:19.526Z",
+      "updatedAt": "2026-08-20T09:09:19.526Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810725/false",
+        "sourceCharacters": 1199,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Imposto de Exportação pune quem produz e ameaça competitividade do petróleo",
+      "theme": "Imposto de Exportação",
+      "agency": "JOTA",
+      "taxes": [
+        "Imposto de Exportação",
+        "Petróleo"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Notícia jornalística especializada",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20T08:00:09.000Z",
+      "summary": "O documento informa que a queda de 28% nas exportações de petróleo em maio demonstra o efeito concreto da cobrança de 12% de Imposto de Exportação sobre a commodity, ameaçando a competitividade do setor.",
+      "whatChanged": "A cobrança de 12% de Imposto de Exportação sobre o petróleo em maio resultou em queda de 28% nas exportações, indicando impacto direto na competitividade do setor.",
+      "practicalImpact": "Empresas produtoras de petróleo enfrentam redução significativa nas exportações devido à cobrança do Imposto de Exportação, o que pode afetar a competitividade no mercado internacional.",
+      "officeAction": "Nenhuma ação específica mencionada no documento.",
+      "affectedProfiles": [
+        "Empresas produtoras de petróleo",
+        "Exportadores de petróleo",
+        "Setor energético"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 6,
+        "financialImpact": 7,
+        "reach": 5,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Impacto do Imposto de Exportação no setor petrolífero",
+        "period": "2023-10-18",
+        "action": "Análise detalhada do efeito da cobrança de 12% de Imposto de Exportação sobre as exportações de petróleo e estratégias para mitigação de impacto na competitividade",
+        "confidence": "médio"
+      },
+      "id": "878c95b4-4fac-44a5-9b20-42058c01e1f4",
+      "score": 6.4,
+      "relevance": "Relevante",
+      "officialUrl": "https://portal.jota.info/opiniao-e-analise/artigos/imposto-de-exportacao-pune-quem-produz-e-ameaca-competitividade-do-petroleo",
+      "isDemo": false,
+      "createdAt": "2026-08-20T09:06:30.514Z",
+      "updatedAt": "2026-08-20T09:06:30.514Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://portal.jota.info/opiniao-e-analise/artigos/imposto-de-exportacao-pune-quem-produz-e-ameaca-competitividade-do-petroleo",
+        "sourceCharacters": 359,
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "discoveredBy": "rss",
+        "sourceType": "journalistic",
+        "documentKind": "Notícia jornalística especializada",
+        "discoveredAt": "2026-08-20T08:56:42.914Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Créditos de IBS e CBS acendem alerta para holdings | Legislação | Valor Econômico",
+      "theme": "Reforma tributária e planejamento patrimonial",
+      "agency": "Valor Econômico",
+      "taxes": [
+        "IBS",
+        "CBS",
+        "Reforma tributária"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Publicação oficial",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "A reforma tributária do consumo introduz um alerta para holdings familiares e patrimoniais, destacando que a não cumulatividade do IBS e CBS pode limitar o crédito sobre aquisições de bens e serviços consideradas de uso pessoal, conforme a Lei Complementar nº 214/2025.",
+      "whatChanged": "A Lei Complementar nº 214/2025 vedou o crédito de IBS e CBS sobre aquisições de bens e serviços de uso pessoal, alterando a neutralidade do sistema tributário para holdings.",
+      "practicalImpact": "Holdings familiares e patrimoniais devem revisar seu planejamento tributário para evitar a perda de créditos em aquisições de uso pessoal, impactando diretamente a tributação de transações de consumo.",
+      "officeAction": "Revisar o planejamento tributário para holdings familiares e patrimoniais, garantindo que aquisições de uso pessoal não sejam consideradas para crédito de IBS e CBS conforme a Lei Complementar nº 214/2025.",
+      "affectedProfiles": [
+        "Holdings familiares",
+        "Holdings patrimoniais",
+        "Contribuintes do regime regular",
+        "Empresas de varejo",
+        "Planejadores tributários"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 7,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão do planejamento tributário para holdings familiares e patrimoniais",
+        "period": "2026-08-20 a 2026-12-31",
+        "action": "Revisar aquisições de uso pessoal para evitar perda de créditos de IBS e CBS conforme Lei Complementar nº 214/2025",
+        "confidence": "alto"
+      },
+      "id": "218e0abc-8de6-4c76-acdc-8e3a109a0bfc",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://valor.globo.com/legislacao/coluna/creditos-de-ibs-e-cbs-acendem-alerta-para-holdings.ghtml",
+      "isDemo": false,
+      "createdAt": "2026-08-20T09:04:27.966Z",
+      "updatedAt": "2026-08-20T09:04:27.966Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://valor.globo.com/legislacao/coluna/creditos-de-ibs-e-cbs-acendem-alerta-para-holdings.ghtml",
+        "sourceCharacters": 1208,
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "discoveredBy": "links",
+        "sourceType": "journalistic",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-08-20T08:56:40.372Z"
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617800 — DECISÃO STF: Recurso extraordinário com agravo contra inadmissão de recurso extraordinário no âmbito tributário",
+      "theme": "ICMS e operações com mercadorias para consumidor final não contribuinte do ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "Imposto sobre Operações e Preç"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "O STF decidiu sobre recurso extraordinário com agravo contra inadmissão de recurso extraordinário no âmbito tributário, com foco no ICMS. A decisão analisa operações e prestações com mercadorias destinadas a consumidor final não contribuinte do ICMS localizado em estado distinto do remetente. A decisão reconhece que a matéria está reservada a lei complementar e não pode ser suprida pelos termos do Convênio 93/2015/CONFAZ nem pela lei estadual 15.863/2015. A modulação dos efeitos da decisão permite a exação até dezembro/2021, ressalvadas ações em curso até julgamento da ADI 5464/DF e RE 1287019/DF.",
+      "whatChanged": "A decisão do STF estabelece que a via mandamental é adequada para operações de ICMS com mercadorias destinadas a consumidor final não contribuinte do ICMS em estado distinto. A modulação dos efeitos permite a exação até dezembro/2021, com exceção de ações em curso até julgamento da ADI 5464/DF e RE 1287019/DF.",
+      "practicalImpact": "Empresas que realizam operações de ICMS com mercadorias para consumidor final não contribuinte em estado distinto devem adequar-se à modulação dos efeitos da decisão, permitindo a exação até dezembro/2021. A decisão também confirma que a matéria está reservada a lei complementar, não podendo ser suprida pelos termos do Convênio 93/2015/CONFAZ nem pela lei estadual 15.863/2015.",
+      "officeAction": "A decisão do STF reforma a sentença, permitindo a exação até dezembro/2021 para operações de ICMS com mercadorias destinadas a consumidor final não contribuinte em estado distinto, ressalvadas ações em curso até julgamento da ADI 5464/DF e RE 1287019/DF.",
+      "affectedProfiles": [
+        "Empresas com operações de ICMS para consumidor final não contribuinte",
+        "Estados com legislação estadual 15.863/2015",
+        "Conselhos de Controle Fiscal",
+        "Receita Federal",
+        "Empresas com operações de ICMS em estado distinto"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Modulação de efeitos para exação de ICMS até dezembro/2021",
+        "period": "Até dezembro/2021",
+        "action": "Ajuste de operações de ICMS para consumidor final não contribuinte em estado distinto",
+        "confidence": "alto"
+      },
+      "id": "0b0333ba-a13b-48a6-a687-bed3f137b80f",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810749/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T09:01:46.069Z",
+      "updatedAt": "2026-08-20T09:01:46.069Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810749/false",
+        "sourceCharacters": 1208,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-19T20:18:41.383Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Rcl 81575 ED — EMENTA: EMBARGOS DE DECLARAÇÃO NA RECLAMAÇÃO. CONVERSÃO EM AGRAVO REGIMENTAL. CONSTITUCIONAL. TRIBUTÁRIO . FUNDO ESTADUAL DE SEGURANÇA PÚBLICA. CUSTEIO COM CRÉDITOS",
@@ -3439,6 +3679,48 @@
   "monitor": {
     "candidates": [
       {
+        "title": "Créditos de IBS e CBS acendem alerta para holdings O planejamento patrimonial não perde importância com a reforma tributária. Ao contrário, torna-se mais técnico Há 33 minutos Legislação",
+        "url": "https://valor.globo.com/legislacao/coluna/creditos-de-ibs-e-cbs-acendem-alerta-para-holdings.ghtml",
+        "publishedAt": "",
+        "documentKind": "Publicação oficial",
+        "sections": [
+          "reforma"
+        ],
+        "sourceId": "reforma-valor",
+        "sourceName": "Valor Econômico - Legislação",
+        "sourceAcronym": "VALOR",
+        "sourceType": "journalistic",
+        "discoveryMethod": "links",
+        "discoveredAt": "2026-08-20T08:56:40.372Z",
+        "id": "3672523c10a63511d2b02264",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T09:04:27.975Z",
+        "score": 8.1,
+        "alertId": "218e0abc-8de6-4c76-acdc-8e3a109a0bfc"
+      },
+      {
+        "title": "Imposto de Exportação pune quem produz e ameaça competitividade do petróleo",
+        "url": "https://portal.jota.info/opiniao-e-analise/artigos/imposto-de-exportacao-pune-quem-produz-e-ameaca-competitividade-do-petroleo",
+        "publishedAt": "2026-08-20T08:00:09.000Z",
+        "documentKind": "Notícia jornalística especializada",
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "sourceAcronym": "JOTA",
+        "sourceType": "journalistic",
+        "sections": [],
+        "discoveryMethod": "rss",
+        "discoveredAt": "2026-08-20T08:56:42.914Z",
+        "id": "4290ff98d07a054fe8af4ece",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T09:06:30.523Z",
+        "score": 6.4,
+        "alertId": "878c95b4-4fac-44a5-9b20-42058c01e1f4"
+      },
+      {
         "title": "ARE 1472821 AgR-ED — Ementa: EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. CONTRIBUIÇÃO AO PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. FORMA DE CÁLCULO.",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568909/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1472821&classe=ARE",
@@ -4918,9 +5200,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "ab8809b396edeb602abece77",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T09:01:46.077Z",
+        "score": 8.1,
+        "alertId": "0b0333ba-a13b-48a6-a687-bed3f137b80f"
       },
       {
         "title": "ARE 1580496 AgR-segundo-EDv — DECISÃO DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EMBARGOS DE DIVERGÊNCIA EM AGRAVO EM RECURSO EXTRAORDINÁRIO. IMUNIDADE TRIBUTÁRIA DE ENTIDADE BENEFICENTE DE ASSISTÊNCIA SOCIAL (ART. 195, § 7º, DA CF). ACÓRDÃO EMBARGADO QUE NEGOU PROVIMENTO A AGRAVO INTERNO POR ",
@@ -5011,9 +5296,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-19T20:18:41.383Z",
         "id": "ef256496a3d7873e3d97678b",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T09:09:19.535Z",
+        "score": 8.7,
+        "alertId": "eb962187-dd1a-423f-99a0-9edf18beed0a"
       },
       {
         "title": "ARE 1617812 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . APELAÇÃO C",
@@ -6438,8 +6726,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "ee001f0fc4cad4918d06bd59",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "Documento sem texto suficiente.",
+        "analyzedAt": "2026-08-20T09:04:29.457Z"
       },
       {
         "title": "Candidato Renan Santos vai propor metas para alíquota do IVA",
@@ -11953,6 +12243,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "d648b4d3-f964-4b41-a42b-207afc8a8fa3",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T09:09:19.750Z",
+        "finishedAt": "2026-08-20T09:15:32.987Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 6,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "dc70c09f-252c-42a5-9c9e-7162239775ad",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T08:51:21.328Z",
+        "finishedAt": "2026-08-20T09:09:19.540Z",
+        "discovered": 2,
+        "analyzed": 4,
+        "published": 4,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 10,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "92347ccb-e62f-4c09-8b1c-6d196847ef16",
         "trigger": "github-actions-history",
@@ -29731,7 +30553,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T08:13:39.935Z",
-    "nextRunAt": "2026-08-20T14:13:39.935Z"
+    "lastRunAt": "2026-08-20T09:15:32.987Z",
+    "nextRunAt": "2026-08-20T15:15:32.987Z"
   }
 }
