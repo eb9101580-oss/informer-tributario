@@ -1,9 +1,194 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T06:25:50.508Z",
+    "lastUpdatedAt": "2026-08-20T07:15:15.546Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1472821 AgR-ED — Ementa: EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. CONTRIBUIÇÃ",
+      "theme": "Repercussão Geral - TEMA 69",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O acórdão do STF confirma a inexistência de omissão, contradição, obscuridade ou erro material na base de cálculo da contribuição ao PIS e COFINS, excluindo o ICMS na forma de cálculo. A decisão reforça a aplicação da Súmula 283 do STF e estabelece que a ausência de impugnação em momento oportuno não configura preclusão. O recurso foi desprovido com imposição de multa, conforme art. 1.026, § 2º, do CPC.",
+      "whatChanged": "A decisão do STF confirma que a base de cálculo da contribuição ao PIS e COFINS não inclui o ICMS, quando este estiver efetivamente recolhido ou destacado na nota fiscal. A ausência de impugnação em momento oportuno não configura preclusão, conforme a Súmula 283 do STF.",
+      "practicalImpact": "Empresas devem revisar suas operações tributárias para garantir que a base de cálculo da contribuição ao PIS e COFINS exclua o ICMS quando este estiver efetivamente recolhido ou destacado na nota fiscal. A não impugnação em momento oportuno não configura preclusão, o que pode impactar a validade de recursos tributários.",
+      "officeAction": "Revisar a base de cálculo da contribuição ao PIS e COFINS para garantir a exclusão do ICMS quando este estiver efetivamente recolhido ou destacado na nota fiscal. Verificar a necessidade de impugnação em momento oportuno para evitar preclusão.",
+      "affectedProfiles": [
+        "Empresas com operações tributárias",
+        "Contadores e profissionais tributários",
+        "Receita Federal",
+        "Empresas de consultoria tributária",
+        "Organizações de gestão tributária"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão da base de cálculo do PIS e COFINS para evitar preclusão",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Revisar operações tributárias para garantir exclusão do ICMS na base de cálculo da contribuição ao PIS e COFINS quando este estiver efetivamente recolhido ou destacado na nota fiscal",
+        "confidence": "alto"
+      },
+      "id": "d0300c08-f1de-41fb-b16d-e742b0b51010",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568909/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T07:15:15.536Z",
+      "updatedAt": "2026-08-20T07:15:15.536Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568909/false",
+        "sourceCharacters": 812,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1601837 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISSQN. BASE DE CÁLCULO. PRETENSÃO DE EXCLUSÃO DOS VALORES RELATIVOS A TRIBUTOS F",
+      "theme": "ISSQN - Base de cálculo tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISSQN",
+        "Imposto sobre Serviços de Qual"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O acórdão do STF determina que apenas uma Lei Complementar Nacional pode determinar a exclusão de valores relativos a tributos federais e ao próprio ISSQN da base de cálculo. A decisão manifesta improcedência do agravo interno e impõe multa, caso haja unânime votação, conforme art. 1.021, § 4º, do CPC.",
+      "whatChanged": "A exclusão de valores tributários federais e do ISSQN da base de cálculo só pode ser estabelecida por Lei Complementar Nacional, não por outras normas.",
+      "practicalImpact": "Empresas que excluíram valores tributários federais ou ISSQN da base de cálculo sem legislação específica estão expostas a risco de multa pelo STF, caso a decisão seja unânime na votação.",
+      "officeAction": "Revisar a base de cálculo do ISSQN para garantir que não haja exclusão de valores tributários federais ou do próprio ISSQN sem Lei Complementar Nacional.",
+      "affectedProfiles": [
+        "Empresas com ISSQN",
+        "Empresas que utilizam base de cálculo tributária",
+        "Empresas com tributação federal",
+        "Empresas com ISSQN",
+        "Empresas com base de cálculo tributária"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Revisar base de cálculo do ISSQN para evitar exclusão de valores tributários federais",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificar se a base de cálculo do ISSQN exclui valores tributários federais ou do próprio ISSQN sem Lei Complementar Nacional e, se necessário, ajustar conforme a decisão do STF",
+        "confidence": "médio"
+      },
+      "id": "ac21c953-e335-4646-9b63-053ef4bb8fca",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568915/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T07:12:44.723Z",
+      "updatedAt": "2026-08-20T07:12:44.723Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568915/false",
+        "sourceCharacters": 552,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1606034 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . IPTU. BASE DE CÁLCULO. PLANTA GENÉRICA DE VALORES. ATUALIZAÇÃO POR LEI. VALOR VENAL. MAJORAÇ",
+      "theme": "IPTU - Base de cálculo e atualização por lei",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU",
+        "Base de cálculo",
+        "Planta genérica de valores",
+        "Atualização por lei",
+        "Valor venal",
+        "Majoração"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O acórdão do STF confirma a inviabilidade da legislação local que estabelece a atualização do IPTU por lei, destacando que a base de cálculo deve ser a planta genérica de valores, sem a aplicação de atualização por lei. A decisão reforça a razoabilidade do valor venal e a capacidade contributiva, além de negar a possibilidade de majoração dos honorários advocatícios em desfavor da parte recorrente.",
+      "whatChanged": "A jurisprudência do STF afirma que a legislação local que estabelece a atualização do IPTU por lei é inviável, pois a base de cálculo deve ser a planta genérica de valores sem atualização por lei. O acórdão também nega a possibilidade de majoração dos honorários advocatícios em desfavor da parte recorrente, conforme estabelecido no artigo 85, § 11, do Código de Processo Civil.",
+      "practicalImpact": "Empresas e contribuintes devem revisar suas bases de cálculo do IPTU, garantindo que não utilizem atualização por lei na planta genérica de valores. A decisão impacta diretamente a forma como os valores venais são calculados e a capacidade contributiva, exigindo ajustes nas operações tributárias locais.",
+      "officeAction": "Revisar a legislação local que estabelece a atualização do IPTU por lei, garantindo que a base de cálculo seja a planta genérica de valores sem atualização por lei. Ajustar a forma de cálculo do valor venal e capacidade contributiva para evitar violação ao artigo 93, IX, da Constituição Federal.",
+      "affectedProfiles": [
+        "Contribuintes de IPTU",
+        "Empresas com atividades imobiliárias",
+        "Advogados de tributação",
+        "Autoridades locais de tributação",
+        "Organizações de gestão imobiliária"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão da legislação local de IPTU para evitar inviabilidade da atualização por lei",
+        "period": "2024-03-25 a 2025-03-25",
+        "action": "Revisar a legislação local que estabelece a atualização do IPTU por lei, garantindo que a base de cálculo seja a planta genérica de valores sem atualização por lei. Ajustar a forma de cálculo do valor venal e capacidade contributiva para evitar violação ao art",
+        "confidence": "alto"
+      },
+      "id": "711d6a0c-c1c3-41d8-b1b6-695ee4d49dd3",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568917/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T07:09:27.440Z",
+      "updatedAt": "2026-08-20T07:09:27.440Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568917/false",
+        "sourceCharacters": 901,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1618388 — analisar a causa à luz da interpretação dada à legislação infraconstitucional pertinente e reexaminar os fatos e as provas dos autos, o que não é cabível em sede de复发",
@@ -3073,6 +3258,141 @@
   "monitor": {
     "candidates": [
       {
+        "title": "ARE 1472821 AgR-ED — Ementa: EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. CONTRIBUIÇÃO AO PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. FORMA DE CÁLCULO.",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568909/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1472821&classe=ARE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568909",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568909/false",
+        "inlineText": "Ementa: EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. CONTRIBUIÇÃO AO PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. FORMA DE CÁLCULO. ICMS EFETIVAMENTE RECOLHIDO OU ICMS DESTACADO NA NOTA FISCAL. AUSÊNCIA DE IMPUGNAÇÃO EM MOMENTO OPORTUNO. PRECLUSÃO. FUNDAMENTO SUFICIENTE DE CARÁTER INFRACONSTITUCIONAL NÃO AFASTADO. INCIDÊNCIA DA SÚMULA 283 DO STF. APELAÇÃO EXCLUSIVA DA PARTE ADVERSA. VEDAÇÃO DA REFORMATIO IN PEJUS. OMISSÃO, CONTRADIÇÃO, OBSCURIDADE OU ERRO MATERIAL. INEXISTÊNCIA. MEROS EFEITOS INFRINGENTES. IMPOSSIBILIDADE. CARÁTER PROTELATÓRIO DO RECURSO. EMBARGOS DE DECLARAÇÃO DESPROVIDOS COM IMPOSIÇÃO DE MULTA, NOS TERMOS DO ARTIGO 1.026, § 2º, DO CÓDIGO DE PROCESSO CIVIL.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "fac7b02bc3d6f168d2510cef",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T07:15:15.546Z",
+        "score": 7.6,
+        "alertId": "d0300c08-f1de-41fb-b16d-e742b0b51010"
+      },
+      {
+        "title": "RE 1606034 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . IPTU. BASE DE CÁLCULO. PLANTA GENÉRICA DE VALORES. ATUALIZAÇÃO POR LEI. VALOR VENAL. MAJORAÇÃO. RAZOABILIDADE. CAPACIDADE CONTRIBUTIVA. LEGISLAÇÃO INFRACONSTITUCIONAL LOCAL. ANÁLISE. INVIAB",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568917/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1606034&classe=RE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568917",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568917/false",
+        "inlineText": "Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . IPTU. BASE DE CÁLCULO. PLANTA GENÉRICA DE VALORES. ATUALIZAÇÃO POR LEI. VALOR VENAL. MAJORAÇÃO. RAZOABILIDADE. CAPACIDADE CONTRIBUTIVA. LEGISLAÇÃO INFRACONSTITUCIONAL LOCAL. ANÁLISE. INVIABILIDADE. SÚMULA 280 DO STF. REVOLVIMENTO DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. IMPOSSIBILIDADE. SÚMULA 279 DO STF. NEGATIVA DE PRESTAÇÃO JURISDICIONAL. INOCORRÊNCIA. VIOLAÇÃO AO ARTIGO 93, IX, DA CONSTITUIÇÃO. INEXISTÊNCIA. ALEGADA OFENSA AOS PRINCÍPIOS DA AMPLA DEFESA, DO CONTRADITÓRIO E DO DEVIDO PROCESSO LEGAL. AUSÊNCIA DE REPERCUSSÃO GERAL. TEMA 660. AGRAVO INTERNO DESPROVIDO. HONORÁRIOS ADVOCATÍCIOS MAJORADOS EM DESFAVOR DA PARTE RECORRENTE, CASO AS INSTÂNCIAS DE ORIGEM OS TENHAM FIXADO, NOS TERMOS DO ARTIGO 85, § 11, DO CÓDIGO DE PROCESSO CIVIL, OBSERVADOS OS LIMITES DOS §§ 2º E 3º E A EVENTUAL CONCESSÃO DE JUSTIÇA GRATUITA.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "c4ba5de1bd669c4e267720d9",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T07:09:27.450Z",
+        "score": 7.6,
+        "alertId": "711d6a0c-c1c3-41d8-b1b6-695ee4d49dd3"
+      },
+      {
+        "title": "ARE 1601837 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISSQN. BASE DE CÁLCULO. PRETENSÃO DE EXCLUSÃO DOS VALORES RELATIVOS A TRIBUTOS FEDERAIS E AO PRÓPRIO IMPOSTO. APENAS LEI COMPLEMENTAR NACIONAL PODE DETERMINAR A EXCLUSÃO DE VALOR",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568915/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601837&classe=ARE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568915",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568915/false",
+        "inlineText": "Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISSQN. BASE DE CÁLCULO. PRETENSÃO DE EXCLUSÃO DOS VALORES RELATIVOS A TRIBUTOS FEDERAIS E AO PRÓPRIO IMPOSTO. APENAS LEI COMPLEMENTAR NACIONAL PODE DETERMINAR A EXCLUSÃO DE VALORES DA BASE DE CÁLCULO DO ISSQN. PRECEDENTES. MANIFESTA IMPROCEDÊNCIA. MANDADO DE SEGURANÇA. INAPLICABILIDADE DO ARTIGO 85, § 11, DO CÓDIGO DE PROCESSO CIVIL. AGRAVO INTERNO DESPROVIDO, COM IMPOSIÇÃO DE MULTA, EX VI ARTIGO 1.021, § 4º, DO CÓDIGO DE PROCESSO CIVIL, CASO SEJA UNÂNIME A VOTAÇÃO.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "2df8f61832c489eda73d8863",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T07:12:44.729Z",
+        "score": 7.2,
+        "alertId": "ac21c953-e335-4646-9b63-053ef4bb8fca"
+      },
+      {
+        "title": "RE 1393323 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . ICMS. SUBSTITUIÇÃO TRIBUTÁRIA. ALEGADA IMUNIDADE DO DESTINATÁRIO DAS MERCADORIAS. SUPOSTO SUPORTE MATERIAL EXCLUSIVO DE LIVROS ELETRÔNICOS. AUSÊNCIA DE COMPROVAÇÃO. ALEGAÇÃO DE VIOLAÇÃO DOS",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568916/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1393323&classe=RE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568916",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568916/false",
+        "inlineText": "Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . ICMS. SUBSTITUIÇÃO TRIBUTÁRIA. ALEGADA IMUNIDADE DO DESTINATÁRIO DAS MERCADORIAS. SUPOSTO SUPORTE MATERIAL EXCLUSIVO DE LIVROS ELETRÔNICOS. AUSÊNCIA DE COMPROVAÇÃO. ALEGAÇÃO DE VIOLAÇÃO DOS PRINCÍPIOS DO CONTRADITÓRIO, DA AMPLA DEFESA E DO DEVIDO PROCESSO LEGAL. AUSÊNCIA DE REPERCUSSÃO GERAL. FATOS E PROVAS. REEXAME. IMPOSSIBILIDADE. SÚMULA 279 DO SUPREMO TRIBUNAL FEDERAL. PRECEDENTES. HONORÁRIOS ADVOCATÍCIOS MAJORADOS AO MÁXIMO LEGAL EM DESFAVOR DA PARTE RECORRENTE, CASO AS INSTÂNCIAS DE ORIGEM OS TENHAM FIXADO, NOS TERMOS DO ARTIGO 85, § 11, DO CÓDIGO DE PROCESSO CIVIL, OBSERVADOS OS LIMITES DOS §§ 2º E 3º E A EVENTUAL CONCESSÃO DE JUSTIÇA GRATUITA. AGRAVO INTERNO DESPROVIDO.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "768736611234fbd0921d6588",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null
+      },
+      {
+        "title": "ARE 1575631 AgR — Ementa: Agravo regimental em recurso extraordinário com agravo. Direito Tributário . ICMS. Creditamento. Insumos. LC nº 87/96. Necessidade de reexame de fatos e provas e da legislação infraconstitucional de regência. Súmula 279/STF. Ofensa reflexa. I. Caso em ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568908/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1575631&classe=ARE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568908",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568908/false",
+        "inlineText": "Ementa: Agravo regimental em recurso extraordinário com agravo. Direito Tributário . ICMS. Creditamento. Insumos. LC nº 87/96. Necessidade de reexame de fatos e provas e da legislação infraconstitucional de regência. Súmula 279/STF. Ofensa reflexa. I. Caso em exame 1. Agravo regimental contra decisão que negou seguimento a recurso extraordinário com agravo, diante da incidência da Súmula 279 do STF e da ofensa reflexa ao texto constitucional. II. Questão em discussão 2. Saber se é possível superar os óbices apontados na decisão agravada. III. Razão de decidir 3. Hipótese em que, para dissentir do entendimento firmado pelo Tribunal de origem, seria necessário reexaminar os fatos e provas constantes dos autos e a legislação infraconstitucional pertinente, o que inviabiliza o processamento do apelo extremo, tendo em vista a vedação contida na Súmula 279 do STF e a ausência de ofensa direta à Constituição Federal. IV. Dispositivo 4. Agravo interno a que se nega provimento.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "2a076edb31dbc4a348c3e4aa",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null
+      },
+      {
+        "title": "Rcl 81575 ED — EMENTA: EMBARGOS DE DECLARAÇÃO NA RECLAMAÇÃO. CONVERSÃO EM AGRAVO REGIMENTAL. CONSTITUCIONAL. TRIBUTÁRIO . FUNDO ESTADUAL DE SEGURANÇA PÚBLICA. CUSTEIO COM CRÉDITOS DE ICMS OUTORGADOS ÀS CONCESSIONÁRIAS DE ENERGIA ELÉTRICA. DEDUÇÃO DA BASE DE CÁLCULO DO REPASS",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568904/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=81575&classe=Rcl",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568904",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568904/false",
+        "inlineText": "EMENTA: EMBARGOS DE DECLARAÇÃO NA RECLAMAÇÃO. CONVERSÃO EM AGRAVO REGIMENTAL. CONSTITUCIONAL. TRIBUTÁRIO . FUNDO ESTADUAL DE SEGURANÇA PÚBLICA. CUSTEIO COM CRÉDITOS DE ICMS OUTORGADOS ÀS CONCESSIONÁRIAS DE ENERGIA ELÉTRICA. DEDUÇÃO DA BASE DE CÁLCULO DO REPASSE AO FUNDO DE PARTICIPAÇÃO DOS MUNICÍPIOS. IMPOSSIBILIDADE. SUSCITADA APLICAÇÃO ERRÔNEA DO RECURSO EXTRAORDINÁRIO N. 705.423, TEMA 653: TERATOLOGIA COMPROVADA. CONTRARIEDADE AO DECIDIDO NO RECURSO EXTRAORDINÁRIO N. 572.762, TEMA 42. FIXAÇÃO DE PRAZO DE NOVENTA DIAS PARA A AUTORIDADE RECLAMADA DECIDIR COM OBSERVÂNCIA DA TESE FIXADA NO TEMA 42. AGRAVO REGIMENTAL PROVIDO PARA JULGAR PARCIALMENTE PROCEDENTE A RECLAMAÇÃO.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T07:00:51.374Z",
+        "id": "0dbdb195abcc12695a65dcbb",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null
+      },
+      {
         "title": "RE 1613206 ED — EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO ",
         "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1810370/false",
         "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613206&classe=RE",
@@ -5909,9 +6229,9 @@
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "f0a7da9ea42e82023222e190",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-20T06:19:19.745Z"
+        "analyzedAt": "2026-08-20T07:10:41.401Z"
       },
       {
         "title": "Nota Técnica 1/2013 - Orientação aos importadores/fabricantes de cervejas, em embalagem de lata",
@@ -9377,8 +9697,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:23:17.231Z",
         "id": "d66c52571f943d2cfe584bf1",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-20T07:10:40.072Z",
+        "score": 0,
+        "alertId": null
       },
       {
         "title": "Leitura do Jornal",
@@ -11437,6 +11760,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "b9b524b0-8a04-4f21-add9-d1d9b3a73c94",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T07:15:15.569Z",
+        "finishedAt": "2026-08-20T07:21:33.403Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "3e67e976-ea17-4745-ba9c-e0b978f1c92b",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T07:00:14.731Z",
+        "finishedAt": "2026-08-20T07:15:15.554Z",
+        "discovered": 7,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 1,
+        "errors": 8,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "23433ece-fcc4-4fd5-874c-18ab81ef0ac5",
         "trigger": "github-actions-history",
@@ -28151,7 +29006,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T06:32:08.469Z",
-    "nextRunAt": "2026-08-20T12:32:08.469Z"
+    "lastRunAt": "2026-08-20T07:21:33.403Z",
+    "nextRunAt": "2026-08-20T13:21:33.403Z"
   }
 }
