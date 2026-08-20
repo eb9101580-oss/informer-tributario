@@ -1,9 +1,88 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T20:27:13.002Z",
+    "lastUpdatedAt": "2026-08-20T21:05:08.300Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "REQ 4102/2026 — Requer a realização de Sessão Solene destinada a celebrar a realização, em Brasília, das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo ILA",
+      "theme": "Sessão Solene para celebração de Jornadas Latinoamericanas de Derecho Tributario",
+      "agency": "Câmara dos Deputados",
+      "taxes": [
+        "Imposto de Renda",
+        "ICMS",
+        "ISS",
+        "PIS/COFINS",
+        "IPI",
+        "CIDE"
+      ],
+      "status": "Em andamento",
+      "kind": "Requerimento de Sessão Solene",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-20T17:18",
+      "summary": "Requerimento de Sessão Solene apresentado pela Câmara dos Deputados para celebrar a realização das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo Instituto Latinoamericano de Derecho Tributario (ILADT). O requerimento foi apresentado por Aguinaldo Ribeiro (PP/PB) e Laura Carneiro (PSD) em 20/08/2026.",
+      "whatChanged": "A proposta requer a realização de Sessão Solene para celebrar a realização das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo ILADT, em Brasília. A proposta foi apresentada pela Mesa Diretora da Câmara dos Deputados em 20/08/2026.",
+      "practicalImpact": "A sessão solene pode ser utilizada para destacar a importância das jornadas tributárias latinoamericanas, promovendo maior visibilidade para instituições de tributação e políticas fiscais regionais. A iniciativa visa fortalecer a cooperação tributária entre países da América Latina.",
+      "officeAction": "A Câmara dos Deputados deve analisar o requerimento para a realização da sessão solene, com foco em celebrar a realização das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo ILADT.",
+      "affectedProfiles": [
+        "Profissionais de tributação",
+        "Instituições de pesquisa tributária",
+        "Governo federal",
+        "Organizações latinoamericanas",
+        "Cidadãos interessados em políticas fiscais"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 6,
+        "financialImpact": 3,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Requerimento de Sessão Solene para celebração das XXXIII Jornadas Latinoamericanas de Derecho Tributario",
+        "period": "2026-08-20 a 2026-08-31",
+        "action": "Organizar a sessão solene na Câmara dos Deputados para celebrar a realização das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo ILADT",
+        "confidence": "alto"
+      },
+      "id": "94e9aceb-2618-4f36-9ec4-35d2a08ae791",
+      "score": 6.3,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644301",
+      "isDemo": false,
+      "createdAt": "2026-08-20T20:43:20.500Z",
+      "updatedAt": "2026-08-20T20:43:20.500Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2644301",
+        "sourceCharacters": 3872,
+        "sourceId": "camara",
+        "sourceName": "Câmara dos Deputados",
+        "discoveredBy": "camara-api",
+        "sourceType": "official",
+        "documentKind": "Proposição legislativa",
+        "discoveredAt": "2026-08-20T20:24:39.404Z",
+        "fastTriage": {
+          "score": 61,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
     {
       "relevant": true,
       "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5028009-55.2024.4.03.6100 · Gab. 09 - DES. FED. ADRIANA PILEGGI — Direito tributário: E: JULIO CESAR GOULART LANES -…",
@@ -11579,43 +11658,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5024517-10.2025.4.04.7000 · 16ª Vara Federal de Curitiba — Direito tributário: EXECUÇÃO FISCAL Nº 5024517-10.2025.4.04.7000/PR EXECUTADO : IN LIFE FLORICULTURA…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5024517-10.2025.4.04.7000 · 16ª Vara Federal de Curitiba — Direito tributário: EXECUÇÃO FISCAL Nº 5024517-10.2025.4.04.7000/PR EXECUTADO : IN LIFE FLORICULTURA",
+      "theme": "Execução fiscal com exceção de pré-executividade",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "CDA (Certidão de Dívida Ativa)",
+        "Execução Fiscal",
+        "Dívida Tributária",
+        "Juros e correção monetária"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. EXECUÇÃO FISCAL Nº 5024517-10.2025.4.04.7000/PR EXECUTADO : IN LIFE FLORICULTURA LTDA ADVOGADO(A) : FERNANDA ALVES ANDRADE GUARIDO (OAB PR061524) DESPACHO/DECISÃO 1.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O desempate judicial confirma que a exceção de pré-executividade não suspende a execução fiscal, mantendo o prazo prescricional tributário de 5 anos após o decurso de 1 ano de suspensão. A decisão rejeita a exceção da executada, afirmando que a certidão de dívida ativa está em termos e que o processo administrativo fiscal é acessível à executada.",
+      "whatChanged": "A decisão do STJ e TRF4 estabelece que a exceção de pré-executividade não suspende a execução fiscal, mantendo o prazo prescricional tributário de 5 anos após o decurso de 1 ano de suspensão. O processo administrativo fiscal é documento público acessível à executada, sem necessidade de requisição judicial.",
+      "practicalImpact": "A executada não pode suspender a execução fiscal com exceção de pré-executividade, o que mantém o prazo prescricional tributário de 5 anos após o decurso de 1 ano de suspensão. O processo administrativo fiscal é acessível à executada sem necessidade de requisição judicial.",
+      "officeAction": "A executada deve apresentar o valor atualizado do débito e requeer o que entender pertinente para prosseguimento do feito em até 60 dias, conforme Portaria PGFN nº 396/2016.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com execução fiscal",
+        "Executados em processos de execução fiscal",
+        "Fazendários",
+        "Advogados de tributação",
+        "Instituições de crédito"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade de ação para executados com exceção de pré-executividade",
+        "period": "60 dias",
+        "action": "Apresentar o valor atualizado do débito e requeer o que entender pertinente para prosseguimento do feito",
+        "confidence": "alto"
+      },
       "id": "7a106681-f63b-4dd8-a73f-70a579de79f3",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmEZnLS4Q7flTlPJ74RqrnD41/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.233Z",
-      "updatedAt": "2026-08-20T17:16:50.233Z",
+      "updatedAt": "2026-08-20T20:57:11.437Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmEZnLS4Q7flTlPJ74RqrnD41/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf4",
@@ -11642,43 +11736,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5000991-89.2022.4.04.7009 · SECRETARIA DE RECURSOS AOS TRIBUNAIS SUPERIORES — Direito tributário: Paulo Sérgio Domingues, Primeira Turma, julgado em 12/6/2023,…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5000991-89.2022.4.04.7009 · SECRETARIA DE RECURSOS AOS TRIBUNAIS SUPERIORES — Direito tributário: Paulo Sérgio Domingues, Primeira Turma, julgado em 12/6/2023, 2",
+      "theme": "Tributário. Processual Civil. Agravo Interno no Recurso Especial. Aplicabilidade",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "Código de Processo Civil de 20",
+        "Art. 1.022 CPC/2015",
+        "Art. 1.021, § 4º CPC/2015",
+        "Súmula 282 STF",
+        "Súmula 7 STJ"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJE",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. Apelação/Remessa Necessária Nº 5000991-89.2022.4.04.7009/PRPROCESSO ORIGINÁRIO: Nº 5000991-89.2022.4.04.7009/PR APELADO : GERSON HENRIQUE DOS SANTOS (AUTOR) ADVOGADO(A) : Manoel Pedro Ribas de Lima (OAB PR044357) DESPACHO/DECISÃO O autor apresentou petição para requerer a certificação de trânsito em julgado parcial da decisão proferida nos autos, no tocante ao capítulo que julgou procedente o pedido principal,…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despocho estabelece que o trânsito em julgado parcial não é possível devido à unicidade e indivisibilidade da ação, rejeitando a certificação do trânsito em julgado parcial para capítulos da sentença. A decisão afirma que a coisa julgada por capítulos não impõe certificação automática, evitando fracionamento da sentença e garantindo a execução provisória sem risco de prejuízo.",
+      "whatChanged": "A decisão do STJ rejeita a possibilidade de trânsito em julgados parciais para capítulos da sentença, mantendo a unicidade e indivisibilidade da ação. Isso impede a certificação do trânsito em julgado parcial, evitando fracionamento da sentença e garantindo a execução provisória sem risco de prejuízo.",
+      "practicalImpact": "Empresas e órgãos públicos devem evitar a tentativa de certificação de trânsito em julgado parcial para capítulos da sentença, pois isso não é possível sob o regime recursal do CPC/2015. A execução provisória pode ser realizada diretamente na primeira instância sem necessidade de certificação.",
+      "officeAction": "A decisão do STJ (AgInt no REsp n. 2.047.523/PR) rejeita a possibilidade de trânsito em julgado parcial, mantendo a unicidade e indivisibilidade da ação. A execução provisória pode ser realizada sem certificação de trânsito em julgado parcial, seguindo o art. 516, II, CPC.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com processos judiciais",
+        "Órgãos públicos",
+        "Advogados especializados em tributário",
+        "Juízos de primeira instância",
+        "Tribunais de apelação"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para evitar fracionamento da sentença",
+        "period": "2023-06-22 a 2024-06-22",
+        "action": "Certificação de trânsito em julgado parcial para capítulos da sentença é impossível sob o CPC/2015. A execução provisória deve ser realizada diretamente na primeira instância sem certificação.",
+        "confidence": "alto"
+      },
       "id": "b4c1fe9a-8aff-4548-bf9e-fd51149b6175",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.9,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz36PBSdqLi3Tgy2onYmDByKE/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.234Z",
-      "updatedAt": "2026-08-20T17:16:50.234Z",
+      "updatedAt": "2026-08-20T21:05:08.258Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz36PBSdqLi3Tgy2onYmDByKE/certidao",
         "sourceCharacters": 13126,
         "sourceId": "trf4",
@@ -15471,43 +15580,58 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5034042-50.2024.4.04.7000 · 16ª Vara Federal de Curitiba — Direito tributário: EXECUÇÃO FISCAL Nº 5034042-50.2024.4.04.7000/PR EXECUTADO : CONSTRUMAQ LTDA…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5034042-50.2024.4.04.7000 · 16ª Vara Federal de Curitiba — Direito tributário: EXECUÇÃO FISCAL Nº 5034042-50.2024.4.04.7000/PR EXECUTADO : CONSTRUMAQ LTDA",
+      "theme": "Execução Fiscal e Exceção de Pré-executividade",
       "agency": "Tribunal Regional Federal da 4ª Região",
-      "taxes": [],
+      "taxes": [
+        "CDA (Certidão de Dívida Ativa)",
+        "Execução Fiscal",
+        "Juros de Mora",
+        "Prescrição Tributária",
+        "Lei nº 6.830/80 (LEF)"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 4ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-20. EXECUÇÃO FISCAL Nº 5034042-50.2024.4.04.7000/PR EXECUTADO : CONSTRUMAQ LTDA ADVOGADO(A) : CARLOS JOSE DAL PIVA (OAB PR020693) DESPACHO/DECISÃO 1.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A executada apresentou exceção de pré-executividade, afirmando que efetuou parcelamento do débito. O tribunal indeferiu a intimação da exequente para apresentar processos administrativos, reconhecendo que a exceção não suspende a execução fiscal nem o prazo para embargos. A decisão afirma que a CDA com indicação de dispositivos legais revogados não é nula, desde que não cause prejuízo à defesa do contribuinte.",
+      "whatChanged": "A decisão reforça que a exceção de pré-executividade não suspende a execução fiscal nem o prazo para embargos à execução. A CDA com dispositivos legais revogados não é considerada nula se não causar prejuízo à defesa do contribuinte, conforme jurisprudência do STJ e TRF4.",
+      "practicalImpact": "Contribuintes podem manter a execução fiscal sem suspensão por exceção de pré-executividade. A CDA com dispositivos legais revogados não é nula se não comprometer a defesa do contribuinte, evitando reprocessos.",
+      "officeAction": "A executada deve comprovar efetivo parcelamento do débito para suspensão da execução. A exequente não pode requerer processos administrativos sem comprovação de negativa da administração.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com execução fiscal",
+        "Exequentes",
+        "Advogados de tributário",
+        "Tribunais de Justiça",
+        "Receita Federal"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para contribuintes com exceção de pré-executividade",
+        "period": "2025-04-11 a 2025-04-30",
+        "action": "Comprovar efetivo parcelamento do débito para suspensão da execução fiscal. Evitar reprocessos com CDA com dispositivos legais revogados.",
+        "confidence": "alto"
+      },
       "id": "72104401-f573-4713-b1e9-f0c014dc0d1d",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm7YEaSelWsaTpdayvY3revpE/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:10:19.164Z",
-      "updatedAt": "2026-08-20T17:10:19.164Z",
+      "updatedAt": "2026-08-20T20:50:19.734Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm7YEaSelWsaTpdayvY3revpE/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf4",
@@ -36947,8 +37071,8 @@
         "discoveryMethod": "camara-api",
         "discoveredAt": "2026-08-20T20:24:39.404Z",
         "id": "a732ddad4cdaf7656a5dd173",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 61,
@@ -36960,7 +37084,15 @@
             "assunto-tributario"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-20T20:43:20.541Z",
+        "analyzedPublishedAt": "2026-08-20T00:00:00Z",
+        "relevant": true,
+        "score": 6.3,
+        "discardReason": null,
+        "alertId": "94e9aceb-2618-4f36-9ec4-35d2a08ae791",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Institucional Operação Zero KM identifica pedidos de ressarcimento e compensação relacionados a créditos de PIS/Cofins em concessionárias 20/08/2026 - Fiscalização da Receita Federal analisou pedidos de ressarcimento e compensação em diferentes estados e identificou créditos considerados incompatíve",
@@ -40426,7 +40558,7 @@
         "discoveredAt": "2026-08-20T16:51:16.571Z",
         "id": "62671d77386866d67bd90a89",
         "status": "fast-published",
-        "attempts": 4,
+        "attempts": 5,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -40443,7 +40575,7 @@
         "alertId": "28d3b464-58e9-43a8-a96e-a5412fc2ab3c",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-08-20T19:54:05.938Z"
+        "analyzedAt": "2026-08-20T20:39:09.150Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5129169-77.2023.4.02.5101 · 4ª Turma Recursal do Rio de Janeiro — Direito tributário: RECURSO CÍVEL Nº 5129169-77.2023.4.02.5101/RJ RECORRIDO : FRANCISCO DIOGO MARCELINO (AUTOR) ADVOGADO(A) : WALTER BOMBIERE PIRES (OAB RJ074125) ADVOGADO(A) : AMANDA FIGUEIREDO PINTO DE OLIVEIRA (OAB RJ207257) DESPACHO/DECISÃO RELATÓRIO Trata-se de recurso interposto cont",
@@ -41102,8 +41234,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "e2a0f643d09d47ab37c526b4",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -41119,7 +41251,14 @@
         },
         "alertId": "72104401-f573-4713-b1e9-f0c014dc0d1d",
         "fastPublishedAt": "2026-08-20T17:10:19.164Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T20:50:19.772Z",
+        "analyzedPublishedAt": "2025-04-11T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5024517-10.2025.4.04.7000 · 16ª Vara Federal de Curitiba — Direito tributário: EXECUÇÃO FISCAL Nº 5024517-10.2025.4.04.7000/PR EXECUTADO : IN LIFE FLORICULTURA LTDA ADVOGADO(A) : FERNANDA ALVES ANDRADE GUARIDO (OAB PR061524) DESPACHO/DECISÃO 1. A executada apresentou exceçã",
@@ -41139,8 +41278,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "f55389de5f3cdd58ba5c4ff6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -41156,7 +41295,14 @@
         },
         "alertId": "7a106681-f63b-4dd8-a73f-70a579de79f3",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T20:57:11.476Z",
+        "analyzedPublishedAt": "2025-04-11T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5000991-89.2022.4.04.7009 · SECRETARIA DE RECURSOS AOS TRIBUNAIS SUPERIORES — Direito tributário: Paulo Sérgio Domingues, Primeira Turma, julgado em 12/6/2023, DJe de 22/6/2023 - grifei) TRIBUTÁRIO. PROCESSUAL CIVIL. AGRAVO INTERNO NO RECURSO ESPECIAL. CÓDIGO DE PROCESSO CIVIL DE 2015. APLICABILIDADE. FRACIONAMENTO DA SENTENÇA. OBTENÇÃO DE CERTIDÃO DE TRÂNSITO EM JULGADO PA",
@@ -41176,8 +41322,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:51:31.558Z",
         "id": "20d507bdef28f04d760fdef2",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -41193,7 +41339,14 @@
         },
         "alertId": "b4c1fe9a-8aff-4548-bf9e-fd51149b6175",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T21:05:08.300Z",
+        "analyzedPublishedAt": "2023-06-22T00:00:00Z",
+        "relevant": true,
+        "score": 7.9,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5000645-02.2026.4.04.7009 · 22ª Vara Federal de Curitiba — Direito tributário: Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5000645-02.2026.4.04.7009/PR REQUERENTE : JAIRO DA LUZ SELIGER ADVOGADO(A) : TAYNA FERNANDA SIMAO (OAB PR116790) ADVOGADO(A) : ROBERTO CARLOS HAUAGGE (OAB PR074297) ADVOGADO(A) : LUANA MIRELLY PEREIRA DE ALMEIDA (O",
@@ -65559,6 +65712,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "83e4e28f-60eb-4c0b-9688-c88a202a9b6a",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T20:29:07.962Z",
+        "finishedAt": "2026-08-20T21:05:08.350Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "4fa829ce-c9b0-4bab-8a42-2573a1a50f11",
         "trigger": "github-actions-history",
@@ -92130,238 +92296,9 @@
             "found": 2
           }
         ]
-      },
-      {
-        "id": "57a8ccb8-98e3-4d63-8af8-c89d3bf6d944",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T16:08:24.289Z",
-        "finishedAt": "2026-08-19T16:09:35.603Z",
-        "discovered": 17,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T20:27:13.036Z",
-    "nextRunAt": "2026-08-21T02:27:13.036Z"
+    "lastRunAt": "2026-08-20T21:05:08.350Z",
+    "nextRunAt": "2026-08-21T03:05:08.350Z"
   }
 }
