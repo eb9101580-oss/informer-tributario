@@ -5,13 +5,14 @@ import { packCandidateText } from './candidateText.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
-  'icms', 'iss', 'ipi', 'pis', 'cofins', 'irpj', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof',
+  'icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm',
   'execucao fiscal', 'divida ativa', 'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal',
-  'solucao de consulta', 'solucao de divergencia', 'instrucao normativa', 'nota tecnica', 'nota fiscal eletronica', 'informativo', 'parecer', 'sped',
-  'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
+  'imposto de importacao', 'imposto de exportacao', 'tributacao na importacao', 'tributacao na exportacao', 'regime aduaneiro', 'despacho aduaneiro', 'aduaneir',
+  'imunidade tributaria', 'isencao tributaria', 'isencao fiscal', 'repeticao de indebito', 'taxa tributaria', 'taxa de fiscalizacao', 'taxa selic', 'emprestimo compulsorio',
+  'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
+  'fato gerador', 'auto de infracao', 'processo administrativo fiscal', 'lancamento fiscal', 'contencioso fiscal',
 ];
-const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'cofins', 'irpj', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof']);
-const TRF_TAX_PATTERN = /tribut|imposto|icms|\biss\b|\bipi\b|\bpis\b|cofins|irpj|csll|contribui[cç][aã]o social|execu[cç][aã]o fiscal|d[ií]vida ativa|contencioso fiscal|receita federal|fazenda nacional/i;
+const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm']);
 
 export function normalizeSearchText(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -36,7 +37,7 @@ export function isCandidateEligible(sourceId, title, url) {
   if (/^trf[1-6]$/.test(sourceId)) {
     const navigationPath = /\/(?:acessibilidade|contato|institucional|magistrado|servicos?|sistemas?)(?:\/|$)/i;
     if (navigationPath.test(new URL(url).pathname)) return false;
-    return TRF_TAX_PATTERN.test(`${title} ${url}`);
+    return isTaxRelated(title, url);
   }
   if (sourceId === 'confaz-ajustes') return /\/ajustes\/\d{4}\/[^/]+/i.test(url) && /ajuste|sinief|ato cotepe|conv[eê]nio|documento fiscal|leiaute/i.test(title);
   if (sourceId === 'diario-oficial') return /portaria|lei|decreto|instru[cç][aã]o normativa|ato declarat[oó]rio|despacho|conv[eê]nio|tribut|imposto|contribui/i.test(`${title} ${url}`);
@@ -66,8 +67,17 @@ export function isCandidateEligible(sourceId, title, url) {
     const isNormasLink = /normas(?:internet2)?\.receita\.fazenda\.gov\.br/i.test(url) && /consulta\/externa|link\.action/i.test(url);
     if (!isNormasLink) return false;
     if (sourceId === 'receita-cosit') return /cosit|solucao de consulta|solucao de divergencia/.test(sourceText);
-    if (sourceId === 'receita-in') return /instrucao normativa|ato declaratorio/.test(sourceText);
-    return /nota|parecer/.test(sourceText);
+    if (sourceId === 'receita-in') {
+      // O tipo do ato aparece no início do resultado. Procurá-lo na ementa
+      // inteira faria uma simples habilitação virar "Instrução Normativa"
+      // apenas porque ela cita uma IN como fundamento.
+      if (/^(?:instrucao normativa|ato declaratorio interpretativo|portaria conjunta|ato conjunto|resolucao|decreto|lei)\b/.test(sourceText)) return true;
+      const hasNormativeEffect = /altera|aprova (?:manual|leiaute|layout|norma)|disciplina|dispoe sobre|estabelece|fixa|institui|prorroga|regulamenta|revoga|suspende/.test(sourceText);
+      const individualAct = /certifica|habilita (?:a |uma )?empresa|declara (?:a )?empresa habilitada|inscricao no registro|concede (?:a |para )|fornecimento de selos/.test(sourceText);
+      return /ato declaratorio executivo|\bportaria\b/.test(sourceText)
+        && hasStrongTaxSignal(sourceText) && hasNormativeEffect && !individualAct;
+    }
+    return /nota|parecer/.test(sourceText) && hasStrongTaxSignal(sourceText);
   }
   if (sourceId === 'nfe-notas-tecnicas') return /nota|t[eé�]cnica/i.test(title) || /exibirArquivo/i.test(url);
   if (sourceId === 'sped-notas-tecnicas') return /nota|t[eé�]cnica|sped/i.test(title) && isTaxRelated(title);
@@ -86,16 +96,164 @@ function cleanUrl(rawUrl) {
   return url.toString();
 }
 
-function enrichReceitaNormasCandidate(item) {
+export function enrichReceitaNormasCandidate(item) {
   const url = cleanUrl(item.url);
   const match = url.match(/normasinternet2\.receita\.fazenda\.gov\.br\/#\/consulta\/externa\/(\d+)/i);
   if (!match) return { ...item, url };
+  const actId = match[1];
   return {
     ...item,
-    url,
-    collectionUrl: `https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/${match[1]}/visao/original`,
+    url: `https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/${actId}`,
+    collectionUrl: `https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/${actId}/visao/original`,
     documentKind: 'Ato normativo da Receita Federal',
+    externalId: actId,
+    fingerprintKey: `receita-normas:${actId}`,
   };
+}
+
+const RECEITA_NORMATIVE_TYPES = ['42', '79', '7', '9', '10', '11', '57', '81', '67', '100', '102', '59', '61', '76', '77'];
+const CARF_SOLR_URL = 'https://acordaos.economia.gov.br/solr/acordaos2/select';
+const CARF_PDF_URL = 'https://acordaos.economia.gov.br/acordaos2/pdfs/processados';
+
+function previousDateKey(dateKey, days = 1) {
+  const timestamp = Date.parse(`${dateKey}T12:00:00Z`);
+  return new Date(timestamp - days * 86400000).toISOString().slice(0, 10);
+}
+
+function formattedBrazilianDate(dateKey) {
+  return dateKey.split('-').reverse().join('/');
+}
+
+export function structuredDateRange(targetDate = null, now = new Date()) {
+  const endDate = targetDate || publicationDateKey(now);
+  if (!endDate) throw new Error('Não foi possível determinar a data da consulta estruturada.');
+  return { startDate: targetDate ? endDate : previousDateKey(endDate), endDate };
+}
+
+export function receitaNormasQueryUrl(sourceId, targetDate = null, now = new Date()) {
+  const { startDate, endDate } = structuredDateRange(targetDate, now);
+  const params = new URLSearchParams({
+    tipoData: '2',
+    dt_inicio: formattedBrazilianDate(startDate),
+    dt_fim: formattedBrazilianDate(endDate),
+    ordemColuna: 'Publicacao',
+    ordemDirecao: 'DESC',
+  });
+  if (sourceId === 'receita-cosit') {
+    params.set('tiposAtosSelecionados', '72;73');
+    params.set('siglaOrgaoFacet', 'Cosit');
+  } else if (sourceId === 'receita-in') {
+    params.set('tiposAtosSelecionados', RECEITA_NORMATIVE_TYPES.join(';'));
+  }
+  return `https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action?${params}`;
+}
+
+function receitaDocumentKind(sourceId) {
+  if (sourceId === 'receita-cosit') return 'Solução de Consulta ou Divergência COSIT';
+  if (sourceId === 'receita-in') return 'Instrução Normativa ou ato da Receita Federal';
+  return 'Nota ou parecer normativo da Receita Federal';
+}
+
+export function mapReceitaNormasLinks(links, source, dateRange) {
+  return links
+    .filter((item) => isCandidateEligible(source.id, item.title, item.url))
+    .filter((item) => {
+      const publishedAt = publicationDateKey(item.publishedAt);
+      return publishedAt && publishedAt >= dateRange.startDate && publishedAt <= dateRange.endDate;
+    })
+    .map((item) => ({
+      ...enrichReceitaNormasCandidate(item),
+      documentKind: receitaDocumentKind(source.id),
+      sections: item.sections || source.sections || sectionIdsForSource(source.id),
+    }));
+}
+
+async function discoverReceitaNormas(source, targetDate = null) {
+  const dateRange = structuredDateRange(targetDate);
+  const result = await discoverOfficialLinks(receitaNormasQueryUrl(source.id, targetDate));
+  return mapReceitaNormasLinks(result.links || [], source, dateRange);
+}
+
+export function carfSolrQueryUrl(targetDate = null, now = new Date(), rows = 200) {
+  const { startDate, endDate } = structuredDateRange(targetDate, now);
+  const params = new URLSearchParams({
+    q: '*:*',
+    fq: `dt_publicacao_tdt:[${startDate}T00:00:00Z TO ${endDate}T23:59:59Z]`,
+    sort: 'dt_publicacao_tdt desc,id desc',
+    rows: String(Math.min(200, Math.max(1, Number(rows) || 200))),
+    wt: 'json',
+    fl: 'id,dt_publicacao_tdt,dt_sessao_tdt,dt_index_tdt,materia_s,ementa_s,decisao_txt,numero_processo_s,numero_decisao_s,nome_relator_s,turma_s,camara_s,secao_s,nome_arquivo_pdf_s',
+  });
+  return `${CARF_SOLR_URL}?${params}`;
+}
+
+function joinedCarfValue(value) {
+  return (Array.isArray(value) ? value : [value]).filter(Boolean).join('\n').replace(/\s+/g, ' ').trim();
+}
+
+function validCarfPublicationDate(value, now = new Date()) {
+  const dateKey = publicationDateKey(value);
+  if (!dateKey) return '';
+  const parsed = new Date(`${dateKey}T12:00:00Z`);
+  if (Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== dateKey) return '';
+  const year = Number(dateKey.slice(0, 4));
+  const currentYear = Number(publicationDateKey(now)?.slice(0, 4));
+  return year >= 2000 && year <= currentYear + 1 ? dateKey : '';
+}
+
+function validCarfPdfFilename(value) {
+  const filename = joinedCarfValue(value);
+  return /^[a-z0-9_.-]+\.pdf$/i.test(filename) && !filename.includes('..') ? filename : '';
+}
+
+export function mapCarfDecisions(payload, dateRange = {}, now = new Date()) {
+  const docs = Array.isArray(payload) ? payload : payload?.response?.docs || [];
+  const seen = new Set();
+  return docs.flatMap((item) => {
+    const publishedAt = validCarfPublicationDate(item.dt_publicacao_tdt, now);
+    const filename = validCarfPdfFilename(item.nome_arquivo_pdf_s);
+    if (!publishedAt || !filename
+      || (dateRange.startDate && publishedAt < dateRange.startDate)
+      || (dateRange.endDate && publishedAt > dateRange.endDate)) return [];
+    const decisionNumber = joinedCarfValue(item.numero_decisao_s);
+    const processNumber = joinedCarfValue(item.numero_processo_s);
+    const externalId = joinedCarfValue(item.id) || [decisionNumber, processNumber].filter(Boolean).join(':');
+    if (!externalId || seen.has(externalId)) return [];
+    seen.add(externalId);
+    const summary = joinedCarfValue(item.ementa_s);
+    const decision = joinedCarfValue(item.decisao_txt);
+    const matter = joinedCarfValue(item.materia_s) || summary.split(/\n|\.(?:\s|$)/)[0];
+    const title = [
+      `Acórdão CARF ${decisionNumber || externalId}`,
+      processNumber ? `Processo ${processNumber}` : '',
+      matter,
+    ].filter(Boolean).join(' · ').slice(0, 500);
+    const officialText = [
+      title,
+      joinedCarfValue(item.secao_s),
+      joinedCarfValue(item.camara_s),
+      joinedCarfValue(item.turma_s),
+      joinedCarfValue(item.nome_relator_s) ? `Relator: ${joinedCarfValue(item.nome_relator_s)}` : '',
+      summary ? `Ementa: ${summary}` : '',
+      decision ? `Decisão: ${decision}` : '',
+    ].filter(Boolean).join('\n\n');
+    return [{
+      title,
+      url: `${CARF_PDF_URL}/${encodeURIComponent(filename)}`,
+      publishedAt,
+      documentKind: 'Acórdão do CARF',
+      externalId,
+      fingerprintKey: `carf:${externalId}`,
+      ...packCandidateText(officialText),
+      inlineParser: 'Índice público oficial do CARF',
+    }];
+  });
+}
+
+async function discoverCarf(_source, targetDate = null) {
+  const dateRange = structuredDateRange(targetDate);
+  const payload = await fetchJson(carfSolrQueryUrl(targetDate), { Accept: 'application/json' });
+  return mapCarfDecisions(payload, dateRange);
 }
 
 async function fetchJson(url, headers = {}) {
@@ -259,13 +417,27 @@ export function mapDjenDecisions(payload, source, targetDate) {
 async function discoverDjen(source, targetDate = null) {
   const publicationDate = targetDate || publicationDateKey(new Date());
   const payload = await discoverDjenCaderno(source.acronym, publicationDate);
-  return mapDjenDecisions(payload, source, publicationDate);
+  const items = mapDjenDecisions(payload, source, publicationDate);
+  if (payload.telemetry) Object.defineProperty(items, 'discoveryTelemetry', { value: payload.telemetry, enumerable: false });
+  return items;
 }
 
 async function discoverTrf(source, targetDate = null) {
-  const decisions = await discoverDjen(source, targetDate);
-  const news = await discoverLinks(source).catch(() => []);
-  return [...decisions, ...news];
+  const [decisions, news] = await Promise.allSettled([
+    discoverDjen(source, targetDate),
+    discoverLinks(source),
+  ]);
+  if (decisions.status === 'rejected' && news.status === 'rejected') {
+    throw new AggregateError([decisions.reason, news.reason], `As consultas de decisões e notícias do ${source.acronym} falharam.`);
+  }
+  const items = [
+    ...(decisions.status === 'fulfilled' ? decisions.value : []),
+    ...(news.status === 'fulfilled' ? news.value : []),
+  ];
+  if (decisions.status === 'fulfilled' && decisions.value.discoveryTelemetry) {
+    Object.defineProperty(items, 'discoveryTelemetry', { value: decisions.value.discoveryTelemetry, enumerable: false });
+  }
+  return items;
 }
 
 async function discoverStf(source, lookbackDays, targetDate = null) {
@@ -346,7 +518,7 @@ async function discoverConfaz(source, targetDate = null) {
 }
 
 export function sourceDateCoverage(source) {
-  if (source.adapter === 'stj-open-data' || source.adapter === 'camara-api') return 'exact';
+  if (['stj-open-data', 'camara-api', 'receita-normas', 'carf-solr'].includes(source.adapter)) return 'exact';
   if (source.adapter === 'senado-api') return 'date-filtered';
   if (source.adapter === 'stf-jurisprudence' || source.adapter === 'trf-djen') return 'mixed';
   return 'current-index';
@@ -358,12 +530,16 @@ export async function discoverSourceCandidates(source, lookbackDays = 7, { targe
   else if (source.adapter === 'camara-api') items = await discoverCamara(source, lookbackDays, targetDate);
   else if (source.adapter === 'senado-api') items = await discoverSenado(source, lookbackDays, targetDate);
   else if (source.adapter === 'stj-open-data') items = await discoverStj(source, lookbackDays, targetDate);
+  else if (source.adapter === 'receita-normas') items = await discoverReceitaNormas(source, targetDate);
+  else if (source.adapter === 'carf-solr') items = await discoverCarf(source, targetDate);
   else if (source.adapter === 'stf-jurisprudence') items = await discoverStf(source, lookbackDays, targetDate);
   else if (source.adapter === 'trf-djen') items = await discoverTrf(source, targetDate);
   else if (source.adapter === 'rss') items = await discoverRss(source);
   else items = await discoverLinks(source);
   const datedItems = targetDate ? items.filter((item) => publicationDateKey(item.publishedAt) === targetDate) : items;
-  return datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  const normalizedItems = datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  if (items.discoveryTelemetry) Object.defineProperty(normalizedItems, 'discoveryTelemetry', { value: items.discoveryTelemetry, enumerable: false });
+  return normalizedItems;
 }
 
 export const taxTerms = TAX_TERMS;

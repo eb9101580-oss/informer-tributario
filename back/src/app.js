@@ -12,6 +12,7 @@ import { monitorRouter } from './routes/monitor.js';
 import { subscriptionsRouter } from './routes/subscriptions.js';
 import { actionsRouter } from './routes/actions.js';
 import { sectionsRouter } from './routes/sections.js';
+import { djenRouter } from './routes/djen.js';
 
 export const app = express();
 
@@ -29,6 +30,7 @@ app.use('/api', (request, response, next) => {
 });
 
 app.get('/api/health', (_request, response) => response.json({ status: 'ok', service: 'Informer API' }));
+app.use('/api/djen', djenRouter);
 app.use('/api/alerts', alertsRouter);
 app.use('/api/dashboard', dashboardRouter);
 app.use('/api/feedback', feedbackRouter);

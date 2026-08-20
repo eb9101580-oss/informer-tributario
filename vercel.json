@@ -4,6 +4,7 @@
   "installCommand": "npm run install:all",
   "buildCommand": "npm run build",
   "outputDirectory": "front/dist",
+  "regions": ["gru1"],
   "functions": {
     "api/index.js": {
       "maxDuration": 60

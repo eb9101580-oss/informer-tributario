@@ -58,10 +58,11 @@ function makeAlert(analysis, document, candidate) {
     publishedAt: candidate.publishedAt || document.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: now, updatedAt: now,
     provenance: {
-      collector: hasCandidateText(candidate) ? (candidate.inlineParser || 'Consulta oficial estruturada') : 'Scrapling', analyzer: `Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
+      collector: hasCandidateText(candidate) ? (candidate.inlineParser || 'Consulta oficial estruturada') : 'Scrapling', analyzer: `Triagem rápida/regras + Ollama/${config.ollamaModel}`, collectorUrl: candidate.collectionUrl || candidate.url, sourceCharacters: document.characters,
       sourceId: candidate.sourceId, sourceName: candidate.sourceName, discoveredBy: candidate.discoveryMethod,
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
+      fastTriage: candidate.fastTriage || fastTriageCandidate(candidate),
     },
     sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
   };
@@ -73,7 +74,8 @@ function candidateSections(candidate) {
 
 function operationalUpdateRank(candidate) {
   const text = `${candidate.title || ''} ${candidate.documentKind || ''}`;
-  return /instru[cç][aã]o normativa|portaria|solu[cç][aã]o de (consulta|diverg[eê]ncia)|nota t[eé]cnica|ajuste sinief|manual|leiaute|layout|resolu[cç][aã]o|decreto|lei|altera[cç][aã]o/i.test(text) ? 0 : 1;
+  if (/inteiro teor|ac[oó]rd[aã]o|decis[aã]o|senten[cç]a/i.test(candidate.documentKind || '')) return 1;
+  return /instru[cç][aã]o normativa|portaria|solu[cç][aã]o de (consulta|diverg[eê]ncia)|nota t[eé]cnica|ajuste sinief|manual|leiaute|layout|resolu[cç][aã]o|decreto|\blei\b|altera[cç][aã]o/i.test(text) ? 0 : 1;
 }
 
 function sourceTypeRank(candidate) {
@@ -90,6 +92,37 @@ function sectionRank(candidate) {
   if (sections.includes('reforma')) return 0;
   if (sections.includes('obrigacoes')) return 1;
   return 2;
+}
+
+const MERIT_PATTERN = /ac[oó]rd[aã]o|senten[cç]a|m[eé]rito|tese|repercuss[aã]o geral|repetitivo|incid[eê]ncia|n[aã]o incid[eê]ncia|inconstitucional|constitucional|provimento|improvimento|restitui[cç][aã]o|compensa[cç][aã]o|imunidade|isen[cç][aã]o|cr[eé]dito/i;
+const PROCEDURAL_PATTERN = /intima[cç][aã]o|publica[cç][aã]o|disponibiliza[cç][aã]o|juntada|peti[cç][aã]o|vista|recebimento|conclus[aã]o|despacho|ci[eê]ncia|prazo|distribui[cç][aã]o/i;
+const STRUCTURED_ADAPTERS = new Set(['stj-open-data', 'stf-jurisprudence', 'trf-djen', 'receita-normas', 'carf-solr', 'camara-api', 'senado-api']);
+const OPERATIONAL_SOURCES = new Set(['receita-cosit', 'receita-in', 'receita-notas', 'diario-oficial', 'confaz-ajustes', 'nfe-notas-tecnicas', 'sped-notas-tecnicas']);
+
+// Primeira etapa do funil: pontuação barata, baseada somente em metadados e
+// sinais explícitos. Ela examina toda a fila em milissegundos; o Ollama fica
+// reservado para a análise jurídica detalhada dos candidatos mais promissores.
+export function fastTriageCandidate(candidate) {
+  const text = `${candidate.title || ''} ${candidate.documentKind || ''}`;
+  const signals = [];
+  let score = 0;
+  if (publicationDateKey(candidate.publishedAt)) { score += 20; signals.push('data-confirmada'); }
+  if ((candidate.sourceType || 'official') === 'official') { score += 12; signals.push('fonte-oficial'); }
+  if (STRUCTURED_ADAPTERS.has(candidate.discoveryMethod)) { score += 14; signals.push('coleta-estruturada'); }
+  if (hasStrongTaxSignal(text)) { score += 20; signals.push('assunto-tributario-forte'); }
+  else if (isTaxRelated(text)) { score += 9; signals.push('assunto-tributario'); }
+  if (operationalUpdateRank(candidate) === 0 || OPERATIONAL_SOURCES.has(candidate.sourceId)) { score += 18; signals.push('efeito-operacional'); }
+  const hasMerit = MERIT_PATTERN.test(text);
+  if (hasMerit) { score += 16; signals.push('conteudo-de-merito'); }
+  if (PROCEDURAL_PATTERN.test(text) && !hasMerit) { score -= 18; signals.push('possivel-ato-processual'); }
+  if (candidate.sections?.includes('reforma') || candidate.sections?.includes('obrigacoes')) score += 6;
+  const boundedScore = Math.max(0, Math.min(100, score));
+  return {
+    score: boundedScore,
+    band: boundedScore >= 70 ? 'alta' : boundedScore >= 45 ? 'media' : 'baixa',
+    signals,
+    engine: 'regras-tributarias-v1',
+  };
 }
 
 async function mapWithConcurrency(items, concurrency, mapper) {
@@ -146,7 +179,7 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const source = monitoredSources[index];
       if (result.status === 'fulfilled') {
         found.push(...result.value.items);
-        run.sources.push({ id: source.id, acronym: source.acronym, status: 'ok', found: result.value.items.length, dateCoverage: targetDate ? sourceDateCoverage(source) : null });
+        run.sources.push({ id: source.id, acronym: source.acronym, status: 'ok', found: result.value.items.length, dateCoverage: targetDate ? sourceDateCoverage(source) : null, ...(result.value.items.discoveryTelemetry ? { telemetry: result.value.items.discoveryTelemetry } : {}) });
       } else {
         run.errors += 1;
         run.sources.push({ id: source.id, acronym: source.acronym, status: 'error', found: 0, message: result.reason?.message || 'Falha na fonte' });
@@ -160,7 +193,10 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const retained = monitor.candidates.filter((item) => {
         if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url)) return false;
         if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !hasCandidateText(item) && !item.publishedAt) return false;
-        if (['pending', 'error'].includes(item.status) && !item.backfillDate && !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return false;
+        if (['pending', 'error'].includes(item.status)) {
+          const candidateDate = publicationDateKey(item.publishedAt) || item.backfillDate;
+          if (targetDate ? candidateDate !== targetDate : !isPublishedWithinDays(candidateDate, config.monitorLookbackDays)) return false;
+        }
         const fingerprint = candidateFingerprint(item);
         if (['pending', 'error'].includes(item.status) && (publishedFingerprints.has(fingerprint) || pendingFingerprints.has(fingerprint))) return false;
         if (['pending', 'error'].includes(item.status)) pendingFingerprints.add(fingerprint);
@@ -169,13 +205,13 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const known = new Set([...retained.map((item) => item.id), ...database.alerts.map((item) => candidateId(item.officialUrl || item.id))]);
       const knownFingerprints = new Set(retained.map(candidateFingerprint));
       const additions = found.flatMap((item) => {
-        if (targetDate ? publicationDateKey(item.publishedAt) !== targetDate : !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays, new Date(), { allowUnknown: true })) return [];
+        if (targetDate ? publicationDateKey(item.publishedAt) !== targetDate : !isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays)) return [];
         const id = candidateId(item.url);
         const fingerprint = candidateFingerprint(item);
         if (known.has(id) || knownFingerprints.has(fingerprint)) return [];
         known.add(id);
         knownFingerprints.add(fingerprint);
-        return [{ ...item, id, status: 'pending', attempts: 0, backfillDate: targetDate || null }];
+        return [{ ...item, id, status: 'pending', attempts: 0, backfillDate: targetDate || null, fastTriage: fastTriageCandidate(item) }];
       });
       run.discovered = additions.length;
       const sourceRank = (item) => ['stf', 'stj', 'stj-informativos', 'stf-informativos', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'diario-oficial', 'pgfn-pareceres'].includes(item.sourceId) ? 1 : 2;
@@ -188,8 +224,12 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
       const database = await readDatabase();
       const prioritizedQueue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || (item.status === 'error' && item.attempts < 3))
-        .filter((item) => !targetDate || item.backfillDate === targetDate || publicationDateKey(item.publishedAt) === targetDate)
+        .filter((item) => targetDate
+          ? item.backfillDate === targetDate || publicationDateKey(item.publishedAt) === targetDate
+          : isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays))
+        .map((item) => ({ ...item, fastTriage: item.fastTriage || fastTriageCandidate(item) }))
         .sort((left, right) => {
+          if (left.fastTriage.score !== right.fastTriage.score) return right.fastTriage.score - left.fastTriage.score;
           const leftFreshness = freshnessRank(left);
           const rightFreshness = freshnessRank(right);
           if (leftFreshness !== rightFreshness) return leftFreshness - rightFreshness;
@@ -222,10 +262,15 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
         reserved.push(judicialCandidate);
         reservedIds.add(judicialCandidate.id);
       }
-      // Preserva as duas curadorias quando há vagas, sem bloquear a fila judicial.
+      const receitaCandidate = prioritizedQueue.find((candidate) => ['receita-cosit', 'receita-in', 'receita-notas'].includes(candidate.sourceId));
+      if (receitaCandidate && reserved.length < config.monitorMaxAnalyses) {
+        reserved.push(receitaCandidate);
+        reservedIds.add(receitaCandidate.id);
+      }
+      // Preserva as curadorias quando há vagas, sem bloquear a fila judicial.
       for (const sectionId of ['reforma', 'obrigacoes']) {
         for (const candidate of prioritizedQueue) {
-          if (reserved.length >= config.monitorMaxAnalyses || reservedIds.size >= Math.min(3, config.monitorMaxAnalyses)) break;
+          if (reserved.length >= config.monitorMaxAnalyses || reservedIds.size >= Math.min(4, config.monitorMaxAnalyses)) break;
           if (reservedIds.has(candidate.id) || !candidateSections(candidate).includes(sectionId)) continue;
           reserved.push(candidate);
           reservedIds.add(candidate.id);
@@ -255,11 +300,15 @@ export async function runMonitor({ analyze = true, trigger = 'manual', targetDat
           const alert = makeAlert(analysis, document, candidate);
           const publish = analysis.relevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
+          const discardReason = publish ? null
+            : !analysis.relevant ? 'A análise detalhada classificou o documento como não relevante.'
+              : alert.score < 6 ? `Nota ${alert.score} inferior ao mínimo editorial 6.`
+                : 'Data de publicação fora da janela de hoje e ontem.';
           await updateDatabase((data) => ({
             ...data,
             alerts: publish ? [alert, ...data.alerts] : data.alerts,
             meta: publish ? { ...data.meta, lastUpdatedAt: new Date().toISOString() } : data.meta,
-            monitor: { ...monitorData(data), candidates: monitorData(data).candidates.map((item) => item.id === candidate.id ? { ...item, status: publish ? 'analyzed' : 'discarded', analyzedAt: new Date().toISOString(), score: alert.score, alertId: publish ? alert.id : null } : item) },
+            monitor: { ...monitorData(data), candidates: monitorData(data).candidates.map((item) => item.id === candidate.id ? { ...item, status: publish ? 'analyzed' : 'discarded', analyzedAt: new Date().toISOString(), analyzedPublishedAt: analysis.publishedAt || null, relevant: analysis.relevant, score: alert.score, discardReason, alertId: publish ? alert.id : null } : item) },
           }));
           run.analyzed += 1;
           if (publish) run.published += 1; else run.discarded += 1;

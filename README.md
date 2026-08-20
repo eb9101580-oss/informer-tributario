@@ -9,9 +9,9 @@ front (React/Vite)
   └─ painel, varredura, fila, fontes, alertas e feedback
        ↓ REST
 back (Node/Express)
-  ├─ agendador, conectores, filtro tributário, fila e deduplicação
+  ├─ agendador, conectores, triagem tributária rápida, fila e deduplicação
   ├─ Scrapling (adaptador Python) → HTML e PDF oficial
-  └─ Ollama (API local) → análise estruturada com modelo local
+  └─ Ollama (API local) → análise jurídica detalhada dos itens priorizados
 ```
 
 O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` são adaptadores isolados porque Scrapling é uma biblioteca Python. O `awesome-llm-apps` foi usado como referência arquitetural; nenhum repositório externo foi incorporado ao código.
@@ -52,14 +52,14 @@ O backend inicia o primeiro ciclo 15 segundos depois de subir e repete a consult
 
 No GitHub Actions, cada ciclo agendado consulta todas as fontes para hoje e repete a coleta exata para ontem. Nos TRF1–TRF6, o sistema baixa o caderno diário completo e compactado do DJEN/CNJ, lê todos os JSONs e só então filtra as decisões tributárias. STJ, STF, CARF, Receita Federal, Cosit, PGFN, Confaz, Câmara, Senado, SPED, NF-e e as fontes de notícias seguem a mesma janela de hoje e ontem pelos respectivos conectores oficiais; quando uma página não informa a data, o sistema não inventa uma data histórica.
 
-O fluxo é:
+O fluxo híbrido é:
 
 1. consultar cada fonte oficial;
-2. filtrar títulos e ementas por vocabulário tributário;
-3. deduplicar pela URL oficial;
-4. enfileirar o documento com órgão, método e horário;
-5. extrair HTML ou PDF com Scrapling;
-6. analisar no Ollama, no máximo dois documentos por ciclo;
+2. filtrar e classificar todos os metadados com regras tributárias rápidas;
+3. eliminar atos meramente processuais e deduplicar documentos repetidos;
+4. priorizar mérito judicial, atos da Receita e mudanças operacionais;
+5. extrair HTML ou PDF com Scrapling somente para os melhores candidatos;
+6. usar o Ollama para a análise jurídica detalhada, no máximo dois documentos por ciclo local;
 7. publicar somente itens relevantes com nota mínima 6.
 
 Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `back/.env`:
@@ -68,10 +68,11 @@ Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `ba
 MONITOR_ENABLED=true
 MONITOR_INTERVAL_MINUTES=360
 MONITOR_MAX_ANALYSES_PER_RUN=2
-MONITOR_LOOKBACK_DAYS=7
+MONITOR_LOOKBACK_DAYS=2
+DJEN_MAX_CANDIDATES_PER_TRIBUNAL_DATE=60
 ```
 
-Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise.
+Use **Só descobrir** para testar os conectores sem ocupar o Ollama. `MONITOR_MAX_ANALYSES_PER_RUN` controla o consumo por ciclo; `OLLAMA_TIMEOUT_MS` controla o tempo de cada análise. O limite do DJEN é aplicado somente depois de ler o caderno completo, eliminar duplicatas e ranquear mérito e precedentes; os totais do funil ficam registrados no histórico do ciclo.
 
 ### Busca por data
 

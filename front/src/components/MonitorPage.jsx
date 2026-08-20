@@ -11,6 +11,13 @@ const today = () => {
 };
 const statusLabels = { pending: 'Na fila', analyzing: 'Analisando', analyzed: 'Publicado', discarded: 'Sem relevância', error: 'Erro' };
 const coverageLabels = { exact: 'arquivo/API da data', 'date-filtered': 'filtrado pela data', mixed: 'decisões da data + notícias do índice', 'current-index': 'índice atual' };
+const number = (value) => Number(value || 0).toLocaleString('pt-BR');
+const sourceRunSummary = (source) => {
+  if (source.status !== 'ok') return source.message;
+  const coverage = source.dateCoverage ? ` · ${coverageLabels[source.dateCoverage] || source.dateCoverage}` : '';
+  if (!source.telemetry) return `${number(source.found)} encontrados${coverage}`;
+  return `${number(source.found)} candidatos · ${number(source.telemetry.taxMatched)} tributários em ${number(source.telemetry.processed)} comunicações · ${number(source.telemetry.deduplicated)} únicos · top ${number(source.telemetry.selected)} do caderno${coverage}`;
+};
 
 export function MonitorPage({ onAlerts }) {
   const [status, setStatus] = useState(null);
@@ -94,7 +101,7 @@ export function MonitorPage({ onAlerts }) {
         </div>
         <aside className="panel monitor-runs">
           <div className="panel__heading"><div><h2>Histórico de ciclos</h2><p>Sucesso e falha por fonte</p></div></div>
-          {runs.map((run) => <details key={run.id} open={run.id === latest?.id}><summary><span><strong>{dateTime(run.startedAt)}</strong><small>{run.targetDate ? `busca de ${dateOnly(run.targetDate)}` : run.trigger} · {run.discovered} novos · {run.published} publicados</small></span><em>{run.errors ? `${run.errors} erros` : 'Concluído'}</em></summary><div className="source-run-list">{run.sources.map((source) => <div key={source.id}><span className={source.status === 'ok' ? 'ok' : 'fail'} /><b>{source.acronym}</b><small>{source.status === 'ok' ? `${source.found} encontrados${source.dateCoverage ? ` · ${coverageLabels[source.dateCoverage] || source.dateCoverage}` : ''}` : source.message}</small></div>)}</div></details>)}
+          {runs.map((run) => <details key={run.id} open={run.id === latest?.id}><summary><span><strong>{dateTime(run.startedAt)}</strong><small>{run.targetDate ? `busca de ${dateOnly(run.targetDate)}` : run.trigger} · {run.discovered} novos · {run.published} publicados</small></span><em>{run.errors ? `${run.errors} erros` : 'Concluído'}</em></summary><div className="source-run-list">{run.sources.map((source) => <div key={source.id}><span className={source.status === 'ok' ? 'ok' : 'fail'} /><b>{source.acronym}</b><small>{sourceRunSummary(source)}</small></div>)}</div></details>)}
           {!runs.length && <p className="monitor-empty">Nenhum ciclo registrado.</p>}
         </aside>
       </div>
