@@ -1,9 +1,82 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T16:20:42.634Z",
+    "lastUpdatedAt": "2026-08-20T16:49:32.426Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Disit/SRRF06 nº 6016, de 05/08/2026 - Retificação do Imposto sobre a Renda para serviços de expansão e ampliação do sistema elétrico contratados por órgãos púbh",
+      "theme": "Imposto sobre a Renda - Retenção na Fonte - Serviços de Expansão e Ampliação doS",
+      "agency": "Receita Federal — Soluções COSIT",
+      "taxes": [
+        "Imposto sobre a Renda",
+        "Retenção na Fonte"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-19",
+      "summary": "Retificação da Solução de Consulta Disit/SRRF06 nº 6016, de 5 de agosto de 2026, publicada no Diário Oficial da União nº 154, Seção 1, de 17 de agosto de 2026, página 48. O documento corrige a descrição de serviços de expansão e ampliação do sistema elétrico contratados por órgãos púbh da administração direta estadual, que antes estava sob retenção na fonte do Imposto sobre a Renda.",
+      "whatChanged": "A Solução de Consulta foi retificada para corrigir a descrição de serviços de expansão e ampliação do sistema elétrico contratados por órgãos púbh da administração direta estadual, que antes estava sob retenção na fonte do Imposto sobre a Renda. A correção foi publicada no Diário Oficial da União nº 154, Seção 1, de 17 de agosto de 2026, página 48.",
+      "practicalImpact": "Empresas que prestam serviços de expansão e ampliação do sistema elétrico para órgãos púbh estaduais devem revisar suas operações de retenção na fonte do Imposto sobre a Renda, já que a correção afeta a classificação de serviços tributáveis. A retificação garante maior precisão na tributação de serviços públicos, evitando possíveis inconsistências na aplicação do imposto.",
+      "officeAction": "A Receita Federal publicou a retificação da Solução de Consulta Disit/SRRF06 nº 6016 no Diário Oficial da União nº 154, Seção 1, de 17 de agosto de 2026, página 48, para corrigir a descrição de serviços de expansão e ampliação do sistema elétrico contratados por órgãos púbh da administração direta estadual.",
+      "affectedProfiles": [
+        "Empresas de serviços elétricos públicos",
+        "Órgãos púbh estaduais",
+        "Empresas de expansão e ampliação de sistemas elétricos",
+        "Empresas de serviços de infraestrutura elétrica",
+        "Empresas de serviços públicos"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Retificação da Solução de Consulta Disit/SRRF06 nº 6016 para serviços de expansão e ampliação do sistema elétrico",
+        "period": "2026-08-19 a 2026-08-20",
+        "action": "Revisar operações de retenção na fonte do Imposto sobre a Renda para serviços de expansão e ampliação do sistema elétrico contratados por órgãos púbh estaduais",
+        "confidence": "alto"
+      },
+      "id": "8200c98a-c931-41c2-b003-fbe573fd75d3",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152949",
+      "isDemo": false,
+      "createdAt": "2026-08-20T16:34:59.692Z",
+      "updatedAt": "2026-08-20T16:34:59.692Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152949/visao/original",
+        "sourceCharacters": 4833,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-20T12:16:43.347Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "DESPACHO/DECISÃO · 5088495-52.2026.4.02.5101 · 7ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: IO , sob o rito dos Juizados Especiais Federais, contra…",
@@ -9250,45 +9323,55 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1608935 — virtude da pendência de julgamento de ações em controle concentrado de constitucionalidade, cito os seguintes precedentes: “AGRAVO INTERNO EM RECURSO…",
-      "theme": "Direito tributário · ICMS",
+      "title": "ARE 1608935 — virtude da pendência de julgamento de ações em controle concentrado de constitucionalidade, cito os seguintes precedentes: \"AGRAVO INTERNO EM RECURSO EXTRAORDINÁRIO.",
+      "theme": "ICMS e exigibilidade do FEEF",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ICMS"
+        "ICMS",
+        "FEEF (Fundo Estadual de Equilí"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão monocrática do STF",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Supremo Tribunal Federal publicou decisão monocrática do stf em 2026-08-20. virtude da pendência de julgamento de ações em controle concentrado de constitucionalidade, cito os seguintes precedentes: “AGRAVO INTERNO EM RECURSO EXTRAORDINÁRIO.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF confirmou a inadmissibilidade de agravo interno em recurso extraordinário relacionado à exigibilidade do FEEF instituído pela Lei Fluminense n. 7.428/2016, destacando que a suposta vinculação de receita não é compatível com o princípio da não vinculação de receitas. O enunciado n. 280 da Súmula do Supremo foi aplicado, reafirmando que a pendência de ação direta de inconstitucionalidade não obsta o julgamento de processos com matéria correlata.",
+      "whatChanged": "A decisão do STF reforça que a exigibilidade do FEEF não pode ser vinculada a receitas, conforme o princípio da não vinculação de receitas. O enunciado n. 280 da Súmula do Supremo foi aplicado para inadmisibilidade do agravo interno.",
+      "practicalImpact": "Empresas que recolhem parcelas destinadas ao FEEF devem verificar se há possibilidade de reclassificação de receitas para evitar inadmissibilidade de processos tributários. O STF reforça que a pendência de ação direta de inconstitucionalidade não impede o julgamento de processos com matéria correlata.",
+      "officeAction": "Revisar a exigibilidade do FEEF para garantir conformidade com o princípio da não vinculação de receitas, evitando possíveis inadmissibilidades em processos tributários.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com receitas vinculadas ao FEEF",
+        "Empresas do estado do Rio de Janeiro",
+        "Empresas com ICMS",
+        "Empresas com processos em controle concentrado de constitucionalidade",
+        "Empresas com receitas vinculadas a FEEF"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 4,
         "legalImpact": 8,
-        "financialImpact": 7,
+        "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da exigibilidade do FEEF para evitar inadmissibilidade em processos tributários",
+        "period": "2023-07-03",
+        "action": "Verificar se receitas estão vinculadas ao FEEF e reclassificar para evitar inadmissibilidade de processos tributários",
+        "confidence": "alto"
+      },
       "id": "fbf08bb2-c616-4159-aec2-d7692b844a14",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.3,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811131/false",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.010Z",
-      "updatedAt": "2026-08-20T14:46:01.010Z",
+      "updatedAt": "2026-08-20T16:38:09.141Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811131/false",
         "sourceCharacters": 1216,
         "sourceId": "stf",
@@ -9314,45 +9397,55 @@
     },
     {
       "relevant": true,
-      "title": "RE 1614567 — Decisão Trata-se de Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal de Justiça do Estado de Mato Grosso, assim ementado (Doc. 24, fl.…",
-      "theme": "Direito tributário · ICMS",
+      "title": "RE 1614567 — Decisão monocrática do STF: Recurso Extraordinário interposto em face de acórdão do TJMT sobre ICMS em transferências entre estabelecimentos do mesmo titular",
+      "theme": "ICMS - Transferência de mercadorias entre estabelecimentos do mesmo titular",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ICMS"
+        "ICMS",
+        "ADC 49"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão monocrática do STF",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Supremo Tribunal Federal publicou decisão monocrática do stf em 2026-08-20. Decisão Trata-se de Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal de Justiça do Estado de Mato Grosso, assim ementado (Doc.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF decidiu que não há incidência de ICMS sobre transferências de mercadorias entre estabelecimentos do mesmo titular, mesmo quando a filial foi constituída após o marco temporal da ADC 49. A decisão reforça a inexistência de circulação jurídica para fins de incidência tributária e confirma a modulação dos efeitos da ADC 49 no caso concreto.",
+      "whatChanged": "A decisão do STF estabelece que transferências de mercadorias entre estabelecimentos do mesmo titular não incidem em ICMS, mesmo quando a filial foi constituída após o marco temporal da ADC 49. Isso elimina a necessidade de tributação para essas transferências em situações específicas.",
+      "practicalImpact": "Empresas com filiais em Mato Grosso que realizam transferências de mercadorias entre estabelecimentos do mesmo titular não precisam tributar essas operações com ICMS, desde que a filial tenha sido constituída após o marco temporal da ADC 49. Isso reduz custos tributários e evita possíveis ações judiciais.",
+      "officeAction": "O STF confirmou a inexistência de circulação jurídica para fins de incidência de ICMS em transferências entre estabelecimentos do mesmo titular, mesmo quando a filial foi constituída após o marco temporal da ADC 49.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com filiais em Mato Grosso",
+        "Empresas com operações de transferência de mercadorias entre estabelecimentos do",
+        "Empresas que utilizam a ADC 49 para modulação de efeitos tributários",
+        "Empresas com filiais constituídas após o marco temporal da ADC 49",
+        "Empresas com operações interestaduais de mercadorias"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 7,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para redução de custos tributários em transferências entre estabelecimentos do mesmo titular",
+        "period": "2023-11-18 a 2024-12-31",
+        "action": "Empresas devem revisar suas operações de transferência de mercadorias entre estabelecimentos do mesmo titular para garantir a não incidência de ICMS, especialmente quando a filial foi constituída após o marco temporal da ADC 49.",
+        "confidence": "alto"
+      },
       "id": "60fcd5aa-a98a-4cd8-bbba-87230315f4cb",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811098/false",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.010Z",
-      "updatedAt": "2026-08-20T14:46:01.010Z",
+      "updatedAt": "2026-08-20T16:41:15.763Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811098/false",
         "sourceCharacters": 1192,
         "sourceId": "stf",
@@ -9606,46 +9699,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1018485-40.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: r requerida a fim de que a AUTORIDADE COATORA seja impedida de cobrar as…",
-      "theme": "Direito tributário · PIS, Cofins",
+      "title": "Sentença Tipo A · 1018485-40.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: r requerida a fim de que a AUTORIDADE COATORA seja impedida de cobrar as contribui",
+      "theme": "Exclusão do PIS e COFINS da base de cálculo tributária",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "PIS",
-        "Cofins"
+        "COFINS",
+        "ISS",
+        "ICMS",
+        "Custas",
+        "Receita bruta"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 8ª Vara Federal Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1018485-40.2026.4.01.3400 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: APPSERVICE TECNOLOGIA DA INFORMACAO LTDA REPRESENTANTES POLO ATIVO: LEONARDO SERRA ROSSIGNEUX VIEIRA - DF37069, GUSTAVO CONDE DE ALMEIDA - DF72797 e JOHN ENDER ALVES DE OLIVEIRA - DF73747 POLO PASSIVO: DELEGADO…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença do TRF-3 (8ª Vara Federal Cível da SJDF) indeferiu a liminar requerida por APPSERVICE Tecnologia da Informação Ltda, que buscava impedir a cobrança do PIS e COFINS sobre base que inclua essas contribuições, argumentando que não se consubstanciam em receita. O juiz rejeitou a tese de que as contribuições devem ser excluídas da base de cálculo, afirmando que elas fazem parte da receita bruta ao serem incorporadas ao preço final das faturas.",
+      "whatChanged": "A sentença do TRF-3 rejeitou a possibilidade de exclusão do PIS e COFINS da base de cálculo tributária, mantendo que essas contribuições fazem parte da receita bruta ao serem incorporadas ao preço final das faturas, conforme a metodologia contábil e fiscal 'por dentro'.",
+      "practicalImpact": "Empresas devem evitar compensações administrativas com PIS e COFINS recolhidos indevidamente, já que a sentença confirma que essas contribuições estão incluídas na receita bruta e não podem ser excluídas da base de cálculo tributária.",
+      "officeAction": "Empresas devem revisar suas bases de cálculo tributária para garantir que o PIS e COFINS sejam calculados sobre a receita bruta total, incluindo os valores das próprias contribuições, evitando possíveis compensações indevidas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de serviços e varejo",
+        "Contribuintes do PIS e COFINS",
+        "Empresas com receita bruta calculada por faturas",
+        "Empresas com ISS",
+        "Empresas com ICMS"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da base de cálculo tributária para evitar compensações indevidas",
+        "period": "2024-03-06 a 2025-03-06",
+        "action": "Revisar bases de cálculo tributária para garantir que o PIS e COFINS sejam calculados sobre a receita bruta total, incluindo os valores das próprias contribuições",
+        "confidence": "alto"
+      },
       "id": "7284514c-7700-4aa0-a069-665635fbd9fc",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUovWt4Tny43GZrvMJbg/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.013Z",
-      "updatedAt": "2026-08-20T14:46:01.013Z",
+      "updatedAt": "2026-08-20T16:29:33.556Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUovWt4Tny43GZrvMJbg/certidao",
         "sourceCharacters": 12923,
         "sourceId": "trf1",
@@ -9671,47 +9777,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo B · 1003189-66.2026.4.01.3500 · 4ª Vara Federal Cível da SJGO — Direito tributário: ansmitir e ter processadas declarações de compensação (PER/DCOMP) relacionadas…",
-      "theme": "Direito tributário · ICMS, PIS, Cofins",
-      "agency": "Tribunal Regional Federal da 1ª Região",
+      "title": "Sentença Tipo B · 1003189-66.2026.4.01.3500 · 4ª Vara Federal Cível da SJGO — Direito tributário: ansmitir e ter processadas declarações de compensação (PER/DCOMP) relacionadas ao",
+      "theme": "Exaurimento do crédito tributário após trânsito em julgado",
+      "agency": "4ª Vara Federal Cível da SJGO",
       "taxes": [
-        "ICMS",
         "PIS",
-        "Cofins"
+        "COFINS",
+        "ICMS",
+        "PER/DCOMP",
+        "CTN",
+        "IN RFB nº 2.055/2021"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária de Goiás 4ª Vara Federal Cível da SJGO SENTENÇA TIPO B PROCESSO: 1003189-66.2026.4.01.3500 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) IMPETRANTE: EUROEX IMPORTADORA E EXPORTADORA LTDA IMPETRADO: DELEGADO DA RECEITA FEDERAL DO BRASIL EM GOIANIA e outros SENTENÇA I – RELATÓRIO Trata-se de mandado de segurança individual impetrado por EUROEX IMPORTADORA E EXPORTADORA…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que o prazo de 5 anos para transmissão de declarações de compensação (PER/DCOMP) deve ser contado a partir do trânsito em julgado da decisão que reconhece o crédito tributário, sem exigir prazo para exaurimento do crédito. O contribuinte pode transmitir novas declarações de compensação além do prazo de 5 anos, desde que haja habilitação do crédito e a suspensão do prazo entre o pedido de habilitação e a ciência do deferimento, conforme estabelecido na IN RFB nº 2.055/2021.",
+      "whatChanged": "A sentença reforça que o prazo de 5 anos para transmissão de PER/DCOMP é contado a partir do trânsito em julgado da decisão judicial que reconhece o crédito, não exigindo prazo para exaurimento do crédito. O contribuinte pode transmitir declarações de compensação além do prazo de 5 anos, desde que haja habilitação do crédito e a suspensão do prazo entre o pedido de habilitação e a ciência do deferimento.",
+      "practicalImpact": "Contribuintes podem transmitir novas declarações de compensação (PER/DCOMP) após o prazo de 5 anos contado do trânsito em julgado, desde que tenham habilitação do crédito e a suspensão do prazo entre o pedido de habilitação e a ciência do deferimento. Isso evita a perda do crédito tributário por bloqueio sistêmico da Receita Federal.",
+      "officeAction": "Contribuintes devem verificar se possuem habilitação do crédito e suspensão do prazo para transmitir PER/DCOMP além do prazo de 5 anos contado do trânsito em julgado, conforme estabelecido na IN RFB nº 2.055/2021.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com crédito tributário reconhecido por decisão judicial transitada",
+        "Empresas que utilizam PER/DCOMP para compensação tributária",
+        "Receita Federal do Brasil",
+        "Contribuintes com bloqueio sistêmico de transmissão de PER/DCOMP",
+        "Empresas com ICMS excluído da base de cálculo do PIS e COFINS"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Contribuintes podem transmitir PER/DCOMP após prazo de 5 anos contado do trânsito em julgado",
+        "period": "A partir de 2026",
+        "action": "Verificar habilitação do crédito e suspensão do prazo para transmitir PER/DCOMP além do prazo de 5 anos",
+        "confidence": "alto"
+      },
       "id": "fe9bf96c-e1e3-48b7-95fe-7f9c5469e944",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR4yU3x5tGT73wAy6dy4gaO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.013Z",
-      "updatedAt": "2026-08-20T14:46:01.013Z",
+      "updatedAt": "2026-08-20T16:49:32.392Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXR4yU3x5tGT73wAy6dy4gaO/certidao",
         "sourceCharacters": 12441,
         "sourceId": "trf1",
@@ -14901,8 +15019,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T12:31:11.612Z",
         "id": "ba0769f9b9ce722d7478c038",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -14918,7 +15036,14 @@
         },
         "alertId": "fbf08bb2-c616-4159-aec2-d7692b844a14",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:38:09.171Z",
+        "analyzedPublishedAt": "2023-07-03T00:00:00",
+        "relevant": true,
+        "score": 7.3,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "RE 1614567 — Decisão Trata-se de Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal de Justiça do Estado de Mato Grosso, assim ementado (Doc. 24, fl. 13): “EMENTA: DIREITO TRIBUTÁRIO . AGRAVO INTERNO. ICMS. TRANSFERÊNCIA DE MERCADORIAS ENTRE ESTAB",
@@ -14937,8 +15062,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T12:31:11.612Z",
         "id": "fd9a312e67af61b7b95d47f7",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -14954,7 +15079,14 @@
         },
         "alertId": "60fcd5aa-a98a-4cd8-bbba-87230315f4cb",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:41:15.798Z",
+        "analyzedPublishedAt": "2023-11-18T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Rcl 81025 ED — geral, conforme se verifica da ementa abaixo transcrita: “ TRIBUTÁRIO . AGRAVO INTERNO. AGRAVO EM RECURSO ESPECIAL. EXECUÇÃO DE SENTENÇA CONTRA A FAZENDA PÚBLICA. PRAZO PRESCRICIONAL DE CINCO ANOS CONTADOS DO TRÂNSITO EM JULGADO DA SENTENÇA. SÚMULA 150/STF. PR",
@@ -15344,8 +15476,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "11eced9d360333f5ebeba6e6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -15361,7 +15493,14 @@
         },
         "alertId": "7284514c-7700-4aa0-a069-665635fbd9fc",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:29:33.593Z",
+        "analyzedPublishedAt": "2024-03-06T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 0065236-54.2016.4.01.3400 · 2ª Vara Federal Cível da SJDF — Direito tributário: 7, 1, do CPC/2015, para declarar o direito da Autora de não incluir na base de cálculo do PIS/PASEP-Importação e da COFINS-Importação o valor correspondente ao ICMS, do ISS, do IPI e do Imposto de Importação e ao das próprias contribuições e para condenar a requerida a res",
@@ -15412,8 +15551,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "fe1d0ab932326071c44cbbb6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -15429,7 +15568,14 @@
         },
         "alertId": "fe9bf96c-e1e3-48b7-95fe-7f9c5469e944",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:49:32.426Z",
+        "analyzedPublishedAt": "2026-02-10T00:00:00",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1043227-08.2021.4.01.3400 · 24ª Vara Federal de Juizado Especial Cível da SJDF — Direito tributário: FEDERAL (FAZENDA NACIONAL), objetivando a declaração de inexistência de relação jurídico-tributária que a obrigue a incluir os valores correspondentes ao Imposto Sobre Serviços de Qualquer Natureza - ISS nas bases de cálculo do PIS e da Cofins, bem como o reconhecimento do dire",
@@ -35869,8 +36015,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-20T12:16:43.347Z",
         "id": "b8e7c72fb8921357231ead60",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -35882,7 +36028,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-20T16:34:59.726Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "alertId": "8200c98a-c931-41c2-b003-fbe573fd75d3",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Portaria 348 Codar 19/08/2026 Dispõe sobre auditoria dos Pedidos de Restituição, Ressarcimento ou Reembolso e Declarações de Compensação - PER/DCOMP relativos a créditos de Contribuição para o PIS/Pasep e de Contribuição para o Financiamento da Seguridade Social - Cofins que menciona.",
@@ -38207,6 +38361,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "2ed76c72-216f-4af4-b952-dc33f763ae6a",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T16:21:44.205Z",
+        "finishedAt": "2026-08-20T16:49:32.457Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "9400866e-9a1d-4ae5-bf59-86572c538bb6",
         "trigger": "github-actions-history",
@@ -63287,108 +63454,9 @@
             "found": 0
           }
         ]
-      },
-      {
-        "id": "b517109f-5fd4-4f39-98e3-58b9d40ab3ff",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T07:53:57.580Z",
-        "finishedAt": "2026-08-19T07:55:02.613Z",
-        "discovered": 5,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 2,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 19
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 6
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T16:20:42.665Z",
-    "nextRunAt": "2026-08-20T22:20:42.665Z"
+    "lastRunAt": "2026-08-20T16:49:32.457Z",
+    "nextRunAt": "2026-08-20T22:49:32.457Z"
   }
 }
