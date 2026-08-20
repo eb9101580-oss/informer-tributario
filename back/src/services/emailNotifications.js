@@ -86,6 +86,25 @@ function alertMessage(alert) {
   };
 }
 
+function publicationDigestMessage(alerts) {
+  const ordered = [...alerts].sort((left, right) => Number(right.score) - Number(left.score));
+  const itemsHtml = ordered.map((alert) => `<article style="margin:0 0 22px;padding:0 0 18px;border-bottom:1px solid #dfe8e6">
+    <h2 style="font-size:18px;margin:0 0 6px">${escapeHtml(displayAlertTitle(alert.title))}</h2>
+    <p style="margin:0 0 8px"><strong>Nota ${String(alert.score).replace('.', ',')}/10</strong> · ${escapeHtml(alert.relevance)}</p>
+    <p style="margin:0 0 10px">${escapeHtml(alert.summary)}</p>
+    <a href="${escapeHtml(alert.officialUrl)}">Abrir publicação original</a>
+  </article>`).join('');
+  const itemsText = ordered.map((alert) => `${displayAlertTitle(alert.title)}
+Nota ${alert.score}/10
+${alert.summary}
+Fonte: ${alert.officialUrl}`).join('\n\n---\n\n');
+  return {
+    subject: `[Informer] ${ordered.length} ${ordered.length === 1 ? 'nova publicação' : 'novas publicações'} com nota 8+`,
+    html: `<div style="font-family:Arial,sans-serif;line-height:1.5;color:#173c3c;max-width:680px;margin:auto"><h1>Radar tributário</h1><p>Estas são as novas publicações de alta relevância encontradas na última varredura.</p>${itemsHtml}<p>Você recebeu este resumo pelas preferências de alerta do Informer Tributário.</p></div>`,
+    text: `Radar tributário — ${ordered.length} nova(s) publicação(ões) com nota 8+\n\n${itemsText}`,
+  };
+}
+
 async function loadPublicationAccounts(queryFn) {
   const result = await queryFn(
     `SELECT u."id" AS id,
@@ -185,6 +204,25 @@ export async function deliverWithLedger({ account, eventType, eventKey, message 
   }
 }
 
+async function claimDelivery({ account, eventType, eventKey }, queryFn) {
+  const claim = await queryFn(
+    `INSERT INTO notification_deliveries
+       (user_id, channel, event_type, event_key, status, attempt_count, last_attempt_at, updated_at, created_at)
+     VALUES ($1, 'email', $2, $3, 'pending', 1, NOW(), NOW(), NOW())
+     ON CONFLICT (user_id, channel, event_type, event_key) DO UPDATE
+       SET status = 'pending', error_message = NULL,
+           attempt_count = notification_deliveries.attempt_count + 1,
+           last_attempt_at = NOW(), updated_at = NOW()
+     WHERE notification_deliveries.status = 'failed'
+        OR (notification_deliveries.status = 'pending'
+            AND COALESCE(notification_deliveries.last_attempt_at, notification_deliveries.created_at)
+                < NOW() - ($4::INTEGER * INTERVAL '1 minute'))
+     RETURNING id`,
+    [account.id, eventType, eventKey, DELIVERY_STALE_MINUTES],
+  );
+  return claim.rows?.[0]?.id || null;
+}
+
 async function notifyPostgresPublications(alerts, {
   ensureSchemaFn,
   queryFn,
@@ -198,19 +236,40 @@ async function notifyPostgresPublications(alerts, {
   let duplicates = 0;
   const sentAlertIds = new Set();
 
-  for (const alert of alerts) {
-    const recipients = accounts.filter((account) => accountAcceptsPublication(account, alert));
-    const message = alertMessage(alert);
-    for (const account of recipients) {
-      const result = await deliverWithLedger({
-        account,
-        eventType: 'high-score-publication',
-        eventKey: alert.id,
-        message,
-      }, { queryFn, sendEmailFn });
-      if (result.status === 'sent') { deliveries += 1; sentAlertIds.add(alert.id); }
-      else if (result.status === 'failed') failed += 1;
+  for (const account of accounts) {
+    const accepted = alerts.filter((alert) => accountAcceptsPublication(account, alert));
+    const claimed = [];
+    for (const alert of accepted) {
+      const deliveryId = await claimDelivery({ account, eventType: 'high-score-publication', eventKey: alert.id }, queryFn);
+      if (deliveryId) claimed.push({ alert, deliveryId });
       else duplicates += 1;
+    }
+    if (!claimed.length) continue;
+
+    try {
+      const alertIds = claimed.map((item) => item.alert.id).sort();
+      const provider = await sendEmailFn({
+        to: normalizeEmail(account.email),
+        ...publicationDigestMessage(claimed.map((item) => item.alert)),
+        idempotencyKey: deliveryKey('high-score-publication-digest', alertIds.join('|'), account.id),
+      });
+      await queryFn(
+        `UPDATE notification_deliveries
+            SET status = 'sent', provider_id = $2, error_message = NULL, sent_at = NOW(), updated_at = NOW()
+          WHERE id = ANY($1::uuid[])`,
+        [claimed.map((item) => item.deliveryId), provider?.id || null],
+      );
+      deliveries += 1;
+      claimed.forEach((item) => sentAlertIds.add(item.alert.id));
+    } catch (error) {
+      const errorMessage = String(error?.message || 'Falha no provedor de e-mail').slice(0, 1_000);
+      await queryFn(
+        `UPDATE notification_deliveries
+            SET status = 'failed', error_message = $2, updated_at = NOW()
+          WHERE id = ANY($1::uuid[])`,
+        [claimed.map((item) => item.deliveryId), errorMessage],
+      ).catch((ledgerError) => console.error('Falha ao registrar erro do resumo:', ledgerError.message));
+      failed += 1;
     }
   }
 

@@ -178,3 +178,39 @@ test('publicação respeita nota mínima individual e mantém assinantes legados
   assert.equal(result.deliveries, 2);
   assert.equal(result.alertsSent, 1);
 });
+
+test('agrupa várias publicações nota alta em um único e-mail por conta', async () => {
+  const sent = [];
+  let claims = 0;
+  const alerts = [
+    movementAlert({ id: 'publication-a', ownerId: undefined, kind: 'Norma tributária', score: 8.2, title: 'Publicação A' }),
+    movementAlert({ id: 'publication-b', ownerId: undefined, kind: 'Decisão tributária', score: 9.1, title: 'Publicação B' }),
+  ];
+  const queryFn = async (text) => {
+    if (text.includes('FROM "user"')) return { rows: [account()] };
+    if (text.includes('INSERT INTO notification_deliveries')) {
+      claims += 1;
+      return { rows: [{ id: `00000000-0000-4000-8000-${String(claims).padStart(12, '0')}` }] };
+    }
+    if (text.includes("SET status = 'sent'")) return { rows: [] };
+    throw new Error(`SQL inesperado: ${text}`);
+  };
+
+  const result = await notifyAlerts(alerts, {
+    requireCurrentFeed: false,
+    ensureSchemaFn: async () => {},
+    queryFn,
+    sendEmailFn: async (message) => { sent.push(message); return { id: 'resend-digest' }; },
+    emailIsConfigured: () => true,
+    databaseIsConfigured: () => true,
+    readSubscriptionsFn: async () => ({ notifiedAlertIds: [], subscribers: [] }),
+    markAlertsNotifiedFn: async () => {},
+  });
+
+  assert.equal(sent.length, 1);
+  assert.match(sent[0].subject, /2 novas publicações/);
+  assert.match(sent[0].text, /Publicação A/);
+  assert.match(sent[0].text, /Publicação B/);
+  assert.equal(result.alertsSent, 2);
+  assert.equal(result.deliveries, 1);
+});
