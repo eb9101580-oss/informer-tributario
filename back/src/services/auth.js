@@ -12,7 +12,8 @@ const DEFAULT_FRONTEND_URL = 'http://localhost:5173';
 
 function normalizeUrl(value, fallback) {
   try {
-    const url = new URL(String(value || fallback));
+    const normalized = String(value || fallback).replace(/\uFEFF/g, '').trim();
+    const url = new URL(normalized);
     return url.toString().replace(/\/$/, '');
   } catch {
     return fallback;

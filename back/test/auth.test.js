@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   auth,
+  getAuthBaseUrl,
   normalizeEmail,
   validEmail,
   getTrustedOrigins,
@@ -43,6 +44,17 @@ test('normaliza e valida e-mails sem aceitar formatos incompletos', () => {
   assert.equal(validEmail('julia@example.com'), true);
   assert.equal(validEmail('julia@localhost'), false);
   assert.equal(validEmail('sem-arroba'), false);
+});
+
+test('remove BOM invisível da URL-base de produção', () => {
+  const previous = process.env.BETTER_AUTH_URL;
+  try {
+    process.env.BETTER_AUTH_URL = '\uFEFFhttps://informer-tributario.vercel.app';
+    assert.equal(getAuthBaseUrl(), 'https://informer-tributario.vercel.app');
+  } finally {
+    if (previous === undefined) delete process.env.BETTER_AUTH_URL;
+    else process.env.BETTER_AUTH_URL = previous;
+  }
 });
 
 test('interpreta papéis simples e múltiplos do Better Auth', () => {
