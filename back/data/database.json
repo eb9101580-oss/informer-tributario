@@ -1,9 +1,88 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T15:45:17.723Z",
+    "lastUpdatedAt": "2026-08-20T16:13:52.099Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 151, de 17/08/2026: Regimes Aduaneiros - Aeronaves Estrangeiras",
+      "theme": "Regimes Aduaneiros",
+      "agency": "Receita Federal - Coordenação-Geral de Tributação (Cosit)",
+      "taxes": [
+        "ICMS",
+        "IPI",
+        "ISS",
+        "PIS/COFINS",
+        "IPTU",
+        "ISSQN"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-20",
+      "summary": "A Solução de Consulta Cosit nº 151, de 17/08/2026, estabelece que aeronaves estrangeiras importadas a título definitivo (nacionalizadas) estão sob regime comum de tributação. O despacho aduaneiro para consumo é utilizado, e a verificação da mercadoria pode ocorrer no estabelecimento do importador ou em outro local adequado. O documento também aborda regimes de admissão temporária para aeronaves estrangeiras com uso particular de viajante não residente, exigindo declaração eletrônica de bens (e-DBV) e termo de concessão de admissão temporária (TECAT).",
+      "whatChanged": "O documento define que aeronaves estrangeiras nacionalizadas estão sob regime comum de tributação, com despacho para consumo. Também estabelece que aeronaves para uso particular de viajante não residente devem seguir regime de admissão temporária com e-DBV e TECAT.",
+      "practicalImpact": "Empresas que importam aeronaves estrangeiras devem adotar despacho para consumo para tributação comum. Empresas com aeronaves para uso de viajante não residente devem utilizar e-DBV e TECAT para admissão temporária, evitando multas por não cumprimento do regime aduaneiro.",
+      "officeAction": "A Receita Federal publicou a Solução de Consulta Cosit nº 151 em 20/08/2026, com vigência a partir desse dia. O documento é vinculado à Solução de Consulta Cosit nº 246 de 23/10/2023.",
+      "affectedProfiles": [
+        "Empresas de importação de aeronaves",
+        "Operadoras de aviação com aeronaves estrangeiras",
+        "Viajantes não residentes com aeronaves",
+        "Empresas de logística aérea",
+        "Organizações com aeronaves para uso particular"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Regime comum de tributação para aeronaves estrangeiras nacionalizadas",
+        "period": "2026-08-20 a 2026-08-20",
+        "action": "Adoção de despacho para consumo e conformidade com regime tributário comum para aeronaves estrangeiras nacionalizadas",
+        "confidence": "alto"
+      },
+      "id": "2f7a5e74-a1e1-4eb1-8680-f5fae42c22b7",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152978",
+      "isDemo": false,
+      "createdAt": "2026-08-20T16:02:40.632Z",
+      "updatedAt": "2026-08-20T16:02:40.632Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152978/visao/original",
+        "sourceCharacters": 7259,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-20T12:23:43.984Z",
+        "fastTriage": {
+          "score": 66,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "possivel-ato-processual"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença Tipo A · 1006157-80.2024.4.01.4101 · Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Ji-Paraná-RO — Direito tributário: Rural - CAR, datado de…",
@@ -6514,46 +6593,59 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1612173 — DESPACHO Trata-se de Agravo em Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal Regional Federal da Segunda Região, assim ementado (Doc.…",
-      "theme": "Direito tributário · IRPJ, CSLL",
-      "agency": "Supremo Tribunal Federal",
+      "title": "ARE 1612173 — DESPACHO: Agravo em Recurso Extraordinário sobre IRPJ e CSLL para lucros auferidos no exterior por empresas sediadas em Luxemburgo e Holanda, controladas por empresa",
+      "theme": "Imposto sobre Renda das Pessoas Jurídicas (IRPJ) e Contribuição Social sobre o R",
+      "agency": "Supremo Tribunal Federal (STF)",
       "taxes": [
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "Convenção Brasil-Países Baixos",
+        "Convenção Brasil-Luxemburgo",
+        "MP 2.158-35/2001",
+        "Decreto 355/1991"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão monocrática do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Supremo Tribunal Federal publicou decisão monocrática do stf em 2026-08-20. DESPACHO Trata-se de Agravo em Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal Regional Federal da Segunda Região, assim ementado (Doc.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF analisou agravo em recurso extraordinário sobre tributação do IRPJ e CSLL para lucros auferidos no exterior por empresas sediadas em Luxemburgo e Holanda, controladas por empresas nacionais. A decisão aborda a aplicação das convenções internacionais (Brasil-Países Baixos e Brasil-Luxemburgo) em detrimento da legislação interna, com foco na inconstitucionalidade das normas em relação aos países sem tributação favorecida.",
+      "whatChanged": "O STF confirmou que as convenções internacionais (Brasil-Países Baixos e Brasil-Luxemburgo) afetam a tributação do IRPJ e CSLL sobre lucros auferidos no exterior, quando as empresas são sediadas em países com convenções internacionais que evitam a dupla tributação.",
+      "practicalImpact": "Empresas nacionais com sediadas em Luxemburgo e Holanda devem revisar sua tributação do IRPJ e CSLL, pois as convenções internacionais podem afetar a tributação de lucros auferidos no exterior, especialmente se houver inconstitucionalidade em relação aos países sem tributação favorecida.",
+      "officeAction": "O STF determinou que as convenções internacionais (Brasil-Países Baixos e Brasil-Luxemburgo) devem ser aplicadas em detrimento da legislação interna para evitar a tributação do IRPJ e CSLL sobre lucros auferidos no exterior, quando as empresas são sediadas em países com convenções internacionais que evitam a dupla tributação.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas nacionais com sediadas em Luxemburgo",
+        "Empresas nacionais com sediadas em Holanda",
+        "Empresas com operações internacionais",
+        "Empresas com lucros auferidos no exterior",
+        "Empresas com convenções internacionais"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da tributação do IRPJ e CSLL para empresas com sediadas em Luxemburgo e Holanda",
+        "period": "2023-11-12 a 2024-12-31",
+        "action": "Revisão da tributação do IRPJ e CSLL para empresas com sediadas em Luxemburgo e Holanda, com foco na aplicação das convenções internacionais (Brasil-Países Baixos e Brasil-Luxemburgo) em detrimento da legislação interna",
+        "confidence": "alto"
+      },
       "id": "aa8d7244-28ba-401f-b494-3a94358963d1",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811125/false",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.009Z",
-      "updatedAt": "2026-08-20T14:46:01.009Z",
+      "updatedAt": "2026-08-20T16:10:11.916Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811125/false",
         "sourceCharacters": 1204,
         "sourceId": "stf",
@@ -6579,43 +6671,56 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1616985 — Ementa: Direito Tributário e Constitucional. Recurso Extraordinário com Agravo. Taxa de licença, fiscalização e funcionamento, para estações de rádio base (ERB).…",
-      "theme": "Direito tributário",
+      "title": "ARE 1616985 — Ementa: Direito Tributário e Constitucional. Recurso Extraordinário com Agravo. Taxa de licença, fiscalização e funcionamento, para estações de rádio base (ERB).",
+      "theme": "Competência privativa da União para legislar sobre telecomunicações",
       "agency": "Supremo Tribunal Federal",
-      "taxes": [],
+      "taxes": [
+        "Taxa de licença",
+        "Taxa de fiscalização",
+        "Taxa de funcionamento"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão monocrática do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Supremo Tribunal Federal publicou decisão monocrática do stf em 2026-08-20. Tema nº 919 do ementário da Repercussão Geral.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF reconheceu a invalidade da cobrança municipal de taxa de fiscalização sobre torres e antenas de transmissão, afirmando que a competência privativa da União para legislar e fiscalizar serviços de telecomunicações exclui a cobrança municipal de taxas de fiscalização. A decisão nega provimento ao recurso extraordinário com agravo, estabelecendo que a taxa de fiscalização de torres e antenas de transmissão é de competência da União, conforme art. 22, IV, da Constituição Federal.",
+      "whatChanged": "A decisão do STF confirma que a cobrança municipal de taxa de fiscalização sobre torres e antenas de transmissão viola a competência privativa da União para legislar sobre telecomunicações, invalidando a cobrança municipal de taxas de fiscalização.",
+      "practicalImpact": "Empresas de telecomunicações e municípios devem revisar suas políticas fiscais para evitar cobrança de taxas de fiscalização que possam ser consideradas ilegais sob a competência da União. A decisão impacta diretamente a tributação municipal em áreas de telecomunicações.",
+      "officeAction": "A decisão do STF nega provimento ao recurso extraordinário com agravo, reconhecendo a invalidade da cobrança municipal de taxa de fiscalização sobre torres e antenas de transmissão, estabelecendo que a competência privativa da União para legislar e fiscalizar serviços de telecomunicações exclui a cobrança municipal de taxas de fiscalização.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Municípios",
+        "Empresas de telecomunicações",
+        "Organizações de rádio e televisão",
+        "Gestores de infraestrutura de telecomunicações",
+        "Prestadores de serviços de telecomunicações"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento da invalidade da cobrança municipal de taxa de fiscalização sobre torres e antenas de transmissão",
+        "period": "2023-11-10",
+        "action": "Revisar políticas fiscais municipais para evitar cobrança de taxas de fiscalização ilegais sob a competência da União",
+        "confidence": "alto"
+      },
       "id": "4324ec61-3b1b-4e6c-bd3f-44cf4d9182e3",
-      "score": 8.2,
+      "score": 8.7,
       "relevance": "Alta relevância",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811108/false",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.009Z",
-      "updatedAt": "2026-08-20T14:46:01.009Z",
+      "updatedAt": "2026-08-20T16:13:52.056Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811108/false",
         "sourceCharacters": 1184,
         "sourceId": "stf",
@@ -6919,46 +7024,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1061090-98.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: são de tutela cautelar antecedente inaudita altera parte para autorizar o…",
-      "theme": "Direito tributário · PIS, Cofins",
+      "title": "Sentença Tipo A · 1061090-98.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: são de tutela cautelar antecedente inaudita altera parte para autorizar o recolhê",
+      "theme": "Recolhimento do PIS/COFINS sem inclusão das próprias contribuições em suas bases",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "PIS",
-        "Cofins"
+        "COFINS",
+        "ICMS",
+        "ISS",
+        "SELIC",
+        "CTN"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 8ª Vara Federal Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1061090-98.2026.4.01.3400 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: MINERACAO SERRA DOURADA LTDA REPRESENTANTES POLO ATIVO: FLAVIO MASCHIETTO - SP147024 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA MINERAÇÃO SERRA DOURADA LTDA.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença do TRF-3 (8ª Vara Federal Cível da SJDF) reconhece que o PIS e COFINS devem ser calculados com base na receita bruta que inclui os próprios valores tributários, não sendo possível excluí-los da base de cálculo. A decisão afirma que as contribuições incidem sobre si mesmas, conforme a metodologia contábil 'por dentro', e não há inconstitucionalidade na prática atual.",
+      "whatChanged": "A sentença do TRF-3 (8ª Vara Federal Cível da SJDF) estabelece que o PIS e COFINS devem ser calculados com base na receita bruta que inclui os próprios valores tributários, não sendo possível excluí-los da base de cálculo. A decisão afirma que as contribuições incidem sobre si mesmas, conforme a metodologia contábil 'por dentro', e não há inconstitucionalidade na prática atual.",
+      "practicalImpact": "Empresas devem revisar seus cálculos de PIS e COFINS para garantir que as contribuições sejam calculadas com base na receita bruta que inclui os próprios valores tributários, evitando possíveis inconsistências fiscais.",
+      "officeAction": "Revisão dos cálculos de PIS e COFINS para incluir os próprios valores tributários na base de cálculo, conforme a metodologia contábil 'por dentro' estabelecida pela sentença.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com atividade de venda de bens e serviços",
+        "Contribuintes do PIS e COFINS",
+        "Empresas com receita bruta calculada com inclusão de tributos",
+        "Empresas com operações de venda de mercadorias",
+        "Empresas com receita bruta incluindo tributos indiretos"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão dos cálculos de PIS e COFINS para incluir os próprios valores tributários na base de cálculo",
+        "period": "2024-03-06 a 2025-03-06",
+        "action": "Revisão dos cálculos de PIS e COFINS para incluir os próprios valores tributários na base de cálculo, conforme a metodologia contábil 'por dentro' estabelecida pela sentença",
+        "confidence": "alto"
+      },
       "id": "8a5b7797-24b3-48ca-b5be-7822d512232d",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkORAzU3bDfbTGja9N6Ka931z/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.012Z",
-      "updatedAt": "2026-08-20T14:46:01.012Z",
+      "updatedAt": "2026-08-20T15:55:17.877Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkORAzU3bDfbTGja9N6Ka931z/certidao",
         "sourceCharacters": 13999,
         "sourceId": "trf1",
@@ -12097,8 +12215,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T12:31:11.612Z",
         "id": "643cec4f5fb6015d2e40b9d3",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -12114,7 +12232,14 @@
         },
         "alertId": "aa8d7244-28ba-401f-b494-3a94358963d1",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:10:11.957Z",
+        "analyzedPublishedAt": "2023-11-12T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1613676 — termos alhures registrados.” Como se vê, o Tribunal de origem, com base na jurisprudência desta CORTE SUPREMA, entendeu que não incide ICMS no deslocamento de mercadorias entre estabelecimentos pertencentes ao mesmo titular. No julgamento da ADC 49, Rel. Min. ",
@@ -12165,8 +12290,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T12:31:11.612Z",
         "id": "882f8f1f1c82968e29988390",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -12182,7 +12307,14 @@
         },
         "alertId": "4324ec61-3b1b-4e6c-bd3f-44cf4d9182e3",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T16:13:52.099Z",
+        "analyzedPublishedAt": "2023-11-10T00:00:00Z",
+        "relevant": true,
+        "score": 8.7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1612712 — Ementa: Direito tributário . Recurso extraordinário com agravo. Imposto Sobre Serviços (ISS). Lista de serviços. Taxatividade. Interpretação extensiva. Reexame de fatos e provas. Enunciado nº 279 da Súmula do STF. Razões dissociadas. Enunciado nº 284 da Súmula",
@@ -12665,8 +12797,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "70717013778e2221f40cf248",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -12682,7 +12814,14 @@
         },
         "alertId": "8a5b7797-24b3-48ca-b5be-7822d512232d",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T15:55:17.914Z",
+        "analyzedPublishedAt": "2024-03-06T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1018485-40.2026.4.01.3400 · 8ª Vara Federal Cível da SJDF — Direito tributário: r requerida a fim de que a AUTORIDADE COATORA seja impedida de cobrar as contribuições ao PIS e a COFINS sobre base que também as inclua, na medida em que tais parcelas não se consubstanciam em receita, nos termos do art. 195, I, “b”, da Constituição Federal, e do Tema nº",
@@ -23017,8 +23156,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-20T12:23:43.984Z",
         "id": "e242823b2c52fbc85bfe2af2",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 66,
@@ -23032,7 +23171,15 @@
             "possivel-ato-processual"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-20T16:02:40.673Z",
+        "analyzedPublishedAt": "2026-08-20",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "alertId": "2f7a5e74-a1e1-4eb1-8680-f5fae42c22b7",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 149 Cosit 20/08/2026 Assunto: Imposto sobre a Renda de Pessoa Física - IRPF GANHO DE CAPITAL. VENDA DE IMÓVEIS RESIDENCIAIS. ISENÇÃO. ART. 39 DA LEI Nº 11.196, DE 2005. É isento do Imposto sobre a Renda o ganho auferido por pessoa física residente no País na venda de imóveis resi",
@@ -34867,9 +35014,9 @@
         "discoveredAt": "2026-08-19T14:52:27.388Z",
         "id": "d187b1386e5d551cbffa0bfa",
         "status": "error",
-        "attempts": 2,
+        "attempts": 3,
         "error": "A coleta excedeu o limite de 60 segundos.",
-        "analyzedAt": "2026-08-20T15:25:02.145Z"
+        "analyzedAt": "2026-08-20T16:05:44.515Z"
       },
       {
         "title": "Manual de Escrituração da EFD-Contribuições - PJ do Lucro Presumido - PVA Versão 2.04",
@@ -35436,6 +35583,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "f757da82-ec5c-4700-b305-8bda27aafd23",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T15:46:24.767Z",
+        "finishedAt": "2026-08-20T16:13:52.130Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "a1ed9f47-381a-43b0-9fe8-c32550eb6b4e",
         "trigger": "github-actions-history",
@@ -60159,108 +60319,9 @@
             "found": 0
           }
         ]
-      },
-      {
-        "id": "b0396f2d-21f6-42ab-a938-f7d992cf4db5",
-        "trigger": "github-actions-discovery",
-        "startedAt": "2026-08-19T06:04:58.662Z",
-        "finishedAt": "2026-08-19T06:05:20.456Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 2,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 19
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "error",
-            "found": 0,
-            "message": "Fonte respondeu com status 522."
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 6
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T15:45:17.759Z",
-    "nextRunAt": "2026-08-20T21:45:17.759Z"
+    "lastRunAt": "2026-08-20T16:13:52.130Z",
+    "nextRunAt": "2026-08-20T22:13:52.130Z"
   }
 }
