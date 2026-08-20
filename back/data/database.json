@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T22:37:14.975Z",
+    "lastUpdatedAt": "2026-08-20T23:15:09.610Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -32259,43 +32259,58 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1091352-72.2024.4.01.3700 · 5ª Vara Federal Cível da SJMA — Direito tributário: : DELEGADO DA RECEITA FEDERAL SÃO LUIS-MA e outros SENTENÇA Presentes os…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1091352-72.2024.4.01.3700 · 5ª Vara Federal Cível da SJMA — Direito tributário: DELEGADO DA RECEITA FEDERAL SÃO LUIS-MA e outros",
+      "theme": "Omissão na sentença sobre dedução em dobro do PAT para CSLL",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "PAT",
+        "Lei 6.321/1976",
+        "CTN"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Maranhão 5ª Vara Federal Cível da SJMA SENTENÇA TIPO \"A\" PROCESSO: 1091352-72.2024.4.01.3700 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: DB3 SERVIÇOS DE TELECOMUNICAÇÕES LTDA POLO PASSIVO: DELEGADO DA RECEITA FEDERAL SÃO LUIS-MA e outros SENTENÇA Presentes os requisitos de admissibilidade, conheço dos presentes embargos de declaração.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece vício de omissão na decisão anterior, pois não considerou a extensão do benefício fiscal do Programa de Alimentação do Trabalhador (PAT) para a Contribuição Social sobre o Lucro Líquido (CSLL). A parte embargante (DB3 Serviços de Telecomunicações S.A.) apontou que a sentença embargada limitou-se ao Imposto de Renda da Pessoa Jurídica (IRPJ), ignorando o pedido expresso na petição inicial sobre a CSLL. O STJ já estabeleceu que o benefício fiscal do PAT é restrito ao IRPJ, conforme art. 1º da Lei 6.321/1976 e art. 111, II, do CTN.",
+      "whatChanged": "A sentença foi alterada para incluir a dedução em dobro do PAT apenas para o IRPJ, denegando a extensão ao CSLL. A parte embargante teve seu pedido parcialmente acolhido, com efeitos infringentes, para sanar a omissão na extensão do benefício fiscal.",
+      "practicalImpact": "Empresas que deduzem em dobro do PAT devem verificar se a dedução está restrita ao IRPJ, evitando extensão para CSLL. A não aplicação do benefício fiscal para CSLL pode resultar em recolhimento indevido, exigindo compensação ou restituição.",
+      "officeAction": "A sentença altera o dispositivo da decisão anterior para limitar a dedução em dobro do PAT ao IRPJ, denegando a extensão para CSLL, com efeitos infringentes para sanar o vício de omissão.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas que utilizam PAT para dedução fiscal",
+        "Empresas com dedução em dobro do PAT",
+        "Empresas que recolhem CSLL",
+        "Empresas com dedução de IRPJ",
+        "Empresas com processos de sucessão empresarial"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 7,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Omissão na sentença sobre dedução em dobro do PAT para CSLL",
+        "period": "2024-06-22",
+        "action": "Verificar se a dedução em dobro do PAT está restrita ao IRPJ e não para CSLL, evitando recolhimento indevido",
+        "confidence": "alto"
+      },
       "id": "b4b31078-04d6-4670-8aac-3788d25d1941",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqZDXUL4liATgEwL2ZnyG1xN/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.190Z",
-      "updatedAt": "2026-08-20T15:00:30.190Z",
+      "updatedAt": "2026-08-20T23:15:09.566Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqZDXUL4liATgEwL2ZnyG1xN/certidao",
         "sourceCharacters": 9371,
         "sourceId": "trf1",
@@ -36007,43 +36022,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1048843-22.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: deral (Fazenda Nacional), por meio do qual busca o reconhecimento do direito à…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1048843-22.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: deral (Fazenda Nacional), por meio do qual busca o reconhecimento do direito à isẽ",
+      "theme": "Isenção do Imposto de Renda para portadoras de alienação mental (Mal de Alzheime",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "Custas processuais",
+        "Honorários advocatícios"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 4ª Vara Federal Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1048843-22.2025.4.01.3400 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: CELIA ANDRADE CARNEIRO CAMPOS REPRESENTANTES POLO ATIVO: RUBER MARCELO SARDINHA - DF08993 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Trata-se de procedimento comum cível ajuizado por Celia Andrade…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Sentença reconhece direito à isenção do Imposto de Renda para portadora de alienação mental (Mal de Alzheimer) desde 30/10/2019, com restituição de valores indevidamente recolhidos nos últimos cinco anos. A decisão afirma que o termo inicial da isenção é a data de comprovação da doença, não a emissão do laudo oficial, e que a isenção se aplica apenas aos proventos de aposentadoria.",
+      "whatChanged": "A jurisprudência do STJ estabelece que não é necessário apresentar laudo médico oficial para reconhecimento da isenção do Imposto de Renda, bastando que o juiz forme convicção com base em provas acostadas aos autos. A isenção se aplica apenas aos proventos de aposentadoria, não abrangendo pensões, aluguéis ou outros rendimentos.",
+      "practicalImpact": "Contribuintes com alienação mental (Mal de Alzheimer) podem solicitar isenção do IRPF sobre proventos de aposentadoria sem necessidade de laudo médico oficial, desde que comprovem a doença por meio de outros meios de prova. A restituição é condicionada à prescrição quinquenal e à atualização conforme o Manual de Orientação de Procedimentos para os Cálculos na Justiça Federal.",
+      "officeAction": "Reconhecimento do direito à isenção do Imposto de Renda para portadoras de alienação mental (Mal de Alzheimer) desde 30/10/2019, com restituição de valores indevidamente recolhidos nos últimos cinco anos, limitado aos proventos de aposentadoria.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Portadoras de alienação mental (Mal de Alzheimer)",
+        "Aposentados com moléstia grave",
+        "Contribuintes com proventos de aposentadoria",
+        "Beneficiários de isenção tributária",
+        "Pessoas com incapacidade mental"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "legalImpact": 9,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento da isenção do IRPF para portadoras de alienação mental (Mal de Alzheimer)",
+        "period": "Últimos 5 anos",
+        "action": "Solicitação de isenção com base em provas médicas não oficiais e restituição de impostos indevidamente recolhidos",
+        "confidence": "alto"
+      },
       "id": "b3079f5f-9e8c-4309-b31d-15b38a627757",
-      "score": 8.2,
+      "score": 8.4,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wx71ANK4Z2jUoJ9CAT91lb5ZrzBL3W/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.015Z",
-      "updatedAt": "2026-08-20T14:46:01.015Z",
+      "updatedAt": "2026-08-20T22:47:01.053Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wx71ANK4Z2jUoJ9CAT91lb5ZrzBL3W/certidao",
         "sourceCharacters": 13296,
         "sourceId": "trf1",
@@ -36069,43 +36097,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo B · 1007204-17.2026.4.01.3100 · 2ª Vara Federal Cível da SJAP — Direito tributário: ré à conversão em pecúnia de dois períodos de licença-prêmio não usufruídos, a…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo B · 1007204-17.2026.4.01.3100 · 2ª Vara Federal Cível da SJAP — Direito tributário: ré à conversão em pecúnia de dois períodos de licença-prêmio não usufruídos, a isê",
+      "theme": "Conversão em pecúnia de licença-prêmio não usufruída",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de renda",
+        "Contribuição previdenciária",
+        "Honorários advocatícios"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Amapá 2ª Vara Federal Cível da SJAP SENTENÇA TIPO \"B\" PROCESSO: 1007204-17.2026.4.01.3100 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: PAULO AFONSO BRITO LOBATO REPRESENTANTES POLO ATIVO: CLEMILTON DUARTE DE MATOS - AP4128 POLO PASSIVO: UNIÃO FEDERAL SENTENÇA I – Relatório: Trata-se de ação de procedimento comum ajuizada por Paulo Afonso Brito Lobato em face…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Sentença confirma direito do servidor público federal a conversão em pecúnia de dois períodos de licença-prêmio não usufruídos (seis meses), com isenção de imposto de renda e contribuição previdenciária, e dispensa de honorários advocatícios conforme art. 19, §1º, da Lei nº 10.522/2002.",
+      "whatChanged": "A União reconheceu procedência do pedido de conversão em pecúnia de dois períodos de licença-prêmio não usufruídos, com isenção de imposto de renda e contribuição previdenciária, e dispensa de honorários advocatícios por aplicação do Tema Repetitivo nº 1.086 do STJ.",
+      "practicalImpact": "Servidores públicos federais que adquiriram licenças-prêmio antes de 15/10/1996 e não usufruíram ou não contaram em dobro para aposentadoria têm direito à conversão em pecúnia sem incidência de imposto de renda e contribuição previdenciária, com dispensa de honorários advocatícios.",
+      "officeAction": "A sentença não se submete ao reexame necessário e condena a União ao pagamento da indenização sem incidência de imposto de renda e contribuição previdenciária, com dispensa de honorários advocatícios conforme art. 19, §1º, da Lei nº 10.522/2002.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos federais com licenças-prêmio não usufruídas",
+        "Servidores públicos federais aposentados",
+        "Receita Federal",
+        "Advogados de servidores públicos",
+        "União Federal"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Conversão em pecúnia de licença-prêmio não usufruída",
+        "period": "2025-02-10 a 2026-04-30",
+        "action": "Reconhecimento da procedência do pedido de conversão em pecúnia de dois períodos de licença-prêmio não usufruídos, com isenção de imposto de renda e contribuição previdenciária, e dispensa de honorários advocatícios",
+        "confidence": "alto"
+      },
       "id": "a8e14e8e-8fa3-461b-b214-aecda8ed3b03",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUL8ls4Tny43GZrvMJbg/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.015Z",
-      "updatedAt": "2026-08-20T14:46:01.015Z",
+      "updatedAt": "2026-08-20T22:53:57.649Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUL8ls4Tny43GZrvMJbg/certidao",
         "sourceCharacters": 12078,
         "sourceId": "trf1",
@@ -36131,43 +36172,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo C · 1022465-13.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: Ltda., em face de ato atribuído ao Delegado da Receita Federal do Brasil de…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo C · 1022465-13.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: Ltda., em face de ato atribuído ao Delegado da Receita Federal do Brasil de Admini",
+      "theme": "Retenção na fonte do IRPF e Tributação Mínima Anual de Altas Rendas",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto sobre a Renda das Pess",
+        "Tributação Mínima Anual de Alt",
+        "IRPF (Imposto sobre a Renda de",
+        "Lucros e dividendos",
+        "Lei nº 15.270/2025",
+        "Art. 6º-A da Lei nº 9.250/1995"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo C)",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo c) em 2026-08-20. DA SILVA LTDA IMPETRADO: UNIAO FEDERAL (FAZENDA NACIONAL), DELEGADO DA RECEITA FEDERAL EM MANAUS SENTENÇA Trata-se de mandado de segurança preventivo, com pedido liminar, impetrado por Lincon Jesus da Silva e L.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença do TJF da 1ª Região afirma que a retenção de 10% do IRPF e a Tributação Mínima Anual de Altas Rendas, estabelecidas pela Lei nº 15.270/2025, não se aplicam aos impetrantes devido à falta de demonstração de ameaça concreta e individualizada. O juízo negou o mandado de segurança preventivo por ausência de interesse processual, destacando que a norma não pode ser analisada em abstrato sem fato específico demonstrado.",
+      "whatChanged": "A Lei nº 15.270/2025 introduziu retenção de 10% do IRPF e Tributação Mínima Anual de Altas Rendas para lucros e dividendos superiores a R$ 50.000,00 mensais e rendimentos anuais superiores a R$ 600.000,00, mas a sentença rejeitou a aplicação a empresas sem demonstração de pagamento acima do limite.",
+      "practicalImpact": "Empresas optantes pelo Simples Nacional devem verificar se há pagamento de lucros e dividendos acima de R$ 50.000,00 mensais para evitar retenção de 10% do IRPF. A Tributação Mínima Anual de Altas Rendas não se aplica se não houver demonstração de ameaça concreta à esfera jurídica.",
+      "officeAction": "A sentença rejeita a aplicação da Lei nº 15.270/2025 a empresas sem demonstração de pagamento acima do limite mensal de R$ 50.000,00 para lucros e dividendos, destacando que a norma não se aplica sem fato específico individualizado.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas optantes pelo Simples Nacional",
+        "Pessoas físicas com rendimentos superiores a R$ 600.000,00",
+        "Empresas com distribuição de lucros e dividendos",
+        "Pessoas físicas residentes no Brasil",
+        "Empresas com rendimentos anuais superiores a R$ 600.000,00"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 7,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Análise da aplicação da Lei nº 15.270/2025 para empresas sem demonstração de pagamento acima do limite",
+        "period": "2024-2026",
+        "action": "Verificação de pagamentos de lucros e dividendos acima de R$ 50.000,00 mensais para evitar retenção de 10% do IRPF",
+        "confidence": "médio"
+      },
       "id": "f57c7b0b-fcdb-4ab7-aad8-58df67e8e38b",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.1,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNZyaUmzJUnTkg4OaZ5eBjo9/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.016Z",
-      "updatedAt": "2026-08-20T14:46:01.016Z",
+      "updatedAt": "2026-08-20T23:01:18.369Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNZyaUmzJUnTkg4OaZ5eBjo9/certidao",
         "sourceCharacters": 11982,
         "sourceId": "trf1",
@@ -36193,43 +36250,58 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1120001-40.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: ral (Fazenda Nacional), , por meio do qual busca o reconhecimento do direito à…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1120001-40.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: ral (Fazenda Nacional), por meio do qual busca o reconhecimento do direito à isên",
+      "theme": "Isenção do Imposto de Renda para portadores de cardiopatia grave",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "IRPF",
+        "Aposentadoria",
+        "Cardiopatia grave",
+        "Repetição de indébito tributár"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 4ª Vara Federal Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1120001-40.2025.4.01.3400 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: ZENODIRA DA SILVA NEIVA REPRESENTANTES POLO ATIVO: EMILY FERREIRA DE CARVALHO - DF77521 e GLEDISON BELO D AVILA - DF70027 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Trata-se de procedimento comum cível…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Sentença confirma isenção do IRPF para portadora de cardiopatia grave desde 2013, com restituição de valores indevidamente recolhidos a partir da data do diagnóstico médico. A decisão aplica a Lei nº 7.713/1988, art. 6º, inciso XIV, e Súmula 598 do STJ, reconhecendo que laudos médicos particulares são suficientes para comprovação da doença grave, sem exigir laudo oficial.",
+      "whatChanged": "A decisão estabelece que o termo inicial da isenção do IRPF é a data de comprovação da doença grave (diagnóstico médico), não a data de emissão do laudo oficial. Confirma a desnecessidade de laudo médico oficial para isenção, bastando documentação médica idônea e aplicação do princípio do livre convencimento do juiz.",
+      "practicalImpact": "Portadoras de cardiopatia grave podem obter isenção do IRPF sobre aposentadoria desde a data do diagnóstico médico, sem necessidade de laudo oficial. Restituição de valores indevidamente recolhidos a partir da data do diagnóstico, com prescrição quinquenal.",
+      "officeAction": "Requer restituição de R$ 191.587,53 de valores indevidamente recolhidos no período de 2013 a 2023, com base na data do diagnóstico médico de cardiopatia grave.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Portadoras de cardiopatia grave",
+        "Aposentados com doença grave",
+        "Pessoas com aposentadoria anterior a 2019",
+        "Receberem isenção do IRPF",
+        "Requerem restituição de impostos"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção do IRPF para cardiopatia grave: restituição de valores indevidamente recolhidos",
+        "period": "A partir da data do diagnóstico médico (novembro de 2013)",
+        "action": "Requer restituição de R$ 191.587,53 de valores indevidamente recolhidos no período de 2013 a 2023",
+        "confidence": "alto"
+      },
       "id": "ff6e7f17-4e05-4060-8895-9108297bdf22",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dRO5U5pGtnTX3729ZDGMoWQ/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.017Z",
-      "updatedAt": "2026-08-20T14:46:01.017Z",
+      "updatedAt": "2026-08-20T23:08:31.749Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1dRO5U5pGtnTX3729ZDGMoWQ/certidao",
         "sourceCharacters": 11401,
         "sourceId": "trf1",
@@ -50496,8 +50568,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "96a1cbcd20c04d15ffd7ff53",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -50513,7 +50585,14 @@
         },
         "alertId": "b3079f5f-9e8c-4309-b31d-15b38a627757",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:47:01.093Z",
+        "analyzedPublishedAt": "2025-04-01",
+        "relevant": true,
+        "score": 8.4,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo B · 1007204-17.2026.4.01.3100 · 2ª Vara Federal Cível da SJAP — Direito tributário: ré à conversão em pecúnia de dois períodos de licença-prêmio não usufruídos, a isenção de imposto de renda sobre os valores da condenação e a condenação da União ao pagamento de honorários advocatícios fixados em 10% sobre o valor da condenação. Por despacho (id. 2254050608),",
@@ -50532,8 +50611,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "81688a8212f4352c96f1fe4f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -50549,7 +50628,14 @@
         },
         "alertId": "a8e14e8e-8fa3-461b-b214-aecda8ed3b03",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:53:57.692Z",
+        "analyzedPublishedAt": "2026-04-30T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo C · 1022465-13.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: Ltda., em face de ato atribuído ao Delegado da Receita Federal do Brasil de Administração Tributária em Manaus/AM, com indicação da União Federal como pessoa jurídica interessada, objetivando, em síntese, afastar a retenção na fonte do Imposto sobre a Renda das Pessoas Físicas à",
@@ -50568,8 +50654,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "975e5bcddb1017214ec47cf9",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -50585,7 +50671,14 @@
         },
         "alertId": "f57c7b0b-fcdb-4ab7-aad8-58df67e8e38b",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:01:18.412Z",
+        "analyzedPublishedAt": "2024-08-15T00:00:00",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1120001-40.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: ral (Fazenda Nacional), , por meio do qual busca o reconhecimento do direito à isenção do imposto de renda, em razão de ser portadora de cardiopatia grave desde 30/10/2019. Requer, ainda, a condenação da União à restituição dos valores indevidamente recolhidos nos últimos cinc",
@@ -50604,8 +50697,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "00b3facd7e639dce23800d91",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -50621,7 +50714,14 @@
         },
         "alertId": "ff6e7f17-4e05-4060-8895-9108297bdf22",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:08:31.793Z",
+        "analyzedPublishedAt": "2025-03-24T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1091352-72.2024.4.01.3700 · 5ª Vara Federal Cível da SJMA — Direito tributário: : DELEGADO DA RECEITA FEDERAL SÃO LUIS-MA e outros SENTENÇA Presentes os requisitos de admissibilidade, conheço dos presentes embargos de declaração. A parte embargante, DB3 Serviços de Telecomunicações S.A., aponta vício de omissão (art. 1.022, II, do CPC), sob o argument",
@@ -50640,8 +50740,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "76360f3ceb3a3a0189b19765",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -50657,7 +50757,14 @@
         },
         "alertId": "b4b31078-04d6-4670-8aac-3788d25d1941",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:15:09.610Z",
+        "analyzedPublishedAt": "2024-06-22T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1007155-10.2025.4.01.3100 · 3ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: ião Federal (Fazenda Nacional), na qual pretende o reconhecimento do direito à isenção do Imposto de Renda da Pessoa Física incidente sobre os valores recebidos a título de pensão por morte, bem como a restituição das quantias que afirma terem sido indevidamente retidas. A aut",
@@ -73831,6 +73938,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "4bfee20a-5dbe-4247-abc9-bda1fb3849f6",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T22:39:30.478Z",
+        "finishedAt": "2026-08-20T23:15:09.645Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "0eff1e2d-0cb7-483d-9c3e-9a72e03a4d32",
         "trigger": "github-actions-history",
@@ -100369,275 +100489,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "10e3a32b-ebe9-4afd-aa7b-00d7d8465199",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-19T20:18:11.350Z",
-        "finishedAt": "2026-08-19T20:22:31.146Z",
-        "discovered": 477,
-        "analyzed": 1,
-        "published": 1,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 10,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 19,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "error",
-            "found": 0,
-            "message": "Fonte respondeu com status 400."
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 101,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T22:37:15.005Z",
-    "nextRunAt": "2026-08-21T04:37:15.005Z"
+    "lastRunAt": "2026-08-20T23:15:09.645Z",
+    "nextRunAt": "2026-08-21T05:15:09.645Z"
   }
 }
