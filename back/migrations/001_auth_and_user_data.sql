@@ -93,10 +93,13 @@ CREATE TABLE IF NOT EXISTS publication_reactions (
   section TEXT,
   topics TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
   metadata JSONB NOT NULL DEFAULT '{}'::jsonb,
+  snapshot JSONB NOT NULL DEFAULT '{}'::jsonb,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   PRIMARY KEY (user_id, publication_id)
 );
+
+ALTER TABLE publication_reactions ADD COLUMN IF NOT EXISTS snapshot JSONB NOT NULL DEFAULT '{}'::jsonb;
 
 CREATE INDEX IF NOT EXISTS publication_reactions_user_updated_idx
   ON publication_reactions (user_id, updated_at DESC);

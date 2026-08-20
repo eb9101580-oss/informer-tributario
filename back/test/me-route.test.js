@@ -62,7 +62,7 @@ test('GET /api/me reúne usuário, preferências, reações e salvos', async () 
       return { rows: [{ email_alerts: true, action_alerts: true, minimum_score: '8.5', digest_frequency: 'instant', topic_weights: { 'topic:icms': 2 } }] };
     }
     if (sql.includes('FROM publication_reactions')) {
-      return { rows: [{ publication_id: 'alert-1', reaction: 1, source: 'STJ', section: 'decisoes', topics: ['ICMS'], updated_at: '2026-08-20T10:00:00Z' }] };
+      return { rows: [{ publication_id: 'alert-1', reaction: 1, source: 'STJ', section: 'decisoes', topics: ['ICMS'], snapshot: { id: 'alert-1', title: 'Decisão curtida' }, updated_at: '2026-08-20T10:00:00Z' }] };
     }
     if (sql.includes('FROM saved_publications')) {
       return { rows: [{ publication_id: 'alert-2', snapshot: { title: 'Notícia' }, created_at: '2026-08-20T11:00:00Z' }] };
@@ -80,6 +80,7 @@ test('GET /api/me reúne usuário, preferências, reações e salvos', async () 
     assert.equal(body.reactions[0].reaction, 'like');
     assert.equal(body.reactions[0].alertId, 'alert-1');
     assert.equal(body.reactions[0].value, 1);
+    assert.equal(body.reactions[0].snapshot.title, 'Decisão curtida');
     assert.equal(body.savedPublications[0].snapshot.title, 'Notícia');
     assert.deepEqual(body.savedAlertIds, ['alert-2']);
   });
@@ -106,13 +107,15 @@ test('POST /api/me/reactions persiste e atualiza o perfil aprendido', async () =
     const response = await fetch(`${baseUrl}/api/me/reactions`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ alertId: 'alert-1', value: 1, agency: 'STJ', theme: 'decisoes', taxes: ['ICMS'] }),
+      body: JSON.stringify({ alertId: 'alert-1', value: 1, agency: 'STJ', theme: 'decisoes', taxes: ['ICMS'], publication: { id: 'alert-1', title: 'Decisão curtida' } }),
     });
     const body = await response.json();
     assert.equal(response.status, 200);
     assert.equal(body.reaction, 'like');
     assert.equal(body.topicWeights['topic:icms'], 1);
     assert.ok(calls.some((call) => call.sql.includes('INSERT INTO publication_reactions')));
+    const insert = calls.find((call) => call.sql.includes('INSERT INTO publication_reactions'));
+    assert.equal(JSON.parse(insert.values[6]).title, 'Decisão curtida');
     assert.ok(calls.some((call) => call.sql.includes('UPDATE user_preferences')));
   });
 });

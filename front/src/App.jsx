@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   BellRing, Bookmark, Building2, CalendarDays, ChevronDown, CircleAlert, CircleDollarSign,
-  FileSearch, Menu, RefreshCw, Search, ShieldCheck, Sparkles, X,
+  FileSearch, Menu, RefreshCw, Search, ShieldCheck, Sparkles, ThumbsUp, X,
 } from 'lucide-react';
 import { api } from './api.js';
 import { Sidebar } from './components/Sidebar.jsx';
@@ -37,6 +37,26 @@ function LoadingState() {
 
 function ErrorState({ message, onRetry }) {
   return <div className="empty-state"><CircleAlert size={30} /><h3>Não foi possível carregar o radar</h3><p>{message}</p><button onClick={onRetry}><RefreshCw size={17} />Tentar novamente</button></div>;
+}
+
+function rankFeedAlerts(items, feedback) {
+  const profileScore = (alert) => feedback.reduce((total, vote) => {
+    if (vote.alertId === alert.id) return total + vote.value * 2;
+    const sameAgency = vote.agency && vote.agency === alert.agency ? 0.35 : 0;
+    const sameTheme = vote.theme && vote.theme === alert.theme ? 0.4 : 0;
+    const sharedTaxes = (alert.taxes || []).filter((tax) => (vote.taxes || []).includes(tax)).length * 0.25;
+    return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
+  }, 0);
+  const personalizedScore = (alert) => {
+    const published = Date.parse(alert.publishedAt || alert.createdAt || '') || Date.now();
+    const ageDays = Math.max(0, (Date.now() - published) / 86400000);
+    return Number(alert.score || 0) + profileScore(alert) - Math.min(2, ageDays * 0.35);
+  };
+  return [...items].sort((left, right) => {
+    const preferenceDifference = personalizedScore(right) - personalizedScore(left);
+    if (Math.abs(preferenceDifference) > 0.15) return preferenceDifference;
+    return (Date.parse(right.publishedAt || right.createdAt || '') || 0) - (Date.parse(left.publishedAt || left.createdAt || '') || 0);
+  });
 }
 
 export default function App() {
@@ -98,50 +118,46 @@ function InternalApp() {
 
   const filteredAlerts = useMemo(() => {
     const term = search.toLocaleLowerCase('pt-BR').trim();
-    const availableAlerts = relevance === 'saved'
-      ? [...alerts, ...savedPublications
-        .filter((saved) => !alerts.some((alert) => alert.id === saved.publicationId))
-        .map((saved) => ({ ...saved.snapshot, id: saved.snapshot?.id || saved.publicationId }))]
+    const archivedPublications = [
+      ...savedPublications.map((saved) => ({ publicationId: saved.publicationId, snapshot: saved.snapshot })),
+      ...feedback.filter((vote) => vote.value === 1 && vote.snapshot).map((vote) => ({ publicationId: vote.alertId, snapshot: vote.snapshot })),
+    ];
+    const availableAlerts = ['saved', 'liked'].includes(relevance)
+      ? [...alerts, ...archivedPublications
+        .filter((archived) => !alerts.some((alert) => alert.id === archived.publicationId))
+        .map((archived) => ({ ...archived.snapshot, id: archived.snapshot?.id || archived.publicationId }))]
       : alerts;
     return availableAlerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl).filter((alert) => {
       const searchable = [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])].join(' ').toLocaleLowerCase('pt-BR');
       const relevanceMatch = relevance === 'all'
-        || (relevance === 'urgent' ? alert.score >= 8 : relevance === 'saved' ? savedAlertIds.includes(alert.id) : alert.score >= 6 && alert.score < 8);
+        || (relevance === 'urgent' ? alert.score >= 8
+          : relevance === 'saved' ? savedAlertIds.includes(alert.id)
+            : relevance === 'liked' ? feedback.some((vote) => vote.alertId === alert.id && vote.value === 1)
+              : alert.score >= 6 && alert.score < 8);
       return (!term || searchable.includes(term)) && relevanceMatch;
     });
-  }, [alerts, search, relevance, savedAlertIds, savedPublications]);
+  }, [alerts, search, relevance, savedAlertIds, savedPublications, feedback]);
 
-  const rankedAlerts = useMemo(() => {
-    const profileScore = (alert) => feedback.reduce((total, vote) => {
-      if (vote.alertId === alert.id) return total + vote.value * 2;
-      const sameAgency = vote.agency && vote.agency === alert.agency ? 0.35 : 0;
-      const sameTheme = vote.theme && vote.theme === alert.theme ? 0.4 : 0;
-      const sharedTaxes = (alert.taxes || []).filter((tax) => (vote.taxes || []).includes(tax)).length * 0.25;
-      return total + vote.value * (sameAgency + sameTheme + sharedTaxes);
-    }, 0);
-    const personalizedScore = (alert) => {
-      const published = Date.parse(alert.publishedAt || alert.createdAt || '') || Date.now();
-      const ageDays = Math.max(0, (Date.now() - published) / 86400000);
-      return Number(alert.score || 0) + profileScore(alert) - Math.min(2, ageDays * 0.35);
-    };
-    return [...filteredAlerts].sort((left, right) => {
-      const preferenceDifference = personalizedScore(right) - personalizedScore(left);
-      if (Math.abs(preferenceDifference) > 0.15) return preferenceDifference;
-      return (Date.parse(right.publishedAt || right.createdAt || '') || 0) - (Date.parse(left.publishedAt || left.createdAt || '') || 0);
-    });
-  }, [filteredAlerts, feedback]);
-  const opportunities = rankedAlerts.filter((alert) => alert.opportunity);
+  const rankedAlerts = useMemo(() => rankFeedAlerts(filteredAlerts, feedback), [filteredAlerts, feedback]);
+  const overviewAlerts = useMemo(() => rankFeedAlerts(alerts.filter((alert) => alert.isDemo === false
+    && alert.score >= 6
+    && alert.officialUrl
+    && !savedAlertIds.includes(alert.id)
+    && !feedback.some((vote) => vote.alertId === alert.id && vote.value === 1)), feedback), [alerts, feedback, savedAlertIds]);
+  const opportunities = overviewAlerts.filter((alert) => alert.opportunity);
   const [title, subtitle] = pageTitles[activePage];
 
   const sendFeedback = async (alertId, rating) => {
-    const alert = alerts.find((item) => item.id === alertId);
+    const alert = alerts.find((item) => item.id === alertId)
+      || savedPublications.find((item) => item.publicationId === alertId)?.snapshot
+      || feedback.find((item) => item.alertId === alertId)?.snapshot;
     if (!alert) return;
     const value = ['muito relevante', 'relevante'].includes(rating) ? 1 : -1;
-    const vote = { alertId, value, agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] };
+    const vote = { alertId, value, agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [], snapshot: alert };
     const previous = feedback;
     const next = [...feedback.filter((item) => item.alertId !== alertId), vote];
     setFeedback(next);
-    try { await api.setReaction(alertId, value, { agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] }); }
+    try { await api.setReaction(alertId, value, { agency: alert.agency, theme: alert.theme, taxes: alert.taxes || [] }, alert); }
     catch (requestError) { setFeedback(previous); setError(requestError.message); }
   };
 
@@ -202,7 +218,7 @@ function InternalApp() {
       <section className="page-section">
         <div className="filters filters--wide">
           <label><Search size={18} /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar tema, tributo ou órgão..." />{search && <button onClick={() => setSearch('')}><X size={15} /></button>}</label>
-          <div className="segmented"><button className={relevance === 'all' ? 'active' : ''} onClick={() => setRelevance('all')}>Todos</button><button className={relevance === 'urgent' ? 'active' : ''} onClick={() => setRelevance('urgent')}>Alta prioridade</button><button className={relevance === 'relevant' ? 'active' : ''} onClick={() => setRelevance('relevant')}>Relevantes</button><button className={relevance === 'saved' ? 'active' : ''} onClick={() => setRelevance('saved')}><Bookmark size={15} /> Salvos</button></div>
+          <div className="segmented"><button className={relevance === 'all' ? 'active' : ''} onClick={() => setRelevance('all')}>Todos</button><button className={relevance === 'urgent' ? 'active' : ''} onClick={() => setRelevance('urgent')}>Alta prioridade</button><button className={relevance === 'relevant' ? 'active' : ''} onClick={() => setRelevance('relevant')}>Relevantes</button><button className={relevance === 'liked' ? 'active' : ''} onClick={() => setRelevance('liked')}><ThumbsUp size={15} /> Curtidos</button><button className={relevance === 'saved' ? 'active' : ''} onClick={() => setRelevance('saved')}><Bookmark size={15} /> Salvos</button></div>
         </div>
         <div className="section-heading"><div><span className="live-dot" /> Monitoramento ativo</div><small>{filteredAlerts.length} resultados</small></div>
         <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} saved={savedFor(alert.id)} onSave={() => toggleSaved(alert)} />)}</div>
@@ -221,8 +237,8 @@ function InternalApp() {
 
         <section className="panel overview-feed">
           <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Publicações mais novas primeiro; seus votos ajudam a aperfeiçoar a relevância</p></div><span className="live-dot" /></div>
-          <div className="alerts-list">{rankedAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} saved={savedFor(alert.id)} onSave={() => toggleSaved(alert)} />)}</div>
-          {!rankedAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Nenhuma publicação de hoje ou ontem</h3><p>Novos itens aparecerão após a análise automática.</p></div>}
+          <div className="alerts-list">{overviewAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} onOpen={setSelectedAlert} onFeedback={(value) => sendFeedback(alert.id, value === 1 ? 'muito relevante' : 'irrelevante')} feedback={voteFor(alert.id)} saved={savedFor(alert.id)} onSave={() => toggleSaved(alert)} />)}</div>
+          {!overviewAlerts.length && <div className="empty-state"><FileSearch size={29} /><h3>Você já organizou todas as publicações atuais</h3><p>Itens curtidos ficam em Alertas › Curtidos e os salvos em Alertas › Salvos.</p></div>}
         </section>
       </>
     );

@@ -23,7 +23,7 @@ export const api = {
   me: () => request('/me'),
   login: (email, password) => request('/auth/sign-in/email', { method: 'POST', body: JSON.stringify({ email, password, rememberMe: true }) }),
   logout: () => request('/auth/sign-out', { method: 'POST', body: JSON.stringify({}) }),
-  setReaction: (alertId, value, metadata = {}) => request('/me/reactions', { method: 'POST', body: JSON.stringify({ alertId, value, ...metadata }) }),
+  setReaction: (alertId, value, metadata = {}, publication = null) => request('/me/reactions', { method: 'POST', body: JSON.stringify({ alertId, value, ...metadata, ...(publication ? { publication } : {}) }) }),
   saveAlert: (alert) => request(`/me/saved/${encodeURIComponent(alert.id)}`, { method: 'POST', body: JSON.stringify({ publication: alert }) }),
   removeSavedAlert: (alertId) => request(`/me/saved/${encodeURIComponent(alertId)}`, { method: 'DELETE' }),
   updatePreferences: (payload) => request('/me/preferences', { method: 'PATCH', body: JSON.stringify(payload) }),

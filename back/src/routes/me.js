@@ -153,7 +153,7 @@ export function createMeRouter({
           [userId],
         ),
         queryFn(
-          `SELECT publication_id, reaction, source, section, topics, updated_at
+          `SELECT publication_id, reaction, source, section, topics, snapshot, updated_at
              FROM publication_reactions
             WHERE user_id = $1
             ORDER BY updated_at DESC`,
@@ -182,6 +182,7 @@ export function createMeRouter({
           source: row.source,
           section: row.section,
           topics: row.topics || [],
+          snapshot: row.snapshot || {},
           updatedAt: row.updated_at,
         })),
         savedPublications: savedResult.rows.map((row) => ({
@@ -202,6 +203,7 @@ export function createMeRouter({
       const publicationId = normalizePublicationId(request.body?.publicationId ?? request.body?.alertId);
       const reaction = normalizeReaction(request.body?.reaction ?? request.body?.value);
       const { source, section, topics } = normalizeMetadata(request.body);
+      const snapshot = normalizeSnapshot(request.body?.publication ?? request.body?.snapshot);
 
       const topicWeights = await transactionFn(async (client) => {
         if (reaction === null) {
@@ -212,15 +214,16 @@ export function createMeRouter({
         } else {
           await client.query(
             `INSERT INTO publication_reactions
-               (user_id, publication_id, reaction, source, section, topics, metadata, created_at, updated_at)
-             VALUES ($1, $2, $3, $4, $5, $6, '{}'::jsonb, NOW(), NOW())
+               (user_id, publication_id, reaction, source, section, topics, metadata, snapshot, created_at, updated_at)
+             VALUES ($1, $2, $3, $4, $5, $6, '{}'::jsonb, $7::jsonb, NOW(), NOW())
              ON CONFLICT (user_id, publication_id) DO UPDATE
                SET reaction = EXCLUDED.reaction,
                    source = EXCLUDED.source,
                    section = EXCLUDED.section,
                    topics = EXCLUDED.topics,
+                   snapshot = CASE WHEN EXCLUDED.snapshot = '{}'::jsonb THEN publication_reactions.snapshot ELSE EXCLUDED.snapshot END,
                    updated_at = NOW()`,
-            [userId, publicationId, reaction, source, section, topics],
+            [userId, publicationId, reaction, source, section, topics, JSON.stringify(snapshot)],
           );
         }
         return recomputeTopicWeights(client, userId);
