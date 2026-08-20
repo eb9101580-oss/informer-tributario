@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T21:52:07.750Z",
+    "lastUpdatedAt": "2026-08-20T22:32:30.810Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -17241,43 +17241,58 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 0001128-10.2025.4.05.8405 · 1ª Relatoria da 1ª Turma Recursal RN — Direito tributário: EMENTA PODER JUDICIÁRIO Turma Recursal do Rio Grande do Norte 1ª Turma Recursal…",
-      "theme": "Direito tributário",
+      "title": "Acórdão judicial: Recurso inominado parcialmente provido para dispensa de carência em benefício previdenciário por cegueira monocular (Art. 151 da Lei nº 8.213/1991)",
+      "theme": "Dispensa de carência previdenciária para cegueira monocular",
       "agency": "Tribunal Regional Federal da 5ª Região",
-      "taxes": [],
+      "taxes": [
+        "Benefício por incapacidadetemp",
+        "Carência previdenciária",
+        "INSS",
+        "Lei nº 8.213/1991",
+        "Art. 151 da Lei de Benefícios"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 5ª Região publicou acórdão judicial publicada no djen em 2026-08-20. TESE UNIFORMIZADA PELA TURMA NACIONAL DE UNIFORMIZAÇÃO (PEDILEF Nº 0504218-65.2017.4.05.8302).",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão da 1ª Turma Recursal do Rio Grande do Norte reconhece a dispensa de carência previdenciária para o benefício de auxílio por incapacidade temporária em caso de cegueira monocular irreversível, conforme previsto no artigo 151 da Lei nº 8.213/1991. O recurso inominado interposto pelo autor foi parcialmente provido, permitindo a concessão do benefício no período de 03/06/2024 a 14/12/2024, com base na tese uniformizada da Turma Nacional de Uniformização (PEDILEF nº 0504218-65.2017.4.05.8302).",
+      "whatChanged": "O acórdão estabelece que a cegueira monocular (CID H54.4) é considerada exceção ao período de carência previdenciária, conforme art. 151 da Lei nº 8.213/1991, sem necessidade de cumprimento das doze contribuições mensais. A decisão reforça a interpretação ampla do termo 'cegueira' na legislação previdenciária, alinhando-se à orientação da Turma Nacional de Uniformização de Jurisprudência dos Juizados Especiais Federais.",
+      "practicalImpact": "Profissionais de saúde e segurados com cegueira monocular podem obter dispensa de carência previdenciária para benefício por incapacidade temporária, sem exigir o cumprimento do período mínimo de doze contribuições. O benefício é concedido apenas no período em que a incapacidade foi reconhecida pela perícia administrativa (03/06/2024 a 14/12/2024).",
+      "officeAction": "O recurso inominado foi parcialmente provido, permitindo a concessão do benefício por incapacidade temporária no período de 03/06/2024 a 14/12/2024, com correção monetária e juros moratórios conforme o Manual de Cálculos da Justiça Federal.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Segurados com cegueira monocular",
+        "Profissionais de saúde",
+        "Autos de benefício previdenciário",
+        "Juizados Especiais Federais",
+        "INSS"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 7,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Dispensa de carência previdenciária para cegueira monocular",
+        "period": "Período de 03/06/2024 a 14/12/2024",
+        "action": "Conceder benefício por incapacidade temporária com dispensa de carência previdenciária para segurados com cegueira monocular irreversível (CID H54.4)",
+        "confidence": "alto"
+      },
       "id": "0aec6592-6e9a-4302-93e7-74c0dee8a9a2",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9YQni2MoSDT5N7gXRgMzm2n/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T17:16:50.236Z",
-      "updatedAt": "2026-08-20T17:16:50.236Z",
+      "updatedAt": "2026-08-20T22:03:48.534Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9YQni2MoSDT5N7gXRgMzm2n/certidao",
         "sourceCharacters": 13444,
         "sourceId": "trf5",
@@ -33189,47 +33204,58 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1043227-08.2021.4.01.3400 · 24ª Vara Federal de Juizado Especial Cível da SJDF — Direito tributário: FEDERAL (FAZENDA NACIONAL), objetivando a declaração de…",
-      "theme": "Direito tributário · ISS, PIS, Cofins",
+      "title": "Sentença Tipo A · 1043227-08.2021.4.01.3400 · 24ª Vara Federal de Juizado Especial Cível da SJDF — Direito tributário: FEDERAL (FAZENDA NACIONAL), objetivando a declaração de inex",
+      "theme": "Inclusão do ISS nas bases de cálculo do PIS e Cofins",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
-        "ISS",
         "PIS",
-        "Cofins"
+        "Cofins",
+        "ISS",
+        "ICMS",
+        "Receita bruta"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 24ª Vara Federal de Juizado Especial Cível da SJDF PROCESSO: 1043227-08.2021.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: GRAFICA E EDITORA QUALIDADE LTDA REPRESENTANTES POLO ATIVO: RICARDO DAVID RIBEIRO - DF19569 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA I-RELATÓRIO Trata-se de ação ajuizada por…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença declara a inexistência de relação jurídico-tributária que obrigue a incluir os valores do ISS nas bases de cálculo do PIS e Cofins, reconhecendo o direito à restituição dos valores recolhidos a maior no quinquênio anterior ao ajuizamento da ação e dos recolhimentos efetuados no curso da demanda, com atualização pela Taxa Selic.",
+      "whatChanged": "O ISS deve ser excluído das bases de cálculo do PIS e Cofins, conforme a orientação do RE nº 574.706, já que o valor do ISS não representa receita própria da empresa, mas destinação fiscal ao ente tributante.",
+      "practicalImpact": "Empresas que recolheram PIS e Cofins com inclusão do ISS nas bases de cálculo devem solicitar restituição dos valores recolhidos a maior, respeitando a prescrição quinquenal e atualizando com a Taxa Selic.",
+      "officeAction": "Reconhecimento da inexistência de relação jurídico-tributária que obrigue a inclusão do ISS nas bases de cálculo do PIS e Cofins, com direito à restituição dos valores recolhidos a maior no quinquênio anterior ao ajuizamento da ação.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de serviços sujeitas ao ISS",
+        "Empresas que recolhem PIS e Cofins",
+        "Contribuintes federais",
+        "Empresas de atividades gráficas",
+        "Empresas com receita bruta"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição de PIS e Cofins com exclusão do ISS",
+        "period": "Quinquênio anterior ao ajuizamento da ação e período do curso da demanda",
+        "action": "Solicitar restituição dos valores recolhidos a maior com atualização pela Taxa Selic",
+        "confidence": "alto"
+      },
       "id": "7ef21480-dd5e-4b4d-b5a2-e24495ed72fc",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdK6WNUPWmCQTOexdAReLPQ1G/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.013Z",
-      "updatedAt": "2026-08-20T14:46:01.013Z",
+      "updatedAt": "2026-08-20T22:10:01.668Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdK6WNUPWmCQTOexdAReLPQ1G/certidao",
         "sourceCharacters": 9018,
         "sourceId": "trf1",
@@ -33255,47 +33281,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1004295-49.2024.4.01.3301 · Vara Federal Cível e Criminal da SSJ de Ilhéus-BA — Direito tributário: FEDERAL DE VITÓRIA DA CONQUISTA pleiteando, liminarmente, a…",
-      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "title": "Sentença Tipo A · 1004295-49.2024.4.01.3301 · Vara Federal Cível e Criminal da SSJ de Ilhéus-BA — Direito tributário: FEDERAL DE VITORIA DA CONQUISTA pleiteando, liminarmente, a悬浮",
+      "theme": "Suspensão da exigibilidade do PIS e Cofins sobre crédito presumido de ICMS",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
-        "ICMS",
         "PIS",
-        "Cofins"
+        "Cofins",
+        "ICMS",
+        "ISSQN",
+        "Lei 10.637/2002",
+        "Lei 10.833/2003"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Ilhéus-BA Vara Federal Cível e Criminal da SSJ de Ilhéus-BA SENTENÇA TIPO \"A\" PROCESSO: 1004295-49.2024.4.01.3301 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: AGUILAR LIMA EMPREENDIMENTOS TURISTICOS LTDA - ME REPRESENTANTES POLO ATIVO: RENNER SILVA FONSECA - MG97515 POLO PASSIVO: DELEGADO DA RECEITA FEDERAL DO BRASIL EM VITORIA DA CONQUISTA e outros…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença indeferiu a liminar da impetrante que pleiteava suspensão da exigibilidade do PIS e Cofins sobre crédito presumido de ICMS. A decisão reforça que o crédito presumido de ICMS não pode ser incluído na base de cálculo do PIS e Cofins, já que os impostos são receitas dos entes federativos e não da empresa. A sentença também destacou que a Lei 14.789/2023 não ampliou o conceito de receita bruta e não viola o princípio da capacidade contributiva ou o Pacto Federativo.",
+      "whatChanged": "A sentença reforça que o crédito presumido de ICMS não pode ser incluído na base de cálculo do PIS e Cofins, já que os impostos são receitas dos entes federativos. A Lei 14.789/2023 não ampliou o conceito de receita bruta e não viola o princípio da capacidade contributiva ou o Pacto Federativo.",
+      "practicalImpact": "Empresas que utilizam crédito presumido de ICMS devem evitar incluir esse crédito na base de cálculo do PIS e Cofins, pois a exigibilidade dessas contribuições permanece válida. A sentença reforça que a Lei 14.789/2023 não alterou o conceito de receita bruta, mantendo a isenção das Leis 10.637/2002 e 10.833/2003 para créditos presumidos de ICMS relacionados à implantação ou expansão de empreendimentos.",
+      "officeAction": "A sentença indeferiu a liminar da impetrante, reforçando que o crédito presumido de ICMS não pode ser incluído na base de cálculo do PIS e Cofins, já que os impostos são receitas dos entes federativos. A Lei 14.789/2023 não ampliou o conceito de receita bruta e não viola o princípio da capacidade contributiva ou o Pacto Federativo.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com atividade de prestação de serviços",
+        "Empresas que utilizam crédito presumido de ICMS",
+        "Empresas com base de cálculo do PIS e Cofins incluindo crédito presumido de ICMS",
+        "Empresas com atividade de prestação de serviços tributadas pelo ISSQN",
+        "Empresas que utilizam incentivos fiscais regionais"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Suspensão da exigibilidade do PIS e Cofins sobre crédito presumido de ICMS",
+        "period": "2024-09-25 a 2025-09-25",
+        "action": "Verificar se o crédito presumido de ICMS está sendo incluído na base de cálculo do PIS e Cofins e ajustar a base de cálculo conforme a sentença",
+        "confidence": "médio"
+      },
       "id": "afc58228-9dc7-4cb7-bf90-715b72008604",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJdYlPUnW5I1T7E5KaYeXxa8G/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.014Z",
-      "updatedAt": "2026-08-20T14:46:01.014Z",
+      "updatedAt": "2026-08-20T22:16:55.408Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJdYlPUnW5I1T7E5KaYeXxa8G/certidao",
         "sourceCharacters": 6817,
         "sourceId": "trf1",
@@ -33321,43 +33359,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1050839-30.2026.4.01.3300 · 23ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: dicional que condene a União a restituir-lhe importância…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1050839-30.2026.4.01.3300 · 23ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: dicional que condene a União a restituir-lhe importância inde",
+      "theme": "Restituição de imposto de renda indevido por acumulação de prestações assistENC",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "Contribuição Previdenciária",
+        "SELIC"
+      ],
       "status": "Fato confirmado",
-      "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "kind": "Sentença judicial que condene a União a restituir imposto de renda indevido",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 23ª Vara Federal de Juizado Especial Cível da SJBA SENTENÇA TIPO A PROCESSO: 1050839-30.2026.4.01.3300 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: ELAINE DE SOUZA BARBOSA Advogados do(a) AUTOR: PABLO OTTO MENDES DE SANTANA - BA52702, VICTORIA KALINE BATISTA DA CRUZ - BA75717 REU: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Busca a parte autora…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que o valor pago a título de imposto de renda é indevido por não ter sido aplicado a alíquota correta mês a mês, já que as prestações assistenciais foram acumuladas. A União foi condenada a restituir R$ 664,14, com atualização via SELIC até a data do adimplemento.",
+      "whatChanged": "O valor de imposto de renda retido na fonte sobre prestações assistenciais acumuladas é considerado indevido, pois não se respeitou a alíquota do imposto devido mês a mês. A União deve restituir R$ 664,14 com atualização via SELIC.",
+      "practicalImpact": "Contribuintes que receberam prestações assistenciais acumuladas podem solicitar a restituição do imposto de renda indevido, com base na sentença que confirma a inadimplência da União em aplicar alíquotas corretas mês a mês.",
+      "officeAction": "A União deve restituir R$ 664,14 com atualização via SELIC até a data do efetivo adimplemento, sem custas e honorários advocatícios.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos inativos da Polícia Civil do Distrito Federal",
+        "Contribuintes que receberam benefícios previdenciários acumulados",
+        "Pessoas físicas com imposto de renda retido indevido",
+        "Estados e Distrito Federal em ações de restituição de imposto de renda",
+        "Contribuintes com contribuição previdenciária acumulada"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição de imposto de renda indevido por acumulação de prestações assistenciais",
+        "period": "2024-03-11 a 2025-03-11",
+        "action": "Solicitar restituição do imposto de renda indevido com base na sentença, com atualização via SELIC até a data do adimplemento",
+        "confidence": "alto"
+      },
       "id": "78d05238-a18a-4ded-8af9-61cb5419267c",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJdZlPUeBzt1T7E5KaZeXxa8G/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.014Z",
-      "updatedAt": "2026-08-20T14:46:01.014Z",
+      "updatedAt": "2026-08-20T22:23:24.278Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJdZlPUeBzt1T7E5KaZeXxa8G/certidao",
         "sourceCharacters": 7815,
         "sourceId": "trf1",
@@ -33383,43 +33434,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1088205-40.2025.4.01.3300 · 21ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: ja aplicado o benefício estabelecido pelo art. 6º, XIV, da…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1088205-40.2025.4.01.3300 · 21ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: ja aplicado o benefício estabelecido pelo art. 6º, XIV, da Le",
+      "theme": "Isenção do Imposto de Renda para portadores de doenças graves",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "IRPF",
+        "Lei nº 7.713/88"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 21ª Vara Federal de Juizado Especial Cível da SJBA PROCESSO: 1088205-40.2025.4.01.3300 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: LUIZ ANTONIO DO ROSARIO FIGUEREDO REPRESENTANTES POLO ATIVO: RICARDO LUIZ SERRA SILVA JUNIOR - BA29688, PEDRO CESAR IVO TRINDADE MELLO - BA29505 e CLERISTON PITON BULHOES - BA17034 POLO PASSIVO: UNIAO…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma a isenção do Imposto de Renda sobre proventos de aposentadoria para portadores de doenças graves, conforme art. 6º, XIV, da Lei nº 7.713/88. A parte autora foi comprovada como portadora de cardiopatia grave desde 2013 e neoplasia maligna desde 2024, com isenção retroativa a partir da data de comprovação da doença (27/02/2013). A sentença reforça que não há necessidade de laudo médico oficial para comprovação da moléstia grave, desde que outros meios de prova sejam suficientes. A prescrição quinquenal foi aplicada para a pretensão repetitória de recolhimentos de IRPF anteriores a 2020.",
+      "whatChanged": "A sentença estabelece que o marco inicial da isenção do Imposto de Renda é a data de comprovação da doença mediante diagnóstico médico, não a data de emissão do laudo oficial. Confirma a isenção retroativa para a data de 27/02/2013 (cardiopatia grave) e 03/2024 (neoplasia), sem exigir contemporaneidade dos sintomas ou recidiva da doença. A decisão reforça a desnecessidade de laudo médico oficial para comprovação da moléstia grave, desde que outros meios de prova sejam suficientes.",
+      "practicalImpact": "Contribuintes com doenças graves listadas no art. 6º, XIV, da Lei nº 7.713/88 podem solicitar isenção do IRPF retroativa a partir da data de comprovação da doença, sem necessidade de laudo médico oficial. A isenção é aplicável a proventos de aposentadoria e não à remuneração geral. A prescrição quinquenal aplica-se a recolhimentos de IRPF anteriores a 2020, mas não afeta a isenção retroativa para a data de comprovação da doença.",
+      "officeAction": "A parte autora deve apresentar relatório médico atualizado e circunstanciado para neoplasia maligna, e realizar perícia médica para cardiopatia grave. A sentença determina a isenção retroativa a partir da data de comprovação da doença (27/02/2013) e a restituição dos valores já descontados no IRPF.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Portadores de cardiopatia grave",
+        "Portadores de neoplasia maligna",
+        "Aposentados com doenças graves listadas no art. 6º, XIV, da Lei nº 7.713/88",
+        "Contribuintes com recolhimentos de IRPF anteriores a 2020",
+        "Pessoas com comprovação médica de doenças graves desde 2013"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção do Imposto de Renda para portadores de doenças graves",
+        "period": "2025-05-14 a 2026-05-14",
+        "action": "Requerer isenção retroativa do IRPF a partir da data de comprovação da doença (ex.: 27/02/2013) para portadores de doenças graves listadas no art. 6º, XIV, da Lei nº 7.713/88",
+        "confidence": "alto"
+      },
       "id": "95ecdf88-4458-475c-9663-982508e9fc99",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KAPnkeQmZdLUP85IlTj8evOZd5o94b/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.014Z",
-      "updatedAt": "2026-08-20T14:46:01.014Z",
+      "updatedAt": "2026-08-20T22:32:30.768Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KAPnkeQmZdLUP85IlTj8evOZd5o94b/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -46713,8 +46777,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T16:52:26.031Z",
         "id": "a21a7d00cc852be9aa470f0e",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -46730,7 +46794,14 @@
         },
         "alertId": "0aec6592-6e9a-4302-93e7-74c0dee8a9a2",
         "fastPublishedAt": "2026-08-20T17:16:50.240Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:03:48.575Z",
+        "analyzedPublishedAt": "2025-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 0003392-39.2002.4.05.8200 · 5ª Vara Federal PB — Direito tributário: PODER JUDICIÁRIO 5ª Vara Federal PB EXECUÇÃO FISCAL (1116) Nº 0003392-39.2002.4.05.8200 EXEQUENTE: COMISSAO DE VALORES MOBILIARIOS EXECUTADO: FAZENDA VIOLETA LTDA, JOSÉ MORATO FILHO - ESPÓLIO, VANDA LUCIA MORATO TAVARES DE ARAUJO A",
@@ -47723,8 +47794,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "d37bcb8ede1f217357e6f9f1",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -47740,7 +47811,14 @@
         },
         "alertId": "7ef21480-dd5e-4b4d-b5a2-e24495ed72fc",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:10:01.711Z",
+        "analyzedPublishedAt": "2023-10-15T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1004295-49.2024.4.01.3301 · Vara Federal Cível e Criminal da SSJ de Ilhéus-BA — Direito tributário: FEDERAL DE VITÓRIA DA CONQUISTA pleiteando, liminarmente, a suspensão da exigibilidade do PIS e da Cofins sobre os valores relativos ao crédito presumido de ICMS concedido à Impetrante. Relata “a Impetrante tem por objeto social, primordialmente, a prestação de serviços, s",
@@ -47759,8 +47837,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "4e7302b5d64aa0e207139ade",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -47776,7 +47854,14 @@
         },
         "alertId": "afc58228-9dc7-4cb7-bf90-715b72008604",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:16:55.449Z",
+        "analyzedPublishedAt": "2024-09-25T00:00:00",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1050839-30.2026.4.01.3300 · 23ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: dicional que condene a União a restituir-lhe importância indevidamente retida a título de imposto de renda por ocasião do recebimento acumulado de prestações do benefício assistencial. Assevera, em síntese, que o valor pago a título de imposto de renda é indevido, uma vez que",
@@ -47795,8 +47880,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "4b3913e093a26b85bdde8f2a",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -47812,7 +47897,14 @@
         },
         "alertId": "78d05238-a18a-4ded-8af9-61cb5419267c",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:23:24.321Z",
+        "analyzedPublishedAt": "2024-03-11T00:00:00",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 0011878-28.2012.4.01.3300 · 18ª Vara Federal de Execução Fiscal da SJBA — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 18ª Vara Federal de Execução Fiscal da SJBA PROCESSO: 0011878-28.2012.4.01.3300 CLASSE: EXECUÇÃO FISCAL (1116) POLO ATIVO: UNIAO FEDERAL (FAZENDA NACIONAL) POLO PASSIVO:TOP OFICE - ADMINISTRACAO DE NEGOCIOS LTDA e o",
@@ -47863,8 +47955,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "396f357ed6effe9dcc0e0a4e",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -47880,7 +47972,14 @@
         },
         "alertId": "95ecdf88-4458-475c-9663-982508e9fc99",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T22:32:30.810Z",
+        "analyzedPublishedAt": "2025-05-14T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1048843-22.2025.4.01.3400 · 4ª Vara Federal Cível da SJDF — Direito tributário: deral (Fazenda Nacional), por meio do qual busca o reconhecimento do direito à isenção do imposto de renda, em razão de ser portadora de alienação mental (Mal de Alzheimer) desde 30/10/2019. Requer, ainda, a condenação da União à restituição dos valores indevidamente recolhido",
@@ -71114,6 +71213,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "20411100-663f-45a8-9ce4-d5f8baf28871",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T21:55:09.769Z",
+        "finishedAt": "2026-08-20T22:32:30.843Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "cf03fb47-4fb3-4d37-ae4e-f51a0a9f0f81",
         "trigger": "github-actions-history",
@@ -97689,238 +97801,9 @@
             "found": 3
           }
         ]
-      },
-      {
-        "id": "3c8ecec3-8c66-49dc-9e52-5e1febbe9bde",
-        "trigger": "github-actions-analysis",
-        "startedAt": "2026-08-19T18:27:56.964Z",
-        "finishedAt": "2026-08-19T18:57:32.937Z",
-        "discovered": 4,
-        "analyzed": 6,
-        "published": 1,
-        "discarded": 5,
-        "errors": 2,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 28
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 18
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 9
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T21:52:07.780Z",
-    "nextRunAt": "2026-08-21T03:52:07.780Z"
+    "lastRunAt": "2026-08-20T22:32:30.843Z",
+    "nextRunAt": "2026-08-21T04:32:30.843Z"
   }
 }
