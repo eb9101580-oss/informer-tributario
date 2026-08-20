@@ -1,9 +1,190 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T07:15:15.546Z",
+    "lastUpdatedAt": "2026-08-20T08:07:27.563Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Rcl 81575 ED — EMENTA: EMBARGOS DE DECLARAÇÃO NA RECLAMAÇÃO. CONVERSÃO EM AGRAVO REGIMENTAL. CONSTITUCIONAL. TRIBUTÁRIO . FUNDO ESTADUAL DE SEGURANÇA PÚBLICA. CUSTEIO COM CRÉDITOS",
+      "theme": "Custeio com créditos de ICMS outorgados às concessionárias de energia elétrica",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "Repasse ao Fundo de Participaç",
+        "Custeiamento"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O acórdão do STF confirma a impossibilidade de dedução da base de cálculo do repasse ao Fundo de Participação dos Municípios com créditos de ICMS outorgados às concessionárias de energia elétrica. A decisão rejeita a aplicação errônea do recurso extraordinário n. 705.423 e contraria o decidido no recurso extraordinário n. 572.762, tema 42.",
+      "whatChanged": "A decisão do STF estabelece que não é possível deduzir a base de cálculo do repasse ao Fundo de Participação dos Municípios com créditos de ICMS outorgados às concessionárias de energia elétrica, rejeitando a aplicação errônea do recurso extraordinário n. 705.423 e contrariando o decidido no recurso extraordinário n. 572.762, tema 42.",
+      "practicalImpact": "Empresas concessionárias de energia elétrica devem revisar seus cálculos de repasse ao Fundo de Participação dos Municípios, evitando deduzir créditos de ICMS outorgados, já que a decisão do STF confirma a impossibilidade dessa prática.",
+      "officeAction": "A autoridade reclamada deve decidir sobre a questão em noventa dias, observando a teoria fixada no tema 42 do recurso extraordinário n. 572.762.",
+      "affectedProfiles": [
+        "Concessionárias de energia elétrica",
+        "Fundos de Participação dos Municípios",
+        "Empresas tributadas com ICMS",
+        "Gestores de fundos estaduais de segurança pública",
+        "Organismos públicos de energia"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão de cálculos de repasse ao Fundo de Participação dos Municípios",
+        "period": "15 dias após publicação do acórdão",
+        "action": "Revisar os cálculos de repasse para evitar dedução de créditos de ICMS outorgados às concessionárias de energia elétrica",
+        "confidence": "alto"
+      },
+      "id": "cd1b4c12-047b-4150-8cf4-3b04dd3b787d",
+      "score": 8,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568904/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T08:07:27.551Z",
+      "updatedAt": "2026-08-20T08:07:27.551Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568904/false",
+        "sourceCharacters": 680,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1575631 AgR — Ementa: Agravo regimental em recurso extraordinário com agravo. Direito Tributário . ICMS. Creditamento. Insumos. LC nº 87/96. Necessidade de reexame de fatos e.",
+      "theme": "ICMS - Creditamento de insumos - LC nº 87/96",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "LC 87/96",
+        "Súmula 279/STF"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF negou provimento ao agravo regimental em recurso extraordinário com agravo, destacando que não há necessidade de reexame de fatos e provas e legislação infraconstitucional para superar os óbices apontados na decisão agravada, conforme a Súmula 279 do STF e ausência de ofensa direta à Constituição Federal.",
+      "whatChanged": "A decisão reforça que a legislação infraconstitucional de regência (LC nº 87/96) não deve ser reexaminada para creditamento de insumos no ICMS, evitando a necessidade de revisão de fatos e provas em casos de ofensa reflexa ao texto constitucional.",
+      "practicalImpact": "Empresas que utilizam LC nº 87/96 para creditamento de insumos no ICMS devem evitar ações que possam ser consideradas ofensas reflexas à Constituição Federal, já que a Súmula 279 do STF proíbe o processamento de apelos que não apresentem ofensa direta à Constituição.",
+      "officeAction": "A decisão nega provimento ao agravo regimental, mantendo a decisão anterior que negou seguimento ao recurso extraordinário com agravo, com base na Súmula 279 do STF e ausência de ofensa direta à Constituição Federal.",
+      "affectedProfiles": [
+        "Empresas de crédito",
+        "Empresas de serviços tributários",
+        "Empresas de produção industrial",
+        "Empresas de comércio varejista",
+        "Empresas de distribuição"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Revisão de processos tributários com base na Súmula 279/STF",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificar se os processos tributários utilizam LC nº 87/96 para creditamento de insumos sem ofensa reflexa à Constituição Federal, evitando a necessidade de reexame de fatos e provas.",
+        "confidence": "médio"
+      },
+      "id": "59f65944-f158-4682-ba0a-b2347d18c6e7",
+      "score": 7.2,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568908/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T08:04:42.501Z",
+      "updatedAt": "2026-08-20T08:04:42.501Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568908/false",
+        "sourceCharacters": 983,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1393323 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . ICMS. SUBSTITUIÇÃO TRIBUTÁRIA. ALEGADA IMUNIDADE DO DESTINATÁRIO DAS MERCADORIAS. SUPOSTO EX",
+      "theme": "ICMS - Substituição Tributária - Imunidade do destinatário de mercadorias",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF desprovidou agravo interno no RE 1393323, rejeitando a alegação de imunidade do destinatário de mercadorias para suporte material exclusivo de livros eletrônicos, destacando ausência de comprovação e violação de princípios processuais.",
+      "whatChanged": "A decisão reforça que não há imunidade tributária para suporte material de livros eletrônicos sob substituição tributária, exigindo comprovação concreta da natureza do produto.",
+      "practicalImpact": "Empresas que utilizam suporte material exclusivo de livros eletrônicos devem revisar suas operações tributárias para evitar multas por não comprovação da imunidade.",
+      "officeAction": "Reexame da imunidade tributária para suporte material exclusivo de livros eletrônicos sob substituição tributária, exigindo comprovação documental.",
+      "affectedProfiles": [
+        "Empresas de distribuição de livros eletrônicos",
+        "Empresas de tecnologia educacional",
+        "Empresas de varejo de materiais de escritório",
+        "Empresas de serviços de conteúdo digital",
+        "Empresas de distribuição de materiais educacionais"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão de imunidade tributária para suporte material exclusivo de livros eletrônicos",
+        "period": "2024-03-25 a 2025-03-25",
+        "action": "Reexame da comprovação documental da natureza do produto para evitar multas tributárias",
+        "confidence": "médio"
+      },
+      "id": "6a42f2f8-b5f0-425a-ae53-e57fa8330aa6",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568916/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T07:59:34.902Z",
+      "updatedAt": "2026-08-20T07:59:34.902Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568916/false",
+        "sourceCharacters": 757,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T07:00:51.374Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1472821 AgR-ED — Ementa: EMBARGOS DE DECLARAÇÃO NO AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. CONTRIBUIÇÃ",
@@ -3346,9 +3527,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T07:00:51.374Z",
         "id": "768736611234fbd0921d6588",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T07:59:34.908Z",
+        "score": 7.1,
+        "alertId": "6a42f2f8-b5f0-425a-ae53-e57fa8330aa6"
       },
       {
         "title": "ARE 1575631 AgR — Ementa: Agravo regimental em recurso extraordinário com agravo. Direito Tributário . ICMS. Creditamento. Insumos. LC nº 87/96. Necessidade de reexame de fatos e provas e da legislação infraconstitucional de regência. Súmula 279/STF. Ofensa reflexa. I. Caso em ",
@@ -3367,9 +3551,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T07:00:51.374Z",
         "id": "2a076edb31dbc4a348c3e4aa",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T08:04:42.507Z",
+        "score": 7.2,
+        "alertId": "59f65944-f158-4682-ba0a-b2347d18c6e7"
       },
       {
         "title": "Rcl 81575 ED — EMENTA: EMBARGOS DE DECLARAÇÃO NA RECLAMAÇÃO. CONVERSÃO EM AGRAVO REGIMENTAL. CONSTITUCIONAL. TRIBUTÁRIO . FUNDO ESTADUAL DE SEGURANÇA PÚBLICA. CUSTEIO COM CRÉDITOS DE ICMS OUTORGADOS ÀS CONCESSIONÁRIAS DE ENERGIA ELÉTRICA. DEDUÇÃO DA BASE DE CÁLCULO DO REPASS",
@@ -3388,9 +3575,12 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-20T07:00:51.374Z",
         "id": "0dbdb195abcc12695a65dcbb",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T08:07:27.563Z",
+        "score": 8,
+        "alertId": "cd1b4c12-047b-4150-8cf4-3b04dd3b787d"
       },
       {
         "title": "RE 1613206 ED — EMBARGOS DE DECLARAÇÃO EM DECISÃO MONOCRÁTICA. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. MANDADO DE SEGURANÇA. IMPOSSIBILIDADE DE PRODUÇÃO DE EFEITOS PATRIMONIAIS PRETÉRITOS À IMPETRAÇÃO. SÚMULAS 269 E 271 DO STF. TEMA 831 DA REPERCUSSÃO GERAL. ACÓRDÃO RECORRIDO ",
@@ -6229,9 +6419,9 @@
         "discoveredAt": "2026-08-19T14:47:52.879Z",
         "id": "f0a7da9ea42e82023222e190",
         "status": "error",
-        "attempts": 2,
+        "attempts": 3,
         "error": "Documento sem texto suficiente.",
-        "analyzedAt": "2026-08-20T07:10:41.401Z"
+        "analyzedAt": "2026-08-20T08:01:59.402Z"
       },
       {
         "title": "Nota Técnica 1/2013 - Orientação aos importadores/fabricantes de cervejas, em embalagem de lata",
@@ -9718,8 +9908,11 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:23:17.231Z",
         "id": "f2bd9c15832c4c320745094b",
-        "status": "pending",
-        "attempts": 0
+        "status": "discarded",
+        "attempts": 1,
+        "analyzedAt": "2026-08-20T08:01:58.022Z",
+        "score": 0,
+        "alertId": null
       },
       {
         "title": "PortalVisitorsCounterWeb AUDIÊNCIA DO PORTAL Páginas vistas null null null Visitantes únicos null null null Diário Oficial da União Leitura do Jornal Destaques do Diário Oficial da União Base de Dados de Publicações do DOU Verificação de autenticidade Acesso ao sistema de envio de matérias INCom Con",
@@ -11760,6 +11953,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "92347ccb-e62f-4c09-8b1c-6d196847ef16",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T08:07:27.593Z",
+        "finishedAt": "2026-08-20T08:13:39.935Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 6,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "4a20053d-3511-4849-beee-8906d9fd83eb",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T07:50:42.964Z",
+        "finishedAt": "2026-08-20T08:07:27.574Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 1,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 10,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "b9b524b0-8a04-4f21-add9-d1d9b3a73c94",
         "trigger": "github-actions-history",
@@ -29006,7 +29731,7 @@
         ]
       }
     ],
-    "lastRunAt": "2026-08-20T07:21:33.403Z",
-    "nextRunAt": "2026-08-20T13:21:33.403Z"
+    "lastRunAt": "2026-08-20T08:13:39.935Z",
+    "nextRunAt": "2026-08-20T14:13:39.935Z"
   }
 }
