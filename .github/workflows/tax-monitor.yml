@@ -84,6 +84,9 @@ jobs:
           git rebase origin/main
           git push origin HEAD:main
 
+      - name: Notificar imediatamente publicacoes nota alta
+        run: node back/scripts/notify-subscribers.js
+
       - name: Preparar analisador local
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
@@ -107,7 +110,7 @@ jobs:
           curl --fail --silent http://127.0.0.1:11434/api/tags > /tmp/ollama-before-monitor.json
           node back/scripts/run-analysis.js
 
-      - name: Notificar cadastros com nota alta
+      - name: Notificar novas notas altas da analise detalhada
         run: node back/scripts/notify-subscribers.js
 
       - name: Publicar dados atualizados
