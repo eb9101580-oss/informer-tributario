@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 50
     env:
       OLLAMA_MODEL: qwen3:4b
+      OLLAMA_CONTEXT_LENGTH: '8192'
+      OLLAMA_NUM_PARALLEL: '1'
+      OLLAMA_MAX_LOADED_MODELS: '1'
       PYTHON_COMMAND: python3
       DJEN_METADATA_PROXY_URL: 'https://informer-tributario.vercel.app/api/djen/caderno-metadata'
       DJEN_MAX_CANDIDATES_PER_TRIBUNAL_DATE: '60'
@@ -57,7 +60,7 @@ jobs:
       - name: Preparar analisador local
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
-          ollama serve > /tmp/ollama.log 2>&1 &
+          nohup bash -c 'while true; do ollama serve; sleep 2; done' > /tmp/ollama.log 2>&1 &
           for attempt in {1..60}; do
             if curl --fail --silent http://127.0.0.1:11434/api/tags > /tmp/ollama-tags.json; then break; fi
             sleep 2
@@ -73,7 +76,9 @@ jobs:
           fi
 
       - name: Consultar, analisar e registrar fontes oficiais
-        run: node back/scripts/run-monitor.js
+        run: |
+          curl --fail --silent http://127.0.0.1:11434/api/tags > /tmp/ollama-before-monitor.json
+          node back/scripts/run-monitor.js
 
       - name: Notificar cadastros com nota alta
         run: node back/scripts/notify-subscribers.js

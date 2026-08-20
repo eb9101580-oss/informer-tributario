@@ -144,7 +144,7 @@ export async function analyzeWithOllama(document) {
         think: false,
         keep_alive: '10m',
         format: analysisSchema,
-        options: { temperature: 0, num_ctx: 12288, num_predict: 2200 },
+        options: { temperature: 0, num_ctx: 8192, num_predict: 1600 },
         messages: [
           { role: 'system', content: `${systemPrompt}\nUse somente evidências explícitas do texto. Diferencie norma publicada de notícia, proposta ou hipótese. Finalize cada frase; não corte palavras nem sentenças.` },
           { role: 'user', content: analysisContext(document, documentText) },
@@ -162,6 +162,10 @@ export async function analyzeWithOllama(document) {
   } catch (error) {
     if (error.name === 'AbortError') throw new Error(`A análise do Ollama excedeu ${Math.round(config.ollamaTimeoutMs / 60000)} minutos.`);
     if (error.cause?.code === 'ECONNREFUSED') throw new Error('Ollama não está em execução em localhost:11434.');
+    if (error.message === 'fetch failed') {
+      const detail = error.cause?.code || error.cause?.message || 'conexão encerrada';
+      throw new Error(`A conexão com o Ollama foi interrompida (${detail}).`);
+    }
     throw error;
   } finally {
     clearTimeout(timeout);
