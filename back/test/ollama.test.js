@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeAnalysis, prepareDocumentText } from '../src/services/ollama.js';
+import { mergeOllamaStreamPayloads, normalizeAnalysis, prepareDocumentText } from '../src/services/ollama.js';
 
 test('limita documentos longos preservando início e final', () => {
   const source = `INÍCIO-${'x'.repeat(20000)}-FINAL`;
@@ -38,4 +38,14 @@ test('preserva parágrafos e normaliza a análise estruturada', () => {
   });
   assert.equal(analysis.criteria.authority, 10);
   assert.equal(analysis.impactType, 'Risco');
+});
+
+test('recompõe resposta NDJSON transmitida pelo Ollama', () => {
+  const result = mergeOllamaStreamPayloads([
+    { message: { role: 'assistant', content: '{"relevant":' }, done: false },
+    { message: { role: 'assistant', content: 'true}' }, done: true, done_reason: 'stop' },
+  ]);
+  assert.equal(result.message.content, '{"relevant":true}');
+  assert.equal(result.done, true);
+  assert.throws(() => mergeOllamaStreamPayloads([{ error: 'modelo descarregado' }]), /modelo descarregado/);
 });

@@ -86,6 +86,34 @@ function parseStructuredContent(content) {
   }
 }
 
+export function mergeOllamaStreamPayloads(payloads = []) {
+  let content = '';
+  let finalPayload = {};
+  for (const payload of payloads) {
+    if (payload?.error) throw new Error(`Ollama interrompeu a geração: ${payload.error}`);
+    content += payload?.message?.content || '';
+    finalPayload = payload || finalPayload;
+  }
+  return { ...finalPayload, message: { ...(finalPayload.message || {}), content } };
+}
+
+async function readOllamaStream(response) {
+  const decoder = new TextDecoder();
+  const payloads = [];
+  let buffer = '';
+  for await (const chunk of response.body) {
+    buffer += decoder.decode(chunk, { stream: true });
+    const lines = buffer.split('\n');
+    buffer = lines.pop() || '';
+    for (const line of lines) {
+      if (line.trim()) payloads.push(JSON.parse(line));
+    }
+  }
+  buffer += decoder.decode();
+  if (buffer.trim()) payloads.push(JSON.parse(buffer));
+  return mergeOllamaStreamPayloads(payloads);
+}
+
 export function normalizeAnalysis(payload) {
   if (!payload || typeof payload !== 'object' || Array.isArray(payload) || typeof payload.relevant !== 'boolean') {
     throw new Error('A análise devolveu um objeto fora do formato esperado.');
@@ -140,7 +168,9 @@ export async function analyzeWithOllama(document) {
       signal: controller.signal,
       body: JSON.stringify({
         model: config.ollamaModel,
-        stream: false,
+        // O streaming envia os cabeçalhos imediatamente e evita o limite
+        // interno de 5 minutos do fetch/Undici enquanto o runner usa CPU.
+        stream: true,
         think: false,
         keep_alive: '10m',
         format: analysisSchema,
@@ -152,7 +182,7 @@ export async function analyzeWithOllama(document) {
       }),
     });
     if (!response.ok) throw new Error(`Ollama respondeu com status ${response.status}.`);
-    const result = await response.json();
+    const result = await readOllamaStream(response);
     try {
       return normalizeAnalysis(parseStructuredContent(result.message?.content));
     } catch {
