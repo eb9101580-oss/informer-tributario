@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T14:47:33.035Z",
+    "lastUpdatedAt": "2026-08-20T14:57:43.828Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -1733,46 +1733,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo B · 1008471-85.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão do…",
-      "theme": "Direito tributário · ISS, Cofins",
+      "title": "Sentença Tipo B · 1008471-85.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão doISS",
+      "theme": "Exclusão do ISS da base de cálculo do PIS e COFINS",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "ISS",
-        "Cofins"
+        "PIS",
+        "COFINS"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária de Goiás 1ª Vara Federal Cível da SJGO SENTENÇA TIPO \"B\" PROCESSO: 1008471-85.2026.4.01.3500 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: JULIO CESAR ARAUJO DA SILVA REPRESENTANTES POLO ATIVO: MURILLO DE SOUZA - GO48026 POLO PASSIVO: DELEGADO DA RECEITA FEDERAL EM GOIANIA e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão do valor…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que o valor do ISS não deve ser incluído na base de cálculo do PIS e COFINS, seguindo o entendimento do STF sobre o ICMS. O tribunal aplica a jurisprudência do STF (RE 574706/PR) para o ISS, excluindo-o da base de cálculo das contribuições para a seguridade social.",
+      "whatChanged": "O valor do ISS não compõe a base de cálculo do PIS e COFINS, conforme entendimento do STF e jurisprudência do TRF1, aplicando-se o mesmo raciocínio utilizado para o ICMS.",
+      "practicalImpact": "Empresas optantes pelo Simples Nacional devem revisar suas bases de cálculo para evitar inclusão do ISS, garantindo conformidade com a jurisprudência do STF e TRF1.",
+      "officeAction": "Revisão da base de cálculo para exclusão do ISS, conforme decisão do STF e jurisprudência do TRF1, evitando inclusão no PIS e COFINS.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas optantes pelo Simples Nacional",
+        "Contribuintes de ISS",
+        "Empresas com base de cálculo para PIS e COFINS",
+        "Empresas com tributação de serviços",
+        "Contribuintes do ISS"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão do ISS da base de cálculo do PIS e COFINS",
+        "period": "2025-01-20 a 2025-06-30",
+        "action": "Revisão da base de cálculo para exclusão do ISS, conforme decisão do STF e jurisprudência do TRF1",
+        "confidence": "alto"
+      },
       "id": "da70d1d4-b06d-4026-984f-3c17a3d2b098",
-      "score": 8.2,
+      "score": 8.5,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dQP4g8rBY7WUAJdCqTzVpnMYn27bML/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T14:46:01.011Z",
-      "updatedAt": "2026-08-20T14:46:01.011Z",
+      "updatedAt": "2026-08-20T14:57:43.794Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dQP4g8rBY7WUAJdCqTzVpnMYn27bML/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -7523,8 +7533,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "42d77694e12a32eb75abfad6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -7540,7 +7550,14 @@
         },
         "alertId": "da70d1d4-b06d-4026-984f-3c17a3d2b098",
         "fastPublishedAt": "2026-08-20T14:46:01.017Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T14:57:43.828Z",
+        "analyzedPublishedAt": "2025-01-20",
+        "relevant": true,
+        "score": 8.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo B · 1010250-75.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão do valor do Imposto sobre Serviços de Qualquer Natureza - ISS da base de cálculo da Contribuição Social para o Financiamento da Seguridade Social – COFINS e da Contribuição para o Programa de Integra",
@@ -30105,6 +30122,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "211771f3-c612-4952-bcb9-dfd1827e6e72",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T14:49:26.279Z",
+        "finishedAt": "2026-08-20T14:57:43.856Z",
+        "discovered": 0,
+        "analyzed": 1,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "7edc4745-4338-4e06-afa1-cbd09b469f4a",
         "trigger": "github-actions-history",
@@ -54043,107 +54073,9 @@
             "found": 0
           }
         ]
-      },
-      {
-        "id": "4d4714b5-0296-417e-b95f-aee74f05d9d2",
-        "trigger": "github-actions-analysis",
-        "startedAt": "2026-08-19T01:54:03.533Z",
-        "finishedAt": "2026-08-19T01:57:04.316Z",
-        "discovered": 5,
-        "analyzed": 1,
-        "published": 1,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 3
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 19
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 50
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 6
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T14:47:33.058Z",
-    "nextRunAt": "2026-08-20T20:47:33.058Z"
+    "lastRunAt": "2026-08-20T14:57:43.856Z",
+    "nextRunAt": "2026-08-20T20:57:43.856Z"
   }
 }
