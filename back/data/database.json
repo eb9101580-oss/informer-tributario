@@ -1,9 +1,131 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T10:36:03.973Z",
+    "lastUpdatedAt": "2026-08-20T11:09:43.525Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Receita prepara IN sobre compensação de crédito de PIS/Cof: débito de CBS",
+      "theme": "Compensação de crédito de PIS/Cofins com débito de CBS",
+      "agency": "Receita Federal",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "CBS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Notícia jornalística especializada",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-20T10:00:52.000Z",
+      "summary": "A Receita Federal está preparando uma Instrução Normativa (IN) para regular a compensação de crédito de PIS/Cofins com débitos de CBS. O tema também está em debate sobre a possibilidade de compensação de créditos de IPI com débitos de CBS.",
+      "whatChanged": "A Receita Federal está elaborando uma IN para estabelecer regras sobre compensação de crédito de PIS/Cofins com débitos de CBS, o que pode impactar a forma como empresas utilizam créditos tributários para reduzir impostos.",
+      "practicalImpact": "Empresas que utilizam créditos de PIS/Cofins podem ajustar suas operações tributárias para compensar débitos de CBS, potencialmente reduzindo custos tributários e melhorando a gestão financeira.",
+      "officeAction": "A Receita Federal está em processo de elaboração de uma Instrução Normativa para regular a compensação de crédito de PIS/Cofins com débitos de CBS, com possibilidade de inclusão de créditos de IPI na mesma disposição.",
+      "affectedProfiles": [
+        "Empresas com atividade tributária",
+        "Empresas que utilizam créditos de PIS/Cofins",
+        "Empresas com débitos de CBS",
+        "Empresas com atividade de IPI",
+        "Profissionais de contabilidade"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Regulamentação da compensação de crédito de PIS/Cofins com débito de CBS",
+        "period": "2023-2024",
+        "action": "Adaptar processos contábeis para compensar créditos de PIS/Cofins com débitos de CBS, evitando multas e melhorando a eficiência tributária",
+        "confidence": "médio"
+      },
+      "id": "25d68bbf-8854-45c9-b064-661f41ce9eb5",
+      "score": 7.5,
+      "relevance": "Relevante",
+      "officialUrl": "https://portal.jota.info/opiniao-e-analise/colunas/coluna-barbara-mengardo/receita-prepara-in-sobre-compensacao-de-credito-de-pis-cofins-com-debito-de-cbs",
+      "isDemo": false,
+      "createdAt": "2026-08-20T11:09:43.516Z",
+      "updatedAt": "2026-08-20T11:09:43.516Z",
+      "provenance": {
+        "collector": "Scrapling",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://portal.jota.info/opiniao-e-analise/colunas/coluna-barbara-mengardo/receita-prepara-in-sobre-compensacao-de-credito-de-pis-cofins-com-debito-de-cbs",
+        "sourceCharacters": 388,
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "discoveredBy": "rss",
+        "sourceType": "journalistic",
+        "documentKind": "Notícia jornalística especializada",
+        "discoveredAt": "2026-08-20T10:17:52.838Z"
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1557312 RG-ED — Ementa: DIREITO CONSTITUCIONAL. EMBARGOS DE DECLARAÇÃO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. TEMA 1.419. REFORMA DO ART. 3° DA EC Nº 113/2021 PELA EC Nº 136/202",
+      "theme": "Reforma do art. 3° da EC 113/2021 pela EC 136/2025 e impacto na aplicação da SEL",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "SELIC",
+        "Cobrança judicial de créditos",
+        "Tributação pública"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF rejeitou embargos de declaração em recurso extraordinário com agravo sobre a reforma do art. 3° da EC 113/2021 pela EC 136/2025. A tese de repercussão geral afirma que a taxa SELIC é aplicável para atualização de valores em discussões da Fazenda Pública, incluindo cobrança judicial de créditos tributários. O acórdão determina que a tese jurídica tem aplicação restrita ao período de vigência da redação original da EC 113/2021, sem projeção automática para o novo regime da EC 136/2025.",
+      "whatChanged": "A reforma do art. 3° da EC 113/2021 pela EC 136/2025 não altera a aplicação da tese jurídica anterior, limitando-se ao período de vigência da redação original da EC 113/2021. A modulação de efeitos foi rejeitada devido à insuficiência de comprovação do interesse social e de ofensa à segurança jurídica.",
+      "practicalImpact": "Empresas e órgãos públicos devem verificar se os valores tributários estão atualizados com base na SELIC durante o período de vigência da EC 113/2021, sem aplicação automática da nova redação da EC 136/2025. A não atualização pode gerar riscos de inadimplência tributária.",
+      "officeAction": "O STF determinou que a tese jurídica do Tema 1.419 se aplica apenas ao período de vigência da EC 113/2021, sem projeção automática para a EC 136/2025. A modulação de efeitos foi rejeitada por falta de comprovação do interesse social e segurança jurídica.",
+      "affectedProfiles": [
+        "Empresas públicas",
+        "Organismos de crédito",
+        "Fazendas públicas",
+        "Clientes tributários",
+        "Advogados especializados em tributação"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Reforma da EC 113/2021 pela EC 136/2025: Impacto na atualização de valores tributários",
+        "period": "2025-03-15 a 2025-06-30",
+        "action": "Verificação da aplicação da SELIC para atualização de valores tributários durante o período de vigência da EC 113/2021",
+        "confidence": "alto"
+      },
+      "id": "e60e51ee-c18b-44ce-bb3d-272aa3d368ea",
+      "score": 8,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568907/false",
+      "isDemo": false,
+      "createdAt": "2026-08-20T10:54:12.179Z",
+      "updatedAt": "2026-08-20T10:54:12.179Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568907/false",
+        "sourceCharacters": 1826,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-20T10:44:06.313Z"
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ROIT nomeia ex-Bradesco como VP de Negócios e Canais para acelerar estratégia na reforma tributária",
@@ -3873,6 +3995,30 @@
   "monitor": {
     "candidates": [
       {
+        "title": "ARE 1557312 RG-ED — Ementa: DIREITO CONSTITUCIONAL. EMBARGOS DE DECLARAÇÃO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. TEMA 1.419. REFORMA DO ART. 3° DA EC Nº 113/2021 PELA EC Nº 136/2025. ALEGAÇÃO DE OBSCURIDADE. MODULAÇÃO DE EFEITOS. IMPROCEDÊNCIA. EMBARGOS REJEITADOS. I. Caso em exa",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568907/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1557312&classe=ARE",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568907",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568907/false",
+        "inlineText": "Ementa: DIREITO CONSTITUCIONAL. EMBARGOS DE DECLARAÇÃO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. TEMA 1.419. REFORMA DO ART. 3° DA EC Nº 113/2021 PELA EC Nº 136/2025. ALEGAÇÃO DE OBSCURIDADE. MODULAÇÃO DE EFEITOS. IMPROCEDÊNCIA. EMBARGOS REJEITADOS. I. Caso em exame 1. Embargos de declaração opostos de acórdão que fixou a seguinte tese de repercussão geral: “A taxa SELIC, prevista no art. 3º da EC 113/2021, é aplicável para a atualização de valores em qualquer discussão ou condenação da Fazenda Pública, inclusive na cobrança judicial de créditos tributários ”. II. Questão em discussão 2. A questão em discussão é saber se a superveniente reforma do art. 3° da Emenda Constitucional nº 113/2021, com o advento da Emenda Constitucional nº 136/2025, ocasionou obscuridades aptas a serem sanadas pela via dos embargos de declaração. Pretende-se também a modulação dos efeitos da decisão embargada. III. Razões de decidir 3. Inexistência de erro, obscuridade, contradição ou omissão no acórdão questionado, o que afasta a presença dos pressupostos de recorribilidade, previstos no art. 1.022 do CPC. 4. Improcedência do pedido de modulação de efeitos da decisão embargada, ante a insuficiente comprovação do interesse social e de ofensa à segurança jurídica. 5. A superveniência de fato novo relevante, consistente na alteração do texto constitucional, comporta esclarecimentos sobre o Tema 1.419 sem, no entanto, implicar efeitos modificativos à decisão original. IV. Dispositivo e tese 5. 6. Embargos de declaração rejeitados. Tese de julgamento: “A tese jurídica firmada no Tema 1.419 tem aplicação restrita ao período de vigência da redação original do art. 3° da Emenda Constitucional nº 113/2021, não havendo projeção automática de seus efeitos ao novo regime instituído pelo art. 3° da Emenda Constitucional nº 136/2025”.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-20T10:44:06.313Z",
+        "id": "45fc7ae97cebf4e44b6cb7cd",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T10:54:12.186Z",
+        "score": 8,
+        "alertId": "e60e51ee-c18b-44ce-bb3d-272aa3d368ea"
+      },
+      {
         "title": "ROIT nomeia ex-Bradesco como VP de Negócios e Canais para acelerar estratégia na reforma tributária",
         "url": "https://www.reformatributaria.com/como-anda-o-mercado/roit-nomeia-ex-bradesco-como-vp-de-negocios-e-canais-para-acelerar-estrategia-na-reforma-tributaria/",
         "publishedAt": "",
@@ -3910,10 +4056,10 @@
         "discoveredAt": "2026-08-20T10:17:46.428Z",
         "id": "32d4f2a94528182aa944dddd",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "backfillDate": null,
         "error": "fetch failed",
-        "analyzedAt": "2026-08-20T10:27:16.452Z"
+        "analyzedAt": "2026-08-20T10:59:14.685Z"
       },
       {
         "title": "Folha de S.Paulo - Mercado Fundo Baobá vê reforma tributária como abertura para justiça racial tributária a partir de 2027, abre caminho para uma discussão mais ambiciosa sobre justiça tributária, diz Giovanni Harvey, diretor-executivo do Fundo Baobá para Equidade Racial. ... 20.ago.2026 às 7h00",
@@ -3931,10 +4077,10 @@
         "discoveredAt": "2026-08-20T10:17:47.980Z",
         "id": "25edc3e3e93ce4d8f8787f82",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "backfillDate": null,
         "error": "fetch failed",
-        "analyzedAt": "2026-08-20T10:32:20.608Z"
+        "analyzedAt": "2026-08-20T11:07:20.636Z"
       },
       {
         "title": "Receita prepara IN sobre compensação de crédito de PIS/Cofins com débito de CBS",
@@ -3949,9 +4095,12 @@
         "discoveryMethod": "rss",
         "discoveredAt": "2026-08-20T10:17:52.838Z",
         "id": "ddd59d0327be866f6b540a67",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "analyzedAt": "2026-08-20T11:09:43.525Z",
+        "score": 7.5,
+        "alertId": "25d68bbf-8854-45c9-b064-661f41ce9eb5"
       },
       {
         "title": "Congresso aprova PLP 124/2022 e abre caminho para soluções consensuais de conflitos tributários",
@@ -8062,8 +8211,10 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-19T14:43:36.534Z",
         "id": "898fbcf9dcef3983db8dbd1e",
-        "status": "pending",
-        "attempts": 0
+        "status": "error",
+        "attempts": 1,
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-20T11:02:18.407Z"
       },
       {
         "title": "Manuais e Documentos Técnicos",
@@ -12549,6 +12700,538 @@
       }
     ],
     "runs": [
+      {
+        "id": "7d7a6133-b255-4440-be62-d8a30c01e913",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-20T11:09:43.556Z",
+        "finishedAt": "2026-08-20T11:16:02.071Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 7,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "3467a25b-d09b-4594-8008-ed2c8045fd4d",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T10:43:30.390Z",
+        "finishedAt": "2026-08-20T11:09:43.532Z",
+        "discovered": 1,
+        "analyzed": 2,
+        "published": 2,
+        "discarded": 0,
+        "errors": 10,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 11,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 461,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "HTTP Error 403: Forbidden"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 4,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "a968635e-e345-4474-a522-cbd5e3e2560f",
         "trigger": "github-actions-history",
@@ -31828,102 +32511,9 @@
             "found": 0
           }
         ]
-      },
-      {
-        "id": "9b8d8d3a-d56c-401b-b531-31eaa7e4764c",
-        "trigger": "startup",
-        "startedAt": "2026-08-18T18:27:12.167Z",
-        "finishedAt": "2026-08-18T18:27:17.750Z",
-        "discovered": 434,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 4,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 45
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 21
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 346
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 2
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 10
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 10
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (6) Could not resolve host: juris.trf2.jus.br. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 2
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T10:42:18.092Z",
-    "nextRunAt": "2026-08-20T16:42:18.092Z"
+    "lastRunAt": "2026-08-20T11:16:02.071Z",
+    "nextRunAt": "2026-08-20T17:16:02.071Z"
   }
 }
