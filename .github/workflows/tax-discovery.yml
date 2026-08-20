@@ -16,6 +16,8 @@ jobs:
     timeout-minutes: 15
     env:
       MONITOR_ANALYZE: 'false'
+      MONITOR_FAST_PUBLISH: 'true'
+      MONITOR_FAST_PUBLISH_PER_RUN: '20'
       PYTHON_COMMAND: python3
       DJEN_METADATA_PROXY_URL: 'https://informer-tributario.vercel.app/api/djen/caderno-metadata'
       DJEN_MAX_CANDIDATES_PER_TRIBUNAL_DATE: '60'

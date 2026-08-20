@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 50
     env:
       OLLAMA_MODEL: qwen3:4b
+      ANALYSIS_PROVIDER: 'auto'
+      LLAMA_CPP_URL: 'http://127.0.0.1:8080'
+      LLAMA_CPP_MODEL: 'Qwen3-4B-Q4_K_M.gguf'
       OLLAMA_CONTEXT_LENGTH: '8192'
       OLLAMA_NUM_PARALLEL: '1'
       OLLAMA_MAX_LOADED_MODELS: '1'
@@ -25,6 +28,8 @@ jobs:
       DJEN_METADATA_PROXY_URL: 'https://informer-tributario.vercel.app/api/djen/caderno-metadata'
       DJEN_MAX_CANDIDATES_PER_TRIBUNAL_DATE: '60'
       MONITOR_ENABLED: 'false'
+      MONITOR_FAST_PUBLISH: 'true'
+      MONITOR_FAST_PUBLISH_PER_RUN: '20'
       MONITOR_LOOKBACK_DAYS: '2'
       MONITOR_MAX_ANALYSES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
       OLLAMA_MAX_INPUT_CHARS: '10000'

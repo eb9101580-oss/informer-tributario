@@ -123,6 +123,19 @@ npm.cmd --prefix back test
 npm.cmd --prefix front run build
 ```
 
+### Provedor de analise rapida
+
+O monitor normaliza metadados, deduplica por URL/processo/ementa, ranqueia merito e publica imediatamente documentos oficiais de alta confianca com um resumo factual. Ollama ou llama.cpp fica reservado para substituir o cartao por uma analise detalhada.
+
+Para testar llama.cpp no Windows, instale o servidor e inicie um modelo GGUF. Com `ANALYSIS_PROVIDER=auto`, o backend tenta `http://localhost:8080` e volta automaticamente para o Ollama se o servidor nao estiver disponivel:
+
+```powershell
+winget install --id ggml.llamacpp -e
+llama-server.exe -hf Qwen/Qwen3-4B-GGUF:Q4_K_M --host 127.0.0.1 --port 8080 --ctx-size 8192 --reasoning off
+```
+
+Variaveis opcionais: `ANALYSIS_PROVIDER=llama.cpp`, `LLAMA_CPP_URL`, `LLAMA_CPP_MODEL` e `LLAMA_CPP_TIMEOUT_MS`. Redis, Qdrant e PostgreSQL podem ser adicionados depois para uma instalacao multiworker; o fluxo atual permanece funcional no plano gratuito.
+
 ## Referências
 
 - [Scrapling](https://github.com/D4Vinci/Scrapling) — BSD-3-Clause

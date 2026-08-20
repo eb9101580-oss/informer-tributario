@@ -48,6 +48,7 @@ export function CollectorPage({ onCollected, onOpen }) {
         </div>
 
         <aside className="integration-status panel">
+          <div><span className={`status-icon ${status?.llamaCpp?.available ? 'status-icon--ok' : 'status-icon--off'}`}>{status?.llamaCpp?.available ? <CheckCircle2 /> : <TriangleAlert />}</span><p><strong>llama.cpp</strong><small>{status?.llamaCpp?.available ? 'Servidor OpenAI-compatible disponÃ­vel' : 'Opcional; fallback para Ollama'}</small></p><em>{status?.llamaCpp?.available ? 'Conectado' : 'Fallback'}</em></div>
           <div className="panel__heading"><div><h2>Integrações locais</h2><p>Estado dos componentes da análise</p></div></div>
           <div><span className="status-icon status-icon--ok"><CheckCircle2 /></span><p><strong>Scrapling</strong><small>Adaptador configurado no backend</small></p><em>Pronto</em></div>
           <div><span className={`status-icon ${status?.ollama.available ? 'status-icon--ok' : 'status-icon--off'}`}>{status?.ollama.available ? <CheckCircle2 /> : <TriangleAlert />}</span><p><strong>Ollama · {status?.ollama.model || 'qwen3:4b'}</strong><small>{status?.ollama.available ? (status.ollama.installed ? 'Serviço e modelo disponíveis' : 'Serviço ativo; baixe o modelo configurado') : 'Serviço local não detectado'}</small></p><em>{status?.ollama.available ? 'Conectado' : 'Offline'}</em></div>

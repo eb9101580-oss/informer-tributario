@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { randomUUID } from 'node:crypto';
 import { collectOfficialPage, officialDomains, validateOfficialUrl } from '../services/collector.js';
-import { analyzeWithOllama, ollamaStatus } from '../services/ollama.js';
+import { analyzeDocument, llamaCppStatus, ollamaStatus } from '../services/ollama.js';
 import { calculateScore, relevanceLabel } from '../services/scoring.js';
 import { readDatabase, updateDatabase } from '../services/store.js';
 import { config } from '../config.js';
@@ -10,7 +10,8 @@ export const intelligenceRouter = Router();
 
 intelligenceRouter.get('/status', async (_request, response) => {
   const ollama = await ollamaStatus();
-  response.json({ ollama, scrapling: { configured: true }, officialDomains, analysis: { optimizedInputCharacters: config.ollamaMaxInputCharacters, thinking: false } });
+  const llamaCpp = await llamaCppStatus();
+  response.json({ ollama, llamaCpp, provider: config.analysisProvider, scrapling: { configured: true }, officialDomains, analysis: { optimizedInputCharacters: config.ollamaMaxInputCharacters, thinking: false } });
 });
 
 intelligenceRouter.post('/analyze-url', async (request, response, next) => {
@@ -22,7 +23,7 @@ intelligenceRouter.post('/analyze-url', async (request, response, next) => {
 
     const document = await collectOfficialPage(url);
     if (document.characters < 200) return response.status(422).json({ message: 'A página não contém texto suficiente para análise.' });
-    const analysis = await analyzeWithOllama(document);
+    const analysis = await analyzeDocument(document);
     const score = calculateScore(analysis.criteria);
     const alert = {
       ...analysis,
@@ -34,7 +35,7 @@ intelligenceRouter.post('/analyze-url', async (request, response, next) => {
       isDemo: false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      provenance: { collector: 'Scrapling', analyzer: `Ollama/${process.env.OLLAMA_MODEL || 'qwen3:4b'}`, sourceCharacters: document.characters },
+      provenance: { collector: 'Scrapling', analyzer: `${config.analysisProvider} (${process.env.OLLAMA_MODEL || 'qwen3:4b'})`, sourceCharacters: document.characters },
     };
 
     if (request.body.persist === true && analysis.relevant && score >= 4) {

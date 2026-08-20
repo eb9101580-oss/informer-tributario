@@ -10,6 +10,14 @@ const ollamaDispatcher = new Agent({
   bodyTimeout: config.ollamaTimeoutMs + 5_000,
 });
 
+// llama.cpp expose uma API compatÃ­vel com OpenAI. Mantemos um dispatcher
+// separado para que a tentativa opcional nÃ£o altere o comportamento do Ollama.
+const llamaCppDispatcher = new Agent({
+  connectTimeout: 10_000,
+  headersTimeout: config.llamaCppTimeoutMs + 5_000,
+  bodyTimeout: config.llamaCppTimeoutMs + 5_000,
+});
+
 const analysisSchema = {
   type: 'object',
   properties: {
@@ -210,6 +218,75 @@ export async function analyzeWithOllama(document) {
     throw error;
   } finally {
     clearTimeout(timeout);
+  }
+}
+
+function llamaCppMessages(document) {
+  const documentText = prepareDocumentText(document.text);
+  return [
+    { role: 'system', content: `${systemPrompt}\nUse somente evidÃªncias explÃ­citas do texto. Diferencie norma publicada de notÃ­cia, proposta ou hipÃ³tese. Finalize cada frase; nÃ£o corte palavras nem sentenÃ§as.` },
+    { role: 'user', content: analysisContext(document, documentText) },
+  ];
+}
+
+export async function analyzeWithLlamaCpp(document) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), config.llamaCppTimeoutMs);
+  try {
+    const response = await undiciFetch(`${config.llamaCppUrl.replace(/\/$/, '')}/v1/chat/completions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      dispatcher: llamaCppDispatcher,
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: config.llamaCppModel,
+        messages: llamaCppMessages(document),
+        temperature: 0,
+        max_tokens: 1600,
+        stream: false,
+        response_format: {
+          type: 'json_schema',
+          json_schema: { name: 'tax_analysis', strict: true, schema: analysisSchema },
+        },
+      }),
+    });
+    if (!response.ok) throw new Error(`llama.cpp respondeu com status ${response.status}.`);
+    const result = await response.json();
+    const content = result.choices?.[0]?.message?.content;
+    if (!content) throw new Error('llama.cpp nÃ£o devolveu conteÃºdo para a anÃ¡lise.');
+    return normalizeAnalysis(parseStructuredContent(typeof content === 'string' ? content : JSON.stringify(content)));
+  } catch (error) {
+    if (error.name === 'AbortError') throw new Error(`A anÃ¡lise do llama.cpp excedeu ${Math.round(config.llamaCppTimeoutMs / 60000)} minutos.`);
+    if (error.cause?.code === 'ECONNREFUSED' || error.cause?.code === 'UND_ERR_CONNECT_TIMEOUT') throw new Error('llama.cpp nÃ£o estÃ¡ em execuÃ§Ã£o em localhost:8080.');
+    if (error.message === 'fetch failed') {
+      const detail = error.cause?.code || error.cause?.message || 'conexÃ£o encerrada';
+      throw new Error(`A conexÃ£o com o llama.cpp foi interrompida (${detail}).`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+export async function analyzeDocument(document) {
+  if (config.analysisProvider === 'ollama') return analyzeWithOllama(document);
+  if (config.analysisProvider === 'llama.cpp' || config.analysisProvider === 'llamacpp') return analyzeWithLlamaCpp(document);
+  // auto: usa llama.cpp quando ele estiver disponÃ­vel e cai para Ollama sem
+  // interromper a varredura quando o servidor opcional nÃ£o estiver instalado.
+  try {
+    return await analyzeWithLlamaCpp(document);
+  } catch (error) {
+    if (!/nÃ£o estÃ¡ em execuÃ§Ã£o|conexÃ£o foi interrompida|ECONNREFUSED|UND_ERR_CONNECT_TIMEOUT/i.test(error.message)) throw error;
+    return analyzeWithOllama(document);
+  }
+}
+
+export async function llamaCppStatus() {
+  try {
+    const response = await fetch(`${config.llamaCppUrl.replace(/\/$/, '')}/health`, { signal: AbortSignal.timeout(1800) });
+    return { available: response.ok, model: config.llamaCppModel };
+  } catch {
+    return { available: false, model: config.llamaCppModel };
   }
 }
 

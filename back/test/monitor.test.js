@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { candidateFingerprint, candidateId, fastTriageCandidate, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
+import { canFastPublishCandidate, candidateFingerprint, candidateId, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
 import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
@@ -204,4 +204,20 @@ test('texto integral grande da decisão é compactado sem perda para a fila', ()
   assert.equal(hasCandidateText(packed), true);
   assert.equal(unpackCandidateText(packed), original);
   assert.ok(packed.inlineTextGzip.length < original.length / 5);
+});
+
+test('publica imediatamente uma decisao oficial de alta confianca com resumo factual', () => {
+  const candidate = {
+    sourceId: 'trf3', sourceType: 'official', discoveryMethod: 'trf-djen', publishedAt: '2026-08-20',
+    documentKind: 'Acórdão', sourceName: 'TRF3', title: 'Acórdão sobre crédito tributário de ICMS',
+    url: 'https://comunicaapi.pje.jus.br/certidao/123',
+    inlineText: 'A Turma julgou o mérito sobre a restituição de crédito tributário de ICMS e definiu a incidência aplicável ao caso.',
+  };
+  assert.equal(canFastPublishCandidate(candidate), true);
+  const alert = makeFastAlert(candidate);
+  assert.equal(alert.provenance.analysisMode, 'fast-triage');
+  assert.equal(alert.provenance.detailedAnalysisPending, true);
+  assert.equal(alert.publishedAt, '2026-08-20');
+  assert.match(alert.summary, /ICMS/);
+  assert.ok(alert.score >= 7);
 });

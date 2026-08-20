@@ -4,6 +4,7 @@ import { api } from '../api.js';
 
 const dateTime = (value) => value ? new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(new Date(value)) : 'Ainda não executada';
 const dateOnly = (value) => value ? new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeZone: 'UTC' }).format(new Date(`${value}T12:00:00Z`)) : '';
+const statusLabelsFastPublished = 'Publicado - triagem rapida';
 const today = () => {
   const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
   const values = Object.fromEntries(parts.filter((part) => part.type !== 'literal').map((part) => [part.type, part.value]));
@@ -95,7 +96,7 @@ export function MonitorPage({ onAlerts }) {
         <div className="panel">
           <div className="panel__heading"><div><h2>{candidateDate ? `Publicações de ${dateOnly(candidateDate)}` : 'Documentos descobertos'}</h2><p>{candidateDate ? 'Resultados tributários encontrados em todas as categorias' : 'Links oficiais filtrados por assunto tributário'}</p></div>{candidateDate ? <button className="text-button monitor-filter-clear" onClick={clearDateFilter}><X size={13} />Ver fila inteira</button> : <button className="text-button" onClick={onAlerts}>Abrir alertas</button>}</div>
           <div className="candidate-list">
-            {candidates.slice(0, 18).map((item) => <div className="candidate" key={item.id}><span className={`candidate__status candidate__status--${item.status}`}>{statusLabels[item.status] || item.status}</span><div><strong>{item.title}</strong><small>{item.sourceAcronym} · {item.documentKind} · Publicado em {dateTime(item.publishedAt || item.discoveredAt)} · coletado em {dateTime(item.discoveredAt)}</small>{item.error && <em>{item.error}</em>}</div><a href={item.url} target="_blank" rel="noreferrer" aria-label="Abrir documento oficial"><ExternalLink size={15} /></a></div>)}
+            {candidates.slice(0, 18).map((item) => <div className="candidate" key={item.id}><span className={`candidate__status candidate__status--${item.status}`}>{item.status === 'fast-published' ? statusLabelsFastPublished : (statusLabels[item.status] || item.status)}</span><div><strong>{item.title}</strong><small>{item.sourceAcronym} · {item.documentKind} · Publicado em {dateTime(item.publishedAt || item.discoveredAt)} · coletado em {dateTime(item.discoveredAt)}</small>{item.error && <em>{item.error}</em>}</div><a href={item.url} target="_blank" rel="noreferrer" aria-label="Abrir documento oficial"><ExternalLink size={15} /></a></div>)}
             {!candidates.length && <p className="monitor-empty">{candidateDate ? `Nenhuma publicação tributária de ${dateOnly(candidateDate)} foi encontrada até agora.` : 'Execute a primeira varredura para preencher a fila.'}</p>}
           </div>
         </div>
