@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { fromNodeHeaders } from 'better-auth/node';
 import { requireAdmin } from '../middleware/auth.js';
-import { auth, getFrontendUrl, normalizeEmail, validEmail } from '../services/auth.js';
+import { auth, normalizeEmail, validEmail } from '../services/auth.js';
 import { query, transaction } from '../services/db.js';
 
 function boundedInteger(value, fallback, maximum) {
@@ -17,6 +17,10 @@ function nameFromEmail(email) {
     .filter(Boolean)
     .map((word) => `${word[0]?.toUpperCase() || ''}${word.slice(1)}`)
     .join(' ') || 'Usuário';
+}
+
+function validPassword(password) {
+  return typeof password === 'string' && password.length >= 10 && password.length <= 128;
 }
 
 export function createAdminUsersRouter({
@@ -89,6 +93,10 @@ export function createAdminUsersRouter({
       if (name.length < 2) {
         return response.status(400).json({ message: 'Informe um nome válido.' });
       }
+      const password = request.body?.password;
+      if (!validPassword(password)) {
+        return response.status(400).json({ message: 'A senha inicial deve ter entre 10 e 128 caracteres.' });
+      }
 
       const existingResult = await queryFn(
         `SELECT "id", "name", "email", "role", "banned"
@@ -96,22 +104,16 @@ export function createAdminUsersRouter({
           WHERE "email" = $1`,
         [email],
       );
-      let user = existingResult.rows[0];
-      let created = false;
-
-      if (user?.banned) {
-        return response.status(409).json({ message: 'Este usuário está desativado. Reative-o antes de reenviar o convite.' });
+      if (existingResult.rows[0]) {
+        return response.status(409).json({ message: 'Já existe uma conta com este e-mail.' });
       }
 
       const headers = fromNodeHeaders(request.headers);
-      if (!user) {
-        const createdResult = await authApi.createUser({
-          body: { email, name, role: 'user' },
-          headers,
-        });
-        user = createdResult.user;
-        created = true;
-      }
+      const createdResult = await authApi.createUser({
+        body: { email, name, password, role: 'user' },
+        headers,
+      });
+      const user = createdResult.user;
 
       await queryFn(
         `INSERT INTO user_preferences (user_id)
@@ -120,19 +122,8 @@ export function createAdminUsersRouter({
         [user.id],
       );
 
-      await authApi.signInMagicLink({
-        body: {
-          email,
-          name: user.name || name,
-          callbackURL: `${getFrontendUrl()}/app`,
-          errorCallbackURL: `${getFrontendUrl()}/login`,
-          metadata: { purpose: 'invite' },
-        },
-        headers,
-      });
-
-      return response.status(created ? 201 : 200).json({
-        message: created ? 'Usuário criado e convite enviado.' : 'Convite reenviado.',
+      return response.status(201).json({
+        message: 'Conta criada. Informe a senha inicial ao usuário por um canal seguro.',
         user: {
           id: user.id,
           name: user.name || name,
@@ -140,6 +131,30 @@ export function createAdminUsersRouter({
           role: user.role || 'user',
         },
       });
+    } catch (error) {
+      return next(error);
+    }
+  });
+
+  router.post('/:userId/password', async (request, response, next) => {
+    try {
+      const userId = String(request.params.userId || '').trim();
+      const password = request.body?.password;
+      if (!userId || userId.length > 200) {
+        return response.status(400).json({ message: 'Usuário inválido.' });
+      }
+      if (!validPassword(password)) {
+        return response.status(400).json({ message: 'A nova senha deve ter entre 10 e 128 caracteres.' });
+      }
+      const exists = await queryFn('SELECT "id" FROM "user" WHERE "id" = $1', [userId]);
+      if (!exists.rows[0]) return response.status(404).json({ message: 'Usuário não encontrado.' });
+
+      await authApi.setUserPassword({
+        body: { userId, newPassword: password },
+        headers: fromNodeHeaders(request.headers),
+      });
+      await queryFn('DELETE FROM "session" WHERE "userId" = $1', [userId]);
+      return response.json({ message: 'Senha redefinida e sessões anteriores encerradas.' });
     } catch (error) {
       return next(error);
     }

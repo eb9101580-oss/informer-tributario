@@ -33,7 +33,7 @@ export function PublicBlog() {
     setSubscriptionMessage('');
     try {
       const result = await api.subscribe(email);
-      setSubscriptionMessage(result.delivery === 'sent' ? 'Cadastro confirmado. Verifique seu e-mail.' : 'Cadastro recebido. O envio será ativado assim que o serviço de e-mail estiver configurado.');
+      setSubscriptionMessage(result.created ? 'Cadastro realizado. Você receberá publicações com nota 8 ou superior.' : 'Este e-mail já está cadastrado para receber alertas.');
       setEmail('');
     } catch (requestError) { setSubscriptionMessage(requestError.message); }
     finally { setSubmitting(false); }

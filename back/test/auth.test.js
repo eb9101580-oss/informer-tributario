@@ -30,11 +30,12 @@ function mockResponse() {
   };
 }
 
-test('configura Better Auth com magic link e administração', () => {
-  assert.equal(typeof auth.api.signInMagicLink, 'function');
+test('configura Better Auth com e-mail, senha e administração', () => {
+  assert.equal(typeof auth.api.signInEmail, 'function');
   assert.equal(typeof auth.api.getSession, 'function');
   assert.equal(typeof auth.api.createUser, 'function');
   assert.equal(typeof auth.api.listUsers, 'function');
+  assert.equal(typeof auth.api.setUserPassword, 'function');
   assert.ok(getTrustedOrigins().length >= 1);
   assert.ok(getTrustedOrigins().every((origin) => /^https?:\/\//.test(origin)));
 });

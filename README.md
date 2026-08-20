@@ -66,9 +66,10 @@ AUTH_FRONTEND_URL=http://localhost:5173
 AUTH_TRUSTED_ORIGINS=http://localhost:5173,http://localhost:3333
 AUTH_ADMIN_EMAIL=
 AUTH_ADMIN_NAME=
+AUTH_ADMIN_PASSWORD=
 ```
 
-Gere `BETTER_AUTH_SECRET` com pelo menos 32 bytes aleatórios; por exemplo, `openssl rand -base64 32`. Não reutilize a chave do Resend, do GitHub ou do DataJud. Na primeira chamada de autenticação, o backend aplica de forma idempotente a migration [001_auth_and_user_data.sql](back/migrations/001_auth_and_user_data.sql) e cria ou promove `AUTH_ADMIN_EMAIL` como administrador. Se preferir provisionar antes do primeiro acesso, execute o mesmo SQL no console do Neon.
+Gere `BETTER_AUTH_SECRET` com pelo menos 32 bytes aleatórios; por exemplo, `openssl rand -base64 32`. Defina em `AUTH_ADMIN_PASSWORD` uma senha inicial de 10 a 128 caracteres. Não reutilize chaves do Resend, GitHub ou DataJud. Na primeira chamada de autenticação, o backend aplica de forma idempotente a migration [001_auth_and_user_data.sql](back/migrations/001_auth_and_user_data.sql), cria ou promove `AUTH_ADMIN_EMAIL` como administrador e cadastra a senha somente se a conta ainda não possuir credencial.
 
 Em produção com um único deploy Vercel, use o domínio público em `BETTER_AUTH_URL`, `AUTH_FRONTEND_URL` e `AUTH_TRUSTED_ORIGINS`. Não é necessário criar um segundo frontend: `/app` entrega a experiência adequada ao papel da sessão. Cookies de produção são `HttpOnly`, `Secure` e `SameSite=Lax`.
 
@@ -108,7 +109,7 @@ O histórico do ciclo informa a cobertura de cada fonte. STF, STJ, Câmara e as 
 
 ## Alertas por e-mail
 
-O envio usa a API do [Resend](https://resend.com/docs/send-with-nodejs). A Vercel precisa da chave para links mágicos, convites e notificações do painel; o GitHub Actions precisa dela para os alertas gerados pela varredura. Verifique um domínio no Resend antes de usar remetentes próprios. `onboarding@resend.dev` serve apenas para os testes permitidos pela conta.
+O envio usa a API do [Resend](https://resend.com/docs/send-with-nodejs) somente para alertas de publicações com nota 8 ou superior e movimentações processuais acompanhadas. Login e criação de contas usam e-mail e senha e não enviam mensagens. Verifique um domínio no Resend antes de usar remetentes próprios. `onboarding@resend.dev` serve apenas para os testes permitidos pela conta.
 
 Configure na Vercel e, quando indicado, também nos segredos do GitHub Actions. Os campos abaixo devem receber valores no provedor, nunca no repositório:
 
@@ -123,7 +124,7 @@ ALERTS_MIN_SCORE=8
 
 Para que a varredura do GitHub Actions também notifique as contas criadas no painel, adicione `DATABASE_URL` como secret do repositório, além de `RESEND_API_KEY`, `ALERTS_FROM_EMAIL` e `SUBSCRIPTIONS_ENCRYPTION_KEY`. Use a connection string com pool do Neon e nunca a grave no YAML.
 
-Sem `RESEND_API_KEY` e `ALERTS_FROM_EMAIL`, o painel pode ler os dados, mas convites, login por e-mail e alertas não são enviados. Revogue imediatamente qualquer chave que tenha aparecido em imagem, terminal, log ou commit e gere outra no painel do Resend. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
+Sem `RESEND_API_KEY` e `ALERTS_FROM_EMAIL`, login e contas continuam funcionando, mas os alertas não são enviados. Revogue imediatamente qualquer chave que tenha aparecido em imagem, terminal, log ou commit e gere outra no painel do Resend. A rotina `back/scripts/notify-subscribers.js` é executada após cada análise automática e envia somente alertas novos acima do limite.
 
 Na Vercel, as rotas de leitura consultam o `database.json` atual do branch `main`. Assim, os commits de dados produzidos pelo GitHub Actions chegam ao feed sem exigir um novo build da interface a cada varredura; a cópia incluída no deploy permanece como contingência se o GitHub estiver indisponível.
 
@@ -159,7 +160,7 @@ O workflow `tax-monitor.yml` pode definir esse endereço como variável normal, 
 
 ### Checklist de produção
 
-Na Vercel, configure `DATABASE_URL`, `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL`, `AUTH_FRONTEND_URL`, `AUTH_TRUSTED_ORIGINS`, `AUTH_ADMIN_EMAIL`, `AUTH_ADMIN_NAME`, `RESEND_API_KEY`, `ALERTS_FROM_EMAIL`, `ACTIONS_CRON_SECRET`, `GITHUB_TOKEN` e as chaves já usadas pelo DataJud. No GitHub Actions, mantenha como secrets somente credenciais e chaves; `CUSTOM_SOURCES_URL` pode permanecer como variável pública. Depois do deploy, valide `/api/health`, solicite o link mágico do administrador e só então envie convites aos usuários.
+Na Vercel, configure `DATABASE_URL`, `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL`, `AUTH_FRONTEND_URL`, `AUTH_TRUSTED_ORIGINS`, `AUTH_ADMIN_EMAIL`, `AUTH_ADMIN_NAME`, `AUTH_ADMIN_PASSWORD`, `RESEND_API_KEY`, `ALERTS_FROM_EMAIL`, `ACTIONS_CRON_SECRET`, `GITHUB_TOKEN` e as chaves já usadas pelo DataJud. No GitHub Actions, mantenha como secrets somente credenciais e chaves; `CUSTOM_SOURCES_URL` pode permanecer como variável pública. Depois do deploy, valide `/api/health`, entre com o administrador e crie as contas dos usuários na engrenagem de configurações.
 
 O feed interno e o blog público exibem somente alertas reais (`isDemo: false`), com endereço original e trilha de proveniência verificável.
 

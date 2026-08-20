@@ -1,10 +1,10 @@
 import 'dotenv/config';
-import { createHash } from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import { betterAuth } from 'better-auth';
-import { admin, magicLink } from 'better-auth/plugins';
+import { hashPassword } from 'better-auth/crypto';
+import { admin } from 'better-auth/plugins';
 import { toNodeHandler } from 'better-auth/node';
 import { getPool, ensureAppSchema, query, assertDatabaseConfigured } from './db.js';
-import { sendEmail } from './email.js';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const DEFAULT_AUTH_URL = 'http://localhost:3333';
@@ -67,40 +67,6 @@ function displayNameFromEmail(email) {
   return name || 'Administrador';
 }
 
-function escapeHtml(value) {
-  return String(value || '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
-}
-
-async function deliverMagicLink({ email, url, token, metadata }) {
-  const invitation = metadata?.purpose === 'invite';
-  const subject = invitation
-    ? 'Seu acesso ao Informer Tributário'
-    : 'Entre no Informer Tributário';
-  const title = invitation ? 'Seu acesso foi liberado' : 'Seu link de acesso';
-  const safeUrl = escapeHtml(url);
-  const linkFingerprint = createHash('sha256').update(token).digest('hex').slice(0, 32);
-
-  await sendEmail({
-    to: email,
-    subject,
-    html: `
-      <div style="font-family:Arial,sans-serif;line-height:1.6;color:#173c3c;max-width:600px;margin:auto">
-        <h1 style="font-size:24px">${title}</h1>
-        <p>Use o botão abaixo para entrar com segurança. O link é pessoal, expira em 15 minutos e só pode ser usado uma vez.</p>
-        <p><a href="${safeUrl}" style="display:inline-block;padding:12px 20px;background:#0f6b63;color:#fff;text-decoration:none;border-radius:8px">Entrar no Informer</a></p>
-        <p style="font-size:13px;color:#5d6d6d">Se você não solicitou este acesso, ignore esta mensagem.</p>
-      </div>
-    `,
-    text: `${title}\n\nAcesse: ${url}\n\nO link expira em 15 minutos e só pode ser usado uma vez.`,
-    idempotencyKey: `informer-magic-link-${linkFingerprint}`,
-  });
-}
-
 const production = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1';
 
 export const auth = betterAuth({
@@ -110,7 +76,12 @@ export const auth = betterAuth({
   secret: process.env.BETTER_AUTH_SECRET || undefined,
   database: getPool(),
   trustedOrigins: getTrustedOrigins(),
-  emailAndPassword: { enabled: false },
+  emailAndPassword: {
+    enabled: true,
+    disableSignUp: true,
+    minPasswordLength: 10,
+    maxPasswordLength: 128,
+  },
   session: {
     expiresIn: 60 * 60 * 24 * 7,
     updateAge: 60 * 60 * 24,
@@ -136,13 +107,6 @@ export const auth = betterAuth({
       defaultRole: 'user',
       adminRoles: ['admin'],
     }),
-    magicLink({
-      expiresIn: 60 * 15,
-      disableSignUp: true,
-      storeToken: 'hashed',
-      rateLimit: { window: 60, max: 5 },
-      sendMagicLink: deliverMagicLink,
-    }),
   ],
 });
 
@@ -162,22 +126,44 @@ export function validateAuthConfiguration() {
     error.code = 'AUTH_ADMIN_NOT_CONFIGURED';
     throw error;
   }
-  return { adminEmail };
+  const adminPassword = String(process.env.AUTH_ADMIN_PASSWORD || '');
+  if (adminPassword.length < 10 || adminPassword.length > 128) {
+    const error = new Error('AUTH_ADMIN_PASSWORD deve ter entre 10 e 128 caracteres.');
+    error.statusCode = 503;
+    error.code = 'AUTH_ADMIN_PASSWORD_NOT_CONFIGURED';
+    throw error;
+  }
+  return { adminEmail, adminPassword };
 }
 
 export async function bootstrapAdminUser() {
-  const { adminEmail } = validateAuthConfiguration();
+  const { adminEmail, adminPassword } = validateAuthConfiguration();
   const adminName = String(process.env.AUTH_ADMIN_NAME || '').trim().slice(0, 120)
     || displayNameFromEmail(adminEmail);
   const result = await query(
     `INSERT INTO "user" ("name", "email", "emailVerified", "role", "banned", "createdAt", "updatedAt")
-     VALUES ($1, $2, FALSE, 'admin', FALSE, NOW(), NOW())
+     VALUES ($1, $2, TRUE, 'admin', FALSE, NOW(), NOW())
      ON CONFLICT ("email") DO UPDATE
-       SET "role" = 'admin', "banned" = FALSE, "banReason" = NULL, "banExpires" = NULL, "updatedAt" = NOW()
+       SET "role" = 'admin', "emailVerified" = TRUE, "banned" = FALSE, "banReason" = NULL, "banExpires" = NULL, "updatedAt" = NOW()
      RETURNING "id", "name", "email", "emailVerified", "role", "createdAt", "updatedAt"`,
     [adminName, adminEmail],
   );
   const user = result.rows[0];
+  const credential = await query(
+    `SELECT "id" FROM "account"
+      WHERE "issuer" = 'local:credential' AND "accountId" = $1 AND "providerId" = 'credential'
+      LIMIT 1`,
+    [user.id],
+  );
+  if (!credential.rows[0]) {
+    const password = await hashPassword(adminPassword);
+    await query(
+      `INSERT INTO "account" ("id", "issuer", "accountId", "providerId", "userId", "password", "createdAt", "updatedAt")
+       VALUES ($1, 'local:credential', $2, 'credential', $2, $3, NOW(), NOW())
+       ON CONFLICT ("issuer", "accountId") DO NOTHING`,
+      [randomUUID(), user.id, password],
+    );
+  }
   await query(
     `INSERT INTO user_preferences (user_id)
      VALUES ($1)

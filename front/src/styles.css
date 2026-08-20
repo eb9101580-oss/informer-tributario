@@ -509,6 +509,7 @@ button { cursor: pointer; }
 .login-form label { color: #47615d; font-size: 10px; font-weight: 750; }
 .login-form > div { display: flex; align-items: center; gap: 9px; padding: 0 11px; border: 1px solid #d5e1df; border-radius: 9px; color: #718681; background: #fbfdfc; }
 .login-form input { flex: 1; min-width: 0; border: 0; outline: 0; padding: 12px 0; color: #29423e; background: transparent; font-size: 12px; }
+.login-form .password-toggle { display: grid; place-items: center; padding: 5px; border: 0; color: #647c77; background: transparent; cursor: pointer; }
 .primary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-radius: 8px; padding: 11px 14px; color: white; background: var(--green); font-size: 10px; font-weight: 750; }
 .primary:hover { background: var(--green-dark); }
 .primary:disabled { opacity: .55; cursor: not-allowed; }
@@ -567,7 +568,7 @@ button { cursor: pointer; }
 .custom-sources-list a { color: #41766d; font-size: 9px; margin-top: 3px; }
 .custom-sources-list article > div:last-child { display: flex; gap: 5px; }
 
-.user-invite-form { display: grid; grid-template-columns: 1.2fr 1fr 1.3fr auto; gap: 10px; align-items: end; }
+.user-invite-form { display: grid; grid-template-columns: 1.2fr 1fr 1.2fr 1fr auto; gap: 10px; align-items: end; }
 .user-invite-form > div { display: flex; align-items: center; gap: 9px; color: #33766b; }
 .user-invite-form strong, .user-invite-form small { display: block; }
 .user-invite-form strong { color: #34504b; font-size: 11px; }
@@ -579,6 +580,14 @@ button { cursor: pointer; }
 .users-table td strong, .users-table td small { display: block; }
 .users-table td strong { color: #304944; }
 .users-table td small { margin-top: 3px; color: #86928f; }
+.user-row-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.user-row-actions button { display: inline-flex; align-items: center; gap: 5px; }
+.password-reset-form { display: grid; grid-template-columns: 1.4fr 1.2fr auto auto; gap: 10px; align-items: end; margin-top: 12px; padding: 15px; border: 1px solid #dbe6e3; border-radius: 10px; background: #f8fbfa; }
+.password-reset-form > div { display: flex; gap: 9px; align-items: center; color: #33766b; }
+.password-reset-form strong, .password-reset-form small { display: block; }
+.password-reset-form small { margin-top: 3px; color: #7a8986; font-size: 9px; }
+.password-reset-form label { display: grid; gap: 6px; color: #49625e; font-size: 10px; font-weight: 750; }
+.password-reset-form input { width: 100%; border: 1px solid #d5e1df; border-radius: 8px; outline: 0; padding: 10px 11px; background: white; font: inherit; font-size: 11px; }
 .user-status { color: #267466; }
 .user-status--off { color: #a14f46; }
 
@@ -699,7 +708,7 @@ button { cursor: pointer; }
   .login-card { padding: 23px 18px; }
   .suggestion-form > div:last-child { align-items: stretch; flex-direction: column; }
   .custom-sources-panel { padding: 16px; }
-  .custom-sources-panel form, .user-invite-form { grid-template-columns: 1fr; }
+  .custom-sources-panel form, .user-invite-form, .password-reset-form { grid-template-columns: 1fr; }
   .notification-preferences { grid-template-columns: 1fr; padding: 16px; }
   .notification-preferences input { min-height: 16px; }
   .custom-sources-list article { grid-template-columns: 1fr auto; }
