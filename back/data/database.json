@@ -1,9 +1,234 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T03:40:30.463Z",
+    "lastUpdatedAt": "2026-08-21T04:34:03.495Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1528201 ED — efeitos do Tema 985 somente foi definida em momento posterior ao acórdão de retratação proferido na origem, de modo que a questão referente ao enquadramento da emb",
+      "theme": "Modulação de efeitos do Tema 985",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Contribuição previdenciária do"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF determinou que os efeitos do Tema 985 foram definidos posteriormente ao acórdão de retratação na origem, impossibilitando a embargante de ser enquadra no momento do julgamento. A decisão reforça que a omissão não é erro do órgão julgador, mas resultado da dinâmica temporal entre o julgamento do tema e a definição de seus efeitos.",
+      "whatChanged": "A modulação de efeitos do Tema 985 foi definida posteriormente ao acórdão de retratação proferido na origem, o que impede a embargante de ser enquadra no momento do julgamento do recurso.",
+      "practicalImpact": "Empresas que utilizam a contribuição previdenciária do empregador sobre o terço de férias devem revisar a aplicação de jurisprudência anterior para evitar conflitos com a modulação temporal dos efeitos do Tema 985.",
+      "officeAction": "O STF afirma que a omissão na definição dos efeitos do Tema 985 não é erro do órgão julgador, mas decorre da dinâmica temporal entre o julgamento do tema e a definição de seus efeitos.",
+      "affectedProfiles": [
+        "Empresas com contribuição previdenciária do empregador",
+        "Empresas com terço de férias",
+        "Jurisprudência tributária",
+        "Recurso extraordinário com repercussão geral",
+        "Tribunal a quo"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Revisão da aplicação de jurisprudência tributária para evitar conflitos com a modulação temporal dos efeitos do Tema 985",
+        "period": "2023-11-12 a 2024-12-31",
+        "action": "Revisar a aplicação da contribuição previdenciária do empregador sobre o terço de férias para alinhar com a modulação temporal dos efeitos do Tema 985",
+        "confidence": "médio"
+      },
+      "id": "b5851e31-9f6a-4f22-951a-93e6a5b267c2",
+      "score": 6.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811127/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T04:34:03.452Z",
+      "updatedAt": "2026-08-21T04:34:03.452Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811127/false",
+        "sourceCharacters": 1204,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:13:22.306Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617547 — STF afasta cabimento de agravo contra decisão de juízo de origem que aplica sistemática da repercussão geral",
+      "theme": "Repercussão geral no direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "Ação anulatória de débito trib"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF afastou o cabimento de agravo contra decisão de juízo de origem que aplica a sistemática da repercussão geral em matéria tributária. O precedente confirma que não cabe agravo para o STF quando o juízo de origem aplica a repercussão geral, mesmo em ações anulatórias de débitos fiscais.",
+      "whatChanged": "A decisão do STF estabelece que não é cabível agravo contra decisão de juízo de origem que aplica a sistemática da repercussão geral em processos tributários, incluindo ações anulatórias de débitos fiscais.",
+      "practicalImpact": "Profissionais de tributário devem evitar interposição de agravo contra decisões de juízo de origem que aplicam repercussão geral, já que o STF afasta o cabimento do agravo. Isso impacta processos de ICMS e ações anulatórias de débitos fiscais.",
+      "officeAction": "O STF afasta o cabimento de agravo contra decisão de juízo de origem que aplica a sistemática da repercussão geral em processos tributários, incluindo ações anulatórias de débitos fiscais.",
+      "affectedProfiles": [
+        "Advogados de tributário",
+        "Juízes de origem",
+        "Procuradores fiscais",
+        "Especialistas em ICMS",
+        "Advogados de tributário em ações anulatórias"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 3,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "O STF afasta cabimento de agravo contra decisão de juízo de origem que aplica repercussão geral em ICMS",
+        "period": "2023-11-12",
+        "action": "Revisar decisões de juízo de origem que aplicam repercussão geral em processos tributários para evitar interposição de agravo não cabível",
+        "confidence": "alto"
+      },
+      "id": "7f118005-95dd-4702-bc04-ec4f90bd71c6",
+      "score": 6.3,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811129/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T04:31:19.251Z",
+      "updatedAt": "2026-08-21T04:31:19.251Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811129/false",
+        "sourceCharacters": 1206,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:13:22.306Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "HC 275898 — Tribunal Regional Federal da 3ª Região deu parcial provimento ao apelo defensivo para estabelecer a pena em 3 anos, 2 meses e 23 dias de reclusão, mantendo-se o regime",
+      "theme": "Regra de consumo de crédito tributário e reincidência penal",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imposto de Renda",
+        "PIS/COFINS",
+        "ICMS",
+        "ISS",
+        "Credito tributário",
+        "Regra de consumo"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF decidiu que os crimes previstos no art. 1º da Lei nº 8.137/1990 têm natureza material e se consumam apenas com a constituição definitiva do crédito tributário, conforme Súmula Vinculante nº 24 do STF. A decisão estabelece que a reincidência penal é caracterizada quando há condenação anterior transitada em julgado, como ocorreu em 22.10.2013, e que a aplicação retroativa do acordo de não persecução penal deve considerar o momento anterior ao oferecimento da denúncia, sendo inviável quando presente reincidência.",
+      "whatChanged": "A decisão do STF estabelece que a consumação do crime tributário ocorre apenas com a constituição definitiva do crédito tributário, não sendo retroativo o acordo de não persecução penal em casos de reincidência penal.",
+      "practicalImpact": "Empresas devem revisar a aplicação de acordos de não persecução penal para evitar retroatividade em casos de reincidência penal, garantindo que a medida seja proposta antes do oferecimento da denúncia.",
+      "officeAction": "Regra de consumo de crédito tributário e reincidência penal: os crimes tributários previstos no art. 1º da Lei nº 8.137/1990 só se consumam com a constituição definitiva do crédito tributário, conforme Súmula Vinculante nº 24 do STF.",
+      "affectedProfiles": [
+        "Empresas com atividades tributárias",
+        "Advogados especializados em tributação",
+        "Juízes de tributação",
+        "Organizações de defesa penal",
+        "Pessoas físicas com problemas fiscais"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Regra de consumo de crédito tributário e reincidência penal",
+        "period": "2023-11-28",
+        "action": "Revisar a aplicação de acordos de não persecução penal para evitar retroatividade em casos de reincidência penal",
+        "confidence": "médio"
+      },
+      "id": "392bdbed-e45f-49e3-94da-9f7f961f6391",
+      "score": 6.8,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811285/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T04:28:38.783Z",
+      "updatedAt": "2026-08-21T04:28:38.783Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811285/false",
+        "sourceCharacters": 1204,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:13:22.306Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1616235 — contrariedade em relação aos óbices contidos na decisão agravada",
@@ -37970,43 +38195,57 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1020217-27.2025.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: MENTAÇÃO Trata-se de ação proposta contra a União em que a…",
-      "theme": "Direito tributário",
-      "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "title": "Sentença Tipo A · 1020217-27.2025.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Isenção de imposto de renda para portadores de doença grave",
+      "theme": "Isenção de imposto de renda para portadores de doença grave",
+      "agency": "4ª Vara Federal de Juizado Especial Cível da SJRO",
+      "taxes": [
+        "Imposto de Renda",
+        "SELIC",
+        "JEF (Teto de 60 salários mínos",
+        "Requisição de Pagamento (RPV)"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. I - FUNDAMENTAÇÃO Trata-se de ação proposta contra a União em que a parte autora requer isenção de imposto de renda incidente sobre proventos de pensão e/ou aposentadoria, por se tratar de pessoa portadora de moléstia grave.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma isenção de imposto de renda sobre proventos de aposentadoria para portadores de doença grave, como reconhecido pelo juiz em juízo de cognição exauriente. O autor, José Rodrigues dos Passos, comprovou Intoxicação Crônica por DDT como doença profissional, o que autoriza a isenção sem necessidade de laudo médico oficial, conforme Súmula 598 do STJ.",
+      "whatChanged": "A sentença estabelece que a isenção do imposto de renda sobre proventos de aposentadoria é válida a partir da data de aposentadoria, com antecipação dos efeitos da tutela para suspensão imediata da incidência do imposto por 30 dias. A parte autora pode optar por execução do julgado mediante requisitório sem necessidade de compensação tributária.",
+      "practicalImpact": "Contribuintes com doenças graves listadas na legislação tributária podem obter isenção do imposto de renda sobre proventos de aposentadoria sem apresentar laudo médico oficial, desde que comprovem a doença por meio de diagnóstico médico anterior à data de aposentadoria. A sentença permite a antecipação dos efeitos da tutela para suspensão imediata da incidência do imposto por 30 dias.",
+      "officeAction": "A parte autora deve requerer o cumprimento da sentença em 10 dias para expedição de requisitório, com possibilidade de renúncia ao valor que exceder 60 salários mínimos. Caso não haja renúncia, o pagamento seguirá o regime de precatório.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Portadores de doenças graves listadas na legislação tributária",
+        "Aposentados com comprovação de doença profissional",
+        "Contribuintes com proventos de pensão",
+        "Pessoas com doenças reconhecidas como crônicas por DDT",
+        "Beneficiários de isenção de imposto de renda"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção de imposto de renda para portadores de doença grave",
+        "period": "A partir da data de aposentadoria",
+        "action": "Requisição de pagamento (RPV) sem necessidade de laudo médico oficial",
+        "confidence": "alto"
+      },
       "id": "a0b9a74e-bb4b-444c-8dcf-d014a3696d11",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUl9JTVTp57deRLzE4gO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.199Z",
-      "updatedAt": "2026-08-20T15:00:30.199Z",
+      "updatedAt": "2026-08-21T04:22:50.480Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUl9JTVTp57deRLzE4gO/certidao",
         "sourceCharacters": 7908,
         "sourceId": "trf1",
@@ -45407,8 +45646,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:13:22.306Z",
         "id": "a1b511eef045bf6441c4a8c7",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45421,7 +45660,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T04:28:38.823Z",
+        "analyzedPublishedAt": "2023-11-28T00:00:00Z",
+        "relevant": true,
+        "score": 6.8,
+        "discardReason": null,
+        "alertId": "392bdbed-e45f-49e3-94da-9f7f961f6391",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1617547 — firmada pelo Supremo Tribunal Federal, afastou o cabimento de agravo contra a decisão do Juízo de origem que aplica a sistemática da repercussão geral. Por oportuno, transcrevo o art. 1.042, caput, do CPC: Art. 1.042. Cabe agravo contra decisão do presidente o",
@@ -45440,8 +45687,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:13:22.306Z",
         "id": "6bfe05ddf5e26ca62e7f5b18",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45454,7 +45701,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T04:31:19.291Z",
+        "analyzedPublishedAt": "2023-11-12T00:00:00Z",
+        "relevant": true,
+        "score": 6.3,
+        "discardReason": null,
+        "alertId": "7f118005-95dd-4702-bc04-ec4f90bd71c6",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1614879 — formado na demanda originária — na qual a Fazenda Municipal restou vencida — e dos cálculos de liquidação apresentados, dos quais se apurou o efetivo adiantamento da taxa judiciária pela parte exequente. Infirmar tais premissas demandaria o revolvimento da mol",
@@ -45506,8 +45761,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:13:22.306Z",
         "id": "9d77d4a9c14597674ab09059",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45520,7 +45775,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T04:34:03.495Z",
+        "analyzedPublishedAt": "2023-11-12T18:00:00Z",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "alertId": "b5851e31-9f6a-4f22-951a-93e6a5b267c2",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "RE 1616011 — enquadra-se à(s) situação(ões) abrangida(s) pela modulação de efeitos da decisão paradigmática (Tema 395). 4. eg. Supremo Tribunal Federal, ao apreciar o RE 870.947, submetido à sistemática da repercussão geral, fixou as seguintes teses: I – O art. 1º-F da Lei",
@@ -45762,7 +46025,7 @@
         "discoveredAt": "2026-08-21T03:12:53.826Z",
         "id": "11816503c1554d73482c5298",
         "status": "error",
-        "attempts": 1,
+        "attempts": 2,
         "backfillDate": null,
         "fastTriage": {
           "score": 56,
@@ -45775,7 +46038,7 @@
           "engine": "regras-tributarias-v1"
         },
         "error": "A coleta excedeu o limite de 60 segundos.",
-        "analyzedAt": "2026-08-21T03:31:35.382Z"
+        "analyzedAt": "2026-08-21T04:25:54.365Z"
       },
       {
         "title": "REQ 4102/2026 — Requer a realização de Sessão Solene destinada a celebrar a realização, em Brasília, das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo Instituto Latinoamericano de Derecho Tributario – ILADT.",
@@ -52402,8 +52665,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "6cb4a35b0fd621bcbc19c58e",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -52419,7 +52682,14 @@
         },
         "alertId": "a0b9a74e-bb4b-444c-8dcf-d014a3696d11",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T04:22:50.521Z",
+        "analyzedPublishedAt": "2025-01-04T00:00:00Z",
+        "relevant": true,
+        "score": 7.7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo C · 1075405-43.2026.4.01.3300 · 10ª Vara Federal Cível da SJBA — Direito tributário: brança do acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de IRPJ e CSLL no regime do lucro presumido, estabelecido pelo art. 4º, § 4º, inciso VII, e § 5º da Lei Complementar nº 224/2025, do Decreto nº 12.808/2025 e da Instrução Normativa RFB nº",
@@ -73361,6 +73631,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "660e4ec3-3759-49df-816b-6f1a1b91fcb8",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T04:16:43.945Z",
+        "finishedAt": "2026-08-21T04:34:03.530Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "ea74e358-d652-45e6-aef6-c7ea2820e1e2",
         "trigger": "github-actions-history",
@@ -99210,275 +99493,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "58d9b9f9-32ad-47aa-bae0-c6c0590dc43f",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-19T23:31:42.742Z",
-        "finishedAt": "2026-08-19T23:54:13.034Z",
-        "discovered": 20,
-        "analyzed": 4,
-        "published": 3,
-        "discarded": 1,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 15,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 52,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T04:14:41.061Z",
-    "nextRunAt": "2026-08-21T10:14:41.061Z"
+    "lastRunAt": "2026-08-21T04:34:03.530Z",
+    "nextRunAt": "2026-08-21T10:34:03.530Z"
   }
 }
