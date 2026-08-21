@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T01:52:28.159Z",
+    "lastUpdatedAt": "2026-08-21T02:33:48.251Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -37279,43 +37279,57 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1012816-40.2026.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: . Do mérito A controvérsia consiste em definir se a parte…",
-      "theme": "Direito tributário",
-      "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "title": "Sentença Tipo A · 1012816-40.2026.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Restituição do Imposto de Renda retido sobre proventos de apos",
+      "theme": "Isenção do Imposto de Renda para aposentados com moléstia grave",
+      "agency": "4ª Vara Federal de Juizado Especial Cível da SJRO",
+      "taxes": [
+        "Imposto de Renda",
+        "SELIC",
+        "JEF",
+        "FADPU"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. Do mérito A controvérsia consiste em definir se a parte autora faz jus à restituição do Imposto de Renda retido sobre seus proventos de aposentadoria em período anterior ao reconhecimento administrativo da isenção, considerando que a moléstia grave já estava diagnosticada antes da aposentadoria.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece que o autor, IRAN ROSEO DOS SANTOS, tem direito à isenção do Imposto de Renda sobre seus proventos de aposentadoria desde a data de 25/04/2018, comprovada a moléstia grave (cardiopatia) antes da aposentadoria. A restituição dos valores indevidamente retidos deve ser limitada ao período não alcançado pela prescrição quinquenal (29/05/2021 a outubro de 2022), com atualização pela SELIC. A sentença determina a restituição com base na prova documental do diagnóstico prévio da moléstia, não sendo afetada pelo reconhecimento administrativo posterior.",
+      "whatChanged": "A sentença estabelece que a isenção do Imposto de Renda para aposentados com moléstia grave é válida desde a data do diagnóstico prévio, mesmo que o reconhecimento administrativo ocorra posteriormente. A restituição dos valores indevidamente retidos deve ser limitada ao período não alcançado pela prescrição quinquenal (5 anos anteriores ao ajuizamento), com atualização pela SELIC.",
+      "practicalImpact": "A parte autora pode solicitar a restituição do Imposto de Renda retido sobre proventos de aposentadoria desde 2018, limitada ao período não prescrito (2021-2022), com atualização pela SELIC. A sentença não reconhece a necessidade de reconhecimento administrativo posterior para a isenção, apenas a comprovação da moléstia grave antes da aposentadoria.",
+      "officeAction": "A sentença determina a restituição dos valores indevidamente retidos, limitada ao período não alcançado pela prescrição quinquenal (2021-2022), com atualização pela SELIC. A parte autora deve apresentar planilha de cálculo atualizada para cumprimento da sentença, com possibilidade de renúncia ao valor que exceder 60 salários mínimos para pagamento por RPV.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Aposentados com moléstia grave (cardiopatia)",
+        "Contribuintes com isenção tributária prévia",
+        "Prestadores de serviços com proventos de aposentadoria",
+        "Clientes com restituição de Imposto de Renda",
+        "Pessoas com diagnóstico médico prévio de moléstia grave"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 7,
+        "reach": 6,
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição do Imposto de Renda retido sobre proventos de aposentadoria com moléstia grave",
+        "period": "2021-2022",
+        "action": "Solicitar restituição dos valores indevidamente retidos, limitada ao período não alcançado pela prescrição quinquenal (2021-2022), com atualização pela SELIC",
+        "confidence": "alto"
+      },
       "id": "ce7d2871-8ff1-428c-b3d9-d3b34659364d",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.8,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MXUpGATmT8oVEpR4eny8l/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.197Z",
-      "updatedAt": "2026-08-20T15:00:30.197Z",
+      "updatedAt": "2026-08-21T02:05:49.426Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MXUpGATmT8oVEpR4eny8l/certidao",
         "sourceCharacters": 9475,
         "sourceId": "trf1",
@@ -37341,43 +37355,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1085960-56.2025.4.01.3300 · 15ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: ajuizou a presente ação em face da União, visando obter a…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1085960-56.2025.4.01.3300 · 15ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: ajuizou a presente ação em face da União, visando obter a ex",
+      "theme": "Natureza tributária da Hora Repouso Alimentação (AHRA) e exclusão da base de cál",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda",
+        "Contribuição Previdenciária",
+        "AHRA (Adicional Hora Repouso e"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 15ª Vara Federal de Juizado Especial Cível da SJBA SENTENÇA TIPO \"A\" PROCESSO: 1085960-56.2025.4.01.3300 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: LOURIVAL DA CONCEICAO DE OLIVEIRA REPRESENTANTES POLO ATIVO: LUIZ FERNANDO GARCIA LANDEIRO - BA16911 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Dispensado o relatório.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que a Hora Repouso Alimentação (AHRA) é de natureza remuneratória e tributável no Imposto de Renda, com exceção das verbas anteriores à Lei 13.467/2017. A decisão determina a exclusão da base de cálculo do Imposto de Renda para AHRA a partir de 13/11/2017 e a restituição dos valores recolhidos com base na prescrição quinquenal.",
+      "whatChanged": "A sentença estabelece que, após a Lei 13.467/2017, a AHRA é de natureza indenizatória e não tributável no Imposto de Renda, enquanto as verbas anteriores à lei permanecem tributáveis. A decisão também define a prescrição quinquenal a partir da data de ajuizamento da ação.",
+      "practicalImpact": "Empresas devem recalcular impostos de renda para AHRA a partir de 13/11/2017, com restituição de valores recolhidos em excesso. Contribuintes devem apresentar DIRPF retroativos para ajuste tributário.",
+      "officeAction": "A União deve juntar cópia das DIRPF do autor retroativas aos últimos cinco anos para recálculo do imposto de renda e restituição dos valores recolhidos com base na prescrição quinquenal.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com funcionários que recebem AHRA",
+        "Contribuintes que pagaram AHRA antes de 13/11/2017",
+        "Empresas com atividade no setor de serviços",
+        "Contribuintes com declaração de imposto de renda retroativa",
+        "Juizados Especiais Cíveis"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 7,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão da base de cálculo do Imposto de Renda para AHRA a partir de 13/11/2017",
+        "period": "2025-07-15 a 2025-07-31",
+        "action": "Recálculo do imposto de renda para AHRA e restituição de valores recolhidos em excesso",
+        "confidence": "alto"
+      },
       "id": "b0655dc2-f503-456b-a8f3-2e1486056c9e",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/vLko4Pw1RXdUKdGFoTGjdX3RbAKq5V/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.197Z",
-      "updatedAt": "2026-08-20T15:00:30.197Z",
+      "updatedAt": "2026-08-21T02:13:18.272Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/vLko4Pw1RXdUKdGFoTGjdX3RbAKq5V/certidao",
         "sourceCharacters": 9360,
         "sourceId": "trf1",
@@ -37403,43 +37430,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo B · 1140231-06.2025.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo B · 1140231-06.2025.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo do",
+      "theme": "Contribuição previdenciária acima do teto do salário de contribuição",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição previdenciária",
+        "Salário de contribuição",
+        "Teto do salário de contribução",
+        "Recolhimento de contribuição",
+        "Restituição de contribuição",
+        "Prescrição quinquenal"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo B)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo b) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF SENTENÇA TIPO \"B\" PROCESSO: 1140231-06.2025.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: CARLEAN DE OLIVEIRA SIMAO REPRESENTANTES POLO ATIVO: FERNANDO RODRIGUES PESSOA - GO34248 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Cuida-se de ação que…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma o direito do autor a restituição de contribuição previdenciária excedente do teto do salário de contribuição, com base no art. 36 da Instrução Normativa RFB nº 2110/2022 e no art. 487 do CPC. O autor demonstrou protocolo do requerimento administrativo e a mora na análise justifica o ajuizamento da ação. A restituição deve ser feita desde a data do requerimento administrativo (22/11/2024), observando a prescrição quinquenal.",
+      "whatChanged": "A sentença reconhece que o segurado empregado com mais de um vínculo deve comunicar mensalmente a remuneração recebida até o limite máximo do salário de contribuição, conforme art. 36 da Instrução Normativa RFB nº 2110/2022. O autor comprovou recolhimento acima do teto do salário de contribuição e tem direito à restituição dos valores excedentes, desde a data do requerimento administrativo (22/11/2024).",
+      "practicalImpact": "Contribuintes que possuem múltiplos vínculos devem apresentar declaração mensal para evitar recolhimento acima do teto do salário de contribuição (R$ 170.000,00). A restituição dos valores excedentes é possível desde a data do requerimento administrativo (22/11/2024), observando a prescrição quinquenal. O CNIS anexado confirma o vínculo múltiplo do autor, permitindo a restituição.",
+      "officeAction": "O autor deve apresentar na fase de cumprimento de sentença os documentos necessários à análise de eventual recolhimento a maior pela Contadoria Judicial. A PFN, no caso de discordância, deverá apresentar alegações fundamentadas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empregados com múltiplos vínculos",
+        "Contribuintes individuais",
+        "Segurados empregados",
+        "Trabalhadores avulso",
+        "Empregados domésticos"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição de contribuição previdenciária excedente do teto do salário de contribuição",
+        "period": "Desde a data do requerimento administrativo (22/11/2024)",
+        "action": "Apresentar documentos na fase de cumprimento de sentença para análise de recolhimento a maior pela Contadoria Judicial",
+        "confidence": "alto"
+      },
       "id": "ce88bf45-91c3-44c7-a72b-1c934f071784",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8JxZ1bUlvgheTaqbEgY1ObAW3/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.197Z",
-      "updatedAt": "2026-08-20T15:00:30.197Z",
+      "updatedAt": "2026-08-21T02:20:03.601Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8JxZ1bUlvgheTaqbEgY1ObAW3/certidao",
         "sourceCharacters": 8739,
         "sourceId": "trf1",
@@ -37465,43 +37508,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1002767-08.2023.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1002767-08.2023.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo do",
+      "theme": "Contribuição previdenciária acima do teto do salário de contribuição",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição previdenciária",
+        "Salário de contribuição",
+        "Teto do salário de contribução",
+        "Recolhimento de contribuição",
+        "Restituição de contribuição",
+        "Correção monetária"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1002767-08.2023.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: HERICA CRUVINEL ALVES REPRESENTANTES POLO ATIVO: HENRIQUE MENDES STABILE - GO34362 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Cuida-se de ação que tramita via…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma o direito do autor a restituição de contribuição previdenciária excedente do teto do salário de contribuição, com base no art. 36 da Instrução Normativa RFB nº 2110/2022 e no art. 487, inciso I, do CPC. O autor demonstrou protocolo do requerimento administrativo e a mora na análise justifica o ajuizamento da ação. A restituição deve ser feita com correção monetária e desde a data do requerimento administrativo (12/01/2023).",
+      "whatChanged": "A sentença reconhece que o segurado empregado com mais de um vínculo deve comunicar mensalmente a remuneração recebida até o limite máximo do salário de contribuição (Cr$ 170.000,00), conforme art. 36 da Instrução Normativa RFB nº 2110/2022. O autor comprovou recolhimento acima do teto, o que permite a restituição dos valores excedentes com correção monetária.",
+      "practicalImpact": "Contribuintes com múltiplos vínculos devem apresentar declaração mensal para evitar recolhimento acima do teto do salário de contribuição (Cr$ 170.000,00). A restituição dos valores excedentes é possível desde a data do requerimento administrativo (12/01/2023), com correção monetária via SELIC.",
+      "officeAction": "O autor deve apresentar na fase de cumprimento de sentença os documentos necessários à análise de eventual recolhimento a maior pela Contadoria Judicial. A PFN, em caso de discordância, deve apresentar alegações fundamentadas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com múltiplos vínculos empregados",
+        "Empregadores que não verificaram remuneração excedente do teto",
+        "Segurados domésticos",
+        "Contribuintes individuais com múltiplos vínculos",
+        "Trabalhadores avulso com múltiplos vínculos"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição de contribuição previdenciária excedente do teto",
+        "period": "Desde a data do requerimento administrativo (12/01/2023)",
+        "action": "Apresentar declaração mensal com comprovante de remuneração até o limite máximo do salário de contribuição (Cr$ 170.000,00) para evitar recolhimento acima do teto",
+        "confidence": "alto"
+      },
       "id": "b4b9dbf2-6aa2-477d-8a0b-a6493622242a",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JKg5dkqmZL3U4qPCmTwgazo61NarD3/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.198Z",
-      "updatedAt": "2026-08-20T15:00:30.198Z",
+      "updatedAt": "2026-08-21T02:26:52.815Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JKg5dkqmZL3U4qPCmTwgazo61NarD3/certidao",
         "sourceCharacters": 8720,
         "sourceId": "trf1",
@@ -37527,43 +37586,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1013913-46.2024.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: o mérito Trata-se de ação proposta contra a União em que a…",
-      "theme": "Direito tributário",
-      "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "title": "Sentença Tipo A · 1013913-46.2024.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: o mérito",
+      "theme": "Isenção de imposto de renda para pessoas com moléstia grave",
+      "agency": "4ª Vara Federal de Juizado Especial Cível da SJRO",
+      "taxes": [
+        "Imposto de Renda",
+        "Proventos de pensão/aposentado",
+        "Doença do Nó Sinusal (DNS)",
+        "Súmula 598 do STJ",
+        "Art. 38 da Lei 9.099/90",
+        "Art. 300 do CPC"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. Seção Judiciária de Rondônia 4ª Vara Federal de Juizado Especial Cível da SJRO PROCESSO: 1013913-46.2024.4.01.4100 AUTOR: DIRLENE SGROTT REIS REU: UNIAO FEDERAL (FAZENDA NACIONAL) ASSUNTO: [Isenção por Doença ou Acidente em Serviço] S E N T E N Ç A – TIPO A Relatório dispensado (Art.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença declara prescritas parcelas anteriores ao quinquênio que precedeu o ajuizamento, reconhecendo a isenção de imposto de renda sobre proventos de pensão/aposentadoria para pessoa portadora de doença grave (DNS), com base na Súmula 598 do STJ e Art. 38 da Lei 9.099/90. A sentença antecipa os efeitos da tutela para suspensão imediata da incidência do imposto a partir de 13/10/2023.",
+      "whatChanged": "A sentença estabelece que a isenção de imposto de renda sobre proventos de pensão/aposentadoria é válida para pessoas com doenças graves listadas na legislação tributária, sem necessidade de laudo médico oficial, com base na Súmula 598 do STJ. A exigência de comprovação da doença por meio de diagnóstico médico (13/10/2023) é o marco para a isenção.",
+      "practicalImpact": "Contribuintes com doença grave (ex.: DNS) podem solicitar isenção de imposto de renda sobre proventos de pensão/aposentadoria sem apresentar laudo médico oficial, desde que comprovem a doença por meio de diagnóstico médico. A sentença antecipa a suspensão imediata da incidência do imposto a partir de 13/10/2023, com possibilidade de restituição de valores indevidamente recolhidos.",
+      "officeAction": "A parte autora deve requerer o cumprimento da sentença em 10 dias para expedição de requisição de pagamento, sem necessidade de nova declaração de ajuste anual. A Fazenda Pública pode impugnar a execução com cálculos atualizados, mas não há necessidade de apresentação de laudo médico oficial para reconhecimento judicial do direito à isenção.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com doenças graves listadas na legislação tributária",
+        "Pessoas com proventos de pensão/aposentadoria",
+        "Beneficiários de isenção de imposto de renda",
+        "Juizados Especiais Cíveis da SJRO",
+        "Fazenda Nacional"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 7,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção de imposto de renda para pessoas com moléstia grave",
+        "period": "A partir de 13/10/2023",
+        "action": "Solicitar isenção de imposto de renda sobre proventos de pensão/aposentadoria sem laudo médico oficial, com base na Súmula 598 do STJ",
+        "confidence": "alto"
+      },
       "id": "d33aefb3-5171-489f-9e80-bfdab4307e14",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DXU2jbIATgEwL26nyG1xN/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.198Z",
-      "updatedAt": "2026-08-20T15:00:30.198Z",
+      "updatedAt": "2026-08-21T02:33:48.207Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DXU2jbIATgEwL26nyG1xN/certidao",
         "sourceCharacters": 8387,
         "sourceId": "trf1",
@@ -55534,8 +55609,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "24b6fc638ea2231b5239ad18",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55551,7 +55626,14 @@
         },
         "alertId": "ce7d2871-8ff1-428c-b3d9-d3b34659364d",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T02:05:49.470Z",
+        "analyzedPublishedAt": "2026-05-29T00:00:00Z",
+        "relevant": true,
+        "score": 7.8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1085960-56.2025.4.01.3300 · 15ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: ajuizou a presente ação em face da União, visando obter a exclusão da base de cálculo do Imposto de Renda a “Hora Repouso Alimentação”, sustentando ser esta de natureza indenizatória e pagamento das diferenças devidas, observada a prescrição quinquenal. Quanto ao direito a as",
@@ -55570,8 +55652,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "4aa69d24d4d4917865bbf6c7",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55587,7 +55669,14 @@
         },
         "alertId": "b0655dc2-f503-456b-a8f3-2e1486056c9e",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T02:13:18.315Z",
+        "analyzedPublishedAt": "2025-07-15T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo B · 1140231-06.2025.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo do requerimento administrativo. Além disso, a mora na análise justifica o ajuizamento da ação. No mérito, a legislação que aborda a matéria demonstra o direito pleiteado pelo autor. Nos termos do art. 36 da Instrução Norm",
@@ -55606,8 +55695,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "80e5573491c2aa7a25770e93",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55623,7 +55712,14 @@
         },
         "alertId": "ce88bf45-91c3-44c7-a72b-1c934f071784",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T02:20:03.644Z",
+        "analyzedPublishedAt": "2025-02-15T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1002767-08.2023.4.01.3400 · Juizado Especial Cível Adjunto à 4ª Vara Federal da SJDF — Direito tributário: e de agir, porquanto o autor demonstrou o protocolo do requerimento administrativo. Além disso, a mora na análise justifica o ajuizamento da ação. No mérito, a legislação que aborda a matéria demonstra o direito pleiteado pelo autor. Nos termos do art. 36 da Instrução Norm",
@@ -55642,8 +55738,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "a8120775f0f17534003ee07f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55659,7 +55755,14 @@
         },
         "alertId": "b4b9dbf2-6aa2-477d-8a0b-a6493622242a",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T02:26:52.870Z",
+        "analyzedPublishedAt": "2023-12-15T00:00:00",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1013913-46.2024.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: o mérito Trata-se de ação proposta contra a União em que a parte autora requer isenção de imposto de renda incidente sobre proventos de pensão e/ou aposentadoria, por se tratar de pessoa portadora de moléstia grave. No caso concreto, encontram-se devidamente corroborados os re",
@@ -55678,8 +55781,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "9e7a8178849d1aa83a103580",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55695,7 +55798,14 @@
         },
         "alertId": "d33aefb3-5171-489f-9e80-bfdab4307e14",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T02:33:48.251Z",
+        "analyzedPublishedAt": "2024-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1001949-45.2026.4.01.3305 · Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Juazeiro-BA — Direito tributário: União Federal é ilegítima para compor o polo passivo, conforme passo a expor. O Fundo do PIS-PASEP foi criado pela Lei Complementar n. 26, de 11 de setembro de 1975, e regido pelo Decreto n. 4.751, de 17 de junho de 2003. Esse fundo é constituído pelos patrimônios do Prog",
@@ -78527,6 +78637,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "719a9d47-a700-4b59-a331-f0e98d1afe09",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T01:58:05.993Z",
+        "finishedAt": "2026-08-21T02:33:48.289Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "e9d573e2-bac4-40d7-b103-2ebec9bdf24a",
         "trigger": "github-actions-history",
@@ -104738,275 +104861,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "7be96400-c6e6-445e-8bdf-a1d565204dcd",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-19T22:04:16.226Z",
-        "finishedAt": "2026-08-19T22:26:07.576Z",
-        "discovered": 26,
-        "analyzed": 5,
-        "published": 4,
-        "discarded": 1,
-        "errors": 7,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 52,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T01:54:43.978Z",
-    "nextRunAt": "2026-08-21T07:54:43.978Z"
+    "lastRunAt": "2026-08-21T02:33:48.289Z",
+    "nextRunAt": "2026-08-21T08:33:48.289Z"
   }
 }
