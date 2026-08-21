@@ -1,9 +1,86 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T12:03:54.857Z",
+    "lastUpdatedAt": "2026-08-21T12:26:37.015Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 98259, de 10/08/2026: Classificação de Mercadorias NCM 8524.99.00 para Módulo de Tela LED",
+      "theme": "Classificação de Mercadorias",
+      "agency": "Receita Federal — Soluções COSIT",
+      "taxes": [
+        "ICMS",
+        "ISS",
+        "PIS",
+        "COFINS",
+        "IPI",
+        "ISSQN"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "A Receita Federal publicou Solução de Consulta Cosit nº 98259 de 10/08/2026, que classifica o módulo de tela LED com características específicas como resolução de 120x120 pixels, dimensões 320x160x19 mm e peso 0,926 kg como NCM 8524.99.00. O documento estabelece que a mercadoria é classificada com base em RGI 1 (Nota 7 do Capítulo 85) e RGI 6 da NCM constante da TEC, aprovada pela Res. Gecex nº 272/2021 e da Tipi, aprovada pelo Dec. nº 11.158/2022.",
+      "whatChanged": "A classificação de mercadorias para módulos LED com características específicas foi definida com base em regras técnicas e normas vigentes, evitando ambiguidades na tributação para produtos utilizados em painéis comerciais, publicitários ou informativos.",
+      "practicalImpact": "Empresas que produzem ou comercializam painéis LED devem seguir a classificação NCM 8524.99.00 para garantir correção na tributação de ICMS, PIS, COFINS e IPI, evitando multas por classificação incorreta.",
+      "officeAction": "A Receita Federal estabelece que o módulo LED deve ser classificado como NCM 8524.99.00, com base em critérios técnicos específicos como resolução, dimensões e uso comercial, garantindo clareza na tributação para mercadorias utilizadas em fins comerciais.",
+      "affectedProfiles": [
+        "Empresas de produção de painéis LED",
+        "Comércio de equipamentos eletrônicos",
+        "Empresas de publicidade digital",
+        "Fabricantes de dispositivos eletrônicos",
+        "Empresas de serviços de informática"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Classificação NCM 8524.99.00 para módulos LED com resolução 120x120 pixels",
+        "period": "2026-08-21 a 2027-08-21",
+        "action": "Revisar classificação de mercadorias para módulos LED com características específicas, garantindo conformidade com a Solução de Consulta Cosit nº 98259",
+        "confidence": "alto"
+      },
+      "id": "3760935c-f4b9-4fb3-889d-4f1f5a8d4790",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153032",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:18:44.096Z",
+      "updatedAt": "2026-08-21T12:18:44.096Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153032/visao/original",
+        "sourceCharacters": 4016,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença · 5003025-06.2026.4.03.6110 · 3ª Vara Federal de Sorocaba — Direito tributário: CEITA FEDERAL DO BRASIL EM SOROCABA-SP, objetivando seja declarado o direito de excluir o…",
@@ -5861,43 +5938,51 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5053697-65.2026.4.02.5101 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: ANTOS (AUTOR) ADVOGADO(A) : BIANCA ROBAINA PAES (OAB RJ210554) RECURSO INOMINADO.…",
-      "theme": "Direito tributário",
+      "title": "Acórdão judicial: Recurso inominado desprovido sobre não incidência de contribuição previdenciária do servidor público para o PSS sobre GDPST",
+      "theme": "Direito tributário: Contribuição previdenciária do servidor público para o PSS",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária do"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST).",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A 7ª Turma Recursal do TRF2 decidiu manter a sentença que julgou improcedente o pedido de não incidência da contribuição previdenciária do servidor público para o PSS sobre a parcela da Gratificação de Desempenho da Carreira da Previdência, Saúde e Trabalho (GDPST) não incorporável à aposentadoria. O acórdão afirma que servidores públicos novos, sem direito à integralidade e paridade, devem contribuir para o PSS sobre a GDPST, pois a base de cálculo da aposentadoria é a média aritmética das maiores remunerações utilizadas como base para contribuições previdenciárias.",
+      "whatChanged": "A decisão estabelece que a contribuição previdenciária do servidor público para o PSS deve incidir sobre a GDPST não incorporável à aposentadoria, mesmo para servidores novos sem direito à integralidade e paridade, já que a aposentadoria é calculada com base na média aritmética das maiores remunerações contribuídas.",
+      "practicalImpact": "Servidores públicos novos sem direito à integralidade e paridade devem contribuir para o PSS sobre a GDPST não incorporável à aposentadoria, impactando diretamente o cálculo de aposentadoria e contribuições previdenciárias.",
+      "officeAction": "A decisão do TRF2 confirma que a contribuição previdenciária sobre a GDPST não incorporável à aposentadoria deve incidir, mesmo para servidores públicos novos sem direito à integralidade e paridade, com base na média aritmética das maiores remunerações contribuídas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos novos sem direito à integralidade e paridade",
+        "Servidores públicos com aposentadoria calculada por média aritmética de remunera"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ajuste na contribuição previdenciária para servidores públicos novos",
+        "period": "2026-08-19 a 2027-08-19",
+        "action": "Reavaliação da incidência da contribuição previdenciária sobre GDPST não incorporável à aposentadoria para servidores públicos novos sem direito à integralidade e paridade",
+        "confidence": "alto"
+      },
       "id": "ddc74b0d-eae0-4959-9994-3c4d8e51ea0a",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJBuDgWuwT8BaKGZbBEe3N/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T09:48:53.852Z",
-      "updatedAt": "2026-08-21T09:48:53.852Z",
+      "updatedAt": "2026-08-21T12:14:12.094Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJBuDgWuwT8BaKGZbBEe3N/certidao",
         "sourceCharacters": 5869,
         "sourceId": "trf2",
@@ -8018,43 +8103,59 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1603847 AgR — ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Exceção de pré executividade. Recuperação judicial. Ilegalidade de…",
-      "theme": "Direito tributário",
+      "title": "ARE 1603847 AgR — ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Exceção de pré executividade. Recuperação judicial. Ilegalidade de créditos.",
+      "theme": "Recursos tributários e recuperação judicial",
       "agency": "Supremo Tribunal Federal",
-      "taxes": [],
+      "taxes": [
+        "Certidão de dívida ativa",
+        "Créditos tributários",
+        "Recuperação judicial",
+        "Legislação infraconstitucional",
+        "Exceção de pré executividade",
+        "Agravo regimental"
+      ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise de legislação infraconstitucional.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF negou seguimento ao recurso extraordinário com agravo por inviabilidade de análise de legislação infraconstitucional em sede extraordinária. O agravo regimental foi não provido, reafirmando que a análise da legislação infraconstitucional é imprescindível para dissentir da decisão do Tribunal de origem.",
+      "whatChanged": "A decisão estabelece que a análise de legislação infraconstitucional não é viável no recurso extraordinário, o que pode impactar a validade de certidões de dívida ativa em processos de recuperação judicial.",
+      "practicalImpact": "Empresas em recuperação judicial devem revisar a legalidade de créditos tributários antes de recorrerem ao STF, evitando possíveis negativas de provimento de agravo regimental.",
+      "officeAction": "Revisão da legalidade de certidões de dívida ativa em processos de recuperação judicial para garantir conformidade com a legislação infraconstitucional.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas em recuperação judicial",
+        "Procuradores de tributação",
+        "Advogados de empresas",
+        "Fiscais de tributação",
+        "Organizações de crédito"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 8,
         "clientFit": 7,
         "actionPotential": 6
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da legalidade de certidões de dívida ativa em recuperação judicial",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Análise da legislação infraconstitucional para garantir conformidade com a jurisprudência do STF",
+        "confidence": "médio"
+      },
       "id": "f9627df4-c12f-413b-b30a-68b6066e1616",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.7,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.613Z",
-      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T12:21:11.184Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
         "sourceCharacters": 1169,
         "sourceId": "stf",
@@ -8080,43 +8181,58 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1598204 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Serviços de composição gráfica. Imposto sobre Serviços. Reexame de fatos e…",
-      "theme": "Direito tributário",
+      "title": "ARE 1598204 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Serviços de composição gráfica. Imposto sobre Serviços. Reexame de fatos eleg",
+      "theme": "Imposto sobre Serviços (ISS) e ICMS",
       "agency": "Supremo Tribunal Federal",
-      "taxes": [],
+      "taxes": [
+        "Imposto sobre Serviços (ISS)",
+        "ICMS",
+        "Reexame de fatos",
+        "Legislação infraconstitucional",
+        "Súmulas 279 e 280 do STF"
+      ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Reexame de fatos e legislação infraconstitucional.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF negou seguimento ao agravo regimental de recurso extraordinário com agravo, afirmando que serviços de composição gráfica realizados sob encomenda e personalizados não incidem no ICMS, mas no ISS, conforme análise fática e legislação infraconstitucional. As Súmulas 279 e 280 do STF impedem o reexame de fatos e legislação infraconstitucional, reforçando a decisão do tribunal de origem.",
+      "whatChanged": "A decisão estabelece que serviços gráficos sob encomenda e personalizados, destinados ao uso próprio das empresas, incidem no ISS e não no ICMS, evitando a aplicação do ICMS em casos específicos.",
+      "practicalImpact": "Empresas que realizam composição gráfica sob encomenda devem verificar se seus serviços incidem no ISS ou ICMS, com base na finalidade do serviço e no uso dos produtos. A decisão reforça a necessidade de análise fática para determinar a incidência tributária.",
+      "officeAction": "Empresas devem revisar seus registros tributários para garantir a correta incidência do ISS ou ICMS, especialmente em serviços gráficos sob encomenda e personalizados.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas que realizam serviços gráficos sob encomenda",
+        "Contribuintes do ICMS",
+        "Empresas com serviços de composição gráfica personalizados",
+        "Empresas que utilizam serviços gráficos para uso próprio",
+        "Empresas que realizam serviços de composição gráfica com finalidade de revenda"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 4,
         "legalImpact": 8,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão de incidência tributária para serviços gráficos sob encomenda",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificar se os serviços de composição gráfica incidem no ISS ou ICMS com base na finalidade do serviço e no uso dos produtos",
+        "confidence": "médio"
+      },
       "id": "422d1f9a-2e95-49a6-8ec6-17ced12fb3e7",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.613Z",
-      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T12:24:03.377Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
         "sourceCharacters": 1647,
         "sourceId": "stf",
@@ -8142,45 +8258,54 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1602984 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação…",
-      "theme": "Direito tributário · Cofins",
+      "title": "ARE 1602984 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação infraconstitucional.",
+      "theme": "COFINS",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "Cofins"
+        "COFINS",
+        "Compensação",
+        "Comprovação do Crédito"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O Supremo Tribunal Federal (STF) negou seguimento ao recurso extraordinário com agravo (ARE 1602984) por considerar que a legislação infraconstitucional aplicável à espécie e o conjunto fático-probatório dos autos inviabilizam o processamento do recurso pela via extraordinária. O agravo regimental foi não provido, mantendo a decisão do Tribunal de origem que negou admissibilidade do recurso extraordinário com agravo.",
+      "whatChanged": "A jurisprudência do STF reforça que a legislação infraconstitucional aplicável à espécie e o conjunto fático-probatório dos autos inviabilizam o processamento do recurso extraordinário com agravo, impedindo a utilização da via extraordinária para contestar a infraconstitucionalidade da legislação.",
+      "practicalImpact": "Empresas que utilizam a COFINS para compensação e comprovação de crédito devem verificar se a legislação aplicável é infraconstitucional, evitando possíveis riscos de inadmissibilidade de recursos extraordinários.",
+      "officeAction": "A legislação infraconstitucional aplicável à espécie e o conjunto fático-probatório dos autos inviabilizam o processamento do recurso extraordinário com agravo, conforme jurisprudência do STF.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com atividade tributária",
+        "Profissionais de contabilidade",
+        "Advogados especializados em direito tributário"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 4,
         "legalImpact": 8,
-        "financialImpact": 7,
+        "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da legislação infraconstitucional aplicável à COFINS",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificar se a legislação aplicável à COFINS é infraconstitucional e ajustar processos tributários para evitar inadmissibilidade de recursos extraordinários",
+        "confidence": "médio"
+      },
       "id": "9b38212e-94c9-4fd1-84e0-9f9949c49340",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.613Z",
-      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T12:26:36.959Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
         "sourceCharacters": 1144,
         "sourceId": "stf",
@@ -59013,8 +59138,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-21T12:02:00.507Z",
         "id": "0d7f224a8b0632c8bd8d0dcd",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -59026,7 +59151,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T12:18:44.160Z",
+        "analyzedPublishedAt": "2026-08-21",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "alertId": "3760935c-f4b9-4fb3-889d-4f1f5a8d4790",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 98252 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.90 Ex Tipi: Sem enquadramento Mercadoria: Rodízio giratório de roda dupla de 100 mm de diâmetro e 73 mm de largura, com rolamento de esferas na cabeça giratória, composto de resinas plásticas e peças",
@@ -59810,8 +59943,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "c6661ae0097f8ce707efbe81",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59827,7 +59960,14 @@
         },
         "alertId": "f9627df4-c12f-413b-b30a-68b6066e1616",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T12:21:11.248Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1603292 AgR — Ementa: Direito Processual Civil e Tributário . Agravo regimental no recurso extraordinário com agravo. Recurso Extraordinário. Cabimento. Repercussão geral. Deficiência na fundamentação. Inadmissibilidade. Agravo regimental não provido. I. Caso em exame 1. Ag",
@@ -59879,8 +60019,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "df76306a631bca83b33b5efc",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59896,7 +60036,14 @@
         },
         "alertId": "422d1f9a-2e95-49a6-8ec6-17ced12fb3e7",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T12:24:03.438Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1602984 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I",
@@ -59915,8 +60062,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "f2a58a9839069136173fa8a1",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59932,7 +60079,14 @@
         },
         "alertId": "9b38212e-94c9-4fd1-84e0-9f9949c49340",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T12:26:37.015Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1601756 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Veículo inacabado ou incompleto. IPVA. Incidência. Interpretação de legislação infraconstitucional local. Reexame de fatos e provas. Agravo Regimental desprovido. I. Caso em e",
@@ -63513,8 +63667,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "645a2cea6aa219db31c3ad59",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -63530,7 +63684,14 @@
         },
         "alertId": "ddc74b0d-eae0-4959-9994-3c4d8e51ea0a",
         "fastPublishedAt": "2026-08-21T09:48:53.857Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T12:14:12.157Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 7.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5036158-86.2026.4.02.5101 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: RTINS (AUTOR) ADVOGADO(A) : BIANCA ROBAINA PAES (OAB RJ210554) RECURSO INOMINADO. DIREITO TRIBUTÁRIO. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST). SENTENÇA DE IMPROCEDÊNCIA QUE DEVE SER MANTIDA.",
@@ -100214,6 +100375,19 @@
     ],
     "runs": [
       {
+        "id": "16b97883-26f4-4738-b0f5-ae5e9adb67a2",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T12:07:52.069Z",
+        "finishedAt": "2026-08-21T12:26:37.062Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "6ba11642-07f5-4ad4-a661-87611ade9f53",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -124575,347 +124749,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "9724f10d-fec5-49f7-8dad-c2f416a24a12",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T12:19:04.014Z",
-        "finishedAt": "2026-08-20T12:21:32.870Z",
-        "discovered": 295,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (92) HTTP/2 stream 5 reset by server (error 0x1 PROTOCOL_ERROR). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 33731,
-              "entries": 34,
-              "processed": 33731,
-              "dateMatched": 33731,
-              "decisionMatched": 7022,
-              "taxMatched": 2569,
-              "deduplicated": 2389,
-              "duplicates": 180,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 47,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12992,
-              "entries": 13,
-              "processed": 12992,
-              "dateMatched": 12992,
-              "decisionMatched": 6508,
-              "taxMatched": 1570,
-              "deduplicated": 1568,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24864,
-              "entries": 25,
-              "processed": 24864,
-              "dateMatched": 24864,
-              "decisionMatched": 9788,
-              "taxMatched": 5200,
-              "deduplicated": 5006,
-              "duplicates": 194,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 30583,
-              "entries": 31,
-              "processed": 30583,
-              "dateMatched": 30583,
-              "decisionMatched": 12422,
-              "taxMatched": 2312,
-              "deduplicated": 2310,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24048,
-              "entries": 25,
-              "processed": 24048,
-              "dateMatched": 24048,
-              "decisionMatched": 5843,
-              "taxMatched": 2758,
-              "deduplicated": 2673,
-              "duplicates": 85,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12658,
-              "entries": 13,
-              "processed": 12658,
-              "dateMatched": 12658,
-              "decisionMatched": 4600,
-              "taxMatched": 866,
-              "deduplicated": 866,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T12:05:49.690Z",
-    "nextRunAt": "2026-08-21T18:05:49.690Z"
+    "lastRunAt": "2026-08-21T12:26:37.062Z",
+    "nextRunAt": "2026-08-21T18:26:37.062Z"
   }
 }
