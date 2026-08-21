@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T05:21:17.936Z",
+    "lastUpdatedAt": "2026-08-21T06:23:43.295Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -34624,43 +34624,57 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1125136-33.2025.4.01.3400 · 2ª Vara Federal Cível da SJDF — Direito tributário: mulados por Gabriel Diniz de Melo Resende Mendes. A embargante sustenta a…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1125136-33.2025.4.01.3400 · 2ª Vara Federal Cível da SJDF — Direito tributário: mulados por Gabriel Diniz de Melo Resende Mendes. A embargante sustenta a existên",
+      "theme": "Empresa pública federal prestadora de serviço público essencial em regime nãocon",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "ISS",
+        "Precatórios",
+        "Custas",
+        "Teto do funcionalismo público"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 2ª Vara Federal Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1125136-33.2025.4.01.3400 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: GABRIEL DINIZ DE MELO RESENDE MENDES REPRESENTANTES POLO ATIVO: IGOR OLIVA DE SOUZA - DF60845 POLO PASSIVO: CEBRASPE e outros REPRESENTANTES POLO PASSIVO: DANIEL BARBOSA SANTOS - DF13147 SENTENÇA Trata-se de…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece que a EMBRAPA, como empresa pública federal prestadora de serviço público essencial em regime não concorrencial, está sujeita ao regime constitucional de precatórios e às prerrogativas processuais da Fazenda Pública, incluindo isenção de custas, prazo em dobro e submissão de débitos ao regime de precatórios. A decisão não altera o resultado do julgamento, mas estabelece que os prazos processuais devem ser observados conforme a condição jurídica da empresa.",
+      "whatChanged": "A sentença reconhece a condição de EMBRAPA como empresa pública federal prestadora de serviço público essencial em regime não concorrencial, submetendo seus débitos ao regime constitucional de precatórios e aplicando as prerrogativas processuais da Fazenda Pública, como isenção de custas e prazo em dobro.",
+      "practicalImpact": "Empresas públicas federais prestadoras de serviço público essencial em regime não concorrencial devem ser consideradas para fins de prazos processuais e aplicação de prerrogativas da Fazenda Pública, incluindo isenção de custas e submissão de débitos ao regime de precatórios.",
+      "officeAction": "A sentença determina que, a partir da data, os prazos processuais devem ser observados conforme a condição jurídica da Fazenda Pública para empresas públicas federais prestadoras de serviço público essencial em regime não concorrencial.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas públicas federais prestadoras de serviço público essencial",
+        "Processos judiciais envolvendo empresas públicas",
+        "Clientes com débitos em regime de precatórios",
+        "Juizados especiais com prazos processuais",
+        "Empresas públicas federais com teto do funcionalismo público"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento de prerrogativas processuais para empresas públicas federais prestadoras de serviço público essencial",
+        "period": "A partir da data da sentença",
+        "action": "Aplicação de prazos em dobro e isenção de custas para empresas públicas federais em processos judiciais",
+        "confidence": "alto"
+      },
       "id": "9808b115-ec9a-46db-b9ea-b5b4c07bf127",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdKYWNUPMVHQTOexdAZeLPQ1G/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:43:48.756Z",
-      "updatedAt": "2026-08-20T15:43:48.756Z",
+      "updatedAt": "2026-08-21T06:01:33.845Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdKYWNUPMVHQTOexdAZeLPQ1G/certidao",
         "sourceCharacters": 5616,
         "sourceId": "trf1",
@@ -34686,43 +34700,55 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1025149-41.2023.4.01.3902 · Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Santarém-PA — Direito tributário: SIVO: INSTITUTO NACIONAL DO…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1025149-41.2023.4.01.3902 · Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Santarém-PA — Direito tributário: SIVO: INSTITUTO NACIONAL DO SE",
+      "theme": "Responsabilidade civil do INSS e instituições financeiras por descontos indevids",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "INSS",
+        "Descontos indevidos em benefíc"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Santarém-PA Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Santarém-PA PROCESSO: 1025149-41.2023.4.01.3902 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: FRANCISCA NEUMA DA SILVA REPRESENTANTES POLO ATIVO: FERNANDO CUSTODIO DA SILVA - PA22305-B e FABIO CUSTODIO DE MORAES - PA18791-B POLO PASSIVO: INSTITUTO NACIONAL DO…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma a responsabilidade civil do INSS e instituições financeiras por descontos indevidos em benefícios previdenciários. A parte autora alega que sofre descontos indevidos em sua aposentadoria por idade devido a dois empréstimos consignados que nunca contratou. O juiz determinou a regularização do polo passivo para incluir o Banco Itaú Consignado S.A. e rejeitou a prescrição, destacando que o INSS não é responsável civilmente por fraude em empréstimos consignados quando a instituição financeira é a responsável pelo pagamento dos benefícios.",
+      "whatChanged": "A sentença determina a inclusão do Banco Itaú Consignado S.A. no polo passivo e rejeita a prescrição, afirmando que os descontos impugnados não estão prescritos. O INSS não é responsável civilmente por fraude em empréstimos consignados quando a instituição financeira é a responsável pelo pagamento dos benefícios previdenciários.",
+      "practicalImpact": "Clientes com descontos indevidos em benefícios previdenciários podem ajuizar ações para repetição de indébito e indenização por danos morais. O INSS não é responsável civilmente por fraude em empréstimos consignados quando a instituição financeira é a responsável pelo pagamento dos benefícios previdenciários.",
+      "officeAction": "O juiz determinou a regularização do polo passivo para incluir o Banco Itaú Consignado S.A. (CNPJ 33.885.724/0001-19) e excluiu o ITAÚ UNIBANCO S.A. para evitar confusão na relação jurídica.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Aposentados com descontos indevidos em benefícios previdenciários",
+        "Clientes do INSS",
+        "Instituições financeiras que realizam empréstimos consignados",
+        "Juizados Especiais Cíveis",
+        "Clientes com ações por descontos indevidos"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para ações de repetição de indébito e indenização por danos morais",
+        "period": "Até 5 anos após o primeiro desconto",
+        "action": "Ajuizar ação cível para repetição de indébito e indenização por danos morais em caso de descontos indevidos em benefícios previdenciários",
+        "confidence": "alto"
+      },
       "id": "c73d2b68-e115-4707-bc3a-ea6907b886ff",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUMm2fVTp57deRLzE4gO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:43:48.757Z",
-      "updatedAt": "2026-08-20T15:43:48.757Z",
+      "updatedAt": "2026-08-21T06:09:26.378Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUMm2fVTp57deRLzE4gO/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -34748,43 +34774,58 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1068540-36.2024.4.01.3700 · 10ª Vara Federal de Juizado Especial Cível da SJMA — Direito tributário: ereiro de 2022 e agosto de 2024, foram descontados R$…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1068540-36.2024.4.01.3700 · 10ª Vara Federal de Juizado Especial Cível da SJMA — Direito tributário: entre janeiro de 2022 e agosto de 2024, foram descontados R$",
+      "theme": "Relação jurídica em empréstimo consignado e responsabilidade do INSS",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Empréstimo consignado",
+        "Benefício previdenciário",
+        "Descontos em benefício",
+        "INSS",
+        "Banco Mercantil do Brasil S.A."
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Maranhão 10ª Vara Federal de Juizado Especial Cível da SJMA SENTENÇA TIPO \"A\" PROCESSO: 1068540-36.2024.4.01.3700 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: JOSE RIBAMAR PESTANA PINHEIRO REPRESENTANTES POLO ATIVO: ANDREZA BIANCA BRAGA PINHEIRO - MA21802 POLO PASSIVO: BANCO MERCANTIL DO BRASIL SA e outros SENTENÇA Trata-se de ação…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que o INSS não é responsável civilmente por empréstimos consignados fraudulentes quando a instituição financeira responsável pelo pagamento do benefício não é a mesma que concedeu o empréstimo. Os descontos de R$ 10.168,00 entre janeiro de 2022 e agosto de 2024 foram confirmados, mas a relação jurídica com o Banco Mercantil do Brasil S.A. é incompetente para a Justiça Federal.",
+      "whatChanged": "O INSS não é responsável civilmente por empréstimos consignados fraudulentes quando a instituição financeira responsável pelo pagamento do benefício não é a mesma que concedeu o empréstimo. A Justiça Federal não pode resolver questões de relação jurídica entre particulares em empréstimos consignados.",
+      "practicalImpact": "Clientes com benefícios previdenciários devem verificar se os descontos estão vinculados a instituições financeiras corretas. Caso contrário, podem perder benefícios ou enfrentar responsabilidades civis.",
+      "officeAction": "Requer suspensão dos descontos, declaração de inexistência da relação jurídica, restituição em dobro das quantias descontadas e condenação ao pagamento de indenização por danos morais.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Titulares de benefício previdenciário",
+        "Clientes do INSS",
+        "Instituições financeiras privadas",
+        "Juizados Especiais Federais",
+        "Advogados especializados em direito tributário"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Relação jurídica em empréstimo consignado e responsabilidade do INSS",
+        "period": "2022-2024",
+        "action": "Verificação de descontos em benefícios previdenciários e identificação da instituição financeira responsável pelo pagamento",
+        "confidence": "alto"
+      },
       "id": "3e89ae25-c08a-4e96-aad7-2d181c66ea7c",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/9JqKnM28RB2UAN8TOTBm4pjRWjAkoy/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:43:48.757Z",
-      "updatedAt": "2026-08-20T15:43:48.757Z",
+      "updatedAt": "2026-08-21T06:16:02.871Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/9JqKnM28RB2UAN8TOTBm4pjRWjAkoy/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -34810,43 +34851,58 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1006924-46.2026.4.01.3100 · 5ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: — TEA, ainda que matriculada em instituição regular de…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1006924-46.2026.4.01.3100 · 5ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: — TEA, ainda que matriculada em instituição regular de ensino,",
+      "theme": "Dedução integral de despesas com educação de pessoa com deficiência (TEA) em ent",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "Receita Federal",
+        "Decreto nº 9.580/2018",
+        "Instrução Normativa RFB nº 1.5",
+        "Why is this not a valid tax? 1"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO SEÇÃO JUDICIÁRIA DO AMAPÁ 5ª VARA FEDERAL DE JUIZADO ESPECIAL CÍVEL SENTENÇA - TIPO A PROCESSO: 1006924-46.2026.4.01.3100 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: CHARLES MOISES PEIXOTO DA COSTA Advogados do(a) AUTOR: JOSE EDUARDO MARTINS DE CERQUEIRA - BA69488, MICHELE PEREIRA DA SILVA - BA33561 REU: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA 1.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Sentença reconhece dedução integral de despesas com educação regular de pessoa com Transtorno do Espectro Autista (TEA), mesmo matriculada em instituição regular de ensino, sem exigir exclusividade da instituição para pessoas com deficiência. A decisão afasta a interpretação restritiva da Receita Federal sobre o art. 73, § 3º, do Decreto nº 9.580/2018 e arts. 91, § 5º, e 95 da Instrução Normativa RFB nº 1.500/2014, permitindo dedução integral nos exercícios futuros.",
+      "whatChanged": "A sentença afasta a exigência de que a instituição de ensino seja exclusivamente destinada a pessoas com deficiência para que despesas com educação sejam deduzidas como despesas médicas no IRPF. Isso altera a interpretação restritiva da Receita Federal sobre o art. 73, § 3º, do Decreto nº 9.580/2018 e arts. 91, § 5º, e 95 da Instrução Normativa RFB nº 1.500/2014.",
+      "practicalImpact": "Clientes com filhos ou dependentes com TEA podem deduzir integralmente despesas com educação regular, sem exigir que a instituição seja exclusivamente para pessoas com deficiência. A União deve garantir o direito à dedução em exercícios futuros enquanto subsistirem os pressupostos fáticos reconhecidos.",
+      "officeAction": "A União — Fazenda Nacional — deve assegurar imediatamente ao autor, inclusive nos exercícios fiscais subsequentes, enquanto subsistirem os pressupostos fáticos reconhecidos, o direito de deduzir integralmente como despesas médicas os gastos com educação regular da filha com TEA, sem exigir exclusividade da instituição de ensino.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Pessoas com deficiência (TEA)",
+        "Familias com dependentes com TEA",
+        "Contribuintes com despesas educacionais regulares",
+        "Receita Federal",
+        "Clientes de advogados especializados em tributário"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "legalImpact": 9,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Dedução integral de despesas com educação regular para pessoas com TEA",
+        "period": "Exercícios fiscais subsequentes",
+        "action": "Garantir dedução integral sem exigir exclusividade da instituição de ensino",
+        "confidence": "alto"
+      },
       "id": "b68339fd-11f0-4f1b-8e63-edcb91a011e7",
-      "score": 8.2,
+      "score": 8.4,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRyaUPzNinTkg4OaR5eBjo9/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:43:48.758Z",
-      "updatedAt": "2026-08-20T15:43:48.758Z",
+      "updatedAt": "2026-08-21T06:23:43.255Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNRyaUPzNinTkg4OaR5eBjo9/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -38574,43 +38630,54 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1044957-69.2026.4.01.3500 · 16ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a objetivar o recebimento de aposentadoria urbana por…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1044957-69.2026.4.01.3500 · 16ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a objetivar o recebimento de aposentadoria urbana por idade",
+      "theme": "Aposentadoria urbana por idade e carência previdenciária",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária (C"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL SEÇÃO JUDICIÁRIA DO ESTADO DE GOIÁS 16ª Vara Federal de Juizado Especial Cível da SJGO PROCESSO nº : 1044957-69.2026.4.01.3500 CLASSE : PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR : IVANILDO BULHOES DE OLIVEIRA e outros ADVOGADO : PRISCYLLA DE SOUSA TRISTAO - GO47934 e ROSIMEIRE FERREIRA SANCHES - GO34899 RÉU : INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA TIPO: A Ação…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que a carência previdenciária para aposentadoria urbana por idade requer 15 anos de contribuição (carência) e 65 anos de idade (homem), com ajuste de 6 meses a cada ano a partir de 1º.1.2020. O julgamento destacou que contribuições previdenciárias de competências posteriores à primeira contribuição recolhida sem atraso são válidas para cômputo do período de carência, mas períodos com contribuições abaixo do salário mínimo são excluídos. A parte autora possui 139 contribuições válidas, insuficientes para concessão do benefício.",
+      "whatChanged": "A sentença estabelece que a carência previdenciária para aposentadoria urbana por idade deve ser calculada com base em contribuições válidas (sem atrasos e acima do salário mínimo), excluindo períodos com contribuições abaixo do salário mínimo. A parte autora possui 139 contribuições válidas, insuficientes para atingir os 15 anos necessários.",
+      "practicalImpact": "Empresários e contribuintes individuais devem verificar se suas contribuições previdenciárias estão corretamente registradas e excluídas as contribuições abaixo do salário mínimo para garantir a carência necessária para aposentadoria urbana por idade. A sentença reforça a importância da presunção de veracidade das informações na CTPS para fins de carência.",
+      "officeAction": "A sentença confirma que a parte autora não atingiu a carência mínima de 15 anos de contribuição previdenciária, com 139 contribuições válidas, insuficientes para concessão do benefício de aposentadoria urbana por idade.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes individuais",
+        "Empresários",
+        "Pessoas com contribuição previdenciária insuficiente",
+        "Aposentados urbanos",
+        "Juizados Especiais Federais"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
         "clientFit": 7,
-        "actionPotential": 6
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da carência previdenciária para aposentadoria urbana por idade",
+        "period": "2024-2026",
+        "action": "Verificação das contribuições previdenciárias válidas, excluindo períodos com contribuições abaixo do salário mínimo, para garantir a carência mínima de 15 anos",
+        "confidence": "médio"
+      },
       "id": "62093dd2-ea50-49bf-a3b0-2dd6ea1a1af3",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUMj7cVTp57deRLzE4gO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.200Z",
-      "updatedAt": "2026-08-20T15:00:30.200Z",
+      "updatedAt": "2026-08-21T05:56:19.499Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUMj7cVTp57deRLzE4gO/certidao",
         "sourceCharacters": 6064,
         "sourceId": "trf1",
@@ -53013,8 +53080,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "b9b78217421d12ac0a065522",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53030,7 +53097,14 @@
         },
         "alertId": "62093dd2-ea50-49bf-a3b0-2dd6ea1a1af3",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T05:56:19.540Z",
+        "analyzedPublishedAt": "2026-04-01T00:00:00",
+        "relevant": true,
+        "score": 6.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1125136-33.2025.4.01.3400 · 2ª Vara Federal Cível da SJDF — Direito tributário: mulados por Gabriel Diniz de Melo Resende Mendes. A embargante sustenta a existência de omissão quanto ao reconhecimento de sua condição de empresa pública federal prestadora de serviço público essencial, em regime não concorrencial, e quanto à consequente aplicação das pr",
@@ -53049,8 +53123,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "62aec382be80a400cff47364",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53066,7 +53140,14 @@
         },
         "alertId": "9808b115-ec9a-46db-b9ea-b5b4c07bf127",
         "fastPublishedAt": "2026-08-20T15:43:48.766Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T06:01:33.888Z",
+        "analyzedPublishedAt": "2025-09-17T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Decisão · 1059451-36.2026.4.01.3500 · 8ª Vara Federal Cível da SJGO — Direito tributário: ros DECISÃO 1. Mandado de segurança objetivando a redução dos percentuais de presunção do Imposto de Renda da Pessoa Jurídica – IRPJ e da Contribuição Social sobre o Lucro Líquido – CSLL para 8% e 12%, respectivamente, sob o argumento de ser a impetrante prestadora de serviços",
@@ -53117,8 +53198,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "76707bcb47aa7932d205dd6a",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53134,7 +53215,14 @@
         },
         "alertId": "c73d2b68-e115-4707-bc3a-ea6907b886ff",
         "fastPublishedAt": "2026-08-20T15:43:48.766Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T06:09:26.427Z",
+        "analyzedPublishedAt": "2023-09-25T00:00:00",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1068540-36.2024.4.01.3700 · 10ª Vara Federal de Juizado Especial Cível da SJMA — Direito tributário: ereiro de 2022 e agosto de 2024, foram descontados R$ 10.168,00 de seu benefício. Diante disso, requer, em síntese, a suspensão dos descontos, a declaração de inexistência da relação jurídica, a restituição em dobro das quantias descontadas e a condenação dos demandados ao",
@@ -53153,8 +53241,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "da07b08ee0445b4cbab92c6b",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53170,7 +53258,14 @@
         },
         "alertId": "3e89ae25-c08a-4e96-aad7-2d181c66ea7c",
         "fastPublishedAt": "2026-08-20T15:43:48.766Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T06:16:02.911Z",
+        "analyzedPublishedAt": "2024-08-20T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1006924-46.2026.4.01.3100 · 5ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: — TEA, ainda que matriculada em instituição regular de ensino, bem como a restituição do imposto de renda pago a maior nos quatro anos anteriores ao ajuizamento da demanda. Requer, ainda, que o direito à dedução seja observado nos exercícios futuros, a declaração de invalidad",
@@ -53189,8 +53284,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "071ab6a7797a734497d46006",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53206,7 +53301,14 @@
         },
         "alertId": "b68339fd-11f0-4f1b-8e63-edcb91a011e7",
         "fastPublishedAt": "2026-08-20T15:43:48.766Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T06:23:43.295Z",
+        "analyzedPublishedAt": "2026-04-28T00:00:00",
+        "relevant": true,
+        "score": 8.4,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1003611-33.2025.4.01.3902 · Juizado Especial Cível e Criminal Adjunto à 1ª Vara Federal da SSJ de Santarém-PA — Direito tributário: vel nos casos de dolo e culpa”. O poder público pode ser responsabilizado por condutas comissivas ou omissivas, variando os requisitos legais a serem comprovados em cada caso. Nas condutas comissivas, a responsabilidade civil é objetiva e pautada na teoria do risco adminis",
@@ -73900,6 +74002,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "a8dbc810-d335-4adb-9195-26f093ff07f3",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T05:50:17.087Z",
+        "finishedAt": "2026-08-21T06:23:43.331Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "6e13f75a-25d5-4da5-869a-451a04be03c4",
         "trigger": "github-actions-history",
@@ -99387,275 +99502,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "c3e0cd6d-b155-4f10-bf68-ea543915b2d6",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T02:45:03.636Z",
-        "finishedAt": "2026-08-20T02:55:36.726Z",
-        "discovered": 10,
-        "analyzed": 3,
-        "published": 3,
-        "discarded": 0,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 10,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 15,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 52,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T05:48:34.815Z",
-    "nextRunAt": "2026-08-21T11:48:34.815Z"
+    "lastRunAt": "2026-08-21T06:23:43.331Z",
+    "nextRunAt": "2026-08-21T12:23:43.331Z"
   }
 }
