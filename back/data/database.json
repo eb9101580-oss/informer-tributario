@@ -1,50 +1,133 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T08:53:14.613Z",
+    "lastUpdatedAt": "2026-08-21T09:17:51.992Z",
     "environment": "demonstration"
   },
   "alerts": [
     {
       "relevant": true,
-      "title": "ARE 1603035 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . IPTU. IMUNIDADE TRIBUTÁRIA RECÍPROCA. EMPRESA PÚBLICA PRESTADORA DE SERVIÇO…",
-      "theme": "Direito tributário · IPTU",
-      "agency": "Supremo Tribunal Federal",
+      "title": "Solução de Consulta Cosit nº 98258, de 10/08/2026: Classificação de Mercadorias NCM 3924.90.00 - Esponja para banho com mini sabonetes",
+      "theme": "Classificação de Mercadorias",
+      "agency": "Receita Federal — Soluções COSIT",
       "taxes": [
-        "IPTU"
+        "NCM 3924.90.00",
+        "NCM 8524.99.00"
       ],
       "status": "Fato confirmado",
-      "kind": "Acórdão do STF",
+      "kind": "Solução de Consulta",
       "impactType": "Informativo",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Solução de Consulta Cosit nº 98258, publicada no DOU de 21/08/2026, classifica a esponja para banho com mini sabonetes como NCM 3924.90.00 e outro produto como NCM 8524.99.00, com base em dispositivos legais da TEC, Res. Gecex nº 272/2021 e Dec. nº 11.158/2022.",
+      "whatChanged": "A esponja para banho com mini sabonetes é classificada como NCM 3924.90.00, enquanto o módulo de tela LED é classificado como NCM 8524.99.00, seguindo critérios da TEC e normas tributárias vigentes.",
+      "practicalImpact": "Empresas que comercializam esponjas para banho com mini sabonetes devem utilizar a classificação NCM 3924.90.00 para cálculo de tributos e emissão de notas fiscais, evitando erros na classificação de mercadorias.",
+      "officeAction": "A Receita Federal publicou a Solução de Consulta Cosit nº 98258 no DOU de 21/08/2026, definindo a classificação correta para mercadorias específicas conforme a TEC e normas tributárias.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de higiene pessoal",
+        "Fabricantes de produtos de banho",
+        "Varejistas de mercadorias de higiene",
+        "Empresas que comercializam produtos com mini sabonetes",
+        "Empresas que utilizam NCM 3924.90.00 para tributação"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
-        "reach": 7,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 8,
         "clientFit": 7,
         "actionPotential": 6
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Classificação correta de mercadorias para evitar erros tributários",
+        "period": "2026-08-21 a 2026-08-31",
+        "action": "Verificar a classificação NCM 3924.90.00 para esponjas com mini sabonetes e ajustar registros tributários",
+        "confidence": "médio"
+      },
+      "id": "1a39db7e-b43f-412a-bfd7-968ee30d0ef1",
+      "score": 6.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153015",
+      "isDemo": false,
+      "createdAt": "2026-08-21T09:08:25.413Z",
+      "updatedAt": "2026-08-21T09:08:25.413Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153015/visao/original",
+        "sourceCharacters": 5753,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603035 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . IPTU. IMUNIDADE TRIBUTÁRIA RECÍPROCA. EMPRESA PÚBLICA PRESTADORA DE SERVIÇO PÚBL",
+      "theme": "Imunidade tributária recíproca para empresas públicas prestadoras de serviço",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU",
+        "Imposto sobre a Propriedade de"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-21",
+      "summary": "O acórdão do STF desprovidou o agravo interno no recurso extraordinário com agravo, estabelecendo que empresas públicas prestadoras de serviço público não estão imunes tributariamente recíprocamente ao IPTU. A decisão reforça a necessidade de análise da abrangência da imunidade tributária recíproca e a presunção de destinação do patrimônio, renda e serviços dos entes imunes às suas finalidades essenciais.",
+      "whatChanged": "O STF confirmou que empresas públicas prestadoras de serviço público não estão imunes tributariamente recíprocamente ao IPTU, exigindo análise da abrangência da imunidade tributária recíproca e presunção de destinação do patrimônio, renda e serviços dos entes imunes às suas finalidades essenciais.",
+      "practicalImpact": "Empresas públicas prestadoras de serviço público devem revisar sua imunidade tributária recíproca ao IPTU, garantindo que os serviços prestados estejam alinhados às finalidades essenciais dos entes imunes, evitando possíveis tributação irregular.",
+      "officeAction": "Reexame de matéria fática para determinar se a empresa pública prestadora de serviço público está imune tributariamente recíproca ao IPTU, com base na presunção de destinação do patrimônio, renda e serviços dos entes imunes às suas finalidades essenciais.",
+      "affectedProfiles": [
+        "Empresas públicas prestadoras de serviço público",
+        "Entidades imunes ao IPTU",
+        "Administração pública federal",
+        "Construtoras e imobiliárias",
+        "Organismos de gestão de patrimônio público"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão da imunidade tributária recíproca para empresas públicas prestadoras de serviço público",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Reexame de matéria fática para determinar a abrangência da imunidade tributária recíproca ao IPTU, com base na presunção de destinação do patrimônio, renda e serviços dos entes imunes às suas finalidades essenciais",
+        "confidence": "médio"
+      },
       "id": "d539d721-aa1b-44e6-a1e2-2765bb46411c",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.6,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.609Z",
-      "updatedAt": "2026-08-21T08:53:14.609Z",
+      "updatedAt": "2026-08-21T09:11:39.558Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
         "sourceCharacters": 626,
         "sourceId": "stf",
@@ -70,43 +153,56 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1601820 ED-AgR — Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros…",
-      "theme": "Direito tributário",
+      "title": "ARE 1601820 ED-AgR — Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros ao",
+      "theme": "Importação e remessa de prêmio de resseguros ao exterior",
       "agency": "Supremo Tribunal Federal",
-      "taxes": [],
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "Importação"
+      ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise prévia da legislação infraconstitucional e do conjunto fático-probatório.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF analisou se a importação e remessa de prêmio de resseguros ao exterior demanda análise prévia da legislação infraconstitucional e do conjunto fático-proba. A decisão negou seguimento ao recurso extraordinário com agravo, destacando que a matéria não alcança estatura constitucional e requer revolvimento da moldura fática e análise da legislação infraconstitucional aplicável.",
+      "whatChanged": "A Súmula nº 279/STF foi aplicada, determinando que a análise da incidência do PIS e COFINS na importação e remessa de prêmios de resseguros ao exterior demanda análise prévia da legislação infraconstitucional e do conjunto fático-probatório, tornando inadmissível o recurso extraordinário.",
+      "practicalImpact": "Empresas que realizam importação e remessa de prêmios de resseguros ao exterior devem garantir a análise prévia da legislação infraconstitucional e do conjunto fático-probatório para evitar a negativa de seguimento de recursos extraordinários.",
+      "officeAction": "Agravo interno conhecido e não provido. A matéria não alcança estatura constitucional, exigindo análise prévia da legislação infraconstitucional e do conjunto fático-probatório para a incidência do PIS e COFINS na importação e remessa de prêmios de resseguros ao exterior.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de resseguros",
+        "Empresas que importam prêmios de resseguros",
+        "Empresas com operações de remessa de prêmios ao exterior",
+        "Empresas tributadas com PIS e COFINS",
+        "Empresas com operações de importação de prêmios de resseguros"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
-        "reach": 7,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 8,
         "clientFit": 7,
         "actionPotential": 6
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Análise prévia da legislação infraconstitucional e do conjunto fático-probatório para importação e remessa de prêmios de resseguros ao exterior",
+        "period": "2023-11-15",
+        "action": "Garantir análise prévia da legislação infraconstitucional e do conjunto fático-probatório para evitar negativa de seguimento de recursos extraordinários",
+        "confidence": "médio"
+      },
       "id": "d2f1780e-e7fa-4a43-99c3-88134fea894e",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.7,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.610Z",
-      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T09:15:01.919Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
         "sourceCharacters": 1850,
         "sourceId": "stf",
@@ -132,45 +228,57 @@
     },
     {
       "relevant": true,
-      "title": "RE 1601194 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM…",
-      "theme": "Direito tributário · ICMS",
+      "title": "RE 1601194 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM C",
+      "theme": "DIFAL (Diferencial de Alíquota do ICMS) e Benefício Fiscal",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ICMS"
+        "ICMS",
+        "DIFAL",
+        "Benefício Fiscal",
+        "Convenio do CONFAZ"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. ARGUIÇÃO DE NÃO INCIDÊNCIA DO DIFAL DO ICMS ANTES DA EDIÇÃO DE LEI COMPLEMENTAR NACIONAL.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão do STF determinou a inadmissibilidade de agravo interno no recurso extraordinário relacionado à aplicação do DIFAL (Diferencial de Alíquota do ICMS) e benefício fiscal previsto em convenio do CONFAZ. O julgamento reforça a necessidade de ratificação expressa pelo estado-membro para a aplicação do benefício fiscal, evitando a aplicação do DIFAL antes da edição de lei complementar nacional.",
+      "whatChanged": "O STF confirmou que a aplicação do DIFAL do ICMS antes da edição de lei complementar nacional é inadmissível, exigindo ratificação expressa pelo estado-membro para a utilização do benefício fiscal previsto em convenio do CONFAZ.",
+      "practicalImpact": "Empresas que utilizam o DIFAL sem ratificação expressa pelo estado-membro podem enfrentar inadmissibilidade de tributos e riscos de multas por não cumprimento das normas tributárias estabelecidas pelo STF.",
+      "officeAction": "Requer-se ratificação expressa pelo estado-membro para aplicação do benefício fiscal previsto em convenio do CONFAZ, evitando a aplicação do DIFAL antes da edição de lei complementar nacional.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas que utilizam DIFAL",
+        "Estados-membros",
+        "Conselhos de Fiscalização",
+        "Organizações tributárias",
+        "Empresas com operações de ICMS"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Risco de aplicação do DIFAL sem ratificação expressa pelo estado-membro",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Requerer ratificação expressa pelo estado-membro para aplicação do benefício fiscal previsto em convenio do CONFAZ",
+        "confidence": "alto"
+      },
       "id": "c076b3e2-89aa-48cd-96fc-4559e8d23009",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.9,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.610Z",
-      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T09:17:51.941Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
         "sourceCharacters": 598,
         "sourceId": "stf",
@@ -2545,49 +2653,59 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5070572-47.2025.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: PIO DE OLIVEIRA AGOSTINHO (AUTOR) ADVOGADO(A) : JONATAS LIMA DANTAS (OAB…",
-      "theme": "Direito tributário · PIS, Cofins, IRPJ, CSLL, Simples Nacional",
+      "title": "Acórdão · 5070572-47.2025.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: PIO DE OLIVEIRA AGOSTINHO (AUTOR) ADVOGADO(A) : JONATAS LIMA DANTAS (OAB RJ249505)",
+      "theme": "Ação anulatória de débito fiscal: prescrição intercorrente, regularidade das int",
       "agency": "Tribunal Regional Federal da 2ª Região",
       "taxes": [
-        "PIS",
-        "Cofins",
         "IRPJ",
         "CSLL",
-        "Simples Nacional"
+        "PIS",
+        "COFINS",
+        "Simples Nacional",
+        "Lucro"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. Apelação interposta contra sentença que julgou improcedentes os pedidos formulados em ação anulatória de débito fiscal ajuizada com o objetivo de desconstituir créditos de IRPJ, CSLL, PIS e COFINS, ao fundamento de prescrição intercorrente na execução fiscal, nulidade das comunicações realizadas no processo administrativo, ilegalidade do arbitramento do lucro após a exclusão do Simples Nacional e invalidade da…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "Acórdão da 4ª Turma Especializada do TRF2 que desprovida a apelação em ação anulatória de débito fiscal, reafirmando que a prescrição intercorrente na execução fiscal começa após um ano de suspensão, intimações administrativas válidas mesmo com aviso de recebimento assinado por terceiro, exclusão do Simples Nacional não impede arbitramento do lucro, e presunção de omissão de receitas baseada em depósitos bancários sem comprovação de origem.",
+      "whatChanged": "O acórdão estabelece que a prescrição intercorrente prevista no art. 40 da Lei nº 6.830/1980 só se inicia após o transcurso do período de um ano de suspensão da execução fiscal, intimações administrativas realizadas no domicílio tributário cadastrado são válidas mesmo com aviso de recebimento assinado por terceiro, exclusão do Simples Nacional não garante escolha retroativa de regime de tributação ou recomposição da escrituração, e presunção de omissão de receitas baseada em depósitos bancários sem comprovação de origem subsiste.",
+      "practicalImpact": "Contribuintes devem manter atualizado endereço fiscal, não podem recorrer à exclusão do Simples Nacional para evitar arbitramento do lucro, e devem comprovar origem de depósitos bancários para evitar presunção de omissão de receitas. A prescrição intercorrente na execução fiscal começa após um ano de suspensão, não sendo interrompida por citação antes desse período.",
+      "officeAction": "Recurso desprovido com majoração de honorários recursais, mantendo suspensão da exigibilidade devido à gratuidade de justiça. A decisão reforça a validade das intimações administrativas mesmo com aviso de recebimento assinado por terceiro e a necessidade de comprovação de origem dos depósitos bancários para evitar presunção de omissão de receitas.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes de pequeno porte",
+        "Empresas com Simples Nacional",
+        "Contribuintes com depósitos bancários",
+        "Empresas com tributação por lucro",
+        "Contribuintes com débitos fiscais"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 7,
-        "reach": 7,
+        "financialImpact": 6,
+        "reach": 8,
         "clientFit": 7,
-        "actionPotential": 6
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Regra para prescrição intercorrente na execução fiscal",
+        "period": "1 ano de suspensão da execução fiscal",
+        "action": "Manter atualizado endereço fiscal e comprovar origem de depósitos bancários para evitar presunção de omissão de receitas",
+        "confidence": "alto"
+      },
       "id": "224a2a00-19e9-4964-b329-652669fbe9a5",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.6,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5ZoGuEPGS7TK7q2JZkXgDen/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T07:55:47.985Z",
-      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T09:02:53.419Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5ZoGuEPGS7TK7q2JZkXgDen/certidao",
         "sourceCharacters": 5914,
         "sourceId": "trf2",
@@ -51945,8 +52063,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "b8ca74d9fe3ea2c87a1da4bd",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51962,7 +52080,14 @@
         },
         "alertId": "d539d721-aa1b-44e6-a1e2-2765bb46411c",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T09:11:39.608Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.6,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1601820 ED-AgR — Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros ao exterior. Necessidade de análise prévia da legislação infraconstitucional e do conjunto fático-proba",
@@ -51981,8 +52106,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "98585722c80f55e27e0e4a24",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51998,7 +52123,14 @@
         },
         "alertId": "d2f1780e-e7fa-4a43-99c3-88134fea894e",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T09:15:01.970Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "RE 1601194 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM CONVÊNIO DO CONFAZ. NATUREZA AUTORIZATIVA. MISTER RATIFICAÇÃO EXPRESSA PELO ESTADO-MEMBRO. RESERVA",
@@ -52017,8 +52149,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "13d05210d851fe8f93274073",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -52034,7 +52166,14 @@
         },
         "alertId": "c076b3e2-89aa-48cd-96fc-4559e8d23009",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T09:17:51.992Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.9,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1605933 ED-AgR — EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro. Adicional de alíquota de ICMS destinado ao Fundo de Combate e Erradicação da Pobreza (FECOP) sobre ene",
@@ -52769,8 +52908,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-21T07:54:15.331Z",
         "id": "ec7f51174363f1ebd9003162",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -52782,7 +52921,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T09:08:25.464Z",
+        "analyzedPublishedAt": "2026-08-21",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "alertId": "1a39db7e-b43f-412a-bfd7-968ee30d0ef1",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 98257 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 7210.70.10 Mercadoria: Laminado plano de aço não ligado, revestido por liga de alumínio-zinco-silício e, posteriormente, pintado e envernizado com verniz acrílico, medindo 1.200 mm de largura, apresentado em",
@@ -55888,8 +56035,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "37dd99f0b06559f9cbe70c57",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -55905,7 +56052,14 @@
         },
         "alertId": "224a2a00-19e9-4964-b329-652669fbe9a5",
         "fastPublishedAt": "2026-08-21T07:55:47.986Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T09:02:53.469Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 7.6,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença · 5011556-62.2025.4.02.5102 · 5ª Vara Federal de Niterói — Direito tributário: PC, JULGO PROCEDENTES OS PEDIDOS para: I. DECLARAR o direito da parte autora à isenção do Imposto de Renda Pessoa Física incidente sobre os seus proventos de aposentadoria por tempo de contribuição a contar da data do diagnóstico da neoplasia maligna (julho de 2002) e sobre os",
@@ -92514,6 +92668,19 @@
     ],
     "runs": [
       {
+        "id": "a84f0272-9007-44e7-98b5-4e9c4baf6a99",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T08:56:36.135Z",
+        "finishedAt": "2026-08-21T09:17:52.037Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "1656d28b-b23e-46e6-bb6d-ad350a5501ba",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -117564,275 +117731,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "3e67e976-ea17-4745-ba9c-e0b978f1c92b",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T07:00:14.731Z",
-        "finishedAt": "2026-08-20T07:15:15.554Z",
-        "discovered": 7,
-        "analyzed": 4,
-        "published": 3,
-        "discarded": 1,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T08:54:38.792Z",
-    "nextRunAt": "2026-08-21T14:54:38.792Z"
+    "lastRunAt": "2026-08-21T09:17:52.037Z",
+    "nextRunAt": "2026-08-21T15:17:52.037Z"
   }
 }
