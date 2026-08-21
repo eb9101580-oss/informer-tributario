@@ -1,9 +1,1293 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T07:52:53.668Z",
+    "lastUpdatedAt": "2026-08-21T07:55:47.986Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Sentença · 1016526-16.2026.4.01.3600 · 8ª Vara Federal Cível da SJMT — Direito tributário: érmino da demanda. Ao final pretende o reconhecimento da inexistência de relação…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL SEÇÃO JUDICIÁRIA DE MATO GROSSO 8ª VARA FEDERAL CÍVEL DA SJMT PROCESSO: 1016526-16.2026.4.01.3600 G6 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) IMPETRANTE: JOANI MARIA DE ASSIS ASCKAR IMPETRADO: *DELEGADO DA RECEITA FEDERAL EM CUIABÁ/MT, UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Tipo A 1.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "58f1d007-7b9c-4fe9-bfb9-ffaa84edeb07",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/geNaPz7wR5XU8Bot8T9e5wvYBMJpDr/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.977Z",
+      "updatedAt": "2026-08-21T07:55:47.977Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/geNaPz7wR5XU8Bot8T9e5wvYBMJpDr/certidao",
+        "sourceCharacters": 7036,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1024195-75.2025.4.01.3400 · Juizado Especial Cível Adjunto à 17ª Vara Federal da SJDF — Direito tributário: FEDERAL (FAZENDA NACIONAL), objetivando a declaração de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal Juizado Especial Cível Adjunto à 17ª Vara Federal da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1024195-75.2025.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: ELIZIO DA SILVA GOMES REPRESENTANTES POLO ATIVO: RAFAEL WILLIAN DOS SANTOS - SC69744 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Dispensado o relatório…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "5a644c3d-8023-4939-87c2-5f1dd7c86734",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJn6kLU5k4uDTelJ2NZAve9mD/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.977Z",
+      "updatedAt": "2026-08-21T07:55:47.977Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJn6kLU5k4uDTelJ2NZAve9mD/certidao",
+        "sourceCharacters": 6790,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1019696-84.2026.4.01.3700 · 9ª Vara Federal de Juizado Especial Cível da SJMA — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Maranhão 9ª…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Maranhão 9ª Vara Federal de Juizado Especial Cível da SJMA PROCESSO: 1019696-84.2026.4.01.3700 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: MARIA EDILEUZA BARBOSA DA SILVA Advogados do(a) AUTOR: GEDEON SILVA SOUSA - PI24508, SAMUEL DE SOUSA SILVA - PI24442 REU: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA Tipo A - Resolução CJF 535/2006…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "cd3d9a5d-aa97-4aa7-9ef9-b341ad81d369",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZV2U3kwS7Tdl7LAZek9aWL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.978Z",
+      "updatedAt": "2026-08-21T07:55:47.978Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZV2U3kwS7Tdl7LAZek9aWL/certidao",
+        "sourceCharacters": 6540,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1032002-92.2024.4.01.3300 · 15ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 15ª…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 15ª Vara Federal de Juizado Especial Cível da SJBA SENTENÇA TIPO \"A\" PROCESSO: 1032002-92.2024.4.01.3300 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: RAQUEL DOS SANTOS REPRESENTANTES POLO ATIVO: JACIRA ALVES DE OLIVEIRA - BA34266 POLO PASSIVO: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA Dispensado o relatório na forma do artigo…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "420a50cd-b758-4fe5-897e-1d602bd71ffc",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8JxY1bU3njTeTaqbEjR1ObAW3/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.978Z",
+      "updatedAt": "2026-08-21T07:55:47.978Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wEp4n8JxY1bU3njTeTaqbEjR1ObAW3/certidao",
+        "sourceCharacters": 5239,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1069989-94.2026.4.01.3300 · 13ª Vara Federal Cível da SJBA — Direito tributário: revisão de atos administrativos de indeferimento de pedidos de antecipação de créditos…",
+      "theme": "Direito tributário · PIS, Cofins, PASEP",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "PASEP"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 13ª Vara Federal Cível da SJBA 1069989-94.2026.4.01.3300 MANDADO DE SEGURANÇA CÍVEL (120) IMPETRANTE: BINATURAL BAHIA LTDA Advogado do(a) IMPETRANTE: WAGNER LEANDRO ASSUNCAO TOLEDO - SP242008 IMPETRADO: DELEGADO DA RECEITA FEDERAL EM SALVADOR TERCEIRO INTERESSADO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Vistos etc.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "4db28d77-6466-48c6-be16-77612fd0980a",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBR9WUlQdfjTpDEBLZzwDv82/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.978Z",
+      "updatedAt": "2026-08-21T07:55:47.978Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBR9WUlQdfjTpDEBLZzwDv82/certidao",
+        "sourceCharacters": 2213,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1004723-88.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO SENTENÇA TIPO \"A\" PROCESSO Nº: 1004723-88.2026.4.01.4100 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: FLAVIO ROBERTO AGUIAR FARIAS Advogados do(a) AUTOR: LEILANE RIBEIRO CAMELO CAVALCANTE DOS SANTOS - RO11028, SERGIO GRABOWSKI BOJANOVSKI - RO5935 REU: INSTITUTO NACIONAL DO SEGURO…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f8e37e4e-3281-40c7-91bb-14ab51eea210",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7Xq6vaUkaai4Tny43KRrvMJbg/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.979Z",
+      "updatedAt": "2026-08-21T07:55:47.979Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7Xq6vaUkaai4Tny43KRrvMJbg/certidao",
+        "sourceCharacters": 13999,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1002232-50.2026.4.01.3602 · 2ª Vara Federal de Juizado Especial Cível e Criminal da SSJ de Rondonópolis-MT — Direito tributário: para esse período (IPCA-E como…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Rondonópolis-MT 2ª Vara Federal de Juizado Especial Cível e Criminal da SSJ de Rondonópolis-MT SENTENÇA TIPO \"A\" PROCESSO: 1002232-50.2026.4.01.3602 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: MARIA DE LOURDES DOS SANTOS REPRESENTANTES POLO ATIVO: WILSON MOLINA PORTO - TO3546 POLO PASSIVO: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "3b89dd1f-f530-4655-aebe-bb9f48e229c7",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdKRWNUVPAtQTOexdDYeLPQ1G/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.980Z",
+      "updatedAt": "2026-08-21T07:55:47.980Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ekj97AdKRWNUVPAtQTOexdDYeLPQ1G/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1006712-32.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO SENTENÇA TIPO \"A\" PROCESSO Nº: 1006712-32.2026.4.01.4100 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: A.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "df4854bb-03a1-4aad-a03a-9cc391aad956",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7gYmKUbm9H1T7mMyB6y5DBkl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.980Z",
+      "updatedAt": "2026-08-21T07:55:47.980Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7gYmKUbm9H1T7mMyB6y5DBkl/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1011983-22.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1011983-22.2026.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: FRANCISCA MELO DE LIMA Advogados do(a) AUTOR: RODRIGO DE BARCELOS TAVEIRA - RO10421, ROXANE FERNANDES RIBEIRO DE BARCELOS - RO8666 REU: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA (TIPO A) Trata-se de exceção à ordem cronológica…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d8d963bf-94b5-445d-86f6-58387c556b3c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJXUA91HwT8BaKGRbBEe3N/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.981Z",
+      "updatedAt": "2026-08-21T07:55:47.981Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJXUA91HwT8BaKGRbBEe3N/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1047530-26.2025.4.01.3400 · 26ª Vara Federal de Juizado Especial Cível da SJDF — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 26ª Vara Federal de Juizado Especial Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1047530-26.2025.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: MATHEUS FELIPE DA SILVA MARQUES REPRESENTANTES POLO ATIVO: PAULO HENRIQUE PINHEIRO INACIO - DF68646 POLO PASSIVO: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA Relatório…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d3a74090-5c88-47cd-a176-b6eab9b9b13b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqRDXUqjXiATgEwLeRnyG1xN/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.982Z",
+      "updatedAt": "2026-08-21T07:55:47.982Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqRDXUqjXiATgEwLeRnyG1xN/certidao",
+        "sourceCharacters": 13999,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1007100-32.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1007100-32.2026.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: JEAN DA SILVA COSTA CURADOR: JADIR APARECIDO DA COSTA Advogados do(a) AUTOR: FABIANA FARIAS VON RONDOW - RO12627, REU: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS SENTENÇA (TIPO A) A parte autora, representado por seu genitor, objetiva o…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "5ede9c4b-5330-4b57-a6e7-db0f8c299d07",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUBXotVTp57dORLzE4gO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.982Z",
+      "updatedAt": "2026-08-21T07:55:47.982Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3No6GzUBXotVTp57dORLzE4gO/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1048291-03.2025.4.01.4000 · 6ª Vara Federal de Juizado Especial Cível da SJPI — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Piauí 6ª Vara…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Piauí 6ª Vara Federal de Juizado Especial Cível da SJPI SENTENÇA TIPO \"A\" PROCESSO: 1048291-03.2025.4.01.4000 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: LUIS SARAIVA DOS SANTOS REPRESENTANTES POLO ATIVO: FRANCISCO ABIEZEL RABELO DANTAS - PI3618 POLO PASSIVO:INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS I – RELATÓRIO.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "32381103-7de6-4b68-8639-3bd08a8797a6",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mKU3Gkf1T7mMyBYy5DBkl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.982Z",
+      "updatedAt": "2026-08-21T07:55:47.982Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mKU3Gkf1T7mMyBYy5DBkl/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1011604-18.2025.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1011604-18.2025.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: A.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "961491d2-998b-4df8-a8c0-9b10d4acabd7",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqRDXUKNMfATgEwLeRnyG1xN/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.983Z",
+      "updatedAt": "2026-08-21T07:55:47.983Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqRDXUKNMfATgEwLeRnyG1xN/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1008447-22.2024.4.01.3502 · Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Luziânia-GO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 1ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 1ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Luziânia-GO Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Luziânia-GO SENTENÇA TIPO \"A\" PROCESSO: 1008447-22.2024.4.01.3502 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: DHIBION CLEBISSON DA SILVA SOUZA REPRESENTANTES POLO ATIVO: MAISA LOPES CORNELIUS NUNES - DF38991 POLO PASSIVO: INSTITUTO NACIONAL DO SEGURO SOCIAL -…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "04b2c912-4429-43e7-8626-466928495cc4",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbeUzvPsXTNDW3kZyo3rGz/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.983Z",
+      "updatedAt": "2026-08-21T07:55:47.983Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbeUzvPsXTNDW3kZyo3rGz/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "discoveredAt": "2026-08-21T06:25:52.994Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5084570-48.2026.4.02.5101 · 27ª Vara Federal do Rio de Janeiro — Direito tributário: i) Determinar a autoridade coatora se abstenha de exigir a inclusão em…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. 36 e 37): \"a.i) Determinar a autoridade coatora se abstenha de exigir a inclusão em base de cálculo do IRPJ, CSLL, pela Impetrante, os valores oriundos de benefícios fiscais de ICMS3 , pelas devidas fundamentações expostas; a.ii) determinar a autoridade coatora se abstenha exigir a inclusão na base de cálculo do PIS e da COFINS os valores oriundos de benefícios fiscais de ICMS, pelas devidas fundamentações…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "1efd5c7c-aa13-4510-8b99-4d29151dbd17",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9RQ1upLLsDT5N7gJRgMzm2n/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.984Z",
+      "updatedAt": "2026-08-21T07:55:47.984Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9RQ1upLLsDT5N7gJRgMzm2n/certidao",
+        "sourceCharacters": 8834,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5035225-84.2024.4.02.5101 · Assessoria de Recursos — Direito tributário: rido por Turma Especializada deste Tribunal ( evento 27, ACOR1 ), assim ementado:…",
+      "theme": "Direito tributário · ICMS, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "ICMS",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. Apelação Cível Nº 5035225-84.2024.4.02.5101/RJ APELANTE : PACTUAL COMERCIO DE DESCARTAVEIS E LIMPEZA LTDA (IMPETRANTE) ADVOGADO(A) : MARUAN ABULASAN JUNIOR (OAB SP173421) DESPACHO/DECISÃO Trata-se de recurso especial ( evento 69, RECESPEC1 ) interposto pela UNIÃO – FAZENDA NACIONAL , com fundamento no artigo 105, III, alíneas ‘a’ e ‘c’, da Constituição Federal, contra acórdão proferido por Turma Especializada deste…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "2e3f0d58-468c-492a-9791-b1db2f569a21",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZVKulBrh7Tdl7LAYek9aWL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.984Z",
+      "updatedAt": "2026-08-21T07:55:47.984Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZVKulBrh7Tdl7LAYek9aWL/certidao",
+        "sourceCharacters": 5467,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5104596-04.2025.4.02.5101 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: S S.A. (IMPETRANTE) ADVOGADO(A) : LEONARDO VINICIUS CORREIA DE MELO (OAB…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. EXCLUSÃO DO ADICIONAL DE ICMS DESTINADO AO FUNDO DE COMBATE À POBREZA – FECP DA BASE DE CÁLCULO DO PIS E DA COFINS.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "0fd3cbea-5ef6-4d7d-9f90-1a7a4004622b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuXqnTrTVzleOZoWe2dL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuXqnTrTVzleOZoWe2dL/certidao",
+        "sourceCharacters": 6639,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5038936-29.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: ssitam ser feitas. Em que pese o teor do enunciado da…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5038936-29.2026.4.02.5101/RJ REQUERENTE : CRISTENSEN DIAS SILVA ADVOGADO(A) : LUIZ FERNANDO GARCIA LANDEIRO (OAB RJ235550) DESPACHO/DECISÃO 1 - Tendo em vista os esclarecimentos prestados no Evento 31.1 , defiro dilação de prazo de 10 (dez) dias para que o exeuente apresente a planilha de cálculos de liquidação do julgado.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "0e64062e-aa45-4dc8-9005-3c2b82ef176e",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm76EXuyX7CaTpday9R3revpE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm76EXuyX7CaTpday9R3revpE/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5070572-47.2025.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: PIO DE OLIVEIRA AGOSTINHO (AUTOR) ADVOGADO(A) : JONATAS LIMA DANTAS (OAB…",
+      "theme": "Direito tributário · PIS, Cofins, IRPJ, CSLL, Simples Nacional",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL",
+        "Simples Nacional"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. Apelação interposta contra sentença que julgou improcedentes os pedidos formulados em ação anulatória de débito fiscal ajuizada com o objetivo de desconstituir créditos de IRPJ, CSLL, PIS e COFINS, ao fundamento de prescrição intercorrente na execução fiscal, nulidade das comunicações realizadas no processo administrativo, ilegalidade do arbitramento do lucro após a exclusão do Simples Nacional e invalidade da…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "224a2a00-19e9-4964-b329-652669fbe9a5",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5ZoGuEPGS7TK7q2JZkXgDen/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/1v3KLNz5ZoGuEPGS7TK7q2JZkXgDen/certidao",
+        "sourceCharacters": 5914,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5011556-62.2025.4.02.5102 · 5ª Vara Federal de Niterói — Direito tributário: PC, JULGO PROCEDENTES OS PEDIDOS para: I. DECLARAR o direito da parte autora à isenção do…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 2ª Região publicou sentença judicial publicada no djen em 2026-08-21. PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL Nº 5011556-62.2025.4.02.5102/RJ AUTOR : MARIA LUCIA DA COSTA GOMES ADVOGADO(A) : MARCOS WILLEMEN DA SILVA (OAB RJ241830) SENTENÇA DISPOSITIVO Ante o exposto, nos termos do artigo 487, inciso I, do CPC, JULGO PROCEDENTES OS PEDIDOS para: I.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "6819619d-0831-4f59-9d77-f6f3a10d97e1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylD6jGuB7OUgTWJ1ovZwL5MW2/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:55:47.986Z",
+      "updatedAt": "2026-08-21T07:55:47.986Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylD6jGuB7OUgTWJ1ovZwL5MW2/certidao",
+        "sourceCharacters": 2760,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "DESPACHO/DECISÃO · 5135785-97.2025.4.02.5101 · 34ª Vara Federal do Rio de Janeiro — Direito tributário: inar, autorizar a impetrante a não incluir os valores referentes a créditos",
@@ -49239,7 +50523,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-21T07:13:52.042Z",
+        "discoveredAt": "2026-08-21T07:56:09.639Z",
         "id": "e295ee548d1376aec84c2880",
         "status": "pending",
         "attempts": 0,
@@ -49253,6 +50537,595 @@
             "coleta-estruturada",
             "assunto-tributario",
             "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98260 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM 8703.80.00 Mercadoria: Veículo automotor de passageiros do tipo SUV destinado ao transporte de cinco pessoas, dotado de sistema de propulsão exclusivamente por motor elétrico alimentado por baterias de lítio-",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153016",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153016/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153016",
+        "fingerprintKey": "receita-normas:153016",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.330Z",
+        "id": "18149fdd82565d42dd56164b",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98258 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3924.90.00 Mercadoria: Esponja para banho, constituída de rede de Nylon e polietileno, em formato esférico, com mini sabonetes em barra inseridos em seu interior, própria para higiene pessoal, comercializada",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153015",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153015/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153015",
+        "fingerprintKey": "receita-normas:153015",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "ec7f51174363f1ebd9003162",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98257 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 7210.70.10 Mercadoria: Laminado plano de aço não ligado, revestido por liga de alumínio-zinco-silício e, posteriormente, pintado e envernizado com verniz acrílico, medindo 1.200 mm de largura, apresentado em",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153014",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153014/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153014",
+        "fingerprintKey": "receita-normas:153014",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "baf8312a9db3cb052b019fc2",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98256 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.90 Ex Tipi: sem enquadramento Mercadoria: Rodízio giratório de roda dupla com carcaça e rodas feitas de resina plástica, centro da roda de poliamida, superfície de rodagem em poliuretano e rolamento ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153013",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153013/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153013",
+        "fingerprintKey": "receita-normas:153013",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "b104fff254b15f5999cbbb6c",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98255 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 0304.89.90 Mercadoria: Filé de garoupa São Tomé (Epinephelus morio), cru e congelado, sem tratamento adicional, apresentado em sacos plásticos. Dispositivos Legais: RGI 1, RGI 6 e RGC 1 da NCM constante na T",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153012",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153012/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153012",
+        "fingerprintKey": "receita-normas:153012",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "0fa0f3d24069d50d19551039",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98254 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8608.00.90 Mercadoria: Dormente sintético ferroviário, elemento integrante da infraestrutura permanente de vias férreas, com dimensões de 2,60 m x 22,86 cm x 17,8 cm (C x L x A), constituído por plástico rec",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153011",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153011/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153011",
+        "fingerprintKey": "receita-normas:153011",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "a9c683d2a84a89fae49ae91c",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98253 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.90 Ex Tipi: Sem enquadramento Mercadoria: Rodízio giratório de roda dupla de 125 mm de diâmetro e 63 mm de largura, com carcaça e rodas de resina plástica, núcleo da roda de poliuretano, superfície d",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153010",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153010/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153010",
+        "fingerprintKey": "receita-normas:153010",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "aabcbaf271fab15055481b52",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98251 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 6307.90.90 Mercadoria: Colete infantil com ombreiras, constituído externamente de tecido de poliéster e internamente de espuma EPE, contendo fivelas, fechos e lantejoulas, próprio para auxílio na flutuação e",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153009",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153009/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153009",
+        "fingerprintKey": "receita-normas:153009",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "95886508a526196aa4990100",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98250 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM:4504.10.00 Mercadoria: Chapa multicamadas constituída por uma lâmina de cortiça aglomerada (13 %, em massa), um tecido de poliéster (12 %), uma base de poliuretano (parte alveolar e parte não alveolar, 49 %) ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153008",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153008/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153008",
+        "fingerprintKey": "receita-normas:153008",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "9eaf64c481120da4dde3563c",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98249 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM:8708.29.99 Mercadoria: Suporte para fixação do para-lama traseiro ao chassi de um trator rodoviário da subposição 8701.2, à base de resina poliéster reforçada com fibra de vidro, contendo insertos metálicos, ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153007",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153007/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153007",
+        "fingerprintKey": "receita-normas:153007",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "023789389bc34fcf674b0ec2",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98248 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.40 Ex Tipi: sem enquadramento Mercadoria: Coletor menstrual de silicone, com formato de cone, reutilizável, sem função absorvente, apresentado em diversos tamanhos (63 mm x 39 mm a 80 mm x 46 mm). Di",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153006",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153006/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153006",
+        "fingerprintKey": "receita-normas:153006",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "0770751c9ffb96faaa3fb29d",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98247 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM:8703.80.00 Mercadoria: Carro elétrico com capacidade para acomodar três pessoas, com duas portas, duas fileiras de assentos, cintos de segurança, ar-condicionado, freios a disco, câmera traseira, farol de LED",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153005",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153005/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153005",
+        "fingerprintKey": "receita-normas:153005",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "c6b1bc3ea7c06b4e95e9efec",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98244 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8443.31.13 Mercadoria: Impressora multifuncional a laser, monocromática, com velocidade de impressão, no formato A4, de até 29 páginas por minuto (ppm), com largura de impressão não superior a 216 mm, capaz ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153004",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153004/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153004",
+        "fingerprintKey": "receita-normas:153004",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "ada385e1f8e749795f60ab42",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98243 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8443.31.13 Mercadoria: Impressora multifuncional a laser, monocromática, com velocidade de impressão, no formato A4, de até 40 páginas por minuto (ppm), com largura de impressão não superior a 216 mm, capaz ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153003",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153003/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153003",
+        "fingerprintKey": "receita-normas:153003",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "97764202db3f234610a1df4e",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98242 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8443.31.99 Mercadoria: Impressora multifuncional a laser, monocromática, com velocidade de impressão, no formato A4, de até 71 páginas por minuto (ppm), capaz de ser conectada a uma máquina automática para p",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153002",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153002/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153002",
+        "fingerprintKey": "receita-normas:153002",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "362bdac091b1fbe08ee49efa",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98241 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM 8524.91.00 Mercadoria: Módulo de visualização de tela plana de cristal líquido (LCD) com tecnologia TFT (Thin Film Transistor) de 7 polegadas, contendo tela sensível ao toque, placa de circuito impresso com d",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153001",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153001/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153001",
+        "fingerprintKey": "receita-normas:153001",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "4c3098618e806b1b49d03250",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98239 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM 9406.90.90 Mercadoria: Construção modular pré-fabricada com dimensões externas de 2,40 x 5,00 x 3,23 m, pé direito livre de 2,50 m e área útil interna 67,90 de m², constituído em aço (30%), placas de gesso (2",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153000",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153000/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153000",
+        "fingerprintKey": "receita-normas:153000",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "0a1c035cf3e45b66f053b7c1",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98237 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8516.79.90 Mercadoria: Jarra com corpo de aço inox e base, tampa e alça de polipropileno, própria para aquecimento de água mediante resistência elétrica embutida imediatamente abaixo do fundo metálico da jar",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152999",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152999/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "152999",
+        "fingerprintKey": "receita-normas:152999",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "e6497f9533acfc4f72d4c0b4",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98236 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8516.79.90 Mercadoria: Jarra com corpo de aço inox e base, tampa, alça de polipropileno e filtro micromesh para retenção de partículas, própria para aquecimento de água mediante resistência elétrica embutida",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/152998",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/152998/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "152998",
+        "fingerprintKey": "receita-normas:152998",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "id": "b3f7ddc407fc3c3b7ff50e12",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
         }
@@ -50888,7 +52761,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "01d6c24820c2772671486b31",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -50902,7 +52775,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "58f1d007-7b9c-4fe9-bfb9-ffaa84edeb07",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1024195-75.2025.4.01.3400 · Juizado Especial Cível Adjunto à 17ª Vara Federal da SJDF — Direito tributário: FEDERAL (FAZENDA NACIONAL), objetivando a declaração de inexistência de relação jurídico-tributária da alíquota única de 25% (vinte e cinco por cento) das retenções do imposto de renda sobre os valores recebidos a título de aposentadoria por residir no exterior, bem como a cond",
@@ -50922,7 +52798,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "2605368cb0db4b5d9c5d0d0d",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -50936,7 +52812,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "5a644c3d-8023-4939-87c2-5f1dd7c86734",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1019696-84.2026.4.01.3700 · 9ª Vara Federal de Juizado Especial Cível da SJMA — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Maranhão 9ª Vara Federal de Juizado Especial Cível da SJMA PROCESSO: 1019696-84.2026.4.01.3700 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: MARIA EDILEUZA BARBOSA DA SILVA Advogados do(a) AUTOR: GEDEON",
@@ -50956,7 +52835,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "b6aa1b7c21136512996d3f52",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -50970,7 +52849,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "cd3d9a5d-aa97-4aa7-9ef9-b341ad81d369",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1032002-92.2024.4.01.3300 · 15ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 15ª Vara Federal de Juizado Especial Cível da SJBA SENTENÇA TIPO \"A\" PROCESSO: 1032002-92.2024.4.01.3300 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: RAQUEL DOS SANTOS REPRESENTANTES POLO ATI",
@@ -50990,7 +52872,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "cb5b7f40be44e28c2d744180",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51004,7 +52886,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "420a50cd-b758-4fe5-897e-1d602bd71ffc",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1069989-94.2026.4.01.3300 · 13ª Vara Federal Cível da SJBA — Direito tributário: revisão de atos administrativos de indeferimento de pedidos de antecipação de créditos de PIS/Pasep e COFINS referentes ao 1º trimestre de 2026. A parte impetrante protocolou petição postulando expressamente a desistência da ação mandamental, com fundamento no artigo 485,",
@@ -51024,7 +52909,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "d228d33ca8b3354734b5c4b9",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51038,7 +52923,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "4db28d77-6466-48c6-be16-77612fd0980a",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Decisão · 0019418-02.2004.4.01.3400 · 1ª Vara Federal Cível da SJDF — Direito tributário: Poder Judiciário Justiça Federal da 1ª Região Seção Judiciária do Distrito Federal 1ª Vara Federal Cível da SJDF PROCESSO Nº 0019418-02.2004.4.01.3400 CLASSE: CUMPRIMENTO DE SENTENÇA (156) EXEQUENTE: ERICA LUISA DE CARVALHO GONCALVES, LETICIA MARA TORRES DE CARVALHO MAR",
@@ -51100,7 +52988,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "913fce58cb013c5347089dbf",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51114,7 +53002,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "f8e37e4e-3281-40c7-91bb-14ab51eea210",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1002232-50.2026.4.01.3602 · 2ª Vara Federal de Juizado Especial Cível e Criminal da SSJ de Rondonópolis-MT — Direito tributário: para esse período (IPCA-E como correção monetária e juros da poupança, para créditos não tributários); (ii) a partir da vigência da EC nº 113/2021 (09/12/2021) até a vigência da EC nº 136/2025 (09/09/2025), aplicação exclusiva da taxa Selic, como índice único de correção monetá",
@@ -51134,7 +53025,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "c0442ac59cc03dd547189072",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51148,7 +53039,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "3b89dd1f-f530-4655-aebe-bb9f48e229c7",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1006712-32.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO SENTENÇA TIPO \"A\" PROCESSO Nº: 1006712-32.2026.4.01.4100 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: A. E. D. S. C. REPRESENTANTE: M",
@@ -51168,7 +53062,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "572e94e4e49c1fe1d5d54138",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51182,7 +53076,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "df4854bb-03a1-4aad-a03a-9cc391aad956",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1011983-22.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1011983-22.2026.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: FRANCISCA MELO DE LIMA Advogados do(a) AUTOR: RODRIGO DE BARCELOS TAVEIRA - RO10421, ROX",
@@ -51202,7 +53099,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "e89e355ef1c1890d29c8ff08",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51216,7 +53113,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "d8d963bf-94b5-445d-86f6-58387c556b3c",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1047530-26.2025.4.01.3400 · 26ª Vara Federal de Juizado Especial Cível da SJDF — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Distrito Federal 26ª Vara Federal de Juizado Especial Cível da SJDF SENTENÇA TIPO \"A\" PROCESSO: 1047530-26.2025.4.01.3400 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: MATHEUS FELIPE DA SILVA MARQUE",
@@ -51236,7 +53136,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "9df9c42660cd74d492b3839b",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51250,7 +53150,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "d3a74090-5c88-47cd-a176-b6eab9b9b13b",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1007100-32.2026.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1007100-32.2026.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: JEAN DA SILVA COSTA CURADOR: JADIR APARECIDO DA COSTA Advogados do(a) AUTOR: FABIANA FAR",
@@ -51270,7 +53173,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "b54105ba537d72c273eaf344",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51284,7 +53187,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "5ede9c4b-5330-4b57-a6e7-db0f8c299d07",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1048291-03.2025.4.01.4000 · 6ª Vara Federal de Juizado Especial Cível da SJPI — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Piauí 6ª Vara Federal de Juizado Especial Cível da SJPI SENTENÇA TIPO \"A\" PROCESSO: 1048291-03.2025.4.01.4000 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: LUIS SARAIVA DOS SANTOS REPRESENTANTES POL",
@@ -51304,7 +53210,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "53a0178e37cb277c6388b070",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51318,7 +53224,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "32381103-7de6-4b68-8639-3bd08a8797a6",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1011604-18.2025.4.01.4100 · 6ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: Seção Judiciária de Rondônia 6ª Vara Federal de Juizado Especial Cível da SJRO Sentença Tipo A PROCESSO 1011604-18.2025.4.01.4100 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: A. B. G. REPRESENTANTE: CARLA BATISTA CAVALCANTE Advogados do(a) AUTOR: SILVANA FELIX DA",
@@ -51338,7 +53247,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "686ad0bd8832ad3bfd97cd56",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51352,7 +53261,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "961491d2-998b-4df8-a8c0-9b10d4acabd7",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 1008447-22.2024.4.01.3502 · Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Luziânia-GO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Luziânia-GO Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Luziânia-GO SENTENÇA TIPO \"A\" PROCESSO: 1008447-22.2024.4.01.3502 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: DHIB",
@@ -51372,7 +53284,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:52.994Z",
         "id": "399da815c17343c17a4bc2f6",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51386,7 +53298,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "04b2c912-4429-43e7-8626-466928495cc4",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5092839-76.2026.4.02.5101 · 24ª Vara Federal do Rio de Janeiro — Direito tributário: a forma como são fornecidos ou da sua nomenclatura, na base de cálculo da Contribuição ao PIS e à COFINS, bem como a repetição do indébito, reconhecendo-se o seu direito à restituição ou à compensação administrativa dos valores cobrados indevidamente à título de PIS e COFI",
@@ -51616,7 +53531,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "0685c881ce3846c14ff0fed6",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51630,7 +53545,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "1efd5c7c-aa13-4510-8b99-4d29151dbd17",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5035225-84.2024.4.02.5101 · Assessoria de Recursos — Direito tributário: rido por Turma Especializada deste Tribunal ( evento 27, ACOR1 ), assim ementado: DIREITO TRIBUTÁRIO. APELAÇÃO. IRPJ E CSLL. NÃO INCIDÊNCIA SOBRE CRÉDITOS PRESUMIDOS DE ICMS. LEI Nº 14.789/2023. EXCLUSÃO DAS BASES DE CÁLCULO. COMPENSAÇÃO E RESTITUIÇÃO. APELAÇÃO PROVIDA. I. CASO",
@@ -51650,7 +53568,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "8bdc28bbcd273d822b93e973",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51664,7 +53582,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "2e3f0d58-468c-492a-9791-b1db2f569a21",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5104596-04.2025.4.02.5101 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: S S.A. (IMPETRANTE) ADVOGADO(A) : LEONARDO VINICIUS CORREIA DE MELO (OAB RJ137721) EMENTA TRIBUTÁRIO. MANDADO DE SEGURANÇA. EXCLUSÃO DO ADICIONAL DE ICMS DESTINADO AO FUNDO DE COMBATE À POBREZA – FECP DA BASE DE CÁLCULO DO PIS E DA COFINS. TEMA 69/STF. COMPENSAÇÃO NA VIA ADMINIS",
@@ -51684,7 +53605,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "848206ea7fc16a4960c3c517",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51698,7 +53619,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "0fd3cbea-5ef6-4d7d-9f90-1a7a4004622b",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5038936-29.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: ssitam ser feitas. Em que pese o teor do enunciado da Súmula 162 do STJ 1 , a correção do imposto de renda, dada suas feições peculiares, é feita na base anual, de sorte que a correção deve considerar não a data de cada retenção, mas a data do primeiro dia do exercício seguint",
@@ -51718,7 +53642,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "b7b4ab7843a45d4d7ae4e13b",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51732,7 +53656,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "0e64062e-aa45-4dc8-9005-3c2b82ef176e",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5070572-47.2025.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: PIO DE OLIVEIRA AGOSTINHO (AUTOR) ADVOGADO(A) : JONATAS LIMA DANTAS (OAB RJ249505) EMENTA TRIBUTÁRIO. PROCESSUAL CIVIL. APELAÇÃO. AÇÃO ANULATÓRIA DE DÉBITO FISCAL. EXECUÇÃO FISCAL. PRESCRIÇÃO INTERCORRENTE. PROCESSO ADMINISTRATIVO FISCAL. REGULARIDADE DAS INTIMAÇÕES. EXCLUSÃO DO",
@@ -51752,7 +53679,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "37dd99f0b06559f9cbe70c57",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51766,7 +53693,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "224a2a00-19e9-4964-b329-652669fbe9a5",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "Sentença · 5011556-62.2025.4.02.5102 · 5ª Vara Federal de Niterói — Direito tributário: PC, JULGO PROCEDENTES OS PEDIDOS para: I. DECLARAR o direito da parte autora à isenção do Imposto de Renda Pessoa Física incidente sobre os seus proventos de aposentadoria por tempo de contribuição a contar da data do diagnóstico da neoplasia maligna (julho de 2002) e sobre os",
@@ -51786,7 +53716,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "a0abdf0d487dd65f070db2d2",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -51800,7 +53730,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "6819619d-0831-4f59-9d77-f6f3a10d97e1",
+        "fastPublishedAt": "2026-08-21T07:55:47.986Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 5009911-14.2025.4.02.5001 · 1ª Vara Federal Cível de Vitória — Direito tributário: o da obrigação de fazer relativa à observância do direito à redução da base de cálculo do IRPJ e da CSLL em 8% e 12%, respectivamente. Em petição do ev. 65, a parte autora requer o cumprimento de sentença. A União - Fazenda Nacional apresenta impugnação no evento 73, aduzin",
@@ -88372,6 +90305,682 @@
     ],
     "runs": [
       {
+        "id": "af8921a3-7ead-4e35-bc5a-0e68bdd95c37",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-20",
+        "startedAt": "2026-08-21T07:55:48.136Z",
+        "finishedAt": "2026-08-21T07:57:14.162Z",
+        "discovered": 1,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "e6b8ed7c-971d-4c76-8250-c6c427220500",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-21T07:54:11.350Z",
+        "finishedAt": "2026-08-21T07:55:48.036Z",
+        "discovered": 20,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 25,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 13,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 19,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 140,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32670,
+              "entries": 33,
+              "processed": 32670,
+              "dateMatched": 32670,
+              "decisionMatched": 5532,
+              "taxMatched": 1993,
+              "deduplicated": 1842,
+              "duplicates": 151,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 15235,
+              "entries": 16,
+              "processed": 15235,
+              "dateMatched": 15235,
+              "decisionMatched": 8047,
+              "taxMatched": 2017,
+              "deduplicated": 2017,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25493,
+              "entries": 26,
+              "processed": 25493,
+              "dateMatched": 25493,
+              "decisionMatched": 10579,
+              "taxMatched": 6205,
+              "deduplicated": 6034,
+              "duplicates": 171,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 33570,
+              "entries": 34,
+              "processed": 33570,
+              "dateMatched": 33570,
+              "decisionMatched": 11962,
+              "taxMatched": 2299,
+              "deduplicated": 2298,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24402,
+              "entries": 25,
+              "processed": 24402,
+              "dateMatched": 24402,
+              "decisionMatched": 4919,
+              "taxMatched": 2256,
+              "deduplicated": 2190,
+              "duplicates": 66,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12008,
+              "entries": 13,
+              "processed": 12008,
+              "dateMatched": 12008,
+              "decisionMatched": 4145,
+              "taxMatched": 677,
+              "deduplicated": 676,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "272ca4d4-7c4e-4105-8065-e06032178869",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -113121,541 +115730,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "528af130-e451-43fa-b756-da9357fb750d",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T05:42:01.409Z",
-        "finishedAt": "2026-08-20T06:01:23.178Z",
-        "discovered": 0,
-        "analyzed": 3,
-        "published": 3,
-        "discarded": 0,
-        "errors": 9,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 10,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "f9932e11-5057-4ff0-85cf-899ea4c79fe5",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T05:27:26.488Z",
-        "finishedAt": "2026-08-20T05:38:14.374Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 22,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T07:52:53.734Z",
-    "nextRunAt": "2026-08-21T13:52:53.734Z"
+    "lastRunAt": "2026-08-21T07:57:14.162Z",
+    "nextRunAt": "2026-08-21T13:57:14.162Z"
   }
 }
