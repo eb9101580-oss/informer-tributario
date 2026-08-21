@@ -80,16 +80,23 @@ function InternalApp() {
   const [feedback, setFeedback] = useState([]);
   const [savedAlertIds, setSavedAlertIds] = useState([]);
   const [savedPublications, setSavedPublications] = useState([]);
+  const [feedDismissedIds, setFeedDismissedIds] = useState([]);
   const [preferences, setPreferences] = useState({ emailAlerts: true, actionAlerts: true, minimumScore: 8 });
 
   const isAdmin = String(user?.role || '').split(',').includes('admin');
 
   useEffect(() => {
     api.me().then((data) => {
+      const reactions = data.reactions || [];
+      const savedIds = data.savedAlertIds || [];
       setUser(data.user);
-      setFeedback(data.reactions || []);
-      setSavedAlertIds(data.savedAlertIds || []);
+      setFeedback(reactions);
+      setSavedAlertIds(savedIds);
       setSavedPublications(data.savedPublications || []);
+      setFeedDismissedIds([...new Set([
+        ...savedIds,
+        ...reactions.filter((vote) => vote.value === 1).map((vote) => vote.alertId),
+      ])]);
       setPreferences(data.preferences || { emailAlerts: true, actionAlerts: true, minimumScore: 8 });
     }).catch(() => setUser(null)).finally(() => setAuthLoading(false));
   }, []);
@@ -142,8 +149,7 @@ function InternalApp() {
   const overviewAlerts = useMemo(() => rankFeedAlerts(alerts.filter((alert) => alert.isDemo === false
     && alert.score >= 6
     && alert.officialUrl
-    && !savedAlertIds.includes(alert.id)
-    && !feedback.some((vote) => vote.alertId === alert.id && vote.value === 1)), feedback), [alerts, feedback, savedAlertIds]);
+    && !feedDismissedIds.includes(alert.id)), feedback), [alerts, feedback, feedDismissedIds]);
   const opportunities = overviewAlerts.filter((alert) => alert.opportunity);
   const [title, subtitle] = pageTitles[activePage];
 

@@ -158,10 +158,139 @@ function fastTaxLabels(text) {
 }
 
 function fastEvidenceSentence(candidate) {
-  const text = unpackCandidateText(candidate).slice(0, 12000).replace(/\s+/g, ' ').trim();
+  const text = unpackCandidateText(candidate).slice(0, 16000)
+    .replace(/\b(EMENTA|RELATÓRIO|FUNDAMENTAÇÃO|DISPOSITIVO|SENTENÇA|ACÓRDÃO)\b/gi, '. $1. ')
+    .replace(/\b(art|arts|inc|incs|n|nº|dr|dra|sr|sra)\./gi, '$1\uE000')
+    .replace(/\s+/g, ' ').trim();
   if (!text) return '';
-  const sentences = text.split(/(?<=[.!?])\s+/).filter((sentence) => sentence.length >= 45);
-  return shortenFastText(sentences.find((sentence) => hasStrongTaxSignal(sentence) || MERIT_PATTERN.test(sentence)) || sentences[0] || text, 420);
+  const sentences = text.split(/(?<=[.!?])\s+/)
+    .map((sentence) => sentence.replace(/\uE000/g, '.').replace(/^(?:EMENTA|RELATÓRIO|FUNDAMENTAÇÃO|DISPOSITIVO|SENTENÇA|ACÓRDÃO)\.?\s*/i, '').trim())
+    .filter((sentence) => sentence.length >= 45 && !/^(?:PODER JUDICIÁRIO|ADVOGAD[OA]|IMPETRANTE|IMPETRADO|AUTOR|RÉU|FISCAL DA LEI|ENDEREÇO)/i.test(sentence));
+  const substantive = sentences.find((sentence) => /julgo|concedo|denego|defiro|indefiro|dou provimento|nego provimento|altera|institui|revoga|aprova|prorroga/i.test(sentence))
+    || sentences.find((sentence) => hasStrongTaxSignal(sentence) || MERIT_PATTERN.test(sentence));
+  return shortenFastText(substantive || sentences[0] || text, 520);
+}
+
+function fastSentences(candidate) {
+  return unpackCandidateText(candidate).slice(0, 60000)
+    .replace(/\b(EMENTA|RELATÓRIO|FUNDAMENTAÇÃO|DISPOSITIVO|SENTENÇA|ACÓRDÃO)\b/gi, '. $1. ')
+    .replace(/\b(art|arts|inc|incs|n|nº|dr|dra|sr|sra)\./gi, '$1\uE000')
+    .replace(/\s+/g, ' ').trim()
+    .split(/(?<=[.!?])\s+/)
+    .map((sentence) => sentence.replace(/\uE000/g, '.').replace(/^(?:EMENTA|RELATÓRIO|FUNDAMENTAÇÃO|DISPOSITIVO|SENTENÇA|ACÓRDÃO)\.?\s*/i, '').trim())
+    .filter((sentence) => sentence.length >= 25);
+}
+
+function fastDecisionOutcome(sentences) {
+  const patterns = [
+    /ante (?:o|todo) exposto/i,
+    /julgo (?:parcialmente )?(?:procedente|improcedente)/i,
+    /(?:concedo|denego) (?:a )?segurança/i,
+    /(?:dou|nego|dar|deram|negaram) provimento/i,
+    /julgar(?:am)? (?:parcialmente )?(?:procedente|improcedente)/i,
+    /(?:decidiu|acordaram|resolveu)\b/i,
+    /(?:defiro|indefiro|acolho|rejeito|declaro|reconheço|determino|homologo|extingo)\b/i,
+  ];
+  for (const pattern of patterns) {
+    const matches = sentences.filter((sentence) => pattern.test(sentence));
+    if (matches.length) return shortenFastText(matches.at(-1), 620);
+  }
+  return '';
+}
+
+function fastDecisionTopic(candidate, sentences) {
+  const topic = sentences.find((sentence) => hasStrongTaxSignal(sentence)
+    && /objetivando|pretende|controvérsia|discute|requer(?:eu)? (?:o |a )?(?:reconhecimento|declaração|exclusão|restituição|compensação)/i.test(sentence));
+  if (topic) {
+    const marker = topic.search(/objetivando|pretende|controvérsia|discute|requer(?:eu)? (?:o |a )?(?:reconhecimento|declaração|exclusão|restituição|compensação)/i);
+    const focused = marker >= 0 ? topic.slice(marker) : topic;
+    const contextualized = focused
+      .replace(/^objetivando\s+seja\s+declarado o direito de/i, 'O pedido buscava o reconhecimento do direito de')
+      .replace(/^objetivando\s+seja\s+/i, 'O pedido buscava que fosse ')
+      .replace(/^objetivando\s+/i, 'O pedido buscava ');
+    return shortenFastText(contextualized, 620);
+  }
+  const titleTopic = String(candidate.title || '').split(/direito tributário\s*:\s*/i)[1];
+  return shortenFastText(titleTopic || fastEvidenceSentence(candidate), 520);
+}
+
+function fastDecisionReason(sentences, outcome) {
+  const candidates = sentences.filter((sentence) => sentence !== outcome && hasStrongTaxSignal(sentence)
+    && /não pode ser acolhid|não comporta acolhimento|inexiste fundamento|constitucionalidade|inconstitucionalidade|legalidade|ilegalidade|não integra|integra.{0,80}base de cálculo|firmou (?:o )?entendimento|conclui-se/i.test(sentence));
+  return shortenFastText(candidates.at(-1) || '', 620);
+}
+
+function sourceWithArticle(sourceName) {
+  if (/^(?:Tribunal|Supremo|Superior|STF|STJ|TRF|CARF|Conselho)/i.test(sourceName)) return `O ${sourceName}`;
+  if (/^(?:Receita|Câmara|Secretaria|Procuradoria)/i.test(sourceName)) return `A ${sourceName}`;
+  return sourceName;
+}
+
+function outcomeClassification(outcome) {
+  if (/improcedente|deneg|indefir|neg(?:o|ar|aram) provimento|desprovido|rejeit/i.test(outcome)) return 'negative';
+  if (/procedente|conced|defer|(?:dou|dar|deram) provimento|provido|acolh/i.test(outcome)) return 'positive';
+  return 'neutral';
+}
+
+export function fastPublicationDetails(candidate, { sourceName, kind, taxes, date } = {}) {
+  const resolvedSource = sourceName || candidate.sourceName || candidate.sourceAcronym || 'Fonte oficial';
+  const resolvedKind = kind || candidate.documentKind || 'Publicação oficial';
+  const resolvedTaxes = taxes?.length ? taxes : fastTaxLabels(`${candidate.title || ''} ${unpackCandidateText(candidate).slice(0, 16000)}`);
+  const resolvedDate = date || publicationDateKey(candidate.publishedAt);
+  const sentences = fastSentences(candidate);
+  const evidence = fastEvidenceSentence(candidate);
+  const judicial = /sentença|acórdão|decisão|julgamento|despacho/i.test(resolvedKind);
+  const outcome = judicial ? fastDecisionOutcome(sentences) : '';
+  const topic = judicial ? fastDecisionTopic(candidate, sentences) : evidence;
+  const reason = judicial ? fastDecisionReason(sentences, outcome) : '';
+  const processNumber = String(candidate.title || '').match(/\b\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4}\b/)?.[0];
+  const conciseKind = resolvedKind.replace(/\s+publicad[oa].*$/i, '').trim().toLowerCase();
+
+  if (judicial && outcome) {
+    const classification = outcomeClassification(outcome);
+    const scope = /sentença/i.test(resolvedKind)
+      ? 'É uma decisão de primeira instância e pode ser objeto de recurso.'
+      : 'O alcance do julgamento deve ser conferido no inteiro teor e conforme a fase processual.';
+    const impact = classification === 'negative'
+      ? 'A tese do contribuinte foi rejeitada neste processo.'
+      : classification === 'positive'
+        ? 'A tese do contribuinte foi acolhida neste processo.'
+        : 'O julgamento definiu o tratamento do tema neste processo.';
+    const taxScope = resolvedTaxes.length ? ` O caso envolve ${resolvedTaxes.join(', ')}.` : '';
+    const titleKind = resolvedKind.replace(/\s+judicial.*$/i, '').replace(/\s+publicad[oa].*$/i, '').trim();
+    const resultLabel = classification === 'negative' ? 'tese rejeitada' : classification === 'positive' ? 'tese acolhida' : 'resultado publicado';
+    return {
+      title: [titleKind, processNumber, resolvedTaxes.join(' e ') || null, resultLabel].filter(Boolean).join(' · '),
+      summary: `${sourceWithArticle(resolvedSource)}${processNumber ? `, no processo ${processNumber},` : ''} proferiu ${conciseKind}${resolvedDate ? ` em ${resolvedDate}` : ''}. ${topic}`,
+      whatChanged: `${outcome}${reason ? ` Fundamento identificado: ${reason}` : ''}`,
+      practicalImpact: `${impact}${taxScope} ${scope}`,
+      officeAction: classification === 'negative'
+        ? 'Conferir o inteiro teor, o prazo recursal e se há distinções relevantes antes de aplicar a conclusão a casos semelhantes.'
+        : 'Conferir o inteiro teor, o alcance subjetivo, eventual recurso e os documentos necessários antes de aplicar a conclusão ao cliente.',
+      affectedProfiles: resolvedTaxes.length ? [`Contribuintes com discussões sobre ${resolvedTaxes.join(', ')}`] : ['Partes e contribuintes com tese equivalente'],
+    };
+  }
+
+  const change = sentences.find((sentence) => /altera|institui|revoga|aprova|prorroga|regulamenta|estabelece|dispõe sobre|decidiu|firmou/i.test(sentence));
+  return {
+    summary: `${sourceWithArticle(resolvedSource)} publicou ${conciseKind}${resolvedDate ? ` em ${resolvedDate}` : ''}. ${topic || evidence}`,
+    whatChanged: shortenFastText(change || topic || evidence || candidate.title, 620),
+    practicalImpact: resolvedTaxes.length
+      ? `A publicação trata de ${resolvedTaxes.join(', ')}. É necessário verificar vigência, destinatários e providências descritas no texto oficial.`
+      : 'A publicação deve ser conferida quanto à vigência, aos destinatários e às providências expressamente previstas no texto oficial.',
+    officeAction: 'Comparar o texto publicado com o procedimento atual e registrar prazo, vigência e responsáveis por eventual adequação.',
+  };
+}
+
+export function enrichFastAlert(alert, candidate) {
+  if (!candidate || alert?.provenance?.analysisMode !== 'fast-triage') return alert;
+  const details = fastPublicationDetails(candidate, {
+    sourceName: alert.agency,
+    kind: alert.kind,
+    taxes: alert.taxes || [],
+    date: publicationDateKey(alert.publishedAt),
+  });
+  return { ...alert, ...details };
 }
 
 export function canFastPublishCandidate(candidate) {
@@ -183,9 +312,10 @@ export function makeFastAlert(candidate) {
   const score = Math.round((triage.score / 10) * 10) / 10;
   const now = new Date().toISOString();
   const title = shortenFastText(candidate.title || kind, 180);
+  const details = fastPublicationDetails(candidate, { sourceName, kind, taxes, date });
   return {
     relevant: true,
-    title,
+    title: details.title || title,
     theme: taxes.length ? `Direito tributário · ${taxes.join(', ')}` : 'Direito tributário',
     agency: sourceName,
     taxes,
@@ -193,11 +323,11 @@ export function makeFastAlert(candidate) {
     kind,
     impactType: 'Informativo',
     publishedAt: candidate.publishedAt || now,
-    summary: `A ${sourceName} publicou ${kind.toLowerCase()}${date ? ` em ${date}` : ''}. ${evidence || 'O registro oficial foi identificado no monitoramento tributário.'}`,
-    whatChanged: 'A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.',
-    practicalImpact: 'O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.',
-    officeAction: 'Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.',
-    affectedProfiles: ['Contribuintes e empresas do tema indicado'],
+    summary: details.summary || evidence,
+    whatChanged: details.whatChanged,
+    practicalImpact: details.practicalImpact,
+    officeAction: details.officeAction,
+    affectedProfiles: details.affectedProfiles || ['Contribuintes e empresas do tema indicado'],
     criteria: { authority: 9, novelty: date ? 8 : 6, legalImpact: triage.signals.includes('conteudo-de-merito') ? 8 : 7, financialImpact: taxes.length ? 7 : 6, reach: 7, clientFit: 7, actionPotential: 6 },
     opportunity: null,
     id: randomUUID(),

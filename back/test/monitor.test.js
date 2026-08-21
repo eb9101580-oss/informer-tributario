@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { canFastPublishCandidate, candidateFingerprint, candidateId, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
+import { canFastPublishCandidate, candidateFingerprint, candidateId, enrichFastAlert, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
 import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isExcludedTaxTopic, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
@@ -237,4 +237,25 @@ test('publica imediatamente uma decisao oficial de alta confianca com resumo fac
   assert.equal(alert.publishedAt, '2026-08-20');
   assert.match(alert.summary, /ICMS/);
   assert.ok(alert.score >= 7);
+});
+
+test('triagem rápida extrai pedido, dispositivo e impacto da sentença integral', () => {
+  const candidate = {
+    sourceId: 'trf3', sourceType: 'official', discoveryMethod: 'trf-djen', publishedAt: '2026-08-21',
+    documentKind: 'Sentença judicial publicada no DJEN', sourceName: 'Tribunal Regional Federal da 3ª Região',
+    title: 'Sentença · 5003025-06.2026.4.03.6110 — Direito tributário: PIS e Cofins nas próprias bases de cálculo',
+    url: 'https://comunicaapi.pje.jus.br/certidao/resultado',
+    inlineText: 'RELATÓRIO Trata-se de mandado de segurança objetivando excluir o PIS e a Cofins de suas próprias bases de cálculo. FUNDAMENTAÇÃO A pretensão não pode ser acolhida porque inexiste fundamento legal para a exclusão do PIS e da Cofins de suas próprias bases. DISPOSITIVO Ante o exposto, julgo IMPROCEDENTE o pedido e DENEGO A SEGURANÇA pleiteada, nos termos do artigo 487, I, do CPC.',
+  };
+  const alert = makeFastAlert(candidate);
+  assert.match(alert.title, /5003025-06\.2026\.4\.03\.6110/);
+  assert.match(alert.title, /tese rejeitada/i);
+  assert.match(alert.summary, /pedido buscava excluir o PIS e a Cofins/i);
+  assert.match(alert.whatChanged, /julgo IMPROCEDENTE.*DENEGO A SEGURANÇA/i);
+  assert.match(alert.practicalImpact, /tese do contribuinte foi rejeitada/i);
+  assert.match(alert.practicalImpact, /primeira instância/i);
+  assert.doesNotMatch(alert.whatChanged, /triagem automática/i);
+
+  const oldGeneric = { ...alert, summary: 'Resumo genérico', whatChanged: 'Triagem automática.', provenance: { ...alert.provenance, analysisMode: 'fast-triage' } };
+  assert.match(enrichFastAlert(oldGeneric, candidate).whatChanged, /julgo IMPROCEDENTE/i);
 });

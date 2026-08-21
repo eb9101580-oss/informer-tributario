@@ -7,6 +7,7 @@ import { isCurrentFeedItem } from '../services/feedWindow.js';
 import { alertsForViewer } from '../services/alertVisibility.js';
 import { optionalAuth, requireAdmin } from '../middleware/auth.js';
 import { isExcludedTaxTopic } from '../services/sourceAdapters.js';
+import { enrichFastAlert } from '../services/monitor.js';
 
 function isOfficialRelevantAlert(alert) {
   return alert.isDemo === false && alert.score >= 6 && /^https:\/\//i.test(alert.officialUrl || '')
@@ -42,7 +43,11 @@ export function createAlertsRouter({
     try {
       const { search = '', relevance = 'all', status = 'all', kind = 'all', period = 'current' } = request.query;
       const database = await readDatabaseFn();
-      const all = await alertsForViewer(database, request.auth, { readTrackedActionsForUserFn });
+      const candidatesByAlertId = new Map((database.monitor?.candidates || [])
+        .filter((candidate) => candidate.alertId)
+        .map((candidate) => [candidate.alertId, candidate]));
+      const all = (await alertsForViewer(database, request.auth, { readTrackedActionsForUserFn }))
+        .map((alert) => enrichFastAlert(alert, candidatesByAlertId.get(alert.id)));
       const term = search.toLocaleLowerCase('pt-BR').trim();
       const alerts = all
         .filter(isOfficialRelevantAlert)
@@ -68,10 +73,11 @@ export function createAlertsRouter({
   router.get('/:id', optionalAuthMiddleware, async (request, response, next) => {
     try {
       const database = await readDatabaseFn();
+      const candidate = (database.monitor?.candidates || []).find((item) => item.alertId === request.params.id);
       const alert = (await alertsForViewer(database, request.auth, { readTrackedActionsForUserFn }))
         .find((item) => item.id === request.params.id);
       if (!alert) return response.status(404).json({ message: 'Alerta não encontrado.' });
-      response.json(alert);
+      response.json(enrichFastAlert(alert, candidate));
     } catch (error) {
       next(error);
     }
