@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { canFastPublishCandidate, candidateFingerprint, candidateId, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
-import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
+import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isExcludedTaxTopic, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
 test('filtro tributário ignora acentos e identifica tributos', () => {
@@ -19,6 +19,13 @@ test('filtro tributário ignora acentos e identifica tributos', () => {
   assert.equal(isTaxRelated('Nota técnica sobre manutenção de computadores'), false);
   assert.equal(isTaxRelated('Parecer da comissão de cultura'), false);
   assert.equal(isTaxRelated('Informativo semanal de licitações'), false);
+});
+
+test('regra editorial exclui qualquer publicação sobre Simples Nacional', () => {
+  assert.equal(isExcludedTaxTopic('Alteração do Simples Nacional'), true);
+  assert.equal(isExcludedTaxTopic('Alteração do SIMPLES-NACIONAL'), true);
+  assert.equal(isCandidateEligible('receita-in', 'Nova regra do Simples Nacional', 'https://normasinternet2.receita.fazenda.gov.br/consulta/externa/1'), false);
+  assert.equal(isCandidateEligible('trf3', 'Sentença tributária', 'https://comunicaapi.pje.jus.br/certidao', 'Discussão relativa ao Simples Nacional.'), false);
 });
 
 test('id do candidato é estável por URL', () => {

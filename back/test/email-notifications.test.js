@@ -214,3 +214,30 @@ test('agrupa várias publicações nota alta em um único e-mail por conta', asy
   assert.equal(result.alertsSent, 2);
   assert.equal(result.deliveries, 1);
 });
+
+test('não envia publicação sobre Simples Nacional', async () => {
+  let sends = 0;
+  const alert = movementAlert({
+    id: 'publication-simples',
+    ownerId: undefined,
+    kind: 'Norma tributária',
+    score: 9.4,
+    title: 'Receita publica orientação sobre o Simples Nacional',
+  });
+
+  const result = await notifyAlerts([alert], {
+    requireCurrentFeed: false,
+    emailIsConfigured: () => true,
+    databaseIsConfigured: () => false,
+    readSubscriptionsFn: async () => ({
+      notifiedAlertIds: [],
+      subscribers: [{ id: 'legacy', email: 'legacy@example.com', active: true }],
+    }),
+    sendEmailFn: async () => { sends += 1; },
+    markAlertsNotifiedFn: async () => {},
+  });
+
+  assert.equal(sends, 0);
+  assert.equal(result.alertsSent, 0);
+  assert.equal(result.deliveries, 0);
+});

@@ -11,6 +11,13 @@ test('feed aceita hoje e ontem no calendario brasileiro', () => {
   assert.equal(isCurrentFeedItem({ publishedAt: '' }, now), false);
 });
 
+test('virada diaria remove anteontem e preserva ontem', () => {
+  const august21 = new Date('2026-08-21T12:00:00-03:00');
+  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-21T00:01:00-03:00' }, august21), true);
+  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-20T00:01:00-03:00' }, august21), true);
+  assert.equal(isCurrentFeedItem({ publishedAt: '2026-08-19T23:59:59-03:00' }, august21), false);
+});
+
 test('coleta preserva data desconhecida para confirmar no documento', () => {
   assert.equal(isPublishedWithinDays('', 2, now, { allowUnknown: true }), true);
   assert.equal(isPublishedWithinDays('2026-06-19', 2, now, { allowUnknown: true }), false);

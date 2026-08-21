@@ -3,6 +3,7 @@ import { config } from '../config.js';
 import { databaseConfigured, ensureAppSchema, query } from './db.js';
 import { emailConfigured, sendEmail } from './email.js';
 import { isCurrentFeedItem } from './feedWindow.js';
+import { isExcludedTaxTopic } from './sourceAdapters.js';
 import { markAlertsNotified, readSubscriptions } from './subscriptions.js';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -340,6 +341,7 @@ export async function notifyAlerts(alerts, {
   if (!emailIsConfigured()) return { configured: false, alertsSent: 0, deliveries: 0, skipped: alerts.length, failed: 0 };
   const eligibleAlerts = uniqueAlerts(alerts)
     .filter((alert) => alert?.isDemo === false && Number(alert.score) >= config.emailThreshold && /^https:\/\//i.test(alert.officialUrl || ''))
+    .filter((alert) => !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes))
     .filter((alert) => !requireCurrentFeed || isCurrentFeedItem(alert));
 
   let postgres = { deliveries: 0, failed: 0, duplicates: 0, sentAlertIds: new Set(), accountEmails: new Set() };

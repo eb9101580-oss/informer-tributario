@@ -3,7 +3,7 @@ import { config } from '../config.js';
 import { collectOfficialPage } from './collector.js';
 import { analyzeDocument } from './ollama.js';
 import { calculateScore, relevanceLabel } from './scoring.js';
-import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isTaxRelated, sourceDateCoverage } from './sourceAdapters.js';
+import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isExcludedTaxTopic, isTaxRelated, sourceDateCoverage } from './sourceAdapters.js';
 import { readDatabase, updateDatabase } from './store.js';
 import { sectionIdsForSource } from '../data/sections.js';
 import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
@@ -142,7 +142,7 @@ const FAST_TAXES = [
   ['ICMS', /\bicms\b/i], ['ISS', /\biss(?:qn)?\b/i], ['IPI', /\bipi\b/i], ['PIS', /\bpis\b/i],
   ['Cofins', /cofins?/i], ['IRPJ', /irpj/i], ['IRPF', /irpf/i], ['IRRF', /irrf/i], ['CSLL', /csll/i],
   ['CBS', /\bcbs\b/i], ['IBS', /\bibs\b/i], ['IPTU', /\biptu\b/i], ['IPVA', /\bipva\b/i],
-  ['ITBI', /\bitbi\b/i], ['Simples Nacional', /simples nacional/i], ['CPRB', /cprb/i], ['FUNRURAL', /funrural/i],
+  ['ITBI', /\bitbi\b/i], ['CPRB', /cprb/i], ['FUNRURAL', /funrural/i],
   ['PASEP', /pasep/i], ['CIDE', /\bcide\b/i], ['AFRMM', /afrmm/i], ['SPED', /sped/i],
 ];
 
@@ -370,6 +370,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       const database = await readDatabase();
       const prioritizedQueue = monitorData(database).candidates
         .filter((item) => item.status === 'pending' || item.status === 'fast-published' || (item.status === 'error' && item.attempts < 3))
+        .filter((item) => !isExcludedTaxTopic(item.title, item.url, unpackCandidateText(item)))
         .filter((item) => targetDate
           ? item.backfillDate === targetDate || publicationDateKey(item.publishedAt) === targetDate
           : isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays))
@@ -451,10 +452,15 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
             ? latestDatabase.alerts.find((item) => item.id === candidate.alertId) || null
             : null;
           const alert = makeAlert(analysis, document, candidate, existingAlert);
-          const publish = analysis.relevant && alert.score >= 6
+          const excludedTopic = isExcludedTaxTopic(
+            candidate.title, candidate.url, document.text, alert.title, alert.summary,
+            alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes,
+          );
+          const publish = !excludedTopic && analysis.relevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
           const discardReason = publish ? null
-            : !analysis.relevant ? 'A análise detalhada classificou o documento como não relevante.'
+            : excludedTopic ? 'Tema Simples Nacional excluído por regra editorial.'
+              : !analysis.relevant ? 'A análise detalhada classificou o documento como não relevante.'
               : alert.score < 6 ? `Nota ${alert.score} inferior ao mínimo editorial 6.`
                 : 'Data de publicação fora da janela de hoje e ontem.';
           await updateDatabase((data) => ({

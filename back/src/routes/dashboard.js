@@ -4,6 +4,7 @@ import { isCurrentFeedItem } from '../services/feedWindow.js';
 import { alertsForViewer } from '../services/alertVisibility.js';
 import { optionalAuth } from '../middleware/auth.js';
 import { loadMonitoredSources } from '../services/customSources.js';
+import { isExcludedTaxTopic } from '../services/sourceAdapters.js';
 
 export function createDashboardRouter({
   optionalAuthMiddleware = optionalAuth,
@@ -21,6 +22,7 @@ export function createDashboardRouter({
         && alert.score >= 6
         && /^https:\/\//i.test(alert.officialUrl || '')
         && Boolean(alert.provenance?.sourceId)
+        && !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes)
         && isCurrentFeedItem(alert));
       const urgent = relevant.filter((alert) => alert.score >= 8);
       const opportunities = relevant.filter((alert) => ['Oportunidade', 'Ambos'].includes(alert.impactType));

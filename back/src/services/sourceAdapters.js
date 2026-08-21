@@ -10,7 +10,7 @@ const TAX_TERMS = [
   'execucao fiscal', 'divida ativa', 'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal',
   'imposto de importacao', 'imposto de exportacao', 'tributacao na importacao', 'tributacao na exportacao', 'regime aduaneiro', 'despacho aduaneiro', 'aduaneir',
   'imunidade tributaria', 'isencao tributaria', 'isencao fiscal', 'repeticao de indebito tributario', 'indebito tributario', 'taxa tributaria', 'taxa de fiscalizacao', 'taxa selic', 'emprestimo compulsorio',
-  'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'reforma tributaria', 'simples nacional', 'lucro presumido', 'lucro real',
+  'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'reforma tributaria', 'lucro presumido', 'lucro real',
   'fato gerador', 'auto de infracao', 'processo administrativo fiscal', 'lancamento fiscal', 'contencioso fiscal',
 ];
 const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm']);
@@ -18,6 +18,11 @@ const TRIBUTARY_WORD_PATTERN = /\btribut(?:os?|ar|ad[oa]s?|acao|acoes|ari[oa]s?|
 
 export function normalizeSearchText(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+export function isExcludedTaxTopic(...values) {
+  const text = normalizeSearchText(values.flat().filter(Boolean).join(' '));
+  return /\bsimples[\s-]+nacional\b/.test(text);
 }
 
 export function isTaxRelated(...values) {
@@ -35,6 +40,7 @@ export function hasStrongTaxSignal(...values) {
 }
 
 export function isCandidateEligible(sourceId, title, url, content = '') {
+  if (isExcludedTaxTopic(title, url, content)) return false;
   if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
   if (/^trf[1-6]$/.test(sourceId)) {
     const navigationPath = /\/(?:acessibilidade|contato|institucional|magistrado|servicos?|sistemas?)(?:\/|$)/i;

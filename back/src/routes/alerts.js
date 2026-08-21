@@ -6,9 +6,12 @@ import { sectionIdsForSource } from '../data/sections.js';
 import { isCurrentFeedItem } from '../services/feedWindow.js';
 import { alertsForViewer } from '../services/alertVisibility.js';
 import { optionalAuth, requireAdmin } from '../middleware/auth.js';
+import { isExcludedTaxTopic } from '../services/sourceAdapters.js';
 
 function isOfficialRelevantAlert(alert) {
-  return alert.isDemo === false && alert.score >= 6 && /^https:\/\//i.test(alert.officialUrl || '') && Boolean(alert.provenance?.sourceId);
+  return alert.isDemo === false && alert.score >= 6 && /^https:\/\//i.test(alert.officialUrl || '')
+    && Boolean(alert.provenance?.sourceId)
+    && !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes);
 }
 
 function normalizeAlert(payload, current = {}) {
