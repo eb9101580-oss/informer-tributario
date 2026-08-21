@@ -1,9 +1,401 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T07:13:32.904Z",
+    "lastUpdatedAt": "2026-08-21T07:52:53.668Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5135785-97.2025.4.02.5101 · 34ª Vara Federal do Rio de Janeiro — Direito tributário: inar, autorizar a impetrante a não incluir os valores referentes a créditos",
+      "theme": "Créditos presumidos de ICMS na base de cálculo do IRPJ e CSLL",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "ICMS",
+        "PIS",
+        "COFINS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Despacho/Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "O despatcho judicial do TRF2 determinou a suspensão do mandado de segurança até decisão do Tema 843 do STF sobre a possibilidade de exclusão dos créditos presumidos de ICMS da base de cálculo do IRPJ e CSLL, afastando a tributação federal imposta pela Lei nº 14.789/2023. A impetrante HNK BR BEBIDAS LTDA. alega que os valores não configuram renda/lucro e violam o pacto federativo.",
+      "whatChanged": "A decisão do TRF2 suspende o mandado de segurança até decisão do Tema 843 do STF, que analisa se a tributação federal sobre créditos presumidos de ICMS viola o pacto federativo. A Lei nº 14.789/2023 alterou o tratamento tributário desses créditos, mas o STF ainda não decidiu sobre a possibilidade de exclusão da base de cálculo do IRPJ e CSLL.",
+      "practicalImpact": "Empresas beneficiárias de subvenções estaduais para investimento podem evitar a tributação federal sobre créditos presumidos de ICMS, desde que o STF decida favoravelmente o Tema 843. A decisão do TRF2 suspende a exigibilidade até a resolução do tema constitucional.",
+      "officeAction": "Suspensão do mandado de segurança até decisão do Tema 843 do STF, que analisa se a tributação federal sobre créditos presumidos de ICMS viola o pacto federativo e os arts. 150, § 6º, e 195, I, 'B' da Carta da República.",
+      "affectedProfiles": [
+        "Empresas com subvenções estaduais para investimento",
+        "Contribuintes de ICMS",
+        "Empresas com créditos presumidos de ICMS",
+        "Empresas beneficiárias de incentivos fiscais estaduais",
+        "Empresas com tributação federal sobre créditos presumidos de ICMS"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Suspensão do mandado de segurança até decisão do Tema 843 do STF",
+        "period": "Até decisão do STF no Tema 843",
+        "action": "Avaliar a possibilidade de exclusão dos créditos presumidos de ICMS da base de cálculo do IRPJ e CSLL",
+        "confidence": "médio"
+      },
+      "id": "da94d74e-ae02-41a3-b357-859e97cc8b74",
+      "score": 7.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJBuPoLhwT8BaKGZbBEe3N/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:52:53.622Z",
+      "updatedAt": "2026-08-21T07:52:53.622Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/dDzaKrk7ZJBuPoLhwT8BaKGZbBEe3N/certidao",
+        "sourceCharacters": 9514,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5012605-84.2026.4.02.0000 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: igem, o diferimento está assentado na inexistência de direito adquirido a",
+      "theme": "Reclassificação do lucro presumido como benefício fiscal na LC 224/2025",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "Lucro Presumido",
+        "Regra de transição tributária",
+        "Benefício fiscal",
+        "Coeficiente de presunção"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-21",
+      "summary": "O despocho judicial do TRF-2 determinou que a Lei Complementar nº 224/2025, que classifica o regime do lucro presumido como benefício fiscal, viola os princípios da segurança jurídica e capacidade contributiva. A decisão afirma que o lucro presumido é método de apuração da base de cálculo, não benefício fiscal, e que a reclassificação implica aumento da carga tributária sem estudo econômico.",
+      "whatChanged": "A Lei Complementar nº 224/2025 classifica o regime do lucro presumido como benefício fiscal, submetendo os coeficientes de presunção do IRPJ e CSLL a redução linear prevista na EC 109/2021. A decisão do TRF-2 afirma que essa classificação viola os princípios da segurança jurídica e capacidade contributiva, pois o lucro presumido é método de apuração da base de cálculo, não benefício fiscal.",
+      "practicalImpact": "Empresas que utilizam o regime do lucro presumido podem enfrentar aumento imediato da base de cálculo do IRPJ e CSLL, com possíveis recolhimentos tributários superiores aos devidos. A decisão exige suspensão da exigibilidade do acréscimo de 10% nos coeficientes de presunção até a análise final do processo.",
+      "officeAction": "O TRF-2 deferiu tutela de urgência para suspender a exigibilidade do acréscimo de 10% nos coeficientes de presunção do IRPJ e CSLL, até a análise final do processo.",
+      "affectedProfiles": [
+        "Empresas com regime de lucro presumido",
+        "Contribuintes do IRPJ e CSLL",
+        "Empresas com receita bruta superior a R$ 5.000.000,00",
+        "Empresas que utilizam o regime de lucro presumido para simplificação tributária",
+        "Contribuintes que optaram pelo lucro presumido"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 7,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Suspensão temporária do acréscimo de 10% nos coeficientes de presunção do IRPJ e CSLL",
+        "period": "Até a análise final do processo",
+        "action": "Requerimento de tutela antecipada para suspender a exigibilidade do acréscimo de 10% nos coeficientes de presunção do IRPJ e CSLL",
+        "confidence": "alto"
+      },
+      "id": "963f7f2c-0f35-4009-9d44-58ab92b23d9d",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBY94uGOGFjTpDEBLZzwDv82/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:45:30.339Z",
+      "updatedAt": "2026-08-21T07:45:30.339Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mMg9oWrBY94uGOGFjTpDEBLZzwDv82/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5097612-09.2022.4.02.5101 · 19ª Vara Federal do Rio de Janeiro — Direito tributário: nar, a fim de que seja reconhecido o seu direito em não sujeitar os incentiv",
+      "theme": "Incentivos fiscais de ICMS (Lei nº 6.331/2012 do RJ) não sujeitos à incidênciado",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "PIS",
+        "COFINS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "O despocho judicial reconhece o direito da Wollner Comércio e Confecções Ltda (em recuperação judicial) em não sujeitar os incentivos fiscais de ICMS concedidos pelo RJ (Lei nº 6.331/2012) à incidência do IRPJ, CSLL, PIS e COFINS, independentemente da constituição de conta de reserva de incentivo. O documento declara a ilegalidade da aplicação desses incentivos na base de cálculo tributária federal e requer restituição ou compensação do recolhido nos últimos 5 anos com Taxa SELIC.",
+      "whatChanged": "O despocho judicial determina que os incentivos fiscais de ICMS do Rio de Janeiro (Lei nº 6.331/2012) não devem ser considerados na base de cálculo do IRPJ, CSLL, PIS e COFINS, evitando que sejam tributados como faturamento. Isso inclui a possibilidade de restituição ou compensação do recolhido em até 5 anos com Taxa SELIC.",
+      "practicalImpact": "Empresas com incentivos fiscais de ICMS do RJ devem revisar suas bases de cálculo tributária federal para evitar incidência indevida do IRPJ, CSLL, PIS e COFINS. A restituição ou compensação do recolhido pode ser exigida para empresas que incluíram os incentivos na base de cálculo federal.",
+      "officeAction": "Concedido a liminar para que a autoridade impetrada não sujeite os incentivos fiscais de ICMS (Lei nº 6.331/2012 do RJ) à incidência do IRPJ, CSLL, PIS e COFINS, independentemente da constituição de conta de reserva de incentivo. Requer restituição ou compensação do recolhido nos últimos 5 anos com Taxa SELIC.",
+      "affectedProfiles": [
+        "Empresas com incentivos fiscais de ICMS do RJ",
+        "Empresas em recuperação judicial",
+        "Empresas de confecção de peças de vestuário",
+        "Empresas com base de cálculo tributária federal",
+        "Empresas com incentivos fiscais de ICMS (Lei nº 6.331/2012)"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 7,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Revisão da base de cálculo tributária federal para empresas com incentivos fiscais de ICMS do RJ",
+        "period": "Nos últimos 5 anos",
+        "action": "Revisar bases de cálculo do IRPJ, CSLL, PIS e COFINS para evitar incidência indevida dos incentivos fiscais de ICMS do RJ (Lei nº 6.331/2012)",
+        "confidence": "alto"
+      },
+      "id": "fb281dbf-2aad-4a48-9e3f-351170fc6f0c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGuOp4T3Tgy2oBYmDByKE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:38:20.895Z",
+      "updatedAt": "2026-08-21T07:38:20.895Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGuOp4T3Tgy2oBYmDByKE/certidao",
+        "sourceCharacters": 5257,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5092099-21.2026.4.02.5101 · 24ª Vara Federal do Rio de Janeiro — Direito tributário: RIO DE JANEIRO I – DRF/RJ1",
+      "theme": "Inexistência de relação jurídico-tributária para incluir descontos e bonificaçõ",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "PIS/Pasep",
+        "Cofins",
+        "Descontos em aquisições",
+        "Bonificações em mercadorias",
+        "ICMS",
+        "IRPJ"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-21",
+      "summary": "O despatcho judicial declara a inexistência de relação jurídico-tributária que obrigue a incluir descontos e bonificações em mercadorias nas bases de cálculo do PIS/Pasep e Cofins, quando vinculados a aquisições para revenda e caracterizados como ajustes do preço ou redutores do custo. A parte impetrante pede suspensão da exigibilidade tributária sobre esses valores, mas o despatcho indefere o pedido de liminar devido à ausência de periculum in mora e não haver comprovação de risco à continuidade da atividade econômica.",
+      "whatChanged": "O despatcho judicial declara que descontos e bonificações em mercadorias não devem ser incluídos nas bases de cálculo do PIS/Pasep e Cofins quando vinculados a aquisições para revenda e caracterizados como ajustes do preço ou redutores do custo de aquisição, desde que não correspondam à remuneração por negócio jurídico autônomo.",
+      "practicalImpact": "Empresas que exercem comércio varejista de mercadorias e utilizam descontos e bonificações em aquisições para revenda devem revisar suas bases de cálculo tributária para evitar incidência indevida do PIS/Pasep e Cofins. A não comprovação de risco à continuidade econômica pode levar à indeferimento do pedido de liminar.",
+      "officeAction": "O despatcho indefere o pedido de liminar para suspensão da exigibilidade do PIS/Pasep e Cofins sobre descontos e bonificações em mercadorias vinculadas a aquisições para revenda, destacando a ausência de periculum in mora e não haver comprovação de risco à atividade econômica.",
+      "affectedProfiles": [
+        "Empresas varejistas de alimentos",
+        "Empresas com regime não cumulativo de apuração do PIS/Pasep e Cofins",
+        "Contribuintes do ICMS",
+        "Empresas com atividade de transporte dutoviário",
+        "Empresas com base de cálculo tributária"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Revisão de bases de cálculo tributária para evitar incidência indevida do PIS/Pasep e Cofins",
+        "period": "2024-2026",
+        "action": "Revisar bases de cálculo tributária para descontos e bonificações em mercadorias vinculadas a aquisições para revenda",
+        "confidence": "médio"
+      },
+      "id": "de8235ad-5689-4ed7-83fa-618baeb3f8c9",
+      "score": 7,
+      "relevance": "Relevante",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZjGu32EfgTWJ1ovYwL5MW2/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:32:33.276Z",
+      "updatedAt": "2026-08-21T07:32:33.276Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDZjGu32EfgTWJ1ovYwL5MW2/certidao",
+        "sourceCharacters": 9741,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 5092839-76.2026.4.02.5101 · 24ª Vara Federal do Rio de Janeiro — Direito tributário: a forma como são fornecidos ou da sua nomenclatura, na base de cálculo da P",
+      "theme": "Base de cálculo do PIS e COFINS para descontos e bonificações em aquisições para",
+      "agency": "Tribunal Regional Federal da 2ª Região",
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "Descontos",
+        "Bonificações",
+        "Contribuição ao PIS",
+        "Contribuição à COFINS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-21",
+      "summary": "O despoço judicial determina que não há fundamento relevante para conceder liminar na exclusão de descontos e bonificações da base de cálculo do PIS e COFINS, pois a parte impetrante não comprovou periculum in mora. A decisão afirma que a exigência tributária não representa risco concreto à continuidade da atividade econômica da empresa, exigindo comprovação de balanço financeiro e outros documentos para demonstrar risco à operação.",
+      "whatChanged": "A decisão do TRF2 nega provimento ao agravo de instrumento, rejeitando o pedido de liminar para exclusão de descontos e bonificações da base de cálculo do PIS e COFINS. A parte impetrante não apresentou comprovação de periculum in mora, ou seja, não demonstrou que a exigência tributária traz risco à continuidade da atividade econômica.",
+      "practicalImpact": "Empresas que utilizam descontos e bonificações em aquisições para revenda devem garantir comprovação de risco concreto à atividade econômica (balanço financeiro, demonstrações contábeis) para justificar a exclusão de descontos e bonificações da base de cálculo do PIS e COFINS. Caso contrário, a exigência tributária permanecerá válida.",
+      "officeAction": "A parte impetrante deve apresentar comprovação de periculum in mora, incluindo balanço financeiro e outros documentos, para justificar a exclusão de descontos e bonificações da base de cálculo do PIS e COFINS. Caso não apresente, a exigência tributária permanecerá válida.",
+      "affectedProfiles": [
+        "Empresas comércio varejista de doces, balas, bombons",
+        "Empresas comércio varejista de artigos de louça",
+        "Empresas comércio varejista de recipientes de vidro",
+        "Empresas comércio varejista de artigos de papelaria",
+        "Empresas comércio varejista de artigos para uso doméstico"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Exclusão de descontos e bonificações da base de cálculo do PIS e COFINS",
+        "period": "2025-08-19 a 2026-08-20",
+        "action": "Apresentar comprovação de periculum in mora (balanço financeiro, demonstrações contábeis) para justificar a exclusão de descontos e bonificações da base de cálculo do PIS e COFINS",
+        "confidence": "médio"
+      },
+      "id": "5b0a7ecf-ec0d-424d-9a11-16b8cb2cd216",
+      "score": 6.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/lx8NKdwzZKMuMyQCPTKe7wLRbD1mrE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T07:25:00.819Z",
+      "updatedAt": "2026-08-21T07:25:00.819Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/lx8NKdwzZKMuMyQCPTKe7wLRbD1mrE/certidao",
+        "sourceCharacters": 10185,
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "discoveredAt": "2026-08-21T06:25:47.331Z",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença · 1017459-84.2024.4.01.3300 · 21ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: das parcelas vencidas entre a data do diagnóstico da doença e o…",
@@ -51014,8 +51406,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "d5fdb67b66ebe62bc534bbe1",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51028,7 +51420,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T07:25:00.869Z",
+        "analyzedPublishedAt": "2025-08-19T00:00:00Z",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "alertId": "5b0a7ecf-ec0d-424d-9a11-16b8cb2cd216",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5092099-21.2026.4.02.5101 · 24ª Vara Federal do Rio de Janeiro — Direito tributário: RIO DE JANEIRO I – DRF/RJ1 , em que pede: 1) declarar a inexistência de relação jurídico-tributária que obrigue a Impetrante a incluir nas bases de cálculo do PIS/Pasep e da Cofins os valores correspondentes a (i) descontos obtidos na aquisição de mercadorias; e (ii) bonificaçõ",
@@ -51048,8 +51448,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "bfc03da412646a528febf5f0",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51062,7 +51462,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T07:32:33.325Z",
+        "analyzedPublishedAt": "2024-08-19T00:00:00",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "alertId": "de8235ad-5689-4ed7-83fa-618baeb3f8c9",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5097612-09.2022.4.02.5101 · 19ª Vara Federal do Rio de Janeiro — Direito tributário: nar, a fim de que seja reconhecido o seu direito em não sujeitar os incentivos fiscais de ICMS (benefício do art. 2º da Lei nº 6.331/2012 do Rio de Janeiro) à incidência do IRPJ, da CSLL, do PIS e da COFINS, independentemente da constituição de conta de reserva de incentivo",
@@ -51082,8 +51490,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "5bb11f7831578ea9fec95b48",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51096,7 +51504,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T07:38:20.945Z",
+        "analyzedPublishedAt": "2023-10-18T00:00:00",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "alertId": "fb281dbf-2aad-4a48-9e3f-351170fc6f0c",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5012605-84.2026.4.02.0000 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: igem, o diferimento está assentado na inexistência de direito adquirido a regime jurídico tributário e na suposta ausência de violação à segurança jurídica, uma vez que a Lei Complementar n. 224/2025 prevê norma de transição. Consignou-se, ainda, que a vedação ao confisco e a in",
@@ -51116,8 +51532,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "a96bb06d4226a2da72d98611",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51130,7 +51546,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T07:45:30.392Z",
+        "analyzedPublishedAt": "2026-06-09T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "alertId": "963f7f2c-0f35-4009-9d44-58ab92b23d9d",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5135785-97.2025.4.02.5101 · 34ª Vara Federal do Rio de Janeiro — Direito tributário: inar, autorizar a impetrante a não incluir os valores referentes a créditos presumidos de ICMS nas bases de cálculo do IRPJ e da CSLL, afastando-se a tributação imposta pela Lei nº 14.789/2023, com a consequente suspensão da exigibilidade. Alega a impetrante, em síntese, qu",
@@ -51150,8 +51574,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "55b3e9cb0f255adaff431206",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -51164,7 +51588,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T07:52:53.668Z",
+        "analyzedPublishedAt": "2024-11-12T12:47:53",
+        "relevant": true,
+        "score": 7.7,
+        "discardReason": null,
+        "alertId": "da94d74e-ae02-41a3-b357-859e97cc8b74",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5084570-48.2026.4.02.5101 · 27ª Vara Federal do Rio de Janeiro — Direito tributário: i) Determinar a autoridade coatora se abstenha de exigir a inclusão em base de cálculo do IRPJ, CSLL, pela Impetrante, os valores oriundos de benefícios fiscais de ICMS3 , pelas devidas fundamentações expostas; a.ii) determinar a autoridade coatora se abstenha exigir a incl",
@@ -87940,6 +88372,19 @@
     ],
     "runs": [
       {
+        "id": "272ca4d4-7c4e-4105-8065-e06032178869",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T07:16:37.292Z",
+        "finishedAt": "2026-08-21T07:52:53.734Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 5,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "1710b089-b6fd-459e-a75b-2a2f61c59edb",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -113208,275 +113653,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "3f437f40-f5a1-427e-8f03-6be0bf764beb",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T05:00:40.132Z",
-        "finishedAt": "2026-08-20T05:27:26.467Z",
-        "discovered": 0,
-        "analyzed": 3,
-        "published": 3,
-        "discarded": 0,
-        "errors": 27,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 10,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T07:14:59.774Z",
-    "nextRunAt": "2026-08-21T13:14:59.774Z"
+    "lastRunAt": "2026-08-21T07:52:53.734Z",
+    "nextRunAt": "2026-08-21T13:52:53.734Z"
   }
 }
