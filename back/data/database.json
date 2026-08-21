@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T23:20:50.264Z",
+    "lastUpdatedAt": "2026-08-20T23:59:59.034Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -34846,43 +34846,54 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1007155-10.2025.4.01.3100 · 3ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: ião Federal (Fazenda Nacional), na qual pretende o…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1007155-10.2025.4.01.3100 · 3ª Vara Federal de Juizado Especial Cível da SJAP — Direito tributário: reconhecimento do direito à isenção do Imposto de Renda da Pou",
+      "theme": "Isenção do Imposto de Renda da Pessoa Física para portadores de hepatopatiagrave",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda da Pessoa Fís"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Amapá 3ª Vara Federal de Juizado Especial Cível da SJAP SENTENÇA TIPO \"A\" PROCESSO: 1007155-10.2025.4.01.3100 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: NORNY JULLY NUNES DA SILVA REPRESENTANTES POLO ATIVO: ARMINDO DOS SANTOS LOBATO NETO - AP1085 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Trata-se de demanda ajuizada por Norny…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece o direito à isenção do Imposto de Renda da Pessoa Física para Norny Jully Nunes da Silva, portadora de hepatopatia grave, com base no art. 6º, XIV, da Lei nº 7.713/1988. A isenção se aplica aos valores recebidos a título de pensão por morte desde 12/04/2005, data de início da pensão federal. A sentença determina a restituição de IRPF indevidamente retido no período não prescrito e a isenção da retenção futura sobre a pensão federal.",
+      "whatChanged": "A sentença confirma a isenção do Imposto de Renda da Pessoa Física para portadores de hepatopatia grave, com início da isenção a partir da data de início da pensão por morte (12/04/2005). A restituição de IRPF indevidamente retido é determinada para o período não prescrito, com atualização pela SELIC.",
+      "practicalImpact": "Clientes com hepatopatia grave e pensão por morte federal podem obter isenção do IRPF desde a data de início da pensão. A União deve restituir os valores indevidamente retidos no período não prescrito, com atualização pela SELIC.",
+      "officeAction": "A União deve observar a isenção reconhecida, abstendo-se de retenção de IRPF sobre a pensão federal. A restituição de IRPF indevidamente retido é determinada para o período não prescrito, com atualização pela SELIC.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Pensão por morte federal",
+        "Portadores de hepatopatia grave",
+        "Pessoas com rendimentos tributáveis",
+        "Clientes com demanda por isenção tributária",
+        "Pensão por morte estadual"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento da isenção do Imposto de Renda para portadores de hepatopatia grave",
+        "period": "Período não prescrito (desde 12/04/2005)",
+        "action": "Restituição de IRPF indevidamente retido com atualização pela SELIC",
+        "confidence": "alto"
+      },
       "id": "00b3ba73-d37c-4986-b335-ae1de0b2b10e",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUvPkh4Tny43GZrvMJbg/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.191Z",
-      "updatedAt": "2026-08-20T15:00:30.191Z",
+      "updatedAt": "2026-08-20T23:30:54.611Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqYvaUvPkh4Tny43GZrvMJbg/certidao",
         "sourceCharacters": 9248,
         "sourceId": "trf1",
@@ -34908,43 +34919,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1003972-22.2025.4.01.3200 · 8ª Vara Federal de Juizado Especial Cível da SJAM — Direito tributário: DA NACIONAL), na qual requer seja reconhecido o direito à…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1003972-22.2025.4.01.3200 · 8ª Vara Federal de Juizado Especial Cível da SJAM — Direito tributário: DA NACIONAL",
+      "theme": "Isenção do Imposto de Renda Pessoa Física sobre proventos de aposentadoria para",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "IRRF (Imposto de Renda Retido)",
+        "Previdência Social"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Amazonas 8ª Vara Federal de Juizado Especial Cível da SJAM SENTENÇA TIPO \"A\" PROCESSO: 1003972-22.2025.4.01.3200 CLASSE: PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) POLO ATIVO: LINDINALVA FERREIRA SILVA REPRESENTANTES POLO ATIVO: GEMERSON JUNIOR DA SILVA - PR43976 POLO PASSIVO: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Trata-se de ação movida pela parte autora…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece o direito à isenção do IRPF sobre proventos de aposentadoria para pessoas com idade superior a 65 anos, com base no art. 6º, caput, inciso XV, alínea \"i\", da Lei nº 7.713/88. A Justiça Federal declara incompetência absoluta e ilegitimidade passiva da União para restituição de impostos retidos pelo Amazonprev, com base no art. 157, I, da Constituição Federal e Súmula 447 do STJ.",
+      "whatChanged": "A sentença confirma que não há retenção de IRPF sobre proventos do INSS para contribuintes com idade superior a 65 anos, conforme a legislação tributária federal e estadual. A União não é legitimada para ações de restituição de impostos retidos por entidades estaduais de previdência.",
+      "practicalImpact": "Contribuintes com idade superior a 65 anos que recebem proventos de aposentadoria pelo INSS estão isentos de tributação, sem necessidade de restituição de impostos. A União não pode exigir restituição de IRPF sobre proventos estaduais de previdência.",
+      "officeAction": "A sentença declara incompetência absoluta da Justiça Federal e ilegitimidade passiva da União para restituição de impostos retidos pelo Amazonprev, com base no art. 157, I, da Constituição Federal e Súmula 447 do STJ.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com idade superior a 65 anos",
+        "Pessoas com proventos de aposentadoria pelo INSS",
+        "Beneficiários do Amazonprev",
+        "Contribuintes com isenção de IRPF",
+        "Pessoas com rendimentos de previdência estadual"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
         "financialImpact": 6,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 9,
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Isenção do IRPF para contribuintes com idade superior a 65 anos",
+        "period": "2025-01-01",
+        "action": "Contribuintes com idade superior a 65 anos devem verificar se há isenção de IRPF sobre proventos de aposentadoria pelo INSS e evitar restituições indevidas da União",
+        "confidence": "alto"
+      },
       "id": "d5f5bd5d-81d8-4d9b-8d0b-cf9939a19cc4",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.2,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmEYnBUjlySlTlPJ74YqrnD41/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.191Z",
-      "updatedAt": "2026-08-20T15:00:30.191Z",
+      "updatedAt": "2026-08-20T23:36:25.700Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmEYnBUjlySlTlPJ74YqrnD41/certidao",
         "sourceCharacters": 5164,
         "sourceId": "trf1",
@@ -34970,43 +34994,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1031745-78.2026.4.01.3500 · 15ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a de incapacidade total e definitiva para o trabalho, sem…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1031745-78.2026.4.01.3500 · 15ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a de incapacidade total e definitiva para o trabalho, sempers",
+      "theme": "Incapacidade total e definitiva para o trabalho sem perspectiva de reabilitação",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Auxílio-doença",
+        "Aposentadoria por invalidez",
+        "Carência previdenciária",
+        "Contribuições mensais",
+        "Período de graça",
+        "Reabilitação profissional"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Estado de Goiás 15ª VARA – JUIZADO ESPECIAL FEDERAL 1031745-78.2026.4.01.3500 PROCEDIMENTO DO JUIZADO ESPECIAL CÍVEL (436) AUTOR: DIVINA ANDREIA VAZ REU: INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS TIPO A SENTENÇA Trata-se de pedido de restabelecimento de benefício por incapacidade, a partir da data de cessação (06/03/2026), cumulado com pedido de concessão de…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece a incompetência da Justiça Federal para processar auxílio-acidente, pois decorre de acidente de trabalho. Estabelece que a aposentadoria por invalidez é devida à pessoa com incapacidade total e definitiva sem perspectiva de reabilitação. O auxílio-doença é devido para incapacidade provisória por mais de 15 dias. Carência de 12 contribuições mensais, com exceções específicas. Muitas teses e temas da TNU sobre prazos, qualidade de segurado e reabilitação profissional.",
+      "whatChanged": "A sentença confirma que a incapacidade total e definitiva sem perspectiva de reabilitação configura a aposentadoria por invalidez, enquanto a incapacidade provisória por mais de 15 dias justifica auxílio-doença. Estabelece que a qualidade de segurado deve ser analisada na data do início da incapacidade (DII), não na DER. A carência é de 12 contribuições mensais, com exceções específicas para casos de recolhimento inferior ao mínimo mensal ou períodos de graça.",
+      "practicalImpact": "Empresas devem garantir a qualidade de segurado ao analisar a data do início da incapacidade (DII) para evitar perda de benefícios. Segurados devem manter a qualidade de segurado durante o período de incapacidade para não perder benefícios previdenciários. A reabilitação profissional é obrigatória para manter o benefício por incapacidade, com possibilidade de reativação se o segurado participar do processo.",
+      "officeAction": "Revisar a qualidade de segurado com base na data do início da incapacidade (DII) e não na DER. Garantir que o período de carência seja cumprido (12 contribuições mensais) para manter benefícios previdenciários. Estabelecer prazos claros para reabilitação profissional e evitar suspensão do benefício por incapacidade.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Segurados com incapacidade laboral",
+        "Empresas com segurados em processo de reabilitação",
+        "Instituições de segurado obrigatório",
+        "Pessoas com incapacidade total e definitiva sem perspectiva de reabilitação",
+        "Beneficiários de auxílio-doença"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da qualidade de segurado com base na data do início da incapacidade (DII)",
+        "period": "2024-10-16 a 2025-12-31",
+        "action": "Garantir que o período de carência seja cumprido (12 contribuições mensais) para manter benefícios previdenciários. Estabelecer prazos claros para reabilitação profissional e evitar suspensão do benefício por incapacidade.",
+        "confidence": "alto"
+      },
       "id": "61b15de0-50d9-44d2-a274-5e895bf271ac",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgLUJnS5TGKOzWYmrz2A1x/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.192Z",
-      "updatedAt": "2026-08-20T15:00:30.192Z",
+      "updatedAt": "2026-08-20T23:45:32.135Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvZgLUJnS5TGKOzWYmrz2A1x/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -35032,43 +35072,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1027980-68.2022.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: síntese, que consiste em sociedade empresária constituída para atuar na…",
-      "theme": "Direito tributário",
+      "title": "Sentença Tipo A · 1027980-68.2022.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: síntese, que consiste em sociedade empresária constituída para atuar na fabricação",
+      "theme": "Imposto de Importação e penalidades fiscais por equipamentos industriais",
       "agency": "Tribunal Regional Federal da 1ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Importação",
+        "Multas aduaneiras",
+        "Penalidades fiscais",
+        "Regulamento Aduaneiro",
+        "Lei nº 10.833/2003",
+        "Medida Provisória nº 2.158-35/"
+      ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Amazonas 9ª Vara Federal PROCESSO: 1027980-68.2022.4.01.3200 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) AUTOR: GASONIA CILINDROS LTDA REU: UNIAO FEDERAL (FAZENDA NACIONAL) SENTENÇA Cuida-se de ação de procedimento comum cível, originariamente proposta como tutela provisória de urgência cautelar em caráter antecedente e posteriormente aditada, ajuizada por GASÔNIA…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença anula as penalidades fiscais aplicadas à importação de maquinários hidráulicos por GASÔNIA CILINDROS LTDA, reconhecendo o estado de novos dos equipamentos com base em documentos técnicos e declarações do fabricante estrangeiro. A decisão afasta a multa de R$ 126.514,38 por suposta ausência de licenciamento para bens usados e a multa de R$ 16.363,89 por informação inexata, destacando que as imperfeições superficiais não configuram uso pretérito.",
+      "whatChanged": "A sentença reconhece que os equipamentos importados por GASÔNIA CILINDROS LTDA estão em estado novo, com base em documentos técnicos e declaração do fabricante estrangeiro, invalidando as penalidades fiscais aplicadas pela Fazenda Nacional por suposta classificação como usados.",
+      "practicalImpact": "Empresas que importam equipamentos industriais com documentação técnica adequada podem evitar penalidades fiscais por classificação incorreta de bens usados, especialmente quando há imperfeições superficiais decorrentes do processo fabril e transporte logístico.",
+      "officeAction": "Empresas devem revisar a classificação de equipamentos importados com base em documentos técnicos e declarações do fabricante, garantindo que imperfeições superficiais não sejam interpretadas como uso pretérito.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas fabricantes de botijas de GLP",
+        "Importadores de maquinários industriais",
+        "Empresas com projetos industriais aprovados pela SUFRAMA",
+        "Empresas beneficiárias de incentivos fiscais estaduais",
+        "Empresas com projetos de implantação em Polo Industrial de Manaus"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 6,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da classificação de equipamentos importados para evitar penalidades fiscais",
+        "period": "2024-03-15 a 2025-03-15",
+        "action": "Verificar a classificação de equipamentos importados com base em documentos técnicos e declarações do fabricante, garantindo que imperfeições superficiais não sejam interpretadas como uso pretérito",
+        "confidence": "alto"
+      },
       "id": "1bb56272-6585-4919-b080-51363e326684",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr86eJUy8au3TBXAVKZABQLjK/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.192Z",
-      "updatedAt": "2026-08-20T15:00:30.192Z",
+      "updatedAt": "2026-08-20T23:52:32.195Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr86eJUy8au3TBXAVKZABQLjK/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -35094,46 +35150,56 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo C · 1022078-95.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: vando, em síntese, o reconhecimento do direito à aplicação de base de cálculo…",
-      "theme": "Direito tributário · IRPJ, CSLL",
+      "title": "Sentença Tipo C · 1022078-95.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: vando, em síntese, o reconhecimento do direito à aplicação de base de cálculo redu",
+      "theme": "Base de cálculo reduzida do IRPJ e CSLL para serviços médicos hospitalares e de",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "PGFN/SISPAR"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo C)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo c) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária do Amazonas 9ª Vara Federal PROCESSO: 1022078-95.2026.4.01.3200 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) IMPETRANTE: AMAM - ATIVIDADES MEDICAS DO AMAZONAS S/S LIMITADA IMPETRADO: UNIAO FEDERAL (FAZENDA NACIONAL), DELEGADO DA RECEITA FEDERAL EM MANAUS/AM SENTENÇA Trata-se de mandado de segurança, impetrado por AMAM – Atividades Médicas do Amazonas S/S Limitada em…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença reconhece o direito da AMAM (Atividades Médicas do Amazonas S/S Limitada) à aplicação de base de cálculo reduzida do IRPJ (8%) e CSLL (12%) para serviços médicos prestados em unidades hospitalares e imagemologia, excluindo simples consultas médicas. A impetrante alega que suas atividades se enquadram nas exceções do art. 15, §1º, III, 'a', e art. 20 da Lei nº 9.249/1995, com base no Tema nº 217 do STJ e Parecer SEI nº 7689/2021/ME. A decisão confirma a suspensão da exigibilidade do tributo e o cancelamento das parcelas vincendas do parcelamento PGFN/SISPAR nº 014316451.",
+      "whatChanged": "A sentença estabelece que serviços médicos hospitalares e de imagemologia (radiologia, ultrassonografia, raio-X, tomografia) estão sob base de cálculo reduzida do IRPJ (8%) e CSLL (12%), excluindo simples consultas médicas. O Parecer SEI nº 7689/2021/ME define que a redução aplica-se apenas à parcela da receita proveniente da atividade específica, não alcançando consultas médicas simples.",
+      "practicalImpact": "Empresas prestadoras de serviços médicos hospitalares e de imagemologia podem aplicar base de cálculo reduzida do IRPJ (8%) e CSLL (12%) desde que comprovem atividades específicas, não simples consultas médicas, e estejam organizadas sob forma de sociedade empresária com conformidade sanitária (ANVISA).",
+      "officeAction": "A impetrante deve comprovar que suas atividades se enquadram no conceito de serviços hospitalares, conforme orientação do STJ e Parecer SEI nº 7689/2021/ME, para evitar a recolhimento indevido de tributos com base na base presumida de 32%.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de imagemologia e serviços médicos hospitalares",
+        "Contribuintes com atividades em saúde",
+        "Empresas com atividades de radiologia e ultrassonografia",
+        "Empresas com receitas de serviços hospitalares",
+        "Empresas com conformidade sanitária ANVISA"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Reconhecimento do direito à base de cálculo reduzida do IRPJ e CSLL para serviços médicos hospitalares",
+        "period": "2026-01-01 a 2027-12-31",
+        "action": "Comprovação de atividades específicas em serviços hospitalares e imagemologia, conformidade com ANVISA e aplicação da base reduzida do IRPJ (8%) e CSLL (12%)",
+        "confidence": "alto"
+      },
       "id": "04cd1c0e-e62f-493f-ba7a-9ef276da783f",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KAPnkeQmRdLUz1LtlTj8evORd5o94b/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.193Z",
-      "updatedAt": "2026-08-20T15:00:30.193Z",
+      "updatedAt": "2026-08-20T23:59:58.992Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KAPnkeQmRdLUz1LtlTj8evORd5o94b/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf1",
@@ -53293,8 +53359,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "89f96369f0275478a7fb18fc",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53310,7 +53376,14 @@
         },
         "alertId": "00b3ba73-d37c-4986-b335-ae1de0b2b10e",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:30:54.656Z",
+        "analyzedPublishedAt": "2025-04-12T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1003972-22.2025.4.01.3200 · 8ª Vara Federal de Juizado Especial Cível da SJAM — Direito tributário: DA NACIONAL), na qual requer seja reconhecido o direito à isenção da parcela adicional do Imposto de Renda Pessoa Física sobre os proventos de aposentadoria, por ter idade superior a 65 anos, bem como a repetição do indébito. Dispensado o relatório, conforme o art. 38 da Lei n",
@@ -53329,8 +53402,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "b6adf23035b61d874ad9006f",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53346,7 +53419,14 @@
         },
         "alertId": "d5f5bd5d-81d8-4d9b-8d0b-cf9939a19cc4",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:36:25.745Z",
+        "analyzedPublishedAt": "2025-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 7.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1031745-78.2026.4.01.3500 · 15ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a de incapacidade total e definitiva para o trabalho, sem perspectiva de reabilitação profissional. O auxílio-doença, por sua vez, é devido à pessoa que, sem perder a condição de segurada, fique incapacitada em caráter provisório para exercer seu labor habitual por mais de",
@@ -53365,8 +53445,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "70f18628c33c66d24f5e4814",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53382,7 +53462,14 @@
         },
         "alertId": "61b15de0-50d9-44d2-a274-5e895bf271ac",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:45:32.188Z",
+        "analyzedPublishedAt": "2024-10-16T00:00:00",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1027980-68.2022.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: síntese, que consiste em sociedade empresária constituída para atuar na fabricação de recipientes transportáveis de aço para acondicionamento de gás liquefeito de petróleo (botijas de GLP), integrando projeto industrial de implantação regularmente aprovado pela Superinten",
@@ -53401,8 +53488,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "abb813a8b89fb5ffcf1e92b1",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53418,7 +53505,14 @@
         },
         "alertId": "1bb56272-6585-4919-b080-51363e326684",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:52:32.240Z",
+        "analyzedPublishedAt": "2024-03-15T00:00:00",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo C · 1022078-95.2026.4.01.3200 · 9ª Vara Federal Cível da SJAM — Direito tributário: vando, em síntese, o reconhecimento do direito à aplicação de base de cálculo reduzida do IRPJ e da CSLL relativamente aos serviços médicos prestados em favor de unidades hospitalares e aos serviços de imagenologia, bem como providências relacionadas ao parcelamento PGFN/SI",
@@ -53437,8 +53531,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "956cb8345c54ee067f191873",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53454,7 +53548,14 @@
         },
         "alertId": "04cd1c0e-e62f-493f-ba7a-9ef276da783f",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-20T23:59:59.034Z",
+        "analyzedPublishedAt": "2026-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1008501-41.2026.4.01.3300 · 21ª Vara Federal de Juizado Especial Cível da SJBA — Direito tributário: etiva a parte autora, em sede de tutela provisória e no mérito, a concessão da isenção de imposto de renda prevista no art. 6º, XIV, da Lei nº 7.713/88, benefício assegurado aos aposentados portadores de moléstias graves expressamente elencadas no referido dispositivo legal, b",
@@ -76568,6 +76669,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "83dd1ac8-ccc5-4207-b497-aa2d3b4a8e3b",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-20T23:23:35.928Z",
+        "finishedAt": "2026-08-20T23:59:59.069Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
       {
         "id": "f6c8cd45-1923-4444-86c4-60cb29c8ebb5",
         "trigger": "github-actions-history",
@@ -102997,275 +103111,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "6ed2bbfd-3441-4ed9-8f77-15f855bf5cff",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-19T21:12:01.676Z",
-        "finishedAt": "2026-08-19T21:13:24.210Z",
-        "discovered": 26,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 53,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T23:20:50.302Z",
-    "nextRunAt": "2026-08-21T05:20:50.302Z"
+    "lastRunAt": "2026-08-20T23:59:59.069Z",
+    "nextRunAt": "2026-08-21T05:59:59.069Z"
   }
 }
