@@ -1,9 +1,86 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T09:48:53.857Z",
+    "lastUpdatedAt": "2026-08-21T10:14:33.618Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 98257, de 10/08/2026: Classificação de Mercadorias NCM 7210.70.10",
+      "theme": "Classificação de Mercadorias",
+      "agency": "Receita Federal — Soluções COSIT",
+      "taxes": [
+        "ICMS",
+        "IPI",
+        "ISS",
+        "PIS",
+        "COFINS",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "Solução de Consulta Cosit nº 98257, de 10/08/2026, classifica mercadoria laminada de aço não ligado revestida com liga alumínio-zinco-silício, pintada e envernizada com verniz acrílico, como NCM 7210.70.10. A classificação é baseada em RGI 1 (Nota 1 k) do Capítulo 72, RGI 6 e RGC 1 da NCM constante da TEC, Res. Gecex nº 272/2021 e Dec. nº 11.158/2022.",
+      "whatChanged": "A classificação da mercadoria laminada de aço não ligado revestida com liga alumínio-zinco-silício, pintada e envernizada com verniz acrílico, passa a ser NCM 7210.70.10, conforme Solução de Consulta Cosit nº 98257, de 10/08/2026.",
+      "practicalImpact": "Empresas que produzem ou comercializam laminados de aço não ligado revestidos com liga alumínio-zinco-silício, pintados e envernizados com verniz acrílico devem classificar seus produtos como NCM 7210.70.10 para corrigir possíveis erros na classificação tributária e evitar multas por classificação incorreta.",
+      "officeAction": "A Receita Federal publicou a Solução de Consulta Cosit nº 98257 no DOU de 21/08/2026, com vigência a partir de 21/08/2026, para orientar a classificação tributária da mercadoria descrita.",
+      "affectedProfiles": [
+        "Empresas de metalurgia e fabricação de aço",
+        "Comércio de materiais de construção",
+        "Indústria de pinturas e revestimentos",
+        "Empresas que utilizam laminados de aço não ligado",
+        "Empresas que comercializam produtos revestidos com liga alumínio-zinco-silício"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Classificação correta de mercadorias NCM 7210.70.10 para evitar multas tributárias",
+        "period": "2026-08-21 a 2026-12-31",
+        "action": "Revisar a classificação tributária de mercadorias laminadas de aço não ligado revestidas com liga alumínio-zinco-silício, pintadas e envernizadas com verniz acrílico para NCM 7210.70.10",
+        "confidence": "alto"
+      },
+      "id": "2b3c1764-b588-447e-b552-40c75864b0c1",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153014",
+      "isDemo": false,
+      "createdAt": "2026-08-21T10:05:53.607Z",
+      "updatedAt": "2026-08-21T10:05:53.607Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153014/visao/original",
+        "sourceCharacters": 4093,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-21T07:54:15.331Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1602557 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Execução fiscal. Extinção. Falta de interesse de agir. Esgotamento de…",
@@ -68,46 +145,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5009911-14.2025.4.02.5001 · 1ª Vara Federal Cível de Vitória — Direito tributário: o da obrigação de fazer relativa à observância do direito à redução da base…",
-      "theme": "Direito tributário · IRPJ, CSLL",
+      "title": "DESPACHO/DECISÃO · 5009911-14.2025.4.02.5001 · 1ª Vara Federal Cível de Vitória — Direito tributário: o da obrigação de fazer relativa à observância do direito à redução da base de",
+      "theme": "Redução da base de cálculo do IRPJ e CSLL para serviços hospitalares",
       "agency": "Tribunal Regional Federal da 2ª Região",
       "taxes": [
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "Receita Federal",
+        "ANVISA",
+        "Lei 9.249/1995",
+        "Súmulas STJ"
       ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho/Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. CUMPRIMENTO DE SENTENÇA Nº 5009911-14.2025.4.02.5001/ES EXEQUENTE : COGNITIVA LTDA ADVOGADO(A) : RAFAELA DOZZA POSSER (OAB RS123588) ADVOGADO(A) : JARBAS PAULA DE SOUZA JUNIOR (OAB RS061112) DESPACHO/DECISÃO Trata-se de CUMPRIMENTO DE SENTENÇA promovido por COGNITIVA LTDA em face de UNIÃO - FAZENDA NACIONAL, tendo como objeto o título executivo acostado no ev.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A decisão reconhece o direito da Cognitiva Ltda. a utilização de alíquotas reduzidas de 8% para IRPJ e 12% para CSLL em receitas de serviços hospitalares (fonoaudiologia, terapia ocupacional), mas não aplica a redução à fisioterapia devido à falta de comprovação. A União deve adotar medidas para implementar a redução fiscal conforme a decisão judicial.",
+      "whatChanged": "A decisão judicial confirma a aplicabilidade das alíquotas reduzidas de IRPJ (8%) e CSLL (12%) para serviços de fonoaudiologia e terapia ocupacional, mas não para fisioterapia, devido à ausência de comprovação da efetiva prestação dos serviços. A compensação tributária deve ser realizada na via administrativa após o trânsito em julgado.",
+      "practicalImpact": "Empresas que prestam serviços de fonoaudiologia e terapia ocupacional podem utilizar alíquotas reduzidas para tributos, mas devem comprovar regularidade na ANVISA. A União deve adotar medidas para implementar a redução fiscal conforme a decisão judicial, evitando ações de repetição de indébito.",
+      "officeAction": "Intimação da União para adotar medidas necessárias à implementação da redução fiscal em 30 dias, conforme CPC art. 218, §1º.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de fonoaudiologia",
+        "Empresas de terapia ocupacional",
+        "Empresas de serviços hospitalares",
+        "Receita Federal",
+        "ANVISA"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para empresas de serviços hospitalares: aplicação de alíquotas reduzidas de IRPJ e CSLL",
+        "period": "Após trânsito em julgado do processo",
+        "action": "Comprovação de regularidade na ANVISA e implementação da redução fiscal na via administrativa",
+        "confidence": "alto"
+      },
       "id": "76a9865d-904d-4c50-a2f2-7b931ec49d64",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGudKQC3Tgy2oBYmDByKE/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T09:48:53.851Z",
-      "updatedAt": "2026-08-21T09:48:53.851Z",
+      "updatedAt": "2026-08-21T10:00:57.287Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPGudKQC3Tgy2oBYmDByKE/certidao",
         "sourceCharacters": 10295,
         "sourceId": "trf2",
@@ -1578,45 +1668,58 @@
     },
     {
       "relevant": true,
-      "title": "ARE 1605933 ED-AgR — EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro.…",
-      "theme": "Direito tributário · ICMS",
+      "title": "ARE 1605933 ED-AgR — EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro.",
+      "theme": "ICMS e FECOP",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ICMS"
+        "ICMS",
+        "FECOP",
+        "Lei Estadual nº 4.056/2002",
+        "Lei Complementar nº 194/2022",
+        "Lei Complementar Estadual nº 2"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Adicional de alíquota de ICMS destinado ao Fundo de Combate e Erradicação da Pobreza (FECOP) sobre energia elétrica.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF reconheceu a presunção de constitucionalidade da Lei Estadual nº 4.056/2002 do Rio de Janeiro, alterada pela Lei nº 8.643/2019, mas declarou sua cessação de eficácia após o advento da Lei Complementar Federal nº 194/2022. Os débitos de 2021 permanecem válidos para recolhimento pelo Fisco Estadual, já que antecederam a promulgação da Lei Complementar nº 194/2022.",
+      "whatChanged": "A Lei Complementar Federal nº 194/2022 passou a prever operações com energia elétrica como essenciais, mas os débitos de 2021 permanecem válidos para recolhimento pelo Fisco Estadual.",
+      "practicalImpact": "Empresas que recolheram ICMS para energia elétrica em 2021 devem verificar se os débitos estão em conformidade com a Lei Estadual nº 4.056/2002, já que a Lei Complementar nº 194/2022 não se aplica a anos anteriores à sua promulgação.",
+      "officeAction": "Agravo regimental não provido com aplicação de multa do art. 1.021, § 4º, do CPC.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de energia elétrica",
+        "Fisco Estadual do Rio de Janeiro",
+        "Empresas que recolheram ICMS em 2021",
+        "Contribuintes do ICMS",
+        "Organizações públicas"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 7,
-        "reach": 7,
+        "financialImpact": 6,
+        "reach": 8,
         "clientFit": 7,
-        "actionPotential": 6
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Recolhimento de ICMS para energia elétrica em 2021",
+        "period": "2021",
+        "action": "Verificar conformidade com a Lei Estadual nº 4.056/2002 e recolher débitos anteriores à promulgação da Lei Complementar nº 194/2022",
+        "confidence": "alto"
+      },
       "id": "ae7d69c8-9cd7-4b96-a308-11a3dfb21fdf",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.6,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.610Z",
-      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T10:08:55.052Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
         "sourceCharacters": 1299,
         "sourceId": "stf",
@@ -1642,45 +1745,55 @@
     },
     {
       "relevant": true,
-      "title": "Rcl 92550 ED — EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL…",
-      "theme": "Direito tributário · ITBI",
+      "title": "Rcl 92550 ED — EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL",
+      "theme": "Imunidade tributária na integralização de capital social (ITBI)",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ITBI"
+        "ITBI",
+        "Imposto sobre a Propriedade de"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STF negou seguimento à reclamação que alegava violação ao tema 796 da Repercussão Geral sobre imunidade tributária na integralização de capital social. A decisão afirma que não há estrita aderência entre o caso concreto e o paradigma do tema, além de ausência de teratologia na aplicação do tema-RG 796.",
+      "whatChanged": "A decisão do STF confirma que a imunidade tributária na integralização de capital social não é violada pelo tema 796 da Repercussão Geral, reforçando a necessidade de análise específica do caso concreto para aplicação do ITBI.",
+      "practicalImpact": "Empresas que integram capital social podem continuar a utilizar a imunidade tributária do ITBI sem risco de aplicação do tema 796 da Repercussão Geral, garantindo segurança jurídica na operação tributária.",
+      "officeAction": "A decisão do STF estabelece que a imunidade tributária na integralização de capital social é válida, desde que não haja controvérsia na regularidade da base de cálculo do ITBI.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas que integram capital social",
+        "Contribuintes do ITBI",
+        "Advogados especializados em tributação",
+        "Instituições financeiras",
+        "Gestores de patrimônio"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Garantia de imunidade tributária na integralização de capital social",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Verificação da regularidade da base de cálculo do ITBI para evitar controvérsias na aplicação do tema 796 da Repercussão Geral",
+        "confidence": "alto"
+      },
       "id": "70192f13-46e3-4ce7-8796-6dee1bb9c5b6",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.8,
+      "relevance": "Relevante",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.611Z",
-      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T10:11:23.763Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
         "sourceCharacters": 537,
         "sourceId": "stf",
@@ -1706,45 +1819,56 @@
     },
     {
       "relevant": true,
-      "title": "RE 1594898 AgR-ED — EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS.…",
-      "theme": "Direito tributário · ICMS",
+      "title": "RE 1594898 AgR-ED — EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS. OPERAÇÕES",
+      "theme": "ICMS - Operações com energia elétrica",
       "agency": "Supremo Tribunal Federal",
       "taxes": [
-        "ICMS"
+        "ICMS",
+        "Imposto sobre Circulação de Mê",
+        "Operações com energia elétrica"
       ],
       "status": "Fato confirmado",
       "kind": "Acórdão do STF",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão do STF rejeitou embargos de declaração em recurso extraordinário sobre ICMS, estabelecendo que a adoção de alíquota superior para operações com energia elétrica é válida desde o exercício financeiro de 2024, com eficácia imediata após a data de 5.2.2021. A decisão afirma que não há necessidade de sobrestamento do recurso para aguardar julgamento de embargos de declaração em ação direta de inconstitucionalidade n. 7.077/DF.",
+      "whatChanged": "A adoção de alíquota superior para operações com energia elétrica no ICMS é válida desde o exercício financeiro de 2024, com eficácia imediata após a data de 5.2.2021. A decisão do STF rejeitou embargos de declaração em recurso extraordinário, estabelecendo que não há necessidade de sobrestamento do recurso para aguardar julgamento de embargos de declaração em ação direta de inconstitucionalidade n. 7.077/DF.",
+      "practicalImpact": "Empresas que operam com energia elétrica devem ajustar suas operações fiscais para aplicar a alíquota superior do ICMS a partir do exercício financeiro de 2024, garantindo conformidade com a decisão do STF. A decisão também afirma que não há necessidade de aguardar julgamento de embargos de declaração em ação direta de inconstitucionalidade n. 7.077/DF para aplicar a alíquota superior.",
+      "officeAction": "A decisão do STF rejeitou embargos de declaração em recurso extraordinário sobre ICMS, estabelecendo que a adoção de alíquota superior para operações com energia elétrica é válida desde o exercício financeiro de 2024, com eficácia imediata após a data de 5.2.2021.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas de energia elétrica",
+        "Empresas que operam com energia elétrica",
+        "Empresas tributadas pelo ICMS",
+        "Empresas com operações de energia elétrica",
+        "Empresas com alíquotas superiores no ICMS"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Adoção de alíquota superior no ICMS para operações com energia elétrica",
+        "period": "A partir do exercício financeiro de 2024",
+        "action": "Empresas devem ajustar suas operações fiscais para aplicar a alíquota superior do ICMS a partir do exercício financeiro de 2024",
+        "confidence": "alto"
+      },
       "id": "4ceaa89a-7cfc-44d3-ac60-a063e64d4257",
-      "score": 8.2,
+      "score": 8.1,
       "relevance": "Alta relevância",
       "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
       "isDemo": false,
       "createdAt": "2026-08-21T08:53:14.611Z",
-      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T10:14:33.564Z",
       "provenance": {
         "collector": "Consulta oficial estruturada",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
         "sourceCharacters": 819,
         "sourceId": "stf",
@@ -53466,8 +53590,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "1563cd69706185c96855e3a0",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53483,7 +53607,14 @@
         },
         "alertId": "ae7d69c8-9cd7-4b96-a308-11a3dfb21fdf",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T10:08:55.108Z",
+        "analyzedPublishedAt": "2024-03-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.6,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Rcl 92550 ED — EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL. ALEGAÇÃO DE VIOLAÇÃO AO QUE DECIDIDO NO TEMA 796 DA REPERCUSSÃO GERAL. INOCORRÊNCIA. AUSÊNCIA",
@@ -53502,8 +53633,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "7ce465a03805eab5d2f57fbb",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53519,7 +53650,14 @@
         },
         "alertId": "70192f13-46e3-4ce7-8796-6dee1bb9c5b6",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T10:11:23.818Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "RE 1594898 AgR-ED — EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS. OPERAÇÕES COM ENERGIA ELÉTRICA. SELETIVIDADE E ESSENCIALIDADE. ADOÇÃO DE ALÍQUOTA SUPERIOR ÀQUELA SOBRE OPERA",
@@ -53538,8 +53676,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T08:52:08.826Z",
         "id": "f3329d85b767aa0e6e414a21",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53555,7 +53693,14 @@
         },
         "alertId": "4ceaa89a-7cfc-44d3-ac60-a063e64d4257",
         "fastPublishedAt": "2026-08-21T08:53:14.613Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T10:14:33.618Z",
+        "analyzedPublishedAt": "2024-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1600206 ED-AgR — Ementa: Direito Tributário . Agravo regimental nos Embargos de Declaração no Recurso Extraordinário com Agravo. ICMS. Substituição tributária. Setor Automotivo. Operações Interestaduais. Legislação infraconstitucional. Ofensa reflexa à Constituição. Agravo não",
@@ -54224,8 +54369,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-21T07:54:15.331Z",
         "id": "baf8312a9db3cb052b019fc2",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -54237,7 +54382,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T10:05:53.660Z",
+        "analyzedPublishedAt": "2026-08-21",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "alertId": "2b3c1764-b588-447e-b552-40c75864b0c1",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 98256 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.90 Ex Tipi: sem enquadramento Mercadoria: Rodízio giratório de roda dupla com carcaça e rodas feitas de resina plástica, centro da roda de poliamida, superfície de rodagem em poliuretano e rolamento ",
@@ -57393,8 +57546,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "e2405292e76a89e349c4213e",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -57410,7 +57563,14 @@
         },
         "alertId": "76a9865d-904d-4c50-a2f2-7b931ec49d64",
         "fastPublishedAt": "2026-08-21T09:48:53.857Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T10:00:57.343Z",
+        "analyzedPublishedAt": "2025-10-08T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5061410-38.2019.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: 2568) ADVOGADO(A) : CAROLINE DE ALMEIDA PORTO MAIA (OAB RJ257173) EMENTA EMENTA : DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EMBARGOS DE DECLARAÇÃO. PIS E COFINS. DESMUTUALIZAÇÃO DE BOLSAS DE VALORES. ALIENAÇÃO DE AÇÕES. CLASSIFICAÇÃO CONTÁBIL DE ATIVO CIRCULANTE. COMPROMISSO PRÉVIO",
@@ -94002,6 +94162,19 @@
     ],
     "runs": [
       {
+        "id": "67628f66-0dfa-4443-9a4a-0abc9118a538",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T09:53:10.778Z",
+        "finishedAt": "2026-08-21T10:14:33.664Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "62afcbd6-f3c7-4a0e-aaba-ddaa26fc8d2e",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -118943,275 +119116,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "92347ccb-e62f-4c09-8b1c-6d196847ef16",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T08:07:27.593Z",
-        "finishedAt": "2026-08-20T08:13:39.935Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 6,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T09:51:07.706Z",
-    "nextRunAt": "2026-08-21T15:51:07.706Z"
+    "lastRunAt": "2026-08-21T10:14:33.664Z",
+    "nextRunAt": "2026-08-21T16:14:33.664Z"
   }
 }
