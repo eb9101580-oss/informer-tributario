@@ -1,9 +1,1278 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T08:30:51.893Z",
+    "lastUpdatedAt": "2026-08-21T08:53:14.613Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1603035 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . IPTU. IMUNIDADE TRIBUTÁRIA RECÍPROCA. EMPRESA PÚBLICA PRESTADORA DE SERVIÇO…",
+      "theme": "Direito tributário · IPTU",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d539d721-aa1b-44e6-a1e2-2765bb46411c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.609Z",
+      "updatedAt": "2026-08-21T08:53:14.609Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
+        "sourceCharacters": 626,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1601820 ED-AgR — Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise prévia da legislação infraconstitucional e do conjunto fático-probatório.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d2f1780e-e7fa-4a43-99c3-88134fea894e",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
+        "sourceCharacters": 1850,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1601194 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM…",
+      "theme": "Direito tributário · ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. ARGUIÇÃO DE NÃO INCIDÊNCIA DO DIFAL DO ICMS ANTES DA EDIÇÃO DE LEI COMPLEMENTAR NACIONAL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c076b3e2-89aa-48cd-96fc-4559e8d23009",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
+        "sourceCharacters": 598,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1605933 ED-AgR — EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro.…",
+      "theme": "Direito tributário · ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Adicional de alíquota de ICMS destinado ao Fundo de Combate e Erradicação da Pobreza (FECOP) sobre energia elétrica.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "ae7d69c8-9cd7-4b96-a308-11a3dfb21fdf",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.610Z",
+      "updatedAt": "2026-08-21T08:53:14.610Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
+        "sourceCharacters": 1299,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Rcl 92550 ED — EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL…",
+      "theme": "Direito tributário · ITBI",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ITBI"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "70192f13-46e3-4ce7-8796-6dee1bb9c5b6",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
+        "sourceCharacters": 537,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1594898 AgR-ED — EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS.…",
+      "theme": "Direito tributário · ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "4ceaa89a-7cfc-44d3-ac60-a063e64d4257",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
+        "sourceCharacters": 819,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1600206 ED-AgR — Ementa: Direito Tributário . Agravo regimental nos Embargos de Declaração no Recurso Extraordinário com Agravo. ICMS. Substituição tributária. Setor…",
+      "theme": "Direito tributário · ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b7854a7b-3f5a-4c4d-beb3-5f8e41142959",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568977/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568977/false",
+        "sourceCharacters": 1098,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1599671 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Isenção fiscal. PRODEPE. FEEF. Reserva de plenário. Interpretação de…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. O recorrente busca reformar acórdão que considerou ilegal a exigência de recolhimento de 10% sobre o valor de isenção fiscal concedida pelo Programa de Desenvolvimento de Pernambuco (PRODEPE) ao Fundo Estadual de Equilíbrio Fiscal (FEEF), alegando ofensa a preceitos constitucionais e processuais.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "1a66c17f-d7b6-486f-bcc8-b314021920ec",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568954/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.611Z",
+      "updatedAt": "2026-08-21T08:53:14.611Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568954/false",
+        "sourceCharacters": 3599,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1601813 ED-AgR — Ementa: Direito Tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. PIS e COFINS. Base de Cálculo. ICMS.…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "be8baf3c-786e-46eb-8068-32ccff9b138a",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568970/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568970/false",
+        "sourceCharacters": 1163,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603734 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Embargos à execução fiscal. Repercussão geral. Fundamentação deficiente.…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Agravo regimental interposto contra decisão monocrática que negou seguimento ao recurso extraordinário, em razão da ausência de fundamentação adequada da preliminar de repercussão geral e aplicação das Súmulas 279 e 280.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "ac16870d-a862-4950-a1f5-a4a7604232da",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568955/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568955/false",
+        "sourceCharacters": 2224,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1601976 AgR — Ementa: Direito Tributário . Agravo regimental em recurso extraordinário com agravo. Issqn. Tema 212 da RG. Caracterização de locação de bens móveis associada a…",
+      "theme": "Direito tributário · ISS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise de legislação infraconstitucional.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "3a54fa19-54f8-46f1-bad0-a907262bb3db",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568945/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568945/false",
+        "sourceCharacters": 2012,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1597337 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. IRPJ e CSLL. Crédito de Indébito Tributário . Matéria infraconstitucional.…",
+      "theme": "Direito tributário · IRPJ, CSLL",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Agravo regimental interposto contra decisão que negou seguimento a agravo em recurso extraordinário, tendo em vista que eventual divergência em relação ao entendimento adotado pelo Tribunal de origem demandaria o reexame da legislação infraconstitucional aplicável à espécie, o que é inviável em via extraordinária.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "37171d2f-cd82-4126-b6d9-6e8b334be684",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568942/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568942/false",
+        "sourceCharacters": 1191,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603908 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Agravo regimental. Decisão que extrapolou os limites do pedido. Restrição…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A questão em discussão consiste em saber se os argumentos apresentados no agravo regimental são aptos a infirmar os fundamentos da decisão agravada, que considerou a controvérsia de índole infraconstitucional e, portanto, insuscetível de reexame em recurso extraordinário.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f3bbe2b7-c5ab-42ae-9759-2dfd3dfeabb4",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568969/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568969/false",
+        "sourceCharacters": 1332,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603885 AgR — Ementa: Direito Tributário . Agravo interno no recurso extraordinário com agravo. Previdência complementar. Alteração de regime tributário . Necessidade de…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise da legislação infraconstitucional pertinente.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "8261bdc9-6f98-470d-acb3-c0d4d8ef81fa",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568956/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.612Z",
+      "updatedAt": "2026-08-21T08:53:14.612Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568956/false",
+        "sourceCharacters": 1042,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603370 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. ICMS. Deslocamento de Mercadorias. Legislação infraconstitucional. Ofensa…",
+      "theme": "Direito tributário · ICMS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "50db236f-5e6f-41f5-bec5-8f324f6ddfbf",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568966/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568966/false",
+        "sourceCharacters": 1134,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603847 AgR — ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Exceção de pré executividade. Recuperação judicial. Ilegalidade de…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise de legislação infraconstitucional.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f9627df4-c12f-413b-b30a-68b6066e1616",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
+        "sourceCharacters": 1169,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1598204 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Serviços de composição gráfica. Imposto sobre Serviços. Reexame de fatos e…",
+      "theme": "Direito tributário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Reexame de fatos e legislação infraconstitucional.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "422d1f9a-2e95-49a6-8ec6-17ced12fb3e7",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
+        "sourceCharacters": 1647,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1602984 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação…",
+      "theme": "Direito tributário · Cofins",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "9b38212e-94c9-4fd1-84e0-9f9949c49340",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
+        "sourceCharacters": 1144,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1601756 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Veículo inacabado ou incompleto. IPVA. Incidência. Interpretação de…",
+      "theme": "Direito tributário · IPVA",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPVA"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Interpretação de legislação infraconstitucional local.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "517f485a-ee25-42eb-8bb4-8a8679ecc7bf",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568962/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568962/false",
+        "sourceCharacters": 1564,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1603571 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Iss. Materiais empregados na construção civil. Incidência da súmula 279 do…",
+      "theme": "Direito tributário · ISS",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão do STF",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Supremo Tribunal Federal publicou acórdão do stf em 2026-08-21. Necessidade de análise da matéria infraconstitucional.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "27f5afc6-dc70-4ba7-970a-5db8374d5040",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568948/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:53:14.613Z",
+      "updatedAt": "2026-08-21T08:53:14.613Z",
+      "provenance": {
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur568948/false",
+        "sourceCharacters": 1048,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Solução de Consulta Cosit nº 98260, de 11/08/2026: Classificação de Mercadorias NCM 8703.80.00 para Veículos Elétricos com Tecnologia REEV",
@@ -50641,7 +51910,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-21T07:56:09.639Z",
+        "discoveredAt": "2026-08-21T08:53:34.739Z",
         "id": "e295ee548d1376aec84c2880",
         "status": "pending",
         "attempts": 0,
@@ -50654,6 +51923,792 @@
             "fonte-oficial",
             "coleta-estruturada",
             "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1603035 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . IPTU. IMUNIDADE TRIBUTÁRIA RECÍPROCA. EMPRESA PÚBLICA PRESTADORA DE SERVIÇO PÚBLICO. ABRANGÊNCIA. PRESUNÇÃO DE DESTINAÇÃO DO PATRIMÔNIO, DA RENDA E DOS SERVIÇOS DOS ENTES IMUNES ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603035&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur569095",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur569095/false",
+        "inlineText": "Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . IPTU. IMUNIDADE TRIBUTÁRIA RECÍPROCA. EMPRESA PÚBLICA PRESTADORA DE SERVIÇO PÚBLICO. ABRANGÊNCIA. PRESUNÇÃO DE DESTINAÇÃO DO PATRIMÔNIO, DA RENDA E DOS SERVIÇOS DOS ENTES IMUNES ÀS SUAS FINALIDADES ESSENCIAIS. REEXAME DE MATÉRIA FÁTICA. ÓBICE. SÚMULA 279 DO STF. AGRAVO INTERNO DESPROVIDO. HONORÁRIOS ADVOCATÍCIOS MAJORADOS EM DESFAVOR DA PARTE RECORRENTE, CASO AS INSTÂNCIAS DE ORIGEM OS TENHAM FIXADO, NOS TERMOS DO ARTIGO 85, § 11, DO CÓDIGO DE PROCESSO CIVIL, OBSERVADOS OS LIMITES DOS §§ 2º E 3º E A EVENTUAL CONCESSÃO DE JUSTIÇA GRATUITA.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "b8ca74d9fe3ea2c87a1da4bd",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "d539d721-aa1b-44e6-a1e2-2765bb46411c",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1601820 ED-AgR — Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros ao exterior. Necessidade de análise prévia da legislação infraconstitucional e do conjunto fático-proba",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601820&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568985",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568985/false",
+        "inlineText": "Ementa: Direito tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. Importação e remessa de prêmio de resseguros ao exterior. Necessidade de análise prévia da legislação infraconstitucional e do conjunto fático-probatório. Súmula nº 279/STF. Remessa dos autos ao Superior Tribunal de Justiça. Art. 1.033 do Código de Processo Civil. Inviabilidade. Agravo não provido. I. Caso em exame 1. Trata-se de agravo interno interposto contra decisão pela qual foi negado seguimento ao recurso, com base no óbice da Súmula nº 279/ STF. II. Questão em discussão 2. Há duas questões em discussão: (i) saber se a análise da incidência do PIS e COFINS na importação e remessa de prêmio de resseguros ao exterior demanda análise de fatos e provas e da legislação infraconstitucional; e (ii) saber se é possível remeter os autos ao Superior Tribunal de Justiça, nos termos do art. 1.033 do Código de Processo Civil. III. Razões de decidir 3. A matéria veiculada no presente recurso, relativa à exigibilidade do PIS/PASEP-Importação e da COFINS-Importação incidentes sobre remessas de prêmios de resseguro e retrocessão para o exterior, não alcança estatura constitucional, pois depende do revolvimento da moldura fática delineada e da análise da legislação infraconstitucional aplicável, o que torna oblíqua e reflexa eventual ofensa, insuscetível, portanto, de viabilizar o conhecimento do recurso extraordinário, nos termos da Súmula nº 279/STF. 4. A orientação jurisprudencial consolidada desta Suprema Corte estabelece que a aplicação do art. 1.033 do CPC é inadequada e inaplicável quando a decisão de inadmissibilidade ou negativa de seguimento assenta-se em fundamentos autônomos e cumulativos que extrapolam a mera interpretação de direito federal. IV. Dispositivo e tese 5. Agravo interno conhecido e não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "98585722c80f55e27e0e4a24",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "d2f1780e-e7fa-4a43-99c3-88134fea894e",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "RE 1601194 AgR — Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM CONVÊNIO DO CONFAZ. NATUREZA AUTORIZATIVA. MISTER RATIFICAÇÃO EXPRESSA PELO ESTADO-MEMBRO. RESERVA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601194&classe=RE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur569109",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur569109/false",
+        "inlineText": "Ementa: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA - DIFAL. BENEFÍCIO FISCAL. PREVISÃO EM CONVÊNIO DO CONFAZ. NATUREZA AUTORIZATIVA. MISTER RATIFICAÇÃO EXPRESSA PELO ESTADO-MEMBRO. RESERVA DE LEI. ART. 150, § 6º, DA CONSTITUIÇÃO FEDERAL. PRECEDENTES. ARGUIÇÃO DE NÃO INCIDÊNCIA DO DIFAL DO ICMS ANTES DA EDIÇÃO DE LEI COMPLEMENTAR NACIONAL. TEMA 1.093 DA REPERCUSSÃO GERAL. INOVAÇÃO RECURSAL. INADMISSIBILIDADE. MANDADO DE SEGURANÇA. INAPLICABILIDADE DO ARTIGO 85, § 11, DO CÓDIGO DE PROCESSO CIVIL. AGRAVO INTERNO DESPROVIDO.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "13d05210d851fe8f93274073",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "c076b3e2-89aa-48cd-96fc-4559e8d23009",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1605933 ED-AgR — EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro. Adicional de alíquota de ICMS destinado ao Fundo de Combate e Erradicação da Pobreza (FECOP) sobre ene",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1605933&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur569134",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur569134/false",
+        "inlineText": "EMENTA Agravo regimental nos embargos de declaração em recurso extraordinário com agravo. Direito tributário . Lei nº 4.056/2002 do Estado do Rio de Janeiro. Adicional de alíquota de ICMS destinado ao Fundo de Combate e Erradicação da Pobreza (FECOP) sobre energia elétrica. Repetição de indébito. Período anterior ao advento da Lei Complementar nº 194/2022. ADI nº 7.077. Impossibilidade. 1. O Supremo Tribunal Federal, a partir do julgamento da ADI nº 7.077, reconheceu a presunção de constitucionalidade do art. 2º, inciso II, da Lei Estadual nº 4.056/2002, alterado pela Lei nº 8.643/2019 do Estado do Rio de Janeiro; porém declarou cessada sua eficácia a partir do advento da Lei Complementar Federal nº 194/2022, que passou a prever expressamente as operações com energia elétrica como sendo essenciais. 2. Os débitos em questão são referentes ao ano de 2021, ou seja, anteriores à promulgação da Lei Complementar nº 194/2022, o que afasta qualquer óbice legal ao recolhimento dos valores referentes ao ano de 2021 pelo Fisco Estadual. 3. A modulação dos efeitos determinada no julgamento da ADI nº 7.077 se deu exclusivamente em relação ao art. 2º, incisos I e IV, da Lei Complementar Estadual nº 210/2023. 4. Agravo regimental não provido, com aplicação de multa do art. 1.021, § 4º, do CPC.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "1563cd69706185c96855e3a0",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "ae7d69c8-9cd7-4b96-a308-11a3dfb21fdf",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "Rcl 92550 ED — EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL. ALEGAÇÃO DE VIOLAÇÃO AO QUE DECIDIDO NO TEMA 796 DA REPERCUSSÃO GERAL. INOCORRÊNCIA. AUSÊNCIA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=92550&classe=Rcl",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur569110",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur569110/false",
+        "inlineText": "EMENTA: EMBARGOS DE DECLARAÇÃO RECEBIDOS COMO AGRAVO INTERNO. RECLAMAÇÃO. CONSTITUCIONAL. TRIBUTÁRIO . ITBI. IMUNIDADE TRIBUTÁRIA NA INTEGRALIZAÇÃO DE CAPITAL SOCIAL. ALEGAÇÃO DE VIOLAÇÃO AO QUE DECIDIDO NO TEMA 796 DA REPERCUSSÃO GERAL. INOCORRÊNCIA. AUSÊNCIA DE ESTRITA ADERÊNCIA ENTRE O CASO CONCRETO E O PARADIGMA. CONTROVÉRSIA DE ORIGEM ACERCA DA REGULARIDADE DA BASE DE CÁLCULO DO ITBI. AUSÊNCIA DE TERATOLOGIA NA APLICAÇÃO DO TEMA-RG 796. PRECEDENTES. RECLAMAÇÃO A QUE SE NEGOU SEGUIMENTO. AGRAVO INTERNO A QUE SE NEGA PROVIMENTO.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "7ce465a03805eab5d2f57fbb",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "70192f13-46e3-4ce7-8796-6dee1bb9c5b6",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "RE 1594898 AgR-ED — EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS. OPERAÇÕES COM ENERGIA ELÉTRICA. SELETIVIDADE E ESSENCIALIDADE. ADOÇÃO DE ALÍQUOTA SUPERIOR ÀQUELA SOBRE OPERA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1594898&classe=RE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur569019",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur569019/false",
+        "inlineText": "EMENTA: EMBARGOS DE DECLARAÇÃO NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS. OPERAÇÕES COM ENERGIA ELÉTRICA. SELETIVIDADE E ESSENCIALIDADE. ADOÇÃO DE ALÍQUOTA SUPERIOR ÀQUELA SOBRE OPERAÇÕES EM GERAL. EXCEÇÃO PREVISTA NA MODULAÇÃO DOS EFEITOS. EFICÁCIA DESDE O EXERCÍCIO FINANCEIRO DE 2024. DEMANDA PROPOSTA DEPOIS DE 5.2.2021. NECESSIDADE DE OBSERVÂNCIA DO TEMA 745 DA REPERCUSSÃO GERAL. DESNECESSIDADE DE SOBRESTAMENTO DESTE RECURSO PARA AGUARDAR-SE O JULGAMENTO DOS EMBARGOS DE DECLARAÇÃO NA AÇÃO DIRETA DE INCONSTITUCIONALIDADE N. 7.077/DF. APURAÇÃO DA SUCUMBÊNCIA: COMPETÊNCIA DO JUÍZO DA EXECUÇÃO. AUSÊNCIA DE OMISSÃO, OBSCURIDADE, CONTRADIÇÃO OU ERRO MATERIAL. IMPOSSIBILIDADE DE REDISCUSSÃO DA MATÉRIA. EMBARGOS DE DECLARAÇÃO REJEITADOS.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "f3329d85b767aa0e6e414a21",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "4ceaa89a-7cfc-44d3-ac60-a063e64d4257",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1600206 ED-AgR — Ementa: Direito Tributário . Agravo regimental nos Embargos de Declaração no Recurso Extraordinário com Agravo. ICMS. Substituição tributária. Setor Automotivo. Operações Interestaduais. Legislação infraconstitucional. Ofensa reflexa à Constituição. Agravo não",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568977/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1600206&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568977",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568977/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental nos Embargos de Declaração no Recurso Extraordinário com Agravo. ICMS. Substituição tributária. Setor Automotivo. Operações Interestaduais. Legislação infraconstitucional. Ofensa reflexa à Constituição. Agravo não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, mantendo o entendimento do Tribunal de origem quanto à ausência dos requisitos de admissibilidade do recurso. II. Questão em discussão 2. Preenchimento dos pressupostos de admissibilidade do recurso extraordinário com agravo. III. Razões de decidir 3. O agravante não trouxe novos argumentos aptos a desconstituir a decisão impugnada, que deve ser mantida por seus próprios fundamentos. 4. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal. Precedentes. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "da3bcbb87e9a8a6e78ccf3d1",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "b7854a7b-3f5a-4c4d-beb3-5f8e41142959",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1599671 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Isenção fiscal. PRODEPE. FEEF. Reserva de plenário. Interpretação de legislação local. Reexame de fatos e provas. Agravo regimental não provido. I. Caso em exame 1. Agravo reg",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568954/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1599671&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568954",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568954/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Isenção fiscal. PRODEPE. FEEF. Reserva de plenário. Interpretação de legislação local. Reexame de fatos e provas. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão monocrática que negou seguimento a recurso extraordinário com agravo. 2. O recorrente busca reformar acórdão que considerou ilegal a exigência de recolhimento de 10% sobre o valor de isenção fiscal concedida pelo Programa de Desenvolvimento de Pernambuco (PRODEPE) ao Fundo Estadual de Equilíbrio Fiscal (FEEF), alegando ofensa a preceitos constitucionais e processuais. II. Questão em discussão 3. Há quatro questões em discussão: (i) saber se houve ofensa ao art. 97 da Constituição Federal e à Súmula Vinculante 10 pela interpretação de legislação infraconstitucional; (ii) saber se o entendimento consolidado na Súmula 280 do Supremo Tribunal Federal incide em casos de interpretação de legislação estadual; (iii) saber se a alegação de ofensa ao art. 5º, XXXVI, da Constituição Federal configura ofensa direta ou reflexa à Constituição; e (iv) saber se é admissível o reexame de fatos e provas em recurso extraordinário para verificar o direito a benefício fiscal. III. Razões de decidir 4. O acórdão recorrido deu provimento à apelação cível para declarar a ilegalidade da exigência do depósito compulsório de 10% sobre o incentivo fiscal de ICMS, determinando a restituição dos valores indevidamente recolhidos, por entender que a isenção fiscal foi concedida onerosamente e por prazo certo, em violação ao art. 178 do Código Tributário Nacional e à Súmula 544 do Supremo Tribunal Federal. 5. O recorrente não apresentou argumentos novos capazes de desconstituir a decisão agravada, que deve ser mantida por seus próprios fundamentos. 6. Não houve violação ao art. 97 da Constituição Federal ou à Súmula Vinculante 10, porquanto o tribunal de origem não afastou, por inconstitucionalidade, direta ou indiretamente, qualquer dispositivo legal, mas interpretou e aplicou a norma pertinente ao caso concreto. A exigência de reserva de plenário ocorre apenas quando o deslinde alcançado pelo órgão fracionário se fundamenta na incompatibilidade direta entre a norma legal e o texto constitucional. 7. A Súmula 280 do Supremo Tribunal Federal incide no caso, pois a decisão do tribunal de origem baseou-se na interpretação de legislação estadual (Leis nºs 11.675/1999 e 15.865/2016) e decretos (21.959/1999 e 33.662/2009), sendo imprescindível o reexame da interpretação aplicada à legislação invocada para se alcançar entendimento diverso. O conceito de legislação local não se restringe à legislação municipal, alcançando também a legislação estadual. 8. Ao apreciar o ARE-RG 748.371, de relatoria do e. Ministro Gilmar Mendes, DJe de 1º.8.2013 (Tema 660), o Plenário assentou que não há repercussão geral quando a alegada ofensa aos princípios do devido processo legal, da ampla defesa, do contraditório, direito adquirido, do ato jurídico perfeito e da coisa julgada é debatida sob a ótica infraconstitucional, uma vez que configura ofensa indireta ou reflexa à Constituição Federal, o que torna inadmissível o recurso extraordinário, como no caso dos autos. 9. É inadmissível em recurso extraordinário o reexame do acervo fático-probatório, em especial para se constatar a existência do direito do contribuinte à fruição de benefício fiscal pelo atendimento da condição onerosa estipulada na norma estadual. Incidente o óbice da Súmula 279 do STF. IV. Dispositivo 10. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "af8f2e013d6fa8a3bd739490",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "1a66c17f-d7b6-486f-bcc8-b314021920ec",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1601813 ED-AgR — Ementa: Direito Tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. PIS e COFINS. Base de Cálculo. ICMS. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Ag",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568970/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601813&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568970",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568970/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental nos embargos de declaração no recurso extraordinário com agravo. PIS e COFINS. Base de Cálculo. ICMS. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, mantendo o entendimento do Tribunal de origem quanto à ausência dos requisitos de admissibilidade do recurso extraordinário. II. Questão em discussão 2. Preenchimento dos pressupostos de admissibilidade do recurso extraordinário com agravo. III. Razões de decidir 3. O agravante não trouxe novos argumentos aptos a desconstituir a decisão impugnada, que deve ser mantida por seus próprios fundamentos. 4. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal. Precedentes. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "a0cdb240bfe3ee35513e5ba0",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "be8baf3c-786e-46eb-8068-32ccff9b138a",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603734 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Embargos à execução fiscal. Repercussão geral. Fundamentação deficiente. Súmulas 279 e 280 do STF. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interpo",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568955/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603734&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568955",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568955/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Embargos à execução fiscal. Repercussão geral. Fundamentação deficiente. Súmulas 279 e 280 do STF. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão monocrática que negou seguimento ao recurso extraordinário, em razão da ausência de fundamentação adequada da preliminar de repercussão geral e aplicação das Súmulas 279 e 280. II. Questão em discussão 2. A questão em discussão consiste em saber se a preliminar de repercussão geral, no recurso extraordinário, contém fundamentação específica e detalhada que transcenda os interesses subjetivos das partes, e se verificar se a irresignação apresentada no agravo regimental é apta a desconstituir a decisão agravada sob o fundamento da impossibilidade de reexame de fatos e provas e de legislação local em sede de recurso extraordinário. III. Razões de decidir 3. A demonstração da repercussão geral das questões constitucionais em recurso extraordinário exige fundamentação expressa, nítida e detalhada, que revele a transcendência dos limites subjetivos da causa sob os aspectos econômico, político, social ou jurídico. 4. A mera afirmação genérica da existência de repercussão geral é insuficiente, conforme jurisprudência do Supremo Tribunal Federal, que exige o desenvolvimento de argumentação específica, nos termos do art. 1.035, § 2º, do Código de Processo Civil e do art. 327, § 1º, do Regimento Interno do STF. 5. O requisito da fundamentação aplica-se também às hipóteses de repercussão geral presumida ou já reconhecida, não sendo suficiente a simples alegação de dispositivo constitucional supostamente violado. 6. A parte agravante não apresentou novos argumentos capazes de infirmar os fundamentos da decisão agravada, limitando-se a reproduzir a argumentação já analisada, o que corrobora a improcedência do agravo regimental 7. O Tribunal de origem decidiu a controvérsia com base em legislação infraconstitucional local e no conjunto fático-probatório dos autos, sendo inviável a análise em sede de recurso extraordinário, conforme Súmulas 279 e 280 do Supremo Tribunal Federal. IV. Dispositivo 8. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "7bcaf481b063cf5d82416f88",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "ac16870d-a862-4950-a1f5-a4a7604232da",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1601976 AgR — Ementa: Direito Tributário . Agravo regimental em recurso extraordinário com agravo. Issqn. Tema 212 da RG. Caracterização de locação de bens móveis associada a prestação de serviços. Incidência da Súmula 279 do STF. Necessidade de análise de legislação infrac",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568945/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601976&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568945",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568945/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental em recurso extraordinário com agravo. Issqn. Tema 212 da RG. Caracterização de locação de bens móveis associada a prestação de serviços. Incidência da Súmula 279 do STF. Necessidade de análise de legislação infraconstitucional. Incidência do imposto. Tema 660 de RG. Negativa de provimento. I. Caso em exame 1. Agravo regimental interposto contra decisão que inadmitiu recurso extraordinário com agravo por aplicação de precedente firmado com base na sistemática da repercussão geral e pela necessidade de reexame de fatos e provas e de legislação infraconstitucional. II. Questão em discussão 2. A questão em discussão consiste em verificar se, no caso concreto, seria possível afastar os óbices processuais apontados na decisão agravada. III. Razões de decidir 3. A petição de agravo não trouxe novos argumentos aptos a desconstituir a decisão agravada, a qual deve ser mantida pelos próprios fundamentos. 4. Eventual divergência em relação ao entendimento adotado pelo juízo a quo quanto a caracterização dos fatos tributados nos autos como operação complexa, afastando a configuração de mera locação de bens móveis, ou seja, dissociada da prestação de serviços, demandaria o reexame dos fatos e das provas constantes dos autos, além de exame da legislação infraconstitucional aplicável à espécie. Dessa forma, resta demonstrada a não ocorrência de ofensa constitucional direta, o que inviabiliza o processamento do apelo extremo, além da vedação contida na Súmula 279 do STF. Precedentes. 5. Ressalta-se, ainda, que o Supremo Tribunal Federal já assentou, sob a sistemática da repercussão geral, que suposta ofensa aos princípios da legalidade, do devido processo legal, da ampla defesa, do contraditório e dos limites da coisa julgada, quando a violação é debatida sob a ótica infraconstitucional, não ostenta repercussão geral. 6. Mantidos, portanto, os fundamentos adotados na decisão recorrida. IV. Dispositivo 7. Agravo regimental a que se nega provimento.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "46a179e76d20b28ec0bb0a56",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "3a54fa19-54f8-46f1-bad0-a907262bb3db",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1597337 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. IRPJ e CSLL. Crédito de Indébito Tributário . Matéria infraconstitucional. Impugnação Específica. Ausência. Art. 317, § 1º, RISTF. Manutenção da decisão agravada. Agravo regim",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568942/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1597337&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568942",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568942/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. IRPJ e CSLL. Crédito de Indébito Tributário . Matéria infraconstitucional. Impugnação Específica. Ausência. Art. 317, § 1º, RISTF. Manutenção da decisão agravada. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a agravo em recurso extraordinário, tendo em vista que eventual divergência em relação ao entendimento adotado pelo Tribunal de origem demandaria o reexame da legislação infraconstitucional aplicável à espécie, o que é inviável em via extraordinária. II. Questão em discussão 2. A questão em discussão consiste em saber se a parte agravante se desincumbiu do ônus de impugnar especificamente os fundamentos da decisão que negou seguimento ao agravo em recurso extraordinário, cumprindo o requisito de admissibilidade recursal e evitando a necessidade de reexame de legislação infraconstitucional. III. Razões de decidir 3. O agravante não impugnou os fundamentos da decisão agravada, não preenchendo o requisito de admissibilidade recursal previsto no art. 317, § 1º, do RISTF. IV. Dispositivo 4. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "1cf4f285f7f6d0885738e423",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "37171d2f-cd82-4126-b6d9-6e8b334be684",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603908 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Agravo regimental. Decisão que extrapolou os limites do pedido. Restrição do julgamento aos limites do pedido inicial. Matéria infraconstitucional. Inadmissibilidade de recurs",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568969/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603908&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568969",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568969/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Agravo regimental. Decisão que extrapolou os limites do pedido. Restrição do julgamento aos limites do pedido inicial. Matéria infraconstitucional. Inadmissibilidade de recurso extraordinário. Súmula 279 do STF. Negado provimento. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário, nos termos do art. 13, V, c, do RISTF. II. Questão em discussão 2. A questão em discussão consiste em saber se os argumentos apresentados no agravo regimental são aptos a infirmar os fundamentos da decisão agravada, que considerou a controvérsia de índole infraconstitucional e, portanto, insuscetível de reexame em recurso extraordinário. III. Razões de decidir 3. O agravo regimental não trouxe argumentos novos capazes de desconstituir os fundamentos da decisão agravada. 4. A matéria foi apreciada na origem com base na aplicação de legislação infraconstitucional, de modo que eventual ofensa à Constituição Federal, se existente, verificar-se-ia de forma reflexa ou indireta. 5. A análise de matéria infraconstitucional e o reexame de fatos e provas são inviáveis em recurso extraordinário, conforme o óbice da Súmula 279 do Supremo Tribunal Federal. IV. Dispositivo 6. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "a79df64bcc89286923c77afc",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "f3bbe2b7-c5ab-42ae-9759-2dfd3dfeabb4",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603885 AgR — Ementa: Direito Tributário . Agravo interno no recurso extraordinário com agravo. Previdência complementar. Alteração de regime tributário . Necessidade de análise da legislação infraconstitucional pertinente. Revolvimento de fatos e provas. Incidência da Súmu",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568956/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603885&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568956",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568956/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo interno no recurso extraordinário com agravo. Previdência complementar. Alteração de regime tributário . Necessidade de análise da legislação infraconstitucional pertinente. Revolvimento de fatos e provas. Incidência da Súmula 279 do STF. Agravo não provido. i. Caso em exame 1. Agravo interno interposto contra decisão que negou seguimento ao recurso extraordinário com agravo pela aplicação da Súmula 279 do STF. II. Questão em discussão 2. A questão em discussão consiste em verificar se, no caso concreto, seria possível afastar o óbice processual apontado na decisão agravada. III. Razões de decidir 3. As razões recursais apresentadas são insuficientes para infirmar a conclusão da decisão agravada. 4. Não é possível chegar à conclusão diversa àquela do Tribunal de origem sem a análise da legislação infraconstitucional pertinente e o reexame dos fatos e das provas dos autos, o que impede o trânsito do apelo extremo. Incidência da Súmula 279 do STF. IV. Dispositivo 5. Agravo interno não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "15bdd0613ded79de4e0a8b6f",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "8261bdc9-6f98-470d-acb3-c0d4d8ef81fa",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603370 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. ICMS. Deslocamento de Mercadorias. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I. Caso em ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568966/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603370&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568966",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568966/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. ICMS. Deslocamento de Mercadorias. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, mantendo o entendimento do Tribunal de origem quanto à ausência dos requisitos de admissibilidade do recurso extraordinário. II. Questão em discussão 2. Preenchimento dos pressupostos de admissibilidade do recurso extraordinário com agravo. III. Razões de decidir 3. O agravante não trouxe novos argumentos aptos a desconstituir a decisão impugnada, que deve ser mantida por seus próprios fundamentos. 4. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal. Precedentes. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "1580f49ec30312447695bc19",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "50db236f-5e6f-41f5-bec5-8f324f6ddfbf",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603847 AgR — ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Exceção de pré executividade. Recuperação judicial. Ilegalidade de créditos. Certidão de dívida ativa. Necessidade de análise de legislação infraconstitucional. Negativa de pr",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603847&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568950",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568950/false",
+        "inlineText": "ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Exceção de pré executividade. Recuperação judicial. Ilegalidade de créditos. Certidão de dívida ativa. Necessidade de análise de legislação infraconstitucional. Negativa de provimento. I. Caso em exame 1. Agravo regimental interposto contra decisão monocrática que negou seguimento a recurso extraordinário com agravo com fundamento na inviabilidade de análise de legislação infraconstitucional em sede extraordinária. II. Questão em discussão 2. Verificar a viabilidade do recurso extraordinário, no caso concreto, em face dos óbices apontados na decisão recorrida, a pretexto de violação ao artigo 149, § 2º, I e III, alínea \"a\" da Constituição da República. III. Razões de decidir 3. A petição de agravo não trouxe novos argumentos aptos a desconstituir a decisão agravada, a qual deve ser mantida pelos próprios fundamentos. 4. Para dissentir do entendimento do Tribunal de origem, seria imprescindível a análise da legislação infraconstitucional pertinente, que se mostra inviável no âmbito do recurso extraordinário. Precedente. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "c6661ae0097f8ce707efbe81",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "f9627df4-c12f-413b-b30a-68b6066e1616",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603292 AgR — Ementa: Direito Processual Civil e Tributário . Agravo regimental no recurso extraordinário com agravo. Recurso Extraordinário. Cabimento. Repercussão geral. Deficiência na fundamentação. Inadmissibilidade. Agravo regimental não provido. I. Caso em exame 1. Ag",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568952/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603292&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568952",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568952/false",
+        "inlineText": "Ementa: Direito Processual Civil e Tributário . Agravo regimental no recurso extraordinário com agravo. Recurso Extraordinário. Cabimento. Repercussão geral. Deficiência na fundamentação. Inadmissibilidade. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, em razão da deficiência na demonstração da repercussão geral da questão constitucional objeto do recurso. II. Questão em discussão 2. A questão em discussão consiste em verificar se os argumentos apresentados no agravo regimental são aptos a desconstituir a decisão agravada. III. Razões de decidir 3. A petição de recurso extraordinário não apresentou argumentos, nos termos dos arts. 102, § 3º, da Constituição Federal, e 1.035, § 1º, do Código de Processo Civil, que demonstrassem a existência de questões relevantes do ponto de vista econômico, político, social ou jurídico que ultrapassassem os interesses subjetivos da causa. IV. Dispositivo 4. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "e5e3611949a663284e5fdcec",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 71,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1598204 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Serviços de composição gráfica. Imposto sobre Serviços. Reexame de fatos e legislação infraconstitucional. Súmulas 279 e 280 do STF. Agravo regimental não provido. I. Caso em ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1598204&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568968",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568968/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Serviços de composição gráfica. Imposto sobre Serviços. Reexame de fatos e legislação infraconstitucional. Súmulas 279 e 280 do STF. Agravo regimental não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, nos termos do art. 13, V, c, do RISTF. 2. A parte agravante busca a reforma da decisão, argumentando que, na hipótese dos autos, incide o Imposto sobre Circulação de Mercadorias e Serviços (ICMS) sobre os produtos resultantes dos serviços gráficos. II. Questão em discussão 3. Verificar a viabilidade do recurso. III. Razões de decidir 4. O Tribunal de origem, a partir do exame da legislação local aplicável e do acervo fático probatório dos autos, concluiu que os produtos vendidos pelo contribuinte, embora sejam composição gráfica, são produzidos sob encomenda e de forma personalizada, e se destinam ao uso próprio das empresas adquirentes, não sendo destinados à revenda ou industrialização subsequente, razão pela qual incide o ISS. 5. Os argumentos apresentados no agravo regimental não são suficientes para infirmar a decisão agravada, uma vez que a questão foi dirimida com base na legislação infraconstitucional e na análise fática do caso. 6. A eventual ofensa à Constituição Federal, se existente, seria de forma reflexa ou indireta, o que inviabiliza o recurso extraordinário, conforme as Súmulas 279 e 280 do Supremo Tribunal Federal, que impedem o reexame de fatos e provas e de legislação infraconstitucional. IV. Dispositivo 7. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "df76306a631bca83b33b5efc",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "422d1f9a-2e95-49a6-8ec6-17ced12fb3e7",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1602984 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1602984&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568959",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568959/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. COFINS. Compensação. Comprovação Do Crédito. Legislação infraconstitucional. Ofensa reflexa à Constituição. Reexame de fatos e provas. Súmula 279 do STF. Agravo não provido. I. Caso em exame 1. Agravo regimental interposto contra decisão que negou seguimento a recurso extraordinário com agravo, mantendo o entendimento do Tribunal de origem quanto à ausência dos requisitos de admissibilidade do recurso extraordinário. II. Questão em discussão 2. Preenchimento dos pressupostos de admissibilidade do recurso extraordinário com agravo. III. Razões de decidir 3. O agravante não trouxe novos argumentos aptos a desconstituir a decisão impugnada, que deve ser mantida por seus próprios fundamentos. 4. A controvérsia foi decidida pelo Tribunal de origem com base na legislação infraconstitucional aplicável à espécie e no conjunto fático-probatório dos autos, o que inviabiliza o processamento do recurso pela via extraordinária, nos termos da reiterada jurisprudência do Supremo Tribunal Federal. Precedentes. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "f2a58a9839069136173fa8a1",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "9b38212e-94c9-4fd1-84e0-9f9949c49340",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1601756 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Veículo inacabado ou incompleto. IPVA. Incidência. Interpretação de legislação infraconstitucional local. Reexame de fatos e provas. Agravo Regimental desprovido. I. Caso em e",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568962/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1601756&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568962",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568962/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Veículo inacabado ou incompleto. IPVA. Incidência. Interpretação de legislação infraconstitucional local. Reexame de fatos e provas. Agravo Regimental desprovido. I. Caso em exame 1. Agravo Regimental interposto contra decisão que, reconsiderando decisão anterior, negou negou seguimento a recurso extraordinário, nos termos do art. 13, V, c, do RISTF. 2. A parte recorrente buscava a declaração de inexigibilidade do IPVA para os anos de 2020 e 2021, além da restituição dos valores referentes a 2022, relativos a dezessete chassis cujas carrocerias não foram ainda acopladas. II. Questão em discussão 3. Verificar a viabilidade do recurso. III. Razões de decidir 4. O Tribunal de Justiça do Estado de Minas Gerais negou provimento à apelação, fundamentando que o IPVA incide sobre a propriedade de veículo automotor de qualquer espécie, conforme a Lei nº 14.937/2003 e a Resolução do CONTRAN nº 686/2017. 5. A eventual divergência em relação ao entendimento adotado pelo juízo de origem, especialmente sobre o alcance do termo \"veículo automotor\", demandaria a interpretação da legislação infraconstitucional local aplicada, o que encontra óbice na Súmula 280 do Supremo Tribunal Federal. 6. Para alcançar eventual modificação do que foi decidido, seria necessário o revolvimento do acervo fático-probatório dos autos, o que não é admissível em sede de recurso extraordinário, conforme a Súmula 279 do Supremo Tribunal Federal. IV. Dispositivo 7. Agravo Regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "ed96af8d0ea0ba51c7b1d230",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "517f485a-ee25-42eb-8bb4-8a8679ecc7bf",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1603571 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Iss. Materiais empregados na construção civil. Incidência da súmula 279 do stf. Necessidade de análise da matéria infraconstitucional. Agravo não provido. i. Caso em exame 1.A",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568948/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1603571&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568948",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568948/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Iss. Materiais empregados na construção civil. Incidência da súmula 279 do stf. Necessidade de análise da matéria infraconstitucional. Agravo não provido. i. Caso em exame 1.Agravo regimental interposto contra decisão que negou seguimento ao recurso extraordinário com agravo pela aplicação da Súmula 279 do STF e pela necessidade de exame da matéria infraconstitucional. II. Questão em discussão 2. A questão em discussão consiste em verificar se, no caso concreto, seria possível afastar os óbices processuais apontados na decisão agravada. III. Razões de decidir 3. As razões recursais apresentadas são insuficientes para infirmar a conclusão da decisão agravada. 4. Não é possível chegar à conclusão diversa àquela do Tribunal de origem sem o reexame dos fatos e das provas dos autos (Súmula 279) e a análise da legislação infraconstitucional pertinente, o que impede o trânsito do apelo extremo. Precedentes. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "bc4e213e557da16b321e9099",
+        "status": "fast-published",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        },
+        "alertId": "27f5afc6-dc70-4ba7-970a-5db8374d5040",
+        "fastPublishedAt": "2026-08-21T08:53:14.613Z",
+        "error": null
+      },
+      {
+        "title": "ARE 1602557 AgR — Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Execução fiscal. Extinção. Falta de interesse de agir. Esgotamento de instância. Não configuração. Súmula 281/STF. Agravo regimental não provido. I. Caso em exame 1. Agravo in",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur568943/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1602557&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur568943",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur568943/false",
+        "inlineText": "Ementa: Direito Tributário . Agravo regimental no recurso extraordinário com agravo. Execução fiscal. Extinção. Falta de interesse de agir. Esgotamento de instância. Não configuração. Súmula 281/STF. Agravo regimental não provido. I. Caso em exame 1. Agravo interno interposto contra decisão monocrática que negou seguimento a recurso extraordinário com agravo com base na Súmula 281 do STF. O recurso extraordinário foi interposto contra decisão monocrática, proferida no âmbito do Tribunal de origem, que negou provimento ao recurso de apelação. II. Questão em discussão 2. A questão em discussão consiste em verificar se houve esgotamento das vias recursais nas instâncias ordinárias que justifique o afastamento da incidência da Súmula 281/STF. III. Razões de decidir 3. A não interposição de recurso ao órgão colegiado competente implica em ausência de esgotamento das vias recursais nas instâncias ordinárias, o que atrai a incidência da Súmula 281 do STF. 4. A decisão objeto do recurso extraordinário não se caracteriza como de última instância, uma vez que comportaria recurso de agravo ao órgão colegiado competente junto ao Tribunal de origem. Portanto, é incabível o recurso extraordinário, nos termos da Súmula 281 do STF. IV. Dispositivo 5. Agravo regimental não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T08:52:08.826Z",
+        "id": "103605040c446b536fb3b452",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
@@ -90459,6 +92514,682 @@
     ],
     "runs": [
       {
+        "id": "1656d28b-b23e-46e6-bb6d-ad350a5501ba",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-20",
+        "startedAt": "2026-08-21T08:53:14.735Z",
+        "finishedAt": "2026-08-21T08:54:38.792Z",
+        "discovered": 1,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "d3125811-1c32-4a95-837a-29e9b71b1965",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-21T08:51:44.183Z",
+        "finishedAt": "2026-08-21T08:53:14.653Z",
+        "discovered": 23,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 25,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 13,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 48,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 140,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32670,
+              "entries": 33,
+              "processed": 32670,
+              "dateMatched": 32670,
+              "decisionMatched": 5532,
+              "taxMatched": 1993,
+              "deduplicated": 1842,
+              "duplicates": 151,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 15235,
+              "entries": 16,
+              "processed": 15235,
+              "dateMatched": 15235,
+              "decisionMatched": 8047,
+              "taxMatched": 2017,
+              "deduplicated": 2017,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25493,
+              "entries": 26,
+              "processed": 25493,
+              "dateMatched": 25493,
+              "decisionMatched": 10579,
+              "taxMatched": 6205,
+              "deduplicated": 6034,
+              "duplicates": 171,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 33570,
+              "entries": 34,
+              "processed": 33570,
+              "dateMatched": 33570,
+              "decisionMatched": 11962,
+              "taxMatched": 2299,
+              "deduplicated": 2298,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24402,
+              "entries": 25,
+              "processed": 24402,
+              "dateMatched": 24402,
+              "decisionMatched": 4919,
+              "taxMatched": 2256,
+              "deduplicated": 2190,
+              "duplicates": 66,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12008,
+              "entries": 13,
+              "processed": 12008,
+              "dateMatched": 12008,
+              "decisionMatched": 4145,
+              "taxMatched": 677,
+              "deduplicated": 676,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "d31cb4bf-f81b-4a1c-8b9b-3409ef5d7db5",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -115099,541 +117830,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "23433ece-fcc4-4fd5-874c-18ab81ef0ac5",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T06:25:50.532Z",
-        "finishedAt": "2026-08-20T06:32:08.469Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 6,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "79271310-d0ef-406c-9c87-a204ca35f3f8",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T06:09:24.297Z",
-        "finishedAt": "2026-08-20T06:25:50.513Z",
-        "discovered": 0,
-        "analyzed": 3,
-        "published": 2,
-        "discarded": 1,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 10,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T08:30:52.064Z",
-    "nextRunAt": "2026-08-21T14:30:52.064Z"
+    "lastRunAt": "2026-08-21T08:54:38.792Z",
+    "nextRunAt": "2026-08-21T14:54:38.792Z"
   }
 }
