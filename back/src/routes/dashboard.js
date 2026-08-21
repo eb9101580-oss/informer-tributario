@@ -22,6 +22,7 @@ export function createDashboardRouter({
         && alert.score >= 6
         && /^https:\/\//i.test(alert.officialUrl || '')
         && Boolean(alert.provenance?.sourceId)
+        && alert.provenance?.analysisMode !== 'fast-triage'
         && !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes)
         && isCurrentFeedItem(alert));
       const urgent = relevant.filter((alert) => alert.score >= 8);

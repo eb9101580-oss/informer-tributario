@@ -134,7 +134,8 @@ function InternalApp() {
         .filter((archived) => !alerts.some((alert) => alert.id === archived.publicationId))
         .map((archived) => ({ ...archived.snapshot, id: archived.snapshot?.id || archived.publicationId }))]
       : alerts;
-    return availableAlerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl).filter((alert) => {
+    return availableAlerts.filter((alert) => alert.isDemo === false && alert.score >= 6 && alert.officialUrl
+      && alert.provenance?.analysisMode !== 'fast-triage').filter((alert) => {
       const searchable = [alert.title, alert.summary, alert.theme, alert.agency, ...(alert.taxes || [])].join(' ').toLocaleLowerCase('pt-BR');
       const relevanceMatch = relevance === 'all'
         || (relevance === 'urgent' ? alert.score >= 8

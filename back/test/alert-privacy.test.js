@@ -32,6 +32,7 @@ const baseDatabase = {
   meta: { lastUpdatedAt: new Date().toISOString() },
   alerts: [
     alert('global'),
+    alert('fast', { provenance: { sourceId: 'source-fast', analysisMode: 'fast-triage' } }),
     alert('persisted-private', {
       ownerId: 'user-b',
       provenance: { sourceId: 'tracked-action-stj' },
@@ -122,6 +123,9 @@ test('feed público exclui movimentos, usuário vê apenas os próprios e admin 
 
     const forbiddenDetail = await jsonRequest(baseUrl, '/movement-b', 'user-a');
     assert.equal(forbiddenDetail.response.status, 404);
+
+    const provisionalDetail = await jsonRequest(baseUrl, '/fast', 'user-a');
+    assert.equal(provisionalDetail.response.status, 404);
 
     const admin = await jsonRequest(baseUrl, '/?period=all', 'admin');
     assert.deepEqual(

@@ -241,3 +241,29 @@ test('não envia publicação sobre Simples Nacional', async () => {
   assert.equal(result.alertsSent, 0);
   assert.equal(result.deliveries, 0);
 });
+
+test('não envia triagem provisória antes da análise do Ollama', async () => {
+  let sends = 0;
+  const alert = movementAlert({
+    id: 'publication-fast-triage',
+    ownerId: undefined,
+    kind: 'Decisão tributária',
+    score: 9.2,
+    provenance: { sourceId: 'trf3', analysisMode: 'fast-triage' },
+  });
+
+  const result = await notifyAlerts([alert], {
+    requireCurrentFeed: false,
+    emailIsConfigured: () => true,
+    databaseIsConfigured: () => false,
+    readSubscriptionsFn: async () => ({
+      notifiedAlertIds: [],
+      subscribers: [{ id: 'legacy', email: 'legacy@example.com', active: true }],
+    }),
+    sendEmailFn: async () => { sends += 1; },
+    markAlertsNotifiedFn: async () => {},
+  });
+
+  assert.equal(sends, 0);
+  assert.equal(result.alertsSent, 0);
+});

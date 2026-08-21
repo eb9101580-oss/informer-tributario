@@ -341,6 +341,7 @@ export async function notifyAlerts(alerts, {
   if (!emailIsConfigured()) return { configured: false, alertsSent: 0, deliveries: 0, skipped: alerts.length, failed: 0 };
   const eligibleAlerts = uniqueAlerts(alerts)
     .filter((alert) => alert?.isDemo === false && Number(alert.score) >= config.emailThreshold && /^https:\/\//i.test(alert.officialUrl || ''))
+    .filter((alert) => alert.provenance?.analysisMode !== 'fast-triage')
     .filter((alert) => !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes))
     .filter((alert) => !requireCurrentFeed || isCurrentFeedItem(alert));
 

@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 50
     env:
       OLLAMA_MODEL: qwen3:4b
-      ANALYSIS_PROVIDER: 'auto'
+      ANALYSIS_PROVIDER: 'ollama'
       LLAMA_CPP_URL: 'http://127.0.0.1:8080'
       LLAMA_CPP_MODEL: 'Qwen3-4B-Q4_K_M.gguf'
       OLLAMA_CONTEXT_LENGTH: '8192'
@@ -28,7 +28,7 @@ jobs:
       DJEN_METADATA_PROXY_URL: 'https://informer-tributario.vercel.app/api/djen/caderno-metadata'
       DJEN_MAX_CANDIDATES_PER_TRIBUNAL_DATE: '60'
       MONITOR_ENABLED: 'false'
-      MONITOR_FAST_PUBLISH: 'true'
+      MONITOR_FAST_PUBLISH: 'false'
       MONITOR_FAST_PUBLISH_PER_RUN: '20'
       MONITOR_LOOKBACK_DAYS: '2'
       MONITOR_MAX_ANALYSES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
@@ -64,28 +64,25 @@ jobs:
           npm ci --prefix back
           python -m pip install -r back/scraper/requirements.txt
 
-      - name: Descobrir fontes e publicar triagem imediata
+      - name: Descobrir fontes e ordenar fila para o Ollama
         env:
           MONITOR_ANALYZE: 'false'
           MONITOR_DISCOVER: 'true'
         run: node back/scripts/run-monitor.js
 
-      - name: Publicar triagem antes do modelo
+      - name: Persistir fila antes do modelo
         run: |
           if git diff --quiet -- back/data/database.json; then
-            echo "Nenhuma triagem nova."
+            echo "Nenhum candidato novo."
             exit 0
           fi
           git config user.name "informer-tributario[bot]"
           git config user.email "informer-tributario[bot]@users.noreply.github.com"
           git add back/data/database.json
-          git commit -m "Publica triagem tributaria imediata"
+          git commit -m "Atualiza fila tributaria para o Ollama"
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
-
-      - name: Notificar imediatamente publicacoes nota alta
-        run: node back/scripts/notify-subscribers.js
 
       - name: Preparar analisador local
         run: |
