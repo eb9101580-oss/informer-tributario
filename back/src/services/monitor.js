@@ -10,6 +10,7 @@ import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
 import { hasCandidateText, unpackCandidateText } from './candidateText.js';
 import { loadMonitoredSources } from './customSources.js';
 import { collectPublicSourceDocument } from './sourceSafety.js';
+import { assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -22,7 +23,40 @@ export function candidateId(url) {
   return createHash('sha256').update(url).digest('hex').slice(0, 24);
 }
 
+function canonicalLegalObject(candidate) {
+  const text = String(`${candidate.title || ''} ${candidate.documentKind || ''} ${candidate.url || ''}`)
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const cnj = text.match(/\b\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4}\b/)?.[0];
+  if (cnj) return `processo-cnj:${cnj}`;
+  const courtCase = text.match(/\b(re|resp|aresp|rcl|adi|adc|adpf|aco)\s*(?:n(?:\.|º|°)?\s*)?([\d.]{4,})(?:\s*\/\s*([a-z]{2}))?/i);
+  if (courtCase) return `processo:${courtCase[1]}:${courtCase[2].replace(/\D/g, '')}:${courtCase[3] || ''}`;
+  const theme = text.match(/\btema\s*(?:repetitivo\s*)?(\d{1,5})\b/);
+  if (theme) return `tema:${theme[1]}`;
+  const act = text.match(/\b(instrucao normativa(?:\s+rfb)?|portaria(?:\s+(?:rfb|mf))?|resolucao|solucao de (?:consulta|divergencia)|parecer normativo|ato declaratorio(?:\s+(?:interpretativo|executivo))?|convenio icms|ajuste sinief|ato cotepe)\s*(?:n(?:\.|º|°)?\s*)?([\d.]+)(?:\s*\/\s*(\d{4}))?/);
+  if (act) return `ato:${act[1]}:${act[2]}:${act[3] || ''}`;
+  return null;
+}
+
+function canonicalLegalEvent(candidate) {
+  const text = String(`${candidate.title || ''} ${candidate.documentKind || ''}`)
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  if (/modulacao/.test(text)) return 'modulacao';
+  if (/embargos?/.test(text)) return 'embargos';
+  if (/afeta(?:cao|do|da|r)?|repercussao geral reconhecida/.test(text)) return 'afetacao';
+  if (/publicacao do acordao|acordao publicado|inteiro teor/.test(text)) return 'publicacao-inteiro-teor';
+  if (/julgamento de merito|merito julgado|tese fixada|fixa tese/.test(text)) return 'julgamento-merito';
+  if (/nova versao|versao\s*[\d.]+|novo leiaute|novo layout/.test(text)) return 'nova-versao';
+  if (/altera|alteracao|modifica|revoga/.test(text)) return 'alteracao';
+  if (/publica|institui|regulamenta|aprova/.test(text)) return 'publicacao';
+  return 'evento';
+}
+
 export function candidateFingerprint(candidate) {
+  const legalObject = canonicalLegalObject(candidate);
+  if (legalObject) {
+    const eventDate = publicationDateKey(candidate.publishedAt) || candidate.backfillDate || '';
+    return createHash('sha256').update(`${legalObject}:${canonicalLegalEvent(candidate)}:${eventDate}`).digest('hex').slice(0, 24);
+  }
   if (candidate.fingerprintKey) return createHash('sha256').update(`${candidate.sourceId}:${candidate.fingerprintKey}`).digest('hex').slice(0, 24);
   const substantiveTitle = String(candidate.title || '').split('—').slice(1).join('—').trim() || candidate.title || candidate.url;
   return createHash('sha256').update(`${candidate.sourceId}:${substantiveTitle}`).digest('hex').slice(0, 24);
@@ -62,8 +96,12 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
   const score = calculateScore(analysis.criteria);
   const now = new Date().toISOString();
   const analyzedPublishedAt = Number.isNaN(Date.parse(analysis.publishedAt)) ? null : analysis.publishedAt;
+  const editorialPolicy = candidate.fastTriage?.policy || assessTaxIntelligenceCandidate({ ...candidate, content: document.text });
   return {
-    ...(existingAlert || {}), ...analysis, id: existingAlert?.id || randomUUID(), score, relevance: relevanceLabel(score), officialUrl: candidate.url,
+    ...(existingAlert || {}), ...analysis, id: existingAlert?.id || randomUUID(), score, relevance: relevanceLabel(score),
+    priority: editorialPolicy.priority || analysis.priority,
+    officialUrl: candidate.url, primarySourceUrl: candidate.sourceType === 'official' ? candidate.url : null, sourceUrl: candidate.url,
+    policyVersion: TAX_POLICY_VERSION,
     publishedAt: candidate.publishedAt || document.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: existingAlert?.createdAt || now, updatedAt: now,
     provenance: {
@@ -74,6 +112,7 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
       sourceType: candidate.sourceType || 'official',
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
       sourceDocumentType: candidate.sourceDocumentType,
+      policyVersion: TAX_POLICY_VERSION,
       fastTriage: candidate.fastTriage || fastTriageCandidate(candidate),
     },
     sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
@@ -92,6 +131,17 @@ function operationalUpdateRank(candidate) {
 
 function sourceTypeRank(candidate) {
   return candidate.sourceType === 'official' ? 0 : 1;
+}
+
+function sourcePolicyRank(candidate) {
+  const sourceId = String(candidate.sourceId || '').toLowerCase();
+  if (['diario-oficial', 'reforma-cgibs', 'pgfn-pareceres'].includes(sourceId) || sourceId.startsWith('receita-')) return 0;
+  if (sourceId === 'carf') return 1;
+  if (['stf', 'stj', 'stf-informativos', 'stj-informativos'].includes(sourceId)) return 2;
+  if (sourceId === 'confaz-ajustes' || sourceId === 'nfe-notas-tecnicas' || sourceId.startsWith('sped-')) return 3;
+  if (/^trf[1-6]$/.test(sourceId)) return 4;
+  if (['camara', 'senado'].includes(sourceId)) return 5;
+  return candidate.sourceType === 'official' ? 6 : 9;
 }
 
 function freshnessRank(candidate, now = Date.now()) {
@@ -119,6 +169,7 @@ export function fastTriageCandidate(candidate) {
   const text = `${cleanTitle} ${candidate.documentKind || ''} ${unpackCandidateText(candidate).slice(0, 14000)}`;
   const signals = [];
   let score = 0;
+  const policy = assessTaxIntelligenceCandidate({ ...candidate, content: unpackCandidateText(candidate).slice(0, 60000) });
   if (publicationDateKey(candidate.publishedAt)) { score += 20; signals.push('data-confirmada'); }
   if ((candidate.sourceType || 'official') === 'official') { score += 12; signals.push('fonte-oficial'); }
   if (STRUCTURED_ADAPTERS.has(candidate.discoveryMethod)) { score += 14; signals.push('coleta-estruturada'); }
@@ -129,12 +180,18 @@ export function fastTriageCandidate(candidate) {
   if (hasMerit) { score += 16; signals.push('conteudo-de-merito'); }
   if (PROCEDURAL_PATTERN.test(text) && !hasMerit) { score -= 18; signals.push('possivel-ato-processual'); }
   if (candidate.sections?.includes('reforma') || candidate.sections?.includes('obrigacoes')) score += 6;
+  score += Math.round(policy.score * 0.45);
+  if (policy.priorityOneTopics.length) signals.push(...policy.priorityOneTopics.map((topic) => `politica-p1:${topic}`));
+  if (policy.priorityTwoTopics.length) signals.push(...policy.priorityTwoTopics.map((topic) => `politica-p2:${topic}`));
+  if (!policy.eligible) score -= 28;
+  if (policy.exclusionReason) score = 0;
   const boundedScore = Math.max(0, Math.min(100, score));
   return {
     score: boundedScore,
     band: boundedScore >= 70 ? 'alta' : boundedScore >= 45 ? 'media' : 'baixa',
     signals,
-    engine: 'regras-tributarias-v1',
+    engine: `regras-tributarias-v2:${policy.version}`,
+    policy,
   };
 }
 
@@ -293,13 +350,10 @@ export function enrichFastAlert(alert, candidate) {
   return { ...alert, ...details };
 }
 
-export function canFastPublishCandidate(candidate) {
-  const triage = candidate.fastTriage || fastTriageCandidate(candidate);
-  const structured = STRUCTURED_ADAPTERS.has(candidate.discoveryMethod) || OPERATIONAL_SOURCES.has(candidate.sourceId);
-  return (candidate.sourceType || 'official') === 'official'
-    && triage.score >= 70
-    && structured
-    && isCandidateEligible(candidate.sourceId, candidate.title, candidate.url, unpackCandidateText(candidate));
+export function canFastPublishCandidate(_candidate) {
+  // A triagem determinística serve somente para ordenar a fila. A publicação
+  // exige sempre a análise estruturada do Ollama e o gate editorial completo.
+  return false;
 }
 
 export function makeFastAlert(candidate) {
@@ -457,8 +511,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
         return [{ ...item, id, status: 'pending', attempts: 0, backfillDate: targetDate || null, fastTriage: fastTriageCandidate(item) }];
       });
       run.discovered = additions.length;
-      const sourceRank = (item) => ['stf', 'stj', 'stj-informativos', 'stf-informativos', 'carf', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6'].includes(item.sourceId) ? 0 : ['receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'diario-oficial', 'pgfn-pareceres'].includes(item.sourceId) ? 1 : 2;
-      additions.sort((left, right) => sourceRank(left) - sourceRank(right));
+      additions.sort((left, right) => sourcePolicyRank(left) - sourcePolicyRank(right));
       return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) } };
     });
 
@@ -505,8 +558,21 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           ? item.backfillDate === targetDate || publicationDateKey(item.publishedAt) === targetDate
           : isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays))
         .map((item) => ({ ...item, fastTriage: item.fastTriage || fastTriageCandidate(item) }))
+        .filter((item) => (item.sourceType || 'official') === 'official'
+          && item.fastTriage.policy?.eligible
+          && item.fastTriage.policy?.primarySource
+          && !item.fastTriage.policy?.exclusionReason)
         .sort((left, right) => {
+          const leftTier = left.fastTriage.policy.priorityOneTopics.length ? 0 : 1;
+          const rightTier = right.fastTriage.policy.priorityOneTopics.length ? 0 : 1;
+          if (leftTier !== rightTier) return leftTier - rightTier;
+          const leftConcrete = left.fastTriage.policy.concreteEvent && left.fastTriage.policy.businessEffect ? 0 : 1;
+          const rightConcrete = right.fastTriage.policy.concreteEvent && right.fastTriage.policy.businessEffect ? 0 : 1;
+          if (leftConcrete !== rightConcrete) return leftConcrete - rightConcrete;
           if (left.fastTriage.score !== right.fastTriage.score) return right.fastTriage.score - left.fastTriage.score;
+          const leftSourcePriority = sourcePolicyRank(left);
+          const rightSourcePriority = sourcePolicyRank(right);
+          if (leftSourcePriority !== rightSourcePriority) return leftSourcePriority - rightSourcePriority;
           const leftFreshness = freshnessRank(left);
           const rightFreshness = freshnessRank(right);
           if (leftFreshness !== rightFreshness) return leftFreshness - rightFreshness;
@@ -574,6 +640,8 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
             documentKind: candidate.documentKind,
             sourceName: candidate.sourceName,
             sections: candidateSections(candidate),
+            sourceType: candidate.sourceType || 'official',
+            policyAssessment: candidate.fastTriage?.policy || assessTaxIntelligenceCandidate({ ...candidate, content: inlineText }),
           };
           if (document.characters < 200) throw new Error('Documento sem texto suficiente.');
           const analysis = await analyzeDocument(document);
@@ -586,11 +654,23 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
             candidate.title, candidate.url, document.text, alert.title, alert.summary,
             alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes,
           );
-          const publish = !excludedTopic && analysis.relevant && alert.score >= 6
+          const policy = candidate.fastTriage?.policy || assessTaxIntelligenceCandidate({ ...candidate, content: document.text });
+          const primarySourceVerified = (candidate.sourceType || 'official') === 'official';
+          const passesEditorialGate = policy.eligible
+            && policy.concreteEvent
+            && (policy.priorityOneTopics.length > 0 || policy.businessEffect)
+            && analysis.contentNature !== 'Opinião ou conteúdo sem fato novo'
+            && analysis.businessActionable
+            && analysis.noveltyType !== 'Sem novidade concreta'
+            && analysis.relevanceReasons.length > 0;
+          const publish = !excludedTopic && primarySourceVerified && passesEditorialGate && analysis.relevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
           const discardReason = publish ? null
             : excludedTopic ? 'Tema Simples Nacional excluído por regra editorial.'
-              : !analysis.relevant ? 'A análise detalhada classificou o documento como não relevante.'
+              : !primarySourceVerified ? 'Fonte secundária sem documento oficial primário resolvido.'
+                : !policy.eligible ? policy.exclusionReason || 'Tema fora da matriz de inteligência tributária empresarial.'
+                  : !passesEditorialGate ? 'Sem fato novo e providência empresarial concreta.'
+                    : !analysis.relevant ? 'A análise detalhada classificou o documento como não relevante.'
               : alert.score < 6 ? `Nota ${alert.score} inferior ao mínimo editorial 6.`
                 : 'Data de publicação fora da janela de hoje e ontem.';
           await updateDatabase((data) => ({

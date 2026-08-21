@@ -21,11 +21,12 @@ test('filtro tributário ignora acentos e identifica tributos', () => {
   assert.equal(isTaxRelated('Informativo semanal de licitações'), false);
 });
 
-test('regra editorial exclui qualquer publicação sobre Simples Nacional', () => {
+test('regra editorial exclui Simples Nacional comum e permite mudança estrutural da Reforma', () => {
   assert.equal(isExcludedTaxTopic('Alteração do Simples Nacional'), true);
   assert.equal(isExcludedTaxTopic('Alteração do SIMPLES-NACIONAL'), true);
   assert.equal(isCandidateEligible('receita-in', 'Nova regra do Simples Nacional', 'https://normasinternet2.receita.fazenda.gov.br/consulta/externa/1'), false);
   assert.equal(isCandidateEligible('trf3', 'Sentença tributária', 'https://comunicaapi.pje.jus.br/certidao', 'Discussão relativa ao Simples Nacional.'), false);
+  assert.equal(isCandidateEligible('receita-in', 'Resolução altera a transição do Simples Nacional para IBS e CBS', 'https://normasinternet2.receita.fazenda.gov.br/consulta/externa/2'), true);
 });
 
 test('id do candidato é estável por URL', () => {
@@ -40,26 +41,34 @@ test('fingerprint agrupa processos com a mesma ementa', () => {
   assert.notEqual(candidateFingerprint({ ...base, fingerprintKey: 'stj-djen:1' }), candidateFingerprint({ ...base, fingerprintKey: 'stj-djen:2' }));
 });
 
+test('fingerprint une o mesmo evento jurídico entre fontes e preserva fases novas', () => {
+  const official = { sourceId: 'stj', title: 'STJ afeta REsp 1.985.788/RJ como repetitivo', publishedAt: '2026-08-21' };
+  const secondary = { sourceId: 'jota', title: 'REsp nº 1.985.788 / RJ é afetado pelo STJ', publishedAt: '2026-08-21' };
+  const merit = { sourceId: 'stj', title: 'STJ julga o mérito do REsp 1.985.788/RJ e fixa tese', publishedAt: '2026-08-21' };
+  assert.equal(candidateFingerprint(official), candidateFingerprint(secondary));
+  assert.notEqual(candidateFingerprint(official), candidateFingerprint(merit));
+});
+
 test('triagem rápida prioriza mérito tributário oficial sobre ato processual genérico', () => {
   const merit = fastTriageCandidate({
     sourceId: 'trf3', sourceType: 'official', discoveryMethod: 'trf-djen', publishedAt: '2026-08-19',
-    documentKind: 'Acórdão', title: 'Acórdão julga o mérito da restituição de crédito tributário de ICMS',
+    documentKind: 'Acórdão', title: 'Acórdão fixa tese nova sobre restituição de crédito tributário de ICMS',
   });
   const procedural = fastTriageCandidate({
     sourceId: 'trf3', sourceType: 'official', discoveryMethod: 'trf-djen', publishedAt: '2026-08-19',
     documentKind: 'Decisão', title: 'Intimação para ciência e abertura de prazo em execução fiscal',
   });
   assert.ok(merit.score > procedural.score);
-  assert.equal(merit.engine, 'regras-tributarias-v1');
+  assert.match(merit.engine, /^regras-tributarias-v2:/);
   assert.ok(procedural.signals.includes('possivel-ato-processual'));
 });
 
-test('TRFs aceitam notícia tributária e rejeitam navegação institucional', () => {
+test('TRFs aceitam apenas notícia com tese ou precedente e rejeitam rotina institucional', () => {
   assert.equal(isCandidateEligible('trf1', 'Informativos Avisos Infojef', 'https://www.trf1.jus.br/trf1/informativos'), false);
   assert.equal(isCandidateEligible('trf1', 'Sistemas Imposto de Renda', 'https://www.trf1.jus.br/trf1/magistrado/sistemas'), false);
-  assert.equal(isCandidateEligible('trf4', 'Turma decide incidência de Cofins sobre receita', 'https://www.trf4.jus.br/noticia/123'), true);
+  assert.equal(isCandidateEligible('trf4', 'Turma fixa tese nova sobre incidência de Cofins sobre receita', 'https://www.trf4.jus.br/noticia/123'), true);
   assert.equal(isCandidateEligible('trf1', 'Sentença — Direito tributário: empréstimo consignado', 'https://comunicaapi.pje.jus.br/certidao', 'Taxa de juros e repetição de indébito bancário.'), false);
-  assert.equal(isCandidateEligible('trf1', 'Sentença — Direito tributário: empresa pública', 'https://comunicaapi.pje.jus.br/certidao', 'Imposto sobre serviços, ISS e imunidade tributária recíproca.'), true);
+  assert.equal(isCandidateEligible('trf1', 'Sentença — Direito tributário: empresa pública', 'https://comunicaapi.pje.jus.br/certidao', 'Imposto sobre serviços, ISS e imunidade tributária recíproca.'), false);
 });
 
 test('Receita aceita atos normativos tributários e elimina autorizações individuais', () => {
@@ -223,14 +232,14 @@ test('texto integral grande da decisão é compactado sem perda para a fila', ()
   assert.ok(packed.inlineTextGzip.length < original.length / 5);
 });
 
-test('publica imediatamente uma decisao oficial de alta confianca com resumo factual', () => {
+test('triagem nunca publica antes da análise estruturada do Ollama', () => {
   const candidate = {
     sourceId: 'trf3', sourceType: 'official', discoveryMethod: 'trf-djen', publishedAt: '2026-08-20',
-    documentKind: 'Acórdão', sourceName: 'TRF3', title: 'Acórdão sobre crédito tributário de ICMS',
+    documentKind: 'Acórdão', sourceName: 'TRF3', title: 'Acórdão fixa tese nova sobre crédito tributário de ICMS',
     url: 'https://comunicaapi.pje.jus.br/certidao/123',
     inlineText: 'A Turma julgou o mérito sobre a restituição de crédito tributário de ICMS e definiu a incidência aplicável ao caso.',
   };
-  assert.equal(canFastPublishCandidate(candidate), true);
+  assert.equal(canFastPublishCandidate(candidate), false);
   const alert = makeFastAlert(candidate);
   assert.equal(alert.provenance.analysisMode, 'fast-triage');
   assert.equal(alert.provenance.detailedAnalysisPending, true);

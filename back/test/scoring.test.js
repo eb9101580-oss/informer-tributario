@@ -4,7 +4,7 @@ import { calculateScore, relevanceLabel } from '../src/services/scoring.js';
 
 test('calcula nota ponderada entre zero e dez', () => {
   assert.equal(calculateScore({ authority: 10, novelty: 10, legalImpact: 10, financialImpact: 10, reach: 10, clientFit: 10, actionPotential: 10 }), 10);
-  assert.equal(calculateScore({ authority: -2, novelty: 30 }), 1.2);
+  assert.equal(calculateScore({ authority: -2, novelty: 30 }), 2);
 });
 
 test('classifica relevância', () => {

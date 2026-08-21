@@ -83,11 +83,11 @@ O fluxo híbrido é:
 
 1. consultar cada fonte oficial;
 2. filtrar e classificar todos os metadados com regras tributárias rápidas;
-3. eliminar atos meramente processuais e deduplicar documentos repetidos;
-4. priorizar mérito judicial, atos da Receita e mudanças operacionais;
+3. aplicar a política empresarial P1/P2, os filtros negativos e as regras específicas de STF, STJ, CARF e TRFs;
+4. deduplicar por processo, Tema, ato e fase jurídica, preservando eventos realmente novos;
 5. extrair HTML ou PDF com Scrapling somente para os melhores candidatos;
-6. usar o Ollama para a análise jurídica detalhada, no máximo dois documentos por ciclo local;
-7. publicar somente itens relevantes com nota mínima 6.
+6. usar o Ollama para produzir a análise jurídica detalhada e estruturada;
+7. publicar somente itens com fato novo, efeito empresarial, fonte oficial primária, um critério de relevância verificável e nota mínima 6.
 
 Os limites evitam sobrecarga em computadores com 8 GB de memória. Ajuste em `back/.env`:
 
@@ -171,9 +171,11 @@ npm.cmd --prefix back test
 npm.cmd --prefix front run build
 ```
 
-### Provedor de analise rapida
+### Provedor de análise detalhada
 
-O monitor normaliza metadados, deduplica por URL/processo/ementa, ranqueia merito e publica imediatamente documentos oficiais de alta confianca com um resumo factual. Ollama ou llama.cpp fica reservado para substituir o cartao por uma analise detalhada.
+O monitor normaliza metadados, deduplica por objeto e evento jurídico e usa regras rápidas apenas para ordenar a fila. Nenhuma triagem provisória é publicada. Todo cartão do feed precisa passar pelo Ollama ou llama.cpp, conter “O que aconteceu”, “O que mudou”, impacto prático, prioridade, perfis afetados e base jurídica, além do link oficial primário.
+
+A política editorial prioriza Reforma IBS/CBS, PIS/Cofins, PER/DCOMP, IRPJ/CSLL/JCP, dividendos/IRRF, retenções, SPED, ICMS e aduaneiro. Conteúdo político, especulativo, educacional, promocional, pessoal ou meramente repetitivo é descartado. Decisões judiciais rotineiras não entram: cada tribunal possui um gate próprio de tese, precedente ou mudança concreta.
 
 Para testar llama.cpp no Windows, instale o servidor e inicie um modelo GGUF. Com `ANALYSIS_PROVIDER=auto`, o backend tenta `http://localhost:8080` e volta automaticamente para o Ollama se o servidor nao estiver disponivel:
 

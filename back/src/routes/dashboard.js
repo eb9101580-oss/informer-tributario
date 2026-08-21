@@ -5,6 +5,7 @@ import { alertsForViewer } from '../services/alertVisibility.js';
 import { optionalAuth } from '../middleware/auth.js';
 import { loadMonitoredSources } from '../services/customSources.js';
 import { isExcludedTaxTopic } from '../services/sourceAdapters.js';
+import { alertPassesTaxIntelligencePolicy, primarySourceUrlForAlert } from '../services/taxIntelligencePolicy.js';
 
 export function createDashboardRouter({
   optionalAuthMiddleware = optionalAuth,
@@ -20,9 +21,10 @@ export function createDashboardRouter({
       const visibleAlerts = await alertsForViewer(database, request.auth, { readTrackedActionsForUserFn });
       const relevant = visibleAlerts.filter((alert) => alert.isDemo === false
         && alert.score >= 6
-        && /^https:\/\//i.test(alert.officialUrl || '')
+        && Boolean(primarySourceUrlForAlert(alert))
         && Boolean(alert.provenance?.sourceId)
         && alert.provenance?.analysisMode !== 'fast-triage'
+        && alertPassesTaxIntelligencePolicy(alert)
         && !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes)
         && isCurrentFeedItem(alert));
       const urgent = relevant.filter((alert) => alert.score >= 8);

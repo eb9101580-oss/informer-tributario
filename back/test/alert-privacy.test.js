@@ -9,21 +9,25 @@ function alert(id, overrides = {}) {
   const now = new Date().toISOString();
   return {
     id,
-    title: `Alerta ${id}`,
-    summary: `Resumo ${id}`,
-    theme: 'Tributário',
-    agency: 'Fonte oficial',
+    title: `Portaria altera apuração de créditos de ICMS — ${id}`,
+    summary: `A Receita publicou portaria que altera a apuração dos créditos de ICMS para empresas — ${id}.`,
+    whatChanged: 'O procedimento anterior foi substituído por nova regra oficial de apuração.',
+    practicalImpact: 'Empresas precisam revisar a apuração, o ERP e os documentos fiscais afetados.',
+    officeAction: 'Mapear créditos de ICMS e adequar o procedimento interno.',
+    legalBasis: ['Portaria RFB 123/2026'],
+    theme: 'ICMS empresarial',
+    agency: 'Receita Federal',
     taxes: ['ICMS'],
-    status: 'Publicado',
-    kind: 'Notícia',
-    impactType: 'Informativo',
+    status: 'Fato confirmado',
+    kind: 'Portaria',
+    impactType: 'Risco',
     score: 7,
     relevance: 'Relevante',
     officialUrl: `https://example.test/${id}`,
     publishedAt: now,
     createdAt: now,
     isDemo: false,
-    provenance: { sourceId: `source-${id}` },
+    provenance: { sourceId: 'receita-in', sourceType: 'official', analysisMode: 'ollama' },
     ...overrides,
   };
 }
@@ -42,8 +46,8 @@ const baseDatabase = {
 };
 
 const trackers = [
-  { ownerId: 'user-a', movementAlerts: [alert('movement-a', { score: 8.5, impactType: 'Oportunidade' })] },
-  { ownerId: 'user-b', movementAlerts: [alert('movement-b', { score: 8.5, impactType: 'Oportunidade' })] },
+  { ownerId: 'user-a', movementAlerts: [alert('movement-a', { score: 8.5, kind: 'Movimentação processual', impactType: 'Oportunidade' })] },
+  { ownerId: 'user-b', movementAlerts: [alert('movement-b', { score: 8.5, kind: 'Movimentação processual', impactType: 'Oportunidade' })] },
 ];
 
 function sessionMiddleware(request, _response, next) {

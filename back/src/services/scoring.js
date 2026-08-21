@@ -1,11 +1,11 @@
 const WEIGHTS = {
-  authority: 0.2,
-  novelty: 0.12,
+  authority: 0.1,
+  novelty: 0.2,
   legalImpact: 0.18,
-  financialImpact: 0.18,
-  reach: 0.1,
+  financialImpact: 0.15,
+  reach: 0.05,
   clientFit: 0.12,
-  actionPotential: 0.1,
+  actionPotential: 0.2,
 };
 
 const clamp = (value) => Math.min(10, Math.max(0, Number(value) || 0));

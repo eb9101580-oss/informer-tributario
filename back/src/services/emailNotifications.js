@@ -4,6 +4,7 @@ import { databaseConfigured, ensureAppSchema, query } from './db.js';
 import { emailConfigured, sendEmail } from './email.js';
 import { isCurrentFeedItem } from './feedWindow.js';
 import { isExcludedTaxTopic } from './sourceAdapters.js';
+import { alertPassesTaxIntelligencePolicy, primarySourceUrlForAlert } from './taxIntelligencePolicy.js';
 import { markAlertsNotified, readSubscriptions } from './subscriptions.js';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,6 +22,99 @@ function displayAlertTitle(value = '') {
   return String(value || '')
     .replace(/^\s*(senten[cç]a)\s+tipo\s+[a-z0-9]+\s*(?:[·—-]\s*)?/i, '$1 · ')
     .trim();
+}
+
+function displayPublicationDate(value) {
+  const raw = String(value || '').trim();
+  const dateOnly = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (dateOnly) return `${dateOnly[3]}/${dateOnly[2]}/${dateOnly[1]}`;
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) return 'Não informada';
+  return new Intl.DateTimeFormat('pt-BR', {
+    dateStyle: 'short',
+    timeStyle: 'short',
+    timeZone: 'America/Sao_Paulo',
+  }).format(parsed);
+}
+
+function displayList(value, fallback = 'Não informado') {
+  const items = (Array.isArray(value) ? value : value ? [value] : [])
+    .map((item) => String(item || '').trim())
+    .filter(Boolean);
+  return items.length ? [...new Set(items)].join(' · ') : fallback;
+}
+
+function editorialPriority(alert) {
+  if (['Alta', 'Média', 'Acompanhamento'].includes(alert.priority)) return alert.priority;
+  if (alert.status === 'Em andamento' || alert.kind === 'Movimentação processual') return 'Acompanhamento';
+  return Number(alert.score) >= 8 ? 'Alta' : 'Média';
+}
+
+function publicationFields(alert) {
+  return {
+    title: displayAlertTitle(alert.title),
+    score: String(alert.score).replace('.', ','),
+    relevance: String(alert.relevance || 'Alta relevância'),
+    priority: editorialPriority(alert),
+    publishedAt: displayPublicationDate(alert.publishedAt),
+    agency: String(alert.agency || alert.provenance?.sourceName || 'Não informado'),
+    taxes: displayList(alert.taxes),
+    summary: String(alert.summary || 'Não informado'),
+    whatChanged: String(alert.whatChanged || 'Não informado'),
+    practicalImpact: String(alert.practicalImpact || 'Não informado'),
+    impactType: String(alert.impactType || 'Acompanhamento'),
+    impactDetail: String(alert.officeAction || alert.opportunity?.action || 'Acompanhar a fonte oficial.'),
+    affectedProfiles: displayList(alert.affectedProfiles),
+    legalBasis: displayList(alert.legalBasis, 'Não identificada no documento'),
+    primarySourceUrl: primarySourceUrlForAlert(alert) || '',
+  };
+}
+
+function fullPublicationHtml(alert, headingLevel = 2) {
+  const fields = publicationFields(alert);
+  const Heading = `h${headingLevel}`;
+  const source = fields.primarySourceUrl
+    ? `<p><a href="${escapeHtml(fields.primarySourceUrl)}">Abrir fonte oficial primária</a></p>`
+    : '<p><strong>Fonte oficial primária:</strong> não localizada.</p>';
+  return `<${Heading} style="font-size:18px;margin:0 0 6px">${escapeHtml(fields.title)}</${Heading}>
+    <p style="margin:0 0 8px"><strong>Nota ${fields.score}/10</strong> · ${escapeHtml(fields.relevance)} · <strong>Prioridade ${escapeHtml(fields.priority)}</strong></p>
+    <p><strong>Data:</strong> ${escapeHtml(fields.publishedAt)}<br><strong>Órgão:</strong> ${escapeHtml(fields.agency)}<br><strong>Tributos:</strong> ${escapeHtml(fields.taxes)}</p>
+    <h3>O que aconteceu</h3><p>${escapeHtml(fields.summary)}</p>
+    <h3>O que mudou</h3><p>${escapeHtml(fields.whatChanged)}</p>
+    <h3>Impacto prático</h3><p>${escapeHtml(fields.practicalImpact)}</p>
+    <h3>Oportunidade ou risco</h3><p><strong>${escapeHtml(fields.impactType)}</strong> — ${escapeHtml(fields.impactDetail)}</p>
+    <h3>Quem pode ser afetado</h3><p>${escapeHtml(fields.affectedProfiles)}</p>
+    <h3>Base jurídica</h3><p>${escapeHtml(fields.legalBasis)}</p>
+    ${source}`;
+}
+
+function fullPublicationText(alert) {
+  const fields = publicationFields(alert);
+  return `${fields.title}
+Nota ${alert.score}/10 · ${fields.relevance} · Prioridade ${fields.priority}
+Data: ${fields.publishedAt}
+Órgão: ${fields.agency}
+Tributos: ${fields.taxes}
+
+O que aconteceu
+${fields.summary}
+
+O que mudou
+${fields.whatChanged}
+
+Impacto prático
+${fields.practicalImpact}
+
+Oportunidade ou risco
+${fields.impactType} — ${fields.impactDetail}
+
+Quem pode ser afetado
+${fields.affectedProfiles}
+
+Base jurídica
+${fields.legalBasis}
+
+Fonte oficial primária: ${fields.primarySourceUrl || 'Não localizada'}`;
 }
 
 function deliveryKey(eventType, eventKey, userId) {
@@ -74,31 +168,21 @@ function uniqueAlerts(alerts = []) {
 
 function alertMessage(alert) {
   const displayTitle = displayAlertTitle(alert.title);
-  const title = escapeHtml(displayTitle);
-  const summary = escapeHtml(alert.summary);
-  const changed = escapeHtml(alert.whatChanged);
-  const link = escapeHtml(alert.officialUrl);
   const actionMovement = alert.kind === 'Movimentação processual';
   const subjectPrefix = actionMovement ? '[Informer · Ação]' : '[Informer]';
   return {
     subject: `${subjectPrefix} Nota ${String(alert.score).replace('.', ',')} — ${displayTitle}`.slice(0, 180),
-    html: `<h2>${title}</h2><p><strong>Nota ${String(alert.score).replace('.', ',')}/10</strong> · ${escapeHtml(alert.relevance)}</p><p>${summary}</p><h3>O que mudou</h3><p>${changed}</p><p><a href="${link}">Abrir publicação original</a></p><p>Você recebeu este aviso pelas preferências de alerta do Informer Tributário.</p>`,
-    text: `${displayTitle}\nNota ${alert.score}/10\n\n${alert.summary}\n\nO que mudou\n${alert.whatChanged}\n\nFonte: ${alert.officialUrl}`,
+    html: `<div style="font-family:Arial,sans-serif;line-height:1.5;color:#173c3c;max-width:680px;margin:auto">${fullPublicationHtml(alert)}<p>Você recebeu este aviso pelas preferências de alerta do Informer Tributário.</p></div>`,
+    text: fullPublicationText(alert),
   };
 }
 
 function publicationDigestMessage(alerts) {
   const ordered = [...alerts].sort((left, right) => Number(right.score) - Number(left.score));
   const itemsHtml = ordered.map((alert) => `<article style="margin:0 0 22px;padding:0 0 18px;border-bottom:1px solid #dfe8e6">
-    <h2 style="font-size:18px;margin:0 0 6px">${escapeHtml(displayAlertTitle(alert.title))}</h2>
-    <p style="margin:0 0 8px"><strong>Nota ${String(alert.score).replace('.', ',')}/10</strong> · ${escapeHtml(alert.relevance)}</p>
-    <p style="margin:0 0 10px">${escapeHtml(alert.summary)}</p>
-    <a href="${escapeHtml(alert.officialUrl)}">Abrir publicação original</a>
+    ${fullPublicationHtml(alert)}
   </article>`).join('');
-  const itemsText = ordered.map((alert) => `${displayAlertTitle(alert.title)}
-Nota ${alert.score}/10
-${alert.summary}
-Fonte: ${alert.officialUrl}`).join('\n\n---\n\n');
+  const itemsText = ordered.map(fullPublicationText).join('\n\n---\n\n');
   return {
     subject: `[Informer] ${ordered.length} ${ordered.length === 1 ? 'nova publicação' : 'novas publicações'} com nota 8+`,
     html: `<div style="font-family:Arial,sans-serif;line-height:1.5;color:#173c3c;max-width:680px;margin:auto"><h1>Radar tributário</h1><p>Estas são as novas publicações de alta relevância encontradas na última varredura.</p>${itemsHtml}<p>Você recebeu este resumo pelas preferências de alerta do Informer Tributário.</p></div>`,
@@ -340,8 +424,9 @@ export async function notifyAlerts(alerts, {
 } = {}) {
   if (!emailIsConfigured()) return { configured: false, alertsSent: 0, deliveries: 0, skipped: alerts.length, failed: 0 };
   const eligibleAlerts = uniqueAlerts(alerts)
-    .filter((alert) => alert?.isDemo === false && Number(alert.score) >= config.emailThreshold && /^https:\/\//i.test(alert.officialUrl || ''))
+    .filter((alert) => alert?.isDemo === false && Number(alert.score) >= config.emailThreshold && Boolean(primarySourceUrlForAlert(alert)))
     .filter((alert) => alert.provenance?.analysisMode !== 'fast-triage')
+    .filter(alertPassesTaxIntelligencePolicy)
     .filter((alert) => !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes))
     .filter((alert) => !requireCurrentFeed || isCurrentFeedItem(alert));
 

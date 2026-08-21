@@ -3,18 +3,55 @@ import { sectionIdsForSource } from '../data/sections.js';
 import { publicationDateKey } from './feedWindow.js';
 import { packCandidateText } from './candidateText.js';
 import { discoverPublicSourceLinks } from './sourceSafety.js';
+import { assessTaxIntelligenceCandidate, candidatePassesHardPolicy } from './taxIntelligencePolicy.js';
 
 const TAX_TERMS = [
   'tribut', 'imposto', 'contribuicao previdenciaria', 'contribuicao social', 'contribuicoes sociais', 'credito fiscal', 'credito tributario', 'debito fiscal',
-  'icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm',
-  'execucao fiscal', 'divida ativa', 'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal',
+  'icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irrf', 'csll', 'cbs', 'ibs', 'iof', 'cide', 'funrural', 'afrmm',
+  'iptu empresarial', 'ipva de frota empresarial', 'itcmd em reorganizacao societaria', 'itbi na integralizacao de capital', 'itbi em reorganizacao societaria',
+  'compensacao tributaria', 'compensacao de tributos', 'parcelamento tributario', 'beneficio fiscal', 'transacao tributaria', 'autorregularizacao incentivada',
   'imposto de importacao', 'imposto de exportacao', 'tributacao na importacao', 'tributacao na exportacao', 'regime aduaneiro', 'despacho aduaneiro', 'aduaneir',
   'imunidade tributaria', 'isencao tributaria', 'isencao fiscal', 'repeticao de indebito tributario', 'indebito tributario', 'taxa tributaria', 'taxa de fiscalizacao', 'taxa selic', 'emprestimo compulsorio',
-  'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'reforma tributaria', 'lucro presumido', 'lucro real',
+  'imposto seletivo', 'reforma tributaria', 'cgibs', 'split payment', 'apuracao assistida', 'aliquota de referencia', 'regime diferenciado', 'regime especifico',
+  'nao cumulatividade', 'apropriacao de creditos', 'estorno de creditos', 'ressarcimento de creditos', 'saldo credor', 'periodo de transicao',
+  'conceito de insumo', 'credito extemporaneo', 'creditos extemporaneos', 'credito presumido', 'creditos presumidos', 'tese do seculo',
+  'pedido de restituicao', 'pedido de ressarcimento', 'declaracao de compensacao', 'habilitacao de credito', 'nao homologacao', 'despacho decisorio',
+  'manifestacao de inconformidade', 'saldo negativo de irpj', 'saldo negativo de csll', 'pagamento indevido', 'pagamento a maior',
+  'lucro real', 'lucro presumido', 'prejuizo fiscal', 'base negativa de csll', 'limite de compensacao de 30', 'subvencao', 'subvencoes', 'agio', 'ganho de capital',
+  'depreciacao fiscal', 'amortizacao fiscal', 'juros sobre capital proprio', 'jcp', 'distribuicao de dividendos', 'tributacao de dividendos', 'tributacao minima de altas rendas', 'distribuicao desproporcional',
+  'retencao na fonte', 'retencoes tributarias', 'pis retido', 'pasep retido', 'cofins retida', 'csll retida', 'inss retido',
+  'nota fiscal eletronica', 'sped', 'obrigacao acessoria', 'efd contribuicoes', 'efd icms ipi', 'efd reinf', 'dctfweb',
+  'modulo de inclusao de tributos', 'esocial', 'nfs-e', 'ct-e', 'regra de validacao', 'guia pratico', 'malha fiscal',
+  'substituicao tributaria', 'icms-st', 'difal', 'transferencia de creditos', 'transferencia entre estabelecimentos', 'ciap',
+  'convenio icms', 'ajuste sinief', 'protocolo icms', 'ato cotepe',
+  'duimp', 'siscomex', 'classificacao fiscal', 'ncm', 'valoracao aduaneira', 'drawback', 'recof', 'recof-sped', 'reintegra',
+  'planejamento tributario', 'elisao fiscal', 'proposito negocial', 'substancia economica', 'reorganizacao societaria', 'negocio juridico indireto',
+  'voto de qualidade', 'sumula carf', 'resolucao de divergencia', 'processo administrativo tributario', 'multa de oficio', 'multa isolada', 'denuncia espontanea',
+  'novo edital de transacao', 'programa de conformidade tributaria', 'precos de transferencia', 'tributacao minima global', 'dupla tributacao',
+  'lucros no exterior', 'controladas e coligadas', 'royalties', 'importacao de servicos', 'pagamento ao exterior', 'pagamentos ao exterior',
   'fato gerador', 'auto de infracao', 'processo administrativo fiscal', 'lancamento fiscal', 'contencioso fiscal',
 ];
-const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irpf', 'irrf', 'csll', 'cbs', 'ibs', 'itcmd', 'itr', 'iof', 'iptu', 'ipva', 'itbi', 'cide', 'funrural', 'afrmm']);
+const SHORT_TAX_TERMS = new Set(['icms', 'iss', 'ipi', 'pis', 'pasep', 'cofins', 'irpj', 'irrf', 'csll', 'cbs', 'ibs', 'iof', 'cide', 'funrural', 'afrmm', 'jcp', 'ncm', 'duimp', 'siscomex', 'drawback', 'recof', 'reintegra']);
+const TAX_TOPIC_PATTERNS = [
+  /\bper\s*\/?\s*dcomp(?:\s+web)?\b/,
+  /\b(?:lc|lei complementar)\s*(?:n(?:\.\s*)?[\u00ba\u00b0o]?\s*)?(?:214\/2025|227\/2026)\b/,
+  /\blei\s*(?:n(?:\.\s*)?[\u00ba\u00b0o]?\s*)?(?:10\.637\/2002|10\.833\/2003|9\.718\/1998|9\.430\/1996|14\.596\/2023|15\.270\/2025)\b/,
+  /\bin\s*rfb\s*(?:n(?:\.\s*)?[\u00ba\u00b0o]?\s*)?(?:2\.121\/2022|2\.055\/2021)\b/,
+  /\bart\.?\s*170-a\s+do\s+ctn\b/,
+  /\b(?:dctf[\s-]*web\b.{0,40}\bmit\b|\bmit\b.{0,40}\bdctf[\s-]*web\b|modulo de inclusao de tributos)\b/,
+  /\bjcp\b/,
+  /\befd[\s-]*(?:contribuicoes|icms[\s/-]*ipi|reinf)\b/,
+  /\bnf[\s-]*e\b|\bnfs[\s-]*e\b|\bct[\s-]*e\b/,
+  /\bpilar\s*(?:2|dois)\b/,
+  /\bprecos?\s+de\s+transferencia\b/,
+];
 const TRIBUTARY_WORD_PATTERN = /\btribut(?:os?|ar|ad[oa]s?|acao|acoes|ari[oa]s?|avel|aveis)\b/i;
+
+function matchesTaxVocabulary(text) {
+  return TAX_TOPIC_PATTERNS.some((pattern) => pattern.test(text)) || TAX_TERMS.filter((term) => term !== 'tribut').some((term) => SHORT_TAX_TERMS.has(term)
+    ? new RegExp(`(^|[^a-z0-9])${term}([^a-z0-9]|$)`, 'i').test(text)
+    : text.includes(term));
+}
 
 export function normalizeSearchText(value = '') {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -22,25 +59,22 @@ export function normalizeSearchText(value = '') {
 
 export function isExcludedTaxTopic(...values) {
   const text = normalizeSearchText(values.flat().filter(Boolean).join(' '));
-  return /\bsimples[\s-]+nacional\b/.test(text);
+  if (!/\bsimples[\s-]+nacional\b/.test(text)) return false;
+  return Boolean(assessTaxIntelligenceCandidate({ title: text, content: text }).exclusionReason);
 }
 
 export function isTaxRelated(...values) {
   const text = normalizeSearchText(values.flat().filter(Boolean).join(' '));
-  return TRIBUTARY_WORD_PATTERN.test(text) || TAX_TERMS.filter((term) => term !== 'tribut').some((term) => SHORT_TAX_TERMS.has(term)
-    ? new RegExp(`(^|[^a-z0-9])${term}([^a-z0-9]|$)`, 'i').test(text)
-    : text.includes(term));
+  return TRIBUTARY_WORD_PATTERN.test(text) || matchesTaxVocabulary(text);
 }
 
 export function hasStrongTaxSignal(...values) {
   const text = normalizeSearchText(values.flat().filter(Boolean).join(' '));
-  return TAX_TERMS.filter((term) => term !== 'tribut').some((term) => SHORT_TAX_TERMS.has(term)
-    ? new RegExp(`(^|[^a-z0-9])${term}([^a-z0-9]|$)`, 'i').test(text)
-    : text.includes(term)) || /direito tributario|sistema tributario|materia tributaria/.test(text);
+  return matchesTaxVocabulary(text) || /direito tributario|sistema tributario|materia tributaria/.test(text);
 }
 
 export function isCandidateEligible(sourceId, title, url, content = '') {
-  if (isExcludedTaxTopic(title, url, content)) return false;
+  if (!candidatePassesHardPolicy({ sourceId, title, url, content, sourceType: 'official' })) return false;
   if (/#[^/]*$/.test(url) || /^ir para\b/i.test(title)) return false;
   if (/^trf[1-6]$/.test(sourceId)) {
     const navigationPath = /\/(?:acessibilidade|contato|institucional|magistrado|servicos?|sistemas?)(?:\/|$)/i;
@@ -522,18 +556,7 @@ async function discoverConfaz(source, targetDate = null) {
     result = await discoverOfficialLinks(yearUrl);
   } catch (error) {
     if (targetDate) return [];
-    // O índice do CONFAZ pode ficar lento; ainda assim deixamos uma fotografia
-    // diária da página oficial na fila, sem transformar a fonte em erro.
-    const day = new Date().toISOString().slice(0, 10);
-    return [{
-      title: `Ajustes SINIEF ${year} — atualização diária`,
-      url: `${yearUrl}?informer_snapshot=${day}`,
-      collectionUrl: yearUrl,
-      publishedAt: day,
-      documentKind: 'Índice oficial de Ajustes SINIEF',
-      sections: source.sections || sectionIdsForSource(source.id),
-      fallbackReason: error.message,
-    }];
+    throw new Error(`A consulta oficial do CONFAZ falhou sem confirmar ato novo: ${error.message}`);
   }
   return result.links
     .filter((item) => isCandidateEligible(source.id, item.title, item.url))

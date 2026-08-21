@@ -7,16 +7,43 @@ function movementAlert(overrides = {}) {
     id: 'action-tracker-1-movement-1',
     ownerId: 'user-1',
     title: 'Tema ICMS: julgamento iniciado',
-    summary: 'Uma nova movimentação foi identificada.',
-    whatChanged: 'Julgamento iniciado.',
+    summary: 'O STJ julgou tema repetitivo sobre crédito de ICMS aplicável a empresas.',
+    whatChanged: 'A Primeira Seção fixou nova orientação sobre o aproveitamento do crédito tributário.',
+    practicalImpact: 'Empresas devem revisar a apuração e os créditos de ICMS atingidos pela tese.',
+    officeAction: 'Revisar operações, documentos fiscais e eventual oportunidade de recuperação de crédito.',
+    agency: 'Superior Tribunal de Justiça',
+    taxes: ['ICMS'],
+    status: 'Fato confirmado',
+    priority: 'Alta',
+    impactType: 'Ambos',
+    affectedProfiles: ['Indústrias', 'Comércios com créditos de ICMS'],
+    legalBasis: ['Tema Repetitivo 1.234', 'REsp 2.000.000/PR'],
     score: 8.5,
     relevance: 'Alta relevância',
     kind: 'Movimentação processual',
     officialUrl: 'https://tribunal.example/processo/1',
+    primarySourceUrl: 'https://tribunal.example/processo/1/inteiro-teor',
     isDemo: false,
+    publishedAt: '2026-08-20T12:00:00Z',
     createdAt: '2026-08-20T12:00:00Z',
+    provenance: { sourceId: 'stj', sourceType: 'official', analysisMode: 'ollama' },
     ...overrides,
   };
+}
+
+function assertCompletePublicationMessage(message) {
+  for (const label of [
+    'Prioridade Alta', 'Data: 20/08/2026', 'Órgão: Superior Tribunal de Justiça', 'Tributos: ICMS',
+    'O que aconteceu', 'O que mudou', 'Impacto prático', 'Oportunidade ou risco',
+    'Quem pode ser afetado', 'Base jurídica', 'Tema Repetitivo 1.234',
+    'Fonte oficial primária: https://tribunal.example/processo/1/inteiro-teor',
+  ]) assert.match(message.text, new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+
+  for (const label of [
+    'Prioridade Alta', 'O que aconteceu', 'O que mudou', 'Impacto prático',
+    'Oportunidade ou risco', 'Quem pode ser afetado', 'Base jurídica', 'Abrir fonte oficial primária',
+  ]) assert.match(message.html, new RegExp(label));
+  assert.match(message.html, /https:\/\/tribunal\.example\/processo\/1\/inteiro-teor/);
 }
 
 function account(overrides = {}) {
@@ -57,6 +84,7 @@ test('movimentação com ownerId é enviada somente ao proprietário', async () 
   assert.deepEqual(recipientQuery.values, ['user-1']);
   assert.equal(sent.length, 1);
   assert.equal(sent[0].to, 'user@example.com');
+  assertCompletePublicationMessage(sent[0]);
   assert.equal(result.deliveries, 1);
 });
 
@@ -174,6 +202,7 @@ test('publicação respeita nota mínima individual e mantém assinantes legados
   });
 
   assert.deepEqual(sent.map((item) => item.to).sort(), ['account@example.com', 'legacy@example.com']);
+  sent.forEach(assertCompletePublicationMessage);
   assert.deepEqual(marked, ['publication-1']);
   assert.equal(result.deliveries, 2);
   assert.equal(result.alertsSent, 1);
@@ -211,6 +240,7 @@ test('agrupa várias publicações nota alta em um único e-mail por conta', asy
   assert.match(sent[0].subject, /2 novas publicações/);
   assert.match(sent[0].text, /Publicação A/);
   assert.match(sent[0].text, /Publicação B/);
+  assertCompletePublicationMessage(sent[0]);
   assert.equal(result.alertsSent, 2);
   assert.equal(result.deliveries, 1);
 });

@@ -7,11 +7,13 @@ import { isCurrentFeedItem } from '../services/feedWindow.js';
 import { alertsForViewer } from '../services/alertVisibility.js';
 import { optionalAuth, requireAdmin } from '../middleware/auth.js';
 import { isExcludedTaxTopic } from '../services/sourceAdapters.js';
+import { alertPassesTaxIntelligencePolicy, primarySourceUrlForAlert } from '../services/taxIntelligencePolicy.js';
 
 function isOfficialRelevantAlert(alert) {
-  return alert.isDemo === false && alert.score >= 6 && /^https:\/\//i.test(alert.officialUrl || '')
+  return alert.isDemo === false && alert.score >= 6 && Boolean(primarySourceUrlForAlert(alert))
     && Boolean(alert.provenance?.sourceId)
     && alert.provenance?.analysisMode !== 'fast-triage'
+    && alertPassesTaxIntelligencePolicy(alert)
     && !isExcludedTaxTopic(alert.title, alert.summary, alert.whatChanged, alert.practicalImpact, alert.theme, alert.taxes);
 }
 

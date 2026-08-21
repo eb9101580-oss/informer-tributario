@@ -1,5 +1,6 @@
 import { config } from '../config.js';
 import { Agent, fetch as undiciFetch } from 'undici';
+import { policyPromptSummary, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
 // O Ollama pode gastar vários minutos avaliando decisões longas antes do
 // primeiro token. O fetch padrão do Node encerra essa espera aos 300 segundos.
@@ -28,7 +29,20 @@ const analysisSchema = {
     taxes: { type: 'array', maxItems: 6, items: { type: 'string', maxLength: 30 } },
     status: { type: 'string', enum: ['Fato confirmado', 'Em andamento', 'Análise', 'Oportunidade potencial'] },
     kind: { type: 'string', maxLength: 80 },
-    impactType: { type: 'string', enum: ['Oportunidade', 'Risco', 'Ambos', 'Informativo'] },
+    impactType: { type: 'string', enum: ['Oportunidade', 'Risco', 'Ambos', 'Acompanhamento'] },
+    priority: { type: 'string', enum: ['Alta', 'Média', 'Acompanhamento'] },
+    contentNature: { type: 'string', enum: ['Fato oficial', 'Interpretação oficial', 'Opinião ou conteúdo sem fato novo'] },
+    businessActionable: { type: 'boolean' },
+    noveltyType: { type: 'string', enum: ['Mudança legislativa', 'Ato regulamentar', 'Entendimento administrativo', 'Julgamento ou precedente', 'Obrigação acessória', 'Status jurídico relevante', 'Sem novidade concreta'] },
+    relevanceReasons: {
+      type: 'array', maxItems: 16, items: { type: 'string', enum: [
+        'altera-obrigacao', 'altera-credito', 'altera-interpretacao', 'nova-tese', 'precedente-vinculante',
+        'altera-obrigacao-acessoria', 'exige-sistema-processo', 'altera-prazo', 'altera-procedimento-fiscal',
+        'recuperacao-credito', 'planejamento', 'risco-fiscal', 'fluxo-caixa', 'lucros-dividendos-jcp',
+        'reorganizacao', 'clientes-empresariais',
+      ] },
+    },
+    legalBasis: { type: 'array', maxItems: 8, items: { type: 'string', maxLength: 160 } },
     publishedAt: { type: 'string', maxLength: 35 },
     summary: { type: 'string', maxLength: 700 },
     whatChanged: { type: 'string', maxLength: 700 },
@@ -48,11 +62,11 @@ const analysisSchema = {
     opportunity: {
       anyOf: [
         { type: 'null' },
-        { type: 'object', properties: { title: { type: 'string', maxLength: 160 }, period: { type: 'string', maxLength: 120 }, action: { type: 'string', maxLength: 260 }, confidence: { type: 'string', enum: ['baixo', 'médio', 'alto'] } }, required: ['title', 'period', 'action', 'confidence'], additionalProperties: false },
+        { type: 'object', properties: { title: { type: 'string', maxLength: 160 }, period: { type: 'string', maxLength: 120 }, action: { type: 'string', maxLength: 260 }, confidence: { type: 'string', enum: ['baixo', 'médio', 'alto'] } }, required: ['title', 'action', 'confidence'], additionalProperties: false },
       ],
     },
   },
-  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'publishedAt', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'affectedProfiles', 'criteria', 'opportunity'],
+  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'priority', 'contentNature', 'businessActionable', 'noveltyType', 'relevanceReasons', 'legalBasis', 'publishedAt', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'affectedProfiles', 'criteria', 'opportunity'],
   additionalProperties: false,
 };
 
@@ -65,6 +79,11 @@ Preencha whatChanged como "O que mudou": explique a nova situação jurídica ou
 Preencha practicalImpact como "Impacto prático": diga quem é afetado, qual consequência concreta existe e se ainda cabe recurso ou depende de regulamentação.
 Em decisões judiciais, localize primeiro o dispositivo. Diferencie pedido da parte, argumentos, precedentes citados e conclusão do julgador. Nunca apresente o pedido do contribuinte como resultado da decisão.
 Não use frases genéricas como "pode afetar o tema", "entrou no feed", "verifique a fonte" ou "o alcance deve ser conferido" quando o documento trouxer pedido, fundamento ou resultado identificável.
+${policyPromptSummary()}
+Antes de marcar relevant=true, responda internamente: esta novidade faria um consultor recomendar providência, revisão, oportunidade, mudança de procedimento ou avaliação de risco a uma empresa? Se não, use relevant=false, businessActionable=false, noveltyType="Sem novidade concreta" e relevanceReasons=[].
+Use prioridade Alta para mudança legislativa, regulamentar ou jurisprudencial com impacto empresarial direto; Média para entendimento novo com risco ou oportunidade concreta; Acompanhamento para afetação, julgamento iniciado, projeto avançado ou regulamentação pendente. Nunca publique baixa relevância.
+Classifique contentNature com rigor. Artigo, opinião, previsão ou comentário que apenas repete regra conhecida deve ser "Opinião ou conteúdo sem fato novo" e relevant=false. Uma Solução de Consulta ou parecer oficial é "Interpretação oficial"; norma, ato, decisão e movimentação oficial são "Fato oficial".
+Preencha legalBasis apenas com lei, artigo, ato, Tema, processo ou precedente expressamente identificado. Não invente referência.
 Notas: 0–3 irrelevante; 4–5 baixa; 6–7 relevante; 8 alta; 9–10 urgente. O campo publishedAt deve ser ISO 8601 ou vazio.
 Seja conciso: use no máximo duas frases curtas em cada campo textual. Responda exclusivamente conforme o schema JSON.`;
 
@@ -80,14 +99,41 @@ export function prepareDocumentText(text = '', limit = config.ollamaMaxInputChar
   const marker = '\n\n[trecho intermediário omitido para desempenho]\n\n';
   if (limit <= marker.length + 20) return normalized.slice(0, limit);
   const available = limit - marker.length;
-  const headSize = Math.floor(available * 0.68);
-  const tailSize = available - headSize;
-  return `${normalized.slice(0, headSize)}${marker}${normalized.slice(-tailSize)}`;
+  const legalSectionPattern = /\b(?:ementa|relat[oó]rio|fundamenta[cç][aã]o|dispositivo|ante o exposto|conclus[aã]o|decido|julgo|tese fixada|modula[cç][aã]o|art(?:igo)?\.?\s*\d+)\b/gi;
+  const windows = [];
+  let match;
+  while ((match = legalSectionPattern.exec(normalized)) && windows.length < 5) {
+    const start = Math.max(0, match.index - 280);
+    const end = Math.min(normalized.length, match.index + 1_050);
+    if (!windows.some((window) => start <= window.end + 160 && end >= window.start - 160)) windows.push({ start, end });
+  }
+  if (!windows.length) {
+    const headSize = Math.floor(available * 0.68);
+    return `${normalized.slice(0, headSize)}${marker}${normalized.slice(-(available - headSize))}`;
+  }
+
+  const focusMarker = '\n\n[trechos jurídicos centrais preservados]\n\n';
+  const focusBudget = Math.floor(available * 0.5);
+  const focused = windows.map((window) => normalized.slice(window.start, window.end)).join('\n\n…\n\n').slice(0, focusBudget);
+  const outsideBudget = Math.max(0, available - focused.length - focusMarker.length);
+  const headSize = Math.floor(outsideBudget * 0.62);
+  const tailSize = outsideBudget - headSize;
+  const tail = tailSize ? normalized.slice(-tailSize) : '';
+  return `${normalized.slice(0, headSize)}${focusMarker}${focused}${marker}${tail}`.slice(0, limit);
 }
 
 const CRITERIA_KEYS = ['authority', 'novelty', 'legalImpact', 'financialImpact', 'reach', 'clientFit', 'actionPotential'];
 const STATUS_VALUES = new Set(['Fato confirmado', 'Em andamento', 'Análise', 'Oportunidade potencial']);
-const IMPACT_VALUES = new Set(['Oportunidade', 'Risco', 'Ambos', 'Informativo']);
+const IMPACT_VALUES = new Set(['Oportunidade', 'Risco', 'Ambos', 'Acompanhamento', 'Informativo']);
+const PRIORITY_VALUES = new Set(['Alta', 'Média', 'Acompanhamento']);
+const CONTENT_NATURE_VALUES = new Set(['Fato oficial', 'Interpretação oficial', 'Opinião ou conteúdo sem fato novo']);
+const NOVELTY_VALUES = new Set(['Mudança legislativa', 'Ato regulamentar', 'Entendimento administrativo', 'Julgamento ou precedente', 'Obrigação acessória', 'Status jurídico relevante', 'Sem novidade concreta']);
+const RELEVANCE_REASON_VALUES = new Set([
+  'altera-obrigacao', 'altera-credito', 'altera-interpretacao', 'nova-tese', 'precedente-vinculante',
+  'altera-obrigacao-acessoria', 'exige-sistema-processo', 'altera-prazo', 'altera-procedimento-fiscal',
+  'recuperacao-credito', 'planejamento', 'risco-fiscal', 'fluxo-caixa', 'lucros-dividendos-jcp',
+  'reorganizacao', 'clientes-empresariais',
+]);
 const MISSING_INFORMATION = 'Informação não identificada no documento.';
 
 function boundedText(value, maxLength, fallback = MISSING_INFORMATION) {
@@ -96,7 +142,14 @@ function boundedText(value, maxLength, fallback = MISSING_INFORMATION) {
 }
 
 function boundedList(value, maxItems, maxLength) {
-  return Array.isArray(value) ? value.map((item) => boundedText(item, maxLength, '')).filter(Boolean).slice(0, maxItems) : [];
+  if (!Array.isArray(value)) return [];
+  const seen = new Set();
+  return value.map((item) => boundedText(item, maxLength, '')).filter((item) => {
+    const key = item.toLocaleLowerCase('pt-BR');
+    if (!item || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, maxItems);
 }
 
 function parseStructuredContent(content) {
@@ -149,6 +202,11 @@ export function normalizeAnalysis(payload) {
   }
   const status = STATUS_VALUES.has(payload.status) ? payload.status : 'Análise';
   const impactType = IMPACT_VALUES.has(payload.impactType) ? payload.impactType : 'Informativo';
+  const priority = PRIORITY_VALUES.has(payload.priority) ? payload.priority : (payload.status === 'Em andamento' ? 'Acompanhamento' : 'Média');
+  const contentNature = CONTENT_NATURE_VALUES.has(payload.contentNature) ? payload.contentNature : (payload.relevant ? 'Fato oficial' : 'Opinião ou conteúdo sem fato novo');
+  const noveltyType = NOVELTY_VALUES.has(payload.noveltyType) ? payload.noveltyType : (payload.relevant ? 'Status jurídico relevante' : 'Sem novidade concreta');
+  const relevanceReasons = boundedList(payload.relevanceReasons, 16, 60).filter((reason) => RELEVANCE_REASON_VALUES.has(reason));
+  const businessActionable = payload.businessActionable === undefined ? payload.relevant : payload.businessActionable === true;
   const publishedAt = String(payload.publishedAt || '').trim();
   return {
     relevant: payload.relevant,
@@ -159,6 +217,12 @@ export function normalizeAnalysis(payload) {
     status,
     kind: boundedText(payload.kind, 80),
     impactType,
+    priority,
+    contentNature,
+    businessActionable,
+    noveltyType,
+    relevanceReasons: relevanceReasons.length || !payload.relevant ? relevanceReasons : ['clientes-empresariais'],
+    legalBasis: boundedList(payload.legalBasis, 8, 160),
     publishedAt: publishedAt && !Number.isNaN(Date.parse(publishedAt)) ? publishedAt.slice(0, 35) : '',
     summary: boundedText(payload.summary, 700),
     whatChanged: boundedText(payload.whatChanged, 700),
@@ -168,7 +232,7 @@ export function normalizeAnalysis(payload) {
     criteria,
     opportunity: payload.opportunity && typeof payload.opportunity === 'object' ? {
       title: boundedText(payload.opportunity.title, 160),
-      period: boundedText(payload.opportunity.period, 120),
+      period: boundedText(payload.opportunity.period, 120, ''),
       action: boundedText(payload.opportunity.action, 260),
       confidence: ['baixo', 'médio', 'alto'].includes(payload.opportunity.confidence) ? payload.opportunity.confidence : 'baixo',
     } : null,
@@ -177,7 +241,7 @@ export function normalizeAnalysis(payload) {
 
 function analysisContext(document, documentText) {
   const schema = JSON.stringify(analysisSchema);
-  return `URL oficial: ${document.url}\nFonte: ${document.sourceName || 'não identificada'}\nTipo de documento: ${document.documentKind || 'não identificado'}\nTítulo detectado: ${document.title || 'não identificado'}\nTítulo do item monitorado: ${document.candidateTitle || 'não identificado'}\nSeções: ${(document.sections || []).join(', ') || 'geral'}\n\nResponda seguindo exatamente este JSON Schema:\n${schema}\n\nConteúdo do documento:\n${documentText}`;
+  return `Versão da política: ${TAX_POLICY_VERSION}\nURL da fonte coletada: ${document.url}\nFonte: ${document.sourceName || 'não identificada'}\nTipo da fonte: ${document.sourceType || 'não identificado'}\nTipo de documento: ${document.documentKind || 'não identificado'}\nTítulo detectado: ${document.title || 'não identificado'}\nTítulo do item monitorado: ${document.candidateTitle || 'não identificado'}\nSeções: ${(document.sections || []).join(', ') || 'geral'}\nPré-classificação: ${JSON.stringify(document.policyAssessment || {})}\n\nResponda seguindo exatamente este JSON Schema:\n${schema}\n\nConteúdo do documento:\n${documentText}`;
 }
 
 export async function analyzeWithOllama(document) {

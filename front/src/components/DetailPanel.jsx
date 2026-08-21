@@ -16,6 +16,9 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
 
   const sourceClassification = sourceDocumentClassification(alert);
   const classificationExplanation = sentenceTypeExplanation(sourceClassification);
+  const editorialPriority = alert.priority || (alert.status === 'Em andamento' ? 'Acompanhamento' : alert.score >= 8 ? 'Alta' : 'Média');
+  const primarySourceUrl = alert.primarySourceUrl || (alert.provenance?.sourceType !== 'journalistic' ? alert.officialUrl : '');
+  const legalBasis = Array.isArray(alert.legalBasis) ? alert.legalBasis : alert.legalBasis ? [alert.legalBasis] : [];
 
   const publishedDate = new Date(alert.publishedAt);
   const publishedLabel = Number.isNaN(publishedDate.getTime())
@@ -33,16 +36,20 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
       <aside className="drawer">
         <button className="drawer__close icon-button" onClick={onClose} aria-label="Fechar"><X /></button>
         <div className="drawer__score"><strong>{String(alert.score).replace('.', ',')}</strong><span>/10 · {alert.relevance}</span></div>
-        <div className="drawer__tags"><span>{alert.status}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{alert.taxes.map((tax) => <b key={tax}>{tax}</b>)}</div>
+        <div className="drawer__tags"><span>Prioridade {editorialPriority}</span><span>{alert.status}</span><span>{alert.agency}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{(alert.taxes || []).map((tax) => <b key={tax}>{tax}</b>)}</div>
         <h2>{displayAlertTitle(alert.title)}</h2>
 
         <section><h3>O que aconteceu</h3><p>{alert.summary}</p></section>
         <section><h3>O que mudou</h3><p>{alert.whatChanged}</p></section>
         <section><h3>Impacto prático</h3><p>{alert.practicalImpact}</p></section>
 
+        <section><h3>Base jurídica</h3>{legalBasis.length
+          ? <ul className="legal-basis-list">{legalBasis.map((basis) => <li key={basis}>{basis}</li>)}</ul>
+          : <p>Referência jurídica não identificada no documento.</p>}</section>
+
         <div className="impact-box">
           <ShieldAlert size={21} />
-          <div><strong>{alert.impactType}</strong><p>{alert.officeAction}</p></div>
+          <div><strong>Oportunidade ou risco: {alert.impactType}</strong><p>{alert.officeAction}</p></div>
         </div>
 
         {alert.opportunity && (
@@ -52,9 +59,9 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
           </div>
         )}
 
-        <section><h3>Clientes potencialmente afetados</h3><div className="profile-tags">{alert.affectedProfiles.map((profile) => <span key={profile}>{profile}</span>)}</div></section>
+        <section><h3>Quem pode ser afetado</h3><div className="profile-tags">{(alert.affectedProfiles || []).map((profile) => <span key={profile}>{profile}</span>)}</div></section>
 
-        {alert.officialUrl ? <a className="source-link" href={alert.officialUrl} target="_blank" rel="noreferrer">{alert.provenance?.sourceType === 'journalistic' ? 'Acessar fonte jornalística' : 'Acessar fonte oficial'} <ExternalLink size={17} /></a> : <span className="source-link source-link--disabled">{alert.provenance?.sourceType === 'journalistic' ? 'Fonte jornalística pendente de confirmação' : 'Fonte oficial pendente de confirmação'}</span>}
+        {primarySourceUrl ? <a className="source-link" href={primarySourceUrl} target="_blank" rel="noreferrer">Acessar fonte primária oficial <ExternalLink size={17} /></a> : <span className="source-link source-link--disabled">Fonte primária oficial ainda não resolvida</span>}
 
         {onSave && <button className={`drawer-save ${saved ? 'drawer-save--active' : ''}`} onClick={() => onSave(alert)}><Bookmark size={18} fill={saved ? 'currentColor' : 'none'} />{saved ? 'Publicação salva para ler depois' : 'Salvar publicação para ler depois'}</button>}
 
