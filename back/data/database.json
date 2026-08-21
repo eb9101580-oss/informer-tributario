@@ -1,9 +1,234 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T04:34:03.495Z",
+    "lastUpdatedAt": "2026-08-21T05:21:17.936Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1611696 ED: Análise da interpretação da legislação infraconstitucional e reexame de provas no contexto do IPTU",
+      "theme": "Tributário - IPTU - Imunidade recíproca e reexame de provas",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU",
+        "Imposto sobre a Propriedade P红",
+        "Imunidade recíproca",
+        "Aluguel de imóvel",
+        "Súmula 279/STF"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O acórdão do STF reafirma que, em recurso extraordinário, não é possível reexaminar os fatos e provas dos autos, conforme a Súmula 279/STF. O caso envolve imunidade recíproca no IPTU e a impossibilidade de reexame de provas para alterar a decisão do tribunal de origem.",
+      "whatChanged": "A decisão do STF confirma que, para ultrapassar o entendimento do tribunal de origem, seria necessário reexaminar os fatos e provas, o que não é cabível em sede de recurso extraordinário, conforme a Súmula 279/STF.",
+      "practicalImpact": "Empresas com imóveis em áreas essenciais não podem recorrer para contestar a imunidade recíproca do IPTU, já que o reexame de provas é proibido por lei. Isso afeta a capacidade de contestação de tributos em imóveis de interesse público.",
+      "officeAction": "O STF reafirma que a Súmula 279/STF impede o reexame de provas em recursos extraordinários, limitando a possibilidade de revisão de fatos e provas para alterar decisões tributárias.",
+      "affectedProfiles": [
+        "Empresas com imóveis em áreas essenciais",
+        "Entidades de educação assistencial",
+        "Contribuintes de IPTU",
+        "Tribunais de origem",
+        "Advogados de tributação"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 6,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Oportunidade para revisão de decisões tributárias em imóveis essenciais",
+        "period": "2023-10-15 a 2024-12-31",
+        "action": "Reavaliar a imunidade recíproca do IPTU para imóveis em áreas essenciais, considerando a Súmula 279/STF",
+        "confidence": "médio"
+      },
+      "id": "6c6f724a-4a40-4bdf-8044-a0b2b94ebe81",
+      "score": 6.3,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811404/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T05:21:17.885Z",
+      "updatedAt": "2026-08-21T05:21:17.885Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811404/false",
+        "sourceCharacters": 1202,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:58:05.919Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1616940 — de comprovar o efetivo exercício de horas extras que autorizassem o pagamento da correspondente contraprestação pecuniária, conforme previsto na Lei n. 11.738/2008 –",
+      "theme": "Horas extras e contraprestação pecuniária",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS",
+        "Código de Processo Civil"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF analisou se o efetivo exercício de horas extras autoriza o pagamento da contraprestação pecuniária conforme a Lei 11.738/2008, demandando revolvimento dos elementos fático-probatórios. Incidência do enunciado n. 279 da Súmula do STF, que estabelece a necessidade de análise da matéria infraconstitucional.",
+      "whatChanged": "A decisão reforça a necessidade de comprovar o efetivo exercício de horas extras para que se possa exigir a contraprestação pecuniária, conforme a Lei 11.738/2008, sob a incidência da Súmula 279 do STF.",
+      "practicalImpact": "Empresas devem garantir comprovação clara do exercício de horas extras para evitar a negativa de pagamento da contraprestação pecuniária, especialmente em casos de disputas tributárias relacionadas ao ISS.",
+      "officeAction": "Recurso extraordinário não conhecido, com agravo regimental interposto contra decisão que negou seguimento ao recurso extraordinário com agravo pela aplicação da Súmula 279 do STF.",
+      "affectedProfiles": [
+        "Empresas com atividades tributárias",
+        "Profissionais de contabilidade",
+        "Organizações com atividades de serviços",
+        "Empresas com operações de ISS",
+        "Organizações com necessidade de perícia"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Reforço na comprovação de horas extras para evitar negativa de pagamento da contraprestação pecuniária",
+        "period": "2022-03-17 a presente",
+        "action": "Garantir comprovação clara do exercício de horas extras conforme a Lei 11.738/2008 e aplicar a Súmula 279 do STF",
+        "confidence": "alto"
+      },
+      "id": "8d5403ac-eedc-41e6-bcc1-7a4dbc166373",
+      "score": 7.6,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811153/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T05:18:19.398Z",
+      "updatedAt": "2026-08-21T05:18:19.398Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811153/false",
+        "sourceCharacters": 1204,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:58:05.919Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1616011 — enquadra-se à(s) situação(ões) abrangida(s) pela modulação de efeitos da decisão paradigmática (Tema 395).",
+      "theme": "Modulação de efeitos da decisão paradigmática (Tema 395)",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Juros moratórios",
+        "Atualização monetária",
+        "Condenações da Fazenda Pública"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF determinou que o art. 1º-F da Lei nº 9.494/97, com redação da Lei nº 11.960/09, é inconstitucional ao aplicar juros moratórios a débitos tributários, devendo ser utilizados os juros de mora da Fazenda Pública. Para condenações não tributárias, a remuneração com a caderneta de poupança é constitucional.",
+      "whatChanged": "O art. 1º-F da Lei nº 9.494/97, com redação da Lei nº 11.960/09, é inconstitucional para débitos tributários, exigindo aplicação de juros de mora da Fazenda Pública. Para débitos não tributários, a remuneração com a caderneta de poupança permanece constitucional.",
+      "practicalImpact": "Empresas devem revisar condenações tributárias para aplicar juros de mora da Fazenda Pública, evitando multas por não cumprimento da norma constitucional.",
+      "officeAction": "Revisar condenações tributárias para aplicar juros de mora da Fazenda Pública, conforme decisão do STF.",
+      "affectedProfiles": [
+        "Empresas com débitos tributários",
+        "Fazendas Públicas",
+        "Condenações de tributação",
+        "Organizações com débitos não tributários"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 8,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão de condenações tributárias para aplicação de juros de mora da Fazenda Pública",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Revisar condenações tributárias para aplicar juros de mora da Fazenda Pública, evitando multas por não cumprimento da norma constitucional",
+        "confidence": "alto"
+      },
+      "id": "aad1707c-5286-469e-aa9e-4f69ac5de51e",
+      "score": 7.9,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811156/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T05:15:33.249Z",
+      "updatedAt": "2026-08-21T05:15:33.249Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811156/false",
+        "sourceCharacters": 1207,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T04:58:05.919Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1528201 ED — efeitos do Tema 985 somente foi definida em momento posterior ao acórdão de retratação proferido na origem, de modo que a questão referente ao enquadramento da emb",
@@ -38271,46 +38496,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo C · 1075405-43.2026.4.01.3300 · 10ª Vara Federal Cível da SJBA — Direito tributário: brança do acréscimo de 10% nos percentuais de presunção de lucro para fins de…",
-      "theme": "Direito tributário · IRPJ, CSLL",
+      "title": "Sentença Tipo C · 1075405-43.2026.4.01.3300 · 10ª Vara Federal Cível da SJBA — Direito tributário: brança do acréscimo de 10% nos percentuais de presunção de lucro para fins de apu",
+      "theme": "Acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "Lucro Presumido",
+        "Lei Complementar nº 224/2025",
+        "Decreto nº 12.808/2025",
+        "Instrução Normativa RFB nº 2.3"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo C)",
-      "impactType": "Informativo",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo c) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária da Bahia 10ª Vara Federal Cível da SJBA SENTENÇA TIPO \"C\" PROCESSO: 1075405-43.2026.4.01.3300 CLASSE: MANDADO DE SEGURANÇA CÍVEL (120) POLO ATIVO: ADELPE PATRIMONIAL LTDA REPRESENTANTES POLO ATIVO: MONYA PINHEIRO LOUREIRO - BA35625 POLO PASSIVO: DELEGADO DA RECEITA FEDERAL DO BRASIL EM SALVADOR e outros SENTENÇA Tipo C I.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma que a impetrante (ADLPE PATRIMONIAL LTDA) não está sob incidência do acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de IRPJ e CSLL, pois seu faturamento bruto em 2025 não excedeu R$ 5.000.000,00, conforme estabelecido na LC nº 224/2025. O juiz indeferiu a petição inicial por carência de ação, destacando que o acréscimo só incide sobre faturamento acima do limite legal.",
+      "whatChanged": "O acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de IRPJ e CSLL só incide sobre faturamento bruto superior a R$ 5.000.000,00 no exercício fiscal de 2025, conforme a LC nº 224/2025. A sentença confirma que a impetrante não está sob incidência do acréscimo, já que seu faturamento não ultrapassou o limite legal.",
+      "practicalImpact": "Empresas com faturamento bruto inferior a R$ 5.000.000,00 no exercício fiscal de 2025 não estão sujeitas ao acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de IRPJ e CSLL. A sentença reforça a necessidade de verificar o faturamento bruto para evitar cobrança do acréscimo.",
+      "officeAction": "A sentença confirma que a impetrante não está sob incidência do acréscimo de 10% nos percentuais de presunção de lucro para fins de apuração de IRPJ e CSLL, pois seu faturamento bruto em 2025 não excedeu R$ 5.000.000,00, conforme estabelecido na LC nº 224/2025.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com faturamento bruto inferior a R$ 5.000.000,00",
+        "Contribuintes do regime do lucro presumido",
+        "Empresas de pequeno porte",
+        "Sociedades empresárias dedicadas à compra, venda e administração de imóveis",
+        "Empresas com faturamento bruto em 2025 abaixo do limite legal"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
+        "authority": 8,
+        "novelty": 7,
         "legalImpact": 8,
-        "financialImpact": 7,
+        "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 8
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Oportunidade para verificação do faturamento bruto",
+        "period": "Exercício fiscal de 2025",
+        "action": "Verificar o faturamento bruto para garantir que não ultrapasse R$ 5.000.000,00, evitando cobrança do acréscimo de 10% nos percentuais de presunção de lucro",
+        "confidence": "alto"
+      },
       "id": "00ec0d19-c90a-4275-83e6-1da267eb3913",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M3RqBUbzqfyTJ1jWB6gozp85/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.199Z",
-      "updatedAt": "2026-08-20T15:00:30.199Z",
+      "updatedAt": "2026-08-21T05:09:34.861Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M3RqBUbzqfyTJ1jWB6gozp85/certidao",
         "sourceCharacters": 6382,
         "sourceId": "trf1",
@@ -45679,8 +45917,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:58:05.919Z",
         "id": "95bf05b3307c1f2b4a76b630",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45693,7 +45931,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T05:15:33.288Z",
+        "analyzedPublishedAt": "2023-11-15T00:00:00Z",
+        "relevant": true,
+        "score": 7.9,
+        "discardReason": null,
+        "alertId": "aad1707c-5286-469e-aa9e-4f69ac5de51e",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1616940 — de comprovar o efetivo exercício de horas extras que autorizassem o pagamento da correspondente contraprestação pecuniária, conforme previsto na Lei n. 11.738/2008 – demandaria revolvimento dos elementos fático-probatórios. Incidência do enunciado n. 279 da Sú",
@@ -45712,8 +45958,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:58:05.919Z",
         "id": "b408932bc91cd18474e33a2c",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45726,7 +45972,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T05:18:19.439Z",
+        "analyzedPublishedAt": "2022-03-17",
+        "relevant": true,
+        "score": 7.6,
+        "discardReason": null,
+        "alertId": "8d5403ac-eedc-41e6-bcc1-7a4dbc166373",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1611696 ED — esses os fundamentos dos acórdão, verifica-se que, para ultrapassar o entendimento do Tribunal de origem, seria necessário analisar a causa à luz da interpretação dada à legislação infraconstitucional pertinente e reexaminar os fatos e as provas dos autos, o q",
@@ -45745,8 +45999,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T04:58:05.919Z",
         "id": "66056a10be612afdcfe9d774",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45759,7 +46013,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T05:21:17.936Z",
+        "analyzedPublishedAt": "2023-10-15T00:00:00Z",
+        "relevant": true,
+        "score": 6.3,
+        "discardReason": null,
+        "alertId": "6c6f724a-4a40-4bdf-8044-a0b2b94ebe81",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "HC 275898 — Tribunal Regional Federal da 3ª Região deu parcial provimento ao apelo defensivo para estabelecer a pena em 3 anos, 2 meses e 23 dias de reclusão, mantendo-se o regime prisional. A defesa, então, interpôs Recurso Especial que, inadmitido na origem, ascendeu ao",
@@ -46025,7 +46287,7 @@
         "discoveredAt": "2026-08-21T03:12:53.826Z",
         "id": "11816503c1554d73482c5298",
         "status": "error",
-        "attempts": 2,
+        "attempts": 3,
         "backfillDate": null,
         "fastTriage": {
           "score": 56,
@@ -46038,7 +46300,7 @@
           "engine": "regras-tributarias-v1"
         },
         "error": "A coleta excedeu o limite de 60 segundos.",
-        "analyzedAt": "2026-08-21T04:25:54.365Z"
+        "analyzedAt": "2026-08-21T05:12:38.744Z"
       },
       {
         "title": "REQ 4102/2026 — Requer a realização de Sessão Solene destinada a celebrar a realização, em Brasília, das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo Instituto Latinoamericano de Derecho Tributario – ILADT.",
@@ -52708,8 +52970,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "59f447451a26719c821691d1",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -52725,7 +52987,14 @@
         },
         "alertId": "00ec0d19-c90a-4275-83e6-1da267eb3913",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T05:09:34.900Z",
+        "analyzedPublishedAt": "2025-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 7.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1044957-69.2026.4.01.3500 · 16ª Vara Federal de Juizado Especial Cível da SJGO — Direito tributário: a objetivar o recebimento de aposentadoria urbana por idade. Relatório dispensado por permissivo legal (art. 38 da Lei n. 9.099/95). Sem preliminares, cumpre proceder ao julgamento do mérito. Não sem antes ressalvar, em atenção à alçada legal estabelecida para os Juizados",
@@ -73631,6 +73900,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "5a347031-c0a3-416d-bd5c-84efb92469f9",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T05:02:26.554Z",
+        "finishedAt": "2026-08-21T05:21:17.969Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "d6260b3a-6ce3-4952-8b8b-35a842f115f8",
         "trigger": "github-actions-history",
@@ -99299,275 +99581,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "87cac44f-d5d4-48d4-8075-4146f9636823",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-18",
-        "startedAt": "2026-08-20T00:25:13.056Z",
-        "finishedAt": "2026-08-20T00:31:36.600Z",
-        "discovered": 10,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 7,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T04:59:54.107Z",
-    "nextRunAt": "2026-08-21T10:59:54.107Z"
+    "lastRunAt": "2026-08-21T05:21:17.969Z",
+    "nextRunAt": "2026-08-21T11:21:17.969Z"
   }
 }
