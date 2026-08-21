@@ -1,9 +1,1626 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-20T23:59:59.034Z",
+    "lastUpdatedAt": "2026-08-21T00:05:42.466Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Acórdão · 6004851-71.2024.4.06.3803 · SEC.GAB.34 (Des. Federal EVANDRO REIMÃO DOS REIS) — Direito tributário: ROGI NAKAIE (IMPETRANTE) ADVOGADO(A) : MARCOS TACIANO KLEIN (OAB…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-19. Apelação Cível Nº 6004851-71.2024.4.06.3803/MG RELATORA : Juíza Federal GENEVIEVE GROSSI ORSI APELANTE : WILMA KOROGI NAKAIE (IMPETRANTE) ADVOGADO(A) : MARCOS TACIANO KLEIN (OAB SC020935) EMENTA DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "cd114bbe-e746-4470-b489-6101b9dfb59b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbGvFVzTXTNDW3ERyo3rGz/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.464Z",
+      "updatedAt": "2026-08-21T00:05:42.464Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XqOELQJvYbGvFVzTXTNDW3ERyo3rGz/certidao",
+        "sourceCharacters": 5199,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6004697-98.2025.4.06.3809 · 01ª Vara Cível e JEF Adjunto de Varginha — Direito tributário: vidade laboral urbana pela parte autora, na condição de segurada empregada…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. Procedimento Comum (Vara Cível) Nº 6004697-98.2025.4.06.3809/MG AUTOR : ISABEL CRISTINA MOREIRA MENDES ADVOGADO(A) : RAFAEL RIOS PARAVIZO (OAB MG238358) SENTENÇA 6.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "391749ad-d0cd-4824-b20b-c8c62ec59628",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x8NKdwzYKKMtBBzCPTKe7wvYbD1mrE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.465Z",
+      "updatedAt": "2026-08-21T00:05:42.465Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x8NKdwzYKKMtBBzCPTKe7wvYbD1mrE/certidao",
+        "sourceCharacters": 4375,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6054323-50.2024.4.06.3800 · 21ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6054323-50.2024.4.06.3800/MG AUTOR : REGINALDO D ASSUMPCAO ADVOGADO(A) : CARLOS BERKENBROCK (OAB MG118436) SENTENÇA III ?",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "62bdc92e-152d-42a6-9f88-09ed29630f76",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/pDAj7Xq6v4XC93Bu4Tny43OYrvMJbg/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.465Z",
+      "updatedAt": "2026-08-21T00:05:42.465Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/pDAj7Xq6v4XC93Bu4Tny43OYrvMJbg/certidao",
+        "sourceCharacters": 3727,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 1020395-42.2021.4.01.3800 · 13ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. Procedimento do Juizado Especial Cível (JEF Cível) Nº 1020395-42.2021.4.01.3800/MG AUTOR : FLAVIO GARCIA IGLESIAS FERNANDES ADVOGADO(A) : EDVARD LIBORIO PETTERSEN JUNIOR (OAB MG172262) ADVOGADO(A) : RODRIGO OTAVIO DIAS SILVA (OAB MG142648) SENTENÇA Ante o exposto, JULGO PROCEDENTE O PEDIDO, com resolução de mérito, nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "5b697f47-9d99-4bbc-bd04-7921f467b98d",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQm6N1Jc1AFoTy97WzRkWV9dl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.465Z",
+      "updatedAt": "2026-08-21T00:05:42.465Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQm6N1Jc1AFoTy97WzRkWV9dl/certidao",
+        "sourceCharacters": 1704,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6006478-51.2026.4.06.3800 · 15ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: eterminar à autoridade coatora que remeta, caso ainda não o…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-19. Mandado de Segurança (Vara Cível) Nº 6006478-51.2026.4.06.3800/MG IMPETRANTE : EVERLIMP COMERCIO E DISTRIBUIDORA LTDA ADVOGADO(A) : ERIVELTON DE CASTRO ABREU (OAB MG155974) SENTENÇA III ?",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "95821abe-611c-41bb-9a39-19c621007e42",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2lZ34wC2Ph9TXG5lrYyPD35n/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.465Z",
+      "updatedAt": "2026-08-21T00:05:42.465Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QpOqvB2lZ34wC2Ph9TXG5lrYyPD35n/certidao",
+        "sourceCharacters": 996,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 6081288-94.2026.4.06.3800 · Secretaria Única das Varas de Execução Fiscal, Extrajudicial e Jef Adjunto — Direito tributário: créditos de CFEM, impedir a…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-19",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-19. em face da Agência Nacional de Mineração (ANM) , objetivando a prestação de garantia antecipada a débitos de Compensação Financeira pela Exploração de Recursos Minerais (CFEM) apurados perante a autarquia federal.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b4b6d8f2-1db8-4dcf-b693-b167311823a1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/e9MjpmE6nrVSNoOTlTlPJ7a6qrnD41/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:05:42.466Z",
+      "updatedAt": "2026-08-21T00:05:42.466Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/e9MjpmE6nrVSNoOTlTlPJ7a6qrnD41/certidao",
+        "sourceCharacters": 13999,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:20:43.194Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 6004236-73.2026.4.06.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: NTERESSADO : FUNDAÇÃO GETÚLIO VARGAS - FGV INTERESSADO :…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Agravo de Instrumento Nº 6004236-73.2026.4.06.0000/MG RELATOR : Desembargador Federal MIGUEL ANGELO DE ALVARENGA LOPES AGRAVANTE : BKR - LOPES, MACHADO AUDITORES E CONSULTORES PE S/S ADVOGADO(A) : GUSTAVO HENRIQUE VASCONCELOS VENTURA (OAB PE017900) ADVOGADO(A) : LEONARDO ISHI VIANA DE CASTRO (OAB PE065777) ADVOGADO(A) : EDUARDO SILVA BARBOSA (OAB PE056637) ADVOGADO(A) : THALITA DANIELLE GUERRA MACHADO (OAB…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "04cb5cec-1ec5-4578-bdb7-695929e74cbf",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7mjrylDRjoGSBOMfgTWJ1oL6wL5MW2/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.598Z",
+      "updatedAt": "2026-08-21T00:04:00.598Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7mjrylDRjoGSBOMfgTWJ1oL6wL5MW2/certidao",
+        "sourceCharacters": 5908,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 6006547-71.2025.4.06.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: E : MARCIO CASSIO MUZZI CABRAL ADVOGADO(A) : HUGO REIS DIAS…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Agravo de Instrumento Nº 6006547-71.2025.4.06.0000/MG RELATOR : Desembargador Federal MIGUEL ANGELO DE ALVARENGA LOPES AGRAVANTE : MARCIO CASSIO MUZZI CABRAL ADVOGADO(A) : HUGO REIS DIAS (OAB MG154656) EMENTA DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "6901abeb-c905-4c0c-950e-aa83a64f7d85",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8ZeroS7qNF3TBXAVKYABQLjK/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.599Z",
+      "updatedAt": "2026-08-21T00:04:00.599Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8ZeroS7qNF3TBXAVKYABQLjK/certidao",
+        "sourceCharacters": 5782,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6008546-68.2026.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: nto aos Pedidos de Ressarcimento relacionados na Tabela 1 da petição…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Mandado de Segurança (Vara Cível) Nº 6008546-68.2026.4.06.3801/MG IMPETRANTE : LATICINIOS PORTO ALEGRE INDUSTRIA E COMERCIO S/A ADVOGADO(A) : JULIANA CRISTINA MARTINELLI RAIMUNDI (OAB MG01860A) SENTENÇA Ante o exposto, CONCEDO PARCIALMENTE A SEGURANÇA, para: i) determinar que a Autoridade Coatora profira decisão fundamentada quanto aos Pedidos de Ressarcimento relacionados na Tabela 1 da petição inicial (créditos…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "6835f167-9039-44e1-914d-ead0c9fb5d8b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x71ANK4R22bIoalSAT91lb5RrzBL3W/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.599Z",
+      "updatedAt": "2026-08-21T00:04:00.599Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x71ANK4R22bIoalSAT91lb5RrzBL3W/certidao",
+        "sourceCharacters": 1283,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 6012667-96.2026.4.06.0000 · SECRETARIA DA 3a. TURMA — Direito tributário: de efeito suspensivo, interposto pela UNIÃO FEDERAL contra decisão proferida nos…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. Agravo de Instrumento Nº 6012667-96.2026.4.06.0000/MG AGRAVADO : PEIXOTO COMERCIO INDUSTRIA SERVICOS E TRANSPORTES S/A ADVOGADO(A) : IGOR ALEXANDER MIRANDA CARVALHAES (OAB MG061006) DESPACHO/DECISÃO Trata-se de agravo de instrumento, com pedido de atribuição de efeito suspensivo, interposto pela UNIÃO FEDERAL contra decisão proferida nos autos da Execução Fiscal nº 0004331-82.2009.4.01.3803, que, acolhendo a…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "25b0a746-de37-4647-9276-911c677bfe08",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/G7X2owQZV7Kio5DS7Tdl7LnYek9aWL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.600Z",
+      "updatedAt": "2026-08-21T00:04:00.600Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/G7X2owQZV7Kio5DS7Tdl7LnYek9aWL/certidao",
+        "sourceCharacters": 10682,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 0020218-20.2009.4.01.9199 · SECRETARIA DA 4a. TURMA — Direito tributário: solução de mérito , nos termos do art. 267, VI e VIII, do CPC/1973, os embargos…",
+      "theme": "Direito tributário · Cofins",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. e pela União (Fazenda Nacional) contra sentença que julgou extintos, sem resolução de mérito , nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "51fceb53-358a-4aa5-89cf-5743cd200b67",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/lkWByzDGYz1Bc7JfvTQmB9kZebmAjO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.600Z",
+      "updatedAt": "2026-08-21T00:04:00.600Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/lkWByzDGYz1Bc7JfvTQmB9kZebmAjO/certidao",
+        "sourceCharacters": 8515,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 1002255-82.2021.4.01.3824 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: MG072437) EMENTA EMENTA : DIREITO ADMINISTRATIVO E…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Apelação interposta por operadora de plano de saúde contra sentença que julgou improcedentes os Embargos à Execução Fiscal ajuizados para desconstituir crédito decorrente de ressarcimento ao Sistema Único de Saúde – SUS, referente a atendimento prestado a beneficiário de plano privado.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "4e98ce0e-c7d4-4ff8-a7ee-7b7c33b6e3cb",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JDEM7aX68bkS4p2IrTVzleWYoWe2dL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.600Z",
+      "updatedAt": "2026-08-21T00:04:00.600Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/JDEM7aX68bkS4p2IrTVzleWYoWe2dL/certidao",
+        "sourceCharacters": 5820,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 0022902-52.2005.4.01.3800 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: IO LTDA ADVOGADO(A) : MUCIO RICARDO CALEIRO ACERBI (OAB…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Apelação/Remessa Necessária Nº 0022902-52.2005.4.01.3800/MG RELATOR : Desembargador Federal MIGUEL ANGELO DE ALVARENGA LOPES APELANTE : HOSPITAL INFANTIL SAO DOMINGOS SAVIO LTDA ADVOGADO(A) : MUCIO RICARDO CALEIRO ACERBI (OAB MG067137) EMENTA EMENTA : DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "47159984-8cb7-475c-a97a-1e69d35c843f",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qOELQJvYbGvFeNATXTNDW3eRyo3rGz/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.601Z",
+      "updatedAt": "2026-08-21T00:04:00.601Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qOELQJvYbGvFeNATXTNDW3eRyo3rGz/certidao",
+        "sourceCharacters": 5657,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 0022434-56.2016.4.01.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: DO(A) : WANDERLEY ROMANO DONADEL (OAB MG078870) EMENTA…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Agravo Interno interposto contra decisão monocrática que deu provimento ao agravo de instrumento da União para reformar decisão que havia acolhido exceção de pré-executividade e excluído as agravantes do polo passivo de execução fiscal redirecionada em razão da presunção de dissolução irregular da sociedade.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "7f11661d-a813-4252-b318-c2aaaf001dd8",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNRy85S3y5fnTkg4OaY5eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.601Z",
+      "updatedAt": "2026-08-21T00:04:00.601Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNRy85S3y5fnTkg4OaY5eBjo9/certidao",
+        "sourceCharacters": 5214,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 1009849-67.2023.4.06.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: 6) ADVOGADO(A) : ANA PAULA DIAS (OAB MG237596) EMENTA…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Embargos de declaração opostos contra acórdão que manteve o reconhecimento da decadência do crédito tributário exigido em execução fiscal e condenou a União ao pagamento de honorários advocatícios recursais.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "e69739a7-45d1-49ee-b7fe-1141d4cdea9b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wyKMz7l6xlNS57QtyTKBA826EJaAPk/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.601Z",
+      "updatedAt": "2026-08-21T00:04:00.601Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wyKMz7l6xlNS57QtyTKBA826EJaAPk/certidao",
+        "sourceCharacters": 4474,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 1004527-15.2021.4.01.3803 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: ARAI ADVOGADO(A) : NELSON WILIANS FRATONI RODRIGUES (OAB…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Acórdão)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (acórdão) em 2026-08-20. Apelação Cível Nº 1004527-15.2021.4.01.3803/MG RELATOR : Desembargador Federal MIGUEL ANGELO DE ALVARENGA LOPES APELANTE : ASSOCIACAO GRUPO SARAI ADVOGADO(A) : NELSON WILIANS FRATONI RODRIGUES (OAB BA024290) EMENTA EMENTA: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "fd172872-85b1-47fa-bf6e-9d89ea8249a0",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/OdGxm7gYmr1SqMGf1T7mMy5Ry5DBkl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.602Z",
+      "updatedAt": "2026-08-21T00:04:00.602Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/OdGxm7gYmr1SqMGf1T7mMy5Ry5DBkl/certidao",
+        "sourceCharacters": 3953,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Acórdão)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6010730-31.2025.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: igente em cada data do óbito; b) ao pagamento das parcelas vencidas…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento Comum (Vara Cível) Nº 6010730-31.2025.4.06.3801/MG AUTOR : ALBERTO BECARI GALVAO ADVOGADO(A) : PAULA MICHELLE DE OLIVEIRA ASSUMPCAO (OAB MG130269) SENTENÇA Ante o exposto, JULGO PROCEDENTE o pedido, com resolução do mérito, nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "a7fec46b-fffc-49a6-9d61-5442c5888816",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/19VxvmERM2WIvpBcmT8oVEp64eny8l/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.602Z",
+      "updatedAt": "2026-08-21T00:04:00.602Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/19VxvmERM2WIvpBcmT8oVEp64eny8l/certidao",
+        "sourceCharacters": 4050,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6003013-50.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6003013-50.2025.4.06.3806/MG AUTOR : DIANA APARECIDA CARVALHO SILVA ADVOGADO(A) : ROBERTO CARLOS DE AZEVEDO (OAB MG118326) ADVOGADO(A) : VANDERLEIA MARIA BALBINO DE AZEVEDO (OAB MG222382) SENTENÇA Diante do exposto, JULGO PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b2eacd78-7f82-4ece-9272-16d2aacb2bd0",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8YeroSkGpf3TBXAVKRABQLjK/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.602Z",
+      "updatedAt": "2026-08-21T00:04:00.602Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8YeroSkGpf3TBXAVKRABQLjK/certidao",
+        "sourceCharacters": 2718,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6004849-92.2024.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. 3º CC)) ADVOGADO(A) : MARIANA CARVALHO DE FREITAS (OAB MG228038) SENTENÇA Diante do exposto, JULGO PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "ab7b905e-fd36-46a3-9c04-ab2c228ae594",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DzaKrk76JqBSOqltwT8BaKgRbBEe3N/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.603Z",
+      "updatedAt": "2026-08-21T00:04:00.603Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DzaKrk76JqBSOqltwT8BaKgRbBEe3N/certidao",
+        "sourceCharacters": 2696,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6005315-52.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6005315-52.2025.4.06.3806/MG AUTOR : EDCARLOS OLIVEIRA FELIX ADVOGADO(A) : JESSICA RODRIGUES DOS REIS (OAB MG170914) SENTENÇA Diante do exposto, JULGO PARCIALMENTE PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "3f830249-61fd-4318-bbb7-8ff50cf7c2c6",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x8NKdwzYKKMtGNEIPTKe7wDYbD1mrE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.603Z",
+      "updatedAt": "2026-08-21T00:04:00.603Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/x8NKdwzYKKMtGNEIPTKe7wDYbD1mrE/certidao",
+        "sourceCharacters": 2660,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6000212-30.2026.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6000212-30.2026.4.06.3806/MG AUTOR : CLEIDE MARIA DE ANDRADE ADVOGADO(A) : ERICA FERREIRA RODRIGUES (OAB MG138781) SENTENÇA Diante do exposto, JULGO PARCIALMENTE PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b303206c-f403-4df0-a804-be505c5cb6c2",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNZy85S4XWsnTkg4Oa65eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.603Z",
+      "updatedAt": "2026-08-21T00:04:00.603Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNZy85S4XWsnTkg4Oa65eBjo9/certidao",
+        "sourceCharacters": 2658,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6006436-18.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6006436-18.2025.4.06.3806/MG AUTOR : PAULO HENRIQUE NUNES ADVOGADO(A) : CAIQUE VINICIUS CASTRO SOUZA (OAB SP403110) SENTENÇA Diante do exposto, JULGO PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "2007ce33-ab59-4093-82af-ffc4cd7ded5b",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNRy85S3BvUnTkg4OaY5eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.603Z",
+      "updatedAt": "2026-08-21T00:04:00.603Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/y1D82wNRy85S3BvUnTkg4OaY5eBjo9/certidao",
+        "sourceCharacters": 2646,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6000008-83.2026.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6000008-83.2026.4.06.3806/MG AUTOR : MARIO LUCIO JUNIOR DORNELAS ADVOGADO(A) : ADRIELLI CUNHA (OAB MG127967) SENTENÇA Diante do exposto, JULGO PROCEDENTE A DEMANDA, com fulcro no art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "fd15655c-bb89-477e-aabb-72a25d224357",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wyKMz7lRxlNSvX9fyTKBA82REJaAPk/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.603Z",
+      "updatedAt": "2026-08-21T00:04:00.603Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/wyKMz7lRxlNSvX9fyTKBA82REJaAPk/certidao",
+        "sourceCharacters": 2639,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6003027-49.2026.4.06.3822 · Vara Cível e JEF Adjunto de Ponte Nova — Direito tributário: Mandado de Segurança (Vara Cível) Nº 6003027-49.2026.4.06.3822/MG IMPETRANTE :…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Mandado de Segurança (Vara Cível) Nº 6003027-49.2026.4.06.3822/MG IMPETRANTE : ROSANE MARIA DE AMORIM BOSEJA ADVOGADO(A) : CAMILA AMORIM BOSEJA (OAB MG210601) SENTENÇA Ante o exposto, CONCEDO EM PARTES A SEGURANÇA, resolvendo o mérito nos termos do art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f0e72676-1b72-4f18-aaad-018522a6f324",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXZ4qVS2ztGT73wAyYdy4gaO/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.604Z",
+      "updatedAt": "2026-08-21T00:04:00.604Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXZ4qVS2ztGT73wAyYdy4gaO/certidao",
+        "sourceCharacters": 2318,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 6007082-09.2026.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (Sentença)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (sentença) em 2026-08-20. Procedimento do Juizado Especial Cível (JEF Cível) Nº 6007082-09.2026.4.06.3801/MG AUTOR : ANA KELLY MANFILI DE OLIVEIRA ADVOGADO(A) : LUCAS GABRIELL GOMES DE OLIVEIRA (OAB MG212241) SENTENÇA Ante o exposto, REJEITO as preliminares e JULGO PROCEDENTE o pedido (art.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "83b0c19e-2842-4ad1-8b90-588840bd8ade",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8YeroS7pOs3TBXAVKRABQLjK/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.604Z",
+      "updatedAt": "2026-08-21T00:04:00.604Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/one3zr8YeroS7pOs3TBXAVKRABQLjK/certidao",
+        "sourceCharacters": 1765,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (Sentença)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "DESPACHO/DECISÃO · 6009769-13.2026.4.06.0000 · SEC.GAB.33 (Des. Federal ÁLVARO RICARDO DE SOUZA CRUZ) — Direito tributário: Esmeraldas, que rejeitou a exceção de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 6ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-20",
+      "summary": "A Tribunal Regional Federal da 6ª Região publicou decisão judicial publicada no djen (despacho/decisão) em 2026-08-20. em face da decisão ( 1.3 , fls.112/114), proferida pelo Juízo da 1ª Vara Cível, Criminal e de Execuções da Comarca de Esmeraldas, que rejeitou a exceção de pré-executividade e determinou o prosseguimento da execução fiscal ajuizada pela UNIÃO – FAZENDA NACIONAL.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "2774f589-e3e2-4b5e-9a91-b2489af3fc8f",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/19VxvmEYM2WIm38CmT8oVEpR4eny8l/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T00:04:00.604Z",
+      "updatedAt": "2026-08-21T00:04:00.604Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/19VxvmEYM2WIm38CmT8oVEpR4eny8l/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf6",
+        "sourceName": "Tribunal Regional Federal da 6ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN (DESPACHO/DECISÃO)",
+        "discoveredAt": "2026-08-20T12:25:08.171Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença · 0019405-46.2026.4.05.8500 · 4ª Vara Federal SE — Direito tributário: 431 REU: FAZENDA NACIONAL SENTENÇA Trata-se de ação em que se pede dedução, no cálculo do imposto…",
@@ -43345,7 +44962,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "74ad4c877267d6187bd9408e",
         "status": "pending",
         "attempts": 0,
@@ -43374,7 +44991,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "c7f03ca54cd107402151217a",
         "status": "pending",
         "attempts": 0,
@@ -43403,7 +45020,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "b27df2e4e9d3ce0df4228fcf",
         "status": "pending",
         "attempts": 0,
@@ -43432,7 +45049,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "353a895ea79db2f1ee8b5f47",
         "status": "pending",
         "attempts": 0,
@@ -43461,7 +45078,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "6d7d380016b111127c063c81",
         "status": "pending",
         "attempts": 0,
@@ -43490,7 +45107,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "37e9bba5b3caaa86223be991",
         "status": "pending",
         "attempts": 0,
@@ -43519,7 +45136,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "6020e9fcb3884dc05fdc6210",
         "status": "pending",
         "attempts": 0,
@@ -43548,7 +45165,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "6b5b03cc30186537dc85ecb8",
         "status": "pending",
         "attempts": 0,
@@ -43577,7 +45194,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "3092d67986348b3275393b0b",
         "status": "pending",
         "attempts": 0,
@@ -43606,7 +45223,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "7446511772c2f29e0b22ca73",
         "status": "pending",
         "attempts": 0,
@@ -43635,7 +45252,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "15396fcd82a810ae06db1708",
         "status": "pending",
         "attempts": 0,
@@ -43664,7 +45281,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "09d43afebc4a27fc3b0405ea",
         "status": "pending",
         "attempts": 0,
@@ -43693,7 +45310,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "3a353ae60cc930f77087dd75",
         "status": "pending",
         "attempts": 0,
@@ -43722,7 +45339,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "4804458fd56879ab3c44d112",
         "status": "pending",
         "attempts": 0,
@@ -43751,7 +45368,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "199803ccf31a722ecf68e05a",
         "status": "pending",
         "attempts": 0,
@@ -43780,7 +45397,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "d5b4fbd51a62c68016e981b0",
         "status": "pending",
         "attempts": 0,
@@ -43809,7 +45426,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "870d1fd0f1a18ed2fdd8310c",
         "status": "pending",
         "attempts": 0,
@@ -43838,7 +45455,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "c6f6a034718eac052996feec",
         "status": "pending",
         "attempts": 0,
@@ -43867,7 +45484,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "c6e503e93f48e0911e9df488",
         "status": "pending",
         "attempts": 0,
@@ -43896,7 +45513,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "bd56d3e6f8517167b5cce3bc",
         "status": "pending",
         "attempts": 0,
@@ -43925,7 +45542,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "a9021682b36885c731692133",
         "status": "pending",
         "attempts": 0,
@@ -43954,7 +45571,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "b3f70903b07dbed097fe3960",
         "status": "pending",
         "attempts": 0,
@@ -43983,7 +45600,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "2596d854e140a9d81b735efa",
         "status": "pending",
         "attempts": 0,
@@ -44012,7 +45629,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "0b0bee5ae482548fecf12147",
         "status": "pending",
         "attempts": 0,
@@ -44041,7 +45658,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "7088568399db45fd76aa4d3b",
         "status": "pending",
         "attempts": 0,
@@ -44070,7 +45687,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "2758141764d2bf9219f6fc0e",
         "status": "pending",
         "attempts": 0,
@@ -44099,7 +45716,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "adb9c0e3e49a38e0e598c79c",
         "status": "pending",
         "attempts": 0,
@@ -44128,7 +45745,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "60ced32379ca62e96ada4af1",
         "status": "pending",
         "attempts": 0,
@@ -44157,7 +45774,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "f4702c2c4edf330a266c31c3",
         "status": "pending",
         "attempts": 0,
@@ -44186,7 +45803,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "64fa50916669e8bf070d88a2",
         "status": "pending",
         "attempts": 0,
@@ -44215,7 +45832,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "ec6bd4bdceb68bd856ee6017",
         "status": "pending",
         "attempts": 0,
@@ -44245,7 +45862,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "72d70054710141d3246e84be",
         "status": "pending",
         "attempts": 0,
@@ -44274,7 +45891,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "d06b5a7a5c5c76c328165f36",
         "status": "pending",
         "attempts": 0,
@@ -44303,7 +45920,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "82ada741cb66356d0a3dce6c",
         "status": "pending",
         "attempts": 0,
@@ -44332,7 +45949,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "994ffe662d7f499cf499dbab",
         "status": "pending",
         "attempts": 0,
@@ -44361,7 +45978,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "aaecdd8555d992d8b95d9b9b",
         "status": "pending",
         "attempts": 0,
@@ -44390,7 +46007,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "8520e754cb408dd9c86cbefa",
         "status": "pending",
         "attempts": 0,
@@ -44419,7 +46036,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "bf04cb60c85d9168a7a462ee",
         "status": "pending",
         "attempts": 0,
@@ -44448,7 +46065,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "b82319a126eda10392639a86",
         "status": "pending",
         "attempts": 0,
@@ -44477,7 +46094,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "4c39532e3b286b299b91901e",
         "status": "pending",
         "attempts": 0,
@@ -44506,7 +46123,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "85f9912042a9f7c2a3ea81de",
         "status": "pending",
         "attempts": 0,
@@ -44535,7 +46152,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "55c717e95ebafb275355c82d",
         "status": "pending",
         "attempts": 0,
@@ -44564,7 +46181,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "eb859d5c23bf6f67932b1213",
         "status": "pending",
         "attempts": 0,
@@ -44593,7 +46210,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "eeff5d9df7ba853646e51d34",
         "status": "pending",
         "attempts": 0,
@@ -44622,7 +46239,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "dabc31d1ebb4429888f955cc",
         "status": "pending",
         "attempts": 0,
@@ -44651,7 +46268,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "538445ea4d44c75d5a8f9203",
         "status": "pending",
         "attempts": 0,
@@ -44680,7 +46297,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "4ea9eb98b8433121b24bf2e7",
         "status": "pending",
         "attempts": 0,
@@ -44709,7 +46326,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "352cb817fe81cc50b9276913",
         "status": "pending",
         "attempts": 0,
@@ -44738,7 +46355,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "b543c60abfc347339ba2879d",
         "status": "pending",
         "attempts": 0,
@@ -44767,7 +46384,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "c20a08bbd0c83b1242cf896c",
         "status": "pending",
         "attempts": 0,
@@ -44796,7 +46413,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "a62b2fec98cd302efbc516e9",
         "status": "pending",
         "attempts": 0,
@@ -44825,7 +46442,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "57782b744161ea6b02a8abd1",
         "status": "pending",
         "attempts": 0,
@@ -44854,7 +46471,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "cacb67d7173b04acebade7a7",
         "status": "pending",
         "attempts": 0,
@@ -44883,7 +46500,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "4676dd143bee1d55d33924b4",
         "status": "pending",
         "attempts": 0,
@@ -44912,7 +46529,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "3c3eda0704cc0e44d635b8f6",
         "status": "pending",
         "attempts": 0,
@@ -44941,7 +46558,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "1ad3decfcb91415554f84ee1",
         "status": "pending",
         "attempts": 0,
@@ -44970,7 +46587,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "cbc17881f9f6dbd4f0432d6d",
         "status": "pending",
         "attempts": 0,
@@ -44999,7 +46616,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "4f408c94fcc18e61f2da9fb1",
         "status": "pending",
         "attempts": 0,
@@ -45028,7 +46645,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "f8ea2544a54208ff427a37da",
         "status": "pending",
         "attempts": 0,
@@ -45057,7 +46674,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.838Z",
         "id": "c3b21dec4124070ddd6f1d1c",
         "status": "pending",
         "attempts": 0,
@@ -45086,7 +46703,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "8b4060088de2b65ce5fca25a",
         "status": "pending",
         "attempts": 0,
@@ -45115,7 +46732,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "8e30733f418d4e6ed086e311",
         "status": "pending",
         "attempts": 0,
@@ -45144,7 +46761,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "da99ddcfa9cbacf8093b8848",
         "status": "pending",
         "attempts": 0,
@@ -45173,7 +46790,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "1f0f8d45142f60c37ebe0577",
         "status": "pending",
         "attempts": 0,
@@ -45202,7 +46819,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "bab1f82e8e5273554ac17038",
         "status": "pending",
         "attempts": 0,
@@ -45231,7 +46848,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "6eb3d91767005dbd1f5078f8",
         "status": "pending",
         "attempts": 0,
@@ -45260,7 +46877,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "d019036d8d06e75d39e86c25",
         "status": "pending",
         "attempts": 0,
@@ -45289,7 +46906,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f1c7676d20e9f27d8bf3df5d",
         "status": "pending",
         "attempts": 0,
@@ -45318,7 +46935,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "df5f798041dda293013fe38c",
         "status": "pending",
         "attempts": 0,
@@ -45347,7 +46964,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "de2929489a955cc925d36e14",
         "status": "pending",
         "attempts": 0,
@@ -45376,7 +46993,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "5f179251b1ca5ed231b1b217",
         "status": "pending",
         "attempts": 0,
@@ -45405,7 +47022,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "444a9456cdfff76200d75cef",
         "status": "pending",
         "attempts": 0,
@@ -45434,7 +47051,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f26aa7c63f90b8350aba8bf6",
         "status": "pending",
         "attempts": 0,
@@ -45463,7 +47080,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "b86a079f8aed4a3315136e5e",
         "status": "pending",
         "attempts": 0,
@@ -45492,7 +47109,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "86356109c7dcfd4a3e851dc1",
         "status": "pending",
         "attempts": 0,
@@ -45521,7 +47138,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "e5779d8a08712c56de5142bb",
         "status": "pending",
         "attempts": 0,
@@ -45550,7 +47167,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "af4db876dbf35180549e36cd",
         "status": "pending",
         "attempts": 0,
@@ -45579,7 +47196,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "056d9644f11da34a941fcb9e",
         "status": "pending",
         "attempts": 0,
@@ -45608,7 +47225,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "6fabdb21d28abc2eb3a6d830",
         "status": "pending",
         "attempts": 0,
@@ -45637,7 +47254,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "a46a60634cedbf2cec9e23db",
         "status": "pending",
         "attempts": 0,
@@ -45666,7 +47283,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "660326121f7b0d5c53aeedd4",
         "status": "pending",
         "attempts": 0,
@@ -45695,7 +47312,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "bf739903c1d0ac3ff92fd9f3",
         "status": "pending",
         "attempts": 0,
@@ -45724,7 +47341,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "5d9c3d921b6d7207569efb42",
         "status": "pending",
         "attempts": 0,
@@ -45753,7 +47370,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "b810b078910d773f69dc92fc",
         "status": "pending",
         "attempts": 0,
@@ -45782,7 +47399,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "c4a97e5ea5c7e1c91ca943a6",
         "status": "pending",
         "attempts": 0,
@@ -45811,7 +47428,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "77b90b2f621d1620456ad817",
         "status": "pending",
         "attempts": 0,
@@ -45840,7 +47457,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "1b94c1233f8b59ef5c52c89f",
         "status": "pending",
         "attempts": 0,
@@ -45869,7 +47486,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "039f34eb4db70ba31a2600b1",
         "status": "pending",
         "attempts": 0,
@@ -45898,7 +47515,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "1073dabb431fa9fe94a60af1",
         "status": "pending",
         "attempts": 0,
@@ -45927,7 +47544,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "7bf24ea1f6720aeaf670249c",
         "status": "pending",
         "attempts": 0,
@@ -45956,7 +47573,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "416ae3f52678cb6d5a1bb283",
         "status": "pending",
         "attempts": 0,
@@ -45985,7 +47602,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "36c7a7bd148cb2e543758560",
         "status": "pending",
         "attempts": 0,
@@ -46014,7 +47631,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "1e07a8d1c9eb64d417e1d848",
         "status": "pending",
         "attempts": 0,
@@ -46043,7 +47660,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "b34c7b46b46c9151c4f50cc5",
         "status": "pending",
         "attempts": 0,
@@ -46072,7 +47689,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "55840579ac78629d35a22409",
         "status": "pending",
         "attempts": 0,
@@ -46101,7 +47718,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "83e1faa1c1461b3d18c54db5",
         "status": "pending",
         "attempts": 0,
@@ -46130,7 +47747,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "ff2f3887f6a9c3d25b04b9ba",
         "status": "pending",
         "attempts": 0,
@@ -46159,7 +47776,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "0514052da25fc0c118b146b3",
         "status": "pending",
         "attempts": 0,
@@ -46188,7 +47805,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "d5eaf4d68233d7a06e97209f",
         "status": "pending",
         "attempts": 0,
@@ -46217,7 +47834,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "9ed01978faeb660f7093ae8c",
         "status": "pending",
         "attempts": 0,
@@ -46246,7 +47863,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "809242c097e6c691080d752f",
         "status": "pending",
         "attempts": 0,
@@ -46275,7 +47892,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "ebacda5fb14ef95e1afcb4b7",
         "status": "pending",
         "attempts": 0,
@@ -46304,7 +47921,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "8894b76bfaa60e2cebbdad9c",
         "status": "pending",
         "attempts": 0,
@@ -46333,7 +47950,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "576538dc341b815cee266669",
         "status": "pending",
         "attempts": 0,
@@ -46362,7 +47979,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "c1da902420481788f210a3e7",
         "status": "pending",
         "attempts": 0,
@@ -46391,7 +48008,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "4e04a49f5f160523c7c2ae0a",
         "status": "pending",
         "attempts": 0,
@@ -46420,7 +48037,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "189e1d3e7d6a82e0e8232e08",
         "status": "pending",
         "attempts": 0,
@@ -46449,7 +48066,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "37fe4d35341308ad8c540b86",
         "status": "pending",
         "attempts": 0,
@@ -46478,7 +48095,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "12eda8d12c5a15bae9b3d3a4",
         "status": "pending",
         "attempts": 0,
@@ -46507,7 +48124,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "cc409e97282b17718e050d49",
         "status": "pending",
         "attempts": 0,
@@ -46536,7 +48153,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "c7bd4ee67fc0d1e4803da11b",
         "status": "pending",
         "attempts": 0,
@@ -46565,7 +48182,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "b105fb9739b0a64f340c1158",
         "status": "pending",
         "attempts": 0,
@@ -46594,7 +48211,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f0dddabb384e5aac05532b3a",
         "status": "pending",
         "attempts": 0,
@@ -46623,7 +48240,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "13eaa4b5fa95e3ad94b2a6af",
         "status": "pending",
         "attempts": 0,
@@ -46652,7 +48269,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "d4b2f560546f5f69c9fec3d1",
         "status": "pending",
         "attempts": 0,
@@ -46681,7 +48298,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "ef7a48b86344dd64eb8d46cf",
         "status": "pending",
         "attempts": 0,
@@ -46710,7 +48327,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "620c398afcd1cb558c1e1a3b",
         "status": "pending",
         "attempts": 0,
@@ -46739,7 +48356,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "2a8fb90b05976d0f6271e00e",
         "status": "pending",
         "attempts": 0,
@@ -46768,7 +48385,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "5851e9b0d93bbd117d0c256f",
         "status": "pending",
         "attempts": 0,
@@ -46797,7 +48414,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "6718be3a99303d3dfe40715d",
         "status": "pending",
         "attempts": 0,
@@ -46826,7 +48443,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "272553380872d3520e452496",
         "status": "pending",
         "attempts": 0,
@@ -46855,7 +48472,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "0cd1a6787c76f50eeab99d79",
         "status": "pending",
         "attempts": 0,
@@ -46884,7 +48501,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "36457ce32d8ea8d58d544df0",
         "status": "pending",
         "attempts": 0,
@@ -46913,7 +48530,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "c8f2916ab4a9a76d6e1af0ee",
         "status": "pending",
         "attempts": 0,
@@ -46942,7 +48559,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "5c67c380446767cdf39c991b",
         "status": "pending",
         "attempts": 0,
@@ -46971,7 +48588,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "bbc52619055e75f9ba7f77ef",
         "status": "pending",
         "attempts": 0,
@@ -47000,7 +48617,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "17a4bf0f15f378f792e95cd8",
         "status": "pending",
         "attempts": 0,
@@ -47029,7 +48646,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "9b150d72690a431ee06a3f92",
         "status": "pending",
         "attempts": 0,
@@ -47058,7 +48675,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "e03b8e23bcb72cf0213c60de",
         "status": "pending",
         "attempts": 0,
@@ -47087,7 +48704,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f68a102b0f12dc2c3877ec5d",
         "status": "pending",
         "attempts": 0,
@@ -47116,7 +48733,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f5102e70ff46912698b85d4f",
         "status": "pending",
         "attempts": 0,
@@ -47145,7 +48762,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "a7a5f1d454805ea3e569e4ac",
         "status": "pending",
         "attempts": 0,
@@ -47174,7 +48791,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "6e9531730f7707ad71aa623a",
         "status": "pending",
         "attempts": 0,
@@ -47203,7 +48820,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "0cdc3b1ba0a08ee06eb64683",
         "status": "pending",
         "attempts": 0,
@@ -47232,7 +48849,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "9f1e6e58df173f9ad17f4d58",
         "status": "pending",
         "attempts": 0,
@@ -47261,7 +48878,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "01268d31496c1735f019a427",
         "status": "pending",
         "attempts": 0,
@@ -47290,7 +48907,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "3bcc06cd74acda50f75e941c",
         "status": "pending",
         "attempts": 0,
@@ -47319,7 +48936,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "3eb192d4d09455c4ebfc006f",
         "status": "pending",
         "attempts": 0,
@@ -47348,7 +48965,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "fe4e9f95f6332bc552dcd917",
         "status": "pending",
         "attempts": 0,
@@ -47377,7 +48994,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stj-open-data",
-        "discoveredAt": "2026-08-20T23:19:03.591Z",
+        "discoveredAt": "2026-08-21T00:04:12.839Z",
         "id": "f5f13da88dc507d6b479f3c6",
         "status": "pending",
         "attempts": 0,
@@ -62676,7 +64293,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "4de44c3f62d85164291c38db",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -62690,7 +64307,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "04cb5cec-1ec5-4578-bdb7-695929e74cbf",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Acórdão · 6006547-71.2025.4.06.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: E : MARCIO CASSIO MUZZI CABRAL ADVOGADO(A) : HUGO REIS DIAS (OAB MG154656) EMENTA DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. PRESCRIÇÃO INTERCORRENTE ADMINISTRATIVA. INAPLICABILIDADE. NULIDADE DO LANÇAMENTO DO ITR",
@@ -62709,7 +64329,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "f78bf046cfde0d8825e3c500",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -62723,7 +64343,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "6901abeb-c905-4c0c-950e-aa83a64f7d85",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6008546-68.2026.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: nto aos Pedidos de Ressarcimento relacionados na Tabela 1 da petição inicial (créditos de PIS/COFINS transmitidos em 27/12/2024, 29/01/2025 e 07/02/2025), no prazo de 60 (sessenta) dias úteis, contados da intimação desta sentença; ii) determinar que a Autoridade Coatora se",
@@ -62742,7 +64365,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "106e2bb9954778b20382cd60",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -62756,7 +64379,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "6835f167-9039-44e1-914d-ead0c9fb5d8b",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 1005546-36.2019.4.01.3800 · 21ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: idade Social do Servidor Público (PSS) (Evento 22 - PET_INTERCORRENTE1, p. 7-9); e e) a omissão no abatimento de valores pagos administrativamente em processos de exercícios anteriores (Evento 22 - PET_INTERCORRENTE1, p. 9). Noticiou, ainda, o falecimento do substituído Id",
@@ -62808,7 +64434,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "23fbfbb728734de5a3452e8e",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -62822,7 +64448,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "25b0a746-de37-4647-9276-911c677bfe08",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 6014190-20.2025.4.06.3803 · Secretaria Única das Varas de Execução Fiscal, Extrajudicial e Jef Adjunto — Direito tributário: Execução Fiscal (Vara Execução) Nº 6014190-20.2025.4.06.3803/MG EXECUTADO : ROMES PACIFICO ADVOGADO(A) : JEANE CRISTINA ASSUNCAO SANTOS (OAB MG144855) ADVOGADO(A) : EDSON LOPES DE MORAIS (OAB MG0",
@@ -62940,7 +64569,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "c49e6a5e34394efb755cc7c7",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -62954,7 +64583,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "51fceb53-358a-4aa5-89cf-5743cd200b67",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 0013164-35.2008.4.01.3800 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: ações realizadas administrativamente constituiriam atos de execução do julgado e que, por isso, teriam suspendido o prazo prescricional, invocando o art. 4º do Decreto nº 20.910/1932. Afirma que, cessadas as compensações em maio de 2005, o prazo teria voltado a correr, de",
@@ -63072,7 +64704,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "16b2b45bcf3db022e56a36ce",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63086,7 +64718,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "4e98ce0e-c7d4-4ff8-a7ee-7b7c33b6e3cb",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Acórdão · 0022902-52.2005.4.01.3800 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: IO LTDA ADVOGADO(A) : MUCIO RICARDO CALEIRO ACERBI (OAB MG067137) EMENTA EMENTA : DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. REMESSA NECESSÁRIA. APELAÇÃO. CONTRIBUIÇÕES PREVIDENCIÁRIAS. DEBCAD. MÉDICOS PLANTONISTAS. RECONHECIMENTO ADMINISTRATIVO DE VÍNCULO EMPREGATÍCIO. COMPETÊNCIA",
@@ -63105,7 +64740,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "801325a111319d83b1c290e2",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63119,7 +64754,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "47159984-8cb7-475c-a97a-1e69d35c843f",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Acórdão · 0022434-56.2016.4.01.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: DO(A) : WANDERLEY ROMANO DONADEL (OAB MG078870) EMENTA EMENTA: DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO. AGRAVO INTERNO. EXECUÇÃO FISCAL. REDIRECIONAMENTO. DISSOLUÇÃO IRREGULAR DA SOCIEDADE. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. SENTENÇA PENAL ABSOLUTÓRIA. ART. 935 DO CÓDIGO CIVIL. RESPONS",
@@ -63138,7 +64776,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "4bcc6644379d27092f32181b",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63152,7 +64790,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "7f11661d-a813-4252-b318-c2aaaf001dd8",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Acórdão · 1009849-67.2023.4.06.0000 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: 6) ADVOGADO(A) : ANA PAULA DIAS (OAB MG237596) EMENTA EMENTA : DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO. EMBARGOS DE DECLARAÇÃO. AGRAVO INTERNO. EXECUÇÃO FISCAL. IMPOSTO DE RENDA DA PESSOA FÍSICA. GANHO DE CAPITAL. PERMUTA DE IMÓVEL. DECADÊNCIA DO CRÉDITO TRIBUTÁRIO. INEXISTÊNCIA D",
@@ -63171,7 +64812,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "c18a9c7a2798996001af4deb",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63185,7 +64826,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "e69739a7-45d1-49ee-b7fe-1141d4cdea9b",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Acórdão · 1004527-15.2021.4.01.3803 · SEC.GAB.31 (Des. Federal MIGUEL ÂNGELO DE ALVARENGA LOPES) — Direito tributário: ARAI ADVOGADO(A) : NELSON WILIANS FRATONI RODRIGUES (OAB BA024290) EMENTA EMENTA: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EMBARGOS DE DECLARAÇÃO EM APELAÇÃO. IMUNIDADE TRIBUTÁRIA. ENTIDADE BENEFICENTE. EXIGÊNCIA DE CEBAS. TEMA 32 DA REPERCUSSÃO GERAL. EMBARGOS PARCIALMENTE PROVID",
@@ -63204,7 +64848,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "b7cb5bb3fc6d2c64e5b1b53e",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63218,7 +64862,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "fd172872-85b1-47fa-bf6e-9d89ea8249a0",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6010730-31.2025.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: igente em cada data do óbito; b) ao pagamento das parcelas vencidas desde as respectivas DIBs, observada, quanto à atualização dos valores, a seguinte sistemática: b.1) até 08/12/2021, incidência de correção monetária pelo IPCA-E e de juros de mora segundo a remuneração of",
@@ -63237,7 +64884,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "dbc218c5b7f704ef4cf36d27",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63251,7 +64898,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "a7fec46b-fffc-49a6-9d61-5442c5888816",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6003013-50.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63270,7 +64920,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "0625f79d00cf62efa7717ad2",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63284,7 +64934,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b2eacd78-7f82-4ece-9272-16d2aacb2bd0",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6004849-92.2024.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63303,7 +64956,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "d75e1c939440009685019fbc",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63317,7 +64970,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "ab7b905e-fd36-46a3-9c04-ab2c228ae594",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6005315-52.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63336,7 +64992,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "68ea82b2c477a8150321e0b2",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63350,7 +65006,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "3f830249-61fd-4318-bbb7-8ff50cf7c2c6",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6000212-30.2026.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63369,7 +65028,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "4ab3883e8478dea03f7e3abc",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63383,7 +65042,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b303206c-f403-4df0-a804-be505c5cb6c2",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6006436-18.2025.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63402,7 +65064,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "5ede598563c20151ce19847e",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63416,7 +65078,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "2007ce33-ab59-4093-82af-ffc4cd7ded5b",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6000008-83.2026.4.06.3806 · 01ª Vara Cível e JEF Adjunto de Patos de Minas — Direito tributário: o o prazo, encaminhem-se os autos à Turma Recursal, a quem cumprirá exercer o juízo de admissibilidade (art. 1.010, §3º, do CPC - Lei 13.105, de 16/03/2015). Sem custas e honorários advocatícios (art. 55 da Lei 9.099/1995). Intimem-se.",
@@ -63435,7 +65100,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "17e5e95cc2bb64b2d4f910df",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63449,7 +65114,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "fd15655c-bb89-477e-aabb-72a25d224357",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6003027-49.2026.4.06.3822 · Vara Cível e JEF Adjunto de Ponte Nova — Direito tributário: Mandado de Segurança (Vara Cível) Nº 6003027-49.2026.4.06.3822/MG IMPETRANTE : ROSANE MARIA DE AMORIM BOSEJA ADVOGADO(A) : CAMILA AMORIM BOSEJA (OAB MG210601) SENTENÇA Ante o exposto, CONCEDO EM PARTES A SEGURANÇA, resolvendo o mérito nos termos do art. 487, inciso I, d",
@@ -63468,7 +65136,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "ecffe301a783dcbde8bd4293",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63482,7 +65150,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "f0e72676-1b72-4f18-aaad-018522a6f324",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "Sentença · 6007082-09.2026.4.06.3801 · 02ª Vara Cível e JEF Adjunto de Juiz de Fora — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº 6007082-09.2026.4.06.3801/MG AUTOR : ANA KELLY MANFILI DE OLIVEIRA ADVOGADO(A) : LUCAS GABRIELL GOMES DE OLIVEIRA (OAB MG212241) SENTENÇA Ante o exposto, REJEITO as preliminares e JULGO PROCEDENTE o pedido (art. 487,",
@@ -63501,7 +65172,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "afaba6645824df2fee568d0b",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63515,7 +65186,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "83b0c19e-2842-4ad1-8b90-588840bd8ade",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 6002154-19.2025.4.06.3811 · 02ª Vara Cível e JEF Adjunto de Divinópolis — Direito tributário: e-se que o título originário isoladamente considerado não poderia mais ser executado, mas isso é irrelevante, pois o exequente não executa o título originário: executa o título formado pela ação rescisória, que substituiu os parâmetros da condenação nos limites em que foi",
@@ -63600,7 +65274,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:25:08.171Z",
         "id": "ece4ac8d2a5c4da4b1eeacd3",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -63614,7 +65288,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "2774f589-e3e2-4b5e-9a91-b2489af3fc8f",
+        "fastPublishedAt": "2026-08-21T00:04:00.604Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 6012790-94.2026.4.06.0000 · SECRETARIA DA 3a. TURMA — Direito tributário: e a apresentação de plano para alcançá-las, ao passo que o pronunciamento impugnado teria imposto resultado orçamentário pontual. Acrescenta que o prazo de sessenta dias não se harmoniza com o período de 180 dias estabelecido por esta Corte, em ação conexa, para o planejamento",
@@ -74093,7 +75770,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "93cf6bc193c04028bc4f4a61",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74107,7 +75784,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "cd114bbe-e746-4470-b489-6101b9dfb59b",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "Sentença · 6004697-98.2025.4.06.3809 · 01ª Vara Cível e JEF Adjunto de Varginha — Direito tributário: vidade laboral urbana pela parte autora, na condição de segurada empregada do Sr. José Agripino Tomaz (CPF 097.075.576-72), titular de escritório de contabilidade situado em Elói Mendes/MG, no período de 02/01/1992 a 30/11/1994, determinando ao Instituto Nacional do Seguro",
@@ -74126,7 +75806,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "aacda0e41a6d3dfe399df048",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74140,7 +75820,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "391749ad-d0cd-4824-b20b-c8c62ec59628",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "Sentença · 6054323-50.2024.4.06.3800 · 21ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº 6054323-50.2024.4.06.3800/MG AUTOR : REGINALDO D ASSUMPCAO ADVOGADO(A) : CARLOS BERKENBROCK (OAB MG118436) SENTENÇA III ? Dispositivo. Ante o exposto julgo procedente em parte o pedido, com resolução de mérito, nos t",
@@ -74159,7 +75842,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "2aa881b99f223efb9ea3418f",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74173,7 +75856,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "62bdc92e-152d-42a6-9f88-09ed29630f76",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "Sentença · 1020395-42.2021.4.01.3800 · 13ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: Procedimento do Juizado Especial Cível (JEF Cível) Nº 1020395-42.2021.4.01.3800/MG AUTOR : FLAVIO GARCIA IGLESIAS FERNANDES ADVOGADO(A) : EDVARD LIBORIO PETTERSEN JUNIOR (OAB MG172262) ADVOGADO(A) : RODRIGO OTAVIO DIAS SILVA (OAB MG142648) SENTENÇA Ante o exposto, JULGO",
@@ -74192,7 +75878,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "2f9dd9bdf908bcea5b629453",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74206,7 +75892,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "5b697f47-9d99-4bbc-bd04-7921f467b98d",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "Sentença · 6006478-51.2026.4.06.3800 · 15ª Vara Federal Cível e JEF Adjunto de Belo Horizonte — Direito tributário: eterminar à autoridade coatora que remeta, caso ainda não o tenha feito, todos os débitos tributários exigíveis da impetrante (CNPJ nº 37.054.721/0001-94) que estejam vencidos há mais de 90 (noventa) dias à Procuradoria-Geral da Fazenda Nacional (PGFN), para fins de controle de",
@@ -74225,7 +75914,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "642fb3d1dc4e140dffee44b5",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74239,7 +75928,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "95821abe-611c-41bb-9a39-19c621007e42",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 6081288-94.2026.4.06.3800 · Secretaria Única das Varas de Execução Fiscal, Extrajudicial e Jef Adjunto — Direito tributário: créditos de CFEM, impedir a inscrição no CADIN, obstar o protesto de CDA e assegurar a emissão de certidões, com a concessão do prazo de 30 (trinta) dias úteis para a formulação do pedido principal nos termos do art. 308 do CPC. A petição inicial veio acompanhada de docum",
@@ -74258,7 +75950,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:20:43.194Z",
         "id": "426fca260af5babf009f0aec",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": "2026-08-19",
         "fastTriage": {
@@ -74272,7 +75964,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b4b6d8f2-1db8-4dcf-b693-b167311823a1",
+        "fastPublishedAt": "2026-08-21T00:05:42.466Z",
+        "error": null
       },
       {
         "title": "DESPACHO/DECISÃO · 0003045-40.2012.4.01.3811 · 02ª Vara Cível e JEF Adjunto de Divinópolis — Direito tributário: icos adotados e sem declarar o valor que reputava correto, descumprindo o ônus processual imposto pelo artigo 535, § 2º, do CPC. Nesse sentido, a jurisprudência do TRF da 6ª Região e do STJ é uníssona em reconhecer a higidez da execução quando apresentados os elementos de liqu",
@@ -76669,6 +78364,682 @@
       }
     ],
     "runs": [
+      {
+        "id": "d672eec7-cd9b-4b51-86d7-6001aa83b405",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-19",
+        "startedAt": "2026-08-21T00:04:00.713Z",
+        "finishedAt": "2026-08-21T00:05:42.511Z",
+        "discovered": 140,
+        "analyzed": 0,
+        "published": 6,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 140,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 33731,
+              "entries": 34,
+              "processed": 33731,
+              "dateMatched": 33731,
+              "decisionMatched": 7022,
+              "taxMatched": 2412,
+              "deduplicated": 2247,
+              "duplicates": 165,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 53,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 12992,
+              "entries": 13,
+              "processed": 12992,
+              "dateMatched": 12992,
+              "decisionMatched": 6508,
+              "taxMatched": 1481,
+              "deduplicated": 1479,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24864,
+              "entries": 25,
+              "processed": 24864,
+              "dateMatched": 24864,
+              "decisionMatched": 9788,
+              "taxMatched": 4955,
+              "deduplicated": 4773,
+              "duplicates": 182,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 57,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 30583,
+              "entries": 31,
+              "processed": 30583,
+              "dateMatched": 30583,
+              "decisionMatched": 12422,
+              "taxMatched": 2212,
+              "deduplicated": 2210,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24048,
+              "entries": 25,
+              "processed": 24048,
+              "dateMatched": 24048,
+              "decisionMatched": 5843,
+              "taxMatched": 2614,
+              "deduplicated": 2538,
+              "duplicates": 76,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 12658,
+              "entries": 13,
+              "processed": 12658,
+              "dateMatched": 12658,
+              "decisionMatched": 4600,
+              "taxMatched": 844,
+              "deduplicated": 844,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "997db31d-a703-4a64-a0af-08e065476d25",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-21T00:02:18.298Z",
+        "finishedAt": "2026-08-21T00:04:00.640Z",
+        "discovered": 150,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 47,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 140,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "83dd1ac8-ccc5-4207-b497-aa2d3b4a8e3b",
         "trigger": "github-actions-analysis",
@@ -102579,541 +104950,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "02f9aa4b-e9cf-40d5-bd8d-787fd432cada",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-19T21:16:33.060Z",
-        "finishedAt": "2026-08-19T21:22:47.478Z",
-        "discovered": 26,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 6,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 53,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 367,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 14,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "80fe755c-6ca6-4386-ba22-38cb650477d5",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-18",
-        "startedAt": "2026-08-19T21:13:24.224Z",
-        "finishedAt": "2026-08-19T21:14:50.736Z",
-        "discovered": 14,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 8,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-20T23:59:59.069Z",
-    "nextRunAt": "2026-08-21T05:59:59.069Z"
+    "lastRunAt": "2026-08-21T00:05:42.511Z",
+    "nextRunAt": "2026-08-21T06:05:42.511Z"
   }
 }
