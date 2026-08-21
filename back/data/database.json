@@ -1,9 +1,313 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T12:49:45.684Z",
+    "lastUpdatedAt": "2026-08-21T13:30:59.727Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1617694 — ementado: Tributário . Constitucional. Ação anulatória de débito fiscal e declaratória de inexistência de relação jurídico tributária. Imunidade tributária. IPTU 2022",
+      "theme": "Imunidade tributária para instituições assistenciais e educacionais sem fins luc",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "IPTU",
+        "Imposto sobre a Propriedade de"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "O STF decidiu em decisão monocrática (ARE 1617694) que instituições assistenciais e educacionais sem fins lucrativos, como a CEBAS, têm imunidade tributária para IPTU 2022, caso o imóvel esteja vago e destinado à edificação de estabelecimento escolar. A decisão mantém a sentença do Tribunal de origem que declarou inexistência de relação jurídico tributária e anulou débito fiscal.",
+      "whatChanged": "A decisão estabelece que instituições assistenciais e educacionais sem fins lucrativos com imóvel vago destinado à construção de escola têm imunidade tributária para IPTU 2022, conforme art. 150, VI, 'c' da Constituição Federal e art. 14 do CTN.",
+      "practicalImpact": "Instituições assistenciais e educacionais sem fins lucrativos com imóvel vago para edificação de escola estão imunes do IPTU 2022. O recurso extraordinário foi negado, mas a decisão pode ser contestada por meio de recurso especial ou ação direta de controle de constitucionalidade.",
+      "officeAction": "A decisão mantém a sentença do Tribunal de origem que declarou inexistência de relação jurídico tributária e anulou débito fiscal para instituições assistenciais e educacionais sem fins lucrativos com imóvel vago destinado à edificação de escola.",
+      "affectedProfiles": [
+        "Instituições assistenciais sem fins lucrativos",
+        "Instituições educacionais sem fins lucrativos",
+        "Municípios com imóveis vagos para edificação de escolas",
+        "Contribuintes de IPTU",
+        "Entidades certificadas como CEBAS"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Imunidade tributária para instituições assistenciais e educacionais sem fins lucrativos com imóvel vago para edificação de escola",
+        "period": "2022",
+        "action": "Verificação da imunidade tributária para IPTU em instituições assistenciais e educacionais sem fins lucrativos com imóvel vago destinado à edificação de escola",
+        "confidence": "alto"
+      },
+      "id": "eaaf884a-ad44-4710-b1ed-8c4a92250956",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811520/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T13:30:59.666Z",
+      "updatedAt": "2026-08-21T13:30:59.666Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811520/false",
+        "sourceCharacters": 1199,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617549 — RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EXECUÇÃO FISCAL. EMBARGOS. CELEBRAÇÃO DE TRANSAÇÃO TRIBUTÁRIA. EXTINÇÃO DA AÇÃO. HONORÁRIOS",
+      "theme": "Extinção da ação tributária por transação tributária",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imposto de Renda",
+        "Código de Processo Civil",
+        "Lei 17.843/23 (Acordo Paulista",
+        "Editais de 2024"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-21",
+      "summary": "O Supremo Tribunal Federal decidiu que a extinção da ação fiscal por transação tributária (Lei 17.843/23) é válida, mantendo o 'decisum' e negando seguimento ao agravo. O recurso extraordinário foi fundado nas alíneas 'b' e 'c' do permissivo constitucional, com base na ausência de declaração formal de inconstitucionalidade de tratado ou lei federal.",
+      "whatChanged": "A decisão confirma que a extinção da ação fiscal por transação tributária (Lei 17.843/23) é válida sob o princípio da causalidade, sem vedações ao bis in idem ou prequestionamento das alegações constitucionais.",
+      "practicalImpact": "Contribuintes e entidades tributárias afetados pela transação tributária (Lei 17.843/23) devem manter a extinção da ação fiscal. Recursos extraordinários devem seguir o permissivo constitucional sem prequestionamento das alegações constitucionais. Recurso ao agravo é negado.",
+      "officeAction": "A decisão do STF confirma a validade da extinção da ação fiscal por transação tributária (Lei 17.843/23) e nega seguimento ao agravo, mantendo o 'decisum' e os honorários advocatícios.",
+      "affectedProfiles": [
+        "Contribuintes que celebraram transação tributária com Lei 17.843/23",
+        "Entidades tributárias",
+        "Advogados de tributação",
+        "Instituições públicas com responsabilidade fiscal",
+        "Prestadores de serviços tributários"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Validação da extinção da ação fiscal por transação tributária (Lei 17.843/23)",
+        "period": "2024-08-18",
+        "action": "Contribuintes devem garantir a manutenção da extinção da ação fiscal sem prequestionamento constitucional",
+        "confidence": "alto"
+      },
+      "id": "c0d1d4af-48d5-4568-95c8-2bf81fe33110",
+      "score": 8.1,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812083/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T13:27:14.154Z",
+      "updatedAt": "2026-08-21T13:27:14.154Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812083/false",
+        "sourceCharacters": 1167,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1617815 — com agravo. Tributário . Locação de bens móveis. Repetição de indébito. Requisitos do art. 166 do CTN. Matéria infraconstitucional. Ofensa constitucional indireta ou",
+      "theme": "Repetição de indébito tributário na locação de bens móveis",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Imposto de Renda",
+        "ICMS",
+        "ISS",
+        "PIS/COFINS",
+        "Código Tributário Nacional",
+        "Repetição de indébito"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "O Supremo Tribunal Federal decidiu que a controvérsia sobre repetição de indébito tributário na locação de bens móveis, no que concerne à comprovação da transferência do encargo econômico ao locatário, possui natureza infraconstitucional. A ofensa constitucional é indireta ou reflexa, não ensejando reexame na via do recurso extraordinário.",
+      "whatChanged": "A decisão estabelece que a controvérsia relativa à repetição do indébito tributário na locação de bens móveis, conforme o art. 166 do CTN, é matéria infraconstitucional, com ofensa constitucional indireta ou reflexa, o que não permite reexame na via do recurso extraordinário.",
+      "practicalImpact": "Contribuintes e locatários de bens móveis estão afetados pela decisão, que determina que a repetição de indébito tributário não pode ser contestada por via de recurso extraordinário. Recurso é possível até a data de publicação do DJe.",
+      "officeAction": "Agravo regimental não provido. A decisão afirma que a controvérsia é matéria infraconstitucional e que a ofensa constitucional é indireta ou reflexa, não ensejando reexame na via do recurso extraordinário.",
+      "affectedProfiles": [
+        "Locatários de bens móveis",
+        "Contribuintes de tributos locais",
+        "Empresas de locação de bens móveis",
+        "Organizações tributárias",
+        "Advogados especializados em tributário"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Repetição de indébito tributário na locação de bens móveis: matéria infraconstitucional",
+        "period": "2015-12-14",
+        "action": "Análise da comprovação da transferência do encargo econômico ao locatário do bem para evitar repetição de indébito tributário",
+        "confidence": "alto"
+      },
+      "id": "3b13bee9-1405-4c32-b1f1-5b011f756547",
+      "score": 8.3,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811481/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T13:23:17.444Z",
+      "updatedAt": "2026-08-21T13:23:17.444Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811481/false",
+        "sourceCharacters": 1205,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 98252, de 10/08/2026",
+      "theme": "Classificação de Mercadorias NCM",
+      "agency": "Receita Federal — Soluções COSIT",
+      "taxes": [
+        "NCM",
+        "RGI",
+        "RGC",
+        "Tipi",
+        "Nesh"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "A Receita Federal publicou Solução de Consulta Cosit nº 98252 de 10/08/2026, que classifica a mercadoria 'Rodízio giratório de roda dupla de 100 mm de diâmetro e 73 mm de largura...' como NCM 3926.90.90 com ex tipi sem enquadramento, baseando-se em dispositivos legais RGI 1, RGI 3b, RGI 6 e RGC 1 da NCM/SH da TEC 272/2021 e da Tipi 11.158/2022.",
+      "whatChanged": "A classificação da mercadoria em NCM 3926.90.90 foi confirmada com ex tipi sem enquadramento, considerando os critérios da TEC 272/2021 e da Tipi 11.158/2022, sem necessidade de aplicação de regras de classificação adicionais.",
+      "practicalImpact": "Contribuintes que comercializam rodízios giratórios descritos especificamente devem classificar seus produtos como NCM 3926.90.90. Não há recurso possível, já que a solução é publicada no DOU de 21/08/2026 e vigente a partir desse dia.",
+      "officeAction": "A Receita Federal classificou a mercadoria 'Rodízio giratório de roda dupla...' como NCM 3926.90.90 com ex tipi sem enquadramento, conforme Solução de Consulta Cosit nº 98252 de 10/08/2026.",
+      "affectedProfiles": [
+        "Empresas que comercializam rodízios giratórios de roda dupla com dimensões e mat",
+        "#100 mm de diâmetro e 73 mm de largura",
+        "Fabricantes de equipamentos de movimentação manual",
+        "Varejistas de móveis e equipamentos industriais",
+        "Empresas que utilizam rodízios em estruturas de carrinhos de tração manual"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Classificação de mercadorias com dimensões específicas",
+        "period": "2026-08-21 a 2027-08-21",
+        "action": "Reclassificação de mercadorias conforme NCM 3926.90.90 para evitar tributação incorreta",
+        "confidence": "alto"
+      },
+      "id": "914d665f-190c-4571-82cf-0b02bf407bed",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153033",
+      "isDemo": false,
+      "createdAt": "2026-08-21T13:19:34.524Z",
+      "updatedAt": "2026-08-21T13:19:34.524Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153033/visao/original",
+        "sourceCharacters": 3950,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Solução de Consulta Cosit nº 98259, de 10/08/2026: Classificação de Mercadorias NCM 8524.99.00 para Módulo de Tela LED",
@@ -6080,43 +6384,51 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5069649-84.2026.4.02.5101 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: Z VAZ (AUTOR) ADVOGADO(A) : BIANCA ROBAINA PAES (OAB RJ210554) RECURSO INOMINADO.…",
-      "theme": "Direito tributário",
+      "title": "Acórdão judicial: Recurso inominado desprovido no tema da não incidência de contribuição previdenciária sobre gratificação de desempenho (GDPST) para servidores públicos novos",
+      "theme": "Direito tributário: Contribuição previdenciária do servidor público para o PSS",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária do"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Julgamento de recurso inominado",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST).",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão da 7ª Turma Recursal do TRF2 decidiu manter a sentença que julgou improcedente o recurso de Z Vaz, que pediu não incidência da contribuição previdenciária do servidor público para o PSS sobre a gratificação de desempenho (GDPST) não incorporável à aposentadoria. A decisão afirma que servidores públicos novos, sem direito à integralidade e paridade, devem contribuir para o PSS sobre a GDPST, pois a base de cálculo da aposentadoria é a média aritmética das maiores remunerações utilizadas como base para contribuições previdenciárias.",
+      "whatChanged": "A decisão estabelece que a contribuição previdenciária sobre a GDPST não incorporável à aposentadoria deve incidir em servidores públicos novos sem direito à integralidade e paridade, já que a base de cálculo da aposentadoria depende da média aritmética das maiores remunerações contribuídas.",
+      "practicalImpact": "Servidores públicos novos sem direito à integralidade e paridade devem contribuir para o PSS sobre a GDPST não incorporável à aposentadoria. A decisão não permite recurso adicional, mas depende da regulamentação da Lei nº 11.355/2006 e Lei nº 10.887/2004 para aplicação prática.",
+      "officeAction": "A decisão foi referendada pela 7ª Turma Recursal do TRF2 e transitou em julgado, com condenação da parte recorrente ao pagamento de custas e honorários de sucumbência (10% do valor da causa).",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos novos sem direito à integralidade e paridade",
+        "Servidores públicos com aposentadoria calculada pela média aritmética das maioes"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ajuste na tributação de servidores públicos novos para evitar impacto financeiro",
+        "period": "2026-08-19 a 2027-08-19",
+        "action": "Revisão da base de cálculo da aposentadoria para servidores públicos novos com base na média aritmética das maiores remunerações contribuídas",
+        "confidence": "médio"
+      },
       "id": "83691e7a-d6f0-465e-b710-307d6ee7ef1e",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQRVKubQnC7Tdl7LA6ek9aWL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T09:48:53.853Z",
-      "updatedAt": "2026-08-21T09:48:53.853Z",
+      "updatedAt": "2026-08-21T13:14:30.225Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQRVKubQnC7Tdl7LA6ek9aWL/certidao",
         "sourceCharacters": 5855,
         "sourceId": "trf2",
@@ -59249,8 +59561,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T12:39:42.617Z",
         "id": "c61cadadea6bd533519e2701",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59263,7 +59575,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T13:23:17.508Z",
+        "analyzedPublishedAt": "2015-12-14T00:00:00",
+        "relevant": true,
+        "score": 8.3,
+        "discardReason": null,
+        "alertId": "3b13bee9-1405-4c32-b1f1-5b011f756547",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1617549 — RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EXECUÇÃO FISCAL. EMBARGOS. CELEBRAÇÃO DE TRANSAÇÃO TRIBUTÁRIA. EXTINÇÃO DA AÇÃO. HONORÁRIOS DE SUCUMBÊNCIA. PRINCÍPIO DA CAUSALIDADE. VEDAÇÃO AO BIS IN IDEM. INOCORRÊNCIA DE PREQUESTIONA",
@@ -59282,8 +59602,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T12:39:42.617Z",
         "id": "5d6cf9243aa076711a6f1e2a",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59296,7 +59616,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T13:27:14.217Z",
+        "analyzedPublishedAt": "2024-08-18T18:12:08Z",
+        "relevant": true,
+        "score": 8.1,
+        "discardReason": null,
+        "alertId": "c0d1d4af-48d5-4568-95c8-2bf81fe33110",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1617340 — Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . CRÉDITO PRESUMIDO D",
@@ -59381,8 +59709,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T12:39:42.617Z",
         "id": "d2fcaa946c6cdb9470a6cbcd",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -59395,7 +59723,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T13:30:59.727Z",
+        "analyzedPublishedAt": "2023-11-18T18:00:00",
+        "relevant": true,
+        "score": 8.7,
+        "discardReason": null,
+        "alertId": "eaaf884a-ad44-4710-b1ed-8c4a92250956",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1617551 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
@@ -59946,8 +60282,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-21T12:02:00.507Z",
         "id": "efcc2d6ae303e483e3eeaa96",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -59959,7 +60295,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T13:19:34.587Z",
+        "analyzedPublishedAt": "2026-08-21",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "alertId": "914d665f-190c-4571-82cf-0b02bf407bed",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 98245 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8523.52.90 Mercadoria: Cartões para transações eletrônicas bancárias de dupla interface, com capacidade de transmissão de dados criptografados por contato (inserção ou tarja magnética) e sem contato (aproxim",
@@ -64524,8 +64868,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "136763579829bb18adea5b77",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -64541,7 +64885,14 @@
         },
         "alertId": "83691e7a-d6f0-465e-b710-307d6ee7ef1e",
         "fastPublishedAt": "2026-08-21T09:48:53.857Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T13:14:30.289Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 7.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5000806-71.2025.4.02.5111 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: 19301) ADVOGADO(A) : RAPHAEL RAY DA ROCHA FORTE (OAB RJ222279) RECURSO INOMINADO. DIREITO TRIBUTÁRIO. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST). SENTENÇA DE PROCEDÊNCIA QUE DEVE SER REFORMADA.",
@@ -100984,6 +101335,19 @@
     ],
     "runs": [
       {
+        "id": "fd1844a7-027a-4355-a169-be7c5c051b30",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T13:08:00.621Z",
+        "finishedAt": "2026-08-21T13:30:59.816Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 4,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "708baca9-b86b-4f7e-832d-e808e803f885",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -124695,347 +125059,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "bbe4461e-67de-4934-b60d-4ede65925491",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T12:49:07.434Z",
-        "finishedAt": "2026-08-20T12:51:01.206Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 33731,
-              "entries": 34,
-              "processed": 33731,
-              "dateMatched": 33731,
-              "decisionMatched": 7022,
-              "taxMatched": 2569,
-              "deduplicated": 2389,
-              "duplicates": 180,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 47,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12992,
-              "entries": 13,
-              "processed": 12992,
-              "dateMatched": 12992,
-              "decisionMatched": 6508,
-              "taxMatched": 1570,
-              "deduplicated": 1568,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24864,
-              "entries": 25,
-              "processed": 24864,
-              "dateMatched": 24864,
-              "decisionMatched": 9788,
-              "taxMatched": 5200,
-              "deduplicated": 5006,
-              "duplicates": 194,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 30583,
-              "entries": 31,
-              "processed": 30583,
-              "dateMatched": 30583,
-              "decisionMatched": 12422,
-              "taxMatched": 2312,
-              "deduplicated": 2310,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24048,
-              "entries": 25,
-              "processed": 24048,
-              "dateMatched": 24048,
-              "decisionMatched": 5843,
-              "taxMatched": 2758,
-              "deduplicated": 2673,
-              "duplicates": 85,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12658,
-              "entries": 13,
-              "processed": 12658,
-              "dateMatched": 12658,
-              "decisionMatched": 4600,
-              "taxMatched": 866,
-              "deduplicated": 866,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T13:06:12.951Z",
-    "nextRunAt": "2026-08-21T19:06:12.951Z"
+    "lastRunAt": "2026-08-21T13:30:59.816Z",
+    "nextRunAt": "2026-08-21T19:30:59.816Z"
   }
 }
