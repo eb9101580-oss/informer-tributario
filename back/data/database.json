@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T12:26:37.015Z",
+    "lastUpdatedAt": "2026-08-21T12:49:45.684Z",
     "environment": "demonstration"
   },
   "alerts": [
@@ -6009,43 +6009,51 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5036158-86.2026.4.02.5101 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: RTINS (AUTOR) ADVOGADO(A) : BIANCA ROBAINA PAES (OAB RJ210554) RECURSO INOMINADO.…",
-      "theme": "Direito tributário",
+      "title": "Acórdão judicial: Recurso inominado desprovido no tema da não incidência de contribuição previdenciária sobre gratificação de desempenho (GDPST) para servidores públicos novos",
+      "theme": "Direito tributário: Contribuição previdenciária do servidor público para o PSS",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Contribuição Previdenciária do"
+      ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Julgamento de recurso inominado",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST).",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A 7ª Turma Recursal do TRF2 decidiu por unanimidade manter a sentença que julgou improcedente o pedido de não incidência da contribuição previdenciária do servidor público para o PSS sobre a parcela da Gratificação de Desempenho da Carreira da Previdência, Saúde e Trabalho (GDPST) não incorporável à aposentadoria. O recurso foi desprovido por ser inaplicável à hipótese de servidores públicos novos sem direito à integralidade e paridade, cuja aposentadoria é calculada com base na média aritmética das maiores remunerações.",
+      "whatChanged": "A decisão estabelece que a contribuição previdenciária sobre a GDPST não incorporável à aposentadoria deve incidir em servidores públicos novos sem direito à integralidade e paridade, já que a exclusão da contribuição repercutiria na apuração da aposentadoria por meio da média aritmética das maiores remunerações utilizadas como base para contribuições.",
+      "practicalImpact": "Servidores públicos novos sem direito à integralidade e paridade devem contribuir para o PSS sobre a parcela da GDPST não incorporável à aposentadoria. A decisão não permite recurso adicional, mas depende da regulamentação da Lei nº 11.355/2006 e Lei nº 10.887/2004 para aplicação prática.",
+      "officeAction": "A 7ª Turma Recursal do TRF2 decidiu por unanimidade manter a sentença que julgou improcedente o pedido de não incidência da contribuição previdenciária sobre a GDPST não incorporável à aposentadoria para servidores públicos novos sem direito à integralidade e paridade.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Servidores públicos novos sem direito à integralidade e paridade",
+        "Servidores públicos com aposentadoria calculada pela média aritmética das maioes"
       ],
       "criteria": {
         "authority": 9,
-        "novelty": 8,
+        "novelty": 7,
         "legalImpact": 8,
         "financialImpact": 6,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 7
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Aplicação da decisão no cálculo de aposentadoria para servidores públicos novos",
+        "period": "2026-08-19 a 2027-08-19",
+        "action": "Revisar a base de cálculo da aposentadoria para servidores públicos novos sem direito à integralidade e paridade, incluindo a contribuição previdenciária sobre a GDPST não incorporável",
+        "confidence": "alto"
+      },
       "id": "d0a11021-c44b-4ef8-a5ef-0a86a78de05e",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7.5,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXY4VunaBHGT73wA96dy4gaO/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T09:48:53.853Z",
-      "updatedAt": "2026-08-21T09:48:53.853Z",
+      "updatedAt": "2026-08-21T12:49:45.628Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXY4VunaBHGT73wA96dy4gaO/certidao",
         "sourceCharacters": 5860,
         "sourceId": "trf2",
@@ -64472,8 +64480,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "80145c38fe2539641a87ad60",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -64489,7 +64497,14 @@
         },
         "alertId": "d0a11021-c44b-4ef8-a5ef-0a86a78de05e",
         "fastPublishedAt": "2026-08-21T09:48:53.857Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T12:49:45.684Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 7.5,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5069649-84.2026.4.02.5101 · 7ª Turma Recursal do Rio de Janeiro — Direito tributário: Z VAZ (AUTOR) ADVOGADO(A) : BIANCA ROBAINA PAES (OAB RJ210554) RECURSO INOMINADO. DIREITO TRIBUTÁRIO. PEDIDO DE NÃO INCIDÊNCIA DE CONTRIBUIÇÃO PREVIDENCIÁRIA DO SERVIDOR PÚBLICO PARA O PSS SOBRE GRATIFICAÇÃO DE DESEMPENHO (GDPST). SENTENÇA DE IMPROCEDÊNCIA QUE DEVE SER MANTIDA.",
@@ -100969,6 +100984,19 @@
     ],
     "runs": [
       {
+        "id": "789bb802-ba5e-41c6-b696-3b9bbebd1a68",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T12:43:22.173Z",
+        "finishedAt": "2026-08-21T12:49:45.764Z",
+        "discovered": 0,
+        "analyzed": 1,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "81ce811c-1415-410e-8d41-62ae925c9273",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -125005,347 +125033,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "2dfb8adf-7ec9-4f84-ac15-6829c8f7ee1e",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-20T12:30:22.104Z",
-        "finishedAt": "2026-08-20T12:36:53.117Z",
-        "discovered": 21,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 12,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 48,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 57,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 37271,
-              "entries": 38,
-              "processed": 37271,
-              "dateMatched": 37271,
-              "decisionMatched": 5964,
-              "taxMatched": 2162,
-              "deduplicated": 2038,
-              "duplicates": 124,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 54,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 14717,
-              "entries": 15,
-              "processed": 14717,
-              "dateMatched": 14717,
-              "decisionMatched": 6923,
-              "taxMatched": 1960,
-              "deduplicated": 1960,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 22086,
-              "entries": 23,
-              "processed": 22086,
-              "dateMatched": 22086,
-              "decisionMatched": 9131,
-              "taxMatched": 4604,
-              "deduplicated": 4384,
-              "duplicates": 220,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31471,
-              "entries": 32,
-              "processed": 31471,
-              "dateMatched": 31471,
-              "decisionMatched": 10342,
-              "taxMatched": 1725,
-              "deduplicated": 1724,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 24254,
-              "entries": 25,
-              "processed": 24254,
-              "dateMatched": 24254,
-              "decisionMatched": 5676,
-              "taxMatched": 2561,
-              "deduplicated": 2480,
-              "duplicates": 81,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 43,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 10387,
-              "entries": 11,
-              "processed": 10387,
-              "dateMatched": 10387,
-              "decisionMatched": 3896,
-              "taxMatched": 909,
-              "deduplicated": 909,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 4,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T12:41:52.186Z",
-    "nextRunAt": "2026-08-21T18:41:52.186Z"
+    "lastRunAt": "2026-08-21T12:49:45.764Z",
+    "nextRunAt": "2026-08-21T18:49:45.764Z"
   }
 }
