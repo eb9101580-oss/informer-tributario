@@ -1,9 +1,86 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T07:55:47.986Z",
+    "lastUpdatedAt": "2026-08-21T08:30:51.893Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 98260, de 11/08/2026: Classificação de Mercadorias NCM 8703.80.00 para Veículos Elétricos com Tecnologia REEV",
+      "theme": "Classificação de Mercadorias NCM",
+      "agency": "Receita Federal — Soluções COSIT",
+      "taxes": [
+        "NCM 8703.80.00",
+        "ICMS",
+        "PIS",
+        "COFINS",
+        "ISS",
+        "IPI"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "publishedAt": "2026-08-21",
+      "summary": "A Receita Federal publicou, no DOU de 21/08/2026, a Solução de Consulta Cosit nº 98260 que classifica veículos automotores de passageiros do tipo SUV com propulsão elétrica (baterias de lítio-ferro-fosfato) e sistema de propulsão híbrida (motor de combustão interna para recarga da bateria) como NCM 8703.80.00. O documento define claramente a classificação para veículos com tecnologia REEV (Range-Extended Electric Vehicle), impactando a tributação de veículos elétricos híbridos no Brasil.",
+      "whatChanged": "A classificação NCM 8703.80.00 foi definida para veículos automotores de passageiros do tipo SUV com propulsão elétrica alimentada por baterias de lítio-ferro-fosfato, dotados de sistema de propulsão híbrida (motor de combustão interna para recarga da bateria), permitindo a tributação adequada de veículos com tecnologia REEV (Veículo Elétrico de Autonomia Estendida).",
+      "practicalImpact": "Empresas que produzem ou comercializam veículos elétricos híbridos (REV) devem ajustar suas operações tributárias para seguir a classificação NCM 8703.80.00, evitando inconsistências na cobrança de ICMS, PIS, COFINS e IPI. A classificação é válida a partir de 21/08/2026, impactando diretamente a tributação de veículos com tecnologia híbrida elétrica no Brasil.",
+      "officeAction": "A Receita Federal estabeleceu que veículos automotores de passageiros do tipo SUV destinados ao transporte de cinco pessoas, com sistema de propulsão exclusivamente elétrico alimentado por baterias de lítio-ferro-fosfato e equipados com motor de combustão interna para recarga da bateria (tecnologia REEV) devem ser classificados como NCM 8703.80.00, conforme a Solução de Consulta Cosit nº 98260.",
+      "affectedProfiles": [
+        "Fabricantes de veículos elétricos híbridos",
+        "Empresas de distribuição de veículos automotores",
+        "Sistemas de gestão tributária de veículos elétricos",
+        "Clientes que utilizam veículos com tecnologia REEV",
+        "Empresas de logística e transporte"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 9,
+        "clientFit": 8,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Classificação NCM 8703.80.00 para Veículos Elétricos com Tecnologia REEV",
+        "period": "A partir de 21/08/2026",
+        "action": "Ajustar operações tributárias para seguir a classificação NCM 8703.80.00, evitando inconsistências na cobrança de ICMS, PIS, COFINS e IPI",
+        "confidence": "alto"
+      },
+      "id": "813e72b7-3481-4d86-86b8-3181fc74e5d8",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153016",
+      "isDemo": false,
+      "createdAt": "2026-08-21T08:11:50.891Z",
+      "updatedAt": "2026-08-21T08:11:50.891Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153016/visao/original",
+        "sourceCharacters": 4411,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-21T07:54:15.330Z",
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Sentença · 1016526-16.2026.4.01.3600 · 8ª Vara Federal Cível da SJMT — Direito tributário: érmino da demanda. Ao final pretende o reconhecimento da inexistência de relação…",
@@ -892,49 +969,59 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5084570-48.2026.4.02.5101 · 27ª Vara Federal do Rio de Janeiro — Direito tributário: i) Determinar a autoridade coatora se abstenha de exigir a inclusão em…",
-      "theme": "Direito tributário · ICMS, PIS, Cofins, IRPJ, CSLL",
+      "title": "DESPACHO/DECISÃO · 5084570-48.2026.4.02.5101 · 27ª Vara Federal do Rio de Janeiro — Direito tributário: i) Determinar a autoridade coatora se abstenha de exigir a inclusão em base",
+      "theme": "Exclusão de benefícios fiscais de ICMS na base de cálculo do IRPJ, CSLL, PIS eCO",
       "agency": "Tribunal Regional Federal da 2ª Região",
       "taxes": [
-        "ICMS",
-        "PIS",
-        "Cofins",
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "PIS",
+        "COFINS",
+        "ICMS",
+        "Lei Complementar 160/2017"
       ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Despacho judicial publicado no DJEN",
+      "impactType": "Risco",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. 36 e 37): \"a.i) Determinar a autoridade coatora se abstenha de exigir a inclusão em base de cálculo do IRPJ, CSLL, pela Impetrante, os valores oriundos de benefícios fiscais de ICMS3 , pelas devidas fundamentações expostas; a.ii) determinar a autoridade coatora se abstenha exigir a inclusão na base de cálculo do PIS e da COFINS os valores oriundos de benefícios fiscais de ICMS, pelas devidas fundamentações…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despatcho judicial determina que a autoridade coatora (Receita Federal) não deve exigir a inclusão em base de cálculo do IRPJ, CSLL, PIS e COFINS dos valores oriundos de benefícios fiscais de ICMS, mas não concede a medida liminar por falta de comprovação dos requisitos legais específicos para cada benefício fiscal. As impetrantes afirmaram usufruir de benefícios fiscais de ICMS concedidos pelo Estado do Rio de Janeiro, como redução de base de cálculo e isenções, mas o despatcho rejeita o pedido por não haver individualização suficiente dos benefícios concretamente usufruídos por cada empresa e não atenderem aos requisitos legais estabelecidos na Lei Complementar 160/2017 e Lei 12.973/2014",
+      "whatChanged": "O despatcho judicial rejeita o pedido liminar para exclusão de benefícios fiscais de ICMS na base de cálculo do IRPJ, CSLL, PIS e COFINS, destacando que não há comprovação suficiente dos requisitos legais específicos para cada benefício fiscal, como exigido pela Lei Complementar 160/2017 e Lei 12.973/2014",
+      "practicalImpact": "Empresas que usufruem de benefícios fiscais de ICMS concedidos pelo Estado do Rio de Janeiro devem manter a inclusão dos valores oriundos desses benefícios na base de cálculo do IRPJ, CSLL, PIS e COFINS, a menos que comprovem o atendimento dos requisitos legais estabelecidos na Lei Complementar 160/2017 e Lei 12.973/2014",
+      "officeAction": "Receita Federal não pode exigir a inclusão em base de cálculo do IRPJ, CSLL, PIS e COFINS dos valores oriundos de benefícios fiscais de ICMS, mas o despatcho rejeita o pedido liminar por falta de comprovação dos requisitos legais específicos para cada benefício fiscal",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas comércio varejista de alimentos",
+        "Empresas com benefícios fiscais de ICMS do Rio de Janeiro",
+        "Contribuintes do IRPJ e CSLL",
+        "Empresas com operações de produtos cárneos e cosméticos",
+        "Empresas com benefícios fiscais de ICMS"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
+        "clientFit": 8,
         "actionPotential": 6
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão de benefícios fiscais de ICMS na base de cálculo do IRPJ, CSLL, PIS e COFINS",
+        "period": "2024-05-28 a 2024-06-30",
+        "action": "Comprovação dos requisitos legais específicos para cada benefício fiscal conforme Lei Complementar 160/2017 e Lei 12.973/2014",
+        "confidence": "médio"
+      },
       "id": "1efd5c7c-aa13-4510-8b99-4d29151dbd17",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 6.7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9RQ1upLLsDT5N7gJRgMzm2n/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T07:55:47.984Z",
-      "updatedAt": "2026-08-21T07:55:47.984Z",
+      "updatedAt": "2026-08-21T08:06:53.691Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/LQa7Deb9RQ1upLLsDT5N7gJRgMzm2n/certidao",
         "sourceCharacters": 8834,
         "sourceId": "trf2",
@@ -961,47 +1048,54 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5035225-84.2024.4.02.5101 · Assessoria de Recursos — Direito tributário: rido por Turma Especializada deste Tribunal ( evento 27, ACOR1 ), assim ementado:…",
-      "theme": "Direito tributário · ICMS, IRPJ, CSLL",
+      "title": "DESPACHO/DECISÃO · 5035225-84.2024.4.02.5101 · Assessoria de Recursos — Direito tributário: rido por Turma Especializada deste Tribunal ( evento 27, ACOR1 ), assim ementado: DIRETO",
+      "theme": "Exclusão de créditos presumidos de ICMS da base de cálculo do IRPJ e CSLL após a",
       "agency": "Tribunal Regional Federal da 2ª Região",
       "taxes": [
-        "ICMS",
         "IRPJ",
-        "CSLL"
+        "CSLL",
+        "ICMS"
       ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. Apelação Cível Nº 5035225-84.2024.4.02.5101/RJ APELANTE : PACTUAL COMERCIO DE DESCARTAVEIS E LIMPEZA LTDA (IMPETRANTE) ADVOGADO(A) : MARUAN ABULASAN JUNIOR (OAB SP173421) DESPACHO/DECISÃO Trata-se de recurso especial ( evento 69, RECESPEC1 ) interposto pela UNIÃO – FAZENDA NACIONAL , com fundamento no artigo 105, III, alíneas ‘a’ e ‘c’, da Constituição Federal, contra acórdão proferido por Turma Especializada deste…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O STJ decidiu sobrestar os autos até o julgamento do Tema 1416, que discute se os créditos presumidos de ICMS devem ser excluídos das bases de cálculo do IRPJ e CSLL após a vigência da Lei nº 14.789/2023. A decisão confirma que a Lei nº 14.789/2023 não alterou a natureza jurídica do crédito presumido, permanecendo excluído das bases de cálculo do IRPJ e CSLL.",
+      "whatChanged": "A Lei nº 14.789/2023 revogou o art. 30 da Lei nº 12.973/2014, mas não alterou a natureza jurídica do crédito presumido de ICMS, que permanece excluído das bases de cálculo do IRPJ e CSLL. O STJ determinou o sobrestamento dos autos até o julgamento do Tema 1416.",
+      "practicalImpact": "Contribuintes podem solicitar restituição ou compensação dos valores indevidamente recolhidos do IRPJ e CSLL sobre créditos presumidos de ICMS, desde que observadas as diretrizes do STF no Tema 831. A atualização dos valores deve seguir a taxa SELIC, conforme o art. 39, § 4º, da Lei nº 9.250/1995.",
+      "officeAction": "O STJ determinou o sobrestamento dos autos até o julgamento do Tema 1416, que discute se os créditos presumidos de ICMS devem ser excluídos das bases de cálculo do IRPJ e CSLL após a vigência da Lei nº 14.789/2023.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes que pagaram IRPJ e CSLL sobre créditos presumidos de ICMS",
+        "Empresas com atividade de ICMS",
+        "Organizações que utilizam créditos presumidos de ICMS como incentivo fiscal"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 9,
+        "financialImpact": 8,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Restituição e compensação de IRPJ e CSLL sobre créditos presumidos de ICMS",
+        "period": "Após a vigência da Lei nº 14.789/2023",
+        "action": "Contribuintes devem solicitar restituição ou compensação dos valores indevidamente recolhidos do IRPJ e CSLL, observando a taxa SELIC para atualização dos valores",
+        "confidence": "alto"
+      },
       "id": "2e3f0d58-468c-492a-9791-b1db2f569a21",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZVKulBrh7Tdl7LAYek9aWL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T07:55:47.984Z",
-      "updatedAt": "2026-08-21T07:55:47.984Z",
+      "updatedAt": "2026-08-21T08:17:06.871Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qG7X2owQZVKulBrh7Tdl7LAYek9aWL/certidao",
         "sourceCharacters": 5467,
         "sourceId": "trf2",
@@ -1028,47 +1122,58 @@
     },
     {
       "relevant": true,
-      "title": "Acórdão · 5104596-04.2025.4.02.5101 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: S S.A. (IMPETRANTE) ADVOGADO(A) : LEONARDO VINICIUS CORREIA DE MELO (OAB…",
-      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "title": "Acórdão · 5104596-04.2025.4.02.5101 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: S S.A. (IMPETRANTE) ADVOGADO(A) : LEONARDO VINICIUS CORREIA DE MELO (OAB RJ137721)",
+      "theme": "Exclusão do adicional de ICMS destinado ao FECP da base de cálculo do PIS e COFĨ",
       "agency": "Tribunal Regional Federal da 2ª Região",
       "taxes": [
-        "ICMS",
         "PIS",
-        "Cofins"
+        "COFINS",
+        "ICMS",
+        "FECP",
+        "SELIC"
       ],
       "status": "Fato confirmado",
-      "kind": "Acórdão judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Acórdão judicial publicado no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou acórdão judicial publicada no djen em 2026-08-21. EXCLUSÃO DO ADICIONAL DE ICMS DESTINADO AO FUNDO DE COMBATE À POBREZA – FECP DA BASE DE CÁLCULO DO PIS E DA COFINS.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O acórdão do TRF2 confirma a possibilidade de exclusão do adicional de ICMS destinado ao Fundo de Combate à Pobreza (FECP) da base de cálculo do PIS e COFINS, alinhando-se ao entendimento do STF no Tema 69. O tribunal reconhece o direito da impetrante à compensação tributária, com base em precedentes do STF e TRF2, e estabelece critérios para atualização do indébito com SELIC.",
+      "whatChanged": "O acórdão do TRF2 2ª Região determina que o adicional de ICMS destinado ao FECP não deve integrar a base de cálculo do PIS e COFINS, seguindo o entendimento do STF no Tema 69. A compensação pode ser pleiteada via mandado de segurança, com base no art. 74 da Lei nº 9.430/97 e no art. 170-A do CTN.",
+      "practicalImpact": "Empresas que recolheram PIS e COFINS com base no adicional de ICMS destinado ao FECP devem revisar suas bases de cálculo para evitar recolhimento indevido. A compensação é possível via mandado de segurança, com atualização do indébito utilizando a taxa SELIC.",
+      "officeAction": "Reconhecimento judicial do direito à compensação do PIS e COFINS com base no adicional de ICMS destinado ao FECP, seguindo o entendimento do STF no Tema 69 e precedentes do TRF2.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Empresas com ICMS sobre produtos supérfluos",
+        "Contribuintes do PIS e COFINS",
+        "Sistema de tributação federal",
+        "Empresas com base de cálculo incluindo FECP",
+        "Contribuintes com débitos anteriores"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
         "financialImpact": 7,
-        "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Exclusão do adicional de ICMS destinado ao FECP da base de cálculo do PIS e COFINS",
+        "period": "2026-08-19 a 2026-08-20",
+        "action": "Revisar bases de cálculo do PIS e COFINS para excluir o adicional de ICMS destinado ao FECP, pleitear compensação via mandado de segurança com base no art. 74 da Lei nº 9.430/97",
+        "confidence": "alto"
+      },
       "id": "0fd3cbea-5ef6-4d7d-9f90-1a7a4004622b",
       "score": 8.2,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuXqnTrTVzleOZoWe2dL/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T07:55:47.985Z",
-      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T08:23:08.787Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXY8kuXqnTrTVzleOZoWe2dL/certidao",
         "sourceCharacters": 6639,
         "sourceId": "trf2",
@@ -1095,43 +1200,56 @@
     },
     {
       "relevant": true,
-      "title": "DESPACHO/DECISÃO · 5038936-29.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: ssitam ser feitas. Em que pese o teor do enunciado da…",
-      "theme": "Direito tributário",
+      "title": "DESPACHO/DECISÃO · 5038936-29.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: correção do imposto de renda na base anual, não na datada",
+      "theme": "Correção monetária do IRPF: base anual para ajuste tributário",
       "agency": "Tribunal Regional Federal da 2ª Região",
-      "taxes": [],
+      "taxes": [
+        "Imposto de Renda Pessoa Física",
+        "Selic",
+        "Repetição de Indébito Tributár"
+      ],
       "status": "Fato confirmado",
-      "kind": "DESPACHO/DECISÃO judicial publicada no DJEN",
-      "impactType": "Informativo",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Oportunidade",
       "publishedAt": "2026-08-21",
-      "summary": "A Tribunal Regional Federal da 2ª Região publicou despacho/decisão judicial publicada no djen em 2026-08-21. Cumprimento de Sentença contra Fazenda Pública (JEF) Nº 5038936-29.2026.4.02.5101/RJ REQUERENTE : CRISTENSEN DIAS SILVA ADVOGADO(A) : LUIZ FERNANDO GARCIA LANDEIRO (OAB RJ235550) DESPACHO/DECISÃO 1 - Tendo em vista os esclarecimentos prestados no Evento 31.1 , defiro dilação de prazo de 10 (dez) dias para que o exeuente apresente a planilha de cálculos de liquidação do julgado.",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "O despoço da 11ª Vara Federal de Execução Fiscal do Rio de Janeiro determina que a correção do imposto de renda (IRPF) deve ser feita na base anual, não considerando a data de cada retenção, mas a data do primeiro dia do exercício seguinte. O julgado reconhece que a isenção de imposto de renda sobre proventos de aposentadoria do INSS a partir de 21/05/2021 deve ser calculada com base no ano-calendário completo de 2021, exigindo a recomposição da base de cálculo anual do IRPF para a restituição do valor de R$ 5.323,48 corrigido pela Selic.",
+      "whatChanged": "A decisão estabelece que a correção monetária do IRPF deve ser calculada com base na data do primeiro dia do exercício fiscal (ano-calendário), não na data de cada retenção na fonte. Isso implica que a isenção de imposto de renda sobre proventos de aposentadoria do INSS deve ser reconhecida para todo o ano-calendário de 2021, exigindo a recomposição da base de cálculo anual do IRPF para a restituição do valor de R$ 5.323,48 corrigido pela Selic.",
+      "practicalImpact": "Contribuintes que possuem isenções de IRPF sobre proventos de aposentadoria do INSS devem atualizar suas declarações de ajuste anual para refletir a correção monetária na base anual do exercício fiscal. A restituição do valor devido deve ser calculada com base na data do primeiro dia do exercício fiscal (ano-calendário), não na data de cada retenção na fonte.",
+      "officeAction": "O exeuente deve apresentar planilha de cálculos de liquidação do julgado até 10 dias após a data da decisão, com base na data do primeiro dia do exercício fiscal (ano-calendário) para a correção monetária do IRPF, incluindo o valor de R$ 5.323,48 corrigido pela Selic.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes com isenções de IRPF sobre proventos de aposentadoria do INSS",
+        "Empresas com tributação anual do IRPF",
+        "Pessoas físicas com declarações de ajuste anual do IRPF",
+        "Receita Federal",
+        "Advogados de tributação"
       ],
       "criteria": {
         "authority": 9,
         "novelty": 8,
         "legalImpact": 8,
-        "financialImpact": 6,
+        "financialImpact": 7,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Revisão da base de cálculo do IRPF para correção monetária anual",
+        "period": "2025-2026",
+        "action": "Atualização da base de cálculo do IRPF para considerar a correção monetária na base anual do exercício fiscal, com base na data do primeiro dia do exercício (ano-calendário) para isenções de proventos de aposentadoria do INSS",
+        "confidence": "alto"
+      },
       "id": "0e64062e-aa45-4dc8-9005-3c2b82ef176e",
-      "score": 8.2,
+      "score": 8,
       "relevance": "Alta relevância",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm76EXuyX7CaTpday9R3revpE/certidao",
       "isDemo": false,
       "createdAt": "2026-08-21T07:55:47.985Z",
-      "updatedAt": "2026-08-21T07:55:47.985Z",
+      "updatedAt": "2026-08-21T08:30:51.841Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/on1OxBm76EXuyX7CaTpday9R3revpE/certidao",
         "sourceCharacters": 14000,
         "sourceId": "trf2",
@@ -50557,8 +50675,8 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-08-21T07:54:15.330Z",
         "id": "18149fdd82565d42dd56164b",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 64,
@@ -50570,7 +50688,15 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T08:11:50.968Z",
+        "analyzedPublishedAt": "2026-08-21",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "alertId": "813e72b7-3481-4d86-86b8-3181fc74e5d8",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Solução de Consulta 98258 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3924.90.00 Mercadoria: Esponja para banho, constituída de rede de Nylon e polietileno, em formato esférico, com mini sabonetes em barra inseridos em seu interior, própria para higiene pessoal, comercializada",
@@ -53531,8 +53657,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "0685c881ce3846c14ff0fed6",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53548,7 +53674,14 @@
         },
         "alertId": "1efd5c7c-aa13-4510-8b99-4d29151dbd17",
         "fastPublishedAt": "2026-08-21T07:55:47.986Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T08:06:53.749Z",
+        "analyzedPublishedAt": "2024-05-28T00:00:00Z",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5035225-84.2024.4.02.5101 · Assessoria de Recursos — Direito tributário: rido por Turma Especializada deste Tribunal ( evento 27, ACOR1 ), assim ementado: DIREITO TRIBUTÁRIO. APELAÇÃO. IRPJ E CSLL. NÃO INCIDÊNCIA SOBRE CRÉDITOS PRESUMIDOS DE ICMS. LEI Nº 14.789/2023. EXCLUSÃO DAS BASES DE CÁLCULO. COMPENSAÇÃO E RESTITUIÇÃO. APELAÇÃO PROVIDA. I. CASO",
@@ -53568,8 +53701,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "8bdc28bbcd273d822b93e973",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53585,7 +53718,14 @@
         },
         "alertId": "2e3f0d58-468c-492a-9791-b1db2f569a21",
         "fastPublishedAt": "2026-08-21T07:55:47.986Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T08:17:06.924Z",
+        "analyzedPublishedAt": "2024-05-27T00:00:00Z",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5104596-04.2025.4.02.5101 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: S S.A. (IMPETRANTE) ADVOGADO(A) : LEONARDO VINICIUS CORREIA DE MELO (OAB RJ137721) EMENTA TRIBUTÁRIO. MANDADO DE SEGURANÇA. EXCLUSÃO DO ADICIONAL DE ICMS DESTINADO AO FUNDO DE COMBATE À POBREZA – FECP DA BASE DE CÁLCULO DO PIS E DA COFINS. TEMA 69/STF. COMPENSAÇÃO NA VIA ADMINIS",
@@ -53605,8 +53745,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "848206ea7fc16a4960c3c517",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53622,7 +53762,14 @@
         },
         "alertId": "0fd3cbea-5ef6-4d7d-9f90-1a7a4004622b",
         "fastPublishedAt": "2026-08-21T07:55:47.986Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T08:23:08.835Z",
+        "analyzedPublishedAt": "2026-08-19",
+        "relevant": true,
+        "score": 8.2,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "DESPACHO/DECISÃO · 5038936-29.2026.4.02.5101 · 11ª Vara Federal de Execução Fiscal do Rio de Janeiro — Direito tributário: ssitam ser feitas. Em que pese o teor do enunciado da Súmula 162 do STJ 1 , a correção do imposto de renda, dada suas feições peculiares, é feita na base anual, de sorte que a correção deve considerar não a data de cada retenção, mas a data do primeiro dia do exercício seguint",
@@ -53642,8 +53789,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:25:47.331Z",
         "id": "b7b4ab7843a45d4d7ae4e13b",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -53659,7 +53806,14 @@
         },
         "alertId": "0e64062e-aa45-4dc8-9005-3c2b82ef176e",
         "fastPublishedAt": "2026-08-21T07:55:47.986Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T08:30:51.893Z",
+        "analyzedPublishedAt": "2025-06-24T00:00:00Z",
+        "relevant": true,
+        "score": 8,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Acórdão · 5070572-47.2025.4.02.5101 · SECRETARIA DA 4ª TURMA ESPECIALIZADA — Direito tributário: PIO DE OLIVEIRA AGOSTINHO (AUTOR) ADVOGADO(A) : JONATAS LIMA DANTAS (OAB RJ249505) EMENTA TRIBUTÁRIO. PROCESSUAL CIVIL. APELAÇÃO. AÇÃO ANULATÓRIA DE DÉBITO FISCAL. EXECUÇÃO FISCAL. PRESCRIÇÃO INTERCORRENTE. PROCESSO ADMINISTRATIVO FISCAL. REGULARIDADE DAS INTIMAÇÕES. EXCLUSÃO DO",
@@ -90305,6 +90459,19 @@
     ],
     "runs": [
       {
+        "id": "d31cb4bf-f81b-4a1c-8b9b-3409ef5d7db5",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T07:59:15.780Z",
+        "finishedAt": "2026-08-21T08:30:52.064Z",
+        "discovered": 0,
+        "analyzed": 5,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
         "id": "af8921a3-7ead-4e35-bc5a-0e68bdd95c37",
         "trigger": "github-actions-history",
         "targetDate": "2026-08-20",
@@ -115464,275 +115631,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "01039607-878a-411d-9ebf-e5b145302b28",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T06:01:23.191Z",
-        "finishedAt": "2026-08-20T06:07:38.954Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 7,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T07:57:14.162Z",
-    "nextRunAt": "2026-08-21T13:57:14.162Z"
+    "lastRunAt": "2026-08-21T08:30:52.064Z",
+    "nextRunAt": "2026-08-21T14:30:52.064Z"
   }
 }
