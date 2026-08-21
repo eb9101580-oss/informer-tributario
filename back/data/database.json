@@ -1,9 +1,1318 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T11:59:31.868Z",
+    "lastUpdatedAt": "2026-08-21T12:03:54.857Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Sentença · 5003025-06.2026.4.03.6110 · 3ª Vara Federal de Sorocaba — Direito tributário: CEITA FEDERAL DO BRASIL EM SOROCABA-SP, objetivando seja declarado o direito de excluir o…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO 3ª Vara Federal de Sorocaba Avenida Antônio Carlos Comitre, 295, Parque Campolim, Sorocaba - SP - CEP: 18047-620 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5003025-06.2026.4.03.6110 IMPETRANTE: JAMAS ENGENHARIA E CONSTRUCOES LTDA ADVOGADO do(a) IMPETRANTE: BRUNO ROMERO PEDROSA MONTEIRO - PE11338-A IMPETRADO: DELEGADO DA RECEITA FEDERAL EM SOROCABA//SP FISCAL DA LEI:…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c5b63f8b-410f-40be-a8b4-45fe0641281c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7l6x5Fv2rhyTKBA8WZEJaAPk/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.845Z",
+      "updatedAt": "2026-08-21T12:03:54.845Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7l6x5Fv2rhyTKBA8WZEJaAPk/certidao",
+        "sourceCharacters": 11381,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo B",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Sentença · 5002372-75.2025.4.03.6130 · 2ª Vara Federal de Osasco — Direito tributário: do de segurança objetivando provimento jurisdicional destinado a determinar a exclusão de…",
+      "theme": "Direito tributário · ICMS, IPI, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "IPI",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Sentença judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou sentença judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO 2ª Vara Federal de Osasco Rua Avelino Lopes, 281/291, Centro, Osasco - SP - CEP: 06090-035 https://www.trf3.jus.br/balcao-virtual MANDADO DE SEGURANÇA CÍVEL (120) Nº 5002372-75.2025.4.03.6130 IMPETRANTE: FUNDICAO COMERCIAL ALVORADA LTDA ADVOGADO do(a) IMPETRANTE: MARCOS TANAKA DE AMORIM - SP252946 IMPETRADO: DELEGADO DA RECEITA FEDERAL EM OSASCO//SP, UNIAO FEDERAL - FAZENDA NACIONAL FISCAL DA LEI:…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "fef82d08-6f74-41b3-bf9d-9c5dfd4b18d3",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8RezFrJpf3TBXAVd6ABQLjK/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.846Z",
+      "updatedAt": "2026-08-21T12:03:54.846Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/mone3zr8RezFrJpf3TBXAVd6ABQLjK/certidao",
+        "sourceCharacters": 11274,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5007482-19.2023.4.03.6100 · Gab. 19 - JUÍZA CONVOCADA RAECLER BALDRESCA — Direito tributário: .374/2023 antes de…",
+      "theme": "Direito tributário · AFRMM",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "AFRMM"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão monocrática terminativa com resolução de mérito judicial publicada no djen em 2026-08-21. contra sentença proferida nos autos do mandado de segurança impetrado objetivando o reconhecimento do direito líquido e certo ao recolhimento do Adicional ao Frete para Renovação da Marinha Mercante – AFRMM, durante o exercício financeiro de 2023, com o desconto de 50% nas alíquotas previsto no Decreto nº 11.321/2022.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "25f5c295-f0f7-42e2-84ce-3015c91d2c9a",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmZNmFgKecoTy97WV6kWV9dl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.847Z",
+      "updatedAt": "2026-08-21T12:03:54.847Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmZNmFgKecoTy97WV6kWV9dl/certidao",
+        "sourceCharacters": 12424,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão Monocrática Terminativa com Resolução de Mérito",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000469-26.2026.4.03.6144 · Gab. 12 - DES. FED. WILSON ZAUHY — Direito tributário: e segurança impetrado por M-CAMILO…",
+      "theme": "Direito tributário · ISS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ISS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão monocrática terminativa com resolução de mérito judicial publicada no djen em 2026-08-21. sentença que concedeu a segurança em mandado de segurança impetrado por M-CAMILO CONSULTING LTDA., para declarar indevida a inclusão do ISS na base de cálculo do PIS e da COFINS, bem como reconhecer o direito à compensação dos valores indevidamente recolhidos, observados os limites legais (ID 382797642).",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "e919d68b-5e28-4d1c-b711-9b403b5f1719",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmYNmFzNVToTy97WVZkWV9dl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.848Z",
+      "updatedAt": "2026-08-21T12:03:54.848Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/XxDnJOQmYNmFzNVToTy97WVZkWV9dl/certidao",
+        "sourceCharacters": 10222,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão Monocrática Terminativa com Resolução de Mérito judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão Monocrática Terminativa com Resolução de Mérito",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão · 5013780-46.2022.4.03.6105 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ISÃO Trata-se de mandado de segurança destinado a reconhecer o direito ao…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL (198) Nº 5013780-46.2022.4.03.6105 RELATOR: GISELLE DE AMARO E FRANCA APELANTE: ATOMPLAST INDUSTRIA E COMERCIO DE PLASTICOS EIRELI ADVOGADO do(a) APELANTE: FERNANDO FERREIRA CASTELLANI - SP209877-A ADVOGADO do(a) APELANTE: JOSE…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "2ec65eae-ae72-4fd3-bb49-c8ccfacb0298",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqZvNF3WKU4Tny43KZrvMJbg/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.848Z",
+      "updatedAt": "2026-08-21T12:03:54.848Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PpDAj7XqZvNF3WKU4Tny43KZrvMJbg/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão · 5034154-60.2025.4.03.0000 · Gab. Vice Presidência — Direito tributário: decisão foi mantida nesta Corte. O acórdão recorrido se deu nos seguintes termos: DIREITO…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-21. 105, III, “a” e “c”, da Constituição da República, interposto por Joalheria, Relojoaria e Ótica Versalhes Ltda contra acórdão proferido por órgão fracionário desta Corte Regional.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "015c13fd-ccde-41bc-bf9e-6725da9e7b25",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnRkkFmKJFDTelJ2NRAve9mD/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.849Z",
+      "updatedAt": "2026-08-21T12:03:54.849Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJnRkkFmKJFDTelJ2NRAve9mD/certidao",
+        "sourceCharacters": 13042,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Decisão · 5025268-71.2026.4.03.6100 · 1ª Vara Cível Federal de São Paulo — Direito tributário: FAZENDA NACIONAL DECISÃO Vistos. SEIJI YAMAMOTO ajuizou “ação declaratória de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Decisão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou decisão judicial publicada no djen em 2026-08-21. SEIJI YAMAMOTO ajuizou “ação declaratória de isenção de imposto de renda cumulada com repetição de indébito e pedido de tutela de urgência” em face da UNIÃO FEDERAL (FAZENDA NACIONAL) (ID 599829461).",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "f67c5c1d-a688-4154-b689-751f2bafeb6c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8Ak6rjFQ3Pf5TwpEbX64dOjxN/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.850Z",
+      "updatedAt": "2026-08-21T12:03:54.850Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8Ak6rjFQ3Pf5TwpEbX64dOjxN/certidao",
+        "sourceCharacters": 9267,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5026891-44.2024.4.03.6100 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: lado por LOUIS DREYFUS COMPANY BRASIL S.A. para determinar o ressarcimento de…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. sentença (ID 377009536) que julgou procedente o pedido formulado por LOUIS DREYFUS COMPANY BRASIL S.A.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "616506c1-29f4-422a-9f78-8fb0264d251c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mjFB7vF1T7mMyBZy5DBkl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.850Z",
+      "updatedAt": "2026-08-21T12:03:54.850Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mjFB7vF1T7mMyBZy5DBkl/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5001532-71.2025.4.03.6128 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ral Giselle França: Trata-se de mandado de segurança destinado a viabilizar a…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO / REMESSA NECESSÁRIA 1728 Nº 5001532-71.2025.4.03.6128 RELATOR: GISELLE DE AMARO E FRANCA APELANTE: DELEGADO DA RECEITA FEDERAL DO BRASIL EM JUNDIAI, UNIAO FEDERAL - FAZENDA NACIONAL, DELEGADO DA RECEITA FEDERAL EM JUNDIAÍ//SP ADVOGADO…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "51ab1477-9740-4631-b5e4-d38f24127b2c",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPmFOx8t3Tgy2oB6mDByKE/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.851Z",
+      "updatedAt": "2026-08-21T12:03:54.851Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPmFOx8t3Tgy2oB6mDByKE/certidao",
+        "sourceCharacters": 13999,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 0004186-36.2007.4.03.6100 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: Giselle França: Trata-se de ação ordinária em que se pretende o afastamento da…",
+      "theme": "Direito tributário · IRRF",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "IRRF"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. ADVOGADO do(a) APELANTE: DANIEL MONTEIRO PEIXOTO - SP238434-A ADVOGADO do(a) APELANTE: MARCELO PAULO FORTES DE CERQUEIRA - SP144994-A ADVOGADO do(a) APELANTE: FERNANDO MUNHOZ RIBEIRO - SP292215-A APELADO: UNIAO FEDERAL - FAZENDA NACIONAL RELATÓRIO A Desembargadora Federal Giselle França: Trata-se de ação ordinária em que se pretende o afastamento da obrigação tributária de reter e recolher IRRF.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "45400a63-57c4-42ce-a7ea-081981815ab1",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNZyJFn3NfnTkg4OAY5eBjo9/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.851Z",
+      "updatedAt": "2026-08-21T12:03:54.851Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Ly1D82wNZyJFn3NfnTkg4OAY5eBjo9/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5033989-13.2025.4.03.0000 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: do acórdão supra (ID 358047836), ora embargado, “in verbis”: “DIREITO…",
+      "theme": "Direito tributário · PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. ADVOGADO do(a) AGRAVANTE: JOSE LUIS FINOCCHIO JUNIOR - SP208779-A ADVOGADO do(a) AGRAVANTE: JULIANA CAMARGO AMARO - SP258184-A AGRAVADO: UNIAO FEDERAL - FAZENDA NACIONAL RELATÓRIO O EXCELENTÍSSIMO SENHOR DESEMBARGADOR FEDERAL ALESSANDRO DIAFERIA (Relator): Trata-se de embargos de declaração opostos por M2B AUTOMOTIVE LTDA contra acórdão proferido pela C.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b630cc5f-01c6-446a-b566-acd2ac45ab22",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJn6kkFmBotDTelJ2N6Ave9mD/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.852Z",
+      "updatedAt": "2026-08-21T12:03:54.852Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/W5ljVaJn6kkFmBotDTelJ2N6Ave9mD/certidao",
+        "sourceCharacters": 13999,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5013884-78.2026.4.03.0000 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ecutivo. Aponta o excesso de execução, uma vez que não foram deduzidos da base de…",
+      "theme": "Direito tributário · ICMS, PIS, Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "ICMS",
+        "PIS",
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. Aponta o excesso de execução, uma vez que não foram deduzidos da base de cálculo tributária (PIS/COFINS) as parcelas pertinentes ao ICMS, conforme tese firmada na decisão do RE nº.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "ff964a1f-f99b-459b-9910-334b2e807f75",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MJFvBEfmT8oVErZ4eny8l/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.852Z",
+      "updatedAt": "2026-08-21T12:03:54.852Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MJFvBEfmT8oVErZ4eny8l/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5026149-19.2024.4.03.6100 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: e, por unanimidade, negou provimento à apelação da União. Segue a ementa (ID…",
+      "theme": "Direito tributário · IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. Acórdão que, por unanimidade, negou provimento à apelação da União.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "c2393675-783a-4db0-8daf-3256b82a61fb",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDRj1FyGJfgTWJ1ovYwL5MW2/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.853Z",
+      "updatedAt": "2026-08-21T12:03:54.853Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/A7mjrylDRj1FyGJfgTWJ1ovYwL5MW2/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 0006984-71.2016.4.03.6126 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: e de mandado de segurança destinado a declarar indevida a exigibilidade da…",
+      "theme": "Direito tributário · Cofins",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "Cofins"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL 198 Nº 0006984-71.2016.4.03.6126 RELATOR: GISELLE DE AMARO E FRANCA APELANTE: GENERAL MOTORS DO BRASIL LTDA ADVOGADO do(a) APELANTE: FERNANDA RAMOS PAZELLO - SP195745-A ADVOGADO do(a) APELANTE: LIVIA MARIA DIAS BARBIERI -…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "0ad10a49-3143-46e1-995d-2ee6b7b4b705",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmE6nlFdzpulTlPJ75YqrnD41/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.853Z",
+      "updatedAt": "2026-08-21T12:03:54.853Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmE6nlFdzpulTlPJ75YqrnD41/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5009965-81.2026.4.03.0000 · Gab. 05 - DES. FED. AUDREY GASPARINI — Direito tributário: da 7ª Vara Federal de Execuções Fiscais da Seção Judiciária de São Paulo/SP, nos…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 2ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual AGRAVO DE INSTRUMENTO 202 Nº 5009965-81.2026.4.03.0000 RELATOR: AUDREY GASPARINI AGRAVANTE: M A S RODRIGUES MANUTENCOES EIRELI ADVOGADO do(a) AGRAVANTE: MARISTELA ANTONIA DA SILVA - SP260447-A AGRAVADO: UNIAO FEDERAL - FAZENDA NACIONAL RELATÓRIO…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "b8606318-5944-458c-99f2-9538821b90cf",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8Ak6rjF8oDF5TwpEbX64dOjxN/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.854Z",
+      "updatedAt": "2026-08-21T12:03:54.854Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/w37ay8Ak6rjF8oDF5TwpEbX64dOjxN/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5019632-48.2021.4.03.6182 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: mérito, defende a configuração da denúncia espontânea, nos termos do artigo 138 do…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. contra sentença proferida pelo juízo da 9ª Vara de Execuções Fiscais Federal da Subseção Judiciária de São Paulo que julgou improcedentes os pedidos formulados em sede de ação anulatória, objetivando a desconstituição de débitos fiscais.",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "8e63ba23-a964-42fd-b456-72a4d561ba30",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXZ89F8nxHrTVzleOYoWe2dL/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.854Z",
+      "updatedAt": "2026-08-21T12:03:54.854Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/QJDEM7aXZ89F8nxHrTVzleOYoWe2dL/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5007501-58.2024.4.03.6110 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: etomada do Setor de Eventos (PERSE) e a fruição do benefício fiscal de alíquota zero…",
+      "theme": "Direito tributário · PIS, Cofins, IRPJ, CSLL",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "PIS",
+        "Cofins",
+        "IRPJ",
+        "CSLL"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL 198 Nº 5007501-58.2024.4.03.6110 RELATOR: LUIZ ALBERTO DE SOUZA RIBEIRO APELANTE: INVEST VIAGENS & CAMBIO LTDA ADVOGADO do(a) APELANTE: JONAS ROBERTO WENTZ - RS49387-A APELADO: DELEGADO RECEITA FEDERAL, DELEGADO DA RECEITA FEDERAL…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "820af69b-d12b-4c71-8b9d-57fa0e0c7e2a",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7l6x5FpaPuyTKBA8WZEJaAPk/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.855Z",
+      "updatedAt": "2026-08-21T12:03:54.855Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/2wyKMz7l6x5FpaPuyTKBA8WZEJaAPk/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5003350-54.2021.4.03.6110 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: ERAL - FAZENDA NACIONAL, PPE FIOS ESMALTADOS S.A R E L A T Ó R I O Trata-se de…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 6ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual APELAÇÃO CÍVEL 198 Nº 5003350-54.2021.4.03.6110 RELATOR: LUIZ ALBERTO DE SOUZA RIBEIRO APELANTE: PPE FIOS ESMALTADOS S.A, UNIAO FEDERAL - FAZENDA NACIONAL ADVOGADO do(a) APELANTE: JULIANA CRISTINA MARTINELLI RAIMUNDI - SC15909-A ADVOGADO do(a)…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "323a6e13-aeb0-4863-89a6-bf74f8bc3c07",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJd6lzFnanS1T7E5K1YeXxa8G/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.855Z",
+      "updatedAt": "2026-08-21T12:03:54.855Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJd6lzFnanS1T7E5K1YeXxa8G/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5008217-14.2026.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: ão/alimentação, plano de assistência à saúde (auxílio-saúde, odontológico e farmácia),…",
+      "theme": "Direito tributário · IRRF",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [
+        "IRRF"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. ADVOGADO do(a) AGRAVANTE: JULIANA CRISTINA MARTINELLI RAIMUNDI - SC15909-A AGRAVADO: UNIAO FEDERAL - FAZENDA NACIONAL RELATÓRIO Trata-se de agravo de instrumento interposto em mandado de segurança objetivando a exclusão da base de cálculo das contribuições previdenciárias patronais, incluindo RAT/SAT e contribuições destinadas a terceiros, dos valores retidos dos empregados em regime de coparticipação relativos a…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 7,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "d4c736d4-ff1d-4e8a-92fe-8c32076b2142",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1d6OmF3rbunTX372gYDGMoWQ/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.856Z",
+      "updatedAt": "2026-08-21T12:03:54.856Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/jqlwEO1d6OmF3rbunTX372gYDGMoWQ/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Acórdão · 5008163-48.2026.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: DA NACIONAL RELATÓRIO Trata-se de agravo de instrumento interposto contra decisão que,…",
+      "theme": "Direito tributário",
+      "agency": "Tribunal Regional Federal da 3ª Região",
+      "taxes": [],
+      "status": "Fato confirmado",
+      "kind": "Acórdão judicial publicada no DJEN",
+      "impactType": "Informativo",
+      "publishedAt": "2026-08-21",
+      "summary": "A Tribunal Regional Federal da 3ª Região publicou acórdão judicial publicada no djen em 2026-08-21. PODER JUDICIÁRIO Tribunal Regional Federal da 3ª Região 2ª Turma Avenida Paulista, 1842, Bela Vista, São Paulo - SP - CEP: 01310-936 https://www.trf3.jus.br/balcao-virtual AGRAVO DE INSTRUMENTO 202 Nº 5008163-48.2026.4.03.0000 RELATOR: LUIS CARLOS HIROKI MUTA AGRAVANTE: SOCIEDADE BENEFICENTE MUCULMANA ADVOGADO do(a) AGRAVANTE: LIBIA AHMAD MOURAD - SP199423 ADVOGADO do(a) AGRAVANTE: KAUE MOURAD FREITAS - SP409183…",
+      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
+      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
+      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "affectedProfiles": [
+        "Contribuintes e empresas do tema indicado"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": null,
+      "id": "7f5de526-c602-49f8-869b-a896a1dcb933",
+      "score": 8.2,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVqRw4FGxyuKTyP7vN6AKmGWl/certidao",
+      "isDemo": false,
+      "createdAt": "2026-08-21T12:03:54.856Z",
+      "updatedAt": "2026-08-21T12:03:54.856Z",
+      "provenance": {
+        "collector": "API oficial do DJEN/CNJ",
+        "analyzer": "Triagem rápida determinística (Ollama pendente)",
+        "analysisMode": "fast-triage",
+        "detailedAnalysisPending": true,
+        "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rX21azVqRw4FGxyuKTyP7vN6AKmGWl/certidao",
+        "sourceCharacters": 14000,
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "discoveredBy": "trf-djen",
+        "sourceType": "official",
+        "documentKind": "Acórdão judicial publicada no DJEN",
+        "sourceDocumentType": "Acórdão",
+        "discoveredAt": "2026-08-21T06:26:34.119Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Solução de Consulta Cosit nº 98254, de 10/08/2026: Classificação de Mercadorias NCM 8608.00.90 - Dormente sintético ferroviário",
@@ -57670,7 +58979,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-21T11:36:03.046Z",
+        "discoveredAt": "2026-08-21T12:04:15.660Z",
         "id": "e295ee548d1376aec84c2880",
         "status": "pending",
         "attempts": 0,
@@ -57684,6 +58993,130 @@
             "coleta-estruturada",
             "assunto-tributario",
             "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98259 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8524.99.00 Mercadoria: Módulo de visualização de tela plana de diodos emissores de luz (LED), destinado a compor, com outros módulos idênticos, um painel de LED com fins comerciais, publicitários ou informat",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153032",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153032/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153032",
+        "fingerprintKey": "receita-normas:153032",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "id": "0d7f224a8b0632c8bd8d0dcd",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98252 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 3926.90.90 Ex Tipi: Sem enquadramento Mercadoria: Rodízio giratório de roda dupla de 100 mm de diâmetro e 73 mm de largura, com rolamento de esferas na cabeça giratória, composto de resinas plásticas e peças",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153033",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153033/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153033",
+        "fingerprintKey": "receita-normas:153033",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "id": "efcc2d6ae303e483e3eeaa96",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98245 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM: 8523.52.90 Mercadoria: Cartões para transações eletrônicas bancárias de dupla interface, com capacidade de transmissão de dados criptografados por contato (inserção ou tarja magnética) e sem contato (aproxim",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153034",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153034/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153034",
+        "fingerprintKey": "receita-normas:153034",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "id": "fd32cd0d38767e7c2b00361f",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Solução de Consulta 98238 Cosit 21/08/2026 Assunto: Classificação de Mercadorias Código NCM 8443.31.11 Mercadoria: Equipamento eletromecânico multifuncional com funções de impressão, cópia, digitalização e envio de documentos (fax), utilizando tecnologia de impressão por jato de tinta térmico (inkje",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153035",
+        "publishedAt": "2026-08-21",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153035/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153035",
+        "fingerprintKey": "receita-normas:153035",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-21T12:02:00.507Z",
+        "id": "81fdeb3bee1ae3e39b7a1f30",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 64,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
         }
@@ -64889,7 +66322,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "a311bcef897d92de47e2e339",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -64903,7 +66336,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "c5b63f8b-410f-40be-a8b4-45fe0641281c",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Sentença · 5002372-75.2025.4.03.6130 · 2ª Vara Federal de Osasco — Direito tributário: do de segurança objetivando provimento jurisdicional destinado a determinar a exclusão de ICMS, PIS e COFINS da base de cálculo do IPI. Foram juntados documentos. Postergada a análise do pedido liminar. Regularmente notificada, a autoridade impetrada prestou informações. A",
@@ -64923,7 +66359,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "19bcc968426590762ac31530",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -64937,7 +66373,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "fef82d08-6f74-41b3-bf9d-9c5dfd4b18d3",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5007482-19.2023.4.03.6100 · Gab. 19 - JUÍZA CONVOCADA RAECLER BALDRESCA — Direito tributário: .374/2023 antes de produzir efeitos concretos, razão pela qual não teria havido majoração tributária, mas apenas manutenção da alíquota do AFRMM que vinha sendo praticada desde 2022. Em suas razões recursais, a apelante sustenta, em síntese, que o Decreto nº 11.321/2022 entrou e",
@@ -64957,7 +66396,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "f8eb2c9d2b5a131c7e62fb6c",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -64971,7 +66410,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "25f5c295-f0f7-42e2-84ce-3015c91d2c9a",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Decisão Monocrática Terminativa com Resolução de Mérito · 5000469-26.2026.4.03.6144 · Gab. 12 - DES. FED. WILSON ZAUHY — Direito tributário: e segurança impetrado por M-CAMILO CONSULTING LTDA., para declarar indevida a inclusão do ISS na base de cálculo do PIS e da COFINS, bem como reconhecer o direito à compensação dos valores indevidamente recolhidos, observados os limites legais (ID 382797642). Em suas razõe",
@@ -64991,7 +66433,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "5ffb2fc782e5d6864082e231",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65005,7 +66447,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "e919d68b-5e28-4d1c-b711-9b403b5f1719",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Decisão · 5013780-46.2022.4.03.6105 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ISÃO Trata-se de mandado de segurança destinado a reconhecer o direito ao creditamento de PIS e de COFINS em relação às despesas realizadas com pessoas físicas, tais como salários e prestadores de serviços autônomos, com aquisição de bens s serviços desonerados, com alugue",
@@ -65025,7 +66470,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "240bd96678193069779ba8e8",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65039,7 +66484,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "2ec65eae-ae72-4fd3-bb49-c8ccfacb0298",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Decisão · 5034154-60.2025.4.03.0000 · Gab. Vice Presidência — Direito tributário: decisão foi mantida nesta Corte. O acórdão recorrido se deu nos seguintes termos: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. EXCLUSÃO DO ICMS DA BASE DE CÁLCULO DO PIS E DA COFINS (TEMA 69/STF). NECESSIDADE DE DIL",
@@ -65059,7 +66507,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "26bcd68bd1ec23abacb7fc07",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65073,7 +66521,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "015c13fd-ccde-41bc-bf9e-6725da9e7b25",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Decisão · 5025268-71.2026.4.03.6100 · 1ª Vara Cível Federal de São Paulo — Direito tributário: FAZENDA NACIONAL DECISÃO Vistos. SEIJI YAMAMOTO ajuizou “ação declaratória de isenção de imposto de renda cumulada com repetição de indébito e pedido de tutela de urgência” em face da UNIÃO FEDERAL (FAZENDA NACIONAL) (ID 599829461). A parte autora narra que exerceu o cargo de",
@@ -65093,7 +66544,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "fccc1ff77b8ffc0f6c1f6e83",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65107,7 +66558,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "f67c5c1d-a688-4154-b689-751f2bafeb6c",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5026891-44.2024.4.03.6100 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: lado por LOUIS DREYFUS COMPANY BRASIL S.A. para determinar o ressarcimento de créditos de PIS/COFINS e fixar a incidência de correção monetária, pela Taxa Selic, a contar do 61º (sexagésimo primeiro) dia da transmissão dos Pedidos de Ressarcimento nºs 14951.27367.260724.1.",
@@ -65127,7 +66581,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "e2489e045a138f746ce1678f",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65141,7 +66595,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "616506c1-29f4-422a-9f78-8fb0264d251c",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5001532-71.2025.4.03.6128 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ral Giselle França: Trata-se de mandado de segurança destinado a viabilizar a exclusão do ICMS-DIFAL da base de cálculo do PIS e da COFINS e declarar o direito de repetir ou compensar os valores indevidamente recolhidos nos cinco anos anteriores à impetração e no curso da d",
@@ -65161,7 +66618,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "d155a6ecbbe9a943254db7fd",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65175,7 +66632,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "51ab1477-9740-4631-b5e4-d38f24127b2c",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 0004186-36.2007.4.03.6100 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: Giselle França: Trata-se de ação ordinária em que se pretende o afastamento da obrigação tributária de reter e recolher IRRF. A r. sentença julgou o pedido inicial improcedente (ID 107529496, págs. 143/147). Foi negado provimento ao recurso de apelação, nos termos do artigo 557",
@@ -65195,7 +66655,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "7434e5d2af42f17bfa76934d",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65209,7 +66669,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "45400a63-57c4-42ce-a7ea-081981815ab1",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5033989-13.2025.4.03.0000 · Gab. 04 - DES. FED. ALESSANDRO DIAFERIA — Direito tributário: do acórdão supra (ID 358047836), ora embargado, “in verbis”: “DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO. AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. CONTRIBUIÇÕES PREVIDENCIÁRIAS SOBRE VERBAS INDENIZATÓRIAS. INCLUSÃO DE PIS E COFINS NA BASE DE CÁLCULO DO I",
@@ -65229,7 +66692,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "28b2ad485e5e637d61f14474",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65243,7 +66706,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b630cc5f-01c6-446a-b566-acd2ac45ab22",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5013884-78.2026.4.03.0000 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: ecutivo. Aponta o excesso de execução, uma vez que não foram deduzidos da base de cálculo tributária (PIS/COFINS) as parcelas pertinentes ao ICMS, conforme tese firmada na decisão do RE nº. 574.706/PR (Tema nº. 69). Frisa que a matéria é jurídica e de ordem pública, sendo viável",
@@ -65263,7 +66729,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "2e71ab69591a8953d73bef99",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65277,7 +66743,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "ff964a1f-f99b-459b-9910-334b2e807f75",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5026149-19.2024.4.03.6100 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: e, por unanimidade, negou provimento à apelação da União. Segue a ementa (ID 364902524): “TRIBUTÁRIO. PROCESSO CIVIL. PROCEDIMENTO COMUM. APELAÇÃO. CONTRATO DE REPRESENTAÇÃO COMERCIAL. RESCISÃO UMILATERAL E IMOTIVADA. VERBAS INDENIZATÓRIAS. NÃO INCIDÊNCIA DE IRPJ e CSLL. ORIENTA",
@@ -65297,7 +66766,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "43a13482f1a5855971e0bc42",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65311,7 +66780,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "c2393675-783a-4db0-8daf-3256b82a61fb",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 0006984-71.2016.4.03.6126 · Gab. 18 - DES. FED. GISELLE FRANÇA — Direito tributário: e de mandado de segurança destinado a declarar indevida a exigibilidade da contribuição à COFINS, na modalidade de substituição tributária, decorrente do Processo Administrativo nº 10805.001.453/2006-45, referente ao período de agosto de 2001 a outubro de 2002. A impetrante p",
@@ -65331,7 +66803,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "fe292a9afdbec081d9486cfc",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65345,7 +66817,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "0ad10a49-3143-46e1-995d-2ee6b7b4b705",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5009965-81.2026.4.03.0000 · Gab. 05 - DES. FED. AUDREY GASPARINI — Direito tributário: da 7ª Vara Federal de Execuções Fiscais da Seção Judiciária de São Paulo/SP, nos autos da Execução Fiscal nº 5034300-82.2025.4.03.6182, ajuizada pela Fazenda Nacional, que rejeitou a exceção de pré-executividade apresentada pela agravante. Narra a agravante que a execução fiscal foi p",
@@ -65365,7 +66840,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "2eae30b23b4acedf08191982",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65379,7 +66854,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "b8606318-5944-458c-99f2-9538821b90cf",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5019632-48.2021.4.03.6182 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: mérito, defende a configuração da denúncia espontânea, nos termos do artigo 138 do Código Tributário Nacional, asseverando que o adimplemento dos débitos via compensação (PER/DCOMP) ocorreu antes de qualquer procedimento fiscalizatório ou da entrega de Declaração de Débitos e Cr",
@@ -65399,7 +66877,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "a9d9eb3e945d68940e1d0e31",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65413,7 +66891,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "8e63ba23-a964-42fd-b456-72a4d561ba30",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5007501-58.2024.4.03.6110 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: etomada do Setor de Eventos (PERSE) e a fruição do benefício fiscal de alíquota zero para PIS, COFINS, CSLL e IRPJ pelo prazo de 60 meses, conforme previsto na Lei nº 14.148/2021. A sentença, integrada em sede de embargos de declaração ((ID 381307761)), julgou parcialmente",
@@ -65433,7 +66914,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "19e9b25c38e3766ed2a42886",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65447,7 +66928,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "820af69b-d12b-4c71-8b9d-57fa0e0c7e2a",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5003350-54.2021.4.03.6110 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: ERAL - FAZENDA NACIONAL, PPE FIOS ESMALTADOS S.A R E L A T Ó R I O Trata-se de embargos à execução fiscal opostos por PPE FIOS ESMALTADOS S.A, em face da UNIÃO FEDERAL, objetivando desconstituir a glosa realizada pela fiscalização tributária no processo administrativo n. 10855.003599/",
@@ -65467,7 +66951,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "de6419243f50face987f5050",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65481,7 +66965,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "323a6e13-aeb0-4863-89a6-bf74f8bc3c07",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5008217-14.2026.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: ão/alimentação, plano de assistência à saúde (auxílio-saúde, odontológico e farmácia), ao Imposto de Renda retido na fonte (IRRF) dos empregados e à contribuição previdenciária dos empregados, descontadas na folha de pagamento do trabalhador, constituem simples técnica de arre",
@@ -65501,7 +66988,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "ded5f638bbb5e14987ecfc28",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65515,7 +67002,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "d4c736d4-ff1d-4e8a-92fe-8c32076b2142",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5008163-48.2026.4.03.0000 · Gab. 42 - DES. FED. CARLOS MUTA — Direito tributário: DA NACIONAL RELATÓRIO Trata-se de agravo de instrumento interposto contra decisão que, em execução fiscal, rejeitou exceção de pré-executividade. Alega a agravante, em suma: (1) nulidade formal das CDAs por ausência dos requisitos previstos em lei, especialmente a forma de cálculo de",
@@ -65535,7 +67025,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:26:34.119Z",
         "id": "f2d8743cbfb9f7f4460f5cbf",
-        "status": "pending",
+        "status": "fast-published",
         "attempts": 0,
         "backfillDate": null,
         "fastTriage": {
@@ -65549,7 +67039,10 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "alertId": "7f5de526-c602-49f8-869b-a896a1dcb933",
+        "fastPublishedAt": "2026-08-21T12:03:54.857Z",
+        "error": null
       },
       {
         "title": "Acórdão · 5012689-96.2023.4.03.6100 · Gab. 48 - DES. FED. SOUZA RIBEIRO — Direito tributário: segurança, concedeu parcialmente a ordem para \"afastar a inclusão do crédito presumido de ICMS, concedido por Estados-Membros, na base de cálculo do IRPJ e da CSLL, sem a exigência de que os incentivos foram estabelecidos como estímulo à implantação ou expansão de empreendi",
@@ -98721,6 +100214,682 @@
     ],
     "runs": [
       {
+        "id": "6ba11642-07f5-4ad4-a661-87611ade9f53",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-20",
+        "startedAt": "2026-08-21T12:03:54.991Z",
+        "finishedAt": "2026-08-21T12:05:49.690Z",
+        "discovered": 1,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "3667dcab-2276-4181-aa75-34458ae156d7",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-21T12:01:56.949Z",
+        "finishedAt": "2026-08-21T12:03:54.900Z",
+        "discovered": 5,
+        "analyzed": 0,
+        "published": 20,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 29,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 13,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 19,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "The operation was aborted due to timeout"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "error",
+            "found": 0,
+            "message": "Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32670,
+              "entries": 33,
+              "processed": 32670,
+              "dateMatched": 32670,
+              "decisionMatched": 5532,
+              "taxMatched": 1993,
+              "deduplicated": 1842,
+              "duplicates": 151,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 15235,
+              "entries": 16,
+              "processed": 15235,
+              "dateMatched": 15235,
+              "decisionMatched": 8047,
+              "taxMatched": 2017,
+              "deduplicated": 2017,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25493,
+              "entries": 26,
+              "processed": 25493,
+              "dateMatched": 25493,
+              "decisionMatched": 10579,
+              "taxMatched": 6205,
+              "deduplicated": 6034,
+              "duplicates": 171,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 33570,
+              "entries": 34,
+              "processed": 33570,
+              "dateMatched": 33570,
+              "decisionMatched": 11962,
+              "taxMatched": 2299,
+              "deduplicated": 2298,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24402,
+              "entries": 25,
+              "processed": 24402,
+              "dateMatched": 24402,
+              "decisionMatched": 4919,
+              "taxMatched": 2256,
+              "deduplicated": 2190,
+              "duplicates": 66,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12008,
+              "entries": 13,
+              "processed": 12008,
+              "dateMatched": 12008,
+              "decisionMatched": 4145,
+              "taxMatched": 677,
+              "deduplicated": 676,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "00b2d30d-f468-46ec-8dd1-59ebc90b856d",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -122744,613 +124913,9 @@
             "dateCoverage": "current-index"
           }
         ]
-      },
-      {
-        "id": "468d7b34-3c96-404c-a621-179e68812cd3",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-20T12:16:37.984Z",
-        "finishedAt": "2026-08-20T12:19:03.960Z",
-        "discovered": 322,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "error",
-            "found": 0,
-            "message": "Failed to perform, curl: (92) HTTP/2 stream 5 reset by server (error 0x1 PROTOCOL_ERROR). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 12,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 57,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 37271,
-              "entries": 38,
-              "processed": 37271,
-              "dateMatched": 37271,
-              "decisionMatched": 5964,
-              "taxMatched": 2162,
-              "deduplicated": 2038,
-              "duplicates": 124,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 54,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 14717,
-              "entries": 15,
-              "processed": 14717,
-              "dateMatched": 14717,
-              "decisionMatched": 6923,
-              "taxMatched": 1960,
-              "deduplicated": 1960,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 22086,
-              "entries": 23,
-              "processed": 22086,
-              "dateMatched": 22086,
-              "decisionMatched": 9131,
-              "taxMatched": 4604,
-              "deduplicated": 4384,
-              "duplicates": 220,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31471,
-              "entries": 32,
-              "processed": 31471,
-              "dateMatched": 31471,
-              "decisionMatched": 10342,
-              "taxMatched": 1725,
-              "deduplicated": 1724,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 24254,
-              "entries": 25,
-              "processed": 24254,
-              "dateMatched": 24254,
-              "decisionMatched": 5676,
-              "taxMatched": 2561,
-              "deduplicated": 2480,
-              "duplicates": 81,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 43,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 10387,
-              "entries": 11,
-              "processed": 10387,
-              "dateMatched": 10387,
-              "decisionMatched": 3896,
-              "taxMatched": 909,
-              "deduplicated": 909,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 4,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "8cd490b9-8305-42e9-8bf7-1260892a5b55",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T11:44:08.448Z",
-        "finishedAt": "2026-08-20T11:50:20.491Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 6,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T11:59:31.914Z",
-    "nextRunAt": "2026-08-21T17:59:31.914Z"
+    "lastRunAt": "2026-08-21T12:05:49.690Z",
+    "nextRunAt": "2026-08-21T18:05:49.690Z"
   }
 }
