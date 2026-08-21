@@ -59104,7 +59104,7 @@
         "sourceType": "official",
         "sections": [],
         "discoveryMethod": "stf-jurisprudence",
-        "discoveredAt": "2026-08-21T12:04:15.660Z",
+        "discoveredAt": "2026-08-21T12:40:56.064Z",
         "id": "e295ee548d1376aec84c2880",
         "status": "pending",
         "attempts": 0,
@@ -59117,6 +59117,767 @@
             "fonte-oficial",
             "coleta-estruturada",
             "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Sentença · 1004897-88.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: alizadas nas Áreas de Livre Comércio de Boa Vista (ALCBV) e de Bonfim (ALCB) o tratamento tributário aplicável às receitas de exportação para o exterior, com afastamento da parcela correspondente à Contribuição Previdenciária Patronal (CPP) incluída na sistemática do Simples Nac",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DXUDkVhATgEwL26nyG1xN/certidao",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Sentença judicial publicada no DJEN",
+        "sourceDocumentType": "Sentença Tipo A",
+        "externalId": "702783821",
+        "fingerprintKey": "djen:702783821",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "sourceAcronym": "TRF1",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-21T12:41:18.703Z",
+        "id": "fbbd77556b49bca829e429e6",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-20",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Decisão · 1009839-66.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: por CAPITAL EMPREENDIMENTOS LTDA objetivando a suspensão da exigibilidade da contribuição PIS/COFINS sobre as receitas decorrentes das operações comerciais realizadas em Área de Livre Comércio. A impetrante, empresa regularmente estabelecida na Área de Livre Comércio de Bo",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MXUk9pSmT8oVEpR4eny8l/certidao",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "externalId": "702246804",
+        "fingerprintKey": "djen:702246804",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "sourceAcronym": "TRF1",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-21T12:41:18.703Z",
+        "id": "870c80bdd000e9c36b11bffa",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-20",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "Decisão · 1009938-36.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: SULTORIA COMERCIO E SERVICO LTDA objetivando a suspensão da exigibilidade da contribuição PIS/COFINS sobre as receitas decorrentes das operações comerciais realizadas em Área de Livre Comércio. A parte autora, empresa regularmente estabelecida na Área de Livre Comércio de",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mKU1qjU1T7mMy5Yy5DBkl/certidao",
+        "publishedAt": "2026-08-20",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "externalId": "702798587",
+        "fingerprintKey": "djen:702798587",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf1",
+        "sourceName": "Tribunal Regional Federal da 1ª Região",
+        "sourceAcronym": "TRF1",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-21T12:41:18.703Z",
+        "id": "09d510bc64728034789ae35e",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": "2026-08-20",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617815 — com agravo. Tributário . Locação de bens móveis. Repetição de indébito. Requisitos do art. 166 do CTN. Matéria infraconstitucional. Ofensa constitucional indireta ou reflexa. 1. A controvérsia relativa à repetição do indébito tributário , no que concerne à com",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811481/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617815&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811481",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811481/false",
+        "inlineText": "com agravo. Tributário . Locação de bens móveis. Repetição de indébito. Requisitos do art. 166 do CTN. Matéria infraconstitucional. Ofensa constitucional indireta ou reflexa. 1. A controvérsia relativa à repetição do indébito tributário , no que concerne à comprovação da transferência do encargo econômico ao locatário do bem, na forma do art. 166 do Código Tributário Nacional, possui natureza infraconstitucional. Ofensa constitucional indireta. 2. Agravo regimental não provido. (ARE nº 898.771-AgR, Segunda Turma, Rel. Min. Dias Toffoli, DJe de 14/12/2015) AGRAVO REGIMENTAL EM AGRAVO DE INSTRUMENTO. COMPENSAÇÃO DE CRÉDITO TRIBUTÁRIO . MATÉRIA INFRACONSTITUCIONAL. OFENSA REFLEXA. AGRAVO IMPROVIDO. I – A apreciação dos temas constitucionais, no caso, depende do prévio exame de normas infraconstitucionais ((Leis 10.637/2002, 10.677/2003 e 10.833/2003 e Código Tributário Nacional). A afronta à Constituição, se houvesse, seria indireta ou reflexa, o que não enseja reexame na via do recurso extraordinário. Precedente. II - Agravo improvido. (AI nº 782.141-AgR, Primeira Turma, Rel. Min. Ricardo Lewandowski, DJe de 16/11/2010) Agravo regimental no recurso extraordinário. Tributário . Compensação",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "c61cadadea6bd533519e2701",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617549 — RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EXECUÇÃO FISCAL. EMBARGOS. CELEBRAÇÃO DE TRANSAÇÃO TRIBUTÁRIA. EXTINÇÃO DA AÇÃO. HONORÁRIOS DE SUCUMBÊNCIA. PRINCÍPIO DA CAUSALIDADE. VEDAÇÃO AO BIS IN IDEM. INOCORRÊNCIA DE PREQUESTIONA",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812083/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617549&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812083",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812083/false",
+        "inlineText": "RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. EXECUÇÃO FISCAL. EMBARGOS. CELEBRAÇÃO DE TRANSAÇÃO TRIBUTÁRIA. EXTINÇÃO DA AÇÃO. HONORÁRIOS DE SUCUMBÊNCIA. PRINCÍPIO DA CAUSALIDADE. VEDAÇÃO AO BIS IN IDEM. INOCORRÊNCIA DE PREQUESTIONAMENTO DAS ALEGADAS OFENSAS À CONSTITUIÇÃO FEDERAL. ÓBICE DAS SÚMULAS 282 E 356 DO STF. RECURSO FUNDADO NAS ALÍNEAS “B” E “C” DO PERMISSIVO CONSTITUCIONAL. AUSÊNCIA DE DECLARAÇÃO FORMAL DE INCONSTITUCIONALIDADE DE TRATADO OU DE LEI FEDERAL. INEXISTÊNCIA DE DECLARAÇÃO DE VALIDADE DE LEI LOCAL EM DETRIMENTO DA CONSTITUIÇÃO FEDERAL. NEGADO SEGUIMENTO AO AGRAVO. DECISÃO: Trata-se de agravo nos autos objetivando a reforma de decisão que inadmitiu recurso extraordinário manejado pelas alíneas “a”, “b” e “c” do permissivo constitucional contra acórdão que dispôs: “DIREITO TRIBUTÁRIO . AGRAVO DE INSTRUMENTO. EMBARGOS À EXECUÇÃO FISCAL. EXTINÇÃO DA AÇÃO COM FUNDAMENTO NO ARTIGO 487, III, ‘C’, DO CÓDIGO DE PROCESSO CIVIL, EM VIRTUDE DE TRANSAÇÃO TRIBUTÁRIA DISPOSTA NO ARTIGO 43, DA LEI Nº 17.843/23 (ACORDO PAULISTA) E NO EDITAL Nº 01/2024. HONORÁRIOS ADVOCATÍCIOS. DESCABIMENTO. MANUTENÇÃO DO ‘DECISUM’. 1.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "5d6cf9243aa076711a6f1e2a",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617340 — Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . CRÉDITO PRESUMIDO D",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811698/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617340&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811698",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811698/false",
+        "inlineText": "Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . CRÉDITO PRESUMIDO DE IPI. SUSPENSÃO. MEDIDA PROVISÓRIA.MP Nº 1807-2. LEI Nº 9.363/96. ATUALIZAÇÃO MONETÁRIA. PRESCRIÇÃO QÜINQÜENAL. OCORRÊNCIA 1. A edição de medida provisória com o escopo de suspender benefício fiscal instituído por lei não possui vício de ilegalidade ou inconstitucionalidade 2. Mantida a redação do art. 12 da Medida Provisória nº 1.807-02, de 17-06-1999 e reedições até 24-08-2001, sob nº 2.158, não é possível aproveitar o incentivo chamado “crédito presumido do IPI”, como ressarcimento dos valores pagos a título de PIS e COFINS, previsto na Lei nº 9.363/96, cuja concessão foi suspensa entre 1º de abril até 31 de dezembro de 1999. 3. Ocorrência da prescrição qüinqüenal da pretensa correção dos créditos tributários . Opostos os embargos de declaração, foram rejeitados. No recurso extraordinário sustenta-se violação do(s) art.(s) 37 da Constituição Federal. Decido. Analisados os autos, verifica-se que, para ultrapassar o entendimento do",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "17adc6da69adb9c7e0be7db8",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1618333 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO E PROCESSUAL",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811831/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618333&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811831",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811831/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO E PROCESSUAL CIVIL. EXCLUSÃO DO ICMS DA BASE DE CÁLCULO DE PIS E COFINS. TEMA 69 DO STF. ORIENTAÇÃO ADMINISTRATIVA. ÔNUS DA PROVA. FATO CONSTITUTIVO DE SEU DIREITO. 1. A Procuradoria Geral da Fazenda Nacional expediu orientação administrativa vinculante de acordo com os termos da decisão do Supremo Tribunal Federal no RE nº 574.706 (Tema 69). 2. Caso em que a autora alega que houve apuração indevida de tributos em desrespeito ao decidido no Tema 69. 3. O ônus da prova incumbe ao autor, quanto ao fato constitutivo de seu direito, nos termos do artigo 373, I, do CPC. Opostos os embargos de declaração, foram rejeitados. No recurso extraordinário sustenta-se violação do(s) art.(s) 154, I; 195, I, alínea \"b\" da Constituição Federal. Decido. Analisados os autos, verifica-se que o(s) art(s). 154, I da Constituição, apontado(s) como violado(s), carece(m) do necessário prequestionamento, sendo certo que os acórdãos proferidos pelo Tribunal de origem",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "383c5ef3037dc7522f7b1a00",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617694 — ementado: Tributário . Constitucional. Ação anulatória de débito fiscal e declaratória de inexistência de relação jurídico tributária. Imunidade tributária. IPTU 2022. Instituição assistencial e educacional sem fins lucrativos. CEBAS – Certificação de Entidade",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811520/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617694&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811520",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811520/false",
+        "inlineText": "ementado: Tributário . Constitucional. Ação anulatória de débito fiscal e declaratória de inexistência de relação jurídico tributária. Imunidade tributária. IPTU 2022. Instituição assistencial e educacional sem fins lucrativos. CEBAS – Certificação de Entidade Beneficente de Assistência Social. Imóvel vago destinado à edificação de um estabelecimento escolar. Prova pericial contábil judicial conclusiva. Requisitos do art. 150, VI, “c” da Constituição Federal c /c art. 14 do CTN preenchidos. Presunção em favor da entidade. Ausência de prova em contrário pelo Município. Precedentes desta Câmara. Sentença mantida. Honorários recursais. Apelação cível não provida. No recurso extraordinário sustenta-se violação do(s) art.(s) 150, VI, \"c\", da Constituição Federal. Decido. Analisados os autos, verifica-se que, para ultrapassar o entendimento do Tribunal de origem, seria necessário analisar a causa à luz da interpretação dada à legislação infraconstitucional pertinente e reexaminar os fatos e as provas dos autos, o que não é cabível em sede de recurso extraordinário, nos termos da Súmula 279/STF. Sobre o tema, a propósito: “AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO. TRIBUTÁRIO . MANDADO DE",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "d2fcaa946c6cdb9470a6cbcd",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617551 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811550/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617551&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811550",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811550/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO E REMESSA NECESSÁRIA. TAXA DE FISCALIZAÇÃO DE ANÚNCIO. NÃO PROVIMENTO. I. Caso em Exame. 1. Apelação e remessa necessária interposta pelo Município de Campinas contra sentença que anulou o crédito tributário referente à Taxa de Fiscalização de Anúncio (TFA) dos exercícios de 2018 a 2024, reconhecendo sua inexigibilidade e condenando o Município ao pagamento das custas e honorários advocatícios. II. Questão em Discussão. 2. A questão em discussão consiste em verificar a legalidade da base de cálculo da TFA, que utiliza a área do anúncio, e se tal critério é adequado para mensurar o custo da atividade de fiscalização. III. Razões de Decidir 3. A gratuidade de justiça concedida à autora foi devidamente fundamentada e não impugnada no momento oportuno, mantendo-se a benesse processual. 4. A base de cálculo da TFA, fundada na área do anúncio, não guarda relação com o custo da atividade estatal de fiscalização, conforme precedentes",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "15cc80674351ba7fb272466c",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "RE 1568811 — RECURSOS EXTRAORDINÁRIOS. DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . AÇÃO RESCISÓRIA. CABIMENTO. DECISÃO TRANSITADA EM JULGADO EM DESACORDO COM A MODULAÇÃO DOS EFEITOS DA TESE DE REPERCUSSÃO GERAL DO TEMA 69 (RE 574.706). MATÉRIA SUBMETIDA AO REGIME DA REPERCUSSÃ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812094/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1568811&classe=RE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812094",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812094/false",
+        "inlineText": "RECURSOS EXTRAORDINÁRIOS. DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . AÇÃO RESCISÓRIA. CABIMENTO. DECISÃO TRANSITADA EM JULGADO EM DESACORDO COM A MODULAÇÃO DOS EFEITOS DA TESE DE REPERCUSSÃO GERAL DO TEMA 69 (RE 574.706). MATÉRIA SUBMETIDA AO REGIME DA REPERCUSSÃO GERAL. TEMA 1.338. DEVOLUÇÃO DO FEITO. ARTIGO 328, PARÁGRAFO ÚNICO, DO REGIMENTO INTERNO DO STF. DESPACHO: A matéria versada nos recursos extraordinários foi submetida ao regime da repercussão geral (Tema 1.338, RE 1.489.562). Ex positis, com fundamento no artigo 328, parágrafo único, do Regimento Interno do STF (conforme a redação conferida pela Emenda Regimental 21/2007), determino a DEVOLUÇÃO do feito à origem. Publique-se. Brasília, 20 de agosto de 2026. Ministro LUIZ FUX Relator Documento assinado digitalmente",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "5efd6d3a21abb85f64fc6e3f",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 71,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1618095 — RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ITBI. IMUNIDADE. TRANSMISSÃO DE BEM IMÓVEL INCORPORADO AO PATRIMÔNIO DE PESSOA JURÍDICA A TÍTULO DE REALIZAÇÃO DE CAPITAL SOCIAL. LIMITAÇÃO AO VALOR DO CAPITAL INTEGRALIZADO. TEMA 796. RE 796.376. DEVOLUÇ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812101/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618095&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812101",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812101/false",
+        "inlineText": "RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ITBI. IMUNIDADE. TRANSMISSÃO DE BEM IMÓVEL INCORPORADO AO PATRIMÔNIO DE PESSOA JURÍDICA A TÍTULO DE REALIZAÇÃO DE CAPITAL SOCIAL. LIMITAÇÃO AO VALOR DO CAPITAL INTEGRALIZADO. TEMA 796. RE 796.376. DEVOLUÇÃO AO TRIBUNAL A QUO (ART. 328, PARÁGRAFO ÚNICO, DO REGIMENTO INTERNO DO STF). DESPACHO: A matéria controvertida nos autos foi submetida ao regime da repercussão geral (Tema 796, RE 796.376). Ex positis, com fundamento no artigo 328, parágrafo único, do Regimento Interno do Supremo Tribunal Federal (na redação da Emenda Regimental 21/2007), determino a DEVOLUÇÃO do feito à origem. Publique-se. Brasília, 20 de agosto de 2026. Ministro LUIZ FUX Relator Documento assinado digitalmente",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "983a687005fc263f3f1a4183",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617364 — MERCADORIAS PARA COBRANÇA DE TRIBUTOS. POSTERIOR RECONHECIMENTO DE IMUNIDADE TRIBUTÁRIA. DESPESAS DE ARMAZENAGEM PORTUÁRIA. RESPONSABILIDADE CIVIL DO ESTADO. INDENIZAÇÃO. REEXAME DE MATÉRIA FÁTICA. VEDAÇÃO. SÚMULA 279 DO STF. ALEGADA OFENSA AOS PRINCÍPIOS DA A",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812079/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617364&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812079",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812079/false",
+        "inlineText": "MERCADORIAS PARA COBRANÇA DE TRIBUTOS. POSTERIOR RECONHECIMENTO DE IMUNIDADE TRIBUTÁRIA. DESPESAS DE ARMAZENAGEM PORTUÁRIA. RESPONSABILIDADE CIVIL DO ESTADO. INDENIZAÇÃO. REEXAME DE MATÉRIA FÁTICA. VEDAÇÃO. SÚMULA 279 DO STF. ALEGADA OFENSA AOS PRINCÍPIOS DA AMPLA DEFESA, DO CONTRADITÓRIO E DO DEVIDO PROCESSO LEGAL. AUSÊNCIA DE REPERCUSSÃO GERAL. TEMA 660. NEGADO SEGUIMENTO AO AGRAVO. DECISÃO: Trata-se de agravo nos próprios autos objetivando a reforma de decisão que inadmitiu recurso extraordinário manejado pela alínea “a” do permissivo constitucional contra acórdão que assentou: “DIREITO TRIBUTÁRIO E ADMINISTRATIVO. AÇÃO DE CONHECIMENTO. IMPORTAÇÃO DE LIVROS INFANTIS. IMUNIDADE TRIBUTÁRIA. CLASSIFICAÇÃO FISCAL. RECLASSIFICAÇÃO PELA AUTORIDADE ADUANEIRA. LIVROS COM ELEMENTOS LÚDICOS. DESPESAS DE ARMAZENAGEM PORTUÁRIA. RESPONSABILIDADE CIVIL DO ESTADO. RECURSOS NÃO PROVIDOS. 1. A decisão monocrática agravada abordou todas as questões apresentadas, à vista dos elementos contidos nos autos, sendo certo que o recurso nada de novo trouxe que pudesse infirmar o quanto decidido. 2. Ação de conhecimento proposta por empresa distribuidora de livros contra a União Federal visando ao cancelamento",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "4c531b742fb2a06d67d9a7a0",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1618125 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO E PR",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811707/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618125&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811707",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811707/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO E PROCESSUAL CIVIL. AGRAVO INTERNO EM AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉEXECUTIVIDADE. INCLUSÃO DO ICMS NA BASE DE CÁLCULO DO PIS E DA COFINS. NECESSIDADE DE DILAÇÃO PROBATÓRIA. INADEQUAÇÃO DA VIA PROCESSUAL. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA AOS FUNDAMENTOS DA DECISÃO MONOCRÁTICA. MANUTENÇÃO DA DECISÃO AGRAVADA. RECURSO DESPROVIDO. I. CASO EM EXAME 1. Agravo interno interposto por BAMBOZZI REFORMA DE MÁQUINAS LTDA contra decisão monocrática que negou provimento ao agravo de instrumento, o qual impugnava decisão do Juízo da 1ª Vara Federal de Ribeirão Preto/SP que rejeitou exceção de préexecutividade em execução fiscal. A agravante sustentou a inexigibilidade do crédito tributário em razão da inclusão do ICMS na base de cálculo do PIS e da COFINS, com fundamento no entendimento firmado pelo Supremo Tribunal Federal no Tema 69 (RE 574.706). O relator manteve a decisão monocrática. II. QUESTÃO EM DISCUSSÃO 2. Há duas questões",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "b1a896d88933461d6199f5d8",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617545 — MANDADO DE SEGURANÇA COLETIVO. IPTU. LEI COMPLEMENTAR MUNICIPAL N. 344/2021. CÓDIGO TRIBUTÁRIO DO MUNICÍPIO DE GOIÂNIA (ARTIGOS 168 E 175 DO CTM). METODOLOGIA DA BASE DE CÁLCULO. LEGALIDADE. CONTROLE INCIDENTAL DE INCONSTITUCIONALIDADE. AUSÊNCIA DE OFENSA DIRE",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811694/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617545&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811694",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811694/false",
+        "inlineText": "MANDADO DE SEGURANÇA COLETIVO. IPTU. LEI COMPLEMENTAR MUNICIPAL N. 344/2021. CÓDIGO TRIBUTÁRIO DO MUNICÍPIO DE GOIÂNIA (ARTIGOS 168 E 175 DO CTM). METODOLOGIA DA BASE DE CÁLCULO. LEGALIDADE. CONTROLE INCIDENTAL DE INCONSTITUCIONALIDADE. AUSÊNCIA DE OFENSA DIRETA. DENEGAÇÃO DA SEGURANÇA. SENTENÇA MANTIDA. A ação mandamental exige prova pré-constituída dos fatos que embasam o direito invocado pela parte impetrante e, por sua própria natureza, não permite dilação probatória. O acervo fático-probatório demonstra que o cálculo do IPTU em questão é complexo e exige a análise de uma série de critérios técnicos escolhidos pelo legislador, não sendo possível concluir, de plano, pela ilegalidade ou inconstitucionalidade da legislação municipal, considerando ainda a precariedade da documentação juntada pela impetrante/apelante. O parâmetro de controle de inconstitucionalidade invocado (artigos 156, inciso I, 146, inciso III, “a”, e 154, inciso I, da CF/88) não demonstra ofensa direta à Constituição da República ou à Carta Estadual. Ademais, a Emenda Constitucional n. 132/2023, que alterou o sistema tributário nacional, conferiu, por meio da inserção do inciso III ao § 1º do artigo 156 da Constituição",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "9d9f4006486e3e7ba526145a",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617708 — A regra que rege o caso está no artigo 161 do Código Tributário Nacional (CTN), in verbis: Art. 161. O crédito não integralmente pago no vencimento é acrescido de juros de mora, seja qual for o motivo determinante da falta, sem prejuízo da imposição das penali",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811839/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617708&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811839",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811839/false",
+        "inlineText": "A regra que rege o caso está no artigo 161 do Código Tributário Nacional (CTN), in verbis: Art. 161. O crédito não integralmente pago no vencimento é acrescido de juros de mora, seja qual for o motivo determinante da falta, sem prejuízo da imposição das penalidades cabíveis e da aplicação de quaisquer medidas de garantia previstas nesta Lei ou em lei tributária. (...) Portanto, pelos termos inflexíveis da regra, os juros de mora correrão inexoravelmente a partir do vencimento do crédito tributário . Para livrar-se do pagamento dos juros de mora, o sujeito passivo dispõe das alternativas do depósito do montante integral do tributo (CTN, art. 151, II) e da consignação judicial (CTN, art. 164), conforme o caso. Convertido o valor depositado ou consignado em renda da Fazenda Pública, o sujeito passivo livra-se da obrigação, nada mais lhe podendo ser exigido, inclusive a título de juros de mora. O relevante, no presente caso, é que existe uma regra \"fechada\" para a solução da controvérsia, a qual por antecipação descarta qualquer justificativa do sujeito passivo para forrar-se das consequências de não haver pago o crédito tributário no vencimento. Daí que a regra \"fechada\" deve ser seguida",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "3738a16a3d44f0a8e2e7eac7",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617557 — exequendo foi obtido a partir de procedimento fiscalizatório realizado pela Fazenda Nacional. 4. Assim sendo, o prazo decadencial de cinco anos para o lançamento do crédito tributário deve ser contado a partir do primeiro dia do exercício seguinte àquele em qu",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811624/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617557&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811624",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811624/false",
+        "inlineText": "exequendo foi obtido a partir de procedimento fiscalizatório realizado pela Fazenda Nacional. 4. Assim sendo, o prazo decadencial de cinco anos para o lançamento do crédito tributário deve ser contado a partir do primeiro dia do exercício seguinte àquele em que poderia ter sido efetuado, nos termos do art. 173, I, do CTN. Súmula nº 555 do STJ. 5. O lançamento somente poderia ter se efetivado a partir do momento em que as competências estivessem vencidas. Neste aspecto, a competência mais remota, dezembro de 2000, apenas poderia ser lançada em janeiro de 2001, primeiro mês após o seu vencimento, e assim, sucessivamente. A partir de então, conclui-se que as competências de dezembro de 2000 a novembro de 2001 possuem vencimentos dentro do ano de 2001 e, aplicando-se o disposto no art. 173, I, o termo inicial decadencial corresponde a 01.01.2002. 6. Considerando-se que o lançamento ocorreu através da NFLD em 27/12/2006, antes do decurso do lapso decadencial de cinco anos, é forçoso reconhecer que os créditos tributários referentes aos meses de dezembro de 2000 a novembro de 2001 não foram atingidos pela decadência, merecendo reforma, no ponto, a sentença. 7. A perícia é conclusiva no sentido",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "1f0b899550294348e79e7b12",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1618401 — devido ao labor desempenhado por conta de banco de horas decorre de serviço extraordinário e possui natureza salarial, é de ser rejeitado o pedido de reconhecimento da inexigibilidade de contribuição previdenciária sobre tal verba. Desse modo, verifica-se que ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811841/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618401&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811841",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811841/false",
+        "inlineText": "devido ao labor desempenhado por conta de banco de horas decorre de serviço extraordinário e possui natureza salarial, é de ser rejeitado o pedido de reconhecimento da inexigibilidade de contribuição previdenciária sobre tal verba. Desse modo, verifica-se que a controvérsia acerca da habitualidade e da natureza jurídica das verbas questionadas, para fins de delimitação da base de cálculo da contribuição previdenciária patronal, tem natureza infraconstitucional, o que não enseja a abertura da via extraordinária. Nesse sentido, confira-se: AGRAVO INTERNO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . MANDADO DE SEGURANÇA. CONTRIBUIÇÃO PREVIDENCIÁRIA PATRONAL. BASE DE CÁLCULO. VALORES PAGOS PELO EMPREGADOR. CONSTITUCIONALIDADE SE PAGO COM HABITUALIDADE E EM RETRIBUIÇÃO DIRETA À ATIVIDADE LABORAL. FÉRIAS GOZADAS. NATUREZA DA VERBA. INTERPRETAÇÃO DE NORMAS INFRACONSTITUCIONAIS. IMPOSSIBILIDADE EM SEDE EXTRAORDINÁRIA. AGRAVO INTERNO DESPROVIDO. (ARE nº 1.095.542/RJ, Primeira Turma, Rel. Min. Luiz Fux , Dje de 1º/04/2020) Agravo regimental em recurso extraordinário com agravo. 2. Direito Administrativo. 3. Incidência de contribuição previdenciária sobre a Gratificação de Atividade de Combate",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "e04b84d836dbf7e524f9c645",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617578 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811627/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617578&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811627",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811627/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO CÍVEL. ICMS. CRÉDITO ACUMULADO. COMPENSAÇÃO COM ICMS-ST. AUSÊNCIA DE AUTORIZAÇÃO LEGAL EXPRESSA. RECURSO DESPROVIDO. I. CASO EM EXAME 1. Apelação cível interposta contra sentença que julgou improcedente o pedido de empresa exportadora para autorizar a compensação de créditos acumulados de ICMS, oriundos de operações próprias e de exportação, com débitos de ICMS devido por substituição tributária sobre aquisição de energia elétrica. II. QUESTÃO EM DISCUSSÃO 2. A questão em discussão consiste em saber se é possível a compensação de créditos de ICMS decorrentes de operações próprias com débitos de ICMS-ST no Estado de Goiás, à luz da legislação estadual e dos princípios constitucionais que regem a matéria. III. RAZÕES DE DECIDIR 3. A compensação tributária exige autorização legal expressa, conforme os artigos 156, II, e 170 do CTN. 4. O artigo 55, II, “b”, do RCTE/GO condiciona a compensação à edição de ato do Secretário da",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "5f2b10979cfdea7ccc30e4c1",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617602 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811595/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617602&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811595",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811595/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO CÍVEL EM MANDADO DE SEGURANÇA. PERSE. EXTINÇÃO DE BENEFÍCIO FISCAL. RECURSO DESPROVIDO. I. CASO EM EXAME: 1. Apelação cível interposta contra sentença que denegou a segurança em mandado de segurança impetrado para afastar os efeitos do Ato Declaratório Executivo RFB nº 02/2025 e assegurar a manutenção da alíquota zero de IRPJ, CSLL, PIS e COFINS, prevista no art. 4º da Lei nº 14.148/2021 (PERSE), pelo prazo original de 60 meses, ou, subsidiariamente, o respeito aos princípios da anterioridade anual e nonagesimal. II. QUESTÃO EM DISCUSSÃO: 2. Há três questões em discussão: (i) a legalidade da extinção antecipada do benefício fiscal do PERSE antes do prazo original de 60 meses; (ii) a aplicabilidade do art. 178 do CTN e da Súmula 544 do STF ao benefício de alíquota zero; e (iii) a observância dos princípios da anterioridade tributária, segurança jurídica e confiança legítima na revogação do benefício. III. RAZÕES DE DECIDIR:",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "8287183900c9dde63d92d9df",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "SL 1937 — viabilidade de eventual recurso extraordinário e, por consequência, impede a abertura da via suspensiva. Nesse sentido: \"Direito Processual Civil e Tributário . Agravo Regimental no Recurso Extraordinário. Alegação de ausência de fundamentação: não acolhida. P",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811452/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1937&classe=SL",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811452",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811452/false",
+        "inlineText": "viabilidade de eventual recurso extraordinário e, por consequência, impede a abertura da via suspensiva. Nesse sentido: \"Direito Processual Civil e Tributário . Agravo Regimental no Recurso Extraordinário. Alegação de ausência de fundamentação: não acolhida. Preliminar de repercussão geral. Termos genéricos. Ausência de demonstração da relevância da questão debatida. Taxa de coleta, remoção e destinação de resíduos sólidos domiciliares (TRSD). Inobservância ao princípio da noventena. Inviabilidade de reexame de fatos e provas e de legislação local, Leis municipais nº 18.274, de 2016, e nº 15.563, de 1991. Enunciados nº 279 e nº 280 da Súmula do Supremo Tribunal Federal. I. Caso em exame 1. Agravo regimental contra decisão cujo recurso extraordinário não foi conhecido pela ausência de ofensa ao art. 93, inc. IX, da CRFB; falta de demonstração da repercussão geral; incidência dos enunciados nº 279 e nº 280 da Súmula do STF. 2. Recurso extraordinário contra acórdão no qual foi julgada parcialmente procedente ação anulatória de lançamento tributário , com base em lei municipal em que se alterou a cobrança de taxa de limpeza pública. 3. O acórdão recorrido entendeu pela inconstitucionalidade de",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "36236195c4dab1ac1d473267",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 71,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1617709 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . AÇÃO DE CO",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811568/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617709&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1811568",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1811568/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . AÇÃO DE COBRANÇA, DENUNCIAÇÃO DA LIDE À UNIÃO, ENTE QUE REPRESENTA PROCESSUALMENTE A RECEITA FEDERAL DO BRASIL. REPETIÇÃO DOS VALORES INDEVIDAMENTE RECOLHIDOS. 1. A Receita Federal do Brasil é órgão da Administração Direta Federal, vinculado ao Ministério da Economia (inc. IV do art. 32 da L 13.844/2019) e não detém personalidade jurídica própria. A pretensão da agravante de denunciação da lide à Receita Federal do Brasil é completamente improcedente (art. 70 do CPC). Entende-se, pois, que o que pretende a agravante é denunciação da lide à União. 2. A denunciação da lide visa a atender processualmente o direito de garantia ou de regresso, a ser composto numa nova relação processual anexa à originalmente proposta pelo autor. O direito de regresso que permite a denunciação da lide não deve gerar ampliação objetiva da discussão da causa principal, exigindo-se o potencial de reconhecimento deste direito de modo automático, atentando-se aos",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "8b53f64a263d105b52c081d1",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 71,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1614497 — Ementa: Direito Tributário e Processual Civil. Recurso Extraordinário com Agravo. ICMS. Energia elétrica. Adicional. Fundo de combate à pobreza. Ausência de impugnação específica. Princípio da dialeticidade recursal. Enunciado nº 287 da Súmula do STF. Recurso ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812067/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1614497&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812067",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812067/false",
+        "inlineText": "Ementa: Direito Tributário e Processual Civil. Recurso Extraordinário com Agravo. ICMS. Energia elétrica. Adicional. Fundo de combate à pobreza. Ausência de impugnação específica. Princípio da dialeticidade recursal. Enunciado nº 287 da Súmula do STF. Recurso não conhecido. I. Caso em exame 1. Agravo interposto contra decisão pela qual se inadmitiu recurso extraordinário. 2. O Tribunal de origem negou trânsito ao recurso extraordinário, aplicando os óbices dos enunciados nº 280 e nº 286 da Súmula do Supremo Tribunal Federal. 3. No agravo, a parte recorrente defendeu o afastamento dos óbices dos enunciados nº 279 e nº 286 da Súmula do STF. II. Questão em discussão 4. A questão em discussão consiste em saber se o agravo interposto impugnou de forma específica e suficiente os fundamentos da decisão pela qual se inadmitiu o recurso extraordinário, em observância ao princípio da dialeticidade recursal. III. Razões de decidir 5. A ausência de impugnação específica dos fundamentos da decisão agravada configura irregularidade formal, uma vez que a reiteração das razões do recurso extraordinário na minuta do agravo não afasta a motivação específica apresentada pelo primeiro juízo de admissibilidade",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "5d5195210d6c7dc4477c536a",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 66,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      {
+        "title": "ARE 1606060 — DECISÃO: Trata-se de agravo contra inadmissibilidade de recurso extraordinário em face de acórdão do Tribunal de Justiça do Estado de São Paulo (TJSP), cuja ementa transcrevo: “DIREITO TRIBUTÁRIO . ISSQN. APELAÇÃO. IMPROCEDÊNCIA. RECURSO PROVIDO. I. Caso em Ex",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1812070/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1606060&classe=ARE",
+        "publishedAt": "2026-08-21",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1812070",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1812070/false",
+        "inlineText": "DECISÃO: Trata-se de agravo contra inadmissibilidade de recurso extraordinário em face de acórdão do Tribunal de Justiça do Estado de São Paulo (TJSP), cuja ementa transcrevo: “DIREITO TRIBUTÁRIO . ISSQN. APELAÇÃO. IMPROCEDÊNCIA. RECURSO PROVIDO. I. Caso em Exame Ação ordinária proposta por ARAPLAN ENGENHARIA E GERENCIAMENTO LTDA contra o MUNICÍPIO DE ARARAQUARA, questionando a inclusão dos materiais na base de cálculo do ISSQN em serviços de construção civil, com pedido de repetição de indébito. II. Questão em Discussão 2. A questão em discussão consiste na possibilidade de dedução dos materiais empregados na execução de serviços de construção civil da base de cálculo do ISSQN. III. Razões de Decidir 3. A tese do Supremo Tribunal Federal no RE 603.497/MG, que permite a dedução dos materiais, não se aplica aos fatos geradores ocorridos sob a vigência da Lei Complementar n. 116/2003. 4. A parte autora não comprovou que os materiais foram produzidos fora do local da obra e comercializados com incidência do ICMS, não cumprindo o ônus probatório exigido. IV. Dispositivo e Tese 5. Recurso provido. Ação julgada improcedente, com inversão dos ônus sucumbenciais. Tese de julgamento: 1. A dedução",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-21T12:39:42.617Z",
+        "id": "751f850ccbeec0a0f0624e5f",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
@@ -69314,40 +70075,6 @@
         }
       },
       {
-        "title": "Sentença · 0047954-84.2026.4.05.8300 · 5ª Vara Federal PE — Direito tributário: pelas plataformas de delivery (iFood, Uber Eats, Rappi e similares) na base de cálculo do PIS, da COFINS, do IRPJ e da CSLL, assegurando-lhe o direito de computar apenas os valores efetivamente recebidos, bem como de compensar os valores recolhidos indevidamente. Sustenta,",
-        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qo8LEjMvRgli8rXs5TGKOzm6mrz2A1/certidao",
-        "publishedAt": "2026-08-21",
-        "documentKind": "Sentença judicial publicada no DJEN",
-        "sourceDocumentType": "Sentença",
-        "externalId": "703349776",
-        "fingerprintKey": "djen:703349776",
-        "inlineTextGzip": "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",
-        "inlineParser": "API oficial do DJEN/CNJ",
-        "sourceId": "trf5",
-        "sourceName": "Tribunal Regional Federal da 5ª Região",
-        "sourceAcronym": "TRF5",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "trf-djen",
-        "discoveredAt": "2026-08-21T06:27:08.808Z",
-        "id": "683e9895451b105fb16e7d8c",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 82,
-          "band": "alta",
-          "signals": [
-            "data-confirmada",
-            "fonte-oficial",
-            "coleta-estruturada",
-            "assunto-tributario-forte",
-            "conteudo-de-merito"
-          ],
-          "engine": "regras-tributarias-v1"
-        }
-      },
-      {
         "title": "Decisão · 0808359-34.2024.4.05.8100 · Gab VICE-PRESIDÊNCIA — Direito tributário: tima Turma deste Tribunal Regional Federal da 5ª Região, assim ementado: CONSTITUCIONAL E TRIBUTÁRIO. MANDADO DE SEGURANÇA. MP 1.185/2023 CONVERTIDA NA LEI 14.789/2023. BENEFÍCIO FISCAL NEGATIVO DE ICMS (DIFERIMENTO). INCIDÊNCIA DA NOVEL DISCIPLINA NORMATIVA INTRODUZIDA PELA LEI",
         "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7gRmaiXapH1T7mMyBRy5DBkl/certidao",
         "publishedAt": "2026-08-21",
@@ -70657,40 +71384,6 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-21T06:27:08.808Z",
         "id": "58dc6bbbb4c60d54d6e8399f",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 82,
-          "band": "alta",
-          "signals": [
-            "data-confirmada",
-            "fonte-oficial",
-            "coleta-estruturada",
-            "assunto-tributario-forte",
-            "conteudo-de-merito"
-          ],
-          "engine": "regras-tributarias-v1"
-        }
-      },
-      {
-        "title": "Sentença · 0006234-49.2026.4.05.8103 · 18ª Vara Federal CE — Direito tributário: edida liminar inaudita altera pars para afastar a obrigatoriedade de retenção na fonte do Imposto de Renda da Pessoa Física (IRPF). A exigência impugnada decorre do art. 6º-A da Lei nº 9.250/1995, introduzido pela Lei nº 15.270/2025, que prevê a retenção à alíquota de 10% sobr",
-        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/qMO79lz3RPainxOF3Tgy2oB6mDByKE/certidao",
-        "publishedAt": "2026-08-21",
-        "documentKind": "Sentença judicial publicada no DJEN",
-        "sourceDocumentType": "Sentença",
-        "externalId": "704302925",
-        "fingerprintKey": "djen:704302925",
-        "inlineTextGzip": "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",
-        "inlineParser": "API oficial do DJEN/CNJ",
-        "sourceId": "trf5",
-        "sourceName": "Tribunal Regional Federal da 5ª Região",
-        "sourceAcronym": "TRF5",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "trf-djen",
-        "discoveredAt": "2026-08-21T06:27:08.808Z",
-        "id": "ee2e8e6be8771693bbb135c4",
         "status": "pending",
         "attempts": 0,
         "backfillDate": null,
@@ -77819,41 +78512,6 @@
         }
       },
       {
-        "title": "Sentença Tipo A · 1004897-88.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: alizadas nas Áreas de Livre Comércio de Boa Vista (ALCBV) e de Bonfim (ALCB) o tratamento tributário aplicável às receitas de exportação para o exterior, com afastamento da parcela correspondente à Contribuição Previdenciária Patronal (CPP) incluída na sistemática do Simples Nac",
-        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75Pq6DXUDkVhATgEwL26nyG1xN/certidao",
-        "publishedAt": "2026-08-20",
-        "documentKind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-        "externalId": "702783821",
-        "fingerprintKey": "djen:702783821",
-        "inlineTextGzip": "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",
-        "inlineParser": "API oficial do DJEN/CNJ",
-        "sourceId": "trf1",
-        "sourceName": "Tribunal Regional Federal da 1ª Região",
-        "sourceAcronym": "TRF1",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "trf-djen",
-        "discoveredAt": "2026-08-20T12:24:34.149Z",
-        "id": "fbbd77556b49bca829e429e6",
-        "status": "error",
-        "attempts": 3,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 82,
-          "band": "alta",
-          "signals": [
-            "data-confirmada",
-            "fonte-oficial",
-            "coleta-estruturada",
-            "assunto-tributario-forte",
-            "conteudo-de-merito"
-          ],
-          "engine": "regras-tributarias-v1"
-        },
-        "error": "A conexão com o Ollama foi interrompida (UND_ERR_HEADERS_TIMEOUT).",
-        "analyzedAt": "2026-08-20T13:02:42.392Z"
-      },
-      {
         "title": "Sentença Tipo A · 1002475-68.2024.4.01.3503 · 12ª Vara Federal de Execução Fiscal da SJGO — Direito tributário: PODER JUDICIÁRIO JUSTIÇA FEDERAL Seção Judiciária de Goiás 12ª Vara Federal de Execução Fiscal da SJGO SENTENÇA TIPO \"A\" PROCESSO: 1002475-68.2024.4.01.3503 CLASSE: PROCEDIMENTO COMUM CÍVEL (7) POLO ATIVO: PIVOTEC GOIAS IRRIGACAO LTDA REPRESENTANTES POLO ATIVO: FABIULLA NAD",
         "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DVMlJ3NoZGzUB4pIVTp57de6LzE4gO/certidao",
         "publishedAt": "2026-08-20",
@@ -77930,70 +78588,6 @@
         "score": 8.5,
         "discardReason": null,
         "alertId": "0383d47b-a4bc-4fe8-80c2-739ddf065295"
-      },
-      {
-        "title": "Decisão · 1009839-66.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: por CAPITAL EMPREENDIMENTOS LTDA objetivando a suspensão da exigibilidade da contribuição PIS/COFINS sobre as receitas decorrentes das operações comerciais realizadas em Área de Livre Comércio. A impetrante, empresa regularmente estabelecida na Área de Livre Comércio de Bo",
-        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/Q19VxvmE6MXUk9pSmT8oVEpR4eny8l/certidao",
-        "publishedAt": "2026-08-20",
-        "documentKind": "Decisão judicial publicada no DJEN (Decisão)",
-        "externalId": "702246804",
-        "fingerprintKey": "djen:702246804",
-        "inlineTextGzip": "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",
-        "inlineParser": "API oficial do DJEN/CNJ",
-        "sourceId": "trf1",
-        "sourceName": "Tribunal Regional Federal da 1ª Região",
-        "sourceAcronym": "TRF1",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "trf-djen",
-        "discoveredAt": "2026-08-20T12:24:34.149Z",
-        "id": "870c80bdd000e9c36b11bffa",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 66,
-          "band": "media",
-          "signals": [
-            "data-confirmada",
-            "fonte-oficial",
-            "coleta-estruturada",
-            "assunto-tributario-forte"
-          ],
-          "engine": "regras-tributarias-v1"
-        }
-      },
-      {
-        "title": "Decisão · 1009938-36.2026.4.01.4200 · 2ª Vara Federal Cível da SJRR — Direito tributário: SULTORIA COMERCIO E SERVICO LTDA objetivando a suspensão da exigibilidade da contribuição PIS/COFINS sobre as receitas decorrentes das operações comerciais realizadas em Área de Livre Comércio. A parte autora, empresa regularmente estabelecida na Área de Livre Comércio de",
-        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/KOdGxm7g6mKU1qjU1T7mMy5Yy5DBkl/certidao",
-        "publishedAt": "2026-08-20",
-        "documentKind": "Decisão judicial publicada no DJEN (Decisão)",
-        "externalId": "702798587",
-        "fingerprintKey": "djen:702798587",
-        "inlineTextGzip": "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",
-        "inlineParser": "API oficial do DJEN/CNJ",
-        "sourceId": "trf1",
-        "sourceName": "Tribunal Regional Federal da 1ª Região",
-        "sourceAcronym": "TRF1",
-        "sourceType": "official",
-        "sections": [],
-        "discoveryMethod": "trf-djen",
-        "discoveredAt": "2026-08-20T12:24:34.149Z",
-        "id": "09d510bc64728034789ae35e",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 66,
-          "band": "media",
-          "signals": [
-            "data-confirmada",
-            "fonte-oficial",
-            "coleta-estruturada",
-            "assunto-tributario-forte"
-          ],
-          "engine": "regras-tributarias-v1"
-        }
       },
       {
         "title": "Sentença Tipo B · 1008471-85.2026.4.01.3500 · 1ª Vara Federal Cível da SJGO — Direito tributário: e outros SENTENÇA Cuidam os autos de mandado de segurança visando à exclusão do valor do Imposto sobre Serviços de Qualquer Natureza - ISS da base de cálculo da Contribuição Social para o Financiamento da Seguridade Social – COFINS e da Contribuição para o Programa de Integra",
@@ -100374,6 +100968,682 @@
       }
     ],
     "runs": [
+      {
+        "id": "81ce811c-1415-410e-8d41-62ae925c9273",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-20",
+        "startedAt": "2026-08-21T12:40:34.492Z",
+        "finishedAt": "2026-08-21T12:41:52.186Z",
+        "discovered": 4,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 37271,
+              "entries": 38,
+              "processed": 37271,
+              "dateMatched": 37271,
+              "decisionMatched": 5964,
+              "taxMatched": 1987,
+              "deduplicated": 1877,
+              "duplicates": 110,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 14717,
+              "entries": 15,
+              "processed": 14717,
+              "dateMatched": 14717,
+              "decisionMatched": 6923,
+              "taxMatched": 1908,
+              "deduplicated": 1908,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 22086,
+              "entries": 23,
+              "processed": 22086,
+              "dateMatched": 22086,
+              "decisionMatched": 9131,
+              "taxMatched": 4396,
+              "deduplicated": 4186,
+              "duplicates": 210,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 49,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 31471,
+              "entries": 32,
+              "processed": 31471,
+              "dateMatched": 31471,
+              "decisionMatched": 10342,
+              "taxMatched": 1660,
+              "deduplicated": 1659,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 24254,
+              "entries": 25,
+              "processed": 24254,
+              "dateMatched": 24254,
+              "decisionMatched": 5676,
+              "taxMatched": 2458,
+              "deduplicated": 2379,
+              "duplicates": 79,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 44,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 10387,
+              "entries": 11,
+              "processed": 10387,
+              "dateMatched": 10387,
+              "decisionMatched": 3896,
+              "taxMatched": 887,
+              "deduplicated": 887,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "e9f5a35a-22b8-4923-94cd-c3f29208684e",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-21T12:39:09.982Z",
+        "finishedAt": "2026-08-21T12:40:34.378Z",
+        "discovered": 40,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 5,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 29,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 13,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 56,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 140,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 21,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32670,
+              "entries": 33,
+              "processed": 32670,
+              "dateMatched": 32670,
+              "decisionMatched": 5532,
+              "taxMatched": 1993,
+              "deduplicated": 1842,
+              "duplicates": 151,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 15235,
+              "entries": 16,
+              "processed": 15235,
+              "dateMatched": 15235,
+              "decisionMatched": 8047,
+              "taxMatched": 2017,
+              "deduplicated": 2017,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25493,
+              "entries": 26,
+              "processed": 25493,
+              "dateMatched": 25493,
+              "decisionMatched": 10579,
+              "taxMatched": 6205,
+              "deduplicated": 6034,
+              "duplicates": 171,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 33570,
+              "entries": 34,
+              "processed": 33570,
+              "dateMatched": 33570,
+              "decisionMatched": 11962,
+              "taxMatched": 2299,
+              "deduplicated": 2298,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24402,
+              "entries": 25,
+              "processed": 24402,
+              "dateMatched": 24402,
+              "decisionMatched": 4919,
+              "taxMatched": 2256,
+              "deduplicated": 2190,
+              "duplicates": 66,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 31,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12008,
+              "entries": 13,
+              "processed": 12008,
+              "dateMatched": 12008,
+              "decisionMatched": 4145,
+              "taxMatched": 677,
+              "deduplicated": 676,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 30,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          }
+        ]
+      },
       {
         "id": "16b97883-26f4-4738-b0f5-ae5e9adb67a2",
         "trigger": "github-actions-analysis",
@@ -124073,685 +125343,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "63ee4d78-908f-40bc-8d2c-d52c8228333f",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-19",
-        "startedAt": "2026-08-20T12:25:18.332Z",
-        "finishedAt": "2026-08-20T12:26:58.711Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 33731,
-              "entries": 34,
-              "processed": 33731,
-              "dateMatched": 33731,
-              "decisionMatched": 7022,
-              "taxMatched": 2569,
-              "deduplicated": 2389,
-              "duplicates": 180,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 47,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12992,
-              "entries": 13,
-              "processed": 12992,
-              "dateMatched": 12992,
-              "decisionMatched": 6508,
-              "taxMatched": 1570,
-              "deduplicated": 1568,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24864,
-              "entries": 25,
-              "processed": 24864,
-              "dateMatched": 24864,
-              "decisionMatched": 9788,
-              "taxMatched": 5200,
-              "deduplicated": 5006,
-              "duplicates": 194,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 30583,
-              "entries": 31,
-              "processed": 30583,
-              "dateMatched": 30583,
-              "decisionMatched": 12422,
-              "taxMatched": 2312,
-              "deduplicated": 2310,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24048,
-              "entries": 25,
-              "processed": 24048,
-              "dateMatched": 24048,
-              "decisionMatched": 5843,
-              "taxMatched": 2758,
-              "deduplicated": 2673,
-              "duplicates": 85,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12658,
-              "entries": 13,
-              "processed": 12658,
-              "dateMatched": 12658,
-              "decisionMatched": 4600,
-              "taxMatched": 866,
-              "deduplicated": 866,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "f8613af2-f680-4cad-ba19-38585e7195f9",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-20T12:23:39.150Z",
-        "finishedAt": "2026-08-20T12:25:18.271Z",
-        "discovered": 321,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 9,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 12,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 461,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 22,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 57,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 37271,
-              "entries": 38,
-              "processed": 37271,
-              "dateMatched": 37271,
-              "decisionMatched": 5964,
-              "taxMatched": 2162,
-              "deduplicated": 2038,
-              "duplicates": 124,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 54,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 14717,
-              "entries": 15,
-              "processed": 14717,
-              "dateMatched": 14717,
-              "decisionMatched": 6923,
-              "taxMatched": 1960,
-              "deduplicated": 1960,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 22086,
-              "entries": 23,
-              "processed": 22086,
-              "dateMatched": 22086,
-              "decisionMatched": 9131,
-              "taxMatched": 4604,
-              "deduplicated": 4384,
-              "duplicates": 220,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 41,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31471,
-              "entries": 32,
-              "processed": 31471,
-              "dateMatched": 31471,
-              "decisionMatched": 10342,
-              "taxMatched": 1725,
-              "deduplicated": 1724,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 24254,
-              "entries": 25,
-              "processed": 24254,
-              "dateMatched": 24254,
-              "decisionMatched": 5676,
-              "taxMatched": 2561,
-              "deduplicated": 2480,
-              "duplicates": 81,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 43,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 10387,
-              "entries": 11,
-              "processed": 10387,
-              "dateMatched": 10387,
-              "decisionMatched": 3896,
-              "taxMatched": 909,
-              "deduplicated": 909,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 4,
-            "dateCoverage": null
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T12:26:37.062Z",
-    "nextRunAt": "2026-08-21T18:26:37.062Z"
+    "lastRunAt": "2026-08-21T12:41:52.186Z",
+    "nextRunAt": "2026-08-21T18:41:52.186Z"
   }
 }
