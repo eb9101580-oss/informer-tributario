@@ -276,13 +276,12 @@ export function alertPassesTaxIntelligencePolicy(alert = {}) {
   if (alert.kind === 'Movimentação processual') return true;
   const assessment = assessPublishedAlert(alert);
   const currentPolicy = alert.policyVersion === TAX_POLICY_VERSION || alert.provenance?.policyVersion === TAX_POLICY_VERSION;
-  if (!currentPolicy) return true;
   const quality = assessAlertAnalysisQuality(alert);
   return assessment.eligible
     && assessment.concreteEvent
     && (assessment.topicTier !== 2 || assessment.businessEffect)
     && !assessment.exclusionReason
-    && quality.passed;
+    && (!currentPolicy || quality.passed);
 }
 
 export function primarySourceUrlForAlert(alert = {}) {

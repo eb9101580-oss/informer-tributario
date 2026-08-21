@@ -296,6 +296,19 @@ test('regra de qualidade preserva legado e ações processuais acompanhadas', ()
   assert.deepEqual(assessAlertAnalysisQuality(legacy), { required: false, passed: true, reasons: [] });
   assert.equal(alertPassesTaxIntelligencePolicy(legacy), true);
 
+  const legacyNoise = {
+    ...legacy,
+    title: 'Isenção de IRPF para aposentado com doença grave',
+    theme: 'Imposto de renda da pessoa física',
+    summary: 'Sentença individual concedeu isenção de IRPF sobre proventos de aposentadoria.',
+    whatChanged: 'A decisão beneficia apenas o autor aposentado.',
+    practicalImpact: 'A retenção pessoal deve ser interrompida.',
+    officeAction: 'Cumprir a sentença individual.',
+    taxes: ['IRPF'],
+    provenance: { sourceId: 'trf1', sourceType: 'official' },
+  };
+  assert.equal(alertPassesTaxIntelligencePolicy(legacyNoise), false);
+
   const movement = {
     policyVersion: TAX_POLICY_VERSION,
     kind: 'Movimentação processual',
