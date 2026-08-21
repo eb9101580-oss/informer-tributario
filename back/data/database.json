@@ -1,9 +1,237 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-21T02:33:48.251Z",
+    "lastUpdatedAt": "2026-08-21T03:40:30.463Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1616235 — contrariedade em relação aos óbices contidos na decisão agravada",
+      "theme": "Agravo Regimental em Recurso Extraordinário",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ISS",
+        "Multas",
+        "Confisco"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF negou provimento ao agravo regimental por ausência de impugnação de todos os argumentos da decisão de admissibilidade do recurso extraordinário, aplicando a Súmula 287/STF. A decisão reforça que a parte agravante não se desincumbiu do ônus de rebater todos os argumentos da decisão de admissibilidade do recurso extraordinário, incidindo a Súmula 287/STF.",
+      "whatChanged": "A Súmula 287 do STF foi aplicada ao agravo regimental por ausência de impugnação de todos os argumentos da decisão de admissibilidade do recurso extraordinário, reforçando a necessidade de rebate de todos os argumentos da decisão recorrida.",
+      "practicalImpact": "Empresas que utilizam agravo regimental em recursos extraordinários devem garantir a impugnação de todos os argumentos da decisão de admissibilidade para evitar negação de provimento pelo STF.",
+      "officeAction": "A parte agravante deve revisar a fundamentação do agravo para incluir impugnação de todos os argumentos da decisão de admissibilidade do recurso extraordinário.",
+      "affectedProfiles": [
+        "Empresas com operações bancárias",
+        "Organizações tributárias",
+        "Advogados especializados em tributário",
+        "Clientes com ISS",
+        "Empresas com multas tributárias"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 4,
+        "legalImpact": 7,
+        "financialImpact": 5,
+        "reach": 8,
+        "clientFit": 7,
+        "actionPotential": 6
+      },
+      "opportunity": {
+        "title": "Revisão da fundamentação do agravo para evitar negação de provimento",
+        "period": "Imediato",
+        "action": "Garantir impugnação de todos os argumentos da decisão de admissibilidade do recurso extraordinário",
+        "confidence": "médio"
+      },
+      "id": "bee68a29-ccea-430f-9ad5-80586a548531",
+      "score": 6.7,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811148/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T03:40:30.424Z",
+      "updatedAt": "2026-08-21T03:40:30.424Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811148/false",
+        "sourceCharacters": 1203,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T03:18:20.340Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "HC 275942 — substituída por restritivas de direitos, pela prática do crime previsto no art. 1º, I, da Lei 8.137/1990, na forma do art. 71 do Código Penal",
+      "theme": "Crimes fiscais e evasão tributária",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "DIRF",
+        "Crédito tributário",
+        "R$ 172.465,87",
+        "Anos-calendários 2004-2008",
+        "Exercícios 2005-2009"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF decidiu que a prática do crime previsto no art. 1º, I, da Lei 8.137/1990 (art. 71 do Código Penal) por meio de supressão e redução de tributos via declarações falsas nas DIRFs, referentes aos exercícios de 2005 a 2009, resultou em crédito tributário apurado de R$ 172.465,87. A decisão foi tomada após recurso especial e agravo regimental, com a Quinta Turma do STF conhecendo o agravo para não conhecer do apelo especial.",
+      "whatChanged": "A prática de supressão e redução de tributos por meio de declarações falsas nas DIRFs foi considerada crime de evasão tributária, com crédito tributário apurado de R$ 172.465,87 para os exercícios de 2005 a 2009.",
+      "practicalImpact": "Empresas devem garantir a precisão nas declarações fiscais DIRF para evitar penalidades por evasão tributária, com risco de reclusão de 3 anos, 6 meses e 20 dias para os acusados.",
+      "officeAction": "A decisão do STF confirma que a prática de supressão e redução de tributos por meio de declarações falsas nas DIRFs constitui crime de evasão tributária, com crédito tributário apurado de R$ 172.465,87 para os exercícios de 2005 a 2009.",
+      "affectedProfiles": [
+        "Empresas com atividade fiscal",
+        "Contribuintes de DIRF",
+        "Empresas com declarações falsas nas DIRFs",
+        "Acusados de evasão tributária",
+        "Contribuintes com exercícios fiscais de 2005 a 2009"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 3,
+        "legalImpact": 7,
+        "financialImpact": 8,
+        "reach": 6,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Risco de penalidades por evasão tributária em declarações falsas nas DIRFs",
+        "period": "2005-2009",
+        "action": "Verificação rigorosa das declarações DIRF para evitar supressão e redução de tributos",
+        "confidence": "alto"
+      },
+      "id": "8b4bf289-f878-4344-96c3-d3526658cd2e",
+      "score": 7.1,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811244/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T03:37:52.918Z",
+      "updatedAt": "2026-08-21T03:37:52.918Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811244/false",
+        "sourceCharacters": 1201,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T03:18:20.340Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1616749 — Art. 1.042 do CPC não permite agravo contra decisão do Tribunal de origem que aplica repercussão geral",
+      "theme": "Processo Civil",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "Taxa de lixo",
+        "Recurso extraordinário",
+        "Recurso especial",
+        "Repercussão geral"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Decisão monocrática do STF",
+      "impactType": "Risco",
+      "publishedAt": "2026-08-20",
+      "summary": "O STF decidiu que o art. 1.042, caput, do CPC não permite agravo contra decisão do Tribunal de origem que aplica a sistemática da repercussão geral. A decisão afirma que cabe agravo apenas quando o tribunal recorrido inadmitir recurso extraordinário ou especial, salvo quando fundado na aplicação de entendimento firmado em repercussão geral ou julgamento de recursos repetitivos.",
+      "whatChanged": "A interpretação do art. 1.042 do CPC foi esclarecida: agravo interno é permitido apenas se o tribunal recorrido inadmitir recurso extraordinário ou especial, exceto quando o recurso estiver fundado em repercussão geral ou recursos repetitivos.",
+      "practicalImpact": "Empresas com processos tributários que utilizam a repercussão geral devem revisar a interposição de agravo interno para evitar recurso inadmissível, conforme a decisão do STF.",
+      "officeAction": "Revisar a interposição de agravo interno em recursos extraordinários e especial quando o tribunal recorrido aplica a repercussão geral, evitando possíveis decisões inadmissíveis.",
+      "affectedProfiles": [
+        "Advogados de tributário",
+        "Juízes de tributário",
+        "Clientes com processos em repercussão geral",
+        "Organizações de advocacia tributária",
+        "Advogados de tributário em processos de recursos"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Revisão de agravo interno em recursos tributários com repercussão geral",
+        "period": "2023-11-15 a 2024-12-31",
+        "action": "Revisar a interposição de agravo interno para evitar recurso inadmissível em processos tributários que utilizem a repercussão geral",
+        "confidence": "alto"
+      },
+      "id": "c8c79ed7-4fa4-4bd3-929f-01d5b64e3b84",
+      "score": 7.8,
+      "relevance": "Relevante",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811151/false",
+      "isDemo": false,
+      "createdAt": "2026-08-21T03:34:22.300Z",
+      "updatedAt": "2026-08-21T03:34:22.300Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1811151/false",
+        "sourceCharacters": 1203,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-21T03:18:20.340Z",
+        "fastTriage": {
+          "score": 82,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v1"
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Rcl 81025 ED — geral, conforme se verifica da ementa abaixo transcrita: “ TRIBUTÁRIO . AGRAVO INTERNO. AGRAVO EM RECURSO ESPECIAL. EXECUÇÃO DE SENTENÇA CONTRA A FAZENDA PÚBLICA.…",
@@ -37664,46 +37892,59 @@
     },
     {
       "relevant": true,
-      "title": "Sentença Tipo A · 1001949-45.2026.4.01.3305 · Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Juazeiro-BA — Direito tributário: União Federal é ilegítima para…",
-      "theme": "Direito tributário · PIS, PASEP",
+      "title": "Sentença Tipo A · 1001949-45.2026.4.01.3305 · Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Juazeiro-BA — Direito tributário: União Federal é ilegítima para o",
+      "theme": "Ilegitimidade passiva da União Federal no polo passivo de contas vinculadas ao P",
       "agency": "Tribunal Regional Federal da 1ª Região",
       "taxes": [
         "PIS",
-        "PASEP"
+        "PASEP",
+        "Fundo do PIS-PASEP",
+        "Contribuições de PIS-PASEP",
+        "Correção monetária PASEP",
+        "Juros anuais PASEP"
       ],
       "status": "Fato confirmado",
       "kind": "Decisão judicial publicada no DJEN (Sentença Tipo A)",
-      "impactType": "Informativo",
+      "impactType": "Risco",
       "publishedAt": "2026-08-20",
-      "summary": "A Tribunal Regional Federal da 1ª Região publicou decisão judicial publicada no djen (sentença tipo a) em 2026-08-20. PODER JUDICIÁRIO JUSTIÇA FEDERAL Subseção Judiciária de Juazeiro-BA Juizado Especial Cível e Criminal Adjunto à Vara Federal da SSJ de Juazeiro-BA SENTENÇA TIPO \"A\" Processo: 1001949-45.2026.4.01.3305 AUTOR: SERGIO RUBEM MENEZES ELPIDIO Advogados do(a) AUTOR: ELOAH MARIA DA SILVA ELPIDIO - BA58041, MARIA DA GLORIA DA SILVA ELPIDIO - BA15442 REU: UNIÃO FEDERAL, BANCO DO BRASIL SA SENTENÇA Trata-se de ação ajuizada…",
-      "whatChanged": "A publicação foi identificada em fonte oficial e entrou no feed por triagem automática. O alcance, a vigência e o efeito jurídico devem ser conferidos no inteiro teor.",
-      "practicalImpact": "O item pode afetar a análise tributária do tema indicado. Este resumo é factual e não substitui a leitura da decisão, norma ou certidão oficial.",
-      "officeAction": "Abrir a fonte oficial, conferir dispositivo, vigência, processo e destinatários antes de orientar o cliente.",
+      "summary": "A sentença confirma a ilegitimidade passiva da União Federal no polo passivo de ações relacionadas a contas vinculadas ao PASEP, pois o Fundo do PIS-PASEP foi criado pela Lei Complementar n. 26/1975 e regido pelo Decreto n. 4.751/2003. Desde 5 de outubro de 1988, o PASEP não recebe mais contribuições, sendo responsável apenas pela correção monetária e juros anuais. A União não tem interesse jurídico na discussão, e a competência para julgamento é da Justiça Comum Estadual.",
+      "whatChanged": "A União Federal é ilegítima para compor o polo passivo em ações que discutam contas vinculadas ao PASEP, já que o fundo deixou de receber contribuições após a Constituição Federal de 1988. A competência para julgamento é da Justiça Comum Estadual, não da Justiça Federal.",
+      "practicalImpact": "Empresas e contribuintes devem evitar ações judiciais contra a União Federal em contas PASEP, já que a União não é legítima passiva. A Justiça Federal deve remeter os autos para Justiça Comum Estadual, o que pode gerar atrasos na resolução de demandas.",
+      "officeAction": "A sentença determina a extinção do feito sem julgamento do mérito em relação à União Federal e a remessa imediata dos autos para Justiça Comum Estadual, com base na inexistência de interesse jurídico da União na lide.",
       "affectedProfiles": [
-        "Contribuintes e empresas do tema indicado"
+        "Contribuintes do PASEP",
+        "Empresas com contas vinculadas ao PASEP",
+        "Juizados Especiais Cíveis",
+        "Justiça Federal",
+        "Justiça Comum Estadual"
       ],
       "criteria": {
-        "authority": 9,
-        "novelty": 8,
-        "legalImpact": 8,
-        "financialImpact": 7,
+        "authority": 8,
+        "novelty": 6,
+        "legalImpact": 7,
+        "financialImpact": 5,
         "reach": 7,
-        "clientFit": 7,
-        "actionPotential": 6
+        "clientFit": 8,
+        "actionPotential": 9
       },
-      "opportunity": null,
+      "opportunity": {
+        "title": "Ilegitimidade da União Federal no polo passivo de contas PASEP",
+        "period": "A partir de 5 de outubro de 1988",
+        "action": "Remessa imediata dos autos para Justiça Comum Estadual",
+        "confidence": "alto"
+      },
       "id": "4e6e5e3c-e17d-4968-bd5d-a0cda3a16e6a",
-      "score": 8.2,
-      "relevance": "Alta relevância",
+      "score": 7,
+      "relevance": "Relevante",
       "officialUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M36qBU4VxhyTJ1jWBZgozp85/certidao",
       "isDemo": false,
       "createdAt": "2026-08-20T15:00:30.199Z",
-      "updatedAt": "2026-08-20T15:00:30.199Z",
+      "updatedAt": "2026-08-21T03:28:31.535Z",
       "provenance": {
         "collector": "API oficial do DJEN/CNJ",
-        "analyzer": "Triagem rápida determinística (Ollama pendente)",
-        "analysisMode": "fast-triage",
-        "detailedAnalysisPending": true,
+        "analyzer": "Triagem rápida/regras + auto/qwen3:4b",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
         "collectorUrl": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/PDbmx4M36qBU4VxhyTJ1jWBZgozp85/certidao",
         "sourceCharacters": 7940,
         "sourceId": "trf1",
@@ -45166,8 +45407,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T03:18:20.340Z",
         "id": "0b268c16d8080aa7433672bd",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45180,7 +45421,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T03:34:22.343Z",
+        "analyzedPublishedAt": "2023-11-15T18:00:00Z",
+        "relevant": true,
+        "score": 7.8,
+        "discardReason": null,
+        "alertId": "c8c79ed7-4fa4-4bd3-929f-01d5b64e3b84",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "HC 275942 — substituída por restritivas de direitos, pela prática do crime previsto no art. 1º, I, da Lei 8.137/1990, na forma do art. 71 do Código Penal. Conforme relatado na sentença: A denúncia, em síntese, narra que nos dias 10/11/2005, 11/07/2006, 15/08/2007, 21/10/2",
@@ -45199,8 +45448,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T03:18:20.340Z",
         "id": "fb492f68028e3e160bdaae72",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45213,7 +45462,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T03:37:52.964Z",
+        "analyzedPublishedAt": "2009-12-02T00:00:00Z",
+        "relevant": true,
+        "score": 7.1,
+        "discardReason": null,
+        "alertId": "8b4bf289-f878-4344-96c3-d3526658cd2e",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ARE 1616235 — contrariedade em relação aos óbices contidos na decisão agravada. 9. Assim, inviável a análise deste agravo, ante o disposto no art. 932 do Código de Processo Civil, no enunciado nº 287 da Súmula do STF e nos precedentes abaixo transcritos: CPC: Art. 932. “Inc",
@@ -45232,8 +45489,8 @@
         "discoveryMethod": "stf-jurisprudence",
         "discoveredAt": "2026-08-21T03:18:20.340Z",
         "id": "03598e670310f557cf0d85e3",
-        "status": "pending",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": "2026-08-20",
         "fastTriage": {
           "score": 82,
@@ -45246,7 +45503,15 @@
             "conteudo-de-merito"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "analyzedAt": "2026-08-21T03:40:30.463Z",
+        "analyzedPublishedAt": "2024-01-01T00:00:00Z",
+        "relevant": true,
+        "score": 6.7,
+        "discardReason": null,
+        "alertId": "bee68a29-ccea-430f-9ad5-80586a548531",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "HC 275898 — Tribunal Regional Federal da 3ª Região deu parcial provimento ao apelo defensivo para estabelecer a pena em 3 anos, 2 meses e 23 dias de reclusão, mantendo-se o regime prisional. A defesa, então, interpôs Recurso Especial que, inadmitido na origem, ascendeu ao",
@@ -45496,8 +45761,8 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-08-21T03:12:53.826Z",
         "id": "11816503c1554d73482c5298",
-        "status": "pending",
-        "attempts": 0,
+        "status": "error",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 56,
@@ -45508,7 +45773,9 @@
             "efeito-operacional"
           ],
           "engine": "regras-tributarias-v1"
-        }
+        },
+        "error": "A coleta excedeu o limite de 60 segundos.",
+        "analyzedAt": "2026-08-21T03:31:35.382Z"
       },
       {
         "title": "REQ 4102/2026 — Requer a realização de Sessão Solene destinada a celebrar a realização, em Brasília, das XXXIII Jornadas Latinoamericanas de Derecho Tributario, promovidas pelo Instituto Latinoamericano de Derecho Tributario – ILADT.",
@@ -52092,8 +52359,8 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-08-20T12:24:34.149Z",
         "id": "4aca13c80edb7329958dac3c",
-        "status": "fast-published",
-        "attempts": 0,
+        "status": "analyzed",
+        "attempts": 1,
         "backfillDate": null,
         "fastTriage": {
           "score": 82,
@@ -52109,7 +52376,14 @@
         },
         "alertId": "4e6e5e3c-e17d-4968-bd5d-a0cda3a16e6a",
         "fastPublishedAt": "2026-08-20T15:00:30.200Z",
-        "error": null
+        "error": null,
+        "analyzedAt": "2026-08-21T03:28:31.574Z",
+        "analyzedPublishedAt": "2025-07-09T00:00:00Z",
+        "relevant": true,
+        "score": 7,
+        "discardReason": null,
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "Sentença Tipo A · 1020217-27.2025.4.01.4100 · 4ª Vara Federal de Juizado Especial Cível da SJRO — Direito tributário: MENTAÇÃO Trata-se de ação proposta contra a União em que a parte autora requer isenção de imposto de renda incidente sobre proventos de pensão e/ou aposentadoria, por se tratar de pessoa portadora de moléstia grave. No caso concreto, encontram-se devidamente corroborados os re",
@@ -73087,6 +73361,19 @@
       }
     ],
     "runs": [
+      {
+        "id": "cf0d6c12-05d3-4d2e-8546-a6ea78580d2b",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-21T03:21:44.086Z",
+        "finishedAt": "2026-08-21T03:40:30.497Z",
+        "discovered": 0,
+        "analyzed": 4,
+        "published": 3,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
       {
         "id": "eb783048-105c-47fc-90c5-4fdafb13a6ba",
         "trigger": "github-actions-history",
@@ -99117,275 +99404,9 @@
             "dateCoverage": null
           }
         ]
-      },
-      {
-        "id": "230499b6-1134-44da-8a36-017175d86519",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-18",
-        "startedAt": "2026-08-19T22:54:50.431Z",
-        "finishedAt": "2026-08-19T23:01:06.847Z",
-        "discovered": 12,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 6,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "HTTP Error 403: Forbidden"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          }
-        ]
       }
     ],
-    "lastRunAt": "2026-08-21T03:20:04.758Z",
-    "nextRunAt": "2026-08-21T09:20:04.758Z"
+    "lastRunAt": "2026-08-21T03:40:30.497Z",
+    "nextRunAt": "2026-08-21T09:40:30.497Z"
   }
 }
