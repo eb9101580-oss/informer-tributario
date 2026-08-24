@@ -43,10 +43,15 @@ test('preserva parágrafos e normaliza a análise estruturada', () => {
     relevanceReasons: ['altera-obrigacao', 'altera-obrigacao'],
     legalBasis: ['Portaria RFB 123/2026'],
     publishedAt: '2026-08-19',
+    analysisVersion: 'detailed-v2',
     summary: 'Resumo factual.',
     whatChanged: 'Alteração publicada.',
     practicalImpact: 'Revisar procedimentos.',
     officeAction: 'Orientar clientes afetados.',
+    issueOrSubject: 'A portaria disciplina a apuração dos créditos de ICMS nas operações industriais.',
+    rulingOrRule: 'O ato substitui o procedimento anterior e determina a aplicação da nova regra a partir da publicação.',
+    legalReasoning: 'A Receita fundamenta a alteração no artigo 23 da Lei Complementar nº 87/1996.',
+    effectiveDateOrDeadline: 'Vigência a partir de 19/08/2026; o documento não informa prazo adicional.',
     affectedProfiles: ['Indústrias'],
     criteria: { authority: 10, novelty: 8, legalImpact: 7, financialImpact: 6, reach: 5, clientFit: 7, actionPotential: 8 },
     opportunity: null,
@@ -57,6 +62,8 @@ test('preserva parágrafos e normaliza a análise estruturada', () => {
   assert.equal(analysis.contentNature, 'Fato oficial');
   assert.deepEqual(analysis.relevanceReasons, ['altera-obrigacao']);
   assert.deepEqual(analysis.legalBasis, ['Portaria RFB 123/2026']);
+  assert.equal(analysis.analysisVersion, 'detailed-v2');
+  assert.match(analysis.rulingOrRule, /substitui/);
 });
 
 test('recompõe resposta NDJSON transmitida pelo Ollama', () => {

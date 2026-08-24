@@ -2,6 +2,8 @@ import { config } from '../config.js';
 import { Agent, fetch as undiciFetch } from 'undici';
 import { policyPromptSummary, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
+export const ANALYSIS_VERSION = 'detailed-v2';
+
 // O Ollama pode gastar vários minutos avaliando decisões longas antes do
 // primeiro token. O fetch padrão do Node encerra essa espera aos 300 segundos.
 // O AbortController abaixo continua sendo o limite total da análise.
@@ -44,10 +46,15 @@ const analysisSchema = {
     },
     legalBasis: { type: 'array', maxItems: 8, items: { type: 'string', maxLength: 160 } },
     publishedAt: { type: 'string', maxLength: 35 },
+    analysisVersion: { type: 'string', enum: [ANALYSIS_VERSION] },
     summary: { type: 'string', maxLength: 700 },
     whatChanged: { type: 'string', maxLength: 700 },
     practicalImpact: { type: 'string', maxLength: 600 },
     officeAction: { type: 'string', maxLength: 500 },
+    issueOrSubject: { type: 'string', maxLength: 600 },
+    rulingOrRule: { type: 'string', maxLength: 700 },
+    legalReasoning: { type: 'string', maxLength: 700 },
+    effectiveDateOrDeadline: { type: 'string', maxLength: 400 },
     affectedProfiles: { type: 'array', maxItems: 5, items: { type: 'string', maxLength: 80 } },
     criteria: {
       type: 'object',
@@ -66,7 +73,7 @@ const analysisSchema = {
       ],
     },
   },
-  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'priority', 'contentNature', 'businessActionable', 'noveltyType', 'relevanceReasons', 'legalBasis', 'publishedAt', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'affectedProfiles', 'criteria', 'opportunity'],
+  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'priority', 'contentNature', 'businessActionable', 'noveltyType', 'relevanceReasons', 'legalBasis', 'publishedAt', 'analysisVersion', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'issueOrSubject', 'rulingOrRule', 'legalReasoning', 'effectiveDateOrDeadline', 'affectedProfiles', 'criteria', 'opportunity'],
   additionalProperties: false,
 };
 
@@ -74,10 +81,14 @@ const systemPrompt = `Você é um analista de inteligência tributária brasilei
 Priorize fonte oficial, novidade real, impacto jurídico e financeiro, abrangência, aderência a clientes e potencial de atuação.
 Separe rigorosamente fato confirmado, assunto em andamento, análise e oportunidade potencial.
 Não invente fatos, datas, tributos, efeitos ou direitos a crédito. Quando o documento não trouxer a informação, diga que ela não foi identificada.
-Preencha summary como "O que aconteceu": descreva o ato, julgamento ou publicação e o resultado efetivamente documentado.
-Preencha whatChanged como "O que mudou": explique a nova situação jurídica ou processual concreta, sem repetir o resumo.
-Preencha practicalImpact como "Impacto prático": diga quem é afetado, qual consequência concreta existe e se ainda cabe recurso ou depende de regulamentação.
-Em decisões judiciais, localize primeiro o dispositivo. Diferencie pedido da parte, argumentos, precedentes citados e conclusão do julgador. Nunca apresente o pedido do contribuinte como resultado da decisão.
+Preencha summary como "O que aconteceu": identifique o órgão, o ato/julgamento, o processo ou ato normativo, a data e o resultado efetivamente documentado.
+Preencha whatChanged como "O que mudou": explique a nova situação jurídica, tributária ou processual em comparação com a regra/status anterior; não reescreva o resumo.
+Preencha practicalImpact como "Impacto prático": diga quais empresas/operações são afetadas, qual providência concreta existe, o risco/oportunidade e, quando houver, prazo, vigência, modulação ou possibilidade de recurso.
+Preencha issueOrSubject como "Questão ou objeto": qual pedido, controvérsia, operação, obrigação ou ponto regulatório foi analisado.
+Preencha rulingOrRule como "Dispositivo ou regra": transcreva em paráfrase fiel o comando, conclusão, tese, resultado do julgamento ou alteração normativa; não confunda pedido com decisão.
+Preencha legalReasoning como "Fundamento": explique a razão jurídica usada pelo órgão, citando o artigo, precedente, Tema, princípio ou interpretação que aparece no documento.
+Preencha effectiveDateOrDeadline como "Vigência e prazo": informe datas de publicação, vigência, corte temporal, prazo, modulação, recurso ou diga claramente que isso não foi identificado.
+Em decisões judiciais, leia nesta ordem: ementa, relatório/pedido, fundamentação, dispositivo, modulação e conclusão. Diferencie pedido da parte, argumentos, precedentes citados e conclusão do julgador. Nunca apresente o pedido do contribuinte como resultado.
 Não use frases genéricas como "pode afetar o tema", "entrou no feed", "verifique a fonte" ou "o alcance deve ser conferido" quando o documento trouxer pedido, fundamento ou resultado identificável.
 ${policyPromptSummary()}
 Antes de marcar relevant=true, responda internamente: esta novidade faria um consultor recomendar providência, revisão, oportunidade, mudança de procedimento ou avaliação de risco a uma empresa? Se não, use relevant=false, businessActionable=false, noveltyType="Sem novidade concreta" e relevanceReasons=[].
@@ -85,7 +96,8 @@ Use prioridade Alta para mudança legislativa, regulamentar ou jurisprudencial c
 Classifique contentNature com rigor. Artigo, opinião, previsão ou comentário que apenas repete regra conhecida deve ser "Opinião ou conteúdo sem fato novo" e relevant=false. Uma Solução de Consulta ou parecer oficial é "Interpretação oficial"; norma, ato, decisão e movimentação oficial são "Fato oficial".
 Preencha legalBasis apenas com lei, artigo, ato, Tema, processo ou precedente expressamente identificado. Não invente referência.
 Notas: 0–3 irrelevante; 4–5 baixa; 6–7 relevante; 8 alta; 9–10 urgente. O campo publishedAt deve ser ISO 8601 ou vazio.
-Seja conciso: use no máximo duas frases curtas em cada campo textual. Responda exclusivamente conforme o schema JSON.`;
+Cada campo narrativo deve ter 1–3 frases densas, com os nomes, números, datas, artigos, percentuais, valores ou comandos existentes no documento. Não use "pode afetar", "deve ser conferido", "entrou no feed" ou "publicação identificada" como conteúdo. Os quatro campos de detalhamento devem responder perguntas diferentes; não copie a mesma frase entre summary, whatChanged, practicalImpact, issueOrSubject, rulingOrRule e legalReasoning. Se um dado realmente não existir, escreva "Não identificado no documento", sem inventar.
+Responda exclusivamente conforme o schema JSON.`;
 
 export function prepareDocumentText(text = '', limit = config.ollamaMaxInputCharacters) {
   const lines = String(text || '').replace(/\r\n?/g, '\n').split('\n').map((line) => line.replace(/[ \t]+/g, ' ').trim());
@@ -224,10 +236,15 @@ export function normalizeAnalysis(payload) {
     relevanceReasons: relevanceReasons.length || !payload.relevant ? relevanceReasons : ['clientes-empresariais'],
     legalBasis: boundedList(payload.legalBasis, 8, 160),
     publishedAt: publishedAt && !Number.isNaN(Date.parse(publishedAt)) ? publishedAt.slice(0, 35) : '',
+    analysisVersion: ANALYSIS_VERSION,
     summary: boundedText(payload.summary, 700),
     whatChanged: boundedText(payload.whatChanged, 700),
     practicalImpact: boundedText(payload.practicalImpact, 600),
     officeAction: boundedText(payload.officeAction, 500),
+    issueOrSubject: boundedText(payload.issueOrSubject, 600),
+    rulingOrRule: boundedText(payload.rulingOrRule, 700),
+    legalReasoning: boundedText(payload.legalReasoning, 700),
+    effectiveDateOrDeadline: boundedText(payload.effectiveDateOrDeadline, 400),
     affectedProfiles: boundedList(payload.affectedProfiles, 5, 80),
     criteria,
     opportunity: payload.opportunity && typeof payload.opportunity === 'object' ? {
@@ -262,7 +279,7 @@ export async function analyzeWithOllama(document) {
         think: false,
         keep_alive: '10m',
         format: analysisSchema,
-        options: { temperature: 0, num_ctx: 8192, num_predict: 1600 },
+        options: { temperature: 0, num_ctx: 8192, num_predict: 2200 },
         messages: [
           { role: 'system', content: `${systemPrompt}\nUse somente evidências explícitas do texto. Diferencie norma publicada de notícia, proposta ou hipótese. Finalize cada frase; não corte palavras nem sentenças.` },
           { role: 'user', content: analysisContext(document, documentText) },
@@ -311,7 +328,7 @@ export async function analyzeWithLlamaCpp(document) {
         model: config.llamaCppModel,
         messages: llamaCppMessages(document),
         temperature: 0,
-        max_tokens: 1600,
+        max_tokens: 2200,
         stream: false,
         response_format: {
           type: 'json_schema',

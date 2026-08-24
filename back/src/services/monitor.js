@@ -10,7 +10,7 @@ import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
 import { hasCandidateText, unpackCandidateText } from './candidateText.js';
 import { loadMonitoredSources } from './customSources.js';
 import { collectPublicSourceDocument } from './sourceSafety.js';
-import { assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
+import { assessAlertAnalysisQuality, assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -113,6 +113,7 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
       sourceDocumentType: candidate.sourceDocumentType,
       policyVersion: TAX_POLICY_VERSION,
+      analysisVersion: analysis.analysisVersion,
       fastTriage: candidate.fastTriage || fastTriageCandidate(candidate),
     },
     sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
@@ -662,7 +663,8 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
             && analysis.contentNature !== 'Opinião ou conteúdo sem fato novo'
             && analysis.businessActionable
             && analysis.noveltyType !== 'Sem novidade concreta'
-            && analysis.relevanceReasons.length > 0;
+            && analysis.relevanceReasons.length > 0
+            && assessAlertAnalysisQuality(alert).passed;
           const publish = !excludedTopic && primarySourceVerified && passesEditorialGate && analysis.relevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
           const discardReason = publish ? null

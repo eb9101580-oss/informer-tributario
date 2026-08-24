@@ -43,6 +43,13 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
         <section><h3>O que mudou</h3><p>{alert.whatChanged}</p></section>
         <section><h3>Impacto prático</h3><p>{alert.practicalImpact}</p></section>
 
+        {(alert.issueOrSubject || alert.rulingOrRule || alert.legalReasoning || alert.effectiveDateOrDeadline) && <section className="detail-evidence"><h3>Leitura objetiva do documento</h3>
+          {alert.issueOrSubject && <div><strong>Questão ou objeto</strong><p>{alert.issueOrSubject}</p></div>}
+          {alert.rulingOrRule && <div><strong>Dispositivo ou regra</strong><p>{alert.rulingOrRule}</p></div>}
+          {alert.legalReasoning && <div><strong>Fundamento identificado</strong><p>{alert.legalReasoning}</p></div>}
+          {alert.effectiveDateOrDeadline && <div><strong>Vigência e prazos</strong><p>{alert.effectiveDateOrDeadline}</p></div>}
+        </section>}
+
         <section><h3>Base jurídica</h3>{legalBasis.length
           ? <ul className="legal-basis-list">{legalBasis.map((basis) => <li key={basis}>{basis}</li>)}</ul>
           : <p>Referência jurídica não identificada no documento.</p>}</section>
