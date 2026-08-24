@@ -1,9 +1,271 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-22T03:39:05.693Z",
+    "lastUpdatedAt": "2026-08-24T08:37:08.975Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 154, de 20/08/2026 - IRPJ e CSLL: Não incidência da atualização monetária com Selic em ressarcimento de crédito presumido de IPI",
+      "theme": "IRPJ/CSLL",
+      "agency": "Receita Federal",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "Selic",
+        "IPI",
+        "RFB 2.055"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Risco",
+      "priority": "Alta",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Entendimento administrativo",
+      "relevanceReasons": [
+        "altera-interpretacao",
+        "risco-fiscal",
+        "fluxo-caixa",
+        "lucros-dividendos-jcp"
+      ],
+      "legalBasis": [
+        "Lei nº 9.363, de 13 de dezembro de 1996, arts. 1º e 4º",
+        "Lei nº 11.457, de 16 de março de 2007, art. 24",
+        "Instrução Normativa RFB nº 2.004, de 18 de janeiro de 2021, arts. 2º, 7º a 10",
+        "Instrução Normativa RFB nº 2.055, de 6 de dezembro de 2021, arts. 151, III e 152"
+      ],
+      "publishedAt": "2026-08-24",
+      "summary": "A Receita Federal publicou Solução de Consulta Cosit nº 154 de 20/08/2026, que confirma a não incidência do IRPJ e CSLL sobre a atualização monetária calculada com base na Selic recebida em decorrência da mora injustificada na análise de pedido de ressarcimento de crédito presumido de IPI, conforme tese do STF no tema nº 962. O documento estabelece que, se houver inclusão indevida na base de cálculo, o contribuinte deve retificar Escriturações Contábeis Fiscais e Declarações de Débitos e Créditos Tributários Federais, podendo solicitar restituição ou compensação dentro dos prazos legais.",
+      "whatChanged": "A Solução de Consulta Cosit nº 154 formaliza que, dentro dos marcos temporais da modulação do tema nº 962/STF, não há incidência do IRPJ e CSLL sobre a atualização monetária relativa ao pagamento em mora de ressarcimento de crédito presumido de IPI, quando calculada com base na Selic recebida por mora injustificada.",
+      "practicalImpact": "Empresas com IPI devem verificar se incluíram indevidamente a atualização monetária com Selic no cálculo do IRPJ e CSLL em ressarcimento de crédito presumido de IPI. Caso haja inclusão indevida, devem retificar Escriturações Contábeis Fiscais e Declarações de Débitos e Créditos Tributários Federais, podendo solicitar restituição ou compensação dentro dos prazos legais estabelecidos na Instrução Normativa RFB nº 2.055. Recurso é possível até o prazo legal.",
+      "officeAction": "Retificação de Escriturações Contábeis Fiscais e Declarações de Débitos e Créditos Tributários Federais para evitar incidência indevida do IRPJ e CSLL sobre atualização monetária com Selic em ressarcimento de crédito presumido de IPI.",
+      "affectedProfiles": [
+        "Empresas com IPI",
+        "Contribuintes do IRPJ",
+        "Contribuintes da CSLL",
+        "Empresas com ressarcimento de crédito presumido de IPI",
+        "Empresas com atualização monetária com Selic"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 9,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Retificação de tributação em ressarcimento de IPI",
+        "period": "",
+        "action": "Verificar inclusão indevida da atualização monetária com Selic no IRPJ e CSLL, retificar Escriturações Contábeis Fiscais e Declarações de Débitos e Créditos Tributários Federais, solicitar restituição ou compensação dentro dos prazos legais",
+        "confidence": "alto"
+      },
+      "id": "82fd8325-c052-4095-839e-838eb3e0d281",
+      "score": 8.8,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153046",
+      "primarySourceUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153046",
+      "sourceUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153046",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-24T08:37:08.924Z",
+      "updatedAt": "2026-08-24T08:37:08.924Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153046/visao/original",
+        "sourceCharacters": 6456,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-24T08:09:07.487Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "conteudo-de-merito",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 85,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "TESE_FIXADA_OU_ALTERADA",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "Solução de Consulta Cosit nº 155, de 20/08/2026: Benefício fiscal PERSE para empresas com lucro presumido até março de 2025",
+      "theme": "PERSE. Benefício fiscal. Lucro presumido. Alíquota zero. Termo final",
+      "agency": "Receita Federal",
+      "taxes": [
+        "IRPJ",
+        "CSLL",
+        "PERSE"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Solução de Consulta",
+      "impactType": "Oportunidade",
+      "priority": "Alta",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Mudança legislativa",
+      "relevanceReasons": [
+        "altera-obrigacao",
+        "altera-interpretacao",
+        "lucros-dividendos-jcp",
+        "clientes-empresariais"
+      ],
+      "legalBasis": [
+        "Lei nº 14.148, de 3 de maio de 2021, art. 4º, caput, incisos I a IV, §§ 1º, 4º, 12 e art. 4º-A",
+        "Lei nº 14.859, de 22 de maio de 2024, art. 1º",
+        "Lei nº 14.390, de 4 de julho de 2022, art. 4º",
+        "Lei nº 9.718, de 27 de novembro de 1998, art. 14",
+        "ADE RFB nº 2, de 21 de março de 2025",
+        "Instrução normativa RFB nº 1.700, de 14 de março de 2017, arts. 59 e 214, caput, e §§ 1º, 2º e 6º",
+        "Instrução Normativa RFB nº 2.195, de 23 de maio de 2024, arts. 3º e 4º"
+      ],
+      "publishedAt": "2026-08-24",
+      "summary": "A Receita Federal publicou Solução de Consulta Cosit nº 155 de 20/08/2026, que estabelece que empresas tributadas com base no lucro presumido e que se enquadram nas exigências do Perse poderão beneficiar-se da alíquota zero do IRPJ e CSLL até março de 2025, conforme previsto na Lei nº 14.148/2021. O benefício é aplicável a empresas que optaram pelo lucro presumido em 2025 e não se enquadram nas hipóteses de obrigatoriedade do regime lucro real.",
+      "whatChanged": "Empresas que optaram pelo lucro presumido em 2025 e não se enquadram nas hipóteses de obrigatoriedade do regime lucro real podem manter o benefício do Perse com alíquota zero do IRPJ e CSLL até março de 2025, desde que sejam tributadas com base no lucro presumido e atendam às exigências do Perse.",
+      "practicalImpact": "Empresas com atividade no setor de eventos que optaram pelo lucro presumido em 2025 e não se enquadram nas hipóteses de obrigatoriedade do regime lucro real podem reduzir o IRPJ e CSLL a zero até março de 2025. A mudança é aplicável a fatos geradores ocorridos até março de 2025 e não exige recurso, mas depende da opção de tributação com base no lucro presumido em 2025.",
+      "officeAction": "N/A",
+      "affectedProfiles": [
+        "Empresas com atividade no setor de eventos",
+        "Empresas optadas pelo lucro presumido em 2025",
+        "Empresas não enquadradas nas hipóteses de obrigatoriedade do regime lucro real",
+        "Empresas tributadas com base no lucro presumido",
+        "Empresas com alíquota zero do IRPJ e CSLL"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 9,
+        "legalImpact": 9,
+        "financialImpact": 9,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Benefício fiscal PERSE com alíquota zero para empresas com lucro presumido até março de 2025",
+        "period": "",
+        "action": "Empresas devem verificar se estão enquadradas no Perse e optaram pelo lucro presumido em 2025 para aproveitar a alíquota zero do IRPJ e CSLL até março de 2025",
+        "confidence": "alto"
+      },
+      "id": "c97deded-e652-4feb-a5da-0f2ab015e823",
+      "score": 8.9,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153047",
+      "primarySourceUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153047",
+      "sourceUrl": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153047",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-24T08:27:44.626Z",
+      "updatedAt": "2026-08-24T08:27:44.626Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153047/visao/original",
+        "sourceCharacters": 5016,
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "discoveredBy": "receita-normas",
+        "sourceType": "official",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "discoveredAt": "2026-08-24T08:09:07.487Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 85,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "ARE 1604795 AgR — DECISÃO: STF reconhece Repercussão Geral no RE 1.424.015/RG (Tema 1465) sobre crédito do ICMS em produtos intermediários",
@@ -63396,6 +63658,216 @@
   "monitor": {
     "candidates": [
       {
+        "title": "Solução de Consulta 155 Cosit 24/08/2026 Assunto: Normas Gerais de Direito Tributário PERSE. BENEFÍCIO FISCAL. LUCRO PRESUMIDO. ALÍQUOTA ZERO. TERMO FINAL. 2025. Pessoa jurídica tributada com base no lucro presumido e que se enquadrasse nas demais exigências do Perse, poderia se beneficiar da alíquo",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153047",
+        "publishedAt": "2026-08-24",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153047/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153047",
+        "fingerprintKey": "receita-normas:153047",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-24T08:09:07.487Z",
+        "id": "158e9911a8dbaea952f47352",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 85,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-24T08:27:44.680Z",
+        "analyzedPublishedAt": "2026-08-24",
+        "relevant": true,
+        "score": 8.9,
+        "discardReason": null,
+        "alertId": "c97deded-e652-4feb-a5da-0f2ab015e823",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
+        "title": "Solução de Consulta 154 Cosit 24/08/2026 Assunto: Imposto sobre a Renda de Pessoa Jurídica - IRPJ ATUALIZAÇÃO MONETÁRIA. SELIC. RESSARCIMENTO COM MORA. NÃO INCIDÊNCIA DO IMPOSTO. RETIFICAÇÃO. Tendo em vista a tese fixada pela decisão do Supremo Tribunal Federal, no tema nº 962, não há incidência do ",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153046",
+        "publishedAt": "2026-08-24",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153046/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153046",
+        "fingerprintKey": "receita-normas:153046",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-24T08:09:07.487Z",
+        "id": "93bef959027fa1f3b5863b0f",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "conteudo-de-merito",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 85,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "TESE_FIXADA_OU_ALTERADA",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-24T08:37:08.975Z",
+        "analyzedPublishedAt": "2026-08-24",
+        "relevant": true,
+        "score": 8.8,
+        "discardReason": null,
+        "alertId": "82fd8325-c052-4095-839e-838eb3e0d281",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
+        "title": "Ato Declaratório Executivo 5 SRRF06 24/08/2026 Altera o ADE SRRF06 nº 5, de 10 de setembro de 2018, publicado no DOU de 12 de setembro de 2018, que trata do Licenciamento e do Alfandegamento do Centro Logístico e Industrial Aduaneiro (CLIA) em Varginha, nos termos que menciona.",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153053",
+        "publishedAt": "2026-08-24",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153053/visao/original",
+        "documentKind": "Instrução Normativa ou ato da Receita Federal",
+        "externalId": "153053",
+        "fingerprintKey": "receita-normas:153053",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "receita-in",
+        "sourceName": "Receita Federal — Instruções Normativas",
+        "sourceAcronym": "IN RFB",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-24T08:09:07.472Z",
+        "id": "4888c17b227af3dfcbed0575",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 65,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 7,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      {
         "title": "Justiça afasta cobrança de contribuição de grãos sobre exportações no Maranhão",
         "url": "https://portal.jota.info/tributos/justica-afasta-cobranca-de-contribuicao-de-graos-sobre-exportacoes-no-maranhao",
         "publishedAt": "2026-08-23T10:06:54.000Z",
@@ -97474,6 +97946,611 @@
     ],
     "runs": [
       {
+        "id": "efb7e339-5f6f-4bed-8276-70be5c758c1f",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-24T08:18:29.060Z",
+        "finishedAt": "2026-08-24T08:37:09.082Z",
+        "discovered": 0,
+        "analyzed": 2,
+        "published": 2,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
+        "id": "8c531290-667c-40cc-8e94-c1eddaec0dc0",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-23",
+        "startedAt": "2026-08-24T08:10:38.642Z",
+        "finishedAt": "2026-08-24T08:16:51.648Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "548be733-ef5f-432c-9349-34d71f31af14",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-24T08:08:59.533Z",
+        "finishedAt": "2026-08-24T08:10:38.490Z",
+        "discovered": 287,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 4,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 180,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 21,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 56,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 17510,
+              "entries": 18,
+              "processed": 17510,
+              "dateMatched": 17510,
+              "decisionMatched": 7490,
+              "taxMatched": 2047,
+              "deduplicated": 2045,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24862,
+              "entries": 25,
+              "processed": 24862,
+              "dateMatched": 24862,
+              "decisionMatched": 9448,
+              "taxMatched": 4390,
+              "deduplicated": 4250,
+              "duplicates": 140,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 54,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 43436,
+              "entries": 44,
+              "processed": 43436,
+              "dateMatched": 43436,
+              "decisionMatched": 14164,
+              "taxMatched": 2186,
+              "deduplicated": 2185,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32139,
+              "entries": 33,
+              "processed": 32139,
+              "dateMatched": 32139,
+              "decisionMatched": 9758,
+              "taxMatched": 4104,
+              "deduplicated": 4007,
+              "duplicates": 97,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 55,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12094,
+              "entries": 13,
+              "processed": 12094,
+              "dateMatched": 12094,
+              "decisionMatched": 4691,
+              "taxMatched": 1090,
+              "deduplicated": 1086,
+              "duplicates": 4,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "098f70fe-0d82-4685-997f-1455e143cfaf",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -114985,554 +116062,9 @@
         "discarded": 0,
         "errors": 0,
         "sources": []
-      },
-      {
-        "id": "21002f42-54b3-4ba1-96f4-af52199f6aae",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-22",
-        "startedAt": "2026-08-23T10:39:13.915Z",
-        "finishedAt": "2026-08-23T10:45:34.017Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "27939bd2-d3fa-4665-a578-3e93d264b2da",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-23T10:32:50.997Z",
-        "finishedAt": "2026-08-23T10:39:13.826Z",
-        "discovered": 1,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 2,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 4,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 180,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 21,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "f264f211-4176-4432-b9f8-b286b3610f35",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-23T10:12:54.634Z",
-        "finishedAt": "2026-08-23T10:12:56.081Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-08-24T07:23:15.733Z",
-    "nextRunAt": "2026-08-24T13:23:15.733Z"
+    "lastRunAt": "2026-08-24T08:37:09.082Z",
+    "nextRunAt": "2026-08-24T14:37:09.082Z"
   }
 }
