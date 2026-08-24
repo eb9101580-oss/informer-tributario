@@ -1,9 +1,142 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-24T09:24:43.457Z",
+    "lastUpdatedAt": "2026-08-24T16:04:16.818Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "REQ 99/2026 - CAE: Requer audiência pública sobre implementação das fases da Reforma Tributária sobre o Consumo (IBS/CBS) para funcionamento em 1º de janeiro de 2027",
+      "theme": "Reforma Tributária sobre o Consumo",
+      "agency": "Senado Federal",
+      "taxes": [
+        "IBS",
+        "CBS",
+        "ICMS",
+        "PIS/Cofins",
+        "IRPJ/CSLL",
+        "JCP"
+      ],
+      "status": "Em andamento",
+      "kind": "Requerimento de audiência pública",
+      "impactType": "Risco",
+      "priority": "Média",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Obrigação acessória",
+      "relevanceReasons": [
+        "altera-obrigacao",
+        "altera-interpretacao",
+        "exige-sistema-processo",
+        "recuperacao-credito",
+        "clientes-empresariais"
+      ],
+      "legalBasis": [
+        "Emenda Constitucional nº 132/2023",
+        "Lei Complementar nº 214/2025",
+        "REQ 99/2026 - CAE"
+      ],
+      "publishedAt": "2026-08-24",
+      "summary": "O Senado Federal, por meio do requerimento 99/2026 da Comissão de Assuntos Econômicos, requer audiência pública para debater a implementação das fases da Reforma Tributária sobre o Consumo (Emenda Constitucional nº 132/2023 e Lei Complementar nº 214/2025), com foco específico nas soluções tecnológicas necessárias para a entrada em vigor das obrigações do IBS e CBS em 1º de janeiro de 2027.",
+      "whatChanged": "A necessidade de definir soluções tecnológicas para a implementação das obrigações do IBS e CBS em 1º de janeiro de 2027, que estão em tramitação na Comissão de Assuntos Econômicos do Senado Federal.",
+      "practicalImpact": "Empresas que devem implementar sistemas para o IBS e CBS a partir de 2027 estão expostas a risco de não conformidade se as soluções tecnológicas não estiverem prontas. Ainda há possibilidade de recurso até que a audiência pública seja realizada e as soluções sejam definidas.",
+      "officeAction": "Audiência pública na Comissão de Assuntos Econômicos para debater implementação das soluções tecnológicas do IBS e CBS em 1º de janeiro de 2027",
+      "affectedProfiles": [
+        "Empresas com obrigações do IBS e CBS",
+        "Sistemas de gestão tributária",
+        "Empresas de tecnologia tributária",
+        "Contribuintes do IBS e CBS",
+        "Organizações de consultoria tributária"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 7,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 9,
+        "actionPotential": 8
+      },
+      "opportunity": {
+        "title": "Preparação para implementação do IBS e CBS em 2027",
+        "period": "",
+        "action": "Avaliação de sistemas de gestão tributária e planejamento de recursos para a entrada em vigor do IBS e CBS em 1º de janeiro de 2027",
+        "confidence": "médio"
+      },
+      "id": "8234095e-a2ae-4211-b70e-7d2c4fee6b86",
+      "score": 7.4,
+      "relevance": "Relevante",
+      "officialUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175549",
+      "primarySourceUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175549",
+      "sourceUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175549",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-24T16:04:16.767Z",
+      "updatedAt": "2026-08-24T16:04:16.767Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175549",
+        "sourceCharacters": 2785,
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "discoveredBy": "senado-api",
+        "sourceType": "official",
+        "documentKind": "Matéria legislativa",
+        "discoveredAt": "2026-08-24T15:49:03.556Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "conteudo-de-merito",
+            "politica-p1:reforma-ibs-cbs"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 67,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "reforma-ibs-cbs"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Média",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      "sections": [
+        "reforma"
+      ]
+    },
     {
       "relevant": true,
       "title": "RE 1603619 AgR: STF confirma modulação de efeitos do Tema 745 para ICMS em energia elétrica",
@@ -63785,6 +63918,79 @@
   "monitor": {
     "candidates": [
       {
+        "title": "REQ 00099 2026 — Requer a realização de audiência pública no âmbito da Comissão de Assuntos Econômicos com o objetivo de debater o atual estágio de implementação das fases da Reforma Tributária sobre o Consumo(Emenda Constitucional nº 132/2023 e Lei Complementar nº 214/2025), com foco específico na disponibilização e no funcionamento das soluções tecnológicas necessárias à entrada em vigor, em 1º de janeiro de 2027, das obrigações relativas ao IBS e à CBS.",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175549",
+        "publishedAt": "2026-08-24",
+        "documentKind": "Matéria legislativa",
+        "externalId": "175549",
+        "sourceId": "senado",
+        "sourceName": "Senado Federal",
+        "sourceAcronym": "SF",
+        "sourceType": "official",
+        "sections": [
+          "reforma"
+        ],
+        "discoveryMethod": "senado-api",
+        "discoveredAt": "2026-08-24T15:49:03.556Z",
+        "id": "a5755b250c38f1377fb9a561",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "conteudo-de-merito",
+            "politica-p1:reforma-ibs-cbs"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 67,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "reforma-ibs-cbs"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Média",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-24T16:04:16.818Z",
+        "analyzedPublishedAt": "2026-08-24T09:11:00",
+        "relevant": true,
+        "score": 7.4,
+        "discardReason": null,
+        "alertId": "8234095e-a2ae-4211-b70e-7d2c4fee6b86",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
         "title": "O dilema da representação municipal na reforma tributária",
         "url": "https://portal.jota.info/opiniao-e-analise/colunas/coluna-da-abde/o-dilema-da-representacao-municipal-na-reforma-tributaria",
         "publishedAt": "2026-08-24T14:00:25.000Z",
@@ -98430,6 +98636,611 @@
     ],
     "runs": [
       {
+        "id": "515da013-e7c4-4053-bf27-966c160241e1",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-24T15:57:59.740Z",
+        "finishedAt": "2026-08-24T16:04:16.869Z",
+        "discovered": 0,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
+        "id": "3cb11de3-19da-4412-9572-1198891af3da",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-23",
+        "startedAt": "2026-08-24T15:50:37.396Z",
+        "finishedAt": "2026-08-24T15:56:52.167Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "7f1bb501-bf3e-467a-84fe-d6c0695e0072",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-24T15:48:53.698Z",
+        "finishedAt": "2026-08-24T15:50:37.258Z",
+        "discovered": 327,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 4,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 5,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 43,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 180,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 21,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 34,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 56,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 17510,
+              "entries": 18,
+              "processed": 17510,
+              "dateMatched": 17510,
+              "decisionMatched": 7490,
+              "taxMatched": 2047,
+              "deduplicated": 2045,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24862,
+              "entries": 25,
+              "processed": 24862,
+              "dateMatched": 24862,
+              "decisionMatched": 9448,
+              "taxMatched": 4390,
+              "deduplicated": 4250,
+              "duplicates": 140,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 54,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 43436,
+              "entries": 44,
+              "processed": 43436,
+              "dateMatched": 43436,
+              "decisionMatched": 14164,
+              "taxMatched": 2186,
+              "deduplicated": 2185,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32139,
+              "entries": 33,
+              "processed": 32139,
+              "dateMatched": 32139,
+              "decisionMatched": 9758,
+              "taxMatched": 4104,
+              "deduplicated": 4007,
+              "duplicates": 97,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 55,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12094,
+              "entries": 13,
+              "processed": 12094,
+              "dateMatched": 12094,
+              "decisionMatched": 4691,
+              "taxMatched": 1090,
+              "deduplicated": 1086,
+              "duplicates": 4,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 5,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "edfa06ec-9d1f-4b27-96c9-39c799ee7244",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -116361,554 +117172,9 @@
         "discarded": 0,
         "errors": 0,
         "sources": []
-      },
-      {
-        "id": "799df852-29bc-4b68-8f3f-b1f865d667ed",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-22",
-        "startedAt": "2026-08-23T15:37:34.520Z",
-        "finishedAt": "2026-08-23T15:43:48.974Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "dab5b70e-b1c1-440d-ac72-18d8a9a853ae",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-23T15:31:16.635Z",
-        "finishedAt": "2026-08-23T15:37:34.430Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 4,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 180,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 21,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "553d5d40-98fd-4228-8c6d-67698265bfdf",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-23T15:13:26.401Z",
-        "finishedAt": "2026-08-23T15:13:27.709Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-08-24T15:14:36.001Z",
-    "nextRunAt": "2026-08-24T21:14:36.001Z"
+    "lastRunAt": "2026-08-24T16:04:16.869Z",
+    "nextRunAt": "2026-08-24T22:04:16.869Z"
   }
 }
