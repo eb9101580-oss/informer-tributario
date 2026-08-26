@@ -36,7 +36,7 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
       <aside className="drawer">
         <button className="drawer__close icon-button" onClick={onClose} aria-label="Fechar"><X /></button>
         <div className="drawer__score"><strong>{String(alert.score).replace('.', ',')}</strong><span>/10 · {alert.relevance}</span></div>
-        <div className="drawer__tags"><span>Prioridade {editorialPriority}</span><span>{alert.status}</span><span>{alert.agency}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{(alert.taxes || []).map((tax) => <b key={tax}>{tax}</b>)}</div>
+        <div className="drawer__tags"><span>Prioridade {editorialPriority}</span><span>{alert.editorialFormat || 'Monitoramento'}</span><span>{alert.status}</span><span>{alert.agency}</span><span className="drawer__published">Publicado em {publishedLabel}</span>{(alert.taxes || []).map((tax) => <b key={tax}>{tax}</b>)}</div>
         <h2>{displayAlertTitle(alert.title)}</h2>
 
         <section><h3>O que aconteceu</h3><p>{alert.summary}</p></section>
@@ -48,6 +48,13 @@ export function DetailPanel({ alert, onClose, onFeedback, saved = false, onSave 
           {alert.rulingOrRule && <div><strong>Dispositivo ou regra</strong><p>{alert.rulingOrRule}</p></div>}
           {alert.legalReasoning && <div><strong>Fundamento identificado</strong><p>{alert.legalReasoning}</p></div>}
           {alert.effectiveDateOrDeadline && <div><strong>Vigência e prazos</strong><p>{alert.effectiveDateOrDeadline}</p></div>}
+        </section>}
+
+        {(alert.contextAndHistory || alert.actorsAndInterests || alert.nextSteps || alert.watchpoints) && <section className="detail-briefing"><h3>Briefing editorial</h3>
+          {alert.contextAndHistory && <div><strong>Contexto e histórico</strong><p>{alert.contextAndHistory}</p></div>}
+          {alert.actorsAndInterests && <div><strong>Atores e interesses</strong><p>{alert.actorsAndInterests}</p></div>}
+          {alert.nextSteps && <div><strong>Próximos passos</strong><p>{alert.nextSteps}</p></div>}
+          {alert.watchpoints && <div><strong>O que acompanhar</strong><p>{alert.watchpoints}</p></div>}
         </section>}
 
         <section><h3>Base jurídica</h3>{legalBasis.length

@@ -43,7 +43,8 @@ test('preserva parágrafos e normaliza a análise estruturada', () => {
     relevanceReasons: ['altera-obrigacao', 'altera-obrigacao'],
     legalBasis: ['Portaria RFB 123/2026'],
     publishedAt: '2026-08-19',
-    analysisVersion: 'detailed-v2',
+    analysisVersion: 'detailed-v3',
+    editorialFormat: 'Direto do Legislativo',
     summary: 'Resumo factual.',
     whatChanged: 'Alteração publicada.',
     practicalImpact: 'Revisar procedimentos.',
@@ -62,7 +63,8 @@ test('preserva parágrafos e normaliza a análise estruturada', () => {
   assert.equal(analysis.contentNature, 'Fato oficial');
   assert.deepEqual(analysis.relevanceReasons, ['altera-obrigacao']);
   assert.deepEqual(analysis.legalBasis, ['Portaria RFB 123/2026']);
-  assert.equal(analysis.analysisVersion, 'detailed-v2');
+  assert.equal(analysis.analysisVersion, 'detailed-v3');
+  assert.equal(analysis.editorialFormat, 'Direto do Legislativo');
   assert.match(analysis.rulingOrRule, /substitui/);
 });
 

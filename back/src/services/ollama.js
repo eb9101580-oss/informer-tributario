@@ -2,7 +2,16 @@ import { config } from '../config.js';
 import { Agent, fetch as undiciFetch } from 'undici';
 import { policyPromptSummary, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
-export const ANALYSIS_VERSION = 'detailed-v2';
+export const ANALYSIS_VERSION = 'detailed-v3';
+export const EDITORIAL_FORMATS = [
+  'Matinal',
+  'Direto da Corte',
+  'Direto do CARF',
+  'Direto do Legislativo',
+  'Apostas da Semana',
+  'Relatório especial',
+  'Monitoramento',
+];
 
 // O Ollama pode gastar vários minutos avaliando decisões longas antes do
 // primeiro token. O fetch padrão do Node encerra essa espera aos 300 segundos.
@@ -47,6 +56,7 @@ const analysisSchema = {
     legalBasis: { type: 'array', maxItems: 8, items: { type: 'string', maxLength: 160 } },
     publishedAt: { type: 'string', maxLength: 35 },
     analysisVersion: { type: 'string', enum: [ANALYSIS_VERSION] },
+    editorialFormat: { type: 'string', enum: EDITORIAL_FORMATS },
     summary: { type: 'string', maxLength: 700 },
     whatChanged: { type: 'string', maxLength: 700 },
     practicalImpact: { type: 'string', maxLength: 600 },
@@ -55,6 +65,10 @@ const analysisSchema = {
     rulingOrRule: { type: 'string', maxLength: 700 },
     legalReasoning: { type: 'string', maxLength: 700 },
     effectiveDateOrDeadline: { type: 'string', maxLength: 400 },
+    contextAndHistory: { type: 'string', maxLength: 700 },
+    actorsAndInterests: { type: 'string', maxLength: 700 },
+    nextSteps: { type: 'string', maxLength: 700 },
+    watchpoints: { type: 'string', maxLength: 600 },
     affectedProfiles: { type: 'array', maxItems: 5, items: { type: 'string', maxLength: 80 } },
     criteria: {
       type: 'object',
@@ -73,7 +87,7 @@ const analysisSchema = {
       ],
     },
   },
-  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'priority', 'contentNature', 'businessActionable', 'noveltyType', 'relevanceReasons', 'legalBasis', 'publishedAt', 'analysisVersion', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'issueOrSubject', 'rulingOrRule', 'legalReasoning', 'effectiveDateOrDeadline', 'affectedProfiles', 'criteria', 'opportunity'],
+  required: ['relevant', 'title', 'theme', 'agency', 'taxes', 'status', 'kind', 'impactType', 'priority', 'contentNature', 'businessActionable', 'noveltyType', 'relevanceReasons', 'legalBasis', 'publishedAt', 'analysisVersion', 'editorialFormat', 'summary', 'whatChanged', 'practicalImpact', 'officeAction', 'issueOrSubject', 'rulingOrRule', 'legalReasoning', 'effectiveDateOrDeadline', 'contextAndHistory', 'actorsAndInterests', 'nextSteps', 'watchpoints', 'affectedProfiles', 'criteria', 'opportunity'],
   additionalProperties: false,
 };
 
@@ -88,6 +102,11 @@ Preencha issueOrSubject como "Questão ou objeto": qual pedido, controvérsia, o
 Preencha rulingOrRule como "Dispositivo ou regra": transcreva em paráfrase fiel o comando, conclusão, tese, resultado do julgamento ou alteração normativa; não confunda pedido com decisão.
 Preencha legalReasoning como "Fundamento": explique a razão jurídica usada pelo órgão, citando o artigo, precedente, Tema, princípio ou interpretação que aparece no documento.
 Preencha effectiveDateOrDeadline como "Vigência e prazo": informe datas de publicação, vigência, corte temporal, prazo, modulação, recurso ou diga claramente que isso não foi identificado.
+Escolha editorialFormat conforme o fato: "Direto da Corte" para STF, STJ ou TRF; "Direto do CARF" para julgamentos do CARF; "Direto do Legislativo" para Congresso, projetos, comissões e reforma em tramitação; "Matinal" para notícia factual do dia; "Apostas da Semana" somente para agenda futura ou cenário explicitamente sustentado; "Relatório especial" para mudança ampla que exige contexto; use "Monitoramento" para andamento processual sem decisão de mérito.
+Preencha contextAndHistory como "Contexto e histórico": explique o que vinha acontecendo, qual regra ou tese anterior está em jogo e por que o fato surgiu agora. Não faça conjectura.
+Preencha actorsAndInterests como "Atores e interesses": identifique partes, órgãos, setores, relator, autor do projeto ou grupo afetado e o interesse explicitamente indicado; se não constar, diga isso.
+Preencha nextSteps como "Próximos passos": indique a próxima etapa institucional ou operacional documentada, como publicação do acórdão, prazo recursal, votação, regulamentação, entrada em vigor ou revisão de sistema.
+Preencha watchpoints como "O que acompanhar": liste até três pontos objetivos que podem alterar a leitura, como modulação, julgamento posterior, regulamentação, veto, recurso ou manual. Não crie previsões.
 Em decisões judiciais, leia nesta ordem: ementa, relatório/pedido, fundamentação, dispositivo, modulação e conclusão. Diferencie pedido da parte, argumentos, precedentes citados e conclusão do julgador. Nunca apresente o pedido do contribuinte como resultado.
 Não use frases genéricas como "pode afetar o tema", "entrou no feed", "verifique a fonte" ou "o alcance deve ser conferido" quando o documento trouxer pedido, fundamento ou resultado identificável.
 ${policyPromptSummary()}
@@ -96,7 +115,7 @@ Use prioridade Alta para mudança legislativa, regulamentar ou jurisprudencial c
 Classifique contentNature com rigor. Artigo, opinião, previsão ou comentário que apenas repete regra conhecida deve ser "Opinião ou conteúdo sem fato novo" e relevant=false. Uma Solução de Consulta ou parecer oficial é "Interpretação oficial"; norma, ato, decisão e movimentação oficial são "Fato oficial".
 Preencha legalBasis apenas com lei, artigo, ato, Tema, processo ou precedente expressamente identificado. Não invente referência.
 Notas: 0–3 irrelevante; 4–5 baixa; 6–7 relevante; 8 alta; 9–10 urgente. O campo publishedAt deve ser ISO 8601 ou vazio.
-Cada campo narrativo deve ter 1–3 frases densas, com os nomes, números, datas, artigos, percentuais, valores ou comandos existentes no documento. Não use "pode afetar", "deve ser conferido", "entrou no feed" ou "publicação identificada" como conteúdo. Os quatro campos de detalhamento devem responder perguntas diferentes; não copie a mesma frase entre summary, whatChanged, practicalImpact, issueOrSubject, rulingOrRule e legalReasoning. Se um dado realmente não existir, escreva "Não identificado no documento", sem inventar.
+Cada campo narrativo deve ter 1–3 frases densas, com os nomes, números, datas, artigos, percentuais, valores ou comandos existentes no documento. Não use "pode afetar", "deve ser conferido", "entrou no feed" ou "publicação identificada" como conteúdo. Os campos devem responder perguntas diferentes; não copie a mesma frase entre summary, whatChanged, practicalImpact, issueOrSubject, rulingOrRule, legalReasoning, contextAndHistory, actorsAndInterests, nextSteps e watchpoints. Se um dado realmente não existir, escreva "Não identificado no documento", sem inventar.
 Responda exclusivamente conforme o schema JSON.`;
 
 export function prepareDocumentText(text = '', limit = config.ollamaMaxInputCharacters) {
@@ -237,6 +256,7 @@ export function normalizeAnalysis(payload) {
     legalBasis: boundedList(payload.legalBasis, 8, 160),
     publishedAt: publishedAt && !Number.isNaN(Date.parse(publishedAt)) ? publishedAt.slice(0, 35) : '',
     analysisVersion: ANALYSIS_VERSION,
+    editorialFormat: EDITORIAL_FORMATS.includes(payload.editorialFormat) ? payload.editorialFormat : 'Monitoramento',
     summary: boundedText(payload.summary, 700),
     whatChanged: boundedText(payload.whatChanged, 700),
     practicalImpact: boundedText(payload.practicalImpact, 600),
@@ -245,6 +265,10 @@ export function normalizeAnalysis(payload) {
     rulingOrRule: boundedText(payload.rulingOrRule, 700),
     legalReasoning: boundedText(payload.legalReasoning, 700),
     effectiveDateOrDeadline: boundedText(payload.effectiveDateOrDeadline, 400),
+    contextAndHistory: boundedText(payload.contextAndHistory, 700),
+    actorsAndInterests: boundedText(payload.actorsAndInterests, 700),
+    nextSteps: boundedText(payload.nextSteps, 700),
+    watchpoints: boundedText(payload.watchpoints, 600),
     affectedProfiles: boundedList(payload.affectedProfiles, 5, 80),
     criteria,
     opportunity: payload.opportunity && typeof payload.opportunity === 'object' ? {

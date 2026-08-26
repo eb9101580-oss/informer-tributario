@@ -1,5 +1,5 @@
 export const TAX_POLICY_VERSION = 'consultoria-empresarial-v2';
-export const DETAILED_ANALYSIS_VERSION = 'detailed-v2';
+export const DETAILED_ANALYSIS_VERSION = 'detailed-v3';
 
 function normalize(value = '') {
   return String(value)
@@ -260,7 +260,8 @@ export function assessPublishedAlert(alert = {}) {
     documentKind: alert.kind || alert.provenance?.documentKind,
     content: [
       alert.summary, alert.whatChanged, alert.practicalImpact, alert.officeAction, alert.issueOrSubject,
-      alert.rulingOrRule, alert.legalReasoning, alert.effectiveDateOrDeadline, alert.theme,
+      alert.rulingOrRule, alert.legalReasoning, alert.effectiveDateOrDeadline, alert.contextAndHistory,
+      alert.actorsAndInterests, alert.nextSteps, alert.watchpoints, alert.theme,
       alert.contentNature, alert.noveltyType, alert.priority, ...(alert.relevanceReasons || []),
       ...(alert.taxes || []), ...(alert.legalBasis || []),
     ].filter(Boolean).join(' '),
@@ -293,6 +294,10 @@ export function assessAlertAnalysisQuality(alert = {}) {
       ['issueOrSubject', alert.issueOrSubject, 25],
       ['rulingOrRule', alert.rulingOrRule, 35],
       ['legalReasoning', alert.legalReasoning, 35],
+      ['contextAndHistory', alert.contextAndHistory, 35],
+      ['actorsAndInterests', alert.actorsAndInterests, 25],
+      ['nextSteps', alert.nextSteps, 35],
+      ['watchpoints', alert.watchpoints, 25],
     ];
     for (const [name, value, minimumLength] of detailFields) {
       const normalized = normalize(value);
@@ -302,6 +307,8 @@ export function assessAlertAnalysisQuality(alert = {}) {
     const narratives = [
       ['summary', alert.summary], ['whatChanged', alert.whatChanged], ['practicalImpact', alert.practicalImpact],
       ['issueOrSubject', alert.issueOrSubject], ['rulingOrRule', alert.rulingOrRule], ['legalReasoning', alert.legalReasoning],
+      ['contextAndHistory', alert.contextAndHistory], ['actorsAndInterests', alert.actorsAndInterests],
+      ['nextSteps', alert.nextSteps], ['watchpoints', alert.watchpoints],
     ];
     for (let index = 0; index < narratives.length; index += 1) {
       for (let next = index + 1; next < narratives.length; next += 1) {
