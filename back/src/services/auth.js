@@ -136,6 +136,23 @@ export function validateAuthConfiguration() {
   return { adminEmail, adminPassword };
 }
 
+function validateAuthRuntimeConfiguration() {
+  assertDatabaseConfigured();
+  const secret = String(process.env.BETTER_AUTH_SECRET || '');
+  if (secret.length < 32) {
+    const error = new Error('BETTER_AUTH_SECRET deve ter pelo menos 32 caracteres aleatórios.');
+    error.statusCode = 503;
+    error.code = 'AUTH_SECRET_NOT_CONFIGURED';
+    throw error;
+  }
+}
+
+function hasAdminBootstrapCredentials() {
+  const email = normalizeEmail(process.env.AUTH_ADMIN_EMAIL);
+  const password = String(process.env.AUTH_ADMIN_PASSWORD || '');
+  return validEmail(email) && password.length >= 10 && password.length <= 128;
+}
+
 export async function bootstrapAdminUser() {
   const { adminEmail, adminPassword } = validateAuthConfiguration();
   const adminName = String(process.env.AUTH_ADMIN_NAME || '').trim().slice(0, 120)
@@ -178,9 +195,9 @@ let initializationPromise = null;
 export function initializeAuthPersistence() {
   if (initializationPromise) return initializationPromise;
   initializationPromise = (async () => {
-    validateAuthConfiguration();
+    validateAuthRuntimeConfiguration();
     await ensureAppSchema();
-    await bootstrapAdminUser();
+    if (hasAdminBootstrapCredentials()) await bootstrapAdminUser();
   })().catch((error) => {
     initializationPromise = null;
     throw error;
