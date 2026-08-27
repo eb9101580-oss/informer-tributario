@@ -6,6 +6,7 @@ BACKEND_DIR="$APP_DIR/back"
 ENV_FILE="$BACKEND_DIR/.env"
 SERVICE_FILE="/etc/systemd/system/informer.service"
 NGINX_FILE="/etc/nginx/sites-enabled/jurispr"
+NGINX_BACKUP_DIR="/etc/nginx/backups"
 
 if [[ "$(id -u)" -ne 0 ]]; then
   echo "Execute este script como root."
@@ -22,7 +23,20 @@ if [[ ! -f "$NGINX_FILE" ]]; then
   exit 1
 fi
 
-cp -a "$NGINX_FILE" "$NGINX_FILE.backup-$(date +%Y%m%d-%H%M%S)"
+mkdir -p "$NGINX_BACKUP_DIR"
+find /etc/nginx/sites-enabled -maxdepth 1 -type f -name 'jurispr.backup*' \
+  -exec mv -t "$NGINX_BACKUP_DIR" {} +
+cp -a "$NGINX_FILE" "$NGINX_BACKUP_DIR/jurispr-$(date +%Y%m%d-%H%M%S)"
+
+if ! grep -Eq '^BETTER_AUTH_SECRET=.{32,}$' "$ENV_FILE"; then
+  auth_secret="$(openssl rand -hex 32)"
+  if grep -q '^BETTER_AUTH_SECRET=' "$ENV_FILE"; then
+    sed -i "s|^BETTER_AUTH_SECRET=.*$|BETTER_AUTH_SECRET=$auth_secret|" "$ENV_FILE"
+  else
+    printf '\nBETTER_AUTH_SECRET=%s\n' "$auth_secret" >> "$ENV_FILE"
+  fi
+  unset auth_secret
+fi
 
 cat > "$SERVICE_FILE" <<'EOF'
 [Unit]
@@ -88,6 +102,8 @@ systemctl reload nginx
 
 sleep 2
 curl -fsS http://127.0.0.1:3334/api/health
+echo
+curl -fsSL https://vps70435.publiccloud.com.br/informer-api
 echo
 systemctl --no-pager --full status informer.service | sed -n '1,12p'
 echo
