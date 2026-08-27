@@ -14,7 +14,13 @@ PAYLOAD_FILE="$(mktemp)"
 NEW_ENV="$(mktemp)"
 trap 'rm -f "$PAYLOAD_FILE" "$NEW_ENV"' EXIT
 
-printf '%s' "$PAYLOAD_HEX" | xxd -r -p > "$PAYLOAD_FILE"
+python3 - "$PAYLOAD_HEX" "$PAYLOAD_FILE" <<'PY'
+import sys
+
+payload_hex, destination = sys.argv[1:]
+with open(destination, 'wb') as output:
+    output.write(bytes.fromhex(payload_hex))
+PY
 
 for key in DATABASE_URL AUTH_ADMIN_EMAIL AUTH_ADMIN_PASSWORD; do
   grep -q "^${key}=" "$PAYLOAD_FILE" || {
