@@ -1,9 +1,407 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-08-29T03:55:29.635Z",
+    "lastUpdatedAt": "2026-08-31T14:53:26.828Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "ARE 1553878 ED — EMBARGOS DE DECLARAÇÃO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DOS VALORES RELATIVOS AO ICMS",
+      "theme": "PIS/Cofins",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Julgamento ou precedente",
+      "impactType": "Risco",
+      "priority": "Alta",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Julgamento ou precedente",
+      "relevanceReasons": [
+        "altera-obrigacao",
+        "altera-interpretacao",
+        "risco-fiscal",
+        "fluxo-caixa",
+        "lucros-dividendos-jcp"
+      ],
+      "legalBasis": [
+        "ARE 1553878 ED",
+        "TEMA 69 DE REPERCUSSÃO GERAL",
+        "TEMA 1.279 DE REPERCUSSÃO GERAL",
+        "RECURSO EXTRAORDINÁRIO PARCIALMENTE PROVIDO",
+        "EMBARGOS DE DECLARAÇÃO PROVIDOS",
+        "ERRO MATERIAL",
+        "EXISTÊNCIA"
+      ],
+      "publishedAt": "2026-08-31",
+      "summary": "O Supremo Tribunal Federal decidiu que não se viabiliza o pedido de repetição do indébito ou compensação do tributo declarado inconstitucional se o fato gerador ocorreu antes do marco temporal fixado pelo STF, ressalvadas ações judiciais e procedimentos administrativos protocolados até 15/3/2017. A decisão foi publicada em 18/10/2023 e afeta a base de cálculo do PIS/Cofins, excluindo valores relativos ao ICMS.",
+      "whatChanged": "O STF estabeleceu que a base de cálculo do PIS/Cofins não inclui valores relativos ao ICMS quando o fato gerador ocorreu antes do marco temporal de 15/3/2017, com exceção de ações judiciais e procedimentos administrativos até essa data.",
+      "practicalImpact": "Empresas com fato gerador de PIS/Cofins antes de 15/3/2017 devem revisar a base de cálculo, excluindo valores relativos ao ICMS. O recurso de repetição do indébito não é viável, mas ações judiciais e procedimentos administrativos até 15/3/2017 permanecem válidos. Recurso a decisão é possível até 15/3/2024.",
+      "officeAction": "Revisão da base de cálculo do PIS/Cofins para excluir valores relativos ao ICMS em casos de fato gerador anterior a 15/3/2017, com exceção de ações judiciais e procedimentos administrativos até essa data.",
+      "affectedProfiles": [
+        "Empresas com fato gerador de PIS/Cofins antes de 15/3/2017",
+        "Contribuintes do ICMS",
+        "Empresas com operações tributárias antes do marco temporal",
+        "Empresas com ações judiciais ou procedimentos administrativos até 15/3/2017",
+        "Empresas com base de cálculo do PIS/Cofins incluindo ICMS"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 7,
+        "reach": 8,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Revisão da base de cálculo do PIS/Cofins para exclusão de valores relativos ao ICMS",
+        "period": "",
+        "action": "Revisar a base de cálculo do PIS/Cofins, excluindo valores relativos ao ICMS em casos de fato gerador anterior a 15/3/2017, com exceção de ações judiciais e procedimentos administrativos até essa data",
+        "confidence": "alto"
+      },
+      "id": "9316f537-1fe9-49d9-98fb-a964493fa496",
+      "score": 8.5,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+      "primarySourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+      "sourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-31T14:53:26.778Z",
+      "updatedAt": "2026-08-31T14:53:26.778Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+        "sourceCharacters": 1210,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "ARE 1619520 — DECISÃO STF: Modulação de efeitos do DIFAL no exercício de 2022",
+      "theme": "Modulação de efeitos do DIFAL no exercício de 2022",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "ICMS",
+        "DIFAL",
+        "Lei Complementar 190/2022",
+        "Tema 1.266 STF"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Julgamento ou precedente",
+      "impactType": "Risco",
+      "priority": "Alta",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Julgamento ou precedente",
+      "relevanceReasons": [
+        "altera-obrigacao",
+        "altera-interpretacao",
+        "risco-fiscal",
+        "fluxo-caixa",
+        "lucros-dividendos-jcp"
+      ],
+      "legalBasis": [
+        "Art. 1.030, II, CPC",
+        "Tema 1.266 STF",
+        "Lei Complementar nº 190/2022",
+        "DIFAL (Diferencial de Alíquota do ICMS)"
+      ],
+      "publishedAt": "2026-08-31",
+      "summary": "O STF decidiu sobre recurso extraordinário com agravo contra inadmissão de recurso, com fundamento na alínea 'a' do permissivo constitucional. O julgamento trata da inexigibilidade do DIFAL do ICMS no exercício de 2022 para operações interestaduais destinadas a consumidor final não contribuinte, com base na Lei Complementar nº 190/2022 e modulação de efeitos do Tema 1.266.",
+      "whatChanged": "O STF estabeleceu que o DIFAL não é exigível no exercício de 2022 para operações interestaduais com consumidor final não contribuinte, conforme modulação de efeitos do Tema 1.266, impactando a tributação do ICMS.",
+      "practicalImpact": "Contribuintes de ICMS devem revisar a tributação de operações interestaduais para consumidor final não contribuinte no exercício de 2022, evitando recolhimento do DIFAL. Recursos podem ser ajuizados até o prazo de retratação do CPC.",
+      "officeAction": "Revisão da tributação de operações interestaduais para consumidor final não contribuinte no exercício de 2022, com foco no DIFAL.",
+      "affectedProfiles": [
+        "Empresas de ICMS",
+        "Contribuintes de operações interestaduais",
+        "Sistemas de tributação do ICMS",
+        "Jurisprudência STF",
+        "Receita Federal"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Revisão da tributação do DIFAL no exercício de 2022",
+        "period": "",
+        "action": "Revisar a tributação de operações interestaduais para consumidor final não contribuinte no exercício de 2022, evitando recolhimento do DIFAL",
+        "confidence": "alto"
+      },
+      "id": "ca2d0fa7-465f-4b3c-b19e-8bc2e7e0ea82",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+      "primarySourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+      "sourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-31T14:47:57.847Z",
+      "updatedAt": "2026-08-31T14:47:57.847Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+        "sourceCharacters": 1205,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Decisão monocrática do STF",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
+    {
+      "relevant": true,
+      "title": "RE 1607928 AgR: Exclusão do ICMS da base de cálculo do PIS e COFINS com modulação de efeitos (Tema 69 da Repercussão Geral)",
+      "theme": "ICMS empresarial",
+      "agency": "Supremo Tribunal Federal",
+      "taxes": [
+        "PIS",
+        "COFINS",
+        "ICMS"
+      ],
+      "status": "Fato confirmado",
+      "kind": "Julgamento ou precedente",
+      "impactType": "Risco",
+      "priority": "Alta",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Julgamento ou precedente",
+      "relevanceReasons": [
+        "altera-obrigacao",
+        "altera-interpretacao",
+        "exige-sistema-processo",
+        "risco-fiscal",
+        "fluxo-caixa",
+        "lucros-dividendos-jcp"
+      ],
+      "legalBasis": [
+        "RE 574.706/PR (Tema 69/RG)",
+        "Súmulas 282 e 356/STF",
+        "Tema 1.279/RG"
+      ],
+      "publishedAt": "2026-08-31",
+      "summary": "O Supremo Tribunal Federal, no RE 574.706/PR (Tema 69/RG), determinou que a exclusão do ICMS da base de cálculo do PIS e COFINS produz efeitos a partir de 15/03/2017, ressalvadas ações judiciais e procedimentos administrativos até essa data. A modulação de efeitos impede a desconstituição de créditos tributários consolidados em período pretérito por meio de embargos à execução fiscal opostos após a data de corte.",
+      "whatChanged": "A exclusão do ICMS da base de cálculo do PIS e COFINS passa a produzir efeitos a partir de 15/03/2017, excluindo a possibilidade de desconstituição de créditos tributários consolidados em período pretérito por meio de embargos à execução fiscal opostos após essa data.",
+      "practicalImpact": "Empresas com ICMS destacado na base de cálculo do PIS e COFINS devem revisar créditos tributários consolidados até 15/03/2017. Não há recurso possível, mas é necessário ajustar a contabilidade para evitar risco de desconstituição de créditos em período pretérito.",
+      "officeAction": "Revisão de créditos tributários consolidados para evitar desconstituição em período pretérito após 15/03/2017.",
+      "affectedProfiles": [
+        "Empresas com ICMS destacado na base de cálculo do PIS e COFINS",
+        "Contribuintes de PIS e COFINS",
+        "Empresas com tributação de ICMS",
+        "Empresas com crédito tributário consolidado",
+        "Empresas com embargos à execução fiscal"
+      ],
+      "criteria": {
+        "authority": 9,
+        "novelty": 8,
+        "legalImpact": 9,
+        "financialImpact": 8,
+        "reach": 9,
+        "clientFit": 9,
+        "actionPotential": 9
+      },
+      "opportunity": {
+        "title": "Revisão de créditos tributários consolidados para evitar desconstituição em período pretérito",
+        "period": "",
+        "action": "Revisão de créditos tributários consolidados para evitar desconstituição em período pretérito após 15/03/2017",
+        "confidence": "alto"
+      },
+      "id": "cd89cef2-24d9-4f98-a358-0568ce7ae7a4",
+      "score": 8.7,
+      "relevance": "Alta relevância",
+      "officialUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+      "primarySourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+      "sourceUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-08-31T14:43:28.319Z",
+      "updatedAt": "2026-08-31T14:43:28.319Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Consulta oficial estruturada",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+        "sourceCharacters": 1712,
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "discoveredBy": "stf-jurisprudence",
+        "sourceType": "official",
+        "documentKind": "Acórdão do STF",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "PL 5211/2026: Isenção do IPI na aquisição de veículos novos para transporte escolar",
@@ -68512,6 +68910,1010 @@
   "monitor": {
     "candidates": [
       {
+        "title": "Solução de Consulta 164 Cosit 31/08/2026 Assunto: Imposto sobre a Renda de Pessoa Jurídica - IRPJ LEI Nº 14.871, DE 28 DE MAIO DE 2024. DEPRECIAÇÃO ACELERADA. PERÍODO DE APURAÇÃO INFERIOR A DOZE MESES. Para fins de apuração do Imposto sobre a Renda das Pessoas Jurídicas (IRPJ), no regime de deprecia",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153191",
+        "publishedAt": "2026-08-31",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153191/visao/original",
+        "documentKind": "Solução de Consulta ou Divergência COSIT",
+        "externalId": "153191",
+        "fingerprintKey": "receita-normas:153191",
+        "sections": [],
+        "sourceId": "receita-cosit",
+        "sourceName": "Receita Federal — Soluções COSIT",
+        "sourceAcronym": "COSIT",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-31T14:09:02.483Z",
+        "id": "d1dec36ceeb499100964a2fa",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 67,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Média",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Portaria 357 Codar 31/08/2026 Dispõe sobre a auditoria de Pedidos de Restituição e Declarações de Compensação - PER/DCOMP relativos a créditos previdenciários.",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153199",
+        "publishedAt": "2026-08-31",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153199/visao/original",
+        "documentKind": "Instrução Normativa ou ato da Receita Federal",
+        "externalId": "153199",
+        "fingerprintKey": "receita-normas:153199",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "receita-in",
+        "sourceName": "Receita Federal — Instruções Normativas",
+        "sourceAcronym": "IN RFB",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-31T14:09:02.510Z",
+        "id": "88e0007dff1ac5d3f329db55",
+        "status": "error",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "conteudo-de-merito",
+            "politica-p1:recuperacao-perdcomp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 85,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "recuperacao-perdcomp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "error": "A análise do Ollama excedeu 10 minutos.",
+        "analyzedAt": "2026-08-31T14:38:17.123Z"
+      },
+      {
+        "title": "Portaria Conjunta 1176 SRRF09 31/08/2026 Aprova o Regulamento de Utilização do Acesso de Serviço da Ponte Internacional da Amizade.",
+        "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153202",
+        "publishedAt": "2026-08-31",
+        "collectionUrl": "https://normasinternet2.receita.fazenda.gov.br/api/consulta-externa/ato/153202/visao/original",
+        "documentKind": "Instrução Normativa ou ato da Receita Federal",
+        "externalId": "153202",
+        "fingerprintKey": "receita-normas:153202",
+        "sections": [
+          "reforma",
+          "obrigacoes"
+        ],
+        "sourceId": "receita-in",
+        "sourceName": "Receita Federal — Instruções Normativas",
+        "sourceAcronym": "IN RFB",
+        "sourceType": "official",
+        "discoveryMethod": "receita-normas",
+        "discoveredAt": "2026-08-31T14:09:02.510Z",
+        "id": "aa18e611fbc0edba84f861ab",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 45,
+          "band": "media",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "efeito-operacional"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 7,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        }
+      },
+      {
+        "title": "RE 1607928 AgR — Ementa: DIREITO TRIBUTÁRIO . AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. EXCLUSÃO DO ICMS DA BASE DE CÁLCULO DO PIS E DA COFINS. TEMA 69 DA REPERCUSSÃO GERAL. MODULAÇÃO DE EFEITOS (RE 574.706-ED). MARCO TEMPORAL. 15/03/2017. EMBARGOS À EXECUÇÃO FISCAL PROTOCO",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1607928&classe=RE",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Acórdão do STF",
+        "externalId": "sjur570804",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/sjur570804/false",
+        "inlineText": "Ementa: DIREITO TRIBUTÁRIO . AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. EXCLUSÃO DO ICMS DA BASE DE CÁLCULO DO PIS E DA COFINS. TEMA 69 DA REPERCUSSÃO GERAL. MODULAÇÃO DE EFEITOS (RE 574.706-ED). MARCO TEMPORAL. 15/03/2017. EMBARGOS À EXECUÇÃO FISCAL PROTOCOLADOS EM DATA POSTERIOR. FATOS GERADORES ANTERIORES. IMPOSSIBILIDADE DE AFASTAMENTO DA COMPOSIÇÃO DA BASE DE CÁLCULO. TEMA 1.279 DA SISTEMÁTICA DA REPERCUSSÃO GERAL. ALEGADA EXISTÊNCIA DE MANDADO DE SEGURANÇA ANTERIOR. INOVAÇÃO RECURSAL. AUSÊNCIA DE PREQUESTIONAMENTO E DE REGISTRO NAS INSTÂNCIAS ORDINÁRIAS. AGRAVO NÃO PROVIDO. 1. O Plenário do Supremo Tribunal Federal, ao julgar os Embargos de Declaração no RE 574.706/PR (Tema 69/RG), modulou os efeitos da tese jurídica para determinar que a exclusão do ICMS destacado da base de cálculo do PIS e da COFINS produz efeitos estritamente a partir de 15/03/2017, ressalvadas as ações judiciais e os procedimentos administrativos protocolados até aquela data. 2. O entendimento firmado por esta Suprema Corte no Tema 1.279/RG explicita que o marco temporal da modulação atinge diretamente o fato gerador do tributo, revelando-se inviável a desconstituição de créditos tributários consolidados em período pretérito por meio de embargos à execução fiscal opostos supervenientemente à data de corte (ajuizados, no caso, em 06/09/2017). 3. É inviável o conhecimento de argumentação fundada em suposta ação declaratória prévia (Mandado de Segurança de 2006) quando a matéria não foi objeto de debate pelo Tribunal de origem, carecendo do indispensável prequestionamento (Súmulas 282 e 356/STF), configurando indébita inovação recursal em sede de agravo regimental. 4. Agravo interno conhecido e não provido.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "id": "77333d1dd8df38ef20224a33",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-31T14:43:28.371Z",
+        "analyzedPublishedAt": "2017-03-15T00:00:00",
+        "relevant": true,
+        "score": 8.7,
+        "discardReason": null,
+        "alertId": "cd89cef2-24d9-4f98-a358-0568ce7ae7a4",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
+        "title": "ARE 1619520 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1619520&classe=ARE",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1815123",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1815123/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO CÍVEL EM MANDADO DE SEGURANÇA. ICMS. DIFERENCIAL DE ALÍQUOTA (DIFAL). LEI COMPLEMENTAR Nº 190/2022. TEMA 1.266 DO STF. MODULAÇÃO DE EFEITOS. AÇÃO AJUIZADA EM 2022. INEXIGIBILIDADE DO DIFAL NO EXERCÍCIO DE 2022. REJULGAMENTO EM JUÍZO DE RETRATAÇÃO. APELAÇÃO PARCIALMENTE PROVIDA. I. CASO EM EXAME 1. Apelação cível interposta em mandado de segurança no qual se pleiteia a reforma da sentença para declarar a inexigibilidade do DIFAL do ICMS nas operações interestaduais destinadas a consumidor final não contribuinte, em razão da publicação da Lei Complementar nº 190/2022, sendo o feito submetido a juízo de retratação nos termos do art. 1.030, II, do CPC, após o julgamento do Tema 1.266 pelo STF. II. QUESTÃO EM DISCUSSÃO 2. Questão em discussão: definir se é exigível o DIFAL do ICMS no exercício financeiro de 2022, diante da modulação de efeitos fixada pelo STF no Tema 1.266, em relação aos contribuintes que ajuizaram ação judicial",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "id": "c8beef32c1c2ee330798d325",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-31T14:47:57.904Z",
+        "analyzedPublishedAt": "2023-10-18T00:00:00",
+        "relevant": true,
+        "score": 8.7,
+        "discardReason": null,
+        "alertId": "ca2d0fa7-465f-4b3c-b19e-8bc2e7e0ea82",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
+        "title": "ARE 1619277 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . MANDADO DE",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815149/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1619277&classe=ARE",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1815149",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1815149/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: TRIBUTÁRIO . MANDADO DE SEGURANÇA. EXCLUSÃO DO ICMS-ST DA BASE DE CÁLCULO DE PIS E COFINS. TEMA REPETITIVO 1125 DO STJ. MODULAÇÃO DOS EFEITOS. DIREITO À COMPENSAÇÃO ADMINISTRATIVA. JUÍZO DE RETRATAÇÃO EXERCIDO. 1. No julgamento dos Recursos Especiais nºs 1.896.678 e 1.958.265, firmou-se a tese de que \"o ICMSST não compõe a base de cálculo da contribuição ao PIS e à Cofins devida pelo contribuinte substituído no regime de substituição tributária progressiva\" (Tema Repetitivo 1125). 2. Uma vez que a supracitada decisão produz efeitos vinculantes, nos termos do art. 927, III do CPC, e que o entendimento consolidado se aplica ao presente caso, há que se promover a adequação do julgamento à tese fixada em repercussão geral, reconhecendo, por corolário, parcialmente o pedido principal pleiteado neste mandamus. 3. No julgamento do Tema Repetitivo 1125/STJ, o Eg. STJ decidiu aplicar a modulação dos efeitos nos mesmos moldes em que fixada a tese no Tema 69/RG",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "id": "04a4374953dfb787a9e406b3",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      {
+        "title": "ARE 1553878 ED — EMBARGOS DE DECLARAÇÃO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DOS VALORES RELATIVOS AO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. MODULAÇÃO DE EFEITOS. NÃO SE VIABILIZA O PEDIDO DE REPETIÇÃO DO INDÉBITO OU D",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1553878&classe=ARE",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1815514",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1815514/false",
+        "inlineText": "EMBARGOS DE DECLARAÇÃO NO RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DOS VALORES RELATIVOS AO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. MODULAÇÃO DE EFEITOS. NÃO SE VIABILIZA O PEDIDO DE REPETIÇÃO DO INDÉBITO OU DE COMPENSAÇÃO DO TRIBUTO DECLARADO INCONSTITUCIONAL SE O FATO GERADOR OCORREU ANTES DO MARCO TEMPORAL FIXADO PELO STF, RESSALVADAS AS AÇÕES JUDICIAIS E OS PROCEDIMENTOS ADMINISTRATIVOS PROTOCOLADOS ATÉ 15/3/2017. TEMA 1.279 DE REPERCUSSÃO GERAL. RECURSO EXTRAORDINÁRIO PARCIALMENTE PROVIDO. DIPOSITIVO. ERRO MATERIAL. EXISTÊNCIA. EMBARGOS DE DECLARAÇÃO PROVIDOS. DECISÃO: Trata-se de embargos de declaração contra decisão monocrática que proveu o agravo para dar parcial provimento ao recurso extraordinário, segundo ementa infra: “RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . PIS E COFINS. BASE DE CÁLCULO. EXCLUSÃO DOS VALORES RELATIVOS AO ICMS. TEMA 69 DE REPERCUSSÃO GERAL. MODULAÇÃO DE EFEITOS. NÃO SE VIABILIZA O PEDIDO DE REPETIÇÃO DO INDÉBITO OU DE COMPENSAÇÃO DO TRIBUTO DECLARADO INCONSTITUCIONAL SE O FATO GERADOR OCORREU ANTES DO MARCO TEMPORAL FIXADO PELO STF, RESSALVADAS AS AÇÕES JUDICIAIS E OS PROCEDIMENTOS ADMINISTRATIVOS",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-08-31T14:09:21.960Z",
+        "id": "c1025bb6e999897e5c4de42c",
+        "status": "analyzed",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "analyzedAt": "2026-08-31T14:53:26.828Z",
+        "analyzedPublishedAt": "2023-10-18T00:00:00",
+        "relevant": true,
+        "score": 8.5,
+        "discardReason": null,
+        "alertId": "9316f537-1fe9-49d9-98fb-a964493fa496",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
+      },
+      {
+        "title": "DESPACHO/DECISÃO · 5013070-93.2026.4.02.0000 · SECRETARIA DA 3ª TURMA ESPECIALIZADA — Direito tributário: oncessão de liminar, objetivando o reconhecimento do direito à apropriação de créditos de PIS e COFINS, no regime não cumulativo, calculados com base nas alíquotas incidentes sobre a aquisição de mercadorias para revenda, na forma do art. 4º, § 4º, inciso I, da Lei Complem",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/7e9MjpmERnVu9boIlTlPJAlRqrnD41/certidao",
+        "publishedAt": "2026-08-31",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "externalId": "712015582",
+        "fingerprintKey": "djen:712015582",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf2",
+        "sourceName": "Tribunal Regional Federal da 2ª Região",
+        "sourceAcronym": "TRF2",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-31T14:09:40.257Z",
+        "id": "9dcf2bbef9a0e4470111982e",
+        "status": "error",
+        "attempts": 1,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:reforma-ibs-cbs",
+            "politica-p1:pis-cofins-creditos"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 100,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "reforma-ibs-cbs",
+              "pis-cofins-creditos"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "TRF2",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "error": "A análise do Ollama excedeu 10 minutos.",
+        "analyzedAt": "2026-08-31T14:28:14.854Z"
+      },
+      {
+        "title": "Decisão · 5009563-84.2018.4.03.6109 · Gab. Vice Presidência — Direito tributário: la UNIÃO contra acórdão sob a seguinte ementa: AÇÃO DECLARATÓRIA. APURAÇÃO DE CRÉDITOS DE PIS/COFINS. CONCEITO DE INSUMO. ESSENCIALIDADE E IMPRESCINDIBILIDADE PARA O DESENVOLVIMENTO DA ATIVIDADE ECONÔMICA. TEMAS REPETITIVOS Nº 779 E Nº 780 DO STJ. 1. O dissenso instalado n",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/8adD75PqRD1FnyKsATgEwDg6nyG1xN/certidao",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "externalId": "712288248",
+        "fingerprintKey": "djen:712288248",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "sourceAcronym": "TRF3",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-31T14:10:16.672Z",
+        "id": "e6a22bfeeb78e62f136965f7",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 100,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "TRF3",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial",
+              "regiao-prioritaria"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Decisão · 5002834-55.2021.4.03.6103 · Gab. Vice Presidência — Direito tributário: rso especial interposto por AUTO POSTO TEMPUS LTDA. contra acórdão sob a seguinte ementa: TRIBUTÁRIO. MANDADO DE SEGURANÇA. APELAÇÃO. EXCLUSÃO DO ICMS. RE Nº 574.706. MODULAÇÃO DOS EFEITOS. ICMS-ST DA BASE DE CÁLCULO DO PIS E DA COFINS. IMPOSSIBILIDADE. 1. O STF apreciando o tem",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/rEbP1yJdZlzFBlPS1T7E5b7ReXxa8G/certidao",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "externalId": "712366818",
+        "fingerprintKey": "djen:712366818",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "sourceAcronym": "TRF3",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-31T14:10:16.672Z",
+        "id": "5934e31f2368874e8235f30c",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 100,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "TRF3",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Alta",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial",
+              "regiao-prioritaria"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Decisão · 5005577-97.2024.4.03.6114 · 2ª Vara Federal de São Bernardo do Campo — Direito tributário: hieta, São Bernardo Do Campo - SP - CEP: 09601-000 https://www.trf3.jus.br/balcao-virtual EXECUÇÃO FISCAL (1116) Nº 5005577-97.2024.4.03.6114 EXEQUENTE: UNIAO FEDERAL - FAZENDA NACIONAL EXECUTADO: ENGEPLASTIC PLASTICOS EIRELI - ME ADVOGADO do(a) EXECUTADO: MARISTELA ANTONIA DA SILVA -",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/DLz5neGXY47FrvPCGT73wr7Zdy4gaO/certidao",
+        "publishedAt": "2026-08-31",
+        "documentKind": "Decisão judicial publicada no DJEN",
+        "sourceDocumentType": "Decisão",
+        "externalId": "712015270",
+        "fingerprintKey": "djen:712015270",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf3",
+        "sourceName": "Tribunal Regional Federal da 3ª Região",
+        "sourceAcronym": "TRF3",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-31T14:10:16.672Z",
+        "id": "8e30a59f4ec6f8c02f64e449",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 100,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:irpj-csll-jcp",
+            "politica-p1:ipi-aduaneiro"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 95,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "irpj-csll-jcp",
+              "ipi-aduaneiro"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "REPETITIVO_AFETADO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "TRF3",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Acompanhamento",
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      {
+        "title": "DESPACHO/DECISÃO · 5035522-20.2025.4.04.7100 · TRU - Cível — Direito tributário: ento ao recurso por meio do qual pretendia a obtenção de declaração de inexigibilidade de imposto de renda sobre valores recebidos a título de auxílio-educação (incentivo à capacitação), prêmio-assiduidade e auxílio-moradia. A requerente sustenta, em síntese, que o acórdão con",
+        "url": "https://comunicaapi.pje.jus.br/api/v1/comunicacao/voGJwMkOZA1SxXXhbTGjaDGZKa931z/certidao",
+        "publishedAt": "2026-08-31",
+        "documentKind": "DESPACHO/DECISÃO judicial publicada no DJEN",
+        "sourceDocumentType": "DESPACHO/DECISÃO",
+        "externalId": "712552760",
+        "fingerprintKey": "djen:712552760",
+        "inlineTextGzip": "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",
+        "inlineParser": "API oficial do DJEN/CNJ",
+        "sourceId": "trf4",
+        "sourceName": "Tribunal Regional Federal da 4ª Região",
+        "sourceAcronym": "TRF4",
+        "sourceType": "official",
+        "sections": [],
+        "discoveryMethod": "trf-djen",
+        "discoveredAt": "2026-08-31T14:09:57.881Z",
+        "id": "b93b564cf4b2b2a8ebc9f380",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 72,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 40,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "TRF4",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial",
+              "regiao-prioritaria"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Carf classifica protetor solar da Johnson como bronzeador e mantém IPI de 12%",
+        "url": "https://portal.jota.info/tributos/carf-classifica-protetor-solar-da-johnson-como-bronzeador-e-mantem-ipi-de-12",
+        "publishedAt": "2026-08-31T10:02:50.000Z",
+        "documentKind": "Notícia jornalística especializada",
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "sourceAcronym": "JOTA",
+        "sourceType": "journalistic",
+        "sections": [],
+        "discoveryMethod": "rss",
+        "discoveredAt": "2026-08-31T14:10:22.444Z",
+        "id": "3133b82dc8450fcc2f29fb12",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 19,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "assunto-tributario-forte",
+            "politica-p1:ipi-aduaneiro",
+            "politica-p2:contencioso-administrativo"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema citado sem fato, ato ou mudança concreta.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 15,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "ipi-aduaneiro"
+            ],
+            "priorityTwoTopics": [
+              "contencioso-administrativo"
+            ],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": false,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1"
+            ]
+          }
+        }
+      },
+      {
+        "title": "O ponto cego no debate sobre o fim do contencioso tributário",
+        "url": "https://portal.jota.info/opiniao-e-analise/artigos/o-ponto-cego-no-debate-sobre-o-fim-do-contencioso-tributario",
+        "publishedAt": "2026-08-31T08:20:36.000Z",
+        "documentKind": "Notícia jornalística especializada",
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "sourceAcronym": "JOTA",
+        "sourceType": "journalistic",
+        "sections": [],
+        "discoveryMethod": "rss",
+        "discoveredAt": "2026-08-31T14:10:22.444Z",
+        "id": "b3bf93e54bfb5879a116edf7",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 1,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "assunto-tributario"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": false,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": []
+          }
+        }
+      },
+      {
+        "title": "Normas de ESG nas transações tributárias: um novo passo na consensualidade",
+        "url": "https://portal.jota.info/opiniao-e-analise/colunas/advogadas-publicas-em-debate/normas-de-esg-nas-transacoes-tributarias-um-novo-passo-na-consensualidade",
+        "publishedAt": "2026-08-31T08:00:21.000Z",
+        "documentKind": "Notícia jornalística especializada",
+        "sourceId": "jota",
+        "sourceName": "JOTA",
+        "sourceAcronym": "JOTA",
+        "sourceType": "journalistic",
+        "sections": [],
+        "discoveryMethod": "rss",
+        "discoveredAt": "2026-08-31T14:10:22.444Z",
+        "id": "4654ecbda67ea81827a71364",
+        "status": "pending",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 1,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "assunto-tributario"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": false,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": null,
+              "required": false,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": []
+          }
+        }
+      },
+      {
         "title": "STJ: contribuinte que recolheu ICMS sobre TUSD/TUST não pode pedir restituição",
         "url": "https://portal.jota.info/tributos/stj-contribuinte-que-recolheu-icms-sobre-tusd-tust-nao-pode-pedir-restituicao",
         "publishedAt": "2026-08-30T09:59:40.000Z",
@@ -68565,57 +69967,6 @@
             "signals": [
               "prioridade-1"
             ]
-          }
-        }
-      },
-      {
-        "title": "Destaque do relator zera placar no STF sobre tributação do lucro de controladas no exterior",
-        "url": "https://portal.jota.info/tributos/destaque-do-relator-zera-placar-no-stf-sobre-tributacao-do-lucro-de-controladas-no-exterior",
-        "publishedAt": "2026-08-29T10:10:16.000Z",
-        "documentKind": "Notícia jornalística especializada",
-        "sourceId": "jota",
-        "sourceName": "JOTA",
-        "sourceAcronym": "JOTA",
-        "sourceType": "journalistic",
-        "sections": [],
-        "discoveryMethod": "rss",
-        "discoveredAt": "2026-08-29T10:20:06.239Z",
-        "id": "2f2a013e800424cdfd57c82a",
-        "status": "pending",
-        "attempts": 0,
-        "backfillDate": null,
-        "fastTriage": {
-          "score": 1,
-          "band": "baixa",
-          "signals": [
-            "data-confirmada",
-            "assunto-tributario"
-          ],
-          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
-          "policy": {
-            "version": "consultoria-empresarial-v2",
-            "eligible": false,
-            "eligibilityReason": "Tema fora da matriz tributária empresarial.",
-            "exclusionReason": null,
-            "negativeCategory": null,
-            "exceptionApplied": null,
-            "score": 0,
-            "topicTier": null,
-            "priorityOneTopics": [],
-            "priorityTwoTopics": [],
-            "eventType": null,
-            "concreteEvent": false,
-            "businessEffect": false,
-            "primarySource": false,
-            "preferredRegion": false,
-            "courtGate": {
-              "court": null,
-              "required": false,
-              "passed": true,
-              "reason": null
-            },
-            "priority": null,
-            "signals": []
           }
         }
       },
@@ -105572,6 +106923,611 @@
     ],
     "runs": [
       {
+        "id": "31fe5e6e-5e18-4cf8-8476-83a694db0c0a",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-08-31T14:18:13.925Z",
+        "finishedAt": "2026-08-31T14:53:26.872Z",
+        "discovered": 0,
+        "analyzed": 3,
+        "published": 3,
+        "discarded": 0,
+        "errors": 2,
+        "sources": []
+      },
+      {
+        "id": "d3ced2de-36f0-4cbf-a45a-04f0fdf5bf4f",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-08-30",
+        "startedAt": "2026-08-31T14:11:14.062Z",
+        "finishedAt": "2026-08-31T14:17:29.715Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF6 falharam."
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "06c8aae6-b849-4ea0-ac1f-d63ba1fe6d79",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-08-31T14:08:56.060Z",
+        "finishedAt": "2026-08-31T14:11:13.949Z",
+        "discovered": 353,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 56,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 583,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 3,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 35,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 56,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 17485,
+              "entries": 18,
+              "processed": 17485,
+              "dateMatched": 17485,
+              "decisionMatched": 6878,
+              "taxMatched": 1825,
+              "deduplicated": 1825,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 24409,
+              "entries": 25,
+              "processed": 24409,
+              "dateMatched": 24409,
+              "decisionMatched": 9537,
+              "taxMatched": 4392,
+              "deduplicated": 4227,
+              "duplicates": 165,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 55,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 39241,
+              "entries": 40,
+              "processed": 39241,
+              "dateMatched": 39241,
+              "decisionMatched": 11469,
+              "taxMatched": 2168,
+              "deduplicated": 2166,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32974,
+              "entries": 33,
+              "processed": 32974,
+              "dateMatched": 32974,
+              "decisionMatched": 7287,
+              "taxMatched": 3305,
+              "deduplicated": 3253,
+              "duplicates": 52,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12630,
+              "entries": 13,
+              "processed": 12630,
+              "dateMatched": 12630,
+              "decisionMatched": 6082,
+              "taxMatched": 1292,
+              "deduplicated": 1290,
+              "duplicates": 2,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 10,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 5,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "8d189267-b846-4264-8956-016aadc1287c",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -125375,686 +127331,9 @@
         "discarded": 0,
         "errors": 0,
         "sources": []
-      },
-      {
-        "id": "be3dfb76-18ac-4f31-9c8c-c04b91495319",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-24",
-        "startedAt": "2026-08-25T22:38:19.627Z",
-        "finishedAt": "2026-08-25T22:40:04.953Z",
-        "discovered": 919,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 55,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 583,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 56,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 17510,
-              "entries": 18,
-              "processed": 17510,
-              "dateMatched": 17510,
-              "decisionMatched": 7490,
-              "taxMatched": 2047,
-              "deduplicated": 2045,
-              "duplicates": 2,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 24862,
-              "entries": 25,
-              "processed": 24862,
-              "dateMatched": 24862,
-              "decisionMatched": 9448,
-              "taxMatched": 4390,
-              "deduplicated": 4250,
-              "duplicates": 140,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 54,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 43436,
-              "entries": 44,
-              "processed": 43436,
-              "dateMatched": 43436,
-              "decisionMatched": 14164,
-              "taxMatched": 2186,
-              "deduplicated": 2185,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 32139,
-              "entries": 33,
-              "processed": 32139,
-              "dateMatched": 32139,
-              "decisionMatched": 9758,
-              "taxMatched": 4104,
-              "deduplicated": 4007,
-              "duplicates": 97,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 55,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12094,
-              "entries": 13,
-              "processed": 12094,
-              "dateMatched": 12094,
-              "decisionMatched": 4691,
-              "taxMatched": 1090,
-              "deduplicated": 1086,
-              "duplicates": 4,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "71e6de54-d1d6-4588-99e5-109ea2103aed",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-25T22:36:24.972Z",
-        "finishedAt": "2026-08-25T22:38:19.499Z",
-        "discovered": 991,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 12,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 75,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 583,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 21,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 34,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 43389,
-              "entries": 44,
-              "processed": 43389,
-              "dateMatched": 43389,
-              "decisionMatched": 9046,
-              "taxMatched": 3204,
-              "deduplicated": 3039,
-              "duplicates": 165,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 55,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 12899,
-              "entries": 13,
-              "processed": 12899,
-              "dateMatched": 12899,
-              "decisionMatched": 7642,
-              "taxMatched": 1791,
-              "deduplicated": 1791,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 25054,
-              "entries": 26,
-              "processed": 25054,
-              "dateMatched": 25054,
-              "decisionMatched": 9782,
-              "taxMatched": 5023,
-              "deduplicated": 4866,
-              "duplicates": 157,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31067,
-              "entries": 32,
-              "processed": 31067,
-              "dateMatched": 31067,
-              "decisionMatched": 11440,
-              "taxMatched": 2425,
-              "deduplicated": 2425,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 23287,
-              "entries": 24,
-              "processed": 23287,
-              "dateMatched": 23287,
-              "decisionMatched": 5819,
-              "taxMatched": 2611,
-              "deduplicated": 2565,
-              "duplicates": 46,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 46,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 12186,
-              "entries": 13,
-              "processed": 12186,
-              "dateMatched": 12186,
-              "decisionMatched": 5045,
-              "taxMatched": 1118,
-              "deduplicated": 1118,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "42195fcc-c271-45f5-a727-d8723e02ec33",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-25T22:04:10.050Z",
-        "finishedAt": "2026-08-25T22:04:11.000Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-08-31T00:41:53.209Z",
-    "nextRunAt": "2026-08-31T06:41:53.209Z"
+    "lastRunAt": "2026-08-31T14:53:26.872Z",
+    "nextRunAt": "2026-08-31T20:53:26.872Z"
   }
 }
