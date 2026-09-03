@@ -560,6 +560,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           : isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays))
         .map((item) => ({ ...item, fastTriage: item.fastTriage || fastTriageCandidate(item) }))
         .filter((item) => (item.sourceType || 'official') === 'official'
+          && item.discoveryRole !== 'scouting'
           && item.fastTriage.policy?.eligible
           && item.fastTriage.policy?.primarySource
           && !item.fastTriage.policy?.exclusionReason)

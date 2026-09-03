@@ -1,5 +1,6 @@
 export const TAX_POLICY_VERSION = 'consultoria-empresarial-v2';
 export const DETAILED_ANALYSIS_VERSION = 'detailed-v3';
+export const EDITORIAL_EXCLUSION_SUMMARY = 'Exclusoes editoriais obrigatorias: nao publicar decisoes monocraticas no feed geral. Solucoes DISIT/SRRF sem vinculacao expressa a Solucao COSIT ou de Divergencia ficam fora; atos COSIT vinculantes continuam elegiveis quando trouxerem fato novo e efeito empresarial.';
 
 function normalize(value = '') {
   return String(value)
@@ -50,6 +51,13 @@ const OLD_REPUBLICATION = /\b(?:relembra|republica|republicado|decisao antiga|ju
 const REVENUE_WITHOUT_EFFECT = /\b(?:arrecadacao (?:bate recorde|recorde|cresce|aumenta|caiu|recua)|resultado da arrecadacao|dados de arrecadacao)\b/;
 const MACRO_WITHOUT_EFFECT = /\b(?:cenario macroeconomico|projecao do pib|mercado financeiro|politica monetaria)\b/;
 const GENERIC_INDEX = /\b(?:indice oficial|pagina de consulta|atualizacao diaria do indice|lista de publicacoes)\b/;
+// Decisões monocráticas podem ser úteis no acompanhamento de um processo,
+// mas não representam a curadoria do feed geral.
+const MONOCRATIC_DECISION = /\b(?:decis(?:ao|oes) monocratica(?:s)?|decis(?:ao|oes) singular(?:es)?|decis(?:ao|oes) unipessoal(?:is)?|despacho monocratico|decis(?:ao|oes) terminativa(?:s)?)\b/;
+// Uma solução DISIT/SRRF só tem alcance nacional quando a própria publicação
+// informa vinculação expressa a uma solução COSIT ou de divergência.
+const DISIT_LOCAL_CONSULTATION = /\b(?:solucao de consulta|solucao de divergencia)\b.{0,140}\bdisit(?:\/srrf\d{2})?\b|\bdisit(?:\/srrf\d{2})?\b.{0,140}\b(?:solucao de consulta|solucao de divergencia)\b/;
+const DISIT_BINDING = /\bsolucao de consulta vinculad[ao]\b|\bvincula(?:-se)?\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b|\bvincul(?:acao|ada|ado)\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b/;
 
 const STF_ALERT = /repercussao geral (?:reconhecida|admitida)|julgamento de merito|julgou (?:o )?merito|modulacao|modulou|tese (?:fixada|alterada)|fixou (?:a )?tese|mudanca de entendimento|alterou (?:o )?entendimento|embargos? .{0,80}(?:alterar|modular|revisar|tese)/;
 const STJ_ALERT = /tema repetitivo|recurso repetitivo|afetacao|afetou (?:o )?recurso|primeira secao|tese (?:fixada|alterada|complementada)|alterou (?:a )?tese|complementou (?:a )?tese|embargos? de divergencia.{0,80}(?:mudanca|tese|entendimento)/;
@@ -127,6 +135,12 @@ function courtGateFor(sourceId, text) {
 }
 
 function negativeAssessment({ title, text, concreteEvent, businessEffect }) {
+  if (MONOCRATIC_DECISION.test(text)) {
+    return { category: 'DECISAO_MONOCRATICA', reason: 'Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.', exceptionApplied: null };
+  }
+  if (DISIT_LOCAL_CONSULTATION.test(text) && !DISIT_BINDING.test(text)) {
+    return { category: 'CONSULTA_DISIT_SEM_VINCULACAO', reason: 'Solução DISIT/SRRF sem vinculação expressa a solução COSIT ou de divergência.', exceptionApplied: null };
+  }
   if (PROMOTIONAL_OR_EVENT.test(title) || SPONSORED.test(text) || EDUCATIONAL.test(title)) {
     return { category: 'PROMOCIONAL_OU_EDUCACIONAL', reason: 'Conteúdo educacional, promocional, curso ou evento.', exceptionApplied: null };
   }

@@ -29,6 +29,10 @@ O método combina expressões regulares e parsers para localizar números de pro
 
 ## Fontes monitoradas
 
+A descoberta segue um modelo em duas camadas: RSS e imprensa especializada (incluindo o feed publico do JOTA) servem como radar de pautas; a publicacao no feed exige que o backend resolva um documento oficial primario correspondente. Assim a curadoria ganha velocidade sem transformar noticia, opiniao ou previsao em evidencia juridica.
+
+O feed geral exclui decisoes monocraticas e Solucoes de Consulta DISIT/SRRF sem vinculacao expressa a Solucao COSIT ou de Divergencia. Solucoes COSIT e atos vinculados continuam elegiveis quando houver fato novo e impacto empresarial verificavel.
+
 - Receita Federal, sistema Normas (COSIT, Instruções Normativas, Notas e Pareceres), Diário Oficial da União, NF-e e SPED;
 - Câmara dos Deputados e Senado Federal;
 - STF e STJ, incluindo seus informativos de jurisprudência;

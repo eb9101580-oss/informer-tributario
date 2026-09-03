@@ -1,6 +1,6 @@
 import { config } from '../config.js';
 import { Agent, fetch as undiciFetch } from 'undici';
-import { policyPromptSummary, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
+import { EDITORIAL_EXCLUSION_SUMMARY, policyPromptSummary, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
 export const ANALYSIS_VERSION = 'detailed-v3';
 export const EDITORIAL_FORMATS = [
@@ -110,6 +110,7 @@ Preencha watchpoints como "O que acompanhar": liste até três pontos objetivos 
 Em decisões judiciais, leia nesta ordem: ementa, relatório/pedido, fundamentação, dispositivo, modulação e conclusão. Diferencie pedido da parte, argumentos, precedentes citados e conclusão do julgador. Nunca apresente o pedido do contribuinte como resultado.
 Não use frases genéricas como "pode afetar o tema", "entrou no feed", "verifique a fonte" ou "o alcance deve ser conferido" quando o documento trouxer pedido, fundamento ou resultado identificável.
 ${policyPromptSummary()}
+${EDITORIAL_EXCLUSION_SUMMARY}
 Antes de marcar relevant=true, responda internamente: esta novidade faria um consultor recomendar providência, revisão, oportunidade, mudança de procedimento ou avaliação de risco a uma empresa? Se não, use relevant=false, businessActionable=false, noveltyType="Sem novidade concreta" e relevanceReasons=[].
 Use prioridade Alta para mudança legislativa, regulamentar ou jurisprudencial com impacto empresarial direto; Média para entendimento novo com risco ou oportunidade concreta; Acompanhamento para afetação, julgamento iniciado, projeto avançado ou regulamentação pendente. Nunca publique baixa relevância.
 Classifique contentNature com rigor. Artigo, opinião, previsão ou comentário que apenas repete regra conhecida deve ser "Opinião ou conteúdo sem fato novo" e relevant=false. Uma Solução de Consulta ou parecer oficial é "Interpretação oficial"; norma, ato, decisão e movimentação oficial são "Fato oficial".
