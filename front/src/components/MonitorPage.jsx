@@ -10,7 +10,7 @@ const today = () => {
   const values = Object.fromEntries(parts.filter((part) => part.type !== 'literal').map((part) => [part.type, part.value]));
   return `${values.year}-${values.month}-${values.day}`;
 };
-const statusLabels = { pending: 'Na fila', analyzing: 'Analisando', analyzed: 'Publicado', discarded: 'Sem relevância', error: 'Erro' };
+const statusLabels = { pending: 'Na fila do Ollama', scouting: 'Radar', analyzing: 'Analisando', analyzed: 'Publicado', discarded: 'Fora da política', error: 'Erro' };
 const coverageLabels = { exact: 'arquivo/API da data', 'date-filtered': 'filtrado pela data', mixed: 'decisões da data + notícias do índice', 'current-index': 'índice atual' };
 const number = (value) => Number(value || 0).toLocaleString('pt-BR');
 const sourceRunSummary = (source) => {
@@ -62,14 +62,14 @@ export function MonitorPage({ onAlerts }) {
 
   if (!status) return <div className="loading"><span /><p>Carregando o monitor...</p></div>;
   const latest = runs[0];
-  const hosted = !status.runtime.enabled;
+  const manualRunsSupported = status.runtime.manualRunsSupported !== false;
 
   return (
     <section className="monitor-page">
       <div className="monitor-hero">
         <div className={`monitor-pulse ${status.runtime.running ? 'monitor-pulse--active' : ''}`}><Activity /></div>
-        <div><small>{hosted ? 'Agendamento hospedado ativo' : 'Agendamento local ativo'}</small><h2>{status.runtime.running ? 'Varredura em andamento' : 'Monitor oficial em espera'}</h2><p>{status.runtime.running ? `${status.runtime.phase === 'analysis' ? 'Analisando documentos' : 'Consultando fontes'}${status.runtime.currentSource ? ` — ${status.runtime.currentSource}` : ''}` : hosted ? 'O GitHub consulta e analisa as fontes aproximadamente a cada 20 minutos.' : `Próximo ciclo: ${dateTime(status.nextRunAt)} · intervalo de ${status.runtime.intervalMinutes} minutos`}</p></div>
-        <div className="monitor-actions">{hosted ? <a className="primary" href="https://github.com/eb9101580-oss/informer-tributario/actions/workflows/tax-monitor.yml" target="_blank" rel="noreferrer"><Play size={16} />Fazer varredura no GitHub <ExternalLink size={14} /></a> : <><button disabled={status.runtime.running} onClick={() => start(false)}><RefreshCw size={16} />Só descobrir</button><button className="primary" disabled={status.runtime.running} onClick={() => start(true)}>{status.runtime.running ? <LoaderCircle className="spinning" size={16} /> : <Play size={16} />}Varrer e analisar</button></>}</div>
+        <div><small>{status.runtime.enabled ? 'Agendamento no servidor ativo' : 'Execução manual pelo servidor'}</small><h2>{status.runtime.running ? 'Varredura em andamento' : 'Monitor oficial em espera'}</h2><p>{status.runtime.running ? `${status.runtime.phase === 'analysis' ? 'Analisando documentos no Ollama' : 'Consultando fontes oficiais'}${status.runtime.currentSource ? ` — ${status.runtime.currentSource}` : ''}` : status.runtime.enabled ? `Próximo ciclo no backend: ${dateTime(status.nextRunAt)} · intervalo de ${status.runtime.intervalMinutes} minutos` : 'Use os controles para executar a varredura diretamente no backend.'}</p></div>
+        <div className="monitor-actions"><button disabled={!manualRunsSupported || status.runtime.running} onClick={() => start(false)}><RefreshCw size={16} />Só descobrir</button><button className="primary" disabled={!manualRunsSupported || status.runtime.running} onClick={() => start(true)}>{status.runtime.running ? <LoaderCircle className="spinning" size={16} /> : <Play size={16} />}Varrer no servidor e analisar</button></div>
       </div>
 
       <div className="panel monitor-date-search">
@@ -79,9 +79,9 @@ export function MonitorPage({ onAlerts }) {
           <p>Puxa notícias, atos, normas, proposições e decisões tributárias disponíveis nas fontes monitoradas.</p>
         </div>
         <label className="monitor-date-field"><span>Data da publicação</span><input type="date" max={today()} value={targetDate} onChange={(event) => setTargetDate(event.target.value)} /></label>
-        <button className="primary monitor-date-submit" disabled={hosted || status.runtime.running || !targetDate} onClick={() => start(false, targetDate)}>{status.runtime.running ? <LoaderCircle className="spinning" size={16} /> : <CalendarSearch size={16} />}Puxar publicações</button>
+        <button className="primary monitor-date-submit" disabled={!manualRunsSupported || status.runtime.running || !targetDate} onClick={() => start(false, targetDate)}>{status.runtime.running ? <LoaderCircle className="spinning" size={16} /> : <CalendarSearch size={16} />}Puxar publicações</button>
         <p className="monitor-date-help">STF, STJ, Câmara e os seis TRFs permitem consulta judicial pela data. Nas páginas de notícias, a busca filtra as publicações datadas que o portal ainda exibe.</p>
-        {hosted && <p className="monitor-date-warning"><AlertTriangle size={14} />A busca manual exige que o front esteja conectado ao backend persistente da sua máquina.</p>}
+        {!manualRunsSupported && <p className="monitor-date-warning"><AlertTriangle size={14} />Este backend não aceita execução manual.</p>}
       </div>
 
       {error && <div className="collector-error"><AlertTriangle size={17} />{error}</div>}

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { canFastPublishCandidate, candidateFingerprint, candidateId, enrichFastAlert, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
+import { canFastPublishCandidate, candidateFingerprint, candidateId, classifyCandidateForQueue, enrichFastAlert, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
 import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isExcludedTaxTopic, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
@@ -230,6 +230,26 @@ test('texto integral grande da decisão é compactado sem perda para a fila', ()
   assert.equal(hasCandidateText(packed), true);
   assert.equal(unpackCandidateText(packed), original);
   assert.ok(packed.inlineTextGzip.length < original.length / 5);
+});
+
+test('fila do Ollama contém apenas fontes oficiais aprovadas pela política', () => {
+  const approved = classifyCandidateForQueue({
+    sourceId: 'receita-in', sourceType: 'official', discoveryMethod: 'receita-normas', publishedAt: '2026-08-20',
+    documentKind: 'Instrução Normativa', title: 'Instrução Normativa altera obrigação acessória do SPED para empresas',
+    url: 'https://normasinternet2.receita.fazenda.gov.br/consulta/123',
+  });
+  const scouting = classifyCandidateForQueue({
+    sourceId: 'jota', sourceType: 'journalistic', discoveryRole: 'scouting', publishedAt: '2026-08-20',
+    title: 'Notícia tributária', url: 'https://www.jota.info/tributos/exemplo',
+  });
+  const excluded = classifyCandidateForQueue({
+    sourceId: 'stf', sourceType: 'official', publishedAt: '2026-08-20', documentKind: 'Decisão monocrática',
+    title: 'Decisão monocrática sobre ICMS', url: 'https://portal.stf.jus.br/processos/123',
+  });
+  assert.equal(approved.status, 'pending');
+  assert.equal(scouting.status, 'scouting');
+  assert.equal(excluded.status, 'discarded');
+  assert.match(excluded.discardReason, /monocrática/i);
 });
 
 test('triagem nunca publica antes da análise estruturada do Ollama', () => {
