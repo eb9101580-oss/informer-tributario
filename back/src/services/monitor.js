@@ -507,9 +507,12 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
     await updateDatabase((database) => {
       const monitor = monitorData(database);
       const publishedFingerprints = new Set(monitor.candidates.filter((item) => ['analyzed', 'fast-published'].includes(item.status)).map(candidateFingerprint));
+      const legacyFastAlertIds = new Set(monitor.candidates
+        .filter((item) => item.status === 'fast-published' && item.alertId)
+        .map((item) => item.alertId));
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.map((item) => {
-        if (!['pending', 'error'].includes(item.status)) return item;
+        if (!['pending', 'error', 'fast-published'].includes(item.status)) return item;
         const classified = classifyCandidateForQueue(item);
         return classified.status === 'pending' && item.status === 'error'
           ? { ...classified, status: 'error', error: item.error }
@@ -535,7 +538,11 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       });
       run.discovered = additions.length;
       additions.sort((left, right) => sourcePolicyRank(left) - sourcePolicyRank(right));
-      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) } };
+      return {
+        ...database,
+        alerts: legacyFastAlertIds.size ? database.alerts.filter((item) => !legacyFastAlertIds.has(item.id)) : database.alerts,
+        monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) },
+      };
     });
 
     if (config.monitorFastPublish && config.monitorFastPublishPerRun > 0) {
