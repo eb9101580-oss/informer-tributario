@@ -162,6 +162,26 @@ test('dashboard aplica a mesma privacidade dos movimentos', async () => {
   });
 });
 
+test('falha temporária nos acompanhamentos não derruba o radar global', async () => {
+  const unavailable = async () => {
+    const error = new Error('Chave incompatível');
+    error.statusCode = 503;
+    throw error;
+  };
+  const router = createAlertsRouter({
+    optionalAuthMiddleware: sessionMiddleware,
+    adminMiddleware,
+    readDatabaseFn: async () => structuredClone(baseDatabase),
+    readTrackedActionsForUserFn: unavailable,
+  });
+
+  await withServer(router, async (baseUrl) => {
+    const response = await jsonRequest(baseUrl, '/?period=all', 'user-a');
+    assert.equal(response.response.status, 200);
+    assert.deepEqual(response.body.items.map((item) => item.id), ['global']);
+  });
+});
+
 test('mutações de alertas e feedback legado exigem administrador', async () => {
   let database = structuredClone(baseDatabase);
   let updates = 0;
