@@ -71,6 +71,13 @@ export const officialSources = [
     focus: ['Decisões terminativas', 'Acórdãos', 'Direito tributário'], monitoring: 'A cada 6 horas', priority: 6, color: 'red', adapter: 'stj-open-data',
   },
   {
+    id: 'stj-noticias', name: 'STJ — Notícias oficiais', acronym: 'STJ', category: 'Jurisprudência federal',
+    description: 'Notícias oficiais do STJ obtidas pelo RSS mantido pelo tribunal, para detectar julgamentos tributários logo após sua divulgação.',
+    url: 'https://www.stj.jus.br/sites/portalp/Comunicacao/Ultimas-noticias',
+    discoveryUrl: 'https://res.stj.jus.br/hrestp-c-portalp/RSS.xml',
+    focus: ['Julgamentos tributários', 'Recursos repetitivos', 'Primeira Seção'], monitoring: 'A cada 20 minutos', priority: 6, color: 'red', adapter: 'rss',
+  },
+  {
     id: 'stj-informativos', name: 'STJ — Informativos de Jurisprudência', acronym: 'INF STJ', category: 'Informativos judiciais',
     description: 'Informativos e edições extraordinárias do STJ, filtrados para localizar teses e decisões com impacto tributário.',
     url: 'https://scon.stj.jus.br/jurisprudencia/externo/informativo/',

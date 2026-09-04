@@ -125,6 +125,7 @@ export function isCandidateEligible(sourceId, title, url, content = '') {
   if (sourceId === 'nfe-notas-tecnicas') return /nota|t[eé�]cnica/i.test(title) || /exibirArquivo/i.test(url);
   if (sourceId === 'sped-notas-tecnicas') return /nota|t[eé�]cnica|sped/i.test(title) && isTaxRelated(title);
   if (sourceId === 'stj-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
+  if (sourceId === 'stj-noticias') return /\/Comunicacao\/Noticias\//i.test(url) && isTaxRelated(title, url);
   if (sourceId === 'stf-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
   if (sourceId === 'pgfn-pareceres') return /parecer|s[úu�]mula|decis[aã�]o|tribut/i.test(title) && isTaxRelated(title);
   if (sourceId === 'pgfn-noticias') return /\/pgfn\/pt-br\/assuntos\/noticias\//i.test(url) && isTaxRelated(title, url);
@@ -560,15 +561,18 @@ async function discoverRss(source) {
     const description = rssValue(item, 'description');
     const url = rssValue(item, 'link');
     if (!url.startsWith('https://') || !isTaxRelated(title, description, url)) return [];
-    const published = rssValue(item, 'pubDate');
-    const publishedAt = Number.isNaN(Date.parse(published)) ? '' : new Date(published).toISOString();
+    const published = rssValue(item, 'pubDate') || rssValue(item, 'dc:date');
+    const urlDate = url.match(/\/(\d{2})(\d{2})(\d{4})-/);
+    const publishedAt = !Number.isNaN(Date.parse(published)) && published
+      ? new Date(published).toISOString()
+      : urlDate ? `${urlDate[3]}-${urlDate[2]}-${urlDate[1]}T12:00:00.000Z` : '';
     return [{
       title,
       url: cleanUrl(url),
       publishedAt,
-      documentKind: 'Notícia jornalística especializada',
-      sourceDocumentType: 'scouting',
-      discoveryRole: 'scouting',
+      documentKind: source.sourceType === 'journalistic' ? 'Notícia jornalística especializada' : 'Notícia oficial de tribunal',
+      sourceDocumentType: source.sourceType === 'journalistic' ? 'scouting' : 'official-news',
+      discoveryRole: source.sourceType === 'journalistic' ? 'scouting' : 'primary',
       ...packCandidateText(description),
     }];
   }).slice(0, 60);

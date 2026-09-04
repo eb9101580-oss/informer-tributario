@@ -19,6 +19,11 @@ const allowedDomains = [
   'jota.info', 'reformatributaria.com', 'cgibs.gov.br', 'folha.uol.com.br', 'valor.globo.com',
 ];
 
+const accessibilityFallbackDomains = new Set([
+  'noticias.stf.jus.br', 'www.stj.jus.br', 'scon.stj.jus.br',
+  'processo.stj.jus.br', 'www.gov.br',
+]);
+
 export function validateOfficialUrl(rawUrl) {
   let parsed;
   try { parsed = new URL(rawUrl); } catch { throw new Error('A URL informada é inválida.'); }
@@ -35,13 +40,14 @@ export async function collectOfficialPage(url) {
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
       const result = await runPython(scriptPath, url, 60000, 'A coleta excedeu o limite de 60 segundos.');
-      if (new URL(url).hostname === 'noticias.stf.jus.br' && Number(result.characters || 0) < 200) {
+      const hostname = new URL(url).hostname.toLowerCase();
+      if (accessibilityFallbackDomains.has(hostname) && Number(result.characters || 0) < 200) {
         const response = await fetch(`https://r.jina.ai/${url}`, { signal: AbortSignal.timeout(45000) });
-        if (!response.ok) throw new Error(`Leitor do STF respondeu com status ${response.status}.`);
+        if (!response.ok) throw new Error(`Leitor de acessibilidade respondeu com status ${response.status}.`);
         const text = await response.text();
-        if (text.length < 200) throw new Error('A notícia oficial do STF não retornou texto suficiente.');
+        if (text.length < 200) throw new Error('A publicação oficial não retornou texto suficiente.');
         const title = text.match(/^Title:\s*(.+)$/m)?.[1]?.trim() || result.title;
-        return { ...result, url, title, text, characters: text.length, parser: 'Página oficial do STF via leitor de acessibilidade' };
+        return { ...result, url, title, text, characters: text.length, parser: 'Página oficial via leitor de acessibilidade' };
       }
       return result;
     } catch (error) {
