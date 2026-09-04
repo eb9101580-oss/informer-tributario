@@ -127,6 +127,11 @@ export function isCandidateEligible(sourceId, title, url, content = '') {
   if (sourceId === 'stj-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
   if (sourceId === 'stf-informativos') return /informativo|tribut|ac[oó]rd[aã]o|tese/i.test(title) && isTaxRelated(title);
   if (sourceId === 'pgfn-pareceres') return /parecer|s[úu�]mula|decis[aã�]o|tribut/i.test(title) && isTaxRelated(title);
+  if (sourceId === 'pgfn-noticias') return /\/pgfn\/pt-br\/assuntos\/noticias\//i.test(url) && isTaxRelated(title, url);
+  if (sourceId === 'carf-noticias') return /\/carf\/pt-br\/assuntos\/novas-noticias\//i.test(url)
+    && /s[úu�]mula|c[âa]mara superior|csrf|julgamento|ac[oó]rd[aã]o|tribut|cr[ée]dito|contribui|imposto/i.test(title);
+  if (sourceId === 'stf-repercussao-geral') return /tema\s*\d+|repercuss[aã]o geral|plen[áa]rio virtual|tese/i.test(title)
+    && isTaxRelated(title, url);
   if (!isTaxRelated(title, url)) return false;
   if (sourceId === 'receita-federal') return /\/assuntos\/noticias\/20\d{2}\//i.test(url);
   if (sourceId === 'diario-oficial') return /\/web\/dou\/-\//i.test(url);

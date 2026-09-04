@@ -136,9 +136,9 @@ function sourceTypeRank(candidate) {
 
 function sourcePolicyRank(candidate) {
   const sourceId = String(candidate.sourceId || '').toLowerCase();
-  if (['diario-oficial', 'reforma-cgibs', 'pgfn-pareceres'].includes(sourceId) || sourceId.startsWith('receita-')) return 0;
-  if (sourceId === 'carf') return 1;
-  if (['stf', 'stj', 'stf-informativos', 'stj-informativos'].includes(sourceId)) return 2;
+  if (['diario-oficial', 'reforma-cgibs', 'pgfn-pareceres', 'pgfn-noticias'].includes(sourceId) || sourceId.startsWith('receita-')) return 0;
+  if (['carf', 'carf-noticias'].includes(sourceId)) return 1;
+  if (['stf', 'stf-repercussao-geral', 'stj', 'stf-informativos', 'stj-informativos'].includes(sourceId)) return 2;
   if (sourceId === 'confaz-ajustes' || sourceId === 'nfe-notas-tecnicas' || sourceId.startsWith('sped-')) return 3;
   if (/^trf[1-6]$/.test(sourceId)) return 4;
   if (['camara', 'senado'].includes(sourceId)) return 5;

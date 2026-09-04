@@ -98,6 +98,24 @@ export const officialSources = [
     focus: ['Pareceres', 'Dívida ativa', 'Súmulas'], monitoring: 'A cada 6 horas', priority: 11, color: 'blue', adapter: 'links',
   },
   {
+    id: 'pgfn-noticias', name: 'PGFN — Notícias e mudanças de entendimento', acronym: 'PGFN', category: 'Procuradoria da Fazenda Nacional',
+    description: 'Notícias oficiais sobre transação, cobrança, pareceres e inclusões na lista de dispensa de contestar e recorrer.',
+    url: 'https://www.gov.br/pgfn/pt-br/assuntos/noticias', discoveryUrl: 'https://www.gov.br/pgfn/pt-br/assuntos/noticias',
+    focus: ['Dispensa de recorrer', 'Transação tributária', 'Pareceres'], monitoring: 'A cada 6 horas', priority: 10, color: 'blue', adapter: 'links',
+  },
+  {
+    id: 'carf-noticias', name: 'CARF — Notícias, súmulas e julgamentos', acronym: 'CARF', category: 'Contencioso administrativo',
+    description: 'Notícias oficiais do CARF para detectar súmulas, mudanças institucionais e resultados de julgamentos relevantes.',
+    url: 'https://www.gov.br/carf/pt-br/assuntos/novas-noticias', discoveryUrl: 'https://www.gov.br/carf/pt-br/assuntos/novas-noticias',
+    focus: ['Súmulas', 'Câmara Superior', 'Resultados de julgamento'], monitoring: 'A cada 6 horas', priority: 9, color: 'gold', adapter: 'links',
+  },
+  {
+    id: 'stf-repercussao-geral', name: 'STF — Repercussão Geral', acronym: 'STF RG', category: 'Precedentes constitucionais',
+    description: 'Temas, reconhecimento de repercussão geral, pautas e teses no portal oficial do STF.',
+    url: 'https://portal.stf.jus.br/repercussaogeral/', discoveryUrl: 'https://portal.stf.jus.br/repercussaogeral/',
+    focus: ['Temas de repercussão geral', 'Plenário Virtual', 'Teses'], monitoring: 'A cada 6 horas', priority: 4, color: 'red', adapter: 'links',
+  },
+  {
     id: 'confaz-ajustes', name: 'CONFAZ - Ajustes SINIEF', acronym: 'CONFAZ', category: 'Obrigações acessórias estaduais',
     description: 'Ajustes SINIEF, convênios e atos que alteram documentos fiscais, escriturações e procedimentos dos contribuintes.',
     url: 'https://www.confaz.fazenda.gov.br/legislacao/ajustes', discoveryUrl: 'https://www.confaz.fazenda.gov.br/legislacao/ajustes',
@@ -199,8 +217,8 @@ export const complementarySources = [
   {
     id: 'jota', name: 'JOTA', acronym: 'JOTA', category: 'Imprensa jurídica especializada', sourceType: 'journalistic',
     description: 'Notícias e análises sobre direito tributário, tribunais, CARF, Congresso e reforma tributária.',
-    url: 'https://www.jota.info/', discoveryUrl: 'https://portal.jota.info/feed',
-    focus: ['Direito tributário', 'STF e STJ', 'CARF e reforma tributária'], monitoring: 'A cada 10 minutos', priority: 14, color: 'purple', adapter: 'rss',
+    url: 'https://www.jota.info/tributos', discoveryUrl: 'https://www.jota.info/tributos',
+    focus: ['Direito tributário', 'STF e STJ', 'CARF e reforma tributária'], monitoring: 'A cada 10 minutos', priority: 14, color: 'purple', adapter: 'links',
   },
 ];
 

@@ -15,9 +15,10 @@ test('expõe Congresso, tribunais, CARF e administração fiscal', async (contex
   assert.ok(body.total >= 36);
   assert.ok(body.journalistic >= 4);
   assert.ok(ids.includes('jota'));
-  assert.ok(['receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'stj-informativos', 'stf-informativos', 'pgfn-pareceres'].every((id) => ids.includes(id)));
+  assert.ok(['receita-cosit', 'receita-in', 'receita-notas', 'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'stj-informativos', 'stf-informativos', 'stf-repercussao-geral', 'pgfn-pareceres', 'pgfn-noticias', 'carf-noticias'].every((id) => ids.includes(id)));
   assert.ok(['camara', 'senado', 'stf', 'stj', 'carf', 'trf1', 'trf6'].every((id) => ids.includes(id)));
   assert.equal(body.items.find((source) => source.id === 'stf').adapter, 'stf-jurisprudence');
+  assert.equal(body.items.find((source) => source.id === 'jota').discoveryUrl, 'https://www.jota.info/tributos');
   assert.ok(body.items.filter((source) => /^trf[1-6]$/.test(source.id)).every((source) => source.adapter === 'trf-djen'));
   assert.ok(body.items.every((source) => source.url.startsWith('https://')));
 });
