@@ -103,6 +103,9 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
     priority: editorialPolicy.priority || analysis.priority,
     officialUrl: candidate.url, primarySourceUrl: candidate.sourceType === 'official' ? candidate.url : null, sourceUrl: candidate.url,
     policyVersion: TAX_POLICY_VERSION,
+    legalBasis: (Array.isArray(analysis.legalBasis) && analysis.legalBasis.length)
+      ? analysis.legalBasis
+      : [candidate.legalCase?.formatted, candidate.documentKind].filter(Boolean),
     publishedAt: candidate.publishedAt || document.publishedAt || analyzedPublishedAt,
     isDemo: false, createdAt: existingAlert?.createdAt || now, updatedAt: now,
     provenance: {
