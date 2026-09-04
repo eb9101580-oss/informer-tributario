@@ -304,7 +304,7 @@ export async function analyzeWithOllama(document) {
         think: false,
         keep_alive: '10m',
         format: analysisSchema,
-        options: { temperature: 0, num_ctx: 8192, num_predict: 2200 },
+        options: { temperature: 0, num_ctx: 8192, num_predict: 1400 },
         messages: [
           { role: 'system', content: `${systemPrompt}\nUse somente evidências explícitas do texto. Diferencie norma publicada de notícia, proposta ou hipótese. Finalize cada frase; não corte palavras nem sentenças.` },
           { role: 'user', content: analysisContext(document, documentText) },
