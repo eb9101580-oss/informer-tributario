@@ -33,7 +33,7 @@ const PRIORITY_TWO_TOPICS = [
 
 const NORMATIVE_EVENT = /\b(?:publica(?:do|da|ram|cao)?|editou|edita|altera(?:do|da|ram|cao)?|institui(?:u|do|cao)?|regulamenta(?:do|da|ram|cao)?|revoga(?:do|da|ram|cao)?|prorroga(?:do|da|ram|cao)?|aprova(?:do|da|ram|cao)?|fixa(?:do|da|ram|cao)?|estabelece(?:u|cido|cida)?|disciplina(?:do|da)?|entra em vigor|nova versao|novo leiaute|novo layout|nota tecnica\s*(?:n[ºo]\.?\s*)?\d+)\b/;
 const NUMBERED_OFFICIAL_ACT = /\b(?:lei complementar|lei|lc|decreto|instrucao normativa|in\s*rfb|portaria|resolucao|solucao de consulta|solucao de divergencia|parecer normativo|ato declaratorio(?: interpretativo| executivo)?|convenio icms|ajuste sinief|ato cotepe)\s*(?:n[ºo]\.?\s*)?\d[\d./-]*/;
-const JUDICIAL_EVENT = /\b(?:julgou|julgaram|julgamento (?:de merito|concluido|iniciado)|decidiu|decidiram|acordao publicado|sentenca proferida|liminar (?:deferida|indeferida|concedida)|tese (?:fixada|alterada|complementada)|fixou (?:a )?tese|modulacao|modulou|afetacao|afetou (?:o )?recurso|repercussao geral (?:reconhecida|admitida)|transito em julgado)\b/;
+const JUDICIAL_EVENT = /\b(?:julgou|julgaram|julga|julgamento (?:de merito|concluido|iniciado)|decidiu|decidiram|decide|valida|validou|afasta|afastou|derruba|derrubou|nega provimento|negou provimento|da provimento|deu provimento|acordao publicado|sentenca proferida|liminar (?:deferida|indeferida|concedida)|tese (?:fixada|alterada|complementada)|fixou (?:a )?tese|fixa (?:a )?tese|modulacao|modulou|afetacao|afetou (?:o )?recurso|afeta (?:o )?recurso|repercussao geral (?:reconhecida|admitida)|transito em julgado|sessao de julgamento|turma.{0,40}decide|turma.{0,40}julga)\b/;
 const ADMINISTRATIVE_EVENT = /\b(?:novo edital|edital\s*(?:n[ºo]\.?\s*)?\d+|solucao de consulta\s*(?:cosit\s*)?(?:n[ºo]\.?\s*)?\d+|sumula\s*(?:carf\s*)?(?:n[ºo]\.?\s*)?\d+|manual|guia pratico)\b.{0,80}\b(?:publica|aprova|altera|atualiza|nova versao|versao\s*\d+)/;
 const LEGISLATIVE_PROGRESS = /\b(?:aprovou|aprovado|votacao (?:iniciada|concluida)|incluido em pauta|relatorio aprovado|parecer aprovado|avancou na comissao|aprovado na comissao|aprovado no plenario|enviado a sancao|sancionado|promulgado)\b/;
 const STATUS_EVENT = /\b(?:recurso afetado|julgamento iniciado|regulamentacao pendente|incluido em pauta|publicacao do acordao|embargos? (?:acolhidos|julgados)|modulacao|mudanca de entendimento|alterou (?:a )?tese)\b/;
@@ -60,7 +60,7 @@ const DISIT_LOCAL_CONSULTATION = /\b(?:solucao de consulta|solucao de divergenci
 const DISIT_BINDING = /\bsolucao de consulta vinculad[ao]\b|\bvincula(?:-se)?\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b|\bvincul(?:acao|ada|ado)\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b/;
 
 const STF_ALERT = /repercussao geral (?:reconhecida|admitida)|julgamento de merito|julgou (?:o )?merito|modulacao|modulou|tese (?:fixada|alterada)|fixou (?:a )?tese|mudanca de entendimento|alterou (?:o )?entendimento|embargos? .{0,80}(?:alterar|modular|revisar|tese)/;
-const STJ_ALERT = /tema repetitivo|recurso repetitivo|afetacao|afetou (?:o )?recurso|primeira secao|tese (?:fixada|alterada|complementada)|alterou (?:a )?tese|complementou (?:a )?tese|embargos? de divergencia.{0,80}(?:mudanca|tese|entendimento)/;
+const STJ_ALERT = /tema repetitivo|recurso repetitivo|afetacao|afetou (?:o )?recurso|primeira secao|1ª secao|1a secao|primeira turma|1ª turma|1a turma|segunda turma|2ª turma|2a turma|tese (?:fixada|alterada|complementada)|alterou (?:a )?tese|complementou (?:a )?tese|embargos? de divergencia.{0,80}(?:mudanca|tese|entendimento)|decisao colegiada|julgamento conjunto|resp\b|aresp\b/;
 const CARF_INSTITUTIONAL_ALERT = /camara superior|\bcsrf\b|sumula|resolucao (?:de divergencia)?|voto de qualidade/;
 const CARF_NOVELTY_ALERT = /mudanca de entendimento|alterou (?:o )?entendimento|divergencia (?:entre|jurisprudencial|de turmas)|tese (?:nova|reiterada)|entendimento reiterado|decisoes? convergentes? em (?:diferentes|varias) turmas/;
 const CARF_PRIORITY_SUBJECT = /\bjcp\b|juros sobre capital proprio|\bagio\b|planejamento tributario|creditos? (?:de )?(?:pis|cofins|ipi)|retenc(?:ao|oes)|\birpj\b|\bcsll\b|reorganizacao societaria/;
@@ -103,6 +103,7 @@ function detectEventType(text, documentKind = '') {
   if (/\bmodulacao|modulou\b/.test(combined)) return 'MODULACAO';
   if (/repercussao geral (?:reconhecida|admitida)/.test(combined)) return 'REPERCUSSAO_GERAL';
   if (/\b(?:tema repetitivo|recurso repetitivo|afetacao|afetou (?:o )?recurso)\b/.test(combined)) return 'REPETITIVO_AFETADO';
+
   if (/\b(?:tese fixada|fixou (?:a )?tese|tese alterada|alterou (?:a )?tese)\b/.test(combined)) return 'TESE_FIXADA_OU_ALTERADA';
   if (LEGISLATIVE_PROGRESS.test(combined)) return 'PROJETO_AVANCADO';
   if (/\b(?:nova versao|novo leiaute|novo layout|nota tecnica|guia pratico|manual)\b/.test(combined)
@@ -120,7 +121,7 @@ function courtGateFor(sourceId, text) {
   }
   if (sourceId === 'stj' || sourceId === 'stj-noticias' || sourceId === 'stj-informativos') {
     const passed = STJ_ALERT.test(text);
-    return { court: 'STJ', required: true, passed, reason: passed ? null : 'Decisão do STJ fora dos repetitivos, da afetação, de tese nova ou da Primeira Seção relevante.' };
+    return { court: 'STJ', required: true, passed, reason: passed ? null : 'Decisão do STJ sem repercussão colegiada, repetitivo, afetação, tese ou Turma de Direito Público relevante.' };
   }
   if (sourceId === 'carf' || sourceId === 'carf-noticias') {
     const passed = CARF_INSTITUTIONAL_ALERT.test(text)

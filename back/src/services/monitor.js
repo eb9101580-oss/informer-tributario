@@ -11,6 +11,7 @@ import { hasCandidateText, unpackCandidateText } from './candidateText.js';
 import { loadMonitoredSources } from './customSources.js';
 import { collectPublicSourceDocument } from './sourceSafety.js';
 import { assessAlertAnalysisQuality, assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
+import { resolveScoutingCandidate, resolveScoutingToPrimary } from './scoutingResolver.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -451,6 +452,7 @@ export async function getMonitorSnapshot() {
   const monitor = monitorData(database);
   const sources = await loadMonitoredSources();
   return {
+
     runtime: getMonitorRuntime(), lastRunAt: monitor.lastRunAt, nextRunAt: monitor.nextRunAt,
     queued: monitor.candidates.filter((item) => item.status === 'pending').length,
     scouting: monitor.candidates.filter((item) => item.status === 'scouting').length,
@@ -503,6 +505,34 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
         run.sources.push({ id: source.id, acronym: source.acronym, status: 'error', found: 0, message: result.reason?.message || 'Falha na fonte' });
       }
     });
+
+    // Resolve pautas qualificadas de radar/scouting em processos judiciais oficiais
+    const scoutingItems = found.filter((item) => (item.discoveryRole === 'scouting' || item.sourceType === 'journalistic') && hasStrongTaxSignal(item.title));
+    for (const item of scoutingItems) {
+      try {
+        const resolved = await resolveScoutingCandidate(item, true);
+        if (resolved) {
+          found.push(resolved);
+        }
+      } catch {
+        // segue sem quebrar o ciclo
+      }
+    }
+
+    try {
+      const currentDb = await readDatabase();
+      const existingScouting = (monitorData(currentDb).candidates || [])
+        .filter((item) => item.status === 'scouting' && hasStrongTaxSignal(item.title))
+        .slice(0, 10);
+      for (const item of existingScouting) {
+        const resolved = await resolveScoutingCandidate(item, true);
+        if (resolved) {
+          found.push(resolved);
+        }
+      }
+    } catch {
+      // segue sem quebrar o ciclo
+    }
 
     await updateDatabase((database) => {
       const monitor = monitorData(database);
@@ -607,8 +637,8 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           const leftFreshness = freshnessRank(left);
           const rightFreshness = freshnessRank(right);
           if (leftFreshness !== rightFreshness) return leftFreshness - rightFreshness;
-          const leftDecision = /inteiro teor|acórdão|decisão/i.test(left.documentKind) ? 0 : 1;
-          const rightDecision = /inteiro teor|acórdão|decisão/i.test(right.documentKind) ? 0 : 1;
+          const leftDecision = /inteiro teor|acórdão|decisão|julgamento/i.test(left.documentKind) ? 0 : 1;
+          const rightDecision = /inteiro teor|acórdão|decisão|julgamento/i.test(right.documentKind) ? 0 : 1;
           if (leftDecision !== rightDecision) return leftDecision - rightDecision;
           const leftOperational = operationalUpdateRank(left);
           const rightOperational = operationalUpdateRank(right);
@@ -630,8 +660,8 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       const reserved = [];
       const reservedIds = new Set();
       const judicialCandidate = prioritizedQueue.find((candidate) => /^trf[1-6]$/.test(candidate.sourceId) && hasCandidateText(candidate)
-        && /inteiro teor|acórdão|decisão/i.test(candidate.documentKind))
-        || prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão/i.test(candidate.documentKind));
+        && /inteiro teor|acórdão|decisão|julgamento/i.test(candidate.documentKind))
+        || prioritizedQueue.find((candidate) => /inteiro teor|acórdão|decisão|julgamento/i.test(candidate.documentKind));
       if (judicialCandidate) {
         reserved.push(judicialCandidate);
         reservedIds.add(judicialCandidate.id);
