@@ -133,13 +133,19 @@ export function resolveScoutingToPrimary(candidate = {}, fullText = '') {
     .digest('hex')
     .slice(0, 24);
 
+  const cleanBody = String(fullText || candidate.content || candidate.text || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z0-9#]+;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
   const enrichedContent = [
     `Processo Judicial: ${primaryCase.formatted}`,
     `Tribunal: ${courtName}`,
     `Link Oficial: ${officialUrl}`,
     `Origem do Radar: ${candidate.sourceAcronym || candidate.sourceName || 'Radar jornalístico'}`,
     '',
-    fullText || candidate.content || candidate.text || '',
+    cleanBody,
   ].join('\n');
 
   return {

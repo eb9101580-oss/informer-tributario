@@ -728,15 +728,22 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           );
           const policy = candidate.fastTriage?.policy || assessTaxIntelligenceCandidate({ ...candidate, content: document.text });
           const primarySourceVerified = (candidate.sourceType || 'official') === 'official';
+          const highPriorityConfirmed = policy.eligible
+            && policy.concreteEvent
+            && (policy.priorityOneTopics.length > 0 || policy.businessEffect)
+            && alert.score >= 8;
+          const isBusinessActionable = analysis.businessActionable || highPriorityConfirmed;
+          const isRelevant = analysis.relevant || highPriorityConfirmed;
+          const qualityAssessment = assessAlertAnalysisQuality(alert);
           const passesEditorialGate = policy.eligible
             && policy.concreteEvent
             && (policy.priorityOneTopics.length > 0 || policy.businessEffect)
-            && analysis.contentNature !== 'Opinião ou conteúdo sem fato novo'
-            && analysis.businessActionable
-            && analysis.noveltyType !== 'Sem novidade concreta'
-            && analysis.relevanceReasons.length > 0
-            && assessAlertAnalysisQuality(alert).passed;
-          const publish = !excludedTopic && primarySourceVerified && passesEditorialGate && analysis.relevant && alert.score >= 6
+            && (analysis.contentNature !== 'Opinião ou conteúdo sem fato novo' || highPriorityConfirmed)
+            && isBusinessActionable
+            && (analysis.noveltyType !== 'Sem novidade concreta' || highPriorityConfirmed)
+            && ((analysis.relevanceReasons && analysis.relevanceReasons.length > 0) || highPriorityConfirmed)
+            && qualityAssessment.passed;
+          const publish = !excludedTopic && primarySourceVerified && passesEditorialGate && isRelevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
           const discardReason = publish ? null
             : excludedTopic ? 'Tema Simples Nacional excluído por regra editorial.'
