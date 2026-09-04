@@ -198,7 +198,7 @@ export function fastTriageCandidate(candidate) {
 }
 
 export function classifyCandidateForQueue(candidate) {
-  const fastTriage = candidate.fastTriage || fastTriageCandidate(candidate);
+  const fastTriage = candidate.promotedFromScouting ? fastTriageCandidate(candidate) : (candidate.fastTriage || fastTriageCandidate(candidate));
   const scouting = candidate.discoveryRole === 'scouting' || candidate.sourceType === 'journalistic';
   if (scouting) return { ...candidate, fastTriage, status: 'scouting', discardReason: null };
   const policy = fastTriage.policy;
@@ -546,6 +546,12 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       const retained = monitor.candidates.map((item) => {
         if (promotedScoutingUrls.has(item.url)) {
           return { ...item, status: 'promoted', promotedAt: new Date().toISOString() };
+        }
+        if (item.promotedFromScouting && item.status === 'discarded') {
+          const reclassified = classifyCandidateForQueue({ ...item, fastTriage: null, discardReason: null });
+          if (reclassified.status === 'pending') {
+            return reclassified;
+          }
         }
         if (!['pending', 'error', 'fast-published'].includes(item.status)) return item;
         const classified = classifyCandidateForQueue(item);

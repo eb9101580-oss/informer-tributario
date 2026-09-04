@@ -166,6 +166,7 @@ export function resolveScoutingToPrimary(candidate = {}, fullText = '') {
     discoveredAt: new Date().toISOString(),
     status: 'pending',
     discardReason: null,
+    fastTriage: null,
     content: enrichedContent,
     inlineParser: `Resolução de inteligência jurídica (${primaryCase.formatted})`,
     ...packCandidateText(enrichedContent),
