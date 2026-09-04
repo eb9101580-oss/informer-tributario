@@ -3,14 +3,14 @@ import { config } from '../config.js';
 import { collectOfficialPage } from './collector.js';
 import { analyzeDocument } from './ollama.js';
 import { calculateScore, relevanceLabel } from './scoring.js';
-import { discoverSourceCandidates, hasStrongTaxSignal, isCandidateEligible, isExcludedTaxTopic, isTaxRelated, sourceDateCoverage } from './sourceAdapters.js';
+import { discoverSourceCandidates, hasStrongTaxSignal, isExcludedTaxTopic, isTaxRelated, sourceDateCoverage } from './sourceAdapters.js';
 import { readDatabase, updateDatabase } from './store.js';
 import { sectionIdsForSource } from '../data/sections.js';
 import { isPublishedWithinDays, publicationDateKey } from './feedWindow.js';
 import { hasCandidateText, unpackCandidateText } from './candidateText.js';
 import { loadMonitoredSources } from './customSources.js';
 import { collectPublicSourceDocument } from './sourceSafety.js';
-import { assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
+import { assessAlertAnalysisQuality, assessTaxIntelligenceCandidate, TAX_POLICY_VERSION } from './taxIntelligencePolicy.js';
 
 const runtime = { running: false, phase: 'idle', currentSource: null, currentDocument: null, startedAt: null, error: null };
 let timer;
@@ -113,6 +113,7 @@ function makeAlert(analysis, document, candidate, existingAlert = null) {
       documentKind: candidate.documentKind, discoveredAt: candidate.discoveredAt,
       sourceDocumentType: candidate.sourceDocumentType,
       policyVersion: TAX_POLICY_VERSION,
+      analysisVersion: analysis.analysisVersion,
       fastTriage: candidate.fastTriage || fastTriageCandidate(candidate),
     },
     sections: candidate.sections || sectionIdsForSource(candidate.sourceId),
@@ -193,6 +194,22 @@ export function fastTriageCandidate(candidate) {
     engine: `regras-tributarias-v2:${policy.version}`,
     policy,
   };
+}
+
+export function classifyCandidateForQueue(candidate) {
+  const fastTriage = candidate.fastTriage || fastTriageCandidate(candidate);
+  const scouting = candidate.discoveryRole === 'scouting' || candidate.sourceType === 'journalistic';
+  if (scouting) return { ...candidate, fastTriage, status: 'scouting', discardReason: null };
+  const policy = fastTriage.policy;
+  if ((candidate.sourceType || 'official') !== 'official' || !policy?.eligible || !policy?.primarySource || policy?.exclusionReason) {
+    return {
+      ...candidate,
+      fastTriage,
+      status: 'discarded',
+      discardReason: policy?.eligibilityReason || policy?.exclusionReason || 'Fonte oficial primaria nao confirmada.',
+    };
+  }
+  return { ...candidate, fastTriage, status: 'pending', discardReason: null };
 }
 
 const FAST_TAXES = [
@@ -426,7 +443,7 @@ async function mapWithConcurrency(items, concurrency, mapper) {
 }
 
 export function getMonitorRuntime() {
-  return { ...runtime, enabled: config.monitorEnabled, intervalMinutes: config.monitorIntervalMinutes, maxAnalysesPerRun: config.monitorMaxAnalyses };
+  return { ...runtime, enabled: config.monitorEnabled, manualRunsSupported: !config.serverless, intervalMinutes: config.monitorIntervalMinutes, maxAnalysesPerRun: config.monitorMaxAnalyses };
 }
 
 export async function getMonitorSnapshot() {
@@ -436,6 +453,7 @@ export async function getMonitorSnapshot() {
   return {
     runtime: getMonitorRuntime(), lastRunAt: monitor.lastRunAt, nextRunAt: monitor.nextRunAt,
     queued: monitor.candidates.filter((item) => item.status === 'pending').length,
+    scouting: monitor.candidates.filter((item) => item.status === 'scouting').length,
     fastPublished: monitor.candidates.filter((item) => item.status === 'fast-published').length,
     analyzed: monitor.candidates.filter((item) => item.status === 'analyzed').length,
     discarded: monitor.candidates.filter((item) => item.status === 'discarded').length,
@@ -489,9 +507,17 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
     await updateDatabase((database) => {
       const monitor = monitorData(database);
       const publishedFingerprints = new Set(monitor.candidates.filter((item) => ['analyzed', 'fast-published'].includes(item.status)).map(candidateFingerprint));
+      const legacyFastAlertIds = new Set(monitor.candidates
+        .filter((item) => item.status === 'fast-published' && item.alertId)
+        .map((item) => item.alertId));
       const pendingFingerprints = new Set();
-      const retained = monitor.candidates.filter((item) => {
-        if (['pending', 'error'].includes(item.status) && !isCandidateEligible(item.sourceId, item.title, item.url, unpackCandidateText(item))) return false;
+      const retained = monitor.candidates.map((item) => {
+        if (!['pending', 'error', 'fast-published'].includes(item.status)) return item;
+        const classified = classifyCandidateForQueue(item);
+        return classified.status === 'pending' && item.status === 'error'
+          ? { ...classified, status: 'error', error: item.error }
+          : classified;
+      }).filter((item) => {
         if (['pending', 'error'].includes(item.status) && /^trf[1-6]$/.test(item.sourceId) && !hasCandidateText(item) && !item.publishedAt) return false;
         if (['pending', 'error'].includes(item.status) && !shouldRetainQueuedCandidate(item, targetDate)) return false;
         const fingerprint = candidateFingerprint(item);
@@ -508,11 +534,15 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
         if (known.has(id) || knownFingerprints.has(fingerprint)) return [];
         known.add(id);
         knownFingerprints.add(fingerprint);
-        return [{ ...item, id, status: 'pending', attempts: 0, backfillDate: targetDate || null, fastTriage: fastTriageCandidate(item) }];
+        return [classifyCandidateForQueue({ ...item, id, attempts: 0, backfillDate: targetDate || null })];
       });
       run.discovered = additions.length;
       additions.sort((left, right) => sourcePolicyRank(left) - sourcePolicyRank(right));
-      return { ...database, monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) } };
+      return {
+        ...database,
+        alerts: legacyFastAlertIds.size ? database.alerts.filter((item) => !legacyFastAlertIds.has(item.id)) : database.alerts,
+        monitor: { ...monitor, candidates: [...additions, ...retained].slice(0, 20000) },
+      };
     });
 
     if (config.monitorFastPublish && config.monitorFastPublishPerRun > 0) {
@@ -559,6 +589,7 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
           : isPublishedWithinDays(item.publishedAt, config.monitorLookbackDays))
         .map((item) => ({ ...item, fastTriage: item.fastTriage || fastTriageCandidate(item) }))
         .filter((item) => (item.sourceType || 'official') === 'official'
+          && item.discoveryRole !== 'scouting'
           && item.fastTriage.policy?.eligible
           && item.fastTriage.policy?.primarySource
           && !item.fastTriage.policy?.exclusionReason)
@@ -662,7 +693,8 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
             && analysis.contentNature !== 'Opinião ou conteúdo sem fato novo'
             && analysis.businessActionable
             && analysis.noveltyType !== 'Sem novidade concreta'
-            && analysis.relevanceReasons.length > 0;
+            && analysis.relevanceReasons.length > 0
+            && assessAlertAnalysisQuality(alert).passed;
           const publish = !excludedTopic && primarySourceVerified && passesEditorialGate && analysis.relevant && alert.score >= 6
             && (targetDate ? publicationDateKey(alert.publishedAt) === targetDate : isPublishedWithinDays(alert.publishedAt, config.monitorLookbackDays));
           const discardReason = publish ? null

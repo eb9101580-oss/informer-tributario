@@ -520,7 +520,15 @@ async function discoverRss(source) {
     if (!url.startsWith('https://') || !isTaxRelated(title, description, url)) return [];
     const published = rssValue(item, 'pubDate');
     const publishedAt = Number.isNaN(Date.parse(published)) ? '' : new Date(published).toISOString();
-    return [{ title, url: cleanUrl(url), publishedAt, documentKind: 'Notícia jornalística especializada' }];
+    return [{
+      title,
+      url: cleanUrl(url),
+      publishedAt,
+      documentKind: 'Notícia jornalística especializada',
+      sourceDocumentType: 'scouting',
+      discoveryRole: 'scouting',
+      ...packCandidateText(description),
+    }];
   }).slice(0, 60);
 }
 
@@ -585,7 +593,7 @@ export async function discoverSourceCandidates(source, lookbackDays = 7, { targe
   else if (source.adapter === 'custom-links') items = await discoverCustomLinks(source);
   else items = await discoverLinks(source);
   const datedItems = targetDate ? items.filter((item) => publicationDateKey(item.publishedAt) === targetDate) : items;
-  const normalizedItems = datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
+  const normalizedItems = datedItems.map((item) => ({ ...item, sourceId: source.id, sourceName: source.name, sourceAcronym: source.acronym, sourceType: source.sourceType || 'official', discoveryRole: item.discoveryRole || (source.sourceType === 'journalistic' ? 'scouting' : 'primary'), sections: item.sections || source.sections || sectionIdsForSource(source.id), discoveryMethod: source.adapter, discoveredAt: new Date().toISOString() }));
   if (items.discoveryTelemetry) Object.defineProperty(normalizedItems, 'discoveryTelemetry', { value: items.discoveryTelemetry, enumerable: false });
   return normalizedItems;
 }

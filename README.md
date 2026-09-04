@@ -17,7 +17,21 @@ back (Node/Express)
 
 O projeto principal é JavaScript. Os dois arquivos Python em `back/scraper` são adaptadores isolados porque Scrapling é uma biblioteca Python. O `awesome-llm-apps` foi usado como referência arquitetural; nenhum repositório externo foi incorporado ao código.
 
+## Metodologia editorial e briefing
+
+O Informer adota uma estrutura de inteligência inspirada em produtos profissionais de monitoramento tributário, sem reproduzir conteúdo fechado de terceiros. Cada publicação passa por coleta, normalização, extração de sinais, deduplicação por processo/ato/fase, política editorial e análise estruturada do Ollama ou llama.cpp.
+
+Além dos campos factuais ("O que aconteceu", "O que mudou", "Impacto prático", dispositivo, fundamento e vigência), a análise detalhada produz um briefing com contexto e histórico, atores e interesses, próximos passos e pontos objetivos a acompanhar. O campo `editorialFormat` organiza o item em `Matinal`, `Direto da Corte`, `Direto do CARF`, `Direto do Legislativo`, `Apostas da Semana`, `Relatório especial` ou `Monitoramento`.
+
+Esses formatos são apresentados no painel como curadoria do dia. “Direto da Corte” e “Direto do CARF” destacam decisões e resultados; “Direto do Legislativo” acompanha tramitação; “Matinal” reúne fatos recentes; “Apostas da Semana” só é usado quando há agenda ou cenário sustentado por evidências; e “Relatório especial” identifica mudanças amplas. Nenhum cenário é tratado como certeza: hipóteses são marcadas e exigem validação na fonte primária.
+
+O método combina expressões regulares e parsers para localizar números de processo, atos, artigos, datas e seções jurídicas; DataJud/DJEN para movimentações públicas; páginas e PDFs oficiais; e um modelo local apenas para interpretar o texto coletado. O sistema não realiza pedidos de informação via LAI, entrevistas ou parcerias acadêmicas automaticamente; esses são canais externos que podem complementar uma investigação humana, mas não são apresentados como se já existissem no produto.
+
 ## Fontes monitoradas
+
+A descoberta segue um modelo em duas camadas: RSS e imprensa especializada (incluindo o feed publico do JOTA) servem como radar de pautas; a publicacao no feed exige que o backend resolva um documento oficial primario correspondente. Assim a curadoria ganha velocidade sem transformar noticia, opiniao ou previsao em evidencia juridica.
+
+O feed geral exclui decisoes monocraticas e Solucoes de Consulta DISIT/SRRF sem vinculacao expressa a Solucao COSIT ou de Divergencia. Solucoes COSIT e atos vinculados continuam elegiveis quando houver fato novo e impacto empresarial verificavel.
 
 - Receita Federal, sistema Normas (COSIT, Instruções Normativas, Notas e Pareceres), Diário Oficial da União, NF-e e SPED;
 - Câmara dos Deputados e Senado Federal;
@@ -175,7 +189,7 @@ npm.cmd --prefix front run build
 
 O monitor normaliza metadados, deduplica por objeto e evento jurídico e usa regras rápidas apenas para ordenar a fila. Nenhuma triagem provisória é publicada. Todo cartão do feed precisa passar pelo Ollama ou llama.cpp, conter “O que aconteceu”, “O que mudou”, impacto prático, prioridade, perfis afetados e base jurídica, além do link oficial primário.
 
-A política editorial prioriza Reforma IBS/CBS, PIS/Cofins, PER/DCOMP, IRPJ/CSLL/JCP, dividendos/IRRF, retenções, SPED, ICMS e aduaneiro. Conteúdo político, especulativo, educacional, promocional, pessoal ou meramente repetitivo é descartado. Decisões judiciais rotineiras não entram: cada tribunal possui um gate próprio de tese, precedente ou mudança concreta.
+A política editorial prioriza Reforma IBS/CBS, PIS/Cofins, PER/DCOMP, IRPJ/CSLL/JCP, dividendos/IRRF, retenções, SPED, ICMS e aduaneiro. Conteúdo político, especulativo, educacional, promocional, pessoal ou meramente repetitivo é descartado. Decisões judiciais rotineiras não entram: cada tribunal possui um gate próprio de tese, precedente ou mudança concreta. A versão detalhada `detailed-v3` também exige contexto, atores, próximos passos e pontos de acompanhamento distintos entre si.
 
 Para testar llama.cpp no Windows, instale o servidor e inicie um modelo GGUF. Com `ANALYSIS_PROVIDER=auto`, o backend tenta `http://localhost:8080` e volta automaticamente para o Ollama se o servidor nao estiver disponivel:
 
@@ -188,6 +202,7 @@ Variaveis opcionais: `ANALYSIS_PROVIDER=llama.cpp`, `LLAMA_CPP_URL`, `LLAMA_CPP_
 
 ## Referências
 
+- [JOTA PRO Tributos — formatos editoriais públicos](https://portal.jota.info/produtos/jota-pro-tributos) — referência de organização de briefings, sem uso de conteúdo exclusivo;
 - [Scrapling](https://github.com/D4Vinci/Scrapling) — BSD-3-Clause
 - [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — Apache-2.0
 - [Ollama](https://github.com/ollama/ollama) — MIT

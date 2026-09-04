@@ -20,6 +20,7 @@ export function AlertCard({ alert, onOpen, onFeedback, feedback = 0, saved = fal
       <div className="alert-card__body">
         <div className="alert-card__meta">
           <span className={`priority priority--${tone}`}>Prioridade {editorialPriority}</span>
+          <span className="editorial-format">{alert.editorialFormat || 'Monitoramento'}</span>
           <span className="status">{alert.status}</span>
           <span className="source-kind">{alert.provenance?.sourceType === 'journalistic' ? 'Jornalística' : 'Oficial'}</span>
         </div>

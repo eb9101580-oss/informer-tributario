@@ -69,7 +69,16 @@ actionsRouter.get('/', async (request, response, next) => {
   try {
     const data = await readTrackedActionsForUser(request.auth.user);
     response.json({ items: data.trackers, total: data.trackers.length, ...actionsStatus() });
-  } catch (error) { next(error); }
+  } catch (error) {
+    if (error.statusCode === 503) {
+      return response.json({
+        items: [], total: 0, ...actionsStatus(),
+        temporarilyUnavailable: true,
+        warning: error.message,
+      });
+    }
+    return next(error);
+  }
 });
 
 actionsRouter.post('/', async (request, response, next) => {

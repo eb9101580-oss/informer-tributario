@@ -17,6 +17,7 @@ import { SectionPage } from './components/SectionPage.jsx';
 import { SettingsPage } from './components/SettingsPage.jsx';
 import { LoginPage } from './components/LoginPage.jsx';
 import { FeedbackPage } from './components/FeedbackPage.jsx';
+import { EditorialBriefing } from './components/EditorialBriefing.jsx';
 
 const pageTitles = {
   monitor: ['Varredura automática', 'Decisões, normas e proposições consultadas diretamente nas fontes oficiais.'],
@@ -241,6 +242,8 @@ function InternalApp() {
           <MetricCard icon={CircleDollarSign} value={dashboard.metrics.opportunities} label="Oportunidades" detail="Para análise jurídica" tone="gold" onClick={() => setActivePage('opportunities')} />
           <MetricCard icon={Building2} value={dashboard.metrics.monitoredSources} label="Fontes no radar" detail="Fontes oficiais e jornalísticas" tone="teal" onClick={isAdmin ? () => setActivePage('sources') : undefined} />
         </section>
+
+        <EditorialBriefing alerts={overviewAlerts} onOpen={setSelectedAlert} />
 
         <section className="panel overview-feed">
           <div className="panel__heading"><div><h2>Feed tributário personalizado</h2><p>Publicações mais novas primeiro; seus votos ajudam a aperfeiçoar a relevância</p></div><span className="live-dot" /></div>

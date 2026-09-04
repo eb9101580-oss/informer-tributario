@@ -1,4 +1,6 @@
 export const TAX_POLICY_VERSION = 'consultoria-empresarial-v2';
+export const DETAILED_ANALYSIS_VERSION = 'detailed-v3';
+export const EDITORIAL_EXCLUSION_SUMMARY = 'Exclusoes editoriais obrigatorias: nao publicar decisoes monocraticas no feed geral. Solucoes DISIT/SRRF sem vinculacao expressa a Solucao COSIT ou de Divergencia ficam fora; atos COSIT vinculantes continuam elegiveis quando trouxerem fato novo e efeito empresarial.';
 
 function normalize(value = '') {
   return String(value)
@@ -49,6 +51,13 @@ const OLD_REPUBLICATION = /\b(?:relembra|republica|republicado|decisao antiga|ju
 const REVENUE_WITHOUT_EFFECT = /\b(?:arrecadacao (?:bate recorde|recorde|cresce|aumenta|caiu|recua)|resultado da arrecadacao|dados de arrecadacao)\b/;
 const MACRO_WITHOUT_EFFECT = /\b(?:cenario macroeconomico|projecao do pib|mercado financeiro|politica monetaria)\b/;
 const GENERIC_INDEX = /\b(?:indice oficial|pagina de consulta|atualizacao diaria do indice|lista de publicacoes)\b/;
+// Decisões monocráticas podem ser úteis no acompanhamento de um processo,
+// mas não representam a curadoria do feed geral.
+const MONOCRATIC_DECISION = /\b(?:decis(?:ao|oes) monocratica(?:s)?|decis(?:ao|oes) singular(?:es)?|decis(?:ao|oes) unipessoal(?:is)?|despacho monocratico|decis(?:ao|oes) terminativa(?:s)?)\b/;
+// Uma solução DISIT/SRRF só tem alcance nacional quando a própria publicação
+// informa vinculação expressa a uma solução COSIT ou de divergência.
+const DISIT_LOCAL_CONSULTATION = /\b(?:solucao de consulta|solucao de divergencia)\b.{0,140}\bdisit(?:\/srrf\d{2})?\b|\bdisit(?:\/srrf\d{2})?\b.{0,140}\b(?:solucao de consulta|solucao de divergencia)\b/;
+const DISIT_BINDING = /\bsolucao de consulta vinculad[ao]\b|\bvincula(?:-se)?\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b|\bvincul(?:acao|ada|ado)\b.{0,100}\b(?:solucao de consulta|solucao de divergencia|cosit)\b/;
 
 const STF_ALERT = /repercussao geral (?:reconhecida|admitida)|julgamento de merito|julgou (?:o )?merito|modulacao|modulou|tese (?:fixada|alterada)|fixou (?:a )?tese|mudanca de entendimento|alterou (?:o )?entendimento|embargos? .{0,80}(?:alterar|modular|revisar|tese)/;
 const STJ_ALERT = /tema repetitivo|recurso repetitivo|afetacao|afetou (?:o )?recurso|primeira secao|tese (?:fixada|alterada|complementada)|alterou (?:a )?tese|complementou (?:a )?tese|embargos? de divergencia.{0,80}(?:mudanca|tese|entendimento)/;
@@ -68,6 +77,22 @@ const PRIMARY_SOURCE_IDS = new Set([
 
 const GENERIC_ANALYSIS = /entrou no feed|deve ser conferid|pode afetar (?:o |este )?tema|tema indicado|verifique (?:a |o )?fonte|alcance deve ser conferido|publicacao foi identificada|item pode afetar/;
 const MISSING_ANALYSIS = /^(?:informacao nao identificada(?: no documento)?|nao identificado|nao se aplica)\.?$/;
+const ANALYSIS_STOP_WORDS = new Set('a o as os um uma de do da dos das e em no na nos nas por para com sem que se ao aos à às como ou isso este esta esse essa foi sao ser sobre entre após apos contra até ate pela pelo pelas pelos mais menos muito nova novo apenas ainda quando onde qual quais'.split(' '));
+
+function analysisTokens(value) {
+  return new Set(normalize(value)
+    .split(/[^a-z0-9]+/)
+    .filter((token) => token.length >= 4 && !ANALYSIS_STOP_WORDS.has(token)));
+}
+
+function tokenOverlap(left, right) {
+  const leftTokens = analysisTokens(left);
+  const rightTokens = analysisTokens(right);
+  if (leftTokens.size < 5 || rightTokens.size < 5) return 0;
+  let shared = 0;
+  leftTokens.forEach((token) => { if (rightTokens.has(token)) shared += 1; });
+  return shared / Math.min(leftTokens.size, rightTokens.size);
+}
 
 function matchedTopics(text, definitions) {
   return definitions.filter(([, pattern]) => pattern.test(text)).map(([id]) => id);
@@ -110,6 +135,12 @@ function courtGateFor(sourceId, text) {
 }
 
 function negativeAssessment({ title, text, concreteEvent, businessEffect }) {
+  if (MONOCRATIC_DECISION.test(text)) {
+    return { category: 'DECISAO_MONOCRATICA', reason: 'Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.', exceptionApplied: null };
+  }
+  if (DISIT_LOCAL_CONSULTATION.test(text) && !DISIT_BINDING.test(text)) {
+    return { category: 'CONSULTA_DISIT_SEM_VINCULACAO', reason: 'Solução DISIT/SRRF sem vinculação expressa a solução COSIT ou de divergência.', exceptionApplied: null };
+  }
   if (PROMOTIONAL_OR_EVENT.test(title) || SPONSORED.test(text) || EDUCATIONAL.test(title)) {
     return { category: 'PROMOCIONAL_OU_EDUCACIONAL', reason: 'Conteúdo educacional, promocional, curso ou evento.', exceptionApplied: null };
   }
@@ -242,7 +273,9 @@ export function assessPublishedAlert(alert = {}) {
     title: alert.title,
     documentKind: alert.kind || alert.provenance?.documentKind,
     content: [
-      alert.summary, alert.whatChanged, alert.practicalImpact, alert.officeAction, alert.theme,
+      alert.summary, alert.whatChanged, alert.practicalImpact, alert.officeAction, alert.issueOrSubject,
+      alert.rulingOrRule, alert.legalReasoning, alert.effectiveDateOrDeadline, alert.contextAndHistory,
+      alert.actorsAndInterests, alert.nextSteps, alert.watchpoints, alert.theme,
       alert.contentNature, alert.noveltyType, alert.priority, ...(alert.relevanceReasons || []),
       ...(alert.taxes || []), ...(alert.legalBasis || []),
     ].filter(Boolean).join(' '),
@@ -269,6 +302,35 @@ export function assessAlertAnalysisQuality(alert = {}) {
     : [];
   if (!legalBasis.length) reasons.push('Base jurídica não informada.');
   if (normalize(alert.summary) === normalize(alert.whatChanged)) reasons.push('O que aconteceu e o que mudou repetem o mesmo texto.');
+  const detailed = alert.analysisVersion === DETAILED_ANALYSIS_VERSION || alert.provenance?.analysisVersion === DETAILED_ANALYSIS_VERSION;
+  if (detailed) {
+    const detailFields = [
+      ['issueOrSubject', alert.issueOrSubject, 25],
+      ['rulingOrRule', alert.rulingOrRule, 35],
+      ['legalReasoning', alert.legalReasoning, 35],
+      ['contextAndHistory', alert.contextAndHistory, 35],
+      ['actorsAndInterests', alert.actorsAndInterests, 25],
+      ['nextSteps', alert.nextSteps, 35],
+      ['watchpoints', alert.watchpoints, 25],
+    ];
+    for (const [name, value, minimumLength] of detailFields) {
+      const normalized = normalize(value);
+      if (normalized.length < minimumLength || MISSING_ANALYSIS.test(normalized)) reasons.push(`${name} sem conteúdo específico.`);
+      else if (GENERIC_ANALYSIS.test(normalized)) reasons.push(`${name} contém texto genérico.`);
+    }
+    const narratives = [
+      ['summary', alert.summary], ['whatChanged', alert.whatChanged], ['practicalImpact', alert.practicalImpact],
+      ['issueOrSubject', alert.issueOrSubject], ['rulingOrRule', alert.rulingOrRule], ['legalReasoning', alert.legalReasoning],
+      ['contextAndHistory', alert.contextAndHistory], ['actorsAndInterests', alert.actorsAndInterests],
+      ['nextSteps', alert.nextSteps], ['watchpoints', alert.watchpoints],
+    ];
+    for (let index = 0; index < narratives.length; index += 1) {
+      for (let next = index + 1; next < narratives.length; next += 1) {
+        const overlap = tokenOverlap(narratives[index][1], narratives[next][1]);
+        if (overlap >= 0.82) reasons.push(`${narratives[index][0]} e ${narratives[next][0]} são repetitivos.`);
+      }
+    }
+  }
   return { required: true, passed: reasons.length === 0, reasons };
 }
 

@@ -113,13 +113,22 @@ function requireEncryptionKey() {
 }
 
 function decryptTrackers(encrypted) {
-  requireEncryptionKey();
-  const decipher = createDecipheriv('aes-256-gcm', encryptionKey(), Buffer.from(encrypted.iv, 'base64'));
-  decipher.setAuthTag(Buffer.from(encrypted.tag, 'base64'));
-  return JSON.parse(Buffer.concat([
-    decipher.update(Buffer.from(encrypted.data, 'base64')),
-    decipher.final(),
-  ]).toString('utf8'));
+  try {
+    requireEncryptionKey();
+    const decipher = createDecipheriv('aes-256-gcm', encryptionKey(), Buffer.from(encrypted.iv, 'base64'));
+    decipher.setAuthTag(Buffer.from(encrypted.tag, 'base64'));
+    return JSON.parse(Buffer.concat([
+      decipher.update(Buffer.from(encrypted.data, 'base64')),
+      decipher.final(),
+    ]).toString('utf8'));
+  } catch (cause) {
+    if (cause.statusCode === 503) throw cause;
+    const error = new Error('Os acompanhamentos foram criptografados com outra chave. O arquivo original foi preservado.');
+    error.statusCode = 503;
+    error.code = 'TRACKED_ACTIONS_DECRYPTION_FAILED';
+    error.cause = cause;
+    throw error;
+  }
 }
 
 function normalizeData(data = {}) {

@@ -291,6 +291,30 @@ test('policy atual rejeita todas as fórmulas genéricas proibidas', () => {
   }
 });
 
+test('análise detalhada exige leitura separada do objeto, dispositivo e fundamento', () => {
+  const detailed = currentPolicyAlert({
+    analysisVersion: 'detailed-v3',
+    issueOrSubject: 'A controvérsia é o momento de recolhimento do IBS no split payment.',
+    rulingOrRule: 'A resolução determina que o recolhimento ocorra no momento definido para a liquidação do pagamento.',
+    legalReasoning: 'O CGIBS aplica a autorização prevista na LC nº 214/2025 para disciplinar a operação.',
+    effectiveDateOrDeadline: 'A vigência começa na data indicada na resolução.',
+    contextAndHistory: 'O recolhimento vinha sendo tratado antes da regulamentação específica do split payment e a resolução surge para detalhar essa etapa operacional.',
+    actorsAndInterests: 'O CGIBS disciplina a operação para fornecedores, adquirentes e instituições de pagamento envolvidos na liquidação.',
+    nextSteps: 'As empresas devem acompanhar a regulamentação complementar e adequar a conciliação do pagamento na data de vigência.',
+    watchpoints: 'Acompanhar a data de vigência, os leiautes técnicos e eventual regulamentação complementar do CGIBS.',
+  });
+  assert.equal(assessAlertAnalysisQuality(detailed).passed, true);
+
+  const repetitive = {
+    ...detailed,
+    rulingOrRule: detailed.issueOrSubject,
+    legalReasoning: detailed.issueOrSubject,
+  };
+  const quality = assessAlertAnalysisQuality(repetitive);
+  assert.equal(quality.passed, false);
+  assert.ok(quality.reasons.some((reason) => /repetitivos/i.test(reason)));
+});
+
 test('regra de qualidade preserva legado e ações processuais acompanhadas', () => {
   const legacy = currentPolicyAlert({ policyVersion: undefined, provenance: { sourceId: 'reforma-cgibs', sourceType: 'official' }, legalBasis: [] });
   assert.deepEqual(assessAlertAnalysisQuality(legacy), { required: false, passed: true, reasons: [] });

@@ -56,6 +56,7 @@ function publicationFields(alert) {
     score: String(alert.score).replace('.', ','),
     relevance: String(alert.relevance || 'Alta relevância'),
     priority: editorialPriority(alert),
+    editorialFormat: String(alert.editorialFormat || 'Monitoramento'),
     publishedAt: displayPublicationDate(alert.publishedAt),
     agency: String(alert.agency || alert.provenance?.sourceName || 'Não informado'),
     taxes: displayList(alert.taxes),
@@ -66,6 +67,10 @@ function publicationFields(alert) {
     impactDetail: String(alert.officeAction || alert.opportunity?.action || 'Acompanhar a fonte oficial.'),
     affectedProfiles: displayList(alert.affectedProfiles),
     legalBasis: displayList(alert.legalBasis, 'Não identificada no documento'),
+    contextAndHistory: String(alert.contextAndHistory || 'Não informado'),
+    actorsAndInterests: String(alert.actorsAndInterests || 'Não informado'),
+    nextSteps: String(alert.nextSteps || 'Não informado'),
+    watchpoints: String(alert.watchpoints || 'Não informado'),
     primarySourceUrl: primarySourceUrlForAlert(alert) || '',
   };
 }
@@ -77,11 +82,15 @@ function fullPublicationHtml(alert, headingLevel = 2) {
     ? `<p><a href="${escapeHtml(fields.primarySourceUrl)}">Abrir fonte oficial primária</a></p>`
     : '<p><strong>Fonte oficial primária:</strong> não localizada.</p>';
   return `<${Heading} style="font-size:18px;margin:0 0 6px">${escapeHtml(fields.title)}</${Heading}>
-    <p style="margin:0 0 8px"><strong>Nota ${fields.score}/10</strong> · ${escapeHtml(fields.relevance)} · <strong>Prioridade ${escapeHtml(fields.priority)}</strong></p>
+    <p style="margin:0 0 8px"><strong>Nota ${fields.score}/10</strong> · ${escapeHtml(fields.relevance)} · <strong>Prioridade ${escapeHtml(fields.priority)}</strong> · ${escapeHtml(fields.editorialFormat)}</p>
     <p><strong>Data:</strong> ${escapeHtml(fields.publishedAt)}<br><strong>Órgão:</strong> ${escapeHtml(fields.agency)}<br><strong>Tributos:</strong> ${escapeHtml(fields.taxes)}</p>
     <h3>O que aconteceu</h3><p>${escapeHtml(fields.summary)}</p>
     <h3>O que mudou</h3><p>${escapeHtml(fields.whatChanged)}</p>
     <h3>Impacto prático</h3><p>${escapeHtml(fields.practicalImpact)}</p>
+    <h3>Contexto e histórico</h3><p>${escapeHtml(fields.contextAndHistory)}</p>
+    <h3>Atores e interesses</h3><p>${escapeHtml(fields.actorsAndInterests)}</p>
+    <h3>Próximos passos</h3><p>${escapeHtml(fields.nextSteps)}</p>
+    <h3>O que acompanhar</h3><p>${escapeHtml(fields.watchpoints)}</p>
     <h3>Oportunidade ou risco</h3><p><strong>${escapeHtml(fields.impactType)}</strong> — ${escapeHtml(fields.impactDetail)}</p>
     <h3>Quem pode ser afetado</h3><p>${escapeHtml(fields.affectedProfiles)}</p>
     <h3>Base jurídica</h3><p>${escapeHtml(fields.legalBasis)}</p>
@@ -92,6 +101,7 @@ function fullPublicationText(alert) {
   const fields = publicationFields(alert);
   return `${fields.title}
 Nota ${alert.score}/10 · ${fields.relevance} · Prioridade ${fields.priority}
+Formato: ${fields.editorialFormat}
 Data: ${fields.publishedAt}
 Órgão: ${fields.agency}
 Tributos: ${fields.taxes}
@@ -104,6 +114,18 @@ ${fields.whatChanged}
 
 Impacto prático
 ${fields.practicalImpact}
+
+Contexto e histórico
+${fields.contextAndHistory}
+
+Atores e interesses
+${fields.actorsAndInterests}
+
+Próximos passos
+${fields.nextSteps}
+
+O que acompanhar
+${fields.watchpoints}
 
 Oportunidade ou risco
 ${fields.impactType} — ${fields.impactDetail}
