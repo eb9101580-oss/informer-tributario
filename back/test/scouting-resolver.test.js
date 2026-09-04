@@ -4,6 +4,7 @@ import {
   extractProcessReferences,
   officialCourtUrl,
   resolveScoutingToPrimary,
+  extractTextFromArticleHtml,
 } from '../src/services/scoutingResolver.js';
 import {
   assessTaxIntelligenceCandidate,
@@ -83,3 +84,18 @@ test('título com verbo no presente ("decide STJ") e REsp passa na triagem tribu
   assert.equal(assessment.eligible, true, 'Deve ser elegível para análise e publicação');
   assert.ok(assessment.priorityOneTopics.includes('irpj-csll-jcp'), 'Deve identificar o tópico prioritário de IRPJ');
 });
+
+test('extractTextFromArticleHtml extrai conteúdo de __NEXT_DATA__ e JSON-LD de páginas jornalísticas', () => {
+  const html = `
+    <!DOCTYPE html><html><head>
+    <script id="__NEXT_DATA__" type="application/json">
+      {"props":{"pageProps":{"post":{"title":"Incide IRPJ, decide STJ","content":"A 1ª Turma julgou o REsp 2211684/SP."}}}}
+    </script>
+    </head><body><p>Menu</p></body></html>
+  `;
+  const text = extractTextFromArticleHtml(html);
+  const cases = extractProcessReferences(text);
+  assert.ok(cases.length >= 1, 'Deve extrair casos de páginas Next.js');
+  assert.equal(cases[0].formatted, 'REsp 2211684/SP');
+});
+

@@ -6,16 +6,16 @@ import { createHash } from 'node:crypto';
 export const PROCESS_PATTERNS = [
   // CNJ unificado: NNNNNNN-DD.AAAA.J.TR.OOOO
   /\b(\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4})\b/,
-  // STJ: REsp, AREsp, RMS, CC, HC, etc. com número e UF opcional
-  /\b(resp|aresp|rms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/]+([a-z]{2}))?\b/gi,
-  // STF: RE, ARE, ADI, ADC, ADPF, ACO, MS com número e UF opcional
-  /\b(re|are|adi|adc|adpf|aco|ms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/]+([a-z]{2}))?\b/gi,
+  // STJ: REsp, AREsp, RMS, CC, HC, etc. com número e UF opcional (inclui \/ escapado de JSON)
+  /\b(resp|aresp|rms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/\\|]+([a-z]{2}))?\b/gi,
+  // STF: RE, ARE, ADI, ADC, ADPF, ACO, MS com número e UF opcional (inclui \/ escapado de JSON)
+  /\b(re|are|adi|adc|adpf|aco|ms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/\\|]+([a-z]{2}))?\b/gi,
   // Temas repetitivos / repercussão geral
   /\btema\s*(?:n[ºo.]?\s*)?(\d{1,5})\s*(?:do\s+)?(stf|stj|tnu)\b/gi,
 ];
 
 export function extractLegalCases(text = '') {
-  const normalized = String(text || '').replace(/\s+/g, ' ');
+  const normalized = String(text || '').replace(/\\\/|\//g, '/').replace(/\s+/g, ' ');
   const cases = [];
 
   // 1. Número CNJ
@@ -47,7 +47,7 @@ export function extractLegalCases(text = '') {
     ms: 'MS',
   };
 
-  const stjMatches = normalized.matchAll(/\b(resp|aresp|rms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/]+([a-z]{2}))?\b/gi);
+  const stjMatches = normalized.matchAll(/\b(resp|aresp|rms)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/\\|]+([a-z]{2}))?\b/gi);
   for (const match of stjMatches) {
     const rawKind = match[1].toLowerCase();
     const kind = KIND_LABELS[rawKind] || rawKind.toUpperCase();
@@ -68,7 +68,7 @@ export function extractLegalCases(text = '') {
   }
 
   // 3. RE / ARE / ADI / ADC / ADPF / ACO (STF)
-  const stfMatches = normalized.matchAll(/\b(re|are|adi|adc|adpf|aco)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/]+([a-z]{2}))?\b/gi);
+  const stfMatches = normalized.matchAll(/\b(re|are|adi|adc|adpf|aco)\s*(?:n[ºo.]?\s*)?([\d.]{4,})(?:[\s/\\|]+([a-z]{2}))?\b/gi);
   for (const match of stfMatches) {
     const rawKind = match[1].toLowerCase();
     const kind = KIND_LABELS[rawKind] || rawKind.toUpperCase();
@@ -175,6 +175,52 @@ export function resolveScoutingToPrimary(candidate = {}, fullText = '') {
 export const extractProcessReferences = extractLegalCases;
 export const officialCourtUrl = generateOfficialProcessUrl;
 
+export function extractTextFromArticleHtml(html = '') {
+  let richText = '';
+
+  // 1. Next.js data (__NEXT_DATA__)
+  const nextMatch = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/i);
+  if (nextMatch) {
+    try {
+      const data = JSON.parse(nextMatch[1]);
+      const post = data.props?.pageProps?.post || data.props?.pageProps?.article || data.props?.pageProps?.news;
+      if (post) {
+        richText += ` ${post.title || ''} ${post.subtitle || ''} ${post.excerpt || ''} ${post.content || ''}`;
+      } else {
+        const pagePropsStr = JSON.stringify(data.props?.pageProps || {});
+        richText += ` ${pagePropsStr.replace(/\\"/g, '"').replace(/\\\//g, '/')}`;
+      }
+    } catch {}
+  }
+
+  // 2. JSON-LD (Schema.org NewsArticle, Article)
+  const ldMatches = html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi);
+  for (const m of ldMatches) {
+    try {
+      const ld = JSON.parse(m[1]);
+      const items = Array.isArray(ld) ? ld : [ld];
+      for (const item of items) {
+        richText += ` ${item.headline || ''} ${item.description || ''} ${item.articleBody || ''}`;
+      }
+    } catch {}
+  }
+
+  // 3. Meta tags (OpenGraph, Twitter, Description)
+  const metaMatches = html.matchAll(/<meta\s+(?:property|name)=["'](?:og:description|twitter:description|description)["']\s+content=["']([^"']+)["']/gi);
+  for (const m of metaMatches) {
+    richText += ` ${m[1]}`;
+  }
+
+  // 4. HTML limpo de scripts normais e estilos
+  const cleanBody = html
+    .replace(/<script(?![^>]*id="__NEXT_DATA__")[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ');
+
+  return `${richText} ${cleanBody}`.trim();
+}
+
 export async function resolveScoutingCandidate(candidate = {}, fetchArticle = false) {
   let combinedText = `${candidate.title || ''} ${candidate.content || ''}`;
   let cases = extractLegalCases(combinedText);
@@ -190,15 +236,10 @@ export async function resolveScoutingCandidate(candidate = {}, fetchArticle = fa
       });
       if (response.ok) {
         const html = await response.text();
-        cases = extractLegalCases(html);
+        const extractedText = extractTextFromArticleHtml(html);
+        cases = extractLegalCases(extractedText);
         if (cases.length) {
-          const textContent = html.replace(/<script[\s\S]*?<\/script>/gi, ' ')
-            .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-            .replace(/<[^>]+>/g, ' ')
-            .replace(/\s+/g, ' ')
-            .trim()
-            .slice(0, 15000);
-          combinedText = `${candidate.title || ''} ${textContent}`;
+          combinedText = `${candidate.title || ''} ${extractedText.slice(0, 15000)}`;
         }
       }
     } catch {

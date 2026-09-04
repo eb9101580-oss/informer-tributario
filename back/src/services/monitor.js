@@ -519,15 +519,17 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
       }
     }
 
+    const promotedScoutingUrls = new Set();
     try {
       const currentDb = await readDatabase();
       const existingScouting = (monitorData(currentDb).candidates || [])
-        .filter((item) => item.status === 'scouting' && hasStrongTaxSignal(item.title))
-        .slice(0, 10);
+        .filter((item) => item.status === 'scouting' && (hasStrongTaxSignal(item.title) || isTaxRelated(item.title) || item.sourceType === 'journalistic'))
+        .slice(0, 15);
       for (const item of existingScouting) {
         const resolved = await resolveScoutingCandidate(item, true);
         if (resolved) {
           found.push(resolved);
+          promotedScoutingUrls.add(item.url);
         }
       }
     } catch {
@@ -542,6 +544,9 @@ export async function runMonitor({ analyze = true, discover = true, trigger = 'm
         .map((item) => item.alertId));
       const pendingFingerprints = new Set();
       const retained = monitor.candidates.map((item) => {
+        if (promotedScoutingUrls.has(item.url)) {
+          return { ...item, status: 'promoted', promotedAt: new Date().toISOString() };
+        }
         if (!['pending', 'error', 'fast-published'].includes(item.status)) return item;
         const classified = classifyCandidateForQueue(item);
         return classified.status === 'pending' && item.status === 'error'
