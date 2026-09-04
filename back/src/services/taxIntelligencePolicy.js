@@ -69,7 +69,7 @@ const TRF_NEW_LAW_INJUNCTION = /(?:liminar|tutela (?:de urgencia|provisoria)).{0
 
 const PRIMARY_SOURCE_IDS = new Set([
   'diario-oficial', 'receita-federal', 'receita-cosit', 'receita-in', 'receita-notas', 'reforma-cgibs',
-  'pgfn-pareceres', 'pgfn-noticias', 'carf', 'carf-noticias', 'stf', 'stf-repercussao-geral', 'stj', 'stj-informativos', 'stf-informativos', 'confaz-ajustes',
+  'pgfn-pareceres', 'pgfn-noticias', 'carf', 'carf-noticias', 'stf', 'stj', 'stj-informativos', 'stf-informativos', 'confaz-ajustes',
   'nfe-notas-tecnicas', 'sped-notas-tecnicas', 'sped-ecd', 'sped-ecf', 'sped-efd-contribuicoes',
   'sped-efd-icms-ipi', 'sped-efd-reinf', 'sped-e-financeira', 'sped-esocial', 'sped-dere',
   'camara', 'senado', 'trf1', 'trf2', 'trf3', 'trf4', 'trf5', 'trf6',
@@ -114,7 +114,7 @@ function detectEventType(text, documentKind = '') {
 }
 
 function courtGateFor(sourceId, text) {
-  if (sourceId === 'stf' || sourceId === 'stf-informativos' || sourceId === 'stf-repercussao-geral') {
+  if (sourceId === 'stf' || sourceId === 'stf-informativos') {
     const passed = STF_ALERT.test(text);
     return { court: 'STF', required: true, passed, reason: passed ? null : 'Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante.' };
   }

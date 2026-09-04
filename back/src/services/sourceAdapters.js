@@ -130,8 +130,6 @@ export function isCandidateEligible(sourceId, title, url, content = '') {
   if (sourceId === 'pgfn-noticias') return /\/pgfn\/pt-br\/assuntos\/noticias\//i.test(url) && isTaxRelated(title, url);
   if (sourceId === 'carf-noticias') return /\/carf\/pt-br\/assuntos\/novas-noticias\//i.test(url)
     && /s[úu�]mula|c[âa]mara superior|csrf|julgamento|ac[oó]rd[aã]o|tribut|cr[ée]dito|contribui|imposto/i.test(title);
-  if (sourceId === 'stf-repercussao-geral') return /tema\s*\d+|repercuss[aã]o geral|plen[áa]rio virtual|tese/i.test(title)
-    && isTaxRelated(title, url);
   if (!isTaxRelated(title, url)) return false;
   if (sourceId === 'receita-federal') return /\/assuntos\/noticias\/20\d{2}\//i.test(url);
   if (sourceId === 'diario-oficial') return /\/web\/dou\/-\//i.test(url);
@@ -497,8 +495,47 @@ async function discoverTrf(source, targetDate = null) {
 
 async function discoverStf(source, lookbackDays, targetDate = null) {
   const jurisprudence = await discoverStfJurisprudence(targetDate || '', lookbackDays).then((result) => result.items || []);
-  const news = await discoverLinks(source).catch(() => []);
+  const news = await discoverStfNews(lookbackDays).catch(() => discoverLinks(source).catch(() => []));
   return [...jurisprudence, ...news];
+}
+
+function slugifyStfNewsTitle(value = '') {
+  return normalizeSearchText(value)
+    .replace(/\s+-\s+stf noticias\s*$/, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+export function parseStfNewsRss(xml = '') {
+  return [...String(xml).matchAll(/<item(?:\s[^>]*)?>([\s\S]*?)<\/item>/gi)].flatMap((match) => {
+    const item = match[1];
+    const rawTitle = rssValue(item, 'title');
+    const title = rawTitle.replace(/\s+-\s+stf noticias\s*$/i, '').trim();
+    if (!title || !isTaxRelated(title)) return [];
+    const slug = slugifyStfNewsTitle(rawTitle);
+    if (!slug) return [];
+    const published = rssValue(item, 'pubDate');
+    const publishedAt = Number.isNaN(Date.parse(published)) ? '' : new Date(published).toISOString();
+    return [{
+      title,
+      url: `https://noticias.stf.jus.br/postsnoticias/${slug}/`,
+      publishedAt,
+      documentKind: 'Notícia oficial de julgamento do STF',
+      sourceDocumentType: 'official-news',
+      fingerprintKey: `stf-news:${slug}`,
+    }];
+  });
+}
+
+async function discoverStfNews(lookbackDays = 2) {
+  const days = Math.max(2, Math.min(Number(lookbackDays) + 1 || 3, 7));
+  const query = encodeURIComponent(`site:noticias.stf.jus.br/postsnoticias/ (tributário OR imposto OR PIS OR Cofins OR ICMS OR ITBI OR IRPJ OR CSLL OR IBS OR CBS) when:${days}d`);
+  const response = await fetch(`https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-419`, {
+    headers: { Accept: 'application/rss+xml, application/xml;q=0.9' },
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!response.ok) throw new Error(`Índice de notícias do STF respondeu com status ${response.status}.`);
+  return parseStfNewsRss(await response.text()).slice(0, 40);
 }
 
 function decodeXml(value = '') {

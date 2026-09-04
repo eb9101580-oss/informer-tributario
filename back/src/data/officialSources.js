@@ -61,7 +61,7 @@ export const officialSources = [
   {
     id: 'stf', name: 'Supremo Tribunal Federal', acronym: 'STF', category: 'Jurisprudência constitucional',
     description: 'Acórdãos e decisões monocráticas da pesquisa oficial de jurisprudência, além das notícias do STF, filtrados por matéria tributária.',
-    url: 'https://jurisprudencia.stf.jus.br/pages/search', discoveryUrl: 'https://noticias.stf.jus.br/',
+    url: 'https://jurisprudencia.stf.jus.br/pages/search', discoveryUrl: 'https://noticias.stf.jus.br/category/noticia/',
     focus: ['Acórdãos', 'Decisões monocráticas', 'Notícias'], monitoring: 'A cada 6 horas', priority: 5, color: 'red', adapter: 'stf-jurisprudence',
   },
   {
@@ -108,12 +108,6 @@ export const officialSources = [
     description: 'Notícias oficiais do CARF para detectar súmulas, mudanças institucionais e resultados de julgamentos relevantes.',
     url: 'https://www.gov.br/carf/pt-br/assuntos/novas-noticias', discoveryUrl: 'https://www.gov.br/carf/pt-br/assuntos/novas-noticias',
     focus: ['Súmulas', 'Câmara Superior', 'Resultados de julgamento'], monitoring: 'A cada 6 horas', priority: 9, color: 'gold', adapter: 'links',
-  },
-  {
-    id: 'stf-repercussao-geral', name: 'STF — Repercussão Geral', acronym: 'STF RG', category: 'Precedentes constitucionais',
-    description: 'Temas, reconhecimento de repercussão geral, pautas e teses no portal oficial do STF.',
-    url: 'https://portal.stf.jus.br/repercussaogeral/', discoveryUrl: 'https://portal.stf.jus.br/repercussaogeral/',
-    focus: ['Temas de repercussão geral', 'Plenário Virtual', 'Teses'], monitoring: 'A cada 6 horas', priority: 4, color: 'red', adapter: 'links',
   },
   {
     id: 'confaz-ajustes', name: 'CONFAZ - Ajustes SINIEF', acronym: 'CONFAZ', category: 'Obrigações acessórias estaduais',

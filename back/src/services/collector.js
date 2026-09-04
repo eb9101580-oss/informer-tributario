@@ -34,7 +34,16 @@ export async function collectOfficialPage(url) {
   let lastError;
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
-      return await runPython(scriptPath, url, 60000, 'A coleta excedeu o limite de 60 segundos.');
+      const result = await runPython(scriptPath, url, 60000, 'A coleta excedeu o limite de 60 segundos.');
+      if (new URL(url).hostname === 'noticias.stf.jus.br' && Number(result.characters || 0) < 200) {
+        const response = await fetch(`https://r.jina.ai/${url}`, { signal: AbortSignal.timeout(45000) });
+        if (!response.ok) throw new Error(`Leitor do STF respondeu com status ${response.status}.`);
+        const text = await response.text();
+        if (text.length < 200) throw new Error('A notícia oficial do STF não retornou texto suficiente.');
+        const title = text.match(/^Title:\s*(.+)$/m)?.[1]?.trim() || result.title;
+        return { ...result, url, title, text, characters: text.length, parser: 'Página oficial do STF via leitor de acessibilidade' };
+      }
+      return result;
     } catch (error) {
       lastError = error;
       if (attempt < 3) await new Promise((resolvePromise) => setTimeout(resolvePromise, attempt * 1200));

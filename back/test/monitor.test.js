@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { canFastPublishCandidate, candidateFingerprint, candidateId, classifyCandidateForQueue, enrichFastAlert, fastTriageCandidate, makeFastAlert, normalizeMonitorTargetDate, shouldRetainQueuedCandidate } from '../src/services/monitor.js';
-import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isExcludedTaxTopic, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
+import { carfSolrQueryUrl, hasStjTaxSubject, hasStrongTaxSignal, isCandidateEligible, isDjenDecision, isExcludedTaxTopic, isTaxRelated, mapCarfDecisions, mapDjenDecisions, mapReceitaNormasLinks, mapStjDailyDecisions, normalizeSearchText, parseStfNewsRss, receitaNormasQueryUrl, selectStjMetadataResources, sourceDateCoverage, stjPublicationDate, structuredDateRange } from '../src/services/sourceAdapters.js';
 import { hasCandidateText, packCandidateText, unpackCandidateText } from '../src/services/candidateText.js';
 
 test('filtro tributário ignora acentos e identifica tributos', () => {
@@ -230,6 +230,15 @@ test('texto integral grande da decisão é compactado sem perda para a fila', ()
   assert.equal(hasCandidateText(packed), true);
   assert.equal(unpackCandidateText(packed), original);
   assert.ok(packed.inlineTextGzip.length < original.length / 5);
+});
+
+test('notícia tributária do STF vira candidato oficial com URL estável', () => {
+  const xml = `<rss><channel><item><title>PIS/Cofins não incidem sobre reservas técnicas de seguradoras, decide STF - stf noticias</title><pubDate>Wed, 02 Sep 2026 23:46:00 GMT</pubDate></item><item><title>Evento institucional do STF - stf noticias</title><pubDate>Wed, 02 Sep 2026 20:00:00 GMT</pubDate></item></channel></rss>`;
+  const items = parseStfNewsRss(xml);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].publishedAt, '2026-09-02T23:46:00.000Z');
+  assert.match(items[0].url, /^https:\/\/noticias\.stf\.jus\.br\/postsnoticias\/pis-cofins-nao-incidem/);
+  assert.equal(items[0].sourceDocumentType, 'official-news');
 });
 
 test('fila do Ollama contém apenas fontes oficiais aprovadas pela política', () => {
