@@ -110889,6 +110889,593 @@
     ],
     "runs": [
       {
+        "id": "cf43deea-68f0-43cc-8ad6-87dee81246e7",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-09-06T21:00:43.523Z",
+        "finishedAt": "2026-09-06T21:00:46.158Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 0,
+        "sources": []
+      },
+      {
+        "id": "deba55df-fd34-452c-8207-4311d0630b92",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-09-05",
+        "startedAt": "2026-09-06T20:47:45.939Z",
+        "finishedAt": "2026-09-06T20:59:54.758Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 24,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 403."
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF5 falharam."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF6 falharam."
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "aca4fe52-1f4d-4e79-807d-7089079166f1",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-09-06T20:35:21.247Z",
+        "finishedAt": "2026-09-06T20:47:45.827Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 26,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 403."
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 35,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF5 falharam."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF6 falharam."
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "2ea3d6f0-1d24-4b85-bda2-4f1e9b0646b4",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -130596,626 +131183,9 @@
         "discarded": 0,
         "errors": 0,
         "sources": []
-      },
-      {
-        "id": "434a331a-9ec6-42d6-88ec-9f63cdf2d2cf",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-08-28",
-        "startedAt": "2026-08-29T21:20:45.035Z",
-        "finishedAt": "2026-08-29T21:22:59.776Z",
-        "discovered": 404,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 80,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 35567,
-              "entries": 36,
-              "processed": 35567,
-              "dateMatched": 35567,
-              "decisionMatched": 6928,
-              "taxMatched": 2453,
-              "deduplicated": 2283,
-              "duplicates": 170,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 55,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 15888,
-              "entries": 16,
-              "processed": 15888,
-              "dateMatched": 15888,
-              "decisionMatched": 7471,
-              "taxMatched": 1614,
-              "deduplicated": 1614,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 19359,
-              "entries": 20,
-              "processed": 19359,
-              "dateMatched": 19359,
-              "decisionMatched": 7007,
-              "taxMatched": 2912,
-              "deduplicated": 2802,
-              "duplicates": 110,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 35160,
-              "entries": 36,
-              "processed": 35160,
-              "dateMatched": 35160,
-              "decisionMatched": 9270,
-              "taxMatched": 2016,
-              "deduplicated": 2016,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 23095,
-              "entries": 24,
-              "processed": 23095,
-              "dateMatched": 23095,
-              "decisionMatched": 6368,
-              "taxMatched": 3227,
-              "deduplicated": 3114,
-              "duplicates": 113,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 40,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 12595,
-              "entries": 13,
-              "processed": 12595,
-              "dateMatched": 12595,
-              "decisionMatched": 5435,
-              "taxMatched": 1126,
-              "deduplicated": 1126,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "4d9b8b46-5ad0-46b5-b19b-e484de359402",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-08-29T21:14:23.097Z",
-        "finishedAt": "2026-08-29T21:20:44.939Z",
-        "discovered": 71,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 3,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "error",
-            "found": 0,
-            "message": "fetch failed"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 20,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 80,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 583,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 21,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 35,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "error",
-            "found": 0,
-            "message": "As consultas de decisões e notícias do TRF6 falharam."
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 11,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "533e6024-8d5a-43ae-8888-429d6f65b36b",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-08-29T18:49:55.494Z",
-        "finishedAt": "2026-08-29T18:49:56.304Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-09-06T18:39:32.152Z",
-    "nextRunAt": "2026-09-07T00:39:32.152Z"
+    "lastRunAt": "2026-09-06T21:00:46.158Z",
+    "nextRunAt": "2026-09-07T03:00:46.158Z"
   }
 }
