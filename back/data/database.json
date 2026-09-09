@@ -26374,6 +26374,1982 @@
   "monitor": {
     "candidates": [
       {
+        "title": "Partido Verde questiona no STF regras sobre fiscalização do Imposto sobre Bens e Serviços - noticias.stf.jus.br",
+        "url": "https://noticias.stf.jus.br/postsnoticias/partido-verde-questiona-no-stf-regras-sobre-fiscalizacao-do-imposto-sobre-bens-e-servicos-noticias-stf-jus-br/",
+        "publishedAt": "2026-09-08T21:41:00.000Z",
+        "documentKind": "Notícia oficial de julgamento do STF",
+        "sourceDocumentType": "official-news",
+        "fingerprintKey": "stf-news:partido-verde-questiona-no-stf-regras-sobre-fiscalizacao-do-imposto-sobre-bens-e-servicos-noticias-stf-jus-br",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:25:16.670Z",
+        "id": "bf2d7c4792f7ac4d18a58489",
+        "attempts": 0,
+        "backfillDate": "2026-09-08",
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante.",
+            "exclusionReason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante.",
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+      },
+      {
+        "title": "RE 1620601 — transcrevo a seguir: Agravo regimental em recurso extraordinário com agravo. Tributário . ITBI. Imunidade tributária. Integralização do capital social da empresa. Valor do bem imóvel. Lei nº 9.249/95. Controvérsia de natureza infraconstitucional que extrapola ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818482/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620601&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818482",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818482/false",
+        "inlineText": "transcrevo a seguir: Agravo regimental em recurso extraordinário com agravo. Tributário . ITBI. Imunidade tributária. Integralização do capital social da empresa. Valor do bem imóvel. Lei nº 9.249/95. Controvérsia de natureza infraconstitucional que extrapola o objeto do Tema nº 796 da Repercussão Geral. Ofensa meramente reflexa ou indireta. Base de cálculo. Correção. Necessidade de reexame de fatos e provas. Incidência da Súmula nº 279 do STF. 1. Infirmar as conclusões da Instância de Origem quanto à definição do valor do bem imóvel na integralização do capital social para fruição da imunidade prevista no art. 156, § 2º, inciso I, da Constituição Federal envolve a análise e a interpretação da legislação infraconstitucional pertinente (Código Tributário Nacional e Lei nº 9.249/95), bem como o reexame do acervo fático-probatório dos autos. Incidência da Súmula nº 279/STF. 2. Agravo regimental não provido, com imposição de multa de 1% (um por cento) do valor atualizado da causa, consoante o art. 1.021, § 4º, do Novo CPC (ARE 1.601.101 AgR/GO, Rel. Min. Dias Toffoli, DJe 12/6/2026 – grifei). DIREITO TRIBUTÁRIO . AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. ALEGAÇÃO DE AUSÊNCIA DE FUNDAMENTAÇÃO:",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "dd6d61f842e3e7f34a7a930c",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620270 — RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ITBI. BASE DE CÁLCULO. VALOR VENAL DE REFERÊNCIA. ARBITRAMENTO SEM PRÉVIO PROCESSO ADMINISTRATIVO. TEMA 1.113 DO SUPERIOR TRIBUNAL DE JUSTIÇA. LEI COMPLEMENTAR FEDERAL Nº 227/2026. IRRETROATIVIDADE. ANÁLI",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818492/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620270&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818492",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818492/false",
+        "inlineText": "RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ITBI. BASE DE CÁLCULO. VALOR VENAL DE REFERÊNCIA. ARBITRAMENTO SEM PRÉVIO PROCESSO ADMINISTRATIVO. TEMA 1.113 DO SUPERIOR TRIBUNAL DE JUSTIÇA. LEI COMPLEMENTAR FEDERAL Nº 227/2026. IRRETROATIVIDADE. ANÁLISE DE LEGISLAÇÃO INFRACONSTITUCIONAL. VEDAÇÃO. POTENCIAL OFENSA INDIRETA À CONSTITUIÇÃO. REEXAME DE MATÉRIA FÁTICA. ÓBICE. SÚMULA 279 DO SUPREMO TRIBUNAL FEDERAL. NEGADO SEGUIMENTO AO AGRAVO. DECISÃO: Trata-se de agravo nos próprios autos objetivando a reforma de decisão que inadmitiu recurso extraordinário manejado pela alínea “a” do permissivo constitucional contra acórdão que assentou: “DIREITO ADMINISTRATIVO E TRIBUTÁRIO . RECURSO INOMINADO. TRIBUTO MUNICIPAL. ITBI. BASE DE CÁLCULO. Pretensão de repetição de indébito tributário . Município de São Paulo. Sentença de procedência. Presunção de que o valor declarado pelo contribuinte condiz com o de mercado não afastada. Tema 1.113 do C. STJ. Não comprovada a instauração de processo administrativo nos termos do art. 148 do CTN. Impossibilidade de arbitramento unilateral pelo Fisco. Impossibilidade de incidência retroativa da superveniente LC nº 227/2026, que acrescentou parágrafos",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "53626da4859032f672bd5df4",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:reforma-ibs-cbs"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "reforma-ibs-cbs"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "Rcl 99635 — petição assistemática, que ingressou em 2007 na justiça federal em Vitória/ES com ação declaratória de inexistência de relação jurídico tributário para afastar a incidência da contribuição ao Funrural sobre a comercialização de produto agrícola (café) que cumu",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818056/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=99635&classe=Rcl",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818056",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818056/false",
+        "inlineText": "petição assistemática, que ingressou em 2007 na justiça federal em Vitória/ES com ação declaratória de inexistência de relação jurídico tributário para afastar a incidência da contribuição ao Funrural sobre a comercialização de produto agrícola (café) que cumulou com repetição de indébito. Sustenta que a controvérsia discutida no processo originário estaria abrangida pelo Tema nº 202 da RG, por envolver questões relativas à inconstitucionalidade do FUNRURAL. Informa que no cumprimento de sentença, o Juízo reclamado manteve acórdão que entendeu que o título executivo limitou a restituição do indébito apenas nas competências 07/2006 e 05/2007, afastando qualquer afronta à tese fixada no Tema 115 do STJ. Argumenta que, o Juízo reclamado, sem competência constitucional, modulou os efeitos das teses fixadas nos Temas 115/STJ e 202/STF. Pelo que se pode compreender da exordial, a parte reclamante defende a possibilidade de anexar guias de recolhimento de tributo na fase de cumprimento de sentença, para fins de comprovação do direito ao indébito tributário . Nesses termos, se insurge contra a decisão reclamada que consignou que a sentença executiva limitou a repetição do indébito às competências",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "86cd19103204314371cda186",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "HC 276691 — PARA O ATO. ATUAÇÃO ESTATAL EM SINTONIA COM A JURISPRUDÊNCIA DO SUPREMO TRIBUNAL FEDERAL. AGRAVO REGIMENTAL IMPROVIDO. I – A autorização de busca e apreensão amparou-se em investigação instaurada na Delegacia de Repressão a Crimes Fazendários em São Paulo, a p",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818179/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=276691&classe=HC",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818179",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818179/false",
+        "inlineText": "PARA O ATO. ATUAÇÃO ESTATAL EM SINTONIA COM A JURISPRUDÊNCIA DO SUPREMO TRIBUNAL FEDERAL. AGRAVO REGIMENTAL IMPROVIDO. I – A autorização de busca e apreensão amparou-se em investigação instaurada na Delegacia de Repressão a Crimes Fazendários em São Paulo, a partir de representações fiscais para fins penais, da lavra da Receita Federal do Brasil, noticiando suposta prática de crimes de descaminho, associação criminosa, fraude processual, evasão de divisas e falsidade ideológica, na importação de combustíveis, após o órgão fazendário proceder à autuação fiscal e à constituição de créditos tributários superiores a 2 bilhões de reais, envolvendo a empresa Petrozil JC Distribuidora de Combustíveis Ltda. e diversas pessoas jurídicas e físicas, em suposta situação de simulação e interposição, na condição de “laranjas”. II – Não procede a alegação de ausência de fundamentos concretos na decisão que decretou a busca e apreensão. Além disso, é inviável, na via do habeas corpus, perquirir-se sobre a veracidade das informações levadas à autoridade judiciária para tal fim, bem como acerca da atuação profissional do paciente, na condição de advogado, nos fatos investigados. III – A jurisprudência",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "6388735c11268aad16375cb2",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito",
+            "politica-p2:planejamento-reorganizacao"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 2,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [
+              "planejamento-reorganizacao"
+            ],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-2",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620401 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818275/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620401&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818275",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818275/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO EM MANDADO DE SEGURANÇA. PERSE. ALÍQUOTA ZERO. EXTINÇÃO DO BENEFÍCIO FISCAL. RECURSO DESPROVIDO. I. CASO EM EXAME: 1. Apelação em mandado de segurança impetrado por associação contra ato da Receita Federal do Brasil que extinguiu o benefício fiscal do Programa Emergencial de Retomada do Setor de Eventos (PERSE), que previa alíquota zero de IRPJ, CSLL, PIS e COFINS. A impetrante busca a manutenção do benefício até 18/03/2027 ou a observância das anterioridades nonagesimal e anual, alegando violação ao art. 178 do CTN e à Súmula 544 do STF, bem como a não demonstração do atingimento do teto de R$ 15 bilhões. II. QUESTÃO EM DISCUSSÃO: 2. Há três questões em discussão: (i) saber se a extinção do benefício fiscal do PERSE viola o art. 178 do CTN e a Súmula 544 do STF; (ii) saber se a extinção do benefício fiscal do PERSE viola os princípios da anterioridade anual e nonagesimal; e (iii) saber se o atingimento do teto de R$ 15",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "fe9700eb9fb4b7d5a74b2472",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:irpj-csll-jcp"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "irpj-csll-jcp"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1621623 — INADMITIU O APELO EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, p",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818403/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1621623&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818403",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818403/false",
+        "inlineText": "INADMITIU O APELO EXTREMO. SÚMULA 287 DO STF. RAZÕES RECURSAIS DISSOCIADAS DOS FUNDAMENTOS DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 284 DO STF. AGRAVO INTERNO DESPROVIDO.” (ARE nº 1.210.646-AgR, Primeira Turma, Rel. Min. Luiz Fux , DJe de 5/8/19). Anote-se, por fim, que o não conhecimento do recurso, por não ter sido efetivamente impugnado o fundamento da decisão que inadmitiu o recurso extraordinário, autoriza a certificação do trânsito em julgado da decisão agravada e a baixa imediata do feito à origem. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. PROCESSUAL CIVIL E TRIBUTÁRIO . COMPENSAÇÃO DE TRIBUTOS. REGIME DE PRECATÓRIOS. INAPLICABILIDADE DO TEMA 1.262 DA REPERCUSSÃO GERAL: QUESTÃO DE MÉRITO RESOLVIDA PELO TRIBUNAL DE ORIGEM. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS DA DECISÃO DE INADMISSIBILIDADE DO RECURSO EXTRAORDINÁRIO: SÚMULA N. 287 DESTE SUPREMO TRIBUNAL. ÓBICE JURÍDICO IMPEDITIVO AO REGULAR PROCESSAMENTO DO RECURSO. DECISÃO AGRAVADA MANTIDA. AGRAVO REGIMENTAL NÃO CONHECIDO, COM DETERMINAÇÃO DE CERTIFICAÇÃO DO TRÂNSITO EM JULGADO E BAIXA IMEDIATA DO PROCESSO À ORIGEM, INDEPENDENTE DA PUBLICAÇÃO DO ACÓRDÃO” (ARE nº 1.561.650/SC-AgR, Primeira Turma",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "98d354ea342e4971ca96e5fd",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1619255 — DECISÃO: Trata-se de agravo interposto contra decisão de inadmissibilidade do recurso extraordinário, com base no art. 102, III, “a”, da Constituição Federal, apresentado por Ultralimpo Empreendimentos e Serviços Ltda. e outra, em face do acórdão do Tribunal R",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818434/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1619255&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818434",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818434/false",
+        "inlineText": "DECISÃO: Trata-se de agravo interposto contra decisão de inadmissibilidade do recurso extraordinário, com base no art. 102, III, “a”, da Constituição Federal, apresentado por Ultralimpo Empreendimentos e Serviços Ltda. e outra, em face do acórdão do Tribunal Regional Federal da 5ª Região assim ementado: “DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. CONTRIBUIÇÃO AO RAT/SAT. BASE DE CÁLCULO. INCLUSÃO DE PARCELAS REMUNERATÓRIAS NÃO VINCULADAS À EXPOSIÇÃO A RISCOS. APELAÇÃO DESPROVIDA. 1. Apelação interposta pelas empresas Ultralimpo Empreendimentos e Serviços Ltda. e Servis Segurança Ltda. contra sentença que, em mandado de segurança, denegou a ordem, a qual objetivava a declaração de inconstitucionalidade e ilegalidade da inclusão, na base de cálculo da contribuição ao RAT/SAT, das parcelas pagas desvinculadas de risco, quais sejam: (i) férias gozadas e respectivo terço constitucional; (ii) descanso semanal remunerado; (iii) faltas abonadas; (iv) salário-paternidade e (v) décimo terceiro salário, bem como a declaração do direito à compensação ou restituição dos valores indevidamente recolhidos nos últimos 5 (cinco) anos. 2. A parte apelante defendeu, em síntese: a- a contribuição social",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "02f2e17fbbd0269f56932eeb",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1619753 — aproveitamento de custas recolhidas pela parte contrária, a nulidade por ausência de intimação para contrarrazões ou da modalidade de julgamento virtual, seria necessário o revolvimento da moldura fática delineada, bem como a análise da legislação infraconstit",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818439/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1619753&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818439",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818439/false",
+        "inlineText": "aproveitamento de custas recolhidas pela parte contrária, a nulidade por ausência de intimação para contrarrazões ou da modalidade de julgamento virtual, seria necessário o revolvimento da moldura fática delineada, bem como a análise da legislação infraconstitucional local aplicável, o que torna oblíqua e reflexa eventual ofensa, insuscetível, portanto, de viabilizar o conhecimento do recurso extraordinário. Aplicação das Súmulas nº 279 e 280/STF: “para simples reexame de prova não cabe recurso extraordinário” e “por ofensa a direito local não cabe recurso extraordinário”. Nesse sentido: “Direito tributário e processual civil. Agravo interno em recurso extraordinário com agravo. Taxa judiciária. Diferimento do recolhimento das custas. Súmulas 279 e 280/STF. I. Caso em exame 1. Agravo interno contra decisão que negou seguimento a recurso extraordinário com agravo, o qual tem por objeto acórdão que reformou em parte decisão de indeferimento do pedido de postergação do recolhimento das custas iniciais. II. Questão em discussão 2. Preenchimento dos pressupostos de admissibilidade do recurso extraordinário com agravo. III. Razão de decidir 3. A petição de agravo não trouxe novos argumentos aptos",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "d3015312a51e1e11172468f0",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1621337 — não abrange todos eles”. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. AUSÊNCIA DE IMPUGNAÇÃO DE FUNDAMENTO SUFICIENTE DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 283 DO SUPREMO TRIBUNAL FEDERAL. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMEN",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818322/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1621337&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818322",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818322/false",
+        "inlineText": "não abrange todos eles”. Nesse sentido: “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. AUSÊNCIA DE IMPUGNAÇÃO DE FUNDAMENTO SUFICIENTE DA DECISÃO AGRAVADA. INCIDÊNCIA DA SÚMULA 283 DO SUPREMO TRIBUNAL FEDERAL. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO. I – É deficiente a fundamentação do agravo regimental cujas razões não atacam todos os fundamentos suficientes da decisão agravada. Incidência da Súmula 283/STF. II – Agravo regimental a que se nega provimento” (ARE nº 1.173.331/RJ–AgR, Segunda Turma, Rel. Min. Ricardo Lewandowski, DJe de 31/05/2019). “DIREITO PROCESSUAL CIVIL E TRIBUTÁRIO . RECURSO EXTRAORDINÁRIO INTERPOSTO SOB A ÉGIDE DO CPC/1973. ALEGAÇÃO DE OFENSA AOS ARTS. 23, I, 145, §§ 1º E 2º, 150, I E IV, 156, § 1º, E 182 DA CONSTITUIÇÃO DA REPÚBLICA. IPTU. PROGRESSIVIDADE. MATÉRIA PRECLUSA. QUESTÃO NÃO ATACADA NO APELO EXTREMO. AUSÊNCIA DE IMPUGNAÇÃO ESPECÍFICA. SÚMULAS 283 E 284/STF. AGRAVO MANEJADO SOB A VIGÊNCIA DO CPC/1973. 1. O entendimento assinalado na decisão agravada não diverge da jurisprudência firmada no Supremo Tribunal Federal. Razões do recurso extraordinário que não atacam os fundamentos do acórdão recorrido. Aplicação da Súmula nº 284/STF. 2. A jurisprudência",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "8f3d6ed34667c1aef920a13e",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1621870 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: AGRAVO DE INSTRUMENTO. ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818345/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1621870&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818345",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818345/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: AGRAVO DE INSTRUMENTO. EXECUÇÃO FISCAL. EXCEÇÃO DE PRÉ-EXECUTIVIDADE. NOMEAÇÃO DE BENS À PENHORA. Insurgência da exequente em face da decisão que rejeitou a exceção de pré-executividade e indeferiu pedido de nomeação de bens à penhora. 1. Alegada ilegalidade na cobrança dos juros moratórios incidentes sobre o débito tributário . Descabimento. Juros de mora calculados com base nos ditames da Lei nº 16.497/2017. Excesso no cômputo dos juros de mora que não restou suficientemente demonstrado. Informações da CDA que indicam a data de referência e a data inicial da incidência dos juros moratórios, ambas posteriores à vigência da Lei Estadual nº 16.497/17, que fixou a taxa SELIC como índice para o cálculo dos juros de mora. Eventual reconhecimento de inconstitucionalidade dos juros moratórios que não induz à nulidade da CDA, ante a possibilidade de aditamento. Súmula 392 e precedentes do C. STJ. Alegações da agravante que demandam dilação probatória, incompatível",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "5cf76def088dbed5235d97e9",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1618343 — acórdão proferido pelo Tribunal Regional Federal da 3° Região (e-doc 31), assim ementado: “ TRIBUTÁRIO . COMPETÊNCIA PARA COBRANÇA DAS CONTRIBUIÇÕES PREVIDENCIÁRIAS ANTES DA EC N. 45/2004. VÍNCULO TRABALHISTA SOMENTE EM UM PERÍODO. COMPENSAÇÃO. APELO PROVIDO. ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818454/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618343&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818454",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818454/false",
+        "inlineText": "acórdão proferido pelo Tribunal Regional Federal da 3° Região (e-doc 31), assim ementado: “ TRIBUTÁRIO . COMPETÊNCIA PARA COBRANÇA DAS CONTRIBUIÇÕES PREVIDENCIÁRIAS ANTES DA EC N. 45/2004. VÍNCULO TRABALHISTA SOMENTE EM UM PERÍODO. COMPENSAÇÃO. APELO PROVIDO. - A competência para o processamento e julgamento do presente processo pertence à Justiça Federal, visto que a sentença trabalhista foi proferida em 21/02/1990, ou seja, em data anterior a Emenda Constitucional n. 45, de 2004 (a qual atribuiu à Justiça do Trabalho a execução das contribuições sociais decorrentes das sentenças que proferir). - A obrigação tributária (mesmo em sua espécie previdenciária - classificação quinquipartite) além da obrigatoriedade de previsão legal, somente ocorre caso haja o fato gerador do tributo. - Da leitura da fundamentação e dispositivo da apontada sentença trabalhista, não se permite a conclusão pelo reconhecimento do vínculo trabalhista em outros períodos que não de 1982 a 1987, por conseguinte, também da obrigatoriedade do recolhimento previdenciário em outros períodos. - Dispõe o art. 165 do Código Tributário Nacional que o sujeito passivo tem direito à restituição ou compensação total ou parcial",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "0cdae3f0993e66e6660f0db2",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1617667 — confunde com aquele desenvolvido na cobrança e transação do crédito tributário ” (e-doc. 14, p. 3). 3.1. Aduz ser “inevitável a imposição de pagar honorários em favor dos Procuradores do Estado no âmbito de demandas judiciais referentes a créditos tributários ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818457/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1617667&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818457",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818457/false",
+        "inlineText": "confunde com aquele desenvolvido na cobrança e transação do crédito tributário ” (e-doc. 14, p. 3). 3.1. Aduz ser “inevitável a imposição de pagar honorários em favor dos Procuradores do Estado no âmbito de demandas judiciais referentes a créditos tributários transacionados, tendo em vista que a CF/88 dispõe, em seus artigos 22, I, e 24, §1º da Constituição Federal, que é de competência privativa da União legislar sobre direito processual” (e-doc. 14, p. 13). 3.2. Requer, ao final, o provimento do recurso a fim de que “seja reformado o acórdão recorrido por afronta aos enunciados constitucionais e precedentes vinculantes ora invocados, para condenar a parte recorrida no ônus da sucumbência” (e-doc. 14, p. 30; grifos acrescidos). 4. O recurso extraordinário foi inadmitido em razão do óbice do enunciado nº 636 da Súmula do STF, bem como ante a ausência da hipótese do permissivo da alínea “c” (e-doc. 17). É o relatório. Decido. 5. Para melhor exame da controvérsia, transcrevo os fundamentos constantes da decisão impugnada: “Consta dos autos que a autora optou por aderir ao programa de parcelamento de crédito tributário “Acordo Paulista”, regido pelo Edital 01/2024 e, assim, requereu",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "4068c84792c02b78ad057444",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620488 — DESPACHO: Trata-se de agravo interposto contra decisão de inadmissibilidade do recurso extraordinário, com base no art. 102, III, “a”, da Constituição Federal, apresentado pelo Estado de São Paulo, em face do acórdão do Tribunal de Justiça Estadual assim ement",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818466/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620488&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818466",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818466/false",
+        "inlineText": "DESPACHO: Trata-se de agravo interposto contra decisão de inadmissibilidade do recurso extraordinário, com base no art. 102, III, “a”, da Constituição Federal, apresentado pelo Estado de São Paulo, em face do acórdão do Tribunal de Justiça Estadual assim ementado: “RECURSOS DE APELAÇÃO EM MANDADO DE SEGURANÇA. TRIBUTÁRIO . CREDITAMENTO DE ICMS. EMPRESA FORNECEDORA DE SERVIÇOS DE TRANSPORTE TERRESTRE. INSUMOS NECESSÁRIOS AO DESENVOLVIMENTO DA ATIVIDADE. Possibilidade de creditamento de ICMS relativos à aquisição de insumos indispensáveis ao desenvolvimento da atividade fim. Laudo pericial indicando essencialidade dos produtos para o desenvolvimento da atividade da empresa. Inteligência do art. 66 do RIMS Decreto Estadual nº 45.490/00 e da Lei Complementar nº 87/96. Precedentes. Correção monetária devida, em razão da resistência apresentada pela Fazenda Estadual. Sentença reformada. Recurso da Fazenda Estadual desprovido.” (Apelação Cível nº 1031609-64.2022.8.26.0405, 2ª Câmara de Direito Público do Tribunal de Justiça de São Paulo, Rel. Des. Marcelo Martins Berthe, j. 11/02/2025) No recurso extraordinário, sustenta-se violação dos arts. 24, I, e 155, II, e § 2º, I e XII, da Constituição",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "7d74ff835f01e29c27115d61",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "RE 1620729 — analisada pelo Supremo Tribunal Federal na sistemática da repercussão geral (RE 1.490.708 RG-ED/SP – Tema 1.367, Redator do acórdão Min. Dias Toffoli, DJe 10/9/2025). Por oportuno, transcrevo a tese nele fixada: A modulação dos efeitos estabelecida no julgamen",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818478/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620729&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818478",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818478/false",
+        "inlineText": "analisada pelo Supremo Tribunal Federal na sistemática da repercussão geral (RE 1.490.708 RG-ED/SP – Tema 1.367, Redator do acórdão Min. Dias Toffoli, DJe 10/9/2025). Por oportuno, transcrevo a tese nele fixada: A modulação dos efeitos estabelecida no julgamento da ADC n° 49/RN-ED não autoriza a cobrança do ICMS lá debatido quanto a fatos geradores ocorridos antes de 2024 em relação aos quais não tenha havido o pagamento do tributo. Confira-se, a propósito, a ementa do citado processo paradigma: Embargos de declaração em repercussão geral em recurso extraordinário. Direito constitucional e tributário . ICMS. Transferência de mercadoria entre estabelecimentos do contribuinte em estados distintos. Controvérsia acerca da modulação dos efeitos estabelecida na ADC nº 49/RN-ED. Fatos geradores ocorridos antes de 2024 em relação aos quais não tenha havido o pagamento do tributo. Impossibilidade de cobrança. Embargos de declaração acolhidos com efeitos infringentes. 1. É histórica a jurisprudência do Supremo Tribunal Federal e do Superior Tribunal de Justiça pela impossibilidade da incidência do ICMS no deslocamento físico de mercadorias entre estabelecimentos do mesmo titular. Uma miríade de",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "55ef151f0405bb588b70c4fc",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620546 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818240/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620546&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818240",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818240/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO CÍVEL. MANDADO DE SEGURANÇA. ISSQN. BASE DE CÁLCULO EM SERVIÇOS DE CONSTRUÇÃO CIVIL. DEDUÇÃO DE MATERIAIS. LEGISLAÇÃO MUNICIPAL. RECURSO DESPROVIDO. I. CASO EM EXAME 1. Trata-se de apelação cível interposta contra sentença que denegou mandado de segurança preventivo. A impetrante buscava excluir o valor de materiais fornecidos na base de cálculo do ISSQN, alegando que a lei municipal contrariava dispositivos constitucionais e legais. O juízo de primeiro grau denegou a segurança, considerando a competência municipal para legislar sobre tributos. II. QUESTÃO EM DISCUSSÃO 2. A questão em discussão consiste em definir a legalidade da cobrança do ISSQN sobre o preço total dos serviços de construção civil, com a dedução ou não do valor dos materiais, considerando a legislação municipal e a jurisprudência dos tribunais superiores. III. RAZÕES DE DECIDIR 3.1. O Supremo Tribunal Federal, no Tema 247 de repercussão geral, decidiu",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "d833331736d9adc48040fb14",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "RE 1620782 — Justiça, em julgamento proferido nos termos do art. 543-C do CPC/73, sedimentou o entendimento pelo qual é possível ao contribuinte rediscutir aspectos jurídicos do parcelamento, conforme se lê da ementa do julgado: (...) Nesta linha, em observação ao quanto d",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818311/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620782&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818311",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818311/false",
+        "inlineText": "Justiça, em julgamento proferido nos termos do art. 543-C do CPC/73, sedimentou o entendimento pelo qual é possível ao contribuinte rediscutir aspectos jurídicos do parcelamento, conforme se lê da ementa do julgado: (...) Nesta linha, em observação ao quanto disposto no art. 926, do CPC/2015, seria hipótese de cabimento de eventual revisão dos aspectos jurídicos de programa especial de parcelamento de débito fiscal, no que se incluiria a revisão dos encargos moratórios exigidos pelo Fisco Estadual com espeque no Decreto Estadual nº 58.811/2012, se houvesse feito incidir sobre os débitos tributários juros moratórios em índice superior à taxa SELIC, apegando-se nas previsões da Lei Estadual nº 13.918/09, que, entre outras previsões, conferiu nova redação aos arts. 85 e 96, da Lei nº 6.374/89. (...) Nesta esteira, sedimentou-se que os juros de mora incidentes sobre as dívidas fiscais do Estado deveriam ser limitados ao índice da taxa SELIC, afastandose, pois, a incidência das disposições pertinentes previstas na Lei Estadual nº 13.918/09, quando tal limitação for superada, ainda que os débitos tenham sido incluídos em programa especial de parcelamento. (...) Entretanto, outra é a conclusão",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "fcf826a983ea876113bfd2af",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1599968 AgR-ED-EDv — fundamentações dos acórdãos de origem e, consequentemente, deram provimento aos pleitos defensivos por violação ao art. 93, IX, da Constituição Federal, não colidem com o acórdão da Segunda Turma aqui embargado, não apresentam jurisprudência diversa daquela ad",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818455/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1599968&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818455",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818455/false",
+        "inlineText": "fundamentações dos acórdãos de origem e, consequentemente, deram provimento aos pleitos defensivos por violação ao art. 93, IX, da Constituição Federal, não colidem com o acórdão da Segunda Turma aqui embargado, não apresentam jurisprudência diversa daquela adotada no julgado ora recorrido. 4. O discernimento a ser levado em conta diz respeito a especificidades, caso a caso, que levaram a Corte, naqueles a entender, particularmente, que as fundamentações não haviam sido suficientes. As premissas fáticas eram diversas: EMBARGOS DE DIVERGÊNCIA NO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS– ICMS. DIFERENCIAL DE ALÍQUOTA. OPERAÇÕES INTERESTADUAIS. ALEGAÇÃO DE SE TRATAR DE CONSUMIDOR FINAL CONTRIBUINTE DO IMPOSTO ESTADUAL. MATÉRIA NÃO DISCUTIDA NOS ACÓRDÃOS EMBARGADOS. PARADIGMA DE CONFRONTO. MATÉRIA INFRACONSTITUCIONAL. AUSÊNCIA DE REPERCUSSÃO GERAL- TEMA 1.331. DIVERGÊNCIA DE NATUREZA CONSTITUCIONAL INEXISTENTE. SIMILITUDE FÁTICA E JURÍDICA ENTRE O JULGADO EMBARGADO E O ACÓRDÃO PARADIGMA: DEMONSTRAÇÃO INSUFICIENTE. AUSÊNCIA DE COTEJO ANALÍTICO. EMBARGOSDEDIVERGÊNCIAREJEITADOS (Emb.Div. no Segundo Ag Reg no RE com AgR 783.116/PR",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "3626cbfe9b8b6bc7a329265b",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620571 — DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . AP",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818267/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620571&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818267",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818267/false",
+        "inlineText": "DECISÃO: Trata-se de recurso extraordinário com agravo contra decisão de inadmissão do recurso extraordinário. O recurso foi interposto com fundamento na alínea \"a\" do permissivo constitucional. O acórdão recorrido ficou assim ementado: DIREITO TRIBUTÁRIO . APELAÇÃO CÍVEL. MANDADO DE SEGURANÇA. ITBI. INCORPORAÇÃO DE BENS IMÓVEIS AO ACERVO PATRIMONIAL DECORRENTE DE CISÃO. IMUNIDADE TRIBUTÁRIA. DISTINGUISHING DO TEMA 796 DO STF. RECURSO DESPROVIDO. SENTENÇA RATIFICADA. I. Caso em exame 1. Trata-se de reexame necessário e recurso de apelação cível interposta contra sentença que concedeu mandado de segurança para reconhecer a imunidade tributária do ITBI decorrente de cisão. II. Questão em discussão 2. A controvérsia reside em determinar se a imunidade do ITBI, prevista no art. 156, §2º, I, da Constituição Federal, aplica-se à incorporação de bens imóveis ao acervo patrimonial de pessoa jurídica, decorrente de cisão, cuja atividade preponderante não seja a compra e venda ou locação de bens imóveis. III. Razões de decidir 3. O Supremo Tribunal Federal, no julgamento do RE 796.376/SC (Tema 796), fixou a tese de que a imunidade do ITBI não alcança o valor dos bens que exceder o limite do",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "d46878d39210ab802e6a3f95",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p2:planejamento-reorganizacao"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 2,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [
+              "planejamento-reorganizacao"
+            ],
+            "eventType": "TESE_FIXADA_OU_ALTERADA",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-2",
+              "fato-novo-concreto",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1475220 — Trata-se de recurso extraordinário com agravo interposto contra acórdão do Tribunal de Justiça do Estado do Rio Grande do Sul, cuja ementa segue transcrita: APELAÇÃO CÍVEL. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. OPERAÇÕES INTERESTADUAIS. DIFAL. CONSU",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818401/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1475220&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818401",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818401/false",
+        "inlineText": "Trata-se de recurso extraordinário com agravo interposto contra acórdão do Tribunal de Justiça do Estado do Rio Grande do Sul, cuja ementa segue transcrita: APELAÇÃO CÍVEL. DIREITO TRIBUTÁRIO . MANDADO DE SEGURANÇA. ICMS. OPERAÇÕES INTERESTADUAIS. DIFAL. CONSUMIDOR FINAL CONTRIBUINTE. AQUISIÇÕES DE BENS DESTINADOS AO USO OU CONSUMO E ATIVO IMOBILIZADO. TEMA 1.093 DO STF. INAPLICABILIDADE. A empresa impetrante é consumidora final contribuinte do ICMS, estando sujeita, portanto, ao recolhimento do diferencial de alíquota nas operações de aquisição de mercadorias destinadas ao ativo imobilizado, uso e consumo, o que não se confunde com a incidência do DIFAL sobre vendas de mercadorias a consumidores finais não contribuintes, que foi objeto de exame pelo STF no Tema 1.093. A alteração promovida pela EC nº 87/15 equiparou a situação de destinatários de mercadorias não contribuintes com aquela que já estava prevista para os contribuintes do imposto, com o que, em ambos os casos, deve ser recolhida a alíquota interestadual, cabendo ao Estado de localização do destinatário do imposto correspondente a diferença entre a alíquota interna do Estado destinatário e a alíquota interestadual. Tendo",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "aa90917d7dde2ec5c5001f73",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1618123 — Ementa: Direito Tributário . Recurso Extraordinário com Agravo. Ação Rescisória. ICMS. Base de cálculo. PIS e Cofins. Tema RG nº 69. Modulação de efeitos. Honorários advocatícios. Controvérsia de índole infraconstitucional. Agravo não provido. I. Caso em exame",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818421/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618123&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818421",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818421/false",
+        "inlineText": "Ementa: Direito Tributário . Recurso Extraordinário com Agravo. Ação Rescisória. ICMS. Base de cálculo. PIS e Cofins. Tema RG nº 69. Modulação de efeitos. Honorários advocatícios. Controvérsia de índole infraconstitucional. Agravo não provido. I. Caso em exame 1. Agravo interposto contra decisão pela qual se negou seguimento a recurso extraordinário, o qual foi apresentado contra acórdão do Tribunal Regional Federal da 3ª Região. No acórdão de origem, julgou-se procedente a ação rescisória proposta pela União para adequar um julgado anterior à modulação de efeitos do Tema RG nº 69, que trata da exclusão do ICMS da base de cálculo das contribuições PIS e Cofins. 2. A recorrente alega violação à coisa julgada, na aplicação da modulação de efeitos do Tema RG nº 69, invocando o enunciado nº 343 da Súmula do STF e os Temas RG nº 136, nº 881, nº 885 e nº 733, e questiona a fixação dos honorários advocatícios por equidade, mencionando o Tema RG nº 1.255. 3. O Tribunal de origem negou seguimento ao recurso extraordinário com base no Tema RG nº 1.338 e não o admitiu em relação às demais questões, aplicando os enunciados nº 279 e nº 282 da Súmula do STF. II. Questão em discussão 4. Há duas questões",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "3ecbf687aba7538f088cacd9",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos",
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1550399 — tese de ausência de prejuízo financeiro ao contribuinte para afastar a anterioridade. Contudo, tal argumento não encontra amparo na ordem constitucional vigente. Como bem assentou o voto condutor do acórdão recorrido, cada uma das referidas normas possui roupa",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818423/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1550399&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818423",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818423/false",
+        "inlineText": "tese de ausência de prejuízo financeiro ao contribuinte para afastar a anterioridade. Contudo, tal argumento não encontra amparo na ordem constitucional vigente. Como bem assentou o voto condutor do acórdão recorrido, cada uma das referidas normas possui roupagem jurídica própria, advindo de legislações e regimes de incidência e apuração autônomos. A redução da alíquota geral operou-se sob a égide da Lei Estadual nº 9.176/2023, ao passo que a Lei Estadual nº 9.177/2023 efetivamente criou um novo encargo tributário e inseriu novos contribuintes sob sua incidência no mesmo exercício financeiro. Nesse cenário, a invocação de uma suposta compensação aritmética entre regimes tributários distintos para afastar a garantia da anterioridade revela-se contrária a jurisprudência desta Corte (ADI 5733, Rel. Min. Alexandre de Moraes, Tribunal Pleno, j. 20.9.2019), no sentido que a instituição do adicional de alíquota do ICMS, destinado ao Fundo Estadual de Combate à Pobreza (ADCT, art. 82), não autoriza a relativização do princípio da anterioridade tributária, vedada sua cobrança no mesmo exercício financeiro. Veja-se: “Ementa: CONSTITUCIONAL. AÇÃO DIRETA. LEI 4.454/2017 DO ESTADO DO AMAZONAS.",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "530c51a391687d517e56fb97",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1620491 — honorários advocatícios, sabe-se que ambas as turmas de Direito Público do STJ vêm reconhecendo que os “honorários advocatícios estão incluídos na ressalva do artigo 186 do CTN”, por força do qual gozam de preferência em relação aos créditos tributários (REsp ",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818437/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1620491&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818437",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818437/false",
+        "inlineText": "honorários advocatícios, sabe-se que ambas as turmas de Direito Público do STJ vêm reconhecendo que os “honorários advocatícios estão incluídos na ressalva do artigo 186 do CTN”, por força do qual gozam de preferência em relação aos créditos tributários (REsp 1.749.491/RS, Rel. Ministro Herman Benjamin, 2ª Turma, j. 19/11/2018 e REsp 1.133.530/SC, Rel. Minº Sérgio Kukina, 1ª Turma j. 25/06/2015). 9 - Nesse sentido, o Supremo Tribunal Federal editou a Súmula Vinculante n.º 47 que dispõe: Os honorários advocatícios incluídos na condenação ou destacados do montante principal devido ao credor consubstanciam verba de natureza alimentar cuja satisfação ocorrerá com a expedição de precatório ou requisição de pequeno valor, observada ordem especial restrita aos créditos dessa natureza. 10 - Tendo em vista a natureza alimentar dos honorários contratuais, é possível concluir que a verba destacada sob a referida rubrica possui prevalência sobre o crédito tributário , por se equiparar aos créditos decorrentes da legislação do trabalho, nos termos do disposto no art. 186 do CTN. IV - DISPOSITIVO E TESE 11 - Agravo de instrumento parcialmente provido.” (Agravo de Instrumento nº 5003356-46.2025.4.02.0000/RJ",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "a3c8d63a7a73109d93689122",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "RE 1613473 ED — embargos de declaração e passo ao reexame do recurso extraordinário. Rememoro tratar-se de recurso extraordinário interposto pela alínea “a” do permissivo constitucional contra acórdão que assentou: “DIREITO TRIBUTÁRIO . APELAÇÃO. TAXA DE LICENÇA E FUNCIONAMEN",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818468/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1613473&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818468",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818468/false",
+        "inlineText": "embargos de declaração e passo ao reexame do recurso extraordinário. Rememoro tratar-se de recurso extraordinário interposto pela alínea “a” do permissivo constitucional contra acórdão que assentou: “DIREITO TRIBUTÁRIO . APELAÇÃO. TAXA DE LICENÇA E FUNCIONAMENTO. RECURSO PROVIDO. I. Caso em Exame 1. Embargos à execução fiscal propostos pela Telefônica Brasil S/A contra a Prefeitura Municipal de Santos, questionando a cobrança de taxas de licença e funcionamento de estação rádio base para o exercício de 2021. A sentença de primeira instância julgou os embargos procedentes, declarando a cobrança ilegal por usurpação da competência da União. II. Questão em Discussão 2. A questão em discussão consiste em determinar a legalidade e constitucionalidade da cobrança de taxas de licença e funcionamento de estação rádio base pelo município, considerando a competência municipal para legislar sobre o uso e ocupação do solo. III. Razões de Decidir 3. A Constituição Federal e o Código Tributário Nacional autorizam os municípios a instituírem taxas em razão do exercício do poder de polícia, incluindo a fiscalização do uso e ocupação do solo. 4. A legislação municipal de Santos estabelece a cobrança de",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "f3dfe2ee2e29633fa6886bda",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": "DECISAO_OU_JULGAMENTO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "RE 1587302 — qual já estava vigente a Lei Complementar 190/2022. Ademais, verifica-se que divergir do entendimento firmado pelo Tribunal de origem, acerca da ausência de ofensa ao princípio da não cumulatividade e da inexistência de tratamento tributário diferenciado de be",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818488/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1587302&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818488",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818488/false",
+        "inlineText": "qual já estava vigente a Lei Complementar 190/2022. Ademais, verifica-se que divergir do entendimento firmado pelo Tribunal de origem, acerca da ausência de ofensa ao princípio da não cumulatividade e da inexistência de tratamento tributário diferenciado de bens, em razão de sua origem, demandaria o reexame do acervo fático-probatório, bem como a interpretação de legislação infraconstitucional federal e local (Lei Complementar 190/2022 e Lei Distrital 5.546/2015), providências inviáveis em sede de recurso extraordinário. Assim, a matéria debatida no acórdão recorrido, quanto a essas questões, restringe-se ao âmbito infraconstitucional, de modo que a ofensa à Constituição, se existente, seria reflexa ou indireta, o que inviabiliza o processamento do presente recurso. Outrossim, incidem, na espécie, as Súmulas 279 e 280 do Supremo Tribunal Federal. Nesse sentido: “EMBARGOS DE DECLARAÇÃO NO RECURSO EXTRAORDINÁRIO. CONVERSÃO EM AGRAVO REGIMENTAL. TRIBUTÁRIO . IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS – ICMS. OPERAÇÕES INTERESTADUAIS. CONSUMIDOR FINAL NÃO CONTRIBUINTE. DIFERENCIAL DE ALÍQUOTA. VALIDADE JURÍDICA DA LEI DISTRITAL N. 5.546/2015. BASE DE CÁLCULO. REAFIRMAÇÃO DA JURISPRUDÊNCIA",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "2b630eae33a5299b5487b018",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1616040 — os seguintes precedentes: “AGRAVO INTERNO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISENÇÃO DE IMPOSTO DE RENDA. SERVIDOR PORTADOR DE DOENÇA GRAVE. MATÉRIA INFRACONSTITUCIONAL. AUSÊNCIA DE OFENSA DIRETA À CONSTITUIÇÃO FEDERAL. REEXAME DE FATOS",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818465/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1616040&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818465",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818465/false",
+        "inlineText": "os seguintes precedentes: “AGRAVO INTERNO EM RECURSO EXTRAORDINÁRIO COM AGRAVO. DIREITO TRIBUTÁRIO . ISENÇÃO DE IMPOSTO DE RENDA. SERVIDOR PORTADOR DE DOENÇA GRAVE. MATÉRIA INFRACONSTITUCIONAL. AUSÊNCIA DE OFENSA DIRETA À CONSTITUIÇÃO FEDERAL. REEXAME DE FATOS E PROVAS. ENUNCIADO N. 279 DA SÚMULA DO SUPREMO. 1. Divergir das conclusões do Tribunal de origem – quanto à condição de portador de doença grave, para fins de isenção tributária – demandaria reanálise de legislação infraconstitucional, a revelar ausente ofensa direta ao Texto Constitucional, bem como imprescindível o reexame do quadro probatório, circunstância vedada em sede extraordinária, ante o óbice do enunciado n. 279 da Súmula do Supremo. 2. Não cabe recurso extraordinário interposto com base no art. 102, III, “b”, da Constituição Federal quando o órgão judiciário de origem não houver declarado inconstitucionalidade de tratado ou lei federal. 3. Agravo interno desprovido” (ARE 1416113 AgR, Rel. Min. Nunes Marques, Segunda Turma, DJe 20.09.2023 – grifo nosso) “AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. TRIBUTÁRIO . IRPF. ISENÇÃO. PROVENTOS DE APOSENTADORIA. PORTADOR DE NEOPLASIA MALIGNA. ARTIGO 6º, XIV,",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "0de8273f6a8839ec99ea4690",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": null,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [],
+            "eventType": null,
+            "concreteEvent": false,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "SL 1942 — de 2025, segundo o qual alterações no talvegue do Rio Limoal teriam deslocado integralmente a Usina Estivas para o território de Arez. Também sustentou a possibilidade de repartição proporcional das receitas de ICMS em razão da alegada localização parcial do e",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818494/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1942&classe=SL",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818494",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818494/false",
+        "inlineText": "de 2025, segundo o qual alterações no talvegue do Rio Limoal teriam deslocado integralmente a Usina Estivas para o território de Arez. Também sustentou a possibilidade de repartição proporcional das receitas de ICMS em razão da alegada localização parcial do empreendimento em seu território. O Tribunal rejeitou integralmente tais argumentos, destacando que a produção de perícia já havia sido considerada desnecessária diante do acervo probatório existente, especialmente da inspeção judicial realizada nos autos. Assentou que a atividade industrial responsável pela geração do valor adicionado tributário ocorre nas instalações fabris situadas em Goianinha e que embargos de declaração não constituem via adequada para rediscutir o mérito ou reabrir a instrução probatória com base em documento unilateral produzido posteriormente. Acrescentou que a eventual existência de área física da usina situada em Arez não altera essa conclusão, pois o fato gerador do ICMS decorre das atividades de industrialização realizadas em Goianinha, afastando, assim, qualquer alegação de contradição e a pretensão de repartição proporcional das receitas. Não obstante os argumentos deduzidos pelo requerente acerca da",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "2ec9ad5d94cdc92f150c33fc",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial",
+            "politica-p1:ipi-aduaneiro"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial",
+              "ipi-aduaneiro"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "Rcl 99355 — afastamento ostensivo ou velado do art. 3º da Lei Complementar nº 190, de 2022, mas, sim, aplicação exegética desses dispositivos, a partir da adoção de premissas fáticas. 3. A reclamação constitucional é ação direcionada para a tutela específica da competênci",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818122/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=99355&classe=Rcl",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818122",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818122/false",
+        "inlineText": "afastamento ostensivo ou velado do art. 3º da Lei Complementar nº 190, de 2022, mas, sim, aplicação exegética desses dispositivos, a partir da adoção de premissas fáticas. 3. A reclamação constitucional é ação direcionada para a tutela específica da competência e autoridade das decisões proferidas por este Supremo Tribunal Federal, pelo que não se consubstancia como sucedâneo recursal ou de ação rescisória. 4. Agravo regimental ao qual se nega provimento.” (Rcl nº 53.365-AgR/DF, de minha relatoria, Segunda Turma, j. 03/11/2022, p. 09/11/2022; grifos nossos). “DIREITO CONSTITUCIONAL E TRIBUTÁRIO . AGRAVO INTERNO EM RECLAMAÇÃO. SUSPENSÃO DE LIMINAR E SENTENÇA. COBRANÇA DO DIFAL-ICMS. ESTADO DE SANTA CATARINA. ALEGADA OFENSA À SÚMULA VINCULANTE 10. 1. Agravo interno em reclamação ajuizada sob a alegação de que a decisão reclamada, ao afastar monocraticamente o princípio da anterioridade para a cobrança do DIFAL-ICMS, estabelecido pelo art. 3º da Lei Complementar nº 190/2022, violou a cláusula de reserva de plenário e a Súmula Vinculante 10. 2. A decisão reclamada limitou-se a deferir pedido de suspensão de liminar com fundamento na existência de risco de grave lesão à economia pública",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "cd16485e92eac8d0736805c0",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": false,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "fonte-primaria",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "RE 1312547 — Ementa: Direito Tributário . Recurso Extraordinário. PIS/Cofins. Não cumulatividade. Creditamento. Bens importados. Tema RG nº 707. Conceito de insumo. Tema RG nº 756. Matéria infraconstitucional. Recurso extraordinário a que se nega seguimento. I. Caso em exa",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818428/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1312547&classe=RE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818428",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818428/false",
+        "inlineText": "Ementa: Direito Tributário . Recurso Extraordinário. PIS/Cofins. Não cumulatividade. Creditamento. Bens importados. Tema RG nº 707. Conceito de insumo. Tema RG nº 756. Matéria infraconstitucional. Recurso extraordinário a que se nega seguimento. I. Caso em exame 1. Recurso extraordinário interposto contra acórdão prolatado pelo Tribunal Regional Federal da 4ª Região pelo qual se tratou de creditamento de PIS/Cofins referente à depreciação de bens incorporados ao ativo imobilizado. 2. A parte recorrente buscava o direito integral aos créditos de PIS e Cofins sobre os encargos de depreciação e amortização decorrentes da aquisição de bens para o ativo permanente imobilizado, afastando limitações quanto à origem dos bens (permitindo o crédito para bens adquiridos no exterior), à destinação dos bens (permitindo o crédito para bens que não sejam diretamente utilizados na fabricação de produtos destinados à venda), e à data de aquisição (permitindo o crédito para bens adquiridos até 30 de abril de 2004). 3. O Tribunal de origem, em juízo de retratação do Tema RG nº 244/STF, afastou a limitação prevista no art. 31 da Lei nº 10.865, de 2004. No acórdão recorrido, mantiveram-se as limitações",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "bffad436c5bce103e83963da",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:pis-cofins-creditos"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "pis-cofins-creditos"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": false,
+              "reason": "Decisão do STF sem repercussão geral, mérito, modulação, tese ou mudança relevante."
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
+        "title": "ARE 1618402 — DECISÃO Trata-se de Agravo em Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal de Justiça do Estado de São Paulo, assim ementado (Doc. 117, fls. 3-4): “RECURSOS DE APELAÇÃO — AÇÃO DE PROCEDIMENTO COMUM — DIREITO CONSTITUCIONAL E TRI",
+        "url": "https://jurisprudencia.stf.jus.br/pages/search/despacho1818427/false",
+        "processUrl": "https://portal.stf.jus.br/processos/listarProcessos.asp?numeroProcesso=1618402&classe=ARE",
+        "publishedAt": "2026-09-09",
+        "documentKind": "Decisão monocrática do STF",
+        "externalId": "despacho1818427",
+        "fingerprintKey": "stf:https://jurisprudencia.stf.jus.br/pages/search/despacho1818427/false",
+        "inlineText": "DECISÃO Trata-se de Agravo em Recurso Extraordinário interposto em face de acórdão proferido pelo Tribunal de Justiça do Estado de São Paulo, assim ementado (Doc. 117, fls. 3-4): “RECURSOS DE APELAÇÃO — AÇÃO DE PROCEDIMENTO COMUM — DIREITO CONSTITUCIONAL E TRIBUTÁRIO — IMPOSTO SOBRE OPERAÇÕES RELATIVAS À CIRCULAÇÃO DE MERCADORIAS E SOBRE PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE INTERESTADUAL E INTERMUNICIPAL E DE COMUNICAÇÃO — ICMS — PRESTAÇÃO DE SERVIÇO DE TELECOMUNICAÇÕES — PRETENSÃO À LIMITAÇÃO DA RESPECTIVA ALÍQUOTA EM OBSERVÂNCIA AO PRINCÍPIO DA SELETIVIDADE IMPOSSIBILIDADE. (...) 2. No mérito, reconhecimento da inconstitucionalidade da cobrança de ICMS, incidente sobre a prestação de serviços de fornecimento de energia elétrica e de telecomunicações, mediante a utilização da alíquota do valor correspondente a 25%, pelo C. STF, por ocasião do julgamento do Tema nº 745, de Repercussão Geral. 3. Entretanto, verificar-se-á a aplicabilidade da referida tese jurídica, no caso concreto, somente, a partir do exercício de 2.024, nos termos da modulação dos respectivos efeitos, ressalvadas as ações judiciais ajuizadas até 5.2.21, correspondente ao início do julgamento de mérito do RE nº 714",
+        "sourceId": "stf",
+        "sourceName": "Supremo Tribunal Federal",
+        "sourceAcronym": "STF",
+        "sourceType": "official",
+        "discoveryRole": "primary",
+        "sections": [],
+        "discoveryMethod": "stf-jurisprudence",
+        "discoveredAt": "2026-09-09T15:13:50.197Z",
+        "id": "f1a3de31a601c853a23ec2ab",
+        "attempts": 0,
+        "backfillDate": null,
+        "fastTriage": {
+          "score": 0,
+          "band": "baixa",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "coleta-estruturada",
+            "assunto-tributario-forte",
+            "conteudo-de-merito",
+            "politica-p1:icms-empresarial"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": false,
+            "eligibilityReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "exclusionReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual.",
+            "negativeCategory": "DECISAO_MONOCRATICA",
+            "exceptionApplied": null,
+            "score": 0,
+            "topicTier": 1,
+            "priorityOneTopics": [
+              "icms-empresarial"
+            ],
+            "priorityTwoTopics": [],
+            "eventType": "MODULACAO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": true,
+            "courtGate": {
+              "court": "STF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": null,
+            "signals": [
+              "prioridade-1",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial",
+              "regiao-prioritaria"
+            ]
+          }
+        },
+        "status": "discarded",
+        "discardReason": "Decisão monocrática excluída do feed geral; permanece disponível apenas no acompanhamento processual."
+      },
+      {
         "title": "Ato Declaratório Executivo 50 ALF/MNS 09/09/2026 Dispõe sobre o Registro de Despachantes Aduaneiros e de Ajudantes de Despachante Aduaneiro.",
         "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/153387",
         "publishedAt": "2026-09-09",
@@ -40049,7 +42025,7 @@
         "discoveryMethod": "trf-djen",
         "discoveredAt": "2026-09-09T06:07:33.105Z",
         "id": "1b13265430b11fa92f7fb61e",
-        "attempts": 2,
+        "attempts": 3,
         "backfillDate": null,
         "fastTriage": {
           "score": 100,
@@ -40103,7 +42079,7 @@
         "status": "error",
         "discardReason": null,
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-09-09T11:29:27.125Z"
+        "analyzedAt": "2026-09-09T15:45:47.494Z"
       },
       {
         "title": "DESPACHO/DECISÃO · 5012589-04.2026.4.04.7202 · 2ª Vara Federal de Joinville — Direito tributário: ou supere a nota mínima de 15,00 pontos. Narrou que: participou do concurso para Analista-Tributário da Receita Federal do Brasil, regido pelo Edital 1/2022-RFB ( 1:6 ); foi eliminado na fase discursiva com nota 10,00, sendo o mínimo exigido 15,00; no quesito A, invocou a imunid",
@@ -161564,6 +163540,593 @@
     ],
     "runs": [
       {
+        "id": "f97d4745-a6ba-46cc-a1d6-40f1234735ab",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-09-09T15:35:44.850Z",
+        "finishedAt": "2026-09-09T15:45:47.811Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
+      {
+        "id": "d2a764ad-351b-4487-acb8-dae39cbb2c08",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-09-08",
+        "startedAt": "2026-09-09T15:22:47.829Z",
+        "finishedAt": "2026-09-09T15:34:19.953Z",
+        "discovered": 1,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 25,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 75,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 403."
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF5 falharam."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF6 falharam."
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "56837f7b-2791-46bd-b212-4881862ac78a",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-09-09T15:11:19.514Z",
+        "finishedAt": "2026-09-09T15:22:47.595Z",
+        "discovered": 29,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 26,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 71,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 403."
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "error",
+            "found": 0,
+            "message": "A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 35,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF5 falharam."
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "error",
+            "found": 0,
+            "message": "As consultas de decisões e notícias do TRF6 falharam."
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "e2ec8205-8619-46aa-b340-97e177b0ed9b",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -182447,674 +185010,9 @@
         "discarded": 0,
         "errors": 1,
         "sources": []
-      },
-      {
-        "id": "b927d0ec-d7d9-4e19-8bc9-143f3cf83b00",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-09-02",
-        "startedAt": "2026-09-03T06:10:16.070Z",
-        "finishedAt": "2026-09-03T06:12:44.266Z",
-        "discovered": 286,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 24,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 45,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 38,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 17156,
-              "entries": 18,
-              "processed": 17156,
-              "dateMatched": 17156,
-              "decisionMatched": 6445,
-              "taxMatched": 1519,
-              "deduplicated": 1518,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 27877,
-              "entries": 28,
-              "processed": 27877,
-              "dateMatched": 27877,
-              "decisionMatched": 9438,
-              "taxMatched": 4552,
-              "deduplicated": 4387,
-              "duplicates": 165,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 56,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 42943,
-              "entries": 43,
-              "processed": 42943,
-              "dateMatched": 42943,
-              "decisionMatched": 8892,
-              "taxMatched": 1959,
-              "deduplicated": 1958,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 22219,
-              "entries": 23,
-              "processed": 22219,
-              "dateMatched": 22219,
-              "decisionMatched": 5201,
-              "taxMatched": 2425,
-              "deduplicated": 2361,
-              "duplicates": 64,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 14849,
-              "entries": 15,
-              "processed": 14849,
-              "dateMatched": 14849,
-              "decisionMatched": 6177,
-              "taxMatched": 1300,
-              "deduplicated": 1300,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 5,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "7ed4691d-22d2-4a87-b2b2-38085c56a54c",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-09-03T06:07:57.824Z",
-        "finishedAt": "2026-09-03T06:10:15.956Z",
-        "discovered": 287,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 5,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 24,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 17,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 33,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 583,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 8,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 24,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 35,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 16596,
-              "entries": 17,
-              "processed": 16596,
-              "dateMatched": 16596,
-              "decisionMatched": 8034,
-              "taxMatched": 1798,
-              "deduplicated": 1797,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 23300,
-              "entries": 24,
-              "processed": 23300,
-              "dateMatched": 23300,
-              "decisionMatched": 8221,
-              "taxMatched": 3683,
-              "deduplicated": 3539,
-              "duplicates": 144,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 42,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31124,
-              "entries": 32,
-              "processed": 31124,
-              "dateMatched": 31124,
-              "decisionMatched": 10029,
-              "taxMatched": 2089,
-              "deduplicated": 2088,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 56,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 20808,
-              "entries": 21,
-              "processed": 20808,
-              "dateMatched": 20808,
-              "decisionMatched": 4737,
-              "taxMatched": 2168,
-              "deduplicated": 2107,
-              "duplicates": 61,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 35,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 13115,
-              "entries": 14,
-              "processed": 13115,
-              "dateMatched": 13115,
-              "decisionMatched": 4859,
-              "taxMatched": 1193,
-              "deduplicated": 1193,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 12,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 5,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "d6217bf0-34b0-4174-b8bd-d930242e0842",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-09-03T01:33:30.748Z",
-        "finishedAt": "2026-09-03T02:05:13.281Z",
-        "discovered": 0,
-        "analyzed": 3,
-        "published": 3,
-        "discarded": 0,
-        "errors": 1,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-09-09T11:29:27.215Z",
-    "nextRunAt": "2026-09-09T17:29:27.215Z"
+    "lastRunAt": "2026-09-09T15:45:47.811Z",
+    "nextRunAt": "2026-09-09T21:45:47.811Z"
   }
 }
