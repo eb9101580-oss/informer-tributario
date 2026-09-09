@@ -1,9 +1,151 @@
 {
   "meta": {
-    "lastUpdatedAt": "2026-09-04T10:44:16.607Z",
+    "lastUpdatedAt": "2026-09-09T23:47:02.197Z",
     "environment": "demonstration"
   },
   "alerts": [
+    {
+      "relevant": true,
+      "title": "CARF convoca 2ª Turma da CSRF para analisar cancelamento da Súmula 147 — Conselho Administrativo de Recursos Fiscais",
+      "theme": "Contencioso administrativo",
+      "agency": "CARF",
+      "taxes": [
+        "IRPF",
+        "Multas tributárias",
+        "Súmulas CARF"
+      ],
+      "status": "Em andamento",
+      "kind": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+      "impactType": "Risco",
+      "priority": "Média",
+      "contentNature": "Fato oficial",
+      "businessActionable": true,
+      "noveltyType": "Entendimento administrativo",
+      "relevanceReasons": [
+        "altera-interpretacao",
+        "risco-fiscal",
+        "clientes-empresariais"
+      ],
+      "legalBasis": [
+        "Portaria CARF/MF nº 2.705",
+        "Súmula CARF nº 147",
+        "Art. 98 e 99 do RICARF",
+        "Art. 1.036 do Código de Processo Civil",
+        "Lei nº 9.430/1996",
+        "Lei nº 11.488/2007",
+        "Medida Provisória nº 351/2007"
+      ],
+      "publishedAt": "2026-09-09",
+      "analysisVersion": "detailed-v3",
+      "editorialFormat": "Direto do CARF",
+      "summary": "O Conselho Administrativo de Recursos Fiscais (CARF) publicou na quarta-feira (9/9) a Portaria CARF/MF nº 2.705, que convoca a Segunda Turma da Câmara Superior de Recursos Fiscais (CSRF) para analisar e votar proposta de cancelamento da Súmula CARF nº 147, que estabelece a aplicação concomitante de multas relativas ao carnê leão (IRPF).",
+      "whatChanged": "A proposta de cancelamento da Súmula 147, que permitia a aplicação concomitante de multa isolada de 50% e multa de ofício de 75% sobre o imposto apurado no ajuste anual, está em análise para alinhar a jurisprudência administrativa com o entendimento do Superior Tribunal de Justiça (STJ) de que não é possível aplicar ambas as multas simultaneamente.",
+      "practicalImpact": "Empresas que pagam multas por não cumprimento do carnê leão (IRPF) estão expostas a risco de aplicação de duas multas em vez de uma única, caso a Súmula 147 permaneça válida. A decisão da 2ª Turma da CSRF pode afetar a segurança jurídica de contribuintes e a Administração Tributária federal, com prazo para votação até a próxima sessão da CSRF (não identificado no documento).",
+      "officeAction": "A Portaria CARF/MF nº 2.705 estabelece os procedimentos para a apreciação da proposta de cancelamento da Súmula 147, que foi aprovada pela 2ª Turma da CSRF em 2019 e recebeu efeito vinculante para a Administração Tributária federal.",
+      "issueOrSubject": "Proposta de cancelamento da Súmula CARF nº 147, que estabelece a aplicação concomitante de multas isolada de 50% e multa de ofício de 75% relativas ao carnê leão (IRPF).",
+      "rulingOrRule": "A Súmula CARF nº 147, aprovada em 2019, permite a aplicação concomitante de multa isolada de 50% e multa de ofício de 75% sobre o imposto apurado no ajuste anual, mas o STJ entende que não é possível aplicar ambas as multas simultaneamente, conforme artigos 44 da Lei nº 9.430/1996 e Lei nº 11.488/2007.",
+      "legalReasoning": "O entendimento do STJ, que não permite a aplicação concomitante das multas isolada e de ofício previstas no art. 44 da Lei nº 9.430/1996, torna-se obrigatório no âmbito do CARF apenas quando firmado em julgamento de recursos repetitivos, conforme artigos 98 e 99 do RICARF. A jurisprudência predominante do STJ constitui referência importante para os colegiados do CARF, mesmo que não haja decisão em recursos repetitivos.",
+      "effectiveDateOrDeadline": "Vigência: A decisão da 2ª Turma da CSRF depende da votação prevista na Portaria CARF/MF nº 2.705 (não identificado no documento).",
+      "contextAndHistory": "A Súmula CARF nº 147 foi aprovada pela 2ª Turma da CSRF em 2019 e recebeu efeito vinculante para a Administração Tributária federal. Ela estabelece que, a partir da Lei nº 11.488/2007, é possível aplicar multa isolada de 50% e multa de ofício de 75% sobre o imposto apurado no ajuste anual. O STJ já tem entendimento de que não é possível aplicar ambas as multas simultaneamente, mas o CARF está analisando como alinhar a jurisprudência administrativa com o entendimento judicial.",
+      "actorsAndInterests": "CARF (Conselho Administrativo de Recursos Fiscais), 2ª Turma da CSRF, contribuintes (empresas que pagam IRPF), Administração Tributária federal. Interesses: segurança jurídica para contribuintes e Administração Tributária, alinhamento da jurisprudência administrativa com o STJ.",
+      "nextSteps": "A 2ª Turma da CSRF deve votar na proposta de cancelamento da Súmula 147 nos termos estabelecidos pela Portaria CARF/MF nº 2.705, com prazo para decisão não identificado no documento.",
+      "watchpoints": "Votação da 2ª Turma da CSRF; modulação da Súmula 147; possibilidade de recurso da decisão; alinhamento da jurisprudência administrativa com o STJ.",
+      "affectedProfiles": [
+        "Empresas com IRPF",
+        "Contribuintes do carnê leão",
+        "Administração Tributária federal",
+        "Empresas com multas por não cumprimento do carnê leão",
+        "Contribuintes com ajuste anual de impostos"
+      ],
+      "criteria": {
+        "authority": 8,
+        "novelty": 7,
+        "legalImpact": 8,
+        "financialImpact": 6,
+        "reach": 7,
+        "clientFit": 8,
+        "actionPotential": 7
+      },
+      "opportunity": {
+        "title": "Oportunidade de alinhamento da jurisprudência administrativa com o STJ",
+        "period": "",
+        "action": "Empresas devem revisar a aplicação de multas para o carnê leão (IRPF) e garantir conformidade com o entendimento do STJ, caso a Súmula 147 seja cancelada.",
+        "confidence": "médio"
+      },
+      "id": "406e8fc2-f41d-489f-bdcf-9a15f3680b15",
+      "score": 7.3,
+      "relevance": "Relevante",
+      "officialUrl": "https://www.gov.br/carf/pt-br/assuntos/novas-noticias/carf-convoca-2a-turma-da-csrf-para-analisar-cancelamento-da-sumula-147",
+      "primarySourceUrl": "https://www.gov.br/carf/pt-br/assuntos/novas-noticias/carf-convoca-2a-turma-da-csrf-para-analisar-cancelamento-da-sumula-147",
+      "sourceUrl": "https://www.gov.br/carf/pt-br/assuntos/novas-noticias/carf-convoca-2a-turma-da-csrf-para-analisar-cancelamento-da-sumula-147",
+      "policyVersion": "consultoria-empresarial-v2",
+      "isDemo": false,
+      "createdAt": "2026-09-09T23:47:02.096Z",
+      "updatedAt": "2026-09-09T23:47:02.096Z",
+      "provenance": {
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false,
+        "collector": "Scrapling",
+        "analyzer": "Triagem rápida/regras + ollama/qwen3:4b",
+        "collectorUrl": "https://www.gov.br/carf/pt-br/assuntos/novas-noticias/carf-convoca-2a-turma-da-csrf-para-analisar-cancelamento-da-sumula-147",
+        "sourceCharacters": 2736,
+        "sourceId": "carf-noticias",
+        "sourceName": "CARF — Notícias, súmulas e julgamentos",
+        "discoveredBy": "links",
+        "sourceType": "official",
+        "documentKind": "Publicação oficial",
+        "discoveredAt": "2026-09-09T18:44:03.234Z",
+        "policyVersion": "consultoria-empresarial-v2",
+        "analysisVersion": "detailed-v3",
+        "fastTriage": {
+          "score": 89,
+          "band": "alta",
+          "signals": [
+            "data-confirmada",
+            "fonte-oficial",
+            "assunto-tributario-forte",
+            "efeito-operacional",
+            "possivel-ato-processual",
+            "politica-p2:contencioso-administrativo"
+          ],
+          "engine": "regras-tributarias-v2:consultoria-empresarial-v2",
+          "policy": {
+            "version": "consultoria-empresarial-v2",
+            "eligible": true,
+            "eligibilityReason": null,
+            "exclusionReason": null,
+            "negativeCategory": null,
+            "exceptionApplied": null,
+            "score": 82,
+            "topicTier": 2,
+            "priorityOneTopics": [],
+            "priorityTwoTopics": [
+              "contencioso-administrativo"
+            ],
+            "eventType": "ATO_NORMATIVO_OU_ADMINISTRATIVO",
+            "concreteEvent": true,
+            "businessEffect": true,
+            "primarySource": true,
+            "preferredRegion": false,
+            "courtGate": {
+              "court": "CARF",
+              "required": true,
+              "passed": true,
+              "reason": null
+            },
+            "priority": "Média",
+            "signals": [
+              "prioridade-2",
+              "fato-novo-concreto",
+              "efeito-empresarial",
+              "fonte-primaria",
+              "gate-jurisprudencial"
+            ]
+          }
+        }
+      },
+      "sections": []
+    },
     {
       "relevant": true,
       "title": "Solução de Consulta Cosit nº 98288, de 31/08/2026: Classificação de Mercadorias NCM 1905.31.00 - Alfajor de leite em pó",
@@ -26451,7 +26593,7 @@
         "discoveryMethod": "receita-normas",
         "discoveredAt": "2026-09-09T18:43:49.322Z",
         "id": "6cb9212e7eab9a67a5eaaa3f",
-        "attempts": 2,
+        "attempts": 3,
         "backfillDate": null,
         "fastTriage": {
           "score": 100,
@@ -26502,7 +26644,7 @@
         "status": "error",
         "discardReason": null,
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-09-09T21:29:29.833Z"
+        "analyzedAt": "2026-09-09T23:37:44.773Z"
       },
       {
         "title": "Finanças, Impostos e Gestão Pública CARF convoca 2ª Turma da CSRF para analisar cancelamento da Súmula 147 09/09/2026 - Portaria publicada nesta quarta-feira (9/9) convoca colegiado para votar proposta de cancelamento de enunciado sobre a aplicação concomitante de multas relativas ao carnê leão (IRP",
@@ -26518,7 +26660,7 @@
         "discoveryMethod": "links",
         "discoveredAt": "2026-09-09T18:44:03.234Z",
         "id": "d4b7c0ccd6f18c10ecc03658",
-        "attempts": 2,
+        "attempts": 3,
         "backfillDate": null,
         "fastTriage": {
           "score": 89,
@@ -26566,10 +26708,16 @@
             ]
           }
         },
-        "status": "error",
+        "status": "analyzed",
         "discardReason": null,
         "error": "A análise do Ollama excedeu 10 minutos.",
-        "analyzedAt": "2026-09-09T21:39:31.796Z"
+        "analyzedAt": "2026-09-09T23:47:02.197Z",
+        "analyzedPublishedAt": "2026-09-09T14:40:00Z",
+        "relevant": true,
+        "score": 7.3,
+        "alertId": "406e8fc2-f41d-489f-bdcf-9a15f3680b15",
+        "analysisMode": "ollama",
+        "detailedAnalysisPending": false
       },
       {
         "title": "ACÓRDÃO · REsp 2151369 · Negando · MARIA THEREZA DE ASSIS MOURA",
@@ -190810,6 +190958,737 @@
     ],
     "runs": [
       {
+        "id": "2c48f3c2-85d2-4633-9354-248b32df2431",
+        "trigger": "github-actions-analysis",
+        "targetDate": null,
+        "startedAt": "2026-09-09T23:27:40.614Z",
+        "finishedAt": "2026-09-09T23:47:02.296Z",
+        "discovered": 0,
+        "analyzed": 1,
+        "published": 1,
+        "discarded": 0,
+        "errors": 1,
+        "sources": []
+      },
+      {
+        "id": "4c0b4018-f49a-47fa-a770-4320f8911749",
+        "trigger": "github-actions-history",
+        "targetDate": "2026-09-08",
+        "startedAt": "2026-09-09T23:24:46.090Z",
+        "finishedAt": "2026-09-09T23:26:44.947Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": "date-filtered"
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 75,
+            "dateCoverage": "mixed"
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "Fonte respondeu com status 522."
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "exact"
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 38,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 4268,
+              "entries": 5,
+              "processed": 4268,
+              "dateMatched": 4268,
+              "decisionMatched": 803,
+              "taxMatched": 379,
+              "deduplicated": 363,
+              "duplicates": 16,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 52,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 18661,
+              "entries": 19,
+              "processed": 18661,
+              "dateMatched": 18661,
+              "decisionMatched": 8734,
+              "taxMatched": 2415,
+              "deduplicated": 2415,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 22,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 543,
+              "entries": 1,
+              "processed": 543,
+              "dateMatched": 543,
+              "decisionMatched": 251,
+              "taxMatched": 136,
+              "deduplicated": 126,
+              "duplicates": 10,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 48,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 35919,
+              "entries": 36,
+              "processed": 35919,
+              "dateMatched": 35919,
+              "decisionMatched": 11362,
+              "taxMatched": 2346,
+              "deduplicated": 2345,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 32,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 2823,
+              "entries": 3,
+              "processed": 2823,
+              "dateMatched": 2823,
+              "decisionMatched": 498,
+              "taxMatched": 214,
+              "deduplicated": 211,
+              "duplicates": 3,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": "mixed",
+            "telemetry": {
+              "totalCommunications": 14416,
+              "entries": 15,
+              "processed": 14416,
+              "dateMatched": 14416,
+              "decisionMatched": 5403,
+              "taxMatched": 1003,
+              "deduplicated": 996,
+              "duplicates": 7,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": "current-index"
+          }
+        ]
+      },
+      {
+        "id": "e0eacc49-697b-4b03-a08f-d8cad96597ed",
+        "trigger": "github-actions-discovery",
+        "targetDate": null,
+        "startedAt": "2026-09-09T23:22:16.632Z",
+        "finishedAt": "2026-09-09T23:24:45.913Z",
+        "discovered": 0,
+        "analyzed": 0,
+        "published": 0,
+        "discarded": 0,
+        "errors": 2,
+        "sources": [
+          {
+            "id": "receita-federal",
+            "acronym": "RFB",
+            "status": "ok",
+            "found": 9,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-cosit",
+            "acronym": "COSIT",
+            "status": "ok",
+            "found": 2,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-in",
+            "acronym": "IN RFB",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "receita-notas",
+            "acronym": "NOTAS",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "nfe-notas-tecnicas",
+            "acronym": "NF-e",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-notas-tecnicas",
+            "acronym": "SPED",
+            "status": "ok",
+            "found": 23,
+            "dateCoverage": null
+          },
+          {
+            "id": "diario-oficial",
+            "acronym": "DOU",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "camara",
+            "acronym": "CD",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "senado",
+            "acronym": "SF",
+            "status": "ok",
+            "found": 17,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf",
+            "acronym": "STF",
+            "status": "ok",
+            "found": 71,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj",
+            "acronym": "STJ",
+            "status": "ok",
+            "found": 457,
+            "dateCoverage": null
+          },
+          {
+            "id": "stj-noticias",
+            "acronym": "STJ",
+            "status": "error",
+            "found": 0,
+            "message": "fetch failed"
+          },
+          {
+            "id": "stj-informativos",
+            "acronym": "INF STJ",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "stf-informativos",
+            "acronym": "INF STF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-pareceres",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 6,
+            "dateCoverage": null
+          },
+          {
+            "id": "pgfn-noticias",
+            "acronym": "PGFN",
+            "status": "ok",
+            "found": 14,
+            "dateCoverage": null
+          },
+          {
+            "id": "carf-noticias",
+            "acronym": "CARF",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "confaz-ajustes",
+            "acronym": "CONFAZ",
+            "status": "error",
+            "found": 0,
+            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
+          },
+          {
+            "id": "sped-ecd",
+            "acronym": "ECD",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-ecf",
+            "acronym": "ECF",
+            "status": "ok",
+            "found": 18,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-contribuicoes",
+            "acronym": "EFD-C",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-icms-ipi",
+            "acronym": "EFD-ICMS/IPI",
+            "status": "ok",
+            "found": 16,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-efd-reinf",
+            "acronym": "EFD-Reinf",
+            "status": "ok",
+            "found": 26,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-e-financeira",
+            "acronym": "e-Financeira",
+            "status": "ok",
+            "found": 7,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-esocial",
+            "acronym": "eSocial",
+            "status": "ok",
+            "found": 27,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-central-balancos",
+            "acronym": "Central",
+            "status": "ok",
+            "found": 1,
+            "dateCoverage": null
+          },
+          {
+            "id": "sped-dere",
+            "acronym": "DeRE",
+            "status": "ok",
+            "found": 24,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-cgibs",
+            "acronym": "CGIBS",
+            "status": "ok",
+            "found": 35,
+            "dateCoverage": null
+          },
+          {
+            "id": "trf1",
+            "acronym": "TRF1",
+            "status": "ok",
+            "found": 55,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 38812,
+              "entries": 39,
+              "processed": 38812,
+              "dateMatched": 38812,
+              "decisionMatched": 6808,
+              "taxMatched": 2322,
+              "deduplicated": 2171,
+              "duplicates": 151,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf2",
+            "acronym": "TRF2",
+            "status": "ok",
+            "found": 48,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 14813,
+              "entries": 15,
+              "processed": 14813,
+              "dateMatched": 14813,
+              "decisionMatched": 8118,
+              "taxMatched": 2278,
+              "deduplicated": 2278,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf3",
+            "acronym": "TRF3",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25161,
+              "entries": 26,
+              "processed": 25161,
+              "dateMatched": 25161,
+              "decisionMatched": 9532,
+              "taxMatched": 4525,
+              "deduplicated": 4260,
+              "duplicates": 265,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf4",
+            "acronym": "TRF4",
+            "status": "ok",
+            "found": 57,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 32621,
+              "entries": 33,
+              "processed": 32621,
+              "dateMatched": 32621,
+              "decisionMatched": 15062,
+              "taxMatched": 4641,
+              "deduplicated": 4640,
+              "duplicates": 1,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf5",
+            "acronym": "TRF5",
+            "status": "ok",
+            "found": 59,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 25838,
+              "entries": 26,
+              "processed": 25838,
+              "dateMatched": 25838,
+              "decisionMatched": 7284,
+              "taxMatched": 3246,
+              "deduplicated": 3184,
+              "duplicates": 62,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "trf6",
+            "acronym": "TRF6",
+            "status": "ok",
+            "found": 33,
+            "dateCoverage": null,
+            "telemetry": {
+              "totalCommunications": 12513,
+              "entries": 13,
+              "processed": 12513,
+              "dateMatched": 12513,
+              "decisionMatched": 5482,
+              "taxMatched": 1191,
+              "deduplicated": 1191,
+              "duplicates": 0,
+              "selected": 60,
+              "cap": 60
+            }
+          },
+          {
+            "id": "reforma-portal",
+            "acronym": "RT",
+            "status": "ok",
+            "found": 60,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-folha",
+            "acronym": "FOLHA",
+            "status": "ok",
+            "found": 28,
+            "dateCoverage": null
+          },
+          {
+            "id": "reforma-valor",
+            "acronym": "VALOR",
+            "status": "ok",
+            "found": 8,
+            "dateCoverage": null
+          },
+          {
+            "id": "jota",
+            "acronym": "JOTA",
+            "status": "ok",
+            "found": 0,
+            "dateCoverage": null
+          }
+        ]
+      },
+      {
         "id": "acb0c5a9-2f7c-4409-aeb8-3c63f4e20030",
         "trigger": "github-actions-analysis",
         "targetDate": null,
@@ -211747,674 +212626,9 @@
         "discarded": 0,
         "errors": 0,
         "sources": []
-      },
-      {
-        "id": "5d3615da-cbd1-494c-afc7-acc93ff3da8b",
-        "trigger": "github-actions-history",
-        "targetDate": "2026-09-02",
-        "startedAt": "2026-09-03T18:36:18.466Z",
-        "finishedAt": "2026-09-03T18:38:32.390Z",
-        "discovered": 285,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 24,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": "date-filtered"
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 45,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "exact"
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "mixed"
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 38,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 17156,
-              "entries": 18,
-              "processed": 17156,
-              "dateMatched": 17156,
-              "decisionMatched": 6445,
-              "taxMatched": 1519,
-              "deduplicated": 1518,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 27877,
-              "entries": 28,
-              "processed": 27877,
-              "dateMatched": 27877,
-              "decisionMatched": 9438,
-              "taxMatched": 4552,
-              "deduplicated": 4387,
-              "duplicates": 165,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 56,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 42943,
-              "entries": 43,
-              "processed": 42943,
-              "dateMatched": 42943,
-              "decisionMatched": 8892,
-              "taxMatched": 1959,
-              "deduplicated": 1958,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 22219,
-              "entries": 23,
-              "processed": 22219,
-              "dateMatched": 22219,
-              "decisionMatched": 5201,
-              "taxMatched": 2425,
-              "deduplicated": 2361,
-              "duplicates": 64,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 30,
-            "dateCoverage": "mixed",
-            "telemetry": {
-              "totalCommunications": 14849,
-              "entries": 15,
-              "processed": 14849,
-              "dateMatched": 14849,
-              "decisionMatched": 6177,
-              "taxMatched": 1300,
-              "deduplicated": 1300,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": "current-index"
-          }
-        ]
-      },
-      {
-        "id": "82c85b40-5b00-4db7-8446-9fb1ea811ebc",
-        "trigger": "github-actions-discovery",
-        "targetDate": null,
-        "startedAt": "2026-09-03T18:34:02.755Z",
-        "finishedAt": "2026-09-03T18:36:18.351Z",
-        "discovered": 306,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 1,
-        "sources": [
-          {
-            "id": "receita-federal",
-            "acronym": "RFB",
-            "status": "ok",
-            "found": 5,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-cosit",
-            "acronym": "COSIT",
-            "status": "ok",
-            "found": 29,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-in",
-            "acronym": "IN RFB",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "receita-notas",
-            "acronym": "NOTAS",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "nfe-notas-tecnicas",
-            "acronym": "NF-e",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-notas-tecnicas",
-            "acronym": "SPED",
-            "status": "ok",
-            "found": 23,
-            "dateCoverage": null
-          },
-          {
-            "id": "diario-oficial",
-            "acronym": "DOU",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "camara",
-            "acronym": "CD",
-            "status": "ok",
-            "found": 3,
-            "dateCoverage": null
-          },
-          {
-            "id": "senado",
-            "acronym": "SF",
-            "status": "ok",
-            "found": 20,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf",
-            "acronym": "STF",
-            "status": "ok",
-            "found": 57,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj",
-            "acronym": "STJ",
-            "status": "ok",
-            "found": 583,
-            "dateCoverage": null
-          },
-          {
-            "id": "stj-informativos",
-            "acronym": "INF STJ",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "stf-informativos",
-            "acronym": "INF STF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "carf",
-            "acronym": "CARF",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "pgfn-pareceres",
-            "acronym": "PGFN",
-            "status": "ok",
-            "found": 6,
-            "dateCoverage": null
-          },
-          {
-            "id": "confaz-ajustes",
-            "acronym": "CONFAZ",
-            "status": "error",
-            "found": 0,
-            "message": "A consulta oficial do CONFAZ falhou sem confirmar ato novo: A descoberta de links excedeu 60 segundos."
-          },
-          {
-            "id": "sped-ecd",
-            "acronym": "ECD",
-            "status": "ok",
-            "found": 7,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-ecf",
-            "acronym": "ECF",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-contribuicoes",
-            "acronym": "EFD-C",
-            "status": "ok",
-            "found": 18,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-icms-ipi",
-            "acronym": "EFD-ICMS/IPI",
-            "status": "ok",
-            "found": 16,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-efd-reinf",
-            "acronym": "EFD-Reinf",
-            "status": "ok",
-            "found": 26,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-e-financeira",
-            "acronym": "e-Financeira",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-esocial",
-            "acronym": "eSocial",
-            "status": "ok",
-            "found": 27,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-central-balancos",
-            "acronym": "Central",
-            "status": "ok",
-            "found": 1,
-            "dateCoverage": null
-          },
-          {
-            "id": "sped-dere",
-            "acronym": "DeRE",
-            "status": "ok",
-            "found": 24,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-cgibs",
-            "acronym": "CGIBS",
-            "status": "ok",
-            "found": 35,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf1",
-            "acronym": "TRF1",
-            "status": "ok",
-            "found": 0,
-            "dateCoverage": null
-          },
-          {
-            "id": "trf2",
-            "acronym": "TRF2",
-            "status": "ok",
-            "found": 59,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 16596,
-              "entries": 17,
-              "processed": 16596,
-              "dateMatched": 16596,
-              "decisionMatched": 8034,
-              "taxMatched": 1798,
-              "deduplicated": 1797,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf3",
-            "acronym": "TRF3",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 23300,
-              "entries": 24,
-              "processed": 23300,
-              "dateMatched": 23300,
-              "decisionMatched": 8221,
-              "taxMatched": 3683,
-              "deduplicated": 3539,
-              "duplicates": 144,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf4",
-            "acronym": "TRF4",
-            "status": "ok",
-            "found": 42,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 31124,
-              "entries": 32,
-              "processed": 31124,
-              "dateMatched": 31124,
-              "decisionMatched": 10029,
-              "taxMatched": 2089,
-              "deduplicated": 2088,
-              "duplicates": 1,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf5",
-            "acronym": "TRF5",
-            "status": "ok",
-            "found": 56,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 20808,
-              "entries": 21,
-              "processed": 20808,
-              "dateMatched": 20808,
-              "decisionMatched": 4737,
-              "taxMatched": 2168,
-              "deduplicated": 2107,
-              "duplicates": 61,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "trf6",
-            "acronym": "TRF6",
-            "status": "ok",
-            "found": 35,
-            "dateCoverage": null,
-            "telemetry": {
-              "totalCommunications": 13115,
-              "entries": 14,
-              "processed": 13115,
-              "dateMatched": 13115,
-              "decisionMatched": 4859,
-              "taxMatched": 1193,
-              "deduplicated": 1193,
-              "duplicates": 0,
-              "selected": 60,
-              "cap": 60
-            }
-          },
-          {
-            "id": "reforma-portal",
-            "acronym": "RT",
-            "status": "ok",
-            "found": 60,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-folha",
-            "acronym": "FOLHA",
-            "status": "ok",
-            "found": 28,
-            "dateCoverage": null
-          },
-          {
-            "id": "reforma-valor",
-            "acronym": "VALOR",
-            "status": "ok",
-            "found": 13,
-            "dateCoverage": null
-          },
-          {
-            "id": "jota",
-            "acronym": "JOTA",
-            "status": "ok",
-            "found": 2,
-            "dateCoverage": null
-          }
-        ]
-      },
-      {
-        "id": "6d814874-664f-4180-9987-4ca374ac30f4",
-        "trigger": "github-actions-analysis",
-        "targetDate": null,
-        "startedAt": "2026-09-03T15:19:55.764Z",
-        "finishedAt": "2026-09-03T15:19:56.732Z",
-        "discovered": 0,
-        "analyzed": 0,
-        "published": 0,
-        "discarded": 0,
-        "errors": 0,
-        "sources": []
       }
     ],
-    "lastRunAt": "2026-09-09T21:39:31.928Z",
-    "nextRunAt": "2026-09-10T03:39:31.928Z"
+    "lastRunAt": "2026-09-09T23:47:02.296Z",
+    "nextRunAt": "2026-09-10T05:47:02.296Z"
   }
 }
